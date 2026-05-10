@@ -1,79 +1,83 @@
-# arXiv 每日精选 · 2026-05-10
+# 每日精选 · 2026-05-10
 
-> 数据源：GitHub Mirror（Tavish9/awesome-daily-AI-arxiv，2026-05-09 批次）
-> 说明：arXiv API / RSS / HuggingFace 均因网络限制（HTTP 403）无法直接访问，降级使用每日同步 GitHub 镜像仓库作为数据源。
-> 今日候选 186 篇（2605.XXXXX，去重后），精选 5 篇
+> 数据源：GitHub Actions 预拉（arXiv 0 篇 + journals 241 篇）。Top30 去重后精选 5 篇。
+> 注：今日 arXiv 抓取数量为 0（API 返回空），Top30 全部来自 Nature / Nature MI / Science 等顶刊。
 
 ---
 
-## 1. LATTE: Language Agent Teams for Task Evolution
-- **作者/机构**: Elizabeth Mieczkowski, Alexander Ku, Tiwalayo Eisape, Dilip Arumugam, Katherine M. Collins et al.
-- **arXiv**: https://arxiv.org/abs/2605.06320
-- **方向**: 🤖 LLM / Multi-Agent
-- **TL;DR**: 分布式系统启发的多智能体 LLM 协调框架，用共享自适应任务图替代固定流水线，大幅降低 token 消耗与协调失败。
+## 1. Pretraining a foundation model for small-molecule natural products
+- **来源**: Nature Machine Intelligence
+- **作者**: Ding et al.
+- **链接**: https://www.nature.com/articles/s42256-026-01226-8
+- **方向**: 🔬 AI4Science / 药物发现
+- **TL;DR**: 支架感知基础模型融合掩码学习与对比学习，提升天然产物分类、基因组挖掘与虚拟筛选性能
 - **核心贡献**:
-  - 提出 LATTE 框架：多 LLM 智能体协同维护一个共享、持续演化的协调图，编码子任务依赖、分配与进度状态
-  - 支持局部可见性与通信约束下的动态工作分配和新任务发现，无需预先固定角色或分工
-  - 在多个协作任务和多种基础模型上，以相当或更高准确率显著降低 token 使用量、挂钟时间、文件冲突和重复输出
-- **方法亮点**: 将分布式系统（处理器间部分可见性 + 通信约束）的设计哲学迁移到 LLM 团队协调；协调图在运行时自适应演化，与 MetaGPT、Leader-Worker 层级等静态方案有本质区别。
-- **为什么值得读**: 直接解决了多 LLM 智能体部署中的实际瓶颈（token 浪费、任务冲突），提供了可落地的工程蓝图；在所有主流协调范式（MetaGPT、去中心化团队、静态分解）上均优于现有方案，影响力覆盖软件工程智能体、科研助手等多场景。
+  - 构建首个专用于小分子天然产物的支架感知预训练基础模型，针对天然产物独特骨架多样性和复杂立体化学设计训练目标
+  - 融合掩码预测（MAE-like）与对比学习双目标，使模型同时捕捉局部原子语义与全局支架结构
+  - 在分类学分类、基因组生物合成基因簇（BGC）挖掘和虚拟筛选三项下游任务上显著优于通用分子基础模型
+- **方法亮点**: 引入支架感知掩码策略，确保模型学习骨架级别语义而非仅原子局部特征；对比学习将同族化合物拉近表示空间、异类活性化合物推远，为零样本虚拟筛选提供结构基础。
+- **为什么值得读**: 约50%的FDA批准药物源自天然产物，该模型为高通量虚拟筛选和基因组挖掘提供了强力工具；支架感知预训练范式可推广至更广泛的天然产物化学空间，对抗生素、抗癌先导化合物的加速发现具有直接价值。
 
 ---
 
-## 2. RVPO: Risk-Sensitive Alignment via Variance Regularization
-- **作者/机构**: Ivan Montero, Tomasz Jurczyk, Bhuwan Dhingra (CMU)
-- **arXiv**: https://arxiv.org/abs/2605.05750
-- **方向**: 🤖 LLM / RLHF & Alignment
-- **TL;DR**: 用方差正则化取代奖励算术平均，解决多目标 RLHF 中"高分目标掩盖关键约束"的系统性缺陷。
+## 2. Force-free molecular dynamics through autoregressive equivariant networks
+- **来源**: Nature Machine Intelligence
+- **作者**: Thiemann et al.
+- **链接**: https://www.nature.com/articles/s42256-026-01227-7
+- **方向**: 🔬 AI4Science / 计算化学
+- **TL;DR**: TrajCast绕过力场计算直接预测原子轨迹，时间步长最长可达传统MD的30倍
 - **核心贡献**:
-  - 识别并形式化"约束遗漏"（constraint neglect）问题：现有 critic-less RLHF 对多目标奖励取均值，高权重目标的高分可合法掩盖安全/格式等低分约束
-  - 提出 RVPO：在优势聚合阶段惩罚跨奖励方差，目标从"最大化总和"转为"最大化一致性"
-  - 通过 Taylor 展开证明 LogSumExp（SoftMin）算子恰好是平滑方差惩罚；在 17 个并发 LLM 评判奖励信号下验证：HealthBench 上 0.261 vs GDPO 0.215（p<0.001），GPQA-Diamond 无后期退化
-- **方法亮点**: 数学推导严谨（Taylor 展开揭示 SoftMin 即方差惩罚），在医疗推理和工具调用两类场景均有验证；无需额外 critic 模型，即插即用。
-- **为什么值得读**: 安全关键领域（医疗、科学推理）对"不遗漏任何一条约束"有刚性需求，RVPO 直接解决这一缺陷；方法优雅且理论有保证，很可能成为多目标 RLHF 的新基线。
+  - 提出TrajCast：等变自回归神经网络，以历史轨迹为条件逐步预测下一时刻原子坐标，完全绕过力场计算
+  - 时间步长最长可达传统分子动力学（MD）的30倍，大幅压缩达到目标采样时间所需的积分步数
+  - 在液态水、蛋白质折叠中间体、固态材料等多类体系上准确再现热力学与动力学性质
+- **方法亮点**: 自回归架构以过去若干帧原子坐标为上下文，天然编码轨迹历史相关性；等变网络结构保证旋转、平移、置换对称性，无需显式力场或势函数，跨体系可迁移。
+- **为什么值得读**: 力场计算是经典MD最大的计算瓶颈，TrajCast将模拟速度提升数十倍，使微秒级蛋白构象采样和新材料快速探索成为可能；该范式一旦推广，将深刻改变药物设计和计算材料科学的工作流。
 
 ---
 
-## 3. Earth-o1: A Grid-free Observation-native Atmospheric World Model
-- **作者/机构**: Junchao Gong, Kaiyi Xu, Wangxu Wei, Siwei Tu, Jingyi Xu, Zili Liu et al.
-- **arXiv**: https://arxiv.org/abs/2605.06337
-- **方向**: 🔬 AI4Science / 气候与地球系统
-- **TL;DR**: 首个直接从非网格化多源传感器数据学习连续三维大气动力学的世界模型，后报技巧比肩 ECMWF IFS。
+## 3. A domain-adapted large language model to support clinicians in psychiatric clinical practice
+- **来源**: Nature Machine Intelligence
+- **作者**: 作者信息未随摘要提供
+- **链接**: https://www.nature.com/articles/s42256-026-01224-w
+- **方向**: 🤖 LLM / 临床 AI
+- **TL;DR**: PsychFound精神科专属LLM在诊断与治疗决策上达临床水平，并经真实临床流程验证
 - **核心贡献**:
-  - 提出"观测原生"（observation-native）范式：彻底放弃传统数值天气预报的网格化假设，直接将异构多模态传感器输入统一到连续无网格动力场
-  - 模型自主推进时空大气状态，无需显式数值求解器或传统数据同化流程
-  - 后报评估中地表预报技巧与欧洲中期天气预报中心（ECMWF）IFS 业务系统相当，且支持实时预报和跨传感器推断
-- **方法亮点**: 将 o1 风格"先思考再预报"的推理模式嵌入地球系统建模；无网格连续场表示（隐式神经场 / token 化观测）使模型可以直接利用卫星、雷达、地面站等异构观测数据，无空间对齐代价。
-- **为什么值得读**: 气候 AI 从"以网格为中心"到"以观测为中心"的范式转变，可能彻底改变数值天气预报工作流；对极端天气预警和气候下行缩放均有巨大实用价值。
+  - 构建PsychFound：以精神病学专业知识库和脱敏临床记录联合训练的领域自适应大语言模型
+  - 在诊断分类、治疗方案推荐、风险评估等多项临床任务上达到专科临床医生水平
+  - 完成真实临床流程部署验证：在实际医院环境中辅助临床医生，提升诊断一致性和治疗决策效率
+- **方法亮点**: 双阶段训练策略——先在结构化精神病学知识库（DSM标准、临床指南）上持续预训练，再在脱敏电子病历上监督微调；使用专科特异性评估框架替代通用基准，确保指标与临床相关性对齐。
+- **为什么值得读**: 全球精神卫生资源严重短缺，AI辅助诊断可低成本扩大覆盖面；Nature MI发表结合实际部署验证大幅提升可信度；为医疗LLM的数据隐私保护、临床评估基准设计和工作流集成提供了成熟的方法论范例。
 
 ---
 
-## 4. SMolLM: Small Language Models Learn Small Molecular Grammar
-- **作者/机构**: Akhil Jindal, Harang Ju
-- **arXiv**: https://arxiv.org/abs/2605.06322
-- **方向**: 🔬 AI4Science / 药物发现 & 分子设计
-- **TL;DR**: 53K 参数权重共享 Transformer 以 95% 有效率生成药物分子，超越参数量大 10 倍的标准 GPT，并揭示其可解释分子语法机制。
+## 4. Molecular skeleton programming of premediators in sulfur electrochemistry
+- **来源**: Nature
+- **作者**: 作者信息未随摘要提供
+- **链接**: https://www.nature.com/articles/s41586-026-10505-8
+- **方向**: 🧪 化学 / 能源材料
+- **TL;DR**: 系统化骨架设计找到2-氯嘧啶作为预介体，显著提升锂硫电池容量保持率
 - **核心贡献**:
-  - 训练 SMolLM（53K 参数，权重共享 Transformer），在 ZINC-250K 药物分子基准上生成 95% 有效 SMILES，远超同等标准 GPT（参数量大 10 倍）
-  - 通过误差分类、线性探测和稀疏自编码器揭示：同一个 block 按固定顺序（括号 → 环 → 化合价）分别在不同 pass 中解决不同约束
-  - 精准定位：第一个括号匹配步骤完全依赖于单个 attention head，提供了对分子生成的细粒度可解释性
-- **方法亮点**: 权重共享 + 多 pass 迭代计算 ≈ 用固定参数隐式扩展计算深度；结果反驳了"分子设计需要大模型"的默认假设，为在资源受限场景（实验室端侧部署）提供了全新思路。
-- **为什么值得读**: 揭示分子语言模型的可解释机制是药物设计可信赖 AI 的关键一步；53K 参数的极端压缩性能暗示化学语法具有高度结构化规律，对蛋白质序列等类似领域的小模型设计有直接启发。
+  - 提出"分子骨架编程"（molecular skeleton programming）设计原则：系统调整杂环取代基以优化预介体在硫电化学中的氧化还原功能
+  - 鉴定2-氯嘧啶为高效硫氧化还原预介体，实现锂硫电池强平均容量保持率
+  - 建立可推广到更广有机化学空间的功能分子设计框架，超越单一化合物优化的传统思路
+- **方法亮点**: DFT计算指导骨架筛选，聚焦LUMO能级与多硫化物氧化还原窗口的匹配；2-氯嘧啶在充放电过程中充当可逆氧化还原介质，加速多硫化物溶解-沉淀动力学，结合电化学阻抗谱和速率性能实验全面验证。
+- **为什么值得读**: 锂硫电池理论能量密度是锂离子电池的2-3倍，是下一代储能技术的重要候选；分子骨架编程思路为功能有机分子的定向设计提供了方法论框架，可扩展至液流电池、电催化和光催化等领域。
 
 ---
 
-## 5. BALAR: A Bayesian Agentic Loop for Active Reasoning
-- **作者/机构**: Aymen Echarghaoui, Dongxia Wu, Emily B. Fox (Stanford)
-- **arXiv**: https://arxiv.org/abs/2605.05386
-- **方向**: 🧠 AI/ML / 主动学习 & Agentic AI
-- **TL;DR**: 无需微调的贝叶斯主动推理循环，通过最大化期望互信息引导 LLM 智能体选择下一个最优问题，显著超越交互式基线。
+## 5. Two-qubit logic and teleportation with mobile spin qubits in silicon
+- **来源**: Nature
+- **作者**: 作者信息未随摘要提供
+- **链接**: https://www.nature.com/articles/s41586-026-10423-9
+- **方向**: ⚛️ 量子计算
+- **TL;DR**: 硅基移动自旋量子比特实现约99%双比特门保真度，并演示320 nm间距量子态隐形传送
 - **核心贡献**:
-  - 提出 BALAR：任务无关的外部循环算法，让 LLM 智能体在与用户的多轮交互中维护对潜在状态的结构化贝叶斯信念
-  - 以最大化期望互信息（EMI）为准则选择澄清问题；当信念空间不足时动态扩展状态表示
-  - 在三类多样基准（侦探推理 AR-Bench-DC、思维谜题 AR-Bench-SP、临床诊断 iCraft-MD）上显著优于所有基线，无需任何额外微调
-- **方法亮点**: 将经典贝叶斯实验设计（主动信息采集）无缝嵌入 LLM 对话循环；信念的动态扩展机制解决了预先枚举假设空间的局限性，使系统具备真正的开放域适应能力。
-- **为什么值得读**: 与自动化实验室的"闭环优化"高度同构——贝叶斯实验设计 + 主动信息获取正是 self-driving lab 的核心逻辑；Emily Fox（Stanford）团队的工作在 Bayesian ML 领域具有高影响力；临床诊断的验证结果也证明了实际落地潜力。
+  - 展示基于硅移动自旋量子比特架构的高保真双量子比特逻辑门，保真度约99%
+  - 实现相距320 nm的两个量子比特之间的量子态隐形传送（quantum teleportation）
+  - 验证量子比特穿梭（shuttling）与两比特门操作的完全兼容性，为可扩展硅量子处理器奠定基础
+- **方法亮点**: 静电门控制电子在线性量子点阵列中定向移动（穿梭协议）；两电子自旋聚合后执行交换相互作用门（SWAP/CZ型）；读出采用Pauli自旋阻塞单次测量方案，全流程与标准CMOS工艺兼容。
+- **为什么值得读**: 硅量子计算因与现有半导体制造工艺完全兼容被视为最具大规模扩展潜力的路线之一；99%双比特保真度加量子隐形传送标志着迈向容错量子计算的关键里程碑；Nature发表意味着该结果通过了严格同行评审，具有高度可重复性。
 
 ---
 
-*数据获取说明：本次 arXiv API（export.arxiv.org）、RSS（rss.arxiv.org）、HuggingFace Daily Papers 三大源均因运行环境网络限制（HTTP 403 / Host not in allowlist）无法直接访问。改用 GitHub API 拉取每日同步 arXiv 镜像仓库 Tavish9/awesome-daily-AI-arxiv（2026-05-09 批次），候选论文均为 arXiv ID 2605.XXXXX（2026 年 5 月提交），在 48h 时效窗口内。*
+*数据说明：今日 arXiv 抓取数量为 0（arxiv_count=0），Top30 全部来自 Nature、Science、Nature Machine Intelligence、Nature Computational Science、Nature Methods 等顶级期刊。去重检查：对比过去 7 天 digest 文件，无重叠条目。*
