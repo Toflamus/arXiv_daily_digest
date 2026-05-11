@@ -153,7 +153,19 @@ def main():
         p["score"] = score(p)
         deduped.append(p)
     deduped.sort(key=lambda p: p["score"], reverse=True)
+
+    MIN_ARXIV_IN_TOP = 10
     top30 = deduped[:30]
+    arxiv_in_top = [p for p in top30 if p["source"] == "arXiv"]
+    if len(arxiv_in_top) < MIN_ARXIV_IN_TOP:
+        need = MIN_ARXIV_IN_TOP - len(arxiv_in_top)
+        arxiv_out = [p for p in deduped if p["source"] == "arXiv" and p not in arxiv_in_top][:need]
+        non_arxiv_in_top = sorted(
+            (p for p in top30 if p["source"] != "arXiv"), key=lambda p: p["score"]
+        )
+        drop = non_arxiv_in_top[: len(arxiv_out)]
+        top30 = [p for p in top30 if p not in drop] + arxiv_out
+        top30.sort(key=lambda p: p["score"], reverse=True)
 
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     os.makedirs("raw", exist_ok=True)
