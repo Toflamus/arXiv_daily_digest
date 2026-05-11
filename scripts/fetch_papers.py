@@ -63,9 +63,11 @@ def fetch_arxiv():
     )
     cutoff = datetime.now(timezone.utc) - timedelta(hours=ARXIV_LOOKBACK_HOURS)
     out = []
+    fetched = 0
     for r in arxiv.Client(page_size=100, delay_seconds=3, num_retries=3).results(search):
+        fetched += 1
         if r.published < cutoff:
-            break
+            continue
         out.append({
             "id": r.entry_id.rsplit("/", 1)[-1],
             "title": r.title.strip(),
@@ -77,7 +79,7 @@ def fetch_arxiv():
             "link": r.entry_id,
             "journal_boost": 0,
         })
-    return out
+    return out, fetched
 
 
 def fetch_journal(name, url, boost):
@@ -124,8 +126,8 @@ def main():
     arxiv_error = None
     try:
         print("Fetching arXiv...", flush=True)
-        arxiv_papers = fetch_arxiv()
-        print(f"  arXiv: {len(arxiv_papers)} papers", flush=True)
+        arxiv_papers, fetched_total = fetch_arxiv()
+        print(f"  arXiv: API returned {fetched_total} results, {len(arxiv_papers)} within {ARXIV_LOOKBACK_HOURS}h cutoff", flush=True)
     except Exception as e:
         arxiv_error = f"{type(e).__name__}: {e}"
         traceback.print_exc()
