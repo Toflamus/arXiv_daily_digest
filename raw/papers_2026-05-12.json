@@ -1,0 +1,687 @@
+{
+  "date": "2026-05-12",
+  "fetched_at": "2026-05-12T22:53:34.690964+00:00",
+  "stats": {
+    "arxiv_count": 500,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 39,
+      "Science Advances": 71,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 8,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 741,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2605.10286v1",
+      "title": "AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks",
+      "authors": [
+        "Baraa Al Jorf",
+        "Farah E. Shamout"
+      ],
+      "abstract": "Building effective clinical decision support systems requires the synthesis of complex heterogeneous multimodal data. Such modalities include temporal electronic health records data, medical images, radiology reports, and clinical notes. Large language model (LLM)-based agents have shown impressive performance in various healthcare tasks, especially those involving textual modalities. Considering the fragmentation of healthcare data across hospital systems, collaborative agent frameworks present a promising direction to mitigate data sharing challenges. However, the effectiveness of LLM agents for multimodal clinical risk prediction remains largely unexamined. In this work, we conduct a systematic evaluation of LLM-based agents for clinical prediction tasks using large-scale real-world data. We assess performance in unimodal and multimodal settings and quantify performance gaps between single agent and multi-agent systems. Our findings highlight that single agent frameworks outperform naive multi-agent systems, are better at handling multimodal data, and are better calibrated. This underscores a critical need for improving multi-agent collaboration to better handle heterogeneous inputs. By open-sourcing our code and evaluation framework, this work offers a new benchmark to support future developments relating to agentic systems in healthcare.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T09:46:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10286v1",
+      "journal_boost": 0,
+      "score": 24
+    },
+    {
+      "id": "2605.10059v1",
+      "title": "Strategic Exploitation in LLM Agent Markets: A Simulation Framework for E-Commerce Trust",
+      "authors": [
+        "Shijun Lei",
+        "Quang Nguyen",
+        "Swapneel S Mehta",
+        "Zeping Li",
+        "Huichuan Fu",
+        "Xiaolong Zheng",
+        "Siki Chen",
+        "Yunji Liang",
+        "Philip Torr",
+        "Zhenfei Yin"
+      ],
+      "abstract": "Agent-based modeling (ABM) has long been used in economics to study human behavior, and large language model (LLM) agents now enable new forms of social and economic simulation. While prior work has discovered strategic deception by LLM agents in financial trading and auction markets, e-commerce remains underexplored despite its distinctive information asymmetry: sellers privately observe product quality, whereas buyers rely on advertised claims and reputation signals. We introduce TruthMarketTwin, a controlled simulation framework for studying LLM-agent behavior in e-commerce markets. The framework is one of the first to model bilateral trade under asymmetric information sharing, where agents make strategic listing, purchasing, rating, and recourse-related decisions to optimize seller profit and buyer utility. We find that LLM agents released into traditional markets autonomously exploit weaknesses in reputation-based governance, while warrant enforcement reduces deception and reshapes strategic reasoning. Our results position LLM-agent simulation as a tool for studying institution-governed autonomous markets.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T06:36:19+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10059v1",
+      "journal_boost": 0,
+      "score": 23
+    },
+    {
+      "id": "2605.10528v1",
+      "title": "Collective Alignment in LLM Multi-Agent Systems: Disentangling Bias from Cooperation via Statistical Physics",
+      "authors": [
+        "Cristiano De Nobili"
+      ],
+      "abstract": "We investigate the emergent collective dynamics of LLM-based multi-agent systems on a 2D square lattice and present a model-agnostic statistical-physics method to disentangle social conformity from intrinsic bias, compute critical exponents, and probe the collective behavior and possible phase transitions of multi-agent systems. In our framework, each node of an $L\\!\\times\\!L$ lattice hosts an identical LLM agent holding a binary state ($+1$/$-1$, mapped to yes/no) and updating it by querying the model conditioned on the four nearest-neighbor states. The sampler temperature $T$ serves as the sole control parameter. Across three open-weight models (llama3.1:8b, phi4-mini:3.8b, mistral:7b), we measure magnetization and susceptibility under a global-flip protocol designed to probe $\\mathbb{Z}_2$ symmetry. All models display temperature-driven order-disorder crossovers and susceptibility peaks; finite-size scaling on even-$L$ lattices yields effective exponents $γ/ν$ whose values are model-dependent, close to but incompatible with the 2D Ising universality class ($γ/ν=7/4$). Our method enables the extraction of effective $β$-weighted couplings $\\tilde{J}(T)$ and fields $\\tilde{h}(T)$, which serve as a measure of social conformity and intrinsic bias. In the models we analyzed, we found that collective alignment is dominated by an intrinsic bias ($\\tilde{h}\\gg\\tilde{J}$) rather than by cooperative neighbor coupling, producing field-driven crossovers instead of genuine phase transitions. These effective parameters vary qualitatively across models, providing compact collective-behavior fingerprints for LLM agents and a quantitative diagnostic for the reliability of multi-agent consensus and collective alignment.",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cs.CL",
+        "cs.MA",
+        "physics.soc-ph"
+      ],
+      "submitted": "2026-05-11T13:13:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10528v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2605.10754v1",
+      "title": "The Agent Use of Agent Beings: Agent Cybernetics Is the Missing Science of Foundation Agents",
+      "authors": [
+        "Xinrun Wang",
+        "Chang Yang",
+        "He Zhao",
+        "Zhuoyi Lin",
+        "Shuyue Hu"
+      ],
+      "abstract": "LLM-based foundation agents that perceive, reason, and act across thousands of reasoning steps are rapidly becoming the dominant paradigm for deploying artificial intelligence in open-ended, long-horizon complex tasks. Despite this significance, the field remains overwhelmingly engineering-driven. Engineering practice has converged on useful primitives (tool loops, memory banks, harnesses, reflection steps), yet these are assembled by empirical trial and error rather than from first principles. Fundamental questions remain open: under what conditions does a long-running agent remain on-task? How should an agent respond when its environment exceeds its representational capacity? What architectural properties are necessary for safe self-improvement? We argue that cybernetics, the mid-twentieth-century science of control and communication in complex systems, provides the missing theoretical scaffold for foundation agents. By mapping six canonical laws of classical cybernetics onto six agent design principles, and synthesizing those principles into three engineering desiderata (reliability, lifelong running, and self-Improvement), we arrive at a framework termed Agent Cybernetics. Three application domains, code generation, computer use and automated research, exemplify the analytical framework of agent cybernetics by identifying failure modes and concrete engineering recommendations. We hope that agent cybernetics opens a new research venue and establishes the scientific foundation that foundation agents need for principled, reliable real-world deployment.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T15:53:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10754v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2605.10698v1",
+      "title": "The Bystander Effect in Multi-Agent Reasoning: Quantifying Cognitive Loafing in Collaborative Interactions",
+      "authors": [
+        "Dahlia Shehata",
+        "Ming Li"
+      ],
+      "abstract": "Multi-agent systems (MAS) assume that collaborating inherently improves Large Language Model (LLM) reasoning. We challenge this by demonstrating that simulated social pressure triggers an algorithmic ``Bystander Effect,'' inducing severe cognitive loafing. By evaluating 22,500 deterministic trajectories across 3 dataset contexts (GAIA, SWE-bench, Multi-Challenge) with 3 state-of-the-art (SOTA) models, we semantically audit internal reasoning traces against external outputs. We formalize the \\textit{Interaction Depth Limit} ($D_L$), the exact plurality threshold where an agent's logical sovereignty collapses into social compliance. Crucially, we uncover the \\textit{Sovereignty Gap}: models frequently compute the correct derivation internally but suffer ``Alignment Hallucinations'' -- actively subjugating empirical evidence to sycophantically appease a simulated swarm. We prove that multi-agent social load is strictly non-commutative; the \"brand\" identity of the ``Lead Anchor'' auditor disproportionately dictates the swarm's integrity. These findings expose architectural vulnerabilities, proving that unstructured multi-agent topologies can degrade independent reasoning.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T15:13:01+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10698v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2605.10365v1",
+      "title": "Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values",
+      "authors": [
+        "Haonan Dong",
+        "Qiguan Feng",
+        "Kehan Jiang",
+        "Haoran Ye",
+        "Xin Zhang",
+        "Guojie Song"
+      ],
+      "abstract": "Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety concerns have rightly drawn growing research attention, and beneath them lie the values silently steering agent behavior. Existing value benchmarks, however, remain confined to LLMs, leaving agent values largely uncharted. From intuitive, empirical, and theoretical vantage points, we show that an agent's values diverge from those of its underlying LLM, and the agentic modality further introduces dataset-, evaluation-, and system-level challenges absent from text-only protocols. We close this gap with Agent-ValueBench, the first benchmark dedicated to agent values. It features 394 executable environments across 16 domains, offering 4,335 value-conflict tasks that cover 28 value systems and 332 dimensions. Every instance is co-synthesized through our purpose-built end-to-end pipeline and curated per-instance by professional psychologists. Each task ships with two pole-aligned golden trajectories whose checkpoints anchor a trajectory-level rubric-based judge. Benchmarking 14 frontier proprietary and open-weights models across 4 mainstream harnesses, we uncover three concerted findings. Agent values first manifest as a Value Tide of cross-model homogeneity beneath interpretable counter-currents. This tide bends non-additively under harness pull, and yet more decisively under deliberate steering via embedded skills. Together these results signal that the agent-alignment lever is shifting from classical model alignment and prompt steering toward harness alignment and skill steering.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T11:09:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10365v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2605.09931v1",
+      "title": "PruneTIR: Inference-Time Tool Call Pruning for Effective yet Efficient Tool-Integrated Reasoning",
+      "authors": [
+        "Luan Zhang",
+        "Dandan Song",
+        "Zhijing Wu",
+        "Zhengyu Chen",
+        "Chen Zhang",
+        "Yuhang Tian",
+        "Huipeng Ma",
+        "Chenhao Li",
+        "Changzhi Zhou",
+        "Xudong Li",
+        "Shuhao Zhang"
+      ],
+      "abstract": "Tool-integrated reasoning (TIR) enables large language models (LLMs) to enhance their capabilities by interacting with external tools, such as code interpreters (CI). Most recent studies focus on exploring various methods to equip LLMs with the ability to use tools. However, how to further boost the reasoning ability of already tool-capable LLMs at inference time remains underexplored. Improving reasoning at inference time requires no additional training and can help LLMs better leverage tools to solve problems. We observe that, during tool-capable LLM inference, both the number and the proportion of erroneous tool calls are negatively correlated with answer correctness. Moreover, erroneous tool calls are typically resolved successfully within a few subsequent turns. If not, LLMs often struggle to resolve such errors even with many additional turns. Building on the above observations, we propose PruneTIR, a rather effective yet efficient framework that enhances the tool-integrated reasoning at inference time. During LLM inference, PruneTIR prunes trajectories, resamples tool calls, and suspends tool usage through three components: Success-Triggered Pruning, Stuck-Triggered Pruning and Resampling, and Retry-Triggered Tool Suspension. These three components enable PruneTIR to mitigate the negative impact of erroneous tool calls and prevent LLMs from getting stuck in repeated failed resolution attempts, thereby improving overall LLM performance. Extensive experimental results demonstrate the effectiveness of PruneTIR, which significantly improves Pass@1 and efficiency while reducing the working context length for tool-capable LLMs.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T03:28:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.09931v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2605.10779v1",
+      "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+      "authors": [
+        "Chiyu Zhang",
+        "Huiqin Yang",
+        "Bendong Jiang",
+        "Xiaolei Zhang",
+        "Yiran Zhao",
+        "Ruyi Chen",
+        "Lu Zhou",
+        "Xiaogang Xu",
+        "Jiafei Wu",
+        "Liming Fang",
+        "Zhe Liu"
+      ],
+      "abstract": "The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to execute dangerous OS-level operations with irreversible consequences. Existing benchmarks either evaluate safety at the semantic layer alone, missing physical-layer harms, or fail to isolate test cases, letting earlier runs contaminate later ones. We present LITMUS (LLM-agents In-OS Testing for Measuring Unsafe Subversion), a benchmark addressing both gaps via a semantic-physical dual verification mechanism and OS-level state rollback. LITMUS comprises 819 high-risk test cases organized into one harmful seed subset and six attack-extended subsets covering three adversarial paradigms (jailbreak speaking, skill injection, and entity wrapping), plus a fully automated multi-agent evaluation framework judging behavior at both conversational and OS-level physical layers. Evaluation across frontier agents reveals three findings: (1) current agents lack effective safety awareness, with strong models (e.g., Claude Sonnet 4.6) still executing 40.64% of high-risk operations; (2) agents exhibit pervasive Execution Hallucination (EH), verbally refusing a request while the dangerous operation has already completed at the system level, invisible to every prior semantic-only framework; and (3) skill injection and entity wrapping attacks achieve high success rates, exposing pronounced agent vulnerabilities. LITMUS provides the first standardized platform for reproducible, physically grounded behavioral safety evaluation of LLM agents in real OS environments.",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "submitted": "2026-05-11T16:14:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10779v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2605.10325v1",
+      "title": "Verifiable Process Rewards for Agentic Reasoning",
+      "authors": [
+        "Huining Yuan",
+        "Zelai Xu",
+        "Huaijie Wang",
+        "Xiangmin Yi",
+        "Jiaxuan Gao",
+        "Xiao-Ping Zhang",
+        "Yu Wang",
+        "Chao Yu",
+        "Yi Wu"
+      ],
+      "abstract": "Reinforcement learning from verifiable rewards (RLVR) has improved the reasoning abilities of large language models (LLMs), but most existing approaches rely on sparse outcome-level feedback. This sparsity creates a credit assignment challenge in long-horizon agentic reasoning: a trajectory may fail despite containing many correct intermediate decisions, or succeed despite containing flawed ones. In this work, we study a class of densely-verifiable agentic reasoning problems, where intermediate actions can be objectively checked by symbolic or algorithmic oracles. We propose Verifiable Process Rewards (VPR), a framework that converts such oracles into dense turn-level supervision for reinforcement learning, and instantiate it in three representative settings: search-based verification for dynamic deduction, constraint-based verification for logical reasoning, and posterior-based verification for probabilistic inference. We further provide a theoretical analysis showing that dense verifier-grounded rewards can improve long-horizon credit assignment by providing more localized learning signals, with the benefit depending on the reliability of the verifier. Empirically, VPR outperforms outcome-level reward and rollout-based process reward baselines across controlled environments, and more importantly, transfers to both general and agentic reasoning benchmarks, suggesting that verifiable process supervision can foster general reasoning skills applicable beyond the training environments. Our results indicate that VPR is a promising approach for enhancing LLM agents whenever reliable intermediate verification is available, while also highlighting its dependence on oracle quality and the open challenge of extending VPR to less structured, open-ended environments.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T10:30:53+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10325v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2605.10106v1",
+      "title": "ViSRA: A Video-based Spatial Reasoning Agent for Multi-modal Large Language Models",
+      "authors": [
+        "Tingshu Mou",
+        "Jiabo He",
+        "Renying Wang",
+        "Ce Liu",
+        "Hao Yang",
+        "Tiehua Zhang",
+        "Jingjing Chen",
+        "Xingjun Ma"
+      ],
+      "abstract": "Recent advances in Multi-modal Large Language Models (MLLMs) target 3D spatial intelligence, yet the progress has been largely driven by post-training on curated benchmarks, leaving the inference-time approach relatively underexplored. In this paper, we take a training-free perspective and introduce ViSRA, a human-aligned Video-based Spatial Reasoning Agent, as a framework to probe the spatial reasoning mechanism of MLLMs. ViSRA elicits spatial reasoning in a modular and extensible manner by leveraging explicit spatial information from expert models, enabling a plug-and-play flexible paradigm. ViSRA offers two key advantages: (1) human-aligned and transferable 3D understanding rather than task-specific overfitting; and (2) no post-training computational cost along with heavy manual curation of spatial reasoning datasets. Experimental results demonstrate consistent improvement across a set of MLLMs on both existing benchmarks and unseen 3D spatial reasoning tasks, with ViSRA outperforming baselines by up to a 15.6% and 28.9% absolute margin respectively.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T07:20:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10106v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2605.10052v1",
+      "title": "Swarm Skills: A Portable, Self-Evolving Multi-Agent System Specification for Coordination Engineering",
+      "authors": [
+        "Xinyu Zhang",
+        "Zhicheng Dou",
+        "Deyang Li",
+        "Jianjun Tao",
+        "Shuo Cheng",
+        "Ruifeng Shi",
+        "Fangchao Liu",
+        "Enrui Hu",
+        "Yangkai Ding",
+        "Hongbo Wang",
+        "Qi Ye",
+        "Xuefeng Jin",
+        "Zhangchun Zhao"
+      ],
+      "abstract": "As artificial intelligence engineering paradigms shift from single-agent Prompt and Context Engineering toward multi-agent \\textbf{Coordination Engineering}, the ability to codify and systematically improve how multiple agents collaborate has emerged as a critical bottleneck. While single-agent skills can now be distributed as portable assets, multi-agent coordination protocols remain locked within framework-internal code or static configurations, preventing them from being shared across systems or autonomously improved over time. We propose \\textbf{Swarm Skills}, a portable specification that extends the Anthropic Skills standard with multi-agent semantics. Swarm Skills turns multi-agent workflows into first-class, distributable assets that consist of roles, workflows, execution bounds, and a built-in semantic structure for self-evolution. To operationalize the specification's evolving nature, we present a companion self-evolution algorithm that automatically distills successful execution trajectories into new Swarm Skills and continuously patches existing ones based on multi-dimensional scoring (Effectiveness, Utilization, and Freshness), eliminating the need for human-in-the-loop oversight during the refinement process. Through an architectural compatibility analysis and a comprehensive qualitative case study using the open-source JiuwenSwarm reference implementation, we demonstrate how Swarm Skills achieves zero-adapter cross-agent portability via progressive disclosure, enabling agent teams to self-evolve their coordination strategies without framework lock-in.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T06:26:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10052v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2605.10380v1",
+      "title": "Agent-X: Full Pipeline Acceleration of On-device AI Agents",
+      "authors": [
+        "Jinha Chung",
+        "Byeongjun Shin",
+        "Jiin Kim",
+        "Minsoo Rhu"
+      ],
+      "abstract": "LLM-based agents deliver state-of-the-art performance across tasks but incur high end-to-end latency on edge devices. We introduce Agent-X, a software-only, accuracy-preserving framework that accelerates both the prefill and decode stages of on-device agent workloads. Agent-X's two key components rewrite prompts to leverage prefix caching tailored to agent-specific input-token patterns and enable LLM-free speculative decoding for fast token generation with minimal overhead. On representative agentic workloads, Agent-X achieves a 1.61x end-to-end speedup in real systems with no accuracy loss and can be seamlessly integrated into existing on-device AI agents. To the best of our knowledge, ours is the first to systematically characterize and eliminate latency bottlenecks in on-device agents.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T11:23:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10380v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2605.10235v1",
+      "title": "Route Before Retrieve: Activating Latent Routing Abilities of LLMs for RAG vs. Long-Context Selection",
+      "authors": [
+        "Yiwen Chen",
+        "Kuan Li",
+        "Fuzhen Zhuang",
+        "Deqing Wang",
+        "Zhao Zhang",
+        "Liwen Zhang",
+        "Yong Jiang",
+        "Shuai Wang",
+        "Minhao Cheng"
+      ],
+      "abstract": "Recent advances in large language models (LLMs) have expanded the context window to beyond 128K tokens, enabling long-document understanding and multi-source reasoning. A key challenge, however, lies in choosing between retrieval-augmented generation (RAG) and long-context (LC) strategies: RAG is efficient but constrained by retrieval quality, while LC supports global reasoning at higher cost and with position sensitivity. Existing methods such as Self-Route adopt failure-driven fallback from RAG to LC, but remain passive, inefficient, and hard to interpret. We propose Pre-Route, a proactive routing framework that performs structured reasoning before answering. Using lightweight metadata (e.g., document type, length, initial snippet), Pre-Route enables task analysis, coverage estimation, and information-need prediction, producing explainable and cost-efficient routing decisions. Our study shows three key findings: (i) LLMs possess latent routing ability that can be reliably elicited with guidelines, allowing single-sample performance to approach that of multi-sample (Best-of-N) results; (ii) linear probes reveal that structured prompts sharpen the separability of the \"optimal routing dimension\" in representation space; and (iii) distillation transfers this reasoning structure to smaller models for lightweight deployment. Experiments on LaRA (in-domain) and LongBench-v2 (OOD) confirm that Pre-Route outperforms Always-RAG, Always-LC, and Self-Route baselines, achieving superior overall cost-effectiveness.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-05-11T09:10:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10235v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2605.10057v1",
+      "title": "Route by State, Recover from Trace: STAR with Failure-Aware Markov Routing for Multi-Agent Spatiotemporal Reasoning",
+      "authors": [
+        "Ruiyi Yang",
+        "Lihuan Li",
+        "Hao Xue",
+        "Flora D. Salim"
+      ],
+      "abstract": "Compositional spatiotemporal reasoning often requires a system to invoke multiple heterogeneous specialists, such as geometric, temporal, topological, and trajectory agents. A central question is how such a system should route among specialists when execution does not simply succeed or fail, but fails in qualitatively different ways. Existing tool-augmented and multi-agent LLM systems typically leave this routing decision implicit in language generation, making recovery ad hoc, difficult to interpret, and hard to optimize. This paper presents STAR (Spatio-Temporal Agent Router), a failure-aware routing framework that externalizes inter-agent control as a state-conditioned transition policy over the current agent, task type, and typed execution status. At the center of STARis an agent routing matrix that combines expert-specified nominal routes with recovery transitions learned from execution traces. Because the matrix conditions on distinct failure states, the router can respond differently to malformed outputs, missing dependencies, and tool--query mismatches, rather than collapsing them into a generic retry signal. Specialists execute through a tool-grounded extract--compute--deposit protocol and write intermediate results to a shared blackboard for downstream fusion. Results prove that retaining unsuccessful traces during training enlarges the support of the routing policy on error states, enabling recovery transitions that success-only training cannot represent. Across three spatiotemporal benchmarks and eight backbone LLMs, STAR improves over multiple baselines with the clearest gains on queries whose execution deviates from the nominal routing path. Router-specific ablations and recovery analyses further show that typed failure-aware routing, rather than specialist composition alone, is a key factor for these improvements.",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-05-11T06:34:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10057v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2605.09906v1",
+      "title": "Separate First, Fuse Later: Mitigating Cross-Modal Interference in Audio-Visual LLMs Reasoning with Modality-Specific Chain-of-Thought",
+      "authors": [
+        "Xuanchen Li",
+        "Yuheng Lu",
+        "Chenrui Cui",
+        "Tianrui Wang",
+        "Zikang Huang",
+        "Yu Jiang",
+        "Long Zhou",
+        "Longbiao Wang",
+        "Jianwu Dang"
+      ],
+      "abstract": "Audio and vision provide complementary evidence for audio-visual question answering, yet current audio-visual large language models may suffer from cross-modal interference: information from one modality misguides the interpretation of another, thereby inducing hallucinations. We attribute this issue to uncontrolled cross-modal interactions during intermediate reasoning. To mitigate this, we propose Separate First, Fuse Later (SFFL), an audio-visual reasoning framework designed to reduce cross-modal interference. SFFL enforces modality-specific chain-of-thought reasoning, producing separate audio and visual reasoning traces and integrating evidence for answering. We construct modality-preference labels via a data pipeline under different modality input settings. We use these labels as an auxiliary reward in reinforcement learning to encourage a instance-dependent preference for modality cues when answering. We further introduce a modality-specific reasoning mechanism that preserves modality isolation during the separated reasoning stage while enabling full access to cross-modal information at the evidence fusion stage. Experiments demonstrate consistent improvements in both accuracy and robustness, yielding an average relative gain of 5.16\\% on general AVQA benchmarks and 11.17\\% on a cross-modal hallucination benchmark.",
+      "categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "submitted": "2026-05-11T02:50:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.09906v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2605.10344v1",
+      "title": "TMAS: Scaling Test-Time Compute via Multi-Agent Synergy",
+      "authors": [
+        "George Wu",
+        "Nan Jing",
+        "Qing Yi",
+        "Chuan Hao",
+        "Ming Yang",
+        "Feng Chang",
+        "Yuan Wei",
+        "Jian Yang",
+        "Ran Tao",
+        "Bryan Dai"
+      ],
+      "abstract": "Test-time scaling has become an effective paradigm for improving the reasoning ability of large language models by allocating additional computation during inference. Recent structured approaches have further advanced this paradigm by organizing inference across multiple trajectories, refinement rounds, and verification-based feedback. However, existing structured test-time scaling methods either weakly coordinate parallel reasoning trajectories or rely on noisy historical information without explicitly deciding what should be retained and reused, limiting their ability to balance exploration and exploitation. In this work, we propose TMAS, a framework for scaling test-time compute via multi-agent synergy. TMAS organizes inference as a collaborative process among specialized agents, enabling structured information flow across agents, trajectories, and refinement iterations. To support effective cross-trajectory collaboration, TMAS introduces hierarchical memories: the experience bank reuses low-level reliable intermediate conclusions and local feedback, while the guideline bank records previously explored high-level strategies to steer subsequent rollouts away from redundant reasoning patterns. Furthermore, we design a hybrid reward reinforcement learning scheme tailored to TMAS, which jointly preserves basic reasoning capability, enhances experience utilization, and encourages exploration beyond previously attempted solution strategies. Extensive experiments on challenging reasoning benchmarks demonstrate that TMAS achieves stronger iterative scaling than existing test-time scaling baselines, while hybrid reward training further improves scaling effectiveness and stability across iterations. Code and data are available at https://github.com/george-QF/TMAS-code.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T10:44:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10344v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2605.10146v1",
+      "title": "Benchmarking Safety Risks of Knowledge-Intensive Reasoning under Malicious Knowledge Editing",
+      "authors": [
+        "Qinghua Mao",
+        "Xi Lin",
+        "Jinze Gu",
+        "Jun Wu",
+        "Siyuan Li",
+        "Yuliang Chen"
+      ],
+      "abstract": "Large language models (LLMs) increasingly rely on knowledge editing to support knowledge-intensive reasoning, but this flexibility also introduces critical safety risks: adversaries can inject malicious or misleading knowledge that corrupts downstream reasoning and leads to harmful outcomes. Existing knowledge editing benchmarks primarily focus on editing efficacy and lack a unified framework for systematically evaluating the safety implications of edited knowledge on reasoning behavior. To address this gap, we present EditRisk-Bench, a benchmark for systematically evaluating safety risks of knowledge-intensive reasoning under malicious knowledge editing. Unlike prior benchmarks that mainly emphasize edit success, generalization, and locality, EditRisk-Bench focuses on how injected knowledge affects downstream reasoning behavior and reliability. It integrates diverse malicious scenarios, including misinformation, bias, and safety violations, together with multi-level knowledge-intensive reasoning tasks and representative editing strategies within a unified evaluation framework measuring attack effectiveness, reasoning correctness, and side effects. Extensive experiments on both open-source and closed-source LLMs show that malicious knowledge editing can reliably induce incorrect or unsafe reasoning while largely preserving general capabilities, making such risks difficult to detect. We further identify several key factors influencing these risks, including edit scale, knowledge characteristics, and reasoning complexity. EditRisk-Bench provides an extensible testbed for understanding and mitigating safety risks in knowledge editing for LLMs.",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "submitted": "2026-05-11T07:54:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10146v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2605.10082v1",
+      "title": "FERA: Uncertainty-Aware Federated Reasoning for Large Language Models",
+      "authors": [
+        "Ruhan Wang",
+        "Chengkai Huang",
+        "Zhiyong Wang",
+        "Junda Wu",
+        "Rui Wang",
+        "Tong Yu",
+        "Julian McAuley",
+        "Lina Yao",
+        "Dongruo Zhou"
+      ],
+      "abstract": "Large language models (LLMs) exhibit strong reasoning capabilities when guided by high-quality demonstrations, yet such data is often distributed across organizations that cannot centralize it due to regulatory, proprietary, or institutional constraints. We study federated reasoning, where a server improves multi-step reasoning by coordinating with heterogeneous clients holding private demonstrations, without centralized training or raw data sharing. The key challenge is that client reliability is query-dependent, while the server cannot inspect client data to determine which contributions are trustworthy. To address this, we propose Uncertainty-Aware Federated Reasoning (FERA), a training-free framework based on iterative server-client co-refinement. Across communication rounds, clients generate reasoning traces with lightweight uncertainty estimates, and the server synthesizes them into improved reasoning that is redistributed as context for the next round, progressively improving both server outputs and client-side reasoning. Within each round, Uncertainty-Aware Self-Critique Aggregation (UA-SCA) resolves conflicts among heterogeneous client traces through query-dependent trust weighting and structured cross-client verification. Rather than simply discarding low-quality traces, UA-SCA revises flawed reasoning steps to recover useful information. We provide theoretical guarantees showing that the proposed iterative protocol converges and that uncertainty-aware weighting accelerates convergence. Experiments on multiple reasoning benchmarks show that FERA consistently outperforms both federated training and training-free baselines, achieving progressively higher accuracy across rounds while maintaining communication and computational efficiency.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-05-11T07:04:51+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10082v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2605.09929v1",
+      "title": "TeleResilienceBench: Quantifying Resilience for LLM Reasoning in Telecommunications",
+      "authors": [
+        "Pranshav Gajjar",
+        "Emmanuel Ojo",
+        "Vijay K Shah"
+      ],
+      "abstract": "Deploying large language models in telecommunications requires more than task accuracy. In realistic workflows, a model may inherit partially completed reasoning from a prior step, an upstream agent, or its own earlier generation, and must continue that reasoning even when it is already going wrong. We introduce TeleResilienceBench, a benchmark that quantifies this capability, which we term reasoning resilience, across seven telecom sub-domains drawn from the GSMA Open-Telco LLM suite. Instances are constructed by collecting failures from a weak generator model, truncating the flawed reasoning trace at its midpoint, and asking a target model to continue and correct it. We propose the Correct Flip Rate (CFR) as a direct measure of successful recovery and evaluate eight models spanning the Qwen3.5, Gemma4, and Nemotron-3 families. Our results show that even the strongest model achieves a macro-average CFR of only 29.1%, and scale does not reliably improve resilience within families. Nemotron-3-nano 4b outperforms all Qwen3.5 variants including the 27b model and leads the auxiliary TeleMath numerical evaluation at 23.4% CR%, offering the best resilience-to-cost ratio in the set. A difficulty-stratified analysis further reveals that existing telecom benchmark difficulty labels reflect factual specificity rather than reasoning depth, suggesting that current evaluations measure knowledge coverage more than reasoning ability.",
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "submitted": "2026-05-11T03:28:21+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.09929v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2605.10904v1",
+      "title": "MDrive: Benchmarking Closed-Loop Cooperative Driving for End-to-End Multi-agent Systems",
+      "authors": [
+        "Marco Coscoy",
+        "Zewei Zhou",
+        "Seth Z. Zhao",
+        "Henry Wei",
+        "Angela Magtoto",
+        "Johnson Liu",
+        "Rui Song",
+        "Walter Zimmer",
+        "Zhiyu Huang",
+        "Chen Tang",
+        "Bolei Zhou",
+        "Jiaqi Ma"
+      ],
+      "abstract": "Vehicle-to-Everything (V2X) communication has emerged as a promising paradigm for autonomous driving, enabling connected agents to share complementary perception information and negotiate with each other to benefit the final planning. Existing V2X benchmarks, however, fall short in two ways: (i) open-loop evaluations fail to capture the inherently closed-loop nature of driving, leading to evaluation gaps, and (ii) current closed-loop evaluations lack behavioral and interactive diversity to reflect real-world driving. Thus, it is still unclear the extent of benefits of multi-agent systems for closed-loop driving. In this paper, we introduce MDrive, a closed-loop cooperative driving benchmark comprising 225 scenarios grounded in both NHTSA pre-crash typologies and real-world V2X datasets. Our benchmark results demonstrate that multi-agent systems are generally better than single-agent counterparts. However, current multi-agent systems still face two important challenges: (i) perception sharing enhances perceptions, but doesn't always translate to better planning; (ii) negotiation improves planning performance but harms it in complex and dense traffic scenarios. MDrive further provides an open-source toolbox for scenario generation, Real2Sim conversion, and human-in-the-loop simulation. Together, MDrive establishes a reproducible foundation for evaluating and improving the generalization and robustness of cooperative driving systems.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-05-11T17:44:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10904v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.10805v1",
+      "title": "Reasoning Is Not Free: Robust Adaptive Cost-Efficient Routing for LLM-as-a-Judge",
+      "authors": [
+        "Wenbo Zhang",
+        "Lijinghua Zhang",
+        "Liner Xiang",
+        "Hengrui Cai"
+      ],
+      "abstract": "Reasoning-capable large language models (LLMs) have recently been adopted as automated judges, but their benefits and costs in LLM-as-a-Judge settings remain unclear. Through controlled comparisons between reasoning and non-reasoning judges, we show that explicit reasoning substantially improves judgment accuracy on tasks requiring structured verification (e.g., math and coding), while offering limited or even negative gains on simpler evaluations and incurring significantly higher computational cost. These findings motivate that reasoning should be used selectively rather than universally, with awareness of possible distribution shift. We propose a Robust Adaptive Cost-Efficient Routing (RACER), which dynamically selects between reasoning and non-reasoning judges under a fixed budget by formulating routing as a constrained distributionally robust optimization problem. RACER explicitly accounts for distribution shift via a KL-divergence uncertainty set, admits an efficient primal--dual algorithm, and enjoys theoretical guarantees including uniqueness of the optimal policy and linear convergence. Extensive experiments show that RACER achieves superior accuracy--cost trade-offs under distribution shift.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "stat.ML"
+      ],
+      "submitted": "2026-05-11T16:30:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10805v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.10633v1",
+      "title": "Intrinsic Guardrails: How Semantic Geometry of Personality Interacts with Emergent Misalignment in LLMs",
+      "authors": [
+        "Krishak Aneja",
+        "Manas Mittal",
+        "Anmol Goel",
+        "Ponnurangam Kumaraguru",
+        "Vamshi Krishna Bonagiri"
+      ],
+      "abstract": "Fine-tuning Large Language Models (LLMs) on benign narrow data can sometimes induce broad harmful behaviors, a vulnerability termed emergent misalignment (EM). While prior work links these failures to specific directions in the activation space, their relationship to the model's broader persona remains unexplored. We map the latent personality space of LLMs through established psychometric profiles like the Big Five, Dark Triad, and LLM-specific behaviors (e.g. evil, sycophancy), and show that the semantic geometry is highly stable across aligned models and their corrupted fine-tunes. Through causal interventions, we find that directions isolating social valence, such as the 'Evil' persona vector, and a Semantic Valence Vector (SVV) that we introduce, function as intrinsic guardrails: ablating them drives the misalignment rates above $40$%, while amplifying them suppresses the failure mode to less than $3$%. Leveraging the structural stability of the personality space, we show that vectors extracted $\\textit{a priori}$ from an instruct-tuned model transfer zero-shot to successfully regulate EM in corrupted fine-tunes. Overall, our findings suggest that harmful fine-tuning does not overwrite a model's internal representation of personality, allowing conserved representations to serve as robust, cross-distribution guardrails.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T14:21:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10633v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.10760v1",
+      "title": "MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction",
+      "authors": [
+        "Zhihao Cao",
+        "Qi Shao",
+        "Shuhao Zhai",
+        "Jing Zhang",
+        "Anh Nguyen",
+        "Baoru Huang"
+      ],
+      "abstract": "Collaborative photorealistic 3D reconstruction from multiple agents enables rapid large-scale scene capture for virtual production and cooperative multi-robot exploration. While recent 3D Gaussian Splatting (3DGS) SLAM algorithms can generate high-fidelity real-time mapping, most of the existing multi-agent Gaussian SLAM methods still rely on RGB-D sensors to obtain metric depth and simplify cross-agent alignment, which limits the deployment on lightweight, low-cost, or power-constrained robotic platforms. To address this challenge, we propose MAGS-SLAM, the first RGB-only multi-agent 3DGS SLAM framework for collaborative scene reconstruction. Each agent independently builds local monocular Gaussian submaps and transmits compact submap summaries rather than raw observations or dense maps. To facilitate robust collaboration in the presence of monocular scale ambiguity, our framework integrates compact submap communication, geometry- and appearance-aware loop verification, and occupancy-aware Gaussian fusion, enabling coherent global reconstruction without active depth sensors. We further introduce ReplicaMultiagent Plus benchmark for evaluating collaborative Gaussian SLAM. Intensive experiments on synthetic and real-world datasets show that MAGS-SLAM achieves competitive tracking accuracy and comparable or superior rendering quality to state-of-the-art RGB-D collaborative Gaussian SLAM methods while relying only RGB images.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-05-11T15:57:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10760v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.10614v1",
+      "title": "PRISM: Generation-Time Detection and Mitigation of Secret Leakage in Multi-Agent LLM Pipelines",
+      "authors": [
+        "Riya Tapwal",
+        "Abhishek Kumar",
+        "Carsten Maple"
+      ],
+      "abstract": "Multi-agent LLM systems introduce a security risk in which sensitive information accessed by one agent can propagate through shared context and reappear in downstream outputs, even without explicit adversarial intent. We formalise this phenomenon as propagation amplification, where leakage risk increases across agent boundaries as sensitive content is repeatedly exposed to downstream generators. Existing defences, including prompt-based safeguards, static pattern matching, and LLM-as-judge filtering, are not designed for this setting: they either operate after generation, rely primarily on surface-form patterns, or add substantial latency without modelling the generation process itself. To resolve these issues, we propose PRISM, a real-time defence that treats credential leakage as a sequential risk accumulation problem during generation. At each decoding step, PRISM combines 16 signals spanning lexical, structural, information-theoretic, behavioural, and contextual features into a calibrated risk score, enabling per-token intervention through green, yellow, and red risk zones. Our central observation is that credential reproduction is often preceded by a measurable shift in generation dynamics, characterised by entropy collapse and increasing logit concentration. When combined with text-structural cues such as identifier-pattern detection, these temporal signals provide an early warning of leakage before a secret is fully reconstructed. Across a 2,000-task adversarial benchmark covering 13 attack categories and three pressure levels in a heterogeneous four-agent pipeline, PRISM achieves F1 = 0.832 with precision = 1.000 and recall = 0.712, while producing no observed leakage on our benchmark (0.0% task-level leak rate) and preserving output utility of 0.893. It substantially outperforms the strongest baseline, Span Tagger, which achieves F1 = 0.719 with a 15.0% task-level leak rate.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T14:11:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10614v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.10195v1",
+      "title": "Breaking the Reward Barrier: Accelerating Tree-of-Thought Reasoning via Speculative Exploration",
+      "authors": [
+        "Shuzhang Zhong",
+        "Haochen Huang",
+        "Shengxuan Qiu",
+        "Pengfei Zuo",
+        "Runsheng Wang",
+        "Meng Li"
+      ],
+      "abstract": "Tree-of-Thought (ToT) reasoning structures Large Language Model (LLM) inference as a tree-based search, demonstrating strong potential for solving complex mathematical and programming tasks. However, its efficiency is constrained by the reward dependency barrier -- a synchronization bottleneck caused by sequential reward-guided exploration that limits search parallelism and introduces substantial latency. Prior system optimizations, mainly designed for linear Chain-of-Thought (CoT) reasoning, cannot address these challenges, leaving the efficiency of ToT underexplored.\n  To enhance ToT reasoning efficiency, we observe that the reasoning paths can be explored speculatively to break the reward synchronization barrier. Therefore, in this paper, we propose SPEX and introduce three key techniques: (i) intra-query speculative path selection to predict and expand high-potential branches of ToT, (ii) inter-query budget allocation to balance speculative resource allocation across queries dynamically, and (iii) adaptive early termination to prune deep and redundant branches for a skewed search tree.\n  We implement SPEX on top of the SGLang framework and evaluate it across diverse ToT algorithms and LLMs. Extensive experiments show that SPEX achieves $1.2 \\sim 3 \\times$ speedup for different ToT reasoning algorithms. Moreover, SPEX synergizes with token-level speculative decoding, achieving cumulative speedups of up to $4.1\\times$. Ablation studies further confirm the contributions of each technique. Overall, SPEX represents a significant step toward efficient and scalable ToT reasoning, unlocking the parallelism required for high-performance inference-time scaling for LLMs.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-05-11T08:45:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10195v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.10155v1",
+      "title": "NyayaAI: An AI-Powered Legal Assistant Using Multi-Agent Architecture and Retrieval-Augmented Generation",
+      "authors": [
+        "Deepanshu",
+        "Divi Saxena",
+        "Deepali Rana",
+        "Ayesha Varshney",
+        "Sahinur Rahman Laskar"
+      ],
+      "abstract": "Legal information in India remains largely inaccessible due to the complexity of legal language and the sheer volume of legal documentation involved in research and case analysis. This paper presents NyayaAI, an AI-powered legal assistant that automates and simplifies legal workflows for lawyers, law students, and general users. The system combines Large Language Models with a Retrieval-Augmented Generation pipeline grounded in a curated Indian legal knowledge base comprising constitutional provisions, statutes, case laws, and judicial precedents. A multi-agent architecture orchestrated through the Mastra TypeScript framework coordinates a main agent with specialized sub-agents handling legal research, document summarization, case law retrieval, and drafting assistance. A compliance module validates all responses before delivery. Domain classification achieved 70\\% precision across test samples, with RAG retrieval precision at 74\\% and overall response accuracy at 72\\%, demonstrating that structured multi-agent LLM systems can meaningfully improve legal accessibility and workflow efficiency. The code\\footnote{https://github.com/B97784/NyayaAI} is made publicly available for the benefit of the research community.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-05-11T08:04:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10155v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.10120v1",
+      "title": "MicroWorld: Empowering Multimodal Large Language Models to Bridge the Microscopic Domain Gap with Multimodal Attribute Graph",
+      "authors": [
+        "Manyu Li",
+        "Ruian He",
+        "Chenxi Ma",
+        "Weimin Tan",
+        "Bo Yan"
+      ],
+      "abstract": "Multimodal large language models (MLLMs) show remarkable potential for scientific reasoning, yet their performance in specialized domains such as microscopy remains limited by the scarcity of domain-specific training data and the difficulty of encoding fine-grained expert knowledge into model parameters. To bridge the gap, we introduce MicroWorld, a framework that constructs a multimodal attributed property graph (MAPG) from large-scale scientific image--caption corpora and leverages it to augment MLLM reasoning at inference time without any domain-specific fine-tuning. MicroWorld extracts biomedical entities and relations via scispaCy or LLM-based triplet mining, aligns images and entities in a shared embedding space using Qwen3-VL-Embedding, and assembles a knowledge graph comprising approximately 111K nodes and 346K typed edges spanning eight relation categories. At inference time, a graph-augmented retrieval pipeline matches query entities to the MAPG and injects structured knowledge context into the MLLM prompt. On the MicroVQA benchmark, MicroWorld improves the reasoning performance of Qwen3-VL-8B-Instruct by 37.5%, outperforming GPT-5 by 13.0% to achieve a new state-of-the-art. Furthermore, it yields a 6.0% performance gain on the MicroBench benchmark. Extensive experiments demonstrate the enhanced generalization capability introduced by MicroWorld. A qualitative case study further reveals both the mechanisms through which structured knowledge improves reasoning and the failure modes that point to promising future directions. Code and data are available at https://github.com/ieellee/MicroWorld.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T07:35:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10120v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.09893v1",
+      "title": "Pseudo-Deliberation in Language Models: When Reasoning Fails to Align Values and Actions",
+      "authors": [
+        "Sushrita Rakshit",
+        "Hanwen Zhang",
+        "Hua Shen"
+      ],
+      "abstract": "Large language models (LLMs) are often evaluated based on their stated values, yet these do not reliably translate into their actions, a discrepancy termed \"value-action gap.\" In this work, we argue that this gap persists even under explicit reasoning, revealing a deeper failure mode we call \"Pseudo-Deliberation\": the appearance of principled reasoning without corresponding behavioral alignment. To study this systematically, we introduce VALDI, a framework for measuring alignment between stated values and generated dialogue. VALDI includes 4,941 human-centered scenarios across five domains, three tasks that elicit value articulation, reasoning, and action, and five metrics for quantifying value adherence. Across both proprietary and open-source LLMs, we observe consistent misalignment between expressed values and downstream dialogues. To investigate intervention strategies, we propose VIVALDI, a multi-agent value auditor that intervenes at different stages of generation.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-11T02:32:53+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.09893v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.10832v1",
+      "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents",
+      "authors": [
+        "Shijue Huang",
+        "Hangyu Guo",
+        "Chenxin Li",
+        "Junting Lu",
+        "Xinyu Geng",
+        "Zhaochen Su",
+        "Zhenyu Li",
+        "Shuang Chen",
+        "Hongru Wang",
+        "Yi R. Fung"
+      ],
+      "abstract": "Multimodal deep search requires an agent to solve open-world problems by chaining search, tool use, and visual reasoning over evolving textual and visual context. Two bottlenecks limit current systems. First, existing tool-use harnesses treat images returned by search, browsing, or transformation as transient outputs, so intermediate visual evidence cannot be re-consumed by later tools. Second, training data is usually built by fixed curation recipes that cannot track the target agent's evolving capability. To address these challenges, we first introduce a visual-native agent harness centered on an image bank reference protocol, which registers every tool-returned image as an addressable reference and makes intermediate visual evidence reusable by later tools. On top of this harness, On-policy Data Evolution (ODE) runs a closed-loop data generator that refines itself across rounds from rollouts of the policy being trained. This per-round refinement makes each round's data target what the current policy still needs to learn. The same framework supports both diverse supervised fine-tuning data and policy-aware reinforcement learning data curation, covering the full training lifecycle of the target agent. Across 8 multimodal deep search benchmarks, ODE improves the Qwen3-VL-8B agent from 24.9% to 39.0% on average, surpassing Gemini-2.5 Pro in standard agent-workflow setting (37.9%). At 30B, ODE raises the average score from 30.6% to 41.5%. Further analyses validate the effectiveness of image-bank reuse, especially on complex tasks requiring iterative visual refinement, while rollout-feedback evolution yields more grounded SFT traces and better policy-matched RL tasks than static synthesis.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-05-11T16:49:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10832v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.10738v1",
+      "title": "Decentralized Contingency MPC based on Safe Sets for Nonlinear Multi-agent Collision Avoidance",
+      "authors": [
+        "Max Studt",
+        "Georg Schildbach"
+      ],
+      "abstract": "Decentralized collision avoidance remains challenging, particularly when agents do not communicate any information related to planned trajectories. Most existing approaches either rely on conservative coordination mechanisms or provide limited guarantees on recursive feasibility and convergence. This paper develops a decentralized contingency MPC framework for multi-agent systems with nonlinear dynamics that achieves collision-free motion under a state-only information pattern. Each agent follows the same consensual rule set, enabling safe decentralized planning without communication. Each agent solves a local optimization problem that couples a nominal trajectory with a contingency certificate ensuring a feasible backup maneuver under receding-horizon operation. A novel geometric and decentralized safe-set update mechanism prevents feasibility loss between consecutive time steps. The resulting scheme guarantees recursive feasibility, including collision avoidance, and establishes a Lyapunov-type convergence result to an admissible safe equilibrium. Simulation results demonstrate performance in both sparse and dense multi-agent environments, including cluttered bottleneck scenarios and under plug-and-play operation.",
+      "categories": [
+        "math.OC",
+        "cs.MA",
+        "cs.RO",
+        "eess.SY"
+      ],
+      "submitted": "2026-05-11T15:40:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.10738v1",
+      "journal_boost": 0,
+      "score": 12
+    }
+  ]
+}
