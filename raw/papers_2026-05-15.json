@@ -1,0 +1,708 @@
+{
+  "date": "2026-05-15",
+  "fetched_at": "2026-05-15T22:46:12.516876+00:00",
+  "stats": {
+    "arxiv_count": 431,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 41,
+      "Science Advances": 73,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 8,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 676,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2605.14266v1",
+      "title": "Agentic AI Ecosystems in Higher Education: A Perspective on AI Agents to Emerging Inclusive, Agentic Multi-Agent AI Framework for Learning, Teaching and Institutional Intelligence",
+      "authors": [
+        "Vidya K Sudarshan",
+        "Anushka Sisodia",
+        "Reshma A Ramachandra",
+        "Sia Batra",
+        "Josephine Chong Leng Leng"
+      ],
+      "abstract": "Integration of artificial intelligent (AI) agents in higher education is transforming teaching, learning and administrative processes. Although existing AI agents effectively support individual tasks, their implementation remains fragmented and inefficient for handling the complexity of educational institutions. This highlights a significant research gap: the lack of integrated eco-system-level agentic multi-agent AI platform capable of coordinated planning, reasoning, and adaptive decision-making across multiple educational functions. This paper presents a forward-looking perspective on agentic multi-agent AI platform in higher education, consisting interconnected autonomous, goal driven agents that support learning, teaching, and institutional operations. It addresses timely and critical questions: Can agentic AI represent the next generation of intelligent systems in tertiary education? Can they collectively support seamless coordinated operations across teaching, learning and administrative support? To what extent can such systems foster inclusive and equitable learning for diverse learners with special educational needs? To ground this perspective, a thematic analysis of existing literature identifies four dominant themes: task-specific fragmented AI tools, the transition from single-agent to multi-agent systems, limited cross-functional integration, and insufficient focus on inclusivity and accessibility. Findings reveal a clear gap between current AI implementations and the needs of holistic, learner-centered educational ecosystem. The paper synthesizes challenges and outlines future research directions for scalable human-aligned, and inclusive agentic AI platform. The significant contribution is the incorporation of inclusive learning perspectives, highlighting how coordinated agentic multi-agent platform can support diverse learners through adaptive, multimodal interventions.",
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "submitted": "2026-05-14T02:11:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14266v1",
+      "journal_boost": 0,
+      "score": 30
+    },
+    {
+      "id": "2605.14892v1",
+      "title": "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems",
+      "authors": [
+        "Shihao Qi",
+        "Jie Ma",
+        "Rui Xing",
+        "Wei Guo",
+        "Xiao Huang",
+        "Zhitao Gao",
+        "Jianhao Deng",
+        "Jun Liu",
+        "Lingling Zhang",
+        "Bifan Wei",
+        "Boqian Yang",
+        "Pinghui Wang",
+        "Jianwen Sun",
+        "Jing Tao",
+        "Yaqiang Wu",
+        "Hui Liu",
+        "Yu Yao",
+        "Tongliang Liu"
+      ],
+      "abstract": "LLM-based autonomous agents have demonstrated strong capabilities in reasoning, planning, and tool use, yet remain limited when tasks require sustained coordination across roles, tools, and environments. Multi-agent systems address this through structured collaboration among specialized agents, but tighter coordination also amplifies a less explored risk: errors can propagate across agents and interaction rounds, producing failures that are difficult to diagnose and rarely translate into structural self-improvement. Existing surveys cover individual agent capabilities, multi-agent collaboration, or agent self-evolution separately, leaving the causal dependencies among them unexamined. This survey provides a unified review organized around four causally linked stages, which we term the LIFE progression: Lay the capability foundation, Integrate agents through collaboration, Find faults through attribution, and Evolve through autonomous self-improvement. For each stage, we provide systematic taxonomies and formally characterize the dependencies between adjacent stages, revealing how each stage both depends on and constrains the next. Beyond synthesizing existing work, we identify open challenges at stage boundaries and propose a cross-stage research agenda for closed-loop multi-agent systems capable of continuously diagnosing failures, reorganizing structures, and refining agent behaviors, extending current coordination frameworks toward more self-organizing forms of collective intelligence. By bridging these previously fragmented research threads, this survey aims to offer both a systematic reference and a conceptual roadmap toward autonomous, self-improving multi-agent intelligence.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T14:36:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14892v1",
+      "journal_boost": 0,
+      "score": 24
+    },
+    {
+      "id": "2605.14537v1",
+      "title": "Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining",
+      "authors": [
+        "Robert Müller",
+        "Clemens Müller"
+      ],
+      "abstract": "We introduce \\textsc{Cattle Trade, a multi-agent benchmark for evaluating large language models (LLMs) as agents in strategic reasoning under imperfect information, adversarial interaction, and resource constraints. The benchmark combines auctions, hidden-offer trade challenges (TCs), bargaining, bluffing, opponent modeling, and resource allocation within a single long-horizon game lasting 50--60 turns. Unlike prior agent benchmarks that test these abilities in isolation, \\textsc{Cattle Trade} evaluates whether agents integrate them across a competitive, multi-agent economic game with conflicting incentives. The benchmark logs every bid, TC offer, counteroffer, and card selection, enabling behavioural analysis beyond final scores or win rates. We evaluate seven cost-efficient language models and three deterministic code agents across 242 games. Strategic coherence, in particular spending efficiency, resource discipline, and phase-adaptive bidding, is associated with rank more strongly than spending volume or any single subskill. Two heuristic code agents outperform most tested LLMs, and behavioural traces surface recurring LLM failure modes including overbidding, self-bidding, bankrupt TC initiation, and weak opponent-state adaptation. Evaluating agentic competence requires benchmarks that test the joint deployment of multiple capabilities in multi-agent environments with conflicting incentives, uncertainty, and economic dynamics.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T08:20:03+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14537v1",
+      "journal_boost": 0,
+      "score": 23
+    },
+    {
+      "id": "2605.15016v1",
+      "title": "COTCAgent: Preventive Consultation via Probabilistic Chain-of-Thought Completion",
+      "authors": [
+        "Zihan Deng",
+        "Xiaozhen Zhong",
+        "Chuanzhi Xu"
+      ],
+      "abstract": "As large language models empower healthcare, intelligent clinical decision support has developed rapidly. Longitudinal electronic health records (EHR) provide essential temporal evidence for accurate clinical diagnosis and analysis. However, current large language models have critical flaws in longitudinal EHR reasoning. First, lacking fine-grained statistical reasoning, they often hallucinate clinical trends and metrics when quantitative evidence is textually implied, biasing diagnostic inference. Second, non-uniform time series and scarce labels in longitudinal EHR hinder models from capturing long-range temporal dependencies, limiting reliable clinical reasoning. To address the above limitations, this work presents the Probabilistic Chain-of-Thought Completion Agent (COTCAgent), a hierarchical reasoning framework for longitudinal electronic health records. It consists of three core modules. The Temporal-Statistics Adapter (TSA) converts analytical plans into executable code for standardized trend output. The Chain-of-Thought Completion (COTC) layer leverages a symptom-trend-disease knowledge base with weighted scoring to evaluate disease risk, while the bounded completion module acquires structured evidence through standardized inquiries and iterative scoring constraints to ensure rigorous reasoning. By decoupling statistical computation, feature matching, and language generation, the framework eliminates reliance on complex multi-modal inputs and enables efficient longitudinal record analysis with lower computational overhead. Experimental results show that COTCAgent powered by Baichuan-M2 achieves 90.47% Top-1 accuracy on the self-built dataset and 70.41% on HealthBench, outperforming existing medical agents and mainstream large language models. The code is available at https://github.com/FrankDengAI/COTCAgent/.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T16:17:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15016v1",
+      "journal_boost": 0,
+      "score": 20
+    },
+    {
+      "id": "2605.15044v1",
+      "title": "SpeakerLLM: A Speaker-Specialized Audio-LLM for Speaker Understanding and Verification Reasoning",
+      "authors": [
+        "KiHyun Nam",
+        "Jungwoo Heo",
+        "Siu Bae",
+        "Ha-Jin Yu",
+        "Joon Son Chung"
+      ],
+      "abstract": "As audio-first agents become increasingly common in physical AI, conversational robots, and screenless wearables, audio large language models (audio-LLMs) must integrate speaker-specific understanding to support user authorization, personalization, and context-aware interaction. This requires modeling who is speaking, how the voice sounds, and how recording conditions affect speaker cues. Conventional speaker verification systems provide strong scalar scores but little linguistic evidence, while current audio-LLMs and speaker-aware language models have limited ability to organize speaker information beyond binary labels or descriptive profiles. We present SpeakerLLM, a speaker-specialized audio-LLM framework that unifies single-utterance speaker profiling, recording-condition understanding, utterance-pair speaker comparison, and evidence-organized verification reasoning within a natural-language interface. We construct verification-reasoning targets and a decision-composition policy that separate profile-level evidence from the final same-or-different decision and organize recording condition, profile evidence, and the decision into a structured trace. At its core, SpeakerLLM uses a hierarchical speaker tokenizer designed to capture multiple granularities of speaker evidence. Utterance-level speaker embeddings summarize identity and profile-level cues, whereas frame-level speaker features preserve fine-grained acoustic descriptors. Experiments show that SpeakerLLM-Base improves speaker-profile and recording-condition understanding over general audio-LLMs, while SpeakerLLM-VR preserves strong generated-verdict accuracy and produces decision traces grounded in the supervised verification reasoning schema. We will release the metadata-enriched supervision dataset and target-construction code for reproducibility.",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM",
+        "eess.AS"
+      ],
+      "submitted": "2026-05-14T16:36:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15044v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2605.14723v1",
+      "title": "Agentifying Patient Dynamics within LLMs through Interacting with Clinical World Model",
+      "authors": [
+        "Minghao Wu",
+        "Yuting Yan",
+        "Zhenyang Cai",
+        "Ke Ji",
+        "Chuangsen Fang",
+        "Ziying Sheng",
+        "Xidong Wang",
+        "Rongsheng Wang",
+        "Hejia Zhang",
+        "Shuang Li",
+        "Benyou Wang",
+        "Hongyuan Zha"
+      ],
+      "abstract": "Sepsis management in the ICU requires sequential treatment decisions under rapidly evolving patient physiology. Although large language models (LLMs) encode broad clinical knowledge and can reason over guidelines, they are not inherently grounded in action-conditioned patient dynamics. We introduce SepsisAgent, a world model-augmented LLM agent for sepsis treatment recommendation. SepsisAgent uses a learned Clinical World Model to simulate patient responses under candidate fluid--vasopressor interventions, and follows a propose--simulate--refine workflow before committing to a prescription. We first show that world-model access alone yields inconsistent LLM decision performance, motivating agent-specific training. We then train SepsisAgent through a three-stage curriculum: patient-dynamics supervised fine-tuning, propose--simulate--refine behavior cloning, and world-model-based agentic reinforcement learning. On MIMIC-IV sepsis trajectories, SepsisAgent outperforms all traditional RL and LLM-based baselines in off-policy value while achieving the best safety profile under guideline adherence and unsafe-action metrics. Further analysis shows that repeated interaction with the Clinical World Model enables the agent to learn regularities in patient evolution, which remain useful even when simulator access is removed.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-05-14T11:50:00+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14723v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2605.14866v1",
+      "title": "Towards In-Depth Root Cause Localization for Microservices with Multi-Agent Recursion-of-Thought",
+      "authors": [
+        "Lingzhe Zhang",
+        "Tong Jia",
+        "Kangjin Wang",
+        "Chiming Duan",
+        "Minghua He",
+        "Rongqian Wang",
+        "Xi Peng",
+        "Meiling Wang",
+        "Gong Zhang",
+        "Renhai Chen",
+        "Ying Li"
+      ],
+      "abstract": "As modern microservice systems grow increasingly complex due to dynamic interactions and evolving runtime environments, they experience failures with rising frequency. Ensuring system reliability therefore critically depends on accurate root cause localization (RCL). While numerous traditional machine learning and deep learning approaches have been explored for this task, they often suffer from limited interpretability and poor transferability across deployments. More recently, large language model (LLM)-based methods have been proposed to address these issues. However, existing LLM-based approaches still face two fundamental limitations: context explosion, which dilutes critical evidence and degrades localization accuracy, and serial reasoning structures, which hinder deep causal exploration and impair inference efficiency. In this paper, we conduct a comprehensive study of both how human SREs perform root cause localization in practice and why existing LLM-based methods fall short. Motivated by these findings, we introduce RCLAgent, an in-depth root cause localization framework for microservice systems that realizes multi-agent recursion-of-thought with parallel reasoning. RCLAgent decomposes the diagnostic process along the trace graph by assigning each span to a Dedicated Agent and organizing agents recursively and in parallel according to the graph topology, with the final diagnosis obtained by synthesizing the Root-Level Diagnosis Report and the Global Evidence Graph. Extensive experiments on multiple public benchmarks demonstrate that RCLAgent consistently outperforms state-of-the-art methods in both localization accuracy and inference efficiency.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T14:13:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14866v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2605.14271v1",
+      "title": "Auditing Agent Harness Safety",
+      "authors": [
+        "Chengzhi Liu",
+        "Yichen Guo",
+        "Yepeng Liu",
+        "Yuzhe Yang",
+        "Qianqi Yan",
+        "Xuandong Zhao",
+        "Wenyue Hua",
+        "Sheng Liu",
+        "Sharon Li",
+        "Yuheng Bu",
+        "Xin Eric Wang"
+      ],
+      "abstract": "LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between specialized components. However, a harness can return a correct, benign answer over a trajectory that accesses unauthorized resources or leaks context to the wrong agent. Output-level evaluation cannot see these failures, yet most safety benchmarks score only final outputs or terminal states, even though many violations occur mid-trajectory rather than at termination. The central question is whether the harness respects user intent, permission boundaries, and information-flow constraints throughout execution. To address this gap, we propose HarnessAudit, a framework that audits full execution trajectories across boundary compliance, execution fidelity, and system stability, with a focus on multi-agent harnesses where these risks are most pronounced. We further introduce HarnessAudit-Bench, a benchmark of 210 tasks across eight real-world domains, instantiated in both single-agent and multi-agent configurations with embedded safety constraints. Evaluating ten harness configurations across frontier models and three multi-agent frameworks, we find that: (i) task completion is misaligned with safe execution, and violations accumulate with trajectory length; (ii) safety risks vary across domains, task types, and agent roles; (iii) most violations concentrate in resource access and inter-agent information transfer; and (iv) multi-agent collaboration expands the safety risk surface, while harness design sets the upper bound of safe deployment.",
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "submitted": "2026-05-14T02:14:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14271v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2605.14205v1",
+      "title": "SimPersona: Learning Discrete Buyer Personas from Raw Clickstreams for Grounded E-Commerce Agents",
+      "authors": [
+        "Zahra Zanjani Foumani",
+        "Alberto Castelo",
+        "Shuang Xie",
+        "Ted Chaiwachirasak",
+        "Han Li",
+        "Lingyun Wang"
+      ],
+      "abstract": "LLM-based web agents can navigate live storefronts, yet they often collapse to a single \"average buyer\" policy, failing to capture the heterogeneous and distributional nature of real buyer populations. Existing personalization methods rely on hand-crafted prompt-based personas that are brittle, difficult to scale, context-inefficient, and unable to faithfully represent population-level behavior. We introduce SimPersona, a novel framework that learns discrete buyer types from historical traffic and exposes them to LLM-based web agents as compact persona tokens. Given raw clickstreams, a behavior-aware VQ-VAE induces a discrete buyer-type space that captures the statistical structure of real buyer behavior and merchant-specific buyer population distributions. To provide behavior-specific guidance to LLM-based web agents, SimPersona maps each learned buyer type to a dedicated persona token in the LLM agent vocabulary and fine-tunes the agent with these tokens on real browsing traces. At inference, each synthetic buyer is assigned to a learned buyer type with a single encoder forward pass, requiring no retraining or store-specific prompt engineering. For population-level simulation, SimPersona samples buyer types from each merchant's empirical distribution over the learned VQ-VAE codebook and instantiates agents with the corresponding persona tokens, preserving merchant-specific buyer population distributions. Evaluated on $8.37$M buyers across $42$ held-out live storefronts, SimPersona achieves $78\\%$ conversion-rate alignment with real buyers, exhibits interpretable behavioral variation across buyer types, and outperforms a baseline with $8\\times$ more parameters on goal-oriented shopping tasks. We further release an open-source data pipeline that converts raw e-commerce event logs into buyer representations and agent-training traces.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T00:01:11+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14205v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2605.15132v1",
+      "title": "APWA: A Distributed Architecture for Parallelizable Agentic Workflows",
+      "authors": [
+        "Evan Rose",
+        "Tushin Mallick",
+        "Matthew D. Laws",
+        "Cristina Nita-Rotaru",
+        "Alina Oprea"
+      ],
+      "abstract": "Autonomous multi-agent systems based on large language models (LLMs) have demonstrated remarkable abilities in independently solving complex tasks in a wide breadth of application domains. However, these systems hit critical reasoning, coordination, and computational scaling bottlenecks as the size and complexity of their tasks grow. These limitations hinder multi-agent systems from achieving high-throughput processing for highly parallelizable tasks, despite the availability of parallel computing and reasoning primitives in the underlying LLMs. We introduce the Agent-Parallel Workload Architecture (APWA), a distributed multi-agent system architecture designed for the efficient processing of heavily parallelizable agentic workloads. APWA facilitates parallel execution by decomposing workflows into non-interfering subproblems that can be processed using independent resources without cross-communication. It supports heterogeneous data and parallel processing patterns, and it accommodates tasks from a wide breadth of domains. In our evaluation, we demonstrate that APWA can dynamically decompose complex queries into parallelizable workflows and scales on larger tasks in settings where prior systems fail completely.",
+      "categories": [
+        "cs.AI",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "submitted": "2026-05-14T17:40:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15132v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2605.14212v1",
+      "title": "MetaAgent-X : Breaking the Ceiling of Automatic Multi-Agent Systems via End-to-End Reinforcement Learning",
+      "authors": [
+        "Yaolun Zhang",
+        "Yujie Zhao",
+        "Nan Wang",
+        "Yiran Wu",
+        "Jiayu Chang",
+        "Yizhao Chen",
+        "Qingyun Wu",
+        "Jishen Zhao",
+        "Huazheng Wang"
+      ],
+      "abstract": "Automatic multi-agent systems aim to instantiate agent workflows without relying on manually designed or fixed orchestration. However, existing automatic MAS approaches remain only partially adaptive: they either perform training-free test-time search or optimize the meta-level designer while keeping downstream execution agents frozen, which creating a frozen-executor ceiling and leaving the end-to-end training of self-designing and self-executing agentic models unexplored. To address this, we introduce MetaAgent-X, an end-to-end reinforcement learning framework that jointly optimizes automatic MAS design and execution. MetaAgent-X enables script-based MAS generation, execution rollout collection, and credit assignment for both designer and executor trajectories. To support stable and scalable optimization, we propose Executor Designer Hierarchical Rollout and Stagewise Co-evolution to improve training stability and expose the dynamics of designer-executor co-evolution. MetaAgent-X consistently outperforms existing automatic MAS baselines, achieving up to 21.7% gains. Comprehensive ablations show that both designer and executor improve throughout training, and that effective automatic MAS learning follows a stagewise co-evolution process. These results establish end-to-end trainable automatic MAS as a practical paradigm for building self-designing and self-executing agentic models.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T00:11:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14212v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2605.15040v1",
+      "title": "Orchard: An Open-Source Agentic Modeling Framework",
+      "authors": [
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Qianhui Wu",
+        "Hao Cheng",
+        "Xiao Yu",
+        "Rui Yang",
+        "Tao Ge",
+        "Alessandrio Sordoni",
+        "Xingdi Yuan",
+        "Yelong Shen",
+        "Pengcheng He",
+        "Tong Zhang",
+        "Zhou Yu",
+        "Jianfeng Gao"
+      ],
+      "abstract": "Agentic modeling aims to transform LLMs into autonomous agents capable of solving complex tasks through planning, reasoning, tool use, and multi-turn interaction with environments. Despite major investment, open research remains constrained by infrastructure and training gaps. Many high-performing systems rely on proprietary codebases, models, or services, while most open-source frameworks focus on orchestration and evaluation rather than scalable agent training. We present Orchard, an open-source framework for scalable agentic modeling. At its core is Orchard Env, a lightweight environment service providing reusable primitives for sandbox lifecycle management across task domains, agent harnesses, and pipeline stages. On top of Orchard Env, we build three agentic modeling recipes. Orchard-SWE targets coding agents. We distill 107K trajectories from MiniMax-M2.5 and Qwen3.5-397B, introduce credit-assignment SFT to learn from productive segments of unresolved trajectories, and apply Balanced Adaptive Rollout for RL. Starting from Qwen3-30B-A3B-Thinking, Orchard-SWE achieves 64.3% on SWE-bench Verified after SFT and 67.5% after SFT+RL, setting a new state of the art among open-source models of comparable size. Orchard-GUI trains a 4B vision-language computer-use agent using only 0.4K distilled trajectories and 2.2K open-ended tasks. It achieves 74.1%, 67.0%, and 64.0% success rates on WebVoyager, Online-Mind2Web, and DeepShop, respectively, making it the strongest open-source model while remaining competitive with proprietary systems. Orchard-Claw targets personal assistant agents. Trained with only 0.2K synthetic tasks, it achieves 59.6% pass@3 on Claw-Eval and 73.9% when paired with a stronger ZeroClaw harness. Collectively, these results show that a lightweight, open, harness-agnostic environment layer enables reusable agentic data, training recipes, and evaluations across domains.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-05-14T16:35:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15040v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.14665v1",
+      "title": "Falkor-IRAC: Graph-Constrained Generation for Verified Legal Reasoning in Indian Judicial AI",
+      "authors": [
+        "Joy Bose"
+      ],
+      "abstract": "Legal reasoning is not semantic similarity search. A court judgment encodes constrained symbolic reasoning: precedent propagation, procedural state transitions, and statute-bound inference. These are properties that vector-based retrieval-augmented generation (RAG) cannot faithfully represent. Hallucinated precedents, outdated statute citations, and unsupported reasoning chains remain persistent failure modes in LLM-based legal AI, with real consequences for access to justice in high-caseload jurisdictions such as India. This paper presents Falkor-IRAC, a graph-constrained generation framework for Indian legal AI that grounds generation in structured reasoning over an IRAC (Issue, Rule, Analysis, Conclusion) knowledge graph. Judgments from the Supreme Court and High Courts of India are ingested as IRAC node structures enriched with procedural state transitions, precedent relationships, and statutory references, stored in FalkorDB for low-latency agentic traversal. At inference time, LLM-generated answers are accepted only if a valid supporting path can be traced through the graph, a check performed by a falsifiability oracle called the Verifier Agent. The system also detects doctrinal conflicts as a first-class output rather than silently resolving them. Falkor-IRAC is evaluated using graph-native metrics: citation grounding accuracy, path validity rate, hallucinated precedent rate, and conflict detection rate. These metrics are argued to be more appropriate for legal reasoning evaluation than BLEU and ROUGE. On a proof-of-concept corpus of 51 Supreme Court judgments, the Verifier Agent correctly validated citations on completed queries and correctly rejected fabricated citations. Evaluation against vector-only RAG baselines is left for future work, as is GPU-accelerated inference to address current timeout rates on CPU hardware.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "submitted": "2026-05-14T10:19:23+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14665v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.14389v1",
+      "title": "Nexus : An Agentic Framework for Time Series Forecasting",
+      "authors": [
+        "Sarkar Snigdha Sarathi Das",
+        "Palash Goyal",
+        "Mihir Parmar",
+        "Nanyun Peng",
+        "Vishy Tirumalashetty",
+        "Chun-Liang Li",
+        "Rui Zhang",
+        "Jinsung Yoon",
+        "Tomas Pfister"
+      ],
+      "abstract": "Time series forecasting is not just numerical extrapolation, but often requires reasoning with unstructured contextual data such as news or events. While specialized Time Series Foundation Models (TSFMs) excel at forecasting based on numerical patterns, they remain unaware to real-world textual signals. Conversely, while LLMs are emerging as zero-shot forecasters, their performance remains uneven across domains and contextual grounding. To bridge this gap, we introduce Nexus, a multi-agent forecasting framework that decomposes prediction into specialized stages: isolating macro-level and micro-level temporal fluctuations, and integrating contextual information when available before synthesizing a final forecast. This decomposition enables Nexus to adapt from seasonal signals to volatile, event-driven information without relying on external statistical anchors or monolithic prompting. We show that current-generation LLMs possess substantially stronger intrinsic forecasting ability than previously recognized, depending critically on how numerical and contextual reasoning are organized. Evaluated on data strictly succeeding LLM knowledge cutoffs spanning Zillow real estate metrics and volatile stock market equities, Nexus consistently matches or outperforms state-of-the-art TSFMs and strong LLM baselines. Beyond numerical accuracy, Nexus produces high-quality reasoning traces that explicitly show the fundamental drivers behind each forecast. Our results establish that real-world forecasting is an agentic reasoning problem extending well beyond only sequence modeling.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-05-14T05:12:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14389v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.14201v1",
+      "title": "MAPLE: Latent Multi-Agent Play for End-to-End Autonomous Driving",
+      "authors": [
+        "Rajeev Yasarla",
+        "Deepti Hegde",
+        "Hsin-Pai Cheng",
+        "Shizhong Han",
+        "Yunxiao Shi",
+        "Meysam Sadeghigooghari",
+        "Hanno Ackermann",
+        "Litian Liu",
+        "Pranav Desai",
+        "Fatih Porikli",
+        "Mohammad Ghavamzadeh",
+        "Hong Cai"
+      ],
+      "abstract": "Vision-language-action (VLA) models are effective as end-to-end motion planners, but can be brittle when evaluated in closed-loop settings due to being trained under traditional imitation learning framework. Existing closed-loop supervision approaches lack scalability and fail to completely model a reactive environment. We propose MAPLE, a novel framework for reactive, multi-agent rollout of a dynamic driving scenario in the latent space of the VLA model. The ego vehicle and nearby traffic agents are independently controlled over multi-step horizons, while being reactive to other agents in the scene, enabling closed-loop training. MAPLE consists of two training stages: (1) supervised fine-tuning on the latent rollouts based on ground-truth trajectories, followed by (2) reinforcement learning with global and agent -specific rewards that encourage safety, progress, and interaction realism. We further propose diversity rewards that encourage the model to generate planning behaviors that may not be present in logged driving data. Notably, our closed-loop training framework is scalable and does not require external simulators, which can be computationally expensive to run and have limited visual fidelity to the real-world. MAPLE achieves state-of-the-art driving performance on Bench2Drive and demonstrates scalable, closed-loop multi-agent play for robust E2E autonomous driving systems.",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "submitted": "2026-05-13T23:35:14+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14201v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2605.15198v1",
+      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
+      "authors": [
+        "Ziyu Guo",
+        "Rain Liu",
+        "Xinyan Chen",
+        "Pheng-Ann Heng"
+      ],
+      "abstract": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete 'word', termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-05-14T17:59:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15198v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.15184v1",
+      "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+      "authors": [
+        "Sahil Sen",
+        "Akhil Kasturi",
+        "Elias Lumer",
+        "Anmol Gulati",
+        "Vamse Kumar Subbiah"
+      ],
+      "abstract": "Recent advances in Large Language Model (LLM) agents have enabled complex agentic workflows where models autonomously retrieve information, call tools, and reason over large corpora to complete tasks on behalf of users. Despite the growing adoption of retrieval-augmented generation (RAG) in agentic search systems, existing literature lacks a systematic comparison of how retrieval strategy choice interacts with agent architecture and tool-calling paradigm. Important practical dimensions, including how tool outputs are presented to the model and how performance changes when searches must cope with more irrelevant surrounding text, remain under-explored in agent loops. This paper reports an empirical study organized into two experiments. Experiment 1 compares grep and vector retrieval on a 116-question sample from LongMemEval, using a custom agent harness (Chronos) and provider-native CLI harnesses (Claude Code, Codex, and Gemini CLI), for both inline tool results and file-based tool results that the model reads separately. Experiment 2 compares grep-only and vector-only retrieval while progressively mixing in additional unrelated conversation history, so that each query is embedded in more distracting material alongside the passages that matter. Across Chronos and the provider CLIs, grep generally yields higher accuracy than vector retrieval in our comparisons in experiment 1; at the same time, overall scores still depend strongly on which harness and tool-calling style is used, even when the underlying conversation data are the same.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-05-14T17:58:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15184v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.14907v1",
+      "title": "KGPFN: Unlocking the Potential of Knowledge Graph Foundation Model via In-Context Learning",
+      "authors": [
+        "Yisen Gao",
+        "Jiaxin Bai",
+        "Haoyu Huang",
+        "Zhongwei Xie",
+        "Yufei Li",
+        "Hong Ting Tsang",
+        "Sirui Han",
+        "Yangqiu Song"
+      ],
+      "abstract": "Knowledge graph (KG) foundation models aim to generalize across graphs with unseen entities and relations by learning transferable relational structure. However, most existing methods primarily emphasize relation-level universality, while in-context learning, the other pillar of foundation models remains under-explored for KG reasoning. In KGs, context is inherently structured and heterogeneous: effective prediction requires conditioning on the local context around the query entities as well as the global context that summarizes how a relation behaves across many instances. We propose KGPFN, a KG foundation model using Prior-data Fitted Network that unifies transferable relational regularities with inference-time in-context learning from structured context. KGPFN first learns relation representations via message passing on relation graphs to capture cross-graph relational invariances. For query-specific reasoning, it encodes local neighborhoods using a multi-layer NBFNet as local context. To enable ICL at global scale, it constructs relation-specific global context by retrieving a large set of instances of the query relation together with their local neighborhoods, and aggregates them within a Prior-Data Fitted Network framework that combines feature-level and sample-level attention. Through multi-graph pretraining on diverse KGs, KGPFN learns when to instantiate reusable patterns and when to override them using contextual evidence. Experiments on 57 KG benchmarks demonstrate that KGPFN achieves strong adaptation to previously unseen graphs through in-context learning alone, consistently outperforming competitive fine-tuned KG foundation models. Our code is available at https://github.com/HKUST-KnowComp/KGPFN.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T14:41:19+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14907v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.14851v1",
+      "title": "IFPV: An Integrated Multi-Agent Framework for Generative Operational Planning and High-Fidelity Plan Verification",
+      "authors": [
+        "Zhigao Huang",
+        "Zhengqing Hu",
+        "Dong Chen",
+        "Shaohan Zhang",
+        "Zhao Jin",
+        "Bo Zhang",
+        "Han Wu",
+        "Mingliang Xu"
+      ],
+      "abstract": "Operational plan generation and verification are critical for modern complex and rapidly changing battlefield environments, yet traditional generation and verification methods still respectively face the challenges of generation infeasibility and verification insufficiency. To alleviate these limitations, we propose an Integrated Multi-Agent Framework for Generative Operational Planning and High-Fidelity Plan Verification (IFPV). IFPV consists of two tightly coupled modules: Multi-Perspective Hierarchical Agents (MPHA) for generative operational planning and an Adversarial Cognitive Simulation Engine (ACSE) for high-fidelity adversarial plan verification. MPHA decomposes commander intent into executable multi-platform tactical action sequences through the collaboration of Pathfinder, Analyst, and Planner agents. ACSE introduces an opponent equipped with a customized world model, which predicts the future evolution of mission-critical platforms and conducts dynamic counteractions against candidate plans. Simulation experiments in the Asymmetric Combat Tactic Simulator (ACTS) show that IFPV improves mission success by 19.4% and reduces operational cost by 41.7% compared with a single-step large language model (LLM) planning baseline. Compared with a traditional rule-based validator, ACSE increases the average suppression rate by 31.8%, indicating that the proposed verification environment is stricter and more discriminative in revealing the latent vulnerabilities of candidate plans. The code for IFPV can be found at https://github.com/zhigao3ks/IFPV.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T13:58:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14851v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.14700v1",
+      "title": "SR-Platform: An Agentic Pipeline for Natural Language-Driven Robot Simulation Environment Synthesis",
+      "authors": [
+        "Ben Wei Lim",
+        "Minh Duc Le",
+        "Thang Truong",
+        "Thanh Nguyen Canh"
+      ],
+      "abstract": "Generating robot simulation environments remains a major bottleneck in simulation-based robot learning. Constructing a training-ready MuJoCo scene typically requires expertise in 3D asset modeling, MJCF specification, spatial layout, collision avoidance, and robot-model integration. We present SR-Platform, a production-deployed agentic system that converts free-form natural language descriptions into executable, physically valid MuJoCo environments. SR-Platform decomposes scene synthesis into four stages: an LLM-based orchestrator that converts user intent into a structured scene plan; an asset forge that retrieves cached assets or generates new 3D geometry through LLM-to-CadQuery synthesis; a layout architect that assigns object poses and verifies industrial constraints; and a bridge layer that assembles the final MJCF scene and merges the selected robot model. The system is deployed as a nine-service Docker stack with WebSocket progress streaming, MinIO-backed mesh storage, Qdrant-based semantic asset retrieval, Redis job state, and InfluxDB telemetry. Using 30 days of production telemetry covering 611 successful LLM calls, SR-Platform generates five-object scenes with a median end-to-end latency of approximately 50 s, while cache-accelerated scenes complete in approximately 30-40 s. The asset forge shows an 11.3% first-attempt retry rate with automatic recovery, and cached asset retrieval removes per-object LLM calls for previously generated object types. These results show that agentic scene synthesis can reduce the manual effort required to create diverse robot training environments, enabling users to produce executable MuJoCo scenes from plain English prompts in under one minute.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-05-14T11:14:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14700v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.14498v1",
+      "title": "GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations",
+      "authors": [
+        "Jingbo Yang",
+        "Kwei-Herng Lai",
+        "Xiaowen Wang",
+        "Shiyu Chang",
+        "Yaar Harari",
+        "Evgeniy Gabrilovich"
+      ],
+      "abstract": "Large Language Model (LLM) agents increasingly serve as personal assistants and workplace collaborators, where their utility depends on memory systems that extract, retrieve, and apply information across long-running conversations. However, both existing memory systems and benchmarks are built around the dyadic, single-user setup, even though real deployments routinely span groups and channels with multiple users interacting with the agent and with each other. This mismatch leaves three properties of group memory unmeasured: (i) group dynamics that go beyond concatenated one-on-one chats, (ii) speaker-grounded belief tracking, where the per-user memory modeling is needed, and (iii) audience-adapted language, where Theory-of-Mind shifts produce role-specific vocabulary. We introduce GroupMemBench, a benchmark that exposes all three. A graph-grounded synthesis pipeline produces multi-party conversations with controllable reply structure and conditions each message on per-user personas and target audiences. An adversarial query pipeline then binds every question to a specific asker across six categories, spanning multi-hop reasoning, knowledge update, term ambiguity, user-implicit reasoning, temporal reasoning, and abstention, and iteratively searches challenging, realistic queries that reflect comprehensive memory capability. Benchmarking leading memory systems exposes a sharp collapse: the strongest one reaches only 46.0% average accuracy, with knowledge update at 27.1% and term ambiguity at 37.7%, while a simple BM25 baseline matches or exceeds most agent memory systems. This indicates current memory ingestion erases the structural and lexical features group memory depends on, leaving multi-user memory far from solved.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-05-14T07:38:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14498v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.14483v1",
+      "title": "LEMON: Learning Executable Multi-Agent Orchestration via Counterfactual Reinforcement Learning",
+      "authors": [
+        "Xudong Chen",
+        "Yixin Liu",
+        "Hua Wei",
+        "Kaize Ding"
+      ],
+      "abstract": "Large language models (LLMs) have become a strong foundation for multi-agent systems, but their effectiveness depends heavily on orchestration design. Across different tasks, role design, capacity assignment, and dependency construction jointly affect both solution quality and execution efficiency. Existing approaches automate parts of this design process, yet they often optimize these decisions partially or sequentially, and rely on execution-level feedback that provides limited credit assignment for local orchestration decisions. We propose LEMON (\\textbf{L}earning \\textbf{E}xecutable \\textbf{M}ulti-agent \\textbf{O}rchestratio\\textbf{N} via Counterfactual Reinforcement Learning), an LLM-based orchestrator that generates an executable orchestration specification. The specification integrates task-specific roles, customized duties, capacity levels, and dependency structure into a single deployable system. To train the orchestrator, we augment the orchestration-level GRPO objective with a localized counterfactual signal that edits role, capacity, or dependency fields and applies the resulting reward contrast only to the edited spans. Experiments on six reasoning and coding benchmarks, including MMLU, GSM8K, AQuA, MultiArith, SVAMP, and HumanEval, show that LEMON achieves state-of-the-art performance among the evaluated multi-agent orchestration methods. Our code is available at https://anonymous.4open.science/r/LEMON-B23C.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T07:24:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14483v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.14398v1",
+      "title": "Coding Agent Is Good As World Simulator",
+      "authors": [
+        "Hongyu Wang",
+        "Jingquan Wang",
+        "Bocheng Zou",
+        "Radu Serban",
+        "Dan Negrut"
+      ],
+      "abstract": "World models have emerged as a powerful paradigm for building interactive simulation environments, with recent video-based approaches demonstrating impressive progress in generating visually plausible dynamics. However, because these models typically infer dynamics from video and represent them in latent states, they do not explicitly enforce physical constraints. As a result, the generated video rollouts are not physically plausible, exhibiting unstable contacts, distorted shapes, or inconsistent motion. In this paper, we present an agentic framework constructing physics-based world models through executable simulation code. The framework coordinates planning, code generation, visual review, and physics analysis agents. The planning agent converts the natural language prompt into a structured scene plan, the code agent implements it as executable simulation code, and the visual review agent provide visual feedback while the physics analysis agent checks physical consistency. The code is iteratively revised based on the feedback until the simulation matches the prompt reqirements and physical constraints. Experimental results show that our framework outperforms advanced video-based models in physical accuracy, instruction fidelity and visual quality, which could be applied to various scenarios including driving simulation and embodied robot tasks.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T05:33:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14398v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2605.15187v1",
+      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+      "authors": [
+        "Matt Zhou",
+        "Ruining Li",
+        "Xiaoyang Lyu",
+        "Zhaomou Song",
+        "Zhening Huang",
+        "Chuanxia Zheng",
+        "Christian Rupprecht",
+        "Andrea Vedaldi",
+        "Shangzhe Wu"
+      ],
+      "abstract": "A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduce the problem of generating an articulated 3D asset to that of writing a program that builds it. We then introduce a new agentic system, Articraft, that writes such programs automatically. We design a programmatic interface and harness to help the LLM do so effectively. The LLM writes code against a domain-specific SDK for defining parts, composing geometry, specifying joints, and writing tests to validate the resulting assets. The harness exposes a restricted workspace and interface to the LLM, validates the resulting assets, and returns structured feedback. In this way, the LLM is not distracted by details such as authoring a URDF file or managing a complex software environment. We show that this produces higher-quality assets than both state-of-the-art articulated-asset generators and general-purpose coding agents. Using Articraft, we build Articraft-10K, a curated dataset of over 10K articulated assets spanning 245 categories, and show its utility both for training models of articulated assets and in downstream applications such as robotics simulation and virtual reality.",
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.RO"
+      ],
+      "submitted": "2026-05-14T17:59:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.15187v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.14786v1",
+      "title": "Known By Their Actions: Fingerprinting LLM Browser Agents via UI Traces",
+      "authors": [
+        "William Lugoloobi",
+        "Samuelle Marro",
+        "Jabez Magomere",
+        "Joss Wright",
+        "Chris Russell"
+      ],
+      "abstract": "As LLM-based agents increasingly browse the web on users' behalf, a natural question arises: can websites passively identify which underlying model powers an agent? Doing so would represent a significant security risk, enabling targeted attacks tailored to known model vulnerabilities. Across 14 frontier LLMs and four web environments spanning information retrieval and shopping tasks, we show that an agent's actions and interaction timings, captured via a passive JavaScript tracker, are sufficient to identify the underlying model with up to 96\\% F1. We formalise this attack surface by demonstrating that classifiers trained on agent actions generalise across model sizes and families. We further show that strong classifiers can be trained from few interaction traces and that agent identity can be inferred early within an episode. Injecting randomised timing delays between actions substantially degrades classifier performance, but does not provide robust protection: a classifier retrained on delayed traces largely recovers performance. We release our harness and a labelled corpus of agent traces \\href{https://github.com/KabakaWilliam/known_actions}{here}.",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "submitted": "2026-05-14T12:55:19+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14786v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.14527v1",
+      "title": "Lang2MLIP: End-to-End Language-to-Machine Learning Interatomic Potential Development with Autonomous Agentic Workflows",
+      "authors": [
+        "Wenwen Li",
+        "Yuki Orimo",
+        "Nontawat Charoenphakdee"
+      ],
+      "abstract": "Developing machine learning interatomic potentials (MLIPs) for complex materials systems remains challenging because it requires expertise in atomistic simulations, machine learning, and workflow design, as well as iterative active learning procedures. Existing automated pipelines typically assume a fixed sequence of stages or depend on domain experts, which limits their adaptability to heterogeneous materials systems where the optimal curriculum is not known in advance. To lower the barrier to developing MLIPs for non-experts, we propose Lang2MLIP, a multi-agent framework that takes natural-language input and formulates end-to-end MLIP development as a sequential decision-making problem solved by large language models (LLMs). At each step, a decision-making agent observes the current dataset, model, evaluation results, and execution log, and then automatically selects an appropriate action to improve the model. This removes the need for a predefined pipeline and enables the agent to self-correct by revisiting earlier subsystems when new failures arise. We evaluate this approach on a solid electrolyte interphase (SEI) system with multiple components and interfaces. These results suggest that LLM-based multi-agent systems are a promising direction for automating MLIP development and making it more accessible to non-experts.",
+      "categories": [
+        "cs.LG",
+        "cond-mat.mtrl-sci",
+        "physics.comp-ph"
+      ],
+      "submitted": "2026-05-14T08:10:42+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14527v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.14457v1",
+      "title": "Stateful Reasoning via Insight Replay",
+      "authors": [
+        "Bin Lei",
+        "Caiwen Ding",
+        "Jiachen Yang",
+        "Ang Li",
+        "Xin Eric Wang"
+      ],
+      "abstract": "Chain-of-Thought (CoT) reasoning has become a foundation for eliciting multi-step reasoning in large language models, but recent studies show that its benefits do not scale monotonically with chain length: while longer CoT generally enables a model to tackle harder problems, on a given problem, accuracy typically increases with CoT length up to a point, after which it declines. We identify a major cause of this phenomenon: as the CoT grows, the model's attention to critical insights produced earlier in the trace gradually weakens, making those insights progressively less accessible when they are most needed. Therefore, we propose \\textbf{InsightReplay}, a stateful reasoning approach in which the model periodically extracts critical insights from its reasoning trace and replays them near the active generation frontier, keeping them accessible as the reasoning scales. Extensive experiments on a $\\mathbf{2}\\!\\times\\!\\mathbf{3}\\!\\times\\!\\mathbf{4}$ benchmark grid, covering model scales $\\{\\text{8B}, \\text{30B}\\}$, model families $\\{\\text{Qwen3.5}, \\text{DeepSeek-R1-Distill-Qwen}, \\text{Gemma-4}\\}$, and reasoning benchmarks $\\{\\text{AIME}, \\text{HMMT}, \\text{GPQA Diamond}, \\text{LiveCodeBench v5}\\}$, show that 3-round InsightReplay yields accuracy gains across \\textbf{all 24 settings}, with an averaged improvement of $\\mathbf{+1.65}$ points over standard CoT, and a largest single-setting gain of $\\mathbf{+9.2}$ points on R1-Distill-32B's LiveCodeBench v5 subset. Our results suggest that the effectiveness of test-time scaling depends not only on how much a model reasons, but also on whether critical intermediate insights remain accessible throughout long reasoning trajectories.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T06:52:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14457v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.14421v1",
+      "title": "MemLineage: Lineage-Guided Enforcement for LLM Agent Memory",
+      "authors": [
+        "Ciyan Ouyang",
+        "Rui Hou"
+      ],
+      "abstract": "We introduce MemLineage, a defense for LLM agent memory that attaches both cryptographic provenance and LLM-mediated derivation lineage to every entry. Recent and concurrent work shows that untrusted content can be written into persistent agent state and re-enter later sessions as an instruction; the remaining systems question is how to preserve useful memory recall while preventing such state from justifying sensitive actions. MemLineage treats this as a chain-of-custody problem rather than a filtering problem. It is a six-module design around an RFC-6962 Merkle log over per-principal Ed25519-signed entries: a weighted derivation DAG records which retrieved entries influenced each new memory, and a max-of-strong-edges propagation rule makes Untrusted-Path Persistence hold for any chain whose attribution edges remain above threshold. The sensitive-action gate then refuses dispatches whose active justification descends from an external ancestor, while still allowing benign recall. We evaluate three defense cells against three memory-poisoning workloads on a deterministic mechanism-isolation harness; MemLineage is the only configuration in that harness that drives all three columns to zero ASR, while sub-millisecond per-operation overhead keeps it well below the noise floor of any LLM call. A Codex-backed AgentDojo bridge further separates strong-model behavior from defense-layer behavior: under an intentionally vulnerable tool-output profile, no-defense and signature-only baselines fail on all six banking pairs, while all MemLineage rows reduce strict AgentDojo ASR to zero. The core deterministic artifacts are byte-equal CI-verified; hosted-model AgentDojo and live-model sweeps are recorded as auditable logs rather than byte-pinned artifacts.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-05-14T06:07:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14421v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.14290v1",
+      "title": "Web Agents Should Adopt the Plan-Then-Execute Paradigm",
+      "authors": [
+        "Julien Piet",
+        "Annabella Chow",
+        "Yiwei Hou",
+        "Muxi Lyu",
+        "Sylvie Venuto",
+        "Jinhao Zhu",
+        "Raluca Ada Popa",
+        "David Wagner"
+      ],
+      "abstract": "ReAct has become the default architecture across LLM agents, and many existing web agents follow this paradigm. We argue that it is the wrong default for web agents. Instead, web agents should default to plan-then-execute: commit to a task-specific program before observing runtime web content, then execute it. The reason is that web content mixes inputs from many parties. An e-commerce product page may combine a seller's listing, customer reviews and sponsored advertisements. Under ReAct, all of this content flows into the model when deciding on the next action, creating a direct path for prompt injections to steer the agent's control flow. Plan-then-execute changes this boundary: untrusted data may influence values or branches inside a predefined execution graph, but it cannot redefine the user task or cause the model to synthesize new actions at runtime. We analyze WebArena, a popular web agent benchmark, and find that all tasks are compatible with plan-then-execute, while 80% can be completed with a purely programmatic plan, without any runtime LLM subroutine. We identify the main barrier to adopting plan-then-execute on the web: For it to work well, tools must map cleanly to semantic actions, with effects known before execution, so agents have enough information to plan. The web does not naturally expose that interface. Browser tools such as click, type, and scroll have page-dependent meanings. Planning at this layer is near-sighted: the agent can only see actions on the current page, and later actions appear only after it acts. Closing this gap requires typed interfaces that turn website interactions from clicks and keystrokes to task-level operations. This is an infrastructure problem, not a modeling problem. Web tasks do not need reactivity by default; they need typed, complete, auditable website APIs.",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "submitted": "2026-05-14T02:48:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14290v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2605.14175v1",
+      "title": "Grounded Continuation: A Linear-Time Runtime Verifier for LLM Conversations",
+      "authors": [
+        "Qisong He",
+        "Yi Dong",
+        "Xiaowei Huang"
+      ],
+      "abstract": "In long conversations, an LLM can produce a next utterance that sounds plausible but rests on premises the conversation has already abandoned. Context-manipulation attacks against deployed agents now actively exploit this gap. We close it with a runtime verifier that maintains an explicit dependency graph: an LLM classifies each turn into one of 8 update operations drawn from four formalisms (dynamic epistemic logic, abductive reasoning, awareness logic, argumentation), and a symbolic engine records which claims depend on which evidence. Checking whether a continuation is supported reduces to a graph walk; retraction propagates through the same graph to flag exactly the conclusions that lose support, with linear per-turn cost and a formal conflict-free guarantee. On LongMemEval-KU oracle (n=78), the verifier reaches 89.7% accuracy vs. 88.5% for the LLM-only baseline (+1.3pp) and 87.2% for a transcript-RAG baseline matched on retrieval budget (+2.6pp); wins among disagreements are correct abstentions where the baseline confabulates. On LoCoMo's 60 official QA items the verifier is competitive with retrieval-augmented baselines. Beyond external benchmarks, we construct two multi-agent scenarios and a 50-item grounding test: on the 15-item stale-premise subset, the verifier reaches 100% accuracy vs. 93.3% (+6.7pp). These instantiate a soundness-faithfulness decomposition: the structural check is sound by construction, and per-deployment LLM extraction faithfulness is the empirical question we measure across four LLM families. The retraction check plateaus at microseconds while history-replay grows linearly with conversation length.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-05-13T22:54:16+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2605.14175v1",
+      "journal_boost": 0,
+      "score": 12
+    }
+  ]
+}
