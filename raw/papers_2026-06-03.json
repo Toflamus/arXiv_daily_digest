@@ -1,0 +1,648 @@
+{
+  "date": "2026-06-03",
+  "fetched_at": "2026-06-03T23:28:17.588645+00:00",
+  "stats": {
+    "arxiv_count": 432,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 38,
+      "Science Advances": 35,
+      "Nature Machine Intelligence": 0,
+      "Nature Computational Science": 8,
+      "Nature Methods": 0,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 8,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 620,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2606.03698v1",
+      "title": "Multi$^2$: Hierarchical Multi-Agent Decision-Making with LLM-Based Agents in Interactive Environments",
+      "authors": [
+        "Sangeun Park",
+        "Minhae Kwon"
+      ],
+      "abstract": "A central goal of large language model (LLM) research is to build agentic systems that can plan, act, and adapt through sustained interaction with dynamic environments. While recent LLM-based agents exhibit impressive contextual reasoning, their long-horizon decision-making remains fragile, often suffering from objective drift, where goals and plans drift over extended interactions. We introduce Multi$^2$, a hierarchical multi-agent decision-making framework that explicitly decomposes agent behavior into complementary roles. A high-level agent (System 1) focuses on context-aware sub-goal generation using supervised fine-tuning (SFT), while a low-level agent (System 2) executes atomic actions through offline-to-online reinforcement learning (RL) in interactive environments. This separation enables stable long-horizon control, mitigates objective drift, and allows efficient adaptation. Across diverse interactive environments, Multi$^2$ consistently outperforms strong agentic baselines, demonstrating improved robustness and coordination in multi-turn interaction. Beyond performance, we introduce and release three hierarchical benchmark datasets, filling a long-standing gap in training and evaluating hierarchical decision-making for LLM-based agents.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-06-02T14:20:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03698v1",
+      "journal_boost": 0,
+      "score": 24
+    },
+    {
+      "id": "2606.03965v1",
+      "title": "Agentic Chain-of-Thought Steering for Efficient and Controllable LLM Reasoning",
+      "authors": [
+        "Yu Xia",
+        "Zhouhang Xie",
+        "Xin Xu",
+        "Byungkyu Kang",
+        "Prarit Lamba",
+        "Xiang Gao",
+        "Julian McAuley"
+      ],
+      "abstract": "Large language models improve final-answer accuracy through extended chain-of-thought reasoning, but often spend tokens inefficiently and offer little inference-time control. Existing efficient reasoning methods control thinking length by shortening, early-stopping, or compressing traces, leaving how the model thinks implicit. In this paper, we propose Agentic Chain-of-Thought Steering (ACTS), which formulates reasoning steering as a Markov decision process where a controller agent adaptively steers a frozen reasoner during inference. At each step, the controller observes the reasoning trace and remaining thinking budget, then issues a steering action consisting of a reasoning strategy and a steering phrase that initiates the next reasoner step. This enables budget-aware strategy control for efficient reasoning while preserving the reasoner's generation continuity. We initialize the controller agent from our constructed synthetic steering trajectories with multi-budget augmentation, and further optimize it via reinforcement learning with budget-conditioned reward shaping. Experiments across multiple benchmarks show that ACTS matches full-thinking performance with substantial token savings, and enables controllable accuracy-efficiency trade-offs across different reasoners and tasks. The code is available at https://github.com/Andree-9/ACTS.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T17:51:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03965v1",
+      "journal_boost": 0,
+      "score": 20
+    },
+    {
+      "id": "2606.03895v1",
+      "title": "Agent libOS: A Library-OS-Inspired Runtime for Long-Running, Capability-Controlled LLM Agents",
+      "authors": [
+        "Yingqi Zhang"
+      ],
+      "abstract": "Large language model (LLM) agents are evolving from request-response assistants into long-running software actors: they maintain state across model calls, fork subtasks, wait for external events, request human authority, generate tools, and perform side effects that must be resumed and audited. This paper presents Agent libOS, a library-OS-inspired runtime substrate for LLM agents. Agent libOS runs above a conventional host operating system; it does not implement hardware drivers, kernel-mode isolation, or a POSIX-compatible operating system. Instead, it treats an agent as an AgentProcess: a schedulable execution subject with process identity, parent-child lineage, lifecycle state, a tool table derived from an AgentImage, typed Object Memory, explicit capabilities, human queues, checkpoints, events, and audit records. Its central design rule is tools are libc-like wrappers; runtime primitives are the authority boundary. Filesystem access, object access, sleeps, human approval, JIT tool registration, and external side effects are checked at primitive boundaries under explicit capabilities and policy.\n  We describe the design, threat model, Python prototype, and safety-oriented evaluation. The current prototype implements async scheduling, namespace-local Object Memory, runtime-integrated human approval, one-shot permission grants, per-process working directories, shell and image-registration primitives, Deno/TypeScript JIT tools over a libOS syscall broker, filesystem/object bridge tools, an injectable Resource Provider Substrate, deterministic demos, real-model smoke scripts, and 123 regression tests at the time of writing. Rather than improving planner accuracy, Agent libOS demonstrates a runtime substrate in which long-running LLM agents can be scheduled, authorized, resumed, and audited without treating tool dispatch as the trust boundary.",
+      "categories": [
+        "cs.OS",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "submitted": "2026-06-02T16:53:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03895v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2606.03782v1",
+      "title": "Reasoning over Grammar: Can Synthetic Linguistic Reasoning Traces Enhance Low-Resource Machine Translation?",
+      "authors": [
+        "Renhao Pei",
+        "Yihong Liu",
+        "Sampo Pyysalo",
+        "Hinrich Schütze",
+        "Shaoxiong Ji"
+      ],
+      "abstract": "Large language models (LLMs) offer a promising approach to machine translation (MT) for extremely low-resource languages by incorporating linguistic resources through in-context learning. However, LLMs often struggle to apply grammatical information effectively during translation. Inspired by recent progress in chain-of-thought reasoning, we investigate whether low-resource MT can benefit from structured intermediate steps of linguistic analysis and grammatical reasoning. We propose a pipeline for automatically generating step-by-step linguistic reasoning traces from Universal Dependencies treebanks, dictionaries, and grammar-rule banks. We evaluate these traces in three settings: in-context learning (ICL), supervised fine-tuning (SFT), and reinforcement fine-tuning (RFT), on Xibe and Chintang as test cases. Our results show that linguistic reasoning traces are most effective as inference-time guidance: in ICL, reliable sentence-specific traces substantially improve translation performance across most models, languages, and metrics. In contrast, using the linguistic reasoning traces as training data yields smaller and less consistent gains, as models learn the trace format but often generate erroneous content. These findings suggest that LLMs can leverage grammatical information for low-resource MT when given reliable linguistic analyses, while learning to generate such analyses remains a major bottleneck.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-02T15:36:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03782v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2606.03629v1",
+      "title": "TSQAgent: Rating Time Series Data Quality via Dedicated Agentic Reasoning",
+      "authors": [
+        "Shunyu Wu",
+        "Dan Li",
+        "Haozheng Ye",
+        "Weibin Feng",
+        "Jian Lou",
+        "Bo Zhang",
+        "Wenjie Feng",
+        "Chenjuan Guo",
+        "See-Kiong Ng"
+      ],
+      "abstract": "Assessing the quality of time series (TS) data is fundamental yet inherently challenging due to the multifaceted nature of quality dimensions. Recently, large language models (LLMs) have emerged as a promising paradigm for TS quality assessment via pairwise comparison and per-dimension evaluation. However, existing approaches rely on manually predefined quality dimensions and purely text-based reasoning, leaving it unknown whether LLMs can identify truly relevant quality dimensions or perform grounded and quantitative quality comparisons. To investigate this, we construct TSQBench, a dedicated benchmark for evaluating LLMs on two progressive capabilities: (i) understanding and identifying relevant quality dimensions, and (ii) performing quality comparison under specific dimensions. Our analysis reveals that current LLMs consistently struggle with both dimension identification and evidence-grounded quality comparison. To address these limitations, we propose TSQAgent, a novel agentic reasoning framework for TS quality rating consisting of three collaborative roles: Perceiver for focused dimension selection, Inspector for dimension-wise quantitative analysis, and Adjudicator that aggregates and refines the final judgment. In particular, we introduce an agentic reasoning strategy that instills the ability to identify and prioritize the most relevant quality dimensions, and further propose an agent workflow equipped with external analytical tools to enable precise quantitative comparisons over selected dimensions. Experiments on both the proposed benchmark and eleven real-world datasets demonstrate that our framework not only substantially improves LLMs' capabilities in quality understanding and quantitative comparison but also effectively translates these improvements into better quality-aware data selection, leading to enhanced downstream performance and data efficiency.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T13:28:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03629v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2606.03137v1",
+      "title": "Think-Before-Speak: From Internal Evaluation to Public Expression in Multi-Agent Social Simulation",
+      "authors": [
+        "Kaiqi Yang",
+        "Tai-Quan Peng",
+        "Sanguk Lee",
+        "Hui Liu"
+      ],
+      "abstract": "LLM-based multi-agent simulation offers a promising way to study social interaction, deliberation, and collective opinion dynamics. However, many existing dialogue simulation frameworks represent interaction mainly as observable turn exchange or aggregated outputs, leaving the internal evaluative processes behind silence, speaking intention, and public expression difficult to examine. We introduce TBS (Think-Before-Speak), an interval-based multi-agent simulation framework that separates agents' private reasoning from public utterance generation. At each interval, all agents update structured internal states based on the shared dialogue history and their own memory. These states include dissonance-related appraisal, perceived opinion climate, perceived isolation risk, response strategy, and willingness to speak. The orchestrator then resolves competing speaking intentions and commits one utterance to the public dialogue, allowing internal evaluation and public interaction to co-evolve over time.\n  We evaluate TBS in simulated town hall discussions on a climate-related policy issue. Results show that TBS produces coherent internal-state traces and that these traces vary systematically across turn-allocation, silence, and memory conditions. Dissonance-related appraisal increases agents' willingness to speak, whereas silence-pressure appraisal decreases it. Once speaking intention is formed, public expression is shaped mainly by turn-allocation rules. These findings suggest that TBS supports mechanism-sensitive social simulation by making the pathway from internal evaluation to public expression observable and analyzable.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T04:26:01+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03137v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2606.03755v1",
+      "title": "LAP: An Agent-to-Instrument Protocol for Autonomous Science",
+      "authors": [
+        "Linwu Zhu",
+        "Liqiang Gao",
+        "Yan Chen",
+        "Dan Zhu",
+        "Jian Huang"
+      ],
+      "abstract": "Autonomous science is moving from demonstration to infrastructure. Large language model agents now plan experiments, and self-driving laboratories execute them. Yet every such system rebuilds the link between the reasoning agent and the physical instrument from scratch, against fragmented vendor SDKs and standards built for deterministic software clients rather than probabilistic, goal-directed agents. Recent agent-interoperability protocols clarify two of the three edges of an agentic ecosystem (Anthropic's Model Context Protocol (MCP) standardizes the agent-to-tool edge, and Google's Agent2Agent (A2A) the agent-to-agent edge), but neither models the agent-to-instrument edge, where operations are stateful, safety-critical, exclusively owned, physically embodied, and produce measurements with units, calibration, and uncertainty. We present the Lab Agent Protocol (LAP), a protocol design that fills this gap. LAP retains A2A's peer-to-peer, discovery-first, task-lifecycle structure and adds four physical-world primitives: (i) the InstrumentCard, a signed capability and physical-limit description; (ii) first-class reservation for exclusive instrument and sample locking; (iii) a safety-fence handshake with operator-confirmation tokens cryptographically bound to a specific task and its parameters, gating hazardous and irreversible operations; and (iv) a MeasurementResult schema that makes every result physically typed (QUDT/UCUM), calibration-anchored, uncertainty-bearing, and reproducible by construction. We specify roles, a six-layer architecture, the JSON-RPC method set, the task and safety state machines, the error model, and cross-laboratory federation, and walk a closed-loop autonomous campaign through the protocol end-to-end. LAP is transport-compatible with the A2A/MCP ecosystem and encapsulates rather than replaces existing device standards such as SiLA 2 and OPC-UA.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T15:03:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03755v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2606.03435v1",
+      "title": "CP-Agent: Context-Aware Multimodal Reasoning for Cellular Morphological Profiling under Chemical Perturbations",
+      "authors": [
+        "Yuxin Zhang",
+        "Yiyao Li",
+        "Ping Shu Ho",
+        "Simon See",
+        "Zhenqin Wu",
+        "Kevin Tsia"
+      ],
+      "abstract": "Cell Painting combines multiplexed fluorescent staining, high-content imaging, and quantitative analysis to generate high-dimensional phenotypic readouts to support diverse downstream tasks such as mechanism-of-action (MoA) inference, toxicity prediction, and construction of drug-disease atlases. However, existing workflows are slow, costly and difficult to interpret. Approaches for drug screening modeling predominantly focus on molecular representation learning, while neglecting actual experimental context (e.g., cell line, dosing schedule, etc.), limiting generalization and MoA resolution. We introduce CP-Agent, an agentic multimodal large language model (MLLM) capable of generating mechanism-relevant, human-interpretable rationales for cell morphological changes under drug perturbations. At its core, CP-Agent leverages a context-aware alignment module, CP-CLIP, that jointly embeds high-content images and experimental metadata to enable robust treatment and MoA discrimination (achieving a maximum F1-score of 0.896). By integrating CP-CLIP outputs with agentic tool usage and reasoning, CP-Agent compiles rationales into a structured report to guide experimental design and hypothesis refinement. These capabilities highlight CP-Agent's potential to accelerate drug discovery by enabling more interpretable, scalable, and context-aware phenotypic screening -- streamlining iterative cycles of hypothesis generation in drug discovery.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T10:20:00+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03435v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.03236v1",
+      "title": "Perceive Before Reasoning: A Pre-Reasoning Perception Framework for Efficient and Reliable Proactive Mobile Agents",
+      "authors": [
+        "Zhijie Ding",
+        "Weinan Hong",
+        "Zicheng Zhu",
+        "Lei Li",
+        "Dezhi Kong",
+        "Hao Wang",
+        "Peng Zhou",
+        "Xuchu Jiang",
+        "Jiaming Xu"
+      ],
+      "abstract": "Multimodal large language models (MLLMs) have substantially advanced mobile agents, yet proactive mobile assistance remains challenging because agents must decide \\emph{when} to intervene before determining \\emph{how} to assist. Existing systems often implement these two decisions within a unified MLLM-based pipeline, leading to goal misalignment between conservative intervention filtering and comprehensive assistance generation, as well as redundant inference when the agent should remain silent. To address these limitations, we propose the \\textbf{Pre-Reasoning Perception Framework (PRPF)}, a two-stage framework built on perceiving before reasoning. PRPF introduces a lightweight Multimodal Proactive Perceptor (MPP) for intervention gating and context compression, and activates the Proactive Agent Reasoner (PAR) only when intervention is warranted. Experiments on the ProactiveMobile benchmark show that PRPF substantially reduces false trigger rates (FTR) while improving success rates (SR) and inference efficiency over the ProactiveMobile baseline.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T06:54:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03236v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2606.03032v1",
+      "title": "The Deliberative Illusion: Diagnosing Factual Attrition and Stance Homogenization in Multi-Agent LLM Deliberation",
+      "authors": [
+        "Herun Wan",
+        "Jiaying Wu",
+        "Minnan Luo",
+        "Fanxiao Li",
+        "Ningnan Wang",
+        "Nancy F. Chen",
+        "Min-Yen Kan"
+      ],
+      "abstract": "Multi-agent LLM systems often treat consensus as evidence of successful interaction. For deliberative problems, however, reliability depends on whether agents preserve the facts and viewpoints needed to interpret an issue. We identify the deliberative illusion: discussion produces (1) factual attrition, the progressive loss of issue-critical facts, alongside (2) stance homogenization, the collapse of diverse positions toward consensus. To measure this process, we introduce DelibTrace, a framework that decomposes each issue into atomic facts, labels issue-critical ones, distributes them across agents, and tracks their survival across discussion rounds. Across ethical and news-based deliberation with three representative LLM families, multi-agent discussion erases up to 72% of issue-critical facts. This loss is consequential: retained evidence can reconstruct the issue misleadingly, final stances remain anchored in base-model priors, and a single malicious agent can inject misinformation into the shrinking shared context. These results reveal a sharper risk: agents can agree more while knowing less. We call for evaluations that measure which facts, uncertainties, and legitimate disagreements survive interaction.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-02T02:15:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03032v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2606.03157v1",
+      "title": "ClinicalMC: A Benchmark for Multi-Course Clinical Decision-Making with Large Language Models",
+      "authors": [
+        "Ruihui Hou",
+        "Siyi Zhu",
+        "Ziyue Huai",
+        "Guangya Yu",
+        "Yongqi Fan",
+        "Chunming Wang",
+        "Tong Ruan"
+      ],
+      "abstract": "Large language models (LLMs) have been widely adopted in healthcare, yet they still encounter significant challenges in complex clinical decision-making scenarios. Existing benchmarks primarily assess LLM performance in single-course settings and lack systematic evaluation in multi-course scenarios, where a patient's condition evolves over time. To address this gap, we propose ClinicalMC, a benchmark for multi-course clinical decision-making. It includes 1,275 Chinese and 5,804 English samples across four stages from admission to discharge. These stages cover triage, first-course examination/diagnosis/treatment, subsequent multi-course examination/assessment/treatment, and final diagnosis. In ClinicalMC, patients in the English dataset undergo an average of 5.11 clinical courses, whereas those in the Chinese dataset undergo 3.42. To assess LLM performance, we construct a multi-agent evaluation framework that includes patient, examiner, and doctor agents. Based on the benchmark and framework, we design two experimental settings -- a single-turn static setting and a multi-turn dynamic setting -- and assess three categories of LLMs: 1) closed-source LLMs like GPT5-mini; 2) open-source LLMs like DeepSeek-V3.2; and 3) medical LLMs like HuatuoGPT-o1. Through extensive evaluation, we aim to better understand LLM performance in the medical domain and support its effective deployment in healthcare.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T05:09:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03157v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.03374v1",
+      "title": "eMEM: A Hybrid Spatio-Temporal Memory System For Embodied Agents",
+      "authors": [
+        "A. Haroon Rasheed",
+        "Maria Kabtoul"
+      ],
+      "abstract": "We present eMEM (Embodied Memory), a hybrid graph-based memory system for embodied agents operating in physical environments. Current agent memory architectures, such as Generative Agents, MemGPT, and A-MEM, treat memory as text streams or knowledge graphs, but embodied agents require memory that is simultaneously searchable by meaning, space, and time. eMEM fills this gap with a multi-index architecture (SQL ITE for structured storage, hnswlib for approximate nearest neighbour semantic search, and an R-tree for spatial queries) unified behind a single graph model. A tiered consolidation pipeline transforms raw perceptual observations into compressed summaries, mirroring hippocampal-neocortical consolidation in biological systems. Ten agent-facing recall tools expose memory retrieval primitives, including concept-to-location resolution and cross layer recall, as first-class operations for LLM tool calling. The system is fully embedded and runs in-process alongside the agent. In addition we introduce eMEM-Bench v1, a benchmark we construct over ProcTHOR-10K scenes for embodied memory evaluation. The benchmark is organised explicitly around eight cognitive-psychology paradigms (DRM lures, pattern separation, pattern completion, source monitoring, context-dependent retrieval, long-horizon interference, serial position, and a foil augmented retention curve), each chosen so that the result is interpretable against the broader memory-systems literature in humans and prior agent-memory systems; a level of diagnostic that surface-task benchmarks like LoCoMo or OpenEQA cannot provide. eMEM scores 80.8 weighted mean over 988 probes, with a flat retention curve at ceiling from 1 h to 1 yr of simulated delay on room-unique items. We show that a pure RAG baseline (the flat_rag ablation) loses 30 pt on context dependent retrieval and 29 pt on DRM lure rejection, isolating the contribution of multi-layer storage and consolidation respectively. We release both the system and the benchmark code.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-06-02T09:22:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03374v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.03217v1",
+      "title": "An Asymptotic Theory of Chain-of-Thought in In-Context Learning",
+      "authors": [
+        "Kaito Takanami",
+        "Cengiz Pehlevan"
+      ],
+      "abstract": "Chain-of-thought (CoT) reasoning has become a widely used mechanism for eliciting multi-step reasoning in large language models by generating intermediate reasoning steps at inference time. Yet the scaling behavior of generalization with CoT depth remains poorly understood. To address this question, we study a theoretically solvable model of CoT for in-context weight prediction in linear regression, where test-time reasoning is represented as an iterative refinement of the weight-parameter estimate. Using tools from random matrix theory under high-dimensional asymptotics, we derive an exact formula for the generalization error as a function of reasoning depth, pretraining data amount, and context length. Our analysis reveals a sharp phase transition separating exponential and polynomial improvement, saturation, and overthinking, and characterizes how the optimal reasoning depth scales. We further show that deeper reasoning is most effective with sufficiently rich pretraining and in-context information, whereas limited pretraining or context makes longer reasoning prone to error amplification or saturation. We also validate these predictions through experiments on fully learned linear attention and softmax attention models. Our results provide a unified theoretical account of how test-time CoT depth affects generalization.",
+      "categories": [
+        "stat.ML",
+        "cond-mat.dis-nn",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-02T06:23:31+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03217v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.03034v1",
+      "title": "Capability Advertisement as a Market for Lemons: A Trust Layer for Heterogeneous Agent Networks",
+      "authors": [
+        "Gaurav Naresh Mittal"
+      ],
+      "abstract": "Large language model (LLM) agents have begun to delegate work to one another. Protocols such as the Model Context Protocol (MCP) and the Agent2Agent protocol (A2A) let an agent publish what it can do and let others call it, and public registries of such agents are already appearing. These protocols assume an advertised capability is a static, truthful fact. A real agent is none of these things: its competence is probabilistic, varies with input, drifts when the underlying model is updated, and, because the agent is itself a language model, it can describe itself with complete confidence and be wrong. A caller therefore sees what an agent claims to do, not what it can do, with no principled way to tell a reliable provider from a fluent impostor.\n  We argue these difficulties share one cause: the market for lemons. When quality is hidden and claims are cheap, good and bad providers become indistinguishable, honest reliability goes unrewarded, and the market decays toward its worst participants. Economics offers three remedies, signaling, screening, and reputation, and none are present in today's agent protocols.\n  We make four contributions: (1) a failure taxonomy that names confident-wrong as a non-adversarial, correlated subclass of Byzantine faults that classical fault-tolerance mismodels; (2) a market-for-lemons model showing that faith-based protocols admit only a low-trust equilibrium; (3) the Trust Layer, a thin, protocol-agnostic narrow waist above MCP and A2A that adds probabilistic capability descriptors, screening, and reputation, and admits a separating equilibrium when the cost of sustaining an overclaim exceeds the gain from it; and (4) a reliability-composition bound for delegation chains with an end-to-end placement argument. The design needs no model retraining and degrades gracefully when its trust anchors are absent or corrupt.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T02:17:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03034v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.02963v1",
+      "title": "KForge: LLM-Driven Cross-Platform Kernel Generation for AI Accelerators",
+      "authors": [
+        "Taras Sereda",
+        "Burak Bartan",
+        "Ankita Nayak",
+        "Tom St. John",
+        "Natalie Serrino",
+        "Zain Asgar"
+      ],
+      "abstract": "Production inference increasingly targets a heterogeneous mix of accelerators. Agentic pipelines interleave reasoning, tool calls, and multi-agent coordination, each with distinct compute and memory profiles. For optimal efficiency, each stage should run on the accelerator best suited to it. This creates a systems challenge: each pipeline now requires high-performance kernels across a growing set of hardware backends and programming models. Writing these kernels by hand is time-consuming, demands deep low-level expertise, and does not scale as kernel complexity grows. Recently, Large Language Models (LLMs) have been leveraged for automatic kernel generation, but challenges in low-level code generation and cross-backend generalization persist. We present KForge, a cross-platform framework built around an iterative refinement loop driven by two collaborating LLM-based agents: a generation agent that produces and progressively refines kernels using compilation and correctness feedback, and a performance-analysis agent that interprets profiling data, from programmatic APIs to GUI-based tools, and emits recommendations that steer the next round of synthesis. The loop alternates between functional passes, which drive a candidate to correctness, and optimization passes, which close the performance gap to hand-tuned baselines. We evaluate KForge on two backends with very different baseline reference availability. On NVIDIA B200, KForge achieves a 2.12$\\%$ improvement in end-to-end throughput compared to TensorRT-LLM on the gpt-oss-20b inference speed benchmark. On Intel Arc B580, KForge generates Triton kernels achieving a 5.13$\\times$ geometric mean speedup over the faster of PyTorch eager and torch.compile on 37 GEMM + tail-ops workloads from KernelBench Level 2, primarily via operator fusion and mixed-precision execution.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-06-01T23:48:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.02963v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.03866v1",
+      "title": "Taiji: Pareto Optimal Policy Optimization with Semantics-IDs Trade-off for Industrial LLM-Enhanced Recommendation",
+      "authors": [
+        "Yuecheng Li",
+        "Zeyu Song",
+        "Jing Yao",
+        "Chi Lu",
+        "Peng Jiang",
+        "Kun Gai"
+      ],
+      "abstract": "Scaling recommender systems via large language models (LLMs) has become a prominent trend in the industry. However, aligning the LLM's semantic space with the recommender's ID space via post-training (e.g., SFT and RL) remains challenging. Existing LLM4Rec paradigms are bottlenecked by two main issues: (1) the difficulty of measuring and improving chain-of-thought (CoT) quality in open-domain recommendation during SFT, and (2) the neglect of the trade-off between LLM semantic rewards and recommendation preference rewards during RL alignment. Inspired by these challenges, we present Taiji, a novel LLM-as-Enhancer framework designed for industrial recommender systems. To overcome the SFT bottleneck, we utilize reverse-engineered reasoning and open-ended rejection sampling to generate high-quality, domain-specific CoT data. To resolve the RL alignment issue, we propose Pareto Optimal Policy Optimization (POPO), which adaptively adjusts cross-domain reward weights. Theoretically, it achieves an optimal trade-off between the semantic world knowledge of LLMs and the collaborative ID features representing online user preferences. Extensive offline evaluations and online A/B tests validate the effectiveness of Taiji. Deployed on Kuaishou's advertising platform since May 2026, Taiji currently serves over 400 million users daily, yielding significant commercial revenue and demonstrating its robust scalability in web-scale environments.",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-02T16:39:06+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03866v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03770v1",
+      "title": "E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments",
+      "authors": [
+        "Truong-Thanh Le",
+        "Amir Taherkordi",
+        "Hoang-Loc La",
+        "Frank Eliassen",
+        "Phuong Hoai Ha",
+        "Peiyuan Guan"
+      ],
+      "abstract": "Large Language Models (LLMs) have become integral to modern applications, yet their deployment remains challenging. Beyond executing the models themselves, practical deployment must address cost efficiency, low latency, and optimal resource utilization. Conventional approaches typically assume that an entire model can be hosted on a single device, which does not hold in many real-world scenarios, particularly in Edge and Fog environments where device resources are constrained. In this paper, we introduce E2LLM, a framework designed to enable efficient LLM deployment in such resource limited settings. Rather than simply partitioning a single model across all available devices, E2LLM replicates the full model across multiple groups of devices (replicas) and applies model parallelism within each replica. Each replica is assigned a specialized role PREFILL or DECODER based on its efficiency in handling input and output tokens. This separation leverages the inherent differences between these two phases of LLM inference. To effectively organize devices, we utilize a Genetic Algorithm to form clusters that maximize system performance. Within each cluster, we apply Dynamic Programming to determine an optimal partitioning strategy that minimizes bottlenecks in model-parallel execution. Experimental results demonstrate that our approach adapts robustly to varying workloads, including scenarios with significant variation in input and output token lengths. Compared to the Splitwise baseline, E2LLM reduces average waiting time by over 50% under high-demand conditions",
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T15:23:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03770v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03685v1",
+      "title": "A Close Look At World Model Recovery In Supervised Fine-Tuned LLM Planners",
+      "authors": [
+        "Patrick Emami",
+        "Nan Qiang",
+        "Peter Graf"
+      ],
+      "abstract": "Supervised fine-tuning (SFT) improves end-to-end classical planning in large language models (LLMs), but do these models also learn to represent and reason about the planning problems they are solving? Due to the relative complexity of classical planning problems and the challenge that end-to-end plan generation poses for LLMs, it has been difficult to explore this question. In our work, we devise and perform a series of interpretability experiments that holistically interrogate world model recovery by examining both internal representations and generative capabilities of fine-tuned LLMs. We find that: a) Supervised fine-tuning on valid action sequences enables LLMs to linearly encode action validity and some state predicates. b) Models that struggle to use output probabilities for classifying action validity may still learn internal representations that separate valid from invalid actions. c) Broader state space coverage during fine-tuning, such as from random walk data, yields more accurate recovery of the underlying world model. In summary, this work contributes a recipe for applying interpretability techniques to planning LLMs and generates insights that shed light on open questions about how knowledge is represented in LLMs.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T14:09:16+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03685v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03544v1",
+      "title": "SAGE: A Quantitative Evaluation of Socialized Evolution in Agent Ecosystems",
+      "authors": [
+        "Linyue Pan",
+        "Yaoming Zhu",
+        "Lin Qiu",
+        "Xuezhi Cao",
+        "Xunliang Cai"
+      ],
+      "abstract": "Self-improving language agents are typically evaluated in isolation: an agent attempts a task, receives feedback, and iteratively refines its own behavior. Yet agents increasingly operate alongside peers whose strategies and outcomes are publicly visible. This raises an under-studied question: when does shared experience produce improvements that self-improvement alone cannot achieve? We introduce SAGE (Social Agent Group Evolution),an evaluation framework that compares two compute-matched conditions: SocialEvo, where agents from five distinct model families co-evolve with access to all peers' histories; and SelfEvo, where each agent receives the same number of task attempts but sees only its own past, which is conventional in self-improving agent studies. We instantiate SAGE in three arenas: open-ended ML research, long-horizon economic planning, and strategic multiplayer play, evaluated across multiple evolutionary rounds. We find that group history is not a universal amplifier: the strongest agent does not exceed its self-evolution ceiling. However, agents that plateau under self-improvement can achieve significant breakthroughs when peer experience is available. In competitive settings, counterfactual controls reveal that agents improve generally rather than developing opponent-specific strategies. Across different forms of shared history, filtered peer traces and reflective summaries often outperform raw logs, indicating that social gains depend on abstraction rather than exposure volume. These findings reveal that peer-history gains are agent-specific, arena-dependent, and contingent on the capacity to abstract transferable knowledge from public traces.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-02T12:08:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03544v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03467v1",
+      "title": "StepFinder: A Temporal Semantic Framework for Failure Attribution in Multi-Agent Systems",
+      "authors": [
+        "Taiyu Zhu",
+        "Yifan Wu",
+        "Weilin Jin",
+        "Ying Li",
+        "Gang Huang"
+      ],
+      "abstract": "LLM-based multi-agent systems exhibit remarkable collaborative capabilities in complex multi-step tasks. However, these systems are highly sensitive to single-step execution errors that can propagate through agent interactions and lead to cascading failures. To understand the causes of failure and improve system reliability, failure attribution has been introduced as a task that aims to automatically identify the root cause step responsible for a failure. Existing failure attribution methods mainly rely on LLMs to reason over original execution trajectories, which not only incur high inference costs and latency, but also suffer from interference caused by redundant and noisy execution logs, causing LLMs to struggle in accurately identifying the true root cause step. To address this, we propose StepFinder, a lightweight failure attribution framework. We use LLMs solely during the feature construction phase to encode execution logs into temporal semantic sequences. Subsequently, a parameter-efficient combination of temporal modeling and attention modules is applied to capture the sequential evolution and cross-step dependencies of the trajectories. Finally, the step-level error score is refined through multi-scale differences and position bias, enabling precise root cause identification. Experimental results on the Who&When benchmark demonstrate that StepFinder outperforms LLM-based methods in step-level failure attribution while achieving substantially higher inference efficiency, reducing inference time by 79% compared with the fastest LLM-based method, with no text generation overhead. Our code is available at https://github.com/taiyu-zhu/StepFinder.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T10:45:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03467v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03303v1",
+      "title": "LEAP: Supercharging LLMs for Formal Mathematics with Agentic Frameworks",
+      "authors": [
+        "Po-Nien Kung",
+        "Linfeng Song",
+        "Dawsen Hwang",
+        "Jinsung Yoon",
+        "Chun-Liang Li",
+        "Simone Severini",
+        "Mirek Olšák",
+        "Edward Lockhart",
+        "Quoc V Le",
+        "Burak Gokturk",
+        "Thang Luong",
+        "Tomas Pfister",
+        "Nanyun Peng"
+      ],
+      "abstract": "Large Language Models (LLMs) exhibit strong informal mathematical reasoning but struggle to generate mechanically verifiable proofs in formal languages like Lean. We present LEAP, an agentic framework that enables general-purpose foundation models to achieve state-of-the-art performance on automated formal theorem proving. LEAP leverages foundation model capabilities, such as informal reasoning, instruction following, and iterative self-refinement. By decomposing complex problems into smaller units, the system bridges formal proof construction with informal blueprints through continuous interaction with the Lean compiler. To provide a rigorous evaluation beyond increasingly saturated benchmarks, we introduce Lean-IMO-Bench, a benchmark of IMO-style problems formalized in Lean, with short statements yet highly non-routine and multi-step proofs across a wide range of difficulty levels. Empirically, on the latest 2025 Putnam Competition, an annual mathematics competition for undergraduate students in North America, LEAP solves all 12 problems, matching recent breakthroughs by frontier formal mathematical models. On Lean-IMO-Bench, LEAP boosts the one-shot formal solve rate of general-purpose LLMs from below 10% to 70%, notably surpassing the 48% benchmark set by a specialized, gold-medal-caliber IMO system. Furthermore, we demonstrate LEAP's research-level utility by autonomously formalizing complex proofs for open combinatorial challenges, including a verified proof for a key subproblem in Knuth's Hamiltonian decomposition of even-order Cayley graphs.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T08:16:42+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03303v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03144v1",
+      "title": "GTBench: A Curriculum-Grounded Benchmark for Evaluating LLMs as Mathematical Research Assistants in Graph Theory",
+      "authors": [
+        "Noujoud Nader",
+        "Ibrahem Aljabea",
+        "Patrick Diehl",
+        "Deepti Gupta"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used as self-study assistants in technical disciplines, yet their reliability as mathematical reasoning assistants remains poorly understood. We introduce GTBench, a curriculum-grounded benchmark for evaluating LLMs as mathematical research assistants in graph theory, comprising 63 problems organized into three groups of increasing difficulty: undergraduate definitions and basic properties (Group 1), algorithm tracing and structural reasoning (Group 2), and graduate-level proof construction (Group 3). Problems are sourced from verified academic materials including Diestel's Graph Theory. We evaluate five frontier models -- GPT-5, Claude Sonnet 4.6, Gemini 2.5 Flash-Lite, Llama 3.3 70B, and Mistral Large 3 -- under zero-shot and chain-of-thought prompting, using exact-match and LLM-as-judge evaluation for Groups 1 and 2, and a hybrid human expert and LLM-as-judge protocol for Group 3. Our results reveal a pronounced performance hierarchy: GPT-5 approaches ceiling on Group 1 (95.8% zero-shot) and maintains meaningful accuracy on graduate proofs (82%), while all other models degrade substantially with difficulty, with Llama achieving 0% under human evaluation on Group 3 zero-shot. Failure mode analysis shows that correct algorithm, wrong execution errors dominate Groups 1 and 2, while Group 3 additionally surfaces incomplete reasoning failures and reveals systematic disagreement between human evaluators and the automated judge, particularly on verbose or near-complete proofs (kappa = 0.48-0.83 across human pairs). GTBench provides the first curriculum-grounded evaluation framework for graph-theoretic reasoning in LLMs, with direct implications for the governance of AI tools in mathematical education and scientific research.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T04:40:25+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03144v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03099v1",
+      "title": "PhotoCraft: Agentic Reasoning with Hierarchical Self-Evolving Memory for Deep Image Search",
+      "authors": [
+        "Kailin Lyu",
+        "Zhiqiang Yuan",
+        "Jianwei He",
+        "Qiwei Yan",
+        "Xuanbo Su",
+        "Nanxing Hu",
+        "Yang Liu",
+        "Ce Hao",
+        "Shengqian Qin",
+        "Lianyu Hu",
+        "Jinchao Zhang",
+        "Jie Zhou"
+      ],
+      "abstract": "Deep Image Search requires multi-step reasoning over rich contextual cues, such as time, location, and event relations. However, most existing LLM-based agents are stateless and reactive, lacking persistent memory to maintain long-horizon context or transfer experience across tasks, which often leads to execution drift and experience isolation. To address these limitations, we propose PhotoCraft, a training-free, hierarchical memory system for photo-search agents. Inspired by human cognition, PhotoCraft equips MLLMs with working, episodic, and semantic memory, which are dynamically invoked during reasoning to preserve logical consistency and knowledge transferability throughout multi-step reasoning and answer generation. Extensive experiments on DISBench demonstrate that PhotoCraft consistently improves context-aware retrieval across diverse MLLM backbones, achieving gains of up to 18.5\\% and effectively mitigating key bottlenecks in memoryless deep image search, offering a practical path toward reliable and generalizable multimodal search agents.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T03:38:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03099v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03043v1",
+      "title": "The Geometry of LLM-as-Judge: Why Inter-LLM Consensus Is Not Human Alignment",
+      "authors": [
+        "Sourabrata Mukherjee",
+        "Hamna Hamna",
+        "Kalika Bali",
+        "Sunayana Sitaram"
+      ],
+      "abstract": "LMs-as-judges are now standard, yet judges agree strongly with one another while agreeing only weakly with humans. We test whether this reflects shared signal or shared bias by measuring four geometric quantities on the standard LLM-as-judge stack across four community-built Indic datasets, eight Indic languages, and 41 LLM judges: score spread, effective rank, principal angle to the human subspace, and stacked correlations among judges and humans, all with bootstrap confidence intervals.\n  On subjective rubrics, judges use less than half the human score range ($σ_J / σ_H \\approx 0.3$--$0.5$). Their evaluation axis is nearly orthogonal to the human one and noticeably further from humans than humans are from each other ($87^\\circ$--$89^\\circ$ versus $78^\\circ$--$81^\\circ$). Inter-LLM agreement exceeds LLM--human agreement ($r_{LL} \\approx 0.35$ versus $r_{LH} \\approx 0.27$--$0.32$).\n  On a rubric with a verifiable factual answer, the same diagnostics fall back into the human range (axis $58.5^\\circ$; $r_{LH} = 0.519$). Fine-tuning and preference optimization recover spread ($0.32 \\rightarrow 1.08$) but barely move the axis (still $87^\\circ$--$88^\\circ$). Only post-hoc calibration on a small human-anchored set improves all four community-health rubrics together, placing a calibrated 24B Indic judge ($r = 0.184$) ahead of GPT-5.5 ($r = 0.123$), yet still short of human reliability (human-human $r = 0.474$ on the verifiable rubric).\n  We argue that inter-LLM agreement should be considered evidence of human alignment only when a direct geometric check on the judge's score subspace passes; otherwise, the consensus reflects agreement within a collapsed subspace.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-02T02:26:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03043v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03005v1",
+      "title": "MUSE: A Unified Agentic Harness for MLLMs",
+      "authors": [
+        "Jianglin Lu",
+        "Hailing Wang",
+        "Xu Ma",
+        "Qihua Dong",
+        "Mingyuan Zhang",
+        "Yizhou Wang",
+        "Yun Fu"
+      ],
+      "abstract": "Despite rapid progress, multimodal large language models (MLLMs) still fail on tasks that humans solve effortlessly, such as navigating a grid maze from a screenshot or selecting the correct puzzle piece. Rather than retraining the model, we ask a complementary question: how much capability can be elicited from a frozen MLLM purely by improving the execution scaffold around it? We introduce MUSE, a multimodal unified structured execution harness that wraps any off-the-shelf MLLM with composable modules for task representation, visual processing, perception tool use, structured parsing, deterministic verification, and verifier-guided repair, without any model retraining. We evaluate MUSE across diverse benchmarks spanning visual spatial planning, visual perception, multimodal reasoning, and fine-grained visual discrimination, using multiple state-of-the-art MLLMs. MUSE delivers consistent gains over the bare model in all settings, with the largest jumps on challenging instances. Further analysis reveals that many MLLM failures arise from harness-level shortcomings rather than fundamental model deficits, and can be addressed through verifier-guided repair without touching the model. These findings highlight the agentic multimodal harness as a critical yet underexplored design dimension, offering an orthogonal avenue for improving MLLMs beyond model-centric optimization.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T01:24:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03005v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.02994v1",
+      "title": "Inducing Reasoning Primitives from Agent Traces",
+      "authors": [
+        "Zhihan Lei",
+        "Jiarui Yan",
+        "Joshua Momo",
+        "William W. Cohen"
+      ],
+      "abstract": "ReAct-style LLM agents often rediscover the same reasoning routines across problems, yet leave those routines trapped in transient scratchpads. We introduce Reasoning Primitive Induction, a single-pass method that mines successful ReAct traces, clusters recurrent reasoning moves, and converts the most frequent moves into a compact library of typed pseudo-tools. Each pseudo-tool is specified by a natural-language docstring interpreted by an LLM at invocation time, and a standard ReAct loop composes these primitives at test time. The central result is that induced libraries outperform the very agent that generated their traces: by +44pp on RuleArena NBA (30 -> 74), +30pp on MuSR team allocation (38 -> 68), and +22pp on NatPlan meeting planning (7 -> 29). Across five comparable subtasks spanning narrative deduction, rule application, and constraint-satisfaction planning, a single fixed configuration improves over zero-shot Chain-of-Thought on every subtask, matches or surpasses expert-authored decompositions, and outperforms AWM at lower average inference cost.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-02T01:11:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.02994v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.03969v1",
+      "title": "Quantifying Faithful Confidence Expression in Large Reasoning Models",
+      "authors": [
+        "Areeb Gani",
+        "Asal Meskin",
+        "Gabrielle Kaili-May Liu",
+        "Arman Cohan"
+      ],
+      "abstract": "Reliable uncertainty communication is critical to the trustworthiness of LLMs, yet faithful calibration (FC)--the alignment between models' intrinsic and (linguistically) expressed confidence--is a persistent failure mode. This challenge is key for large reasoning models (LRMs), whose extended reasoning traces are often interpreted by users as evidence of deliberation, competence, and confidence. Despite the importance of FC and wide usage of LRMs, the extent to which LRMs can faithfully express their confidence remains poorly understood. Moreover, the prevailing paradigm to measure FC does not generalize well to the long chain-of-thought outputs generated by LRMs, which tend to lack clear step boundaries, involve inconsistent step structure, and encode complex conditional dependencies throughout the trace--complicating estimation of intrinsic confidence. To address this challenge, we introduce a novel framework to systematically quantify FC of LRMs. Our framework analyzes linguistic decisiveness relative to three sources of internal uncertainty, based on token probabilities, hidden states, and sampled response consistency. We also devise a prefix-conditioned sampling approach to control for conditional and structural variation across traces. Applying our framework to a diverse suite of leading models, datasets, and prompts, we find that faithful confidence expression is a significant challenge for LRMs. Reasoning behaviors do not automatically translate to improved FC, and prompt interventions for non-reasoning models do not improve faithfulness in the reasoning setting. Different confidence estimators further produce divergent assessments of the same traces, revealing fragility in prior evaluation methodologies. Taken together, our work establishes FC as a distinct reliability and alignment target for LRMs, particularly as such systems are increasingly deployed in high-stakes contexts.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T17:53:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03969v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.03841v1",
+      "title": "EvoDS: Self-Evolving Autonomous Data Science Agent with Skill Learning and Context Management",
+      "authors": [
+        "Zherui Yang",
+        "Fan Liu",
+        "Yansong Ning",
+        "Hao Liu"
+      ],
+      "abstract": "Recent progress in Large Language Model (LLM) agents has enabled promising advances in automated data science. However, existing approaches remain fundamentally limited by their static action sets and lack of principled long-horizon context management, hindering their ability to accumulate reusable experience across tasks and operate reliably in multi-stage, iterative data science pipelines. To address these challenges, we introduce EvoDS, a self-evolving autonomous data science agent that learns to expand its skills and adaptively managing long-term context through agentic reinforcement learning. Specifically, EvoDS introduces two key strategies: (1) Autonomous Skill Acquisition (ASA) mechanism, which enables agents to synthesize, validate, and reuse executable skills; and (2) Adaptive Context Compression (ACC) strategy, which treats context management as a learned control problem rather than passive truncation. These strategies are orchestrated within a two-stage multi-agent training scheme, enabling EvoDS to autonomously improve over time. Theoretically, we prove that EvoDS's hierarchical design reduces tool-selection error, and its optimization objective aligns with an information bottleneck principle, ensuring efficient context use. Empirically, EvoDS outperforms state-of-the-art open-source data science agents by an average of 28.9% across four diverse benchmarks while eliminating out-of-token failures. Our code and data are available at https://github.com/usail-hkust/EvoDS.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T16:20:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03841v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.03812v1",
+      "title": "Enhancing Operational Safety via Agentic Dialogue Hazard Identification Analysis",
+      "authors": [
+        "Sanjay Das",
+        "Ran Elgedawy",
+        "Ethan Seefried",
+        "Ryan Burchfield",
+        "Tirthankar Ghosal"
+      ],
+      "abstract": "Operational safety in high-stakes domains such as industrial process control, autonomous, and safety-critical systems, demand reliable hazard identification. While large language models (LLMs) have shown promise in automating safety analysis tasks, single-turn, monolithic inference is brittle: it lacks the self-correction, deliberation, and contextual refinement that safety engineers apply iteratively. In this paper, we introduce HAZDIAL, a framework that investigates whether structured agentic dialogue-multi-agent, multi-turn interactions improves the quality of NLP- based hazard identification over single-pass baselines. We systematically compare two dialogue modalities: adversarial debate and constructive discussion, and propose an algorithm-based agentic interaction optimization. We evaluate all configurations against a curated golden dataset using standard classification metrics (accuracy, precision, recall, F1) and novel dialogue metrics. This work advances the intersection of dialogue systems, multi-agent reasoning, and AI safety, providing an empirical evidence for dialogue-driven hazard analysis.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-02T15:54:51+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03812v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.03793v1",
+      "title": "Exploring Adversarial Robustness and Safety Alignment in Multilingual Multi-Modal Large Language Models",
+      "authors": [
+        "Hashmat Shadab Malik",
+        "Muzammal Naseer",
+        "Salman Khan"
+      ],
+      "abstract": "Multimodal Large Language Models integrate visual perception into language reasoning, introducing a continuous attack surface susceptible to adversarial attacks. Prior work on MLLM robustness has focused largely on English-centric tasks, leaving multilingual behaviour unexplored. We address this gap through a systematic study of adversarial robustness and multimodal safety across 12 diverse languages, evaluating open-source MLLMs that acquire multilingual capability through instruction tuning. Gradient-based attacks reveal a transferable multilingual vulnerability: adversarial images optimized in one language continue to induce failure in others, demonstrating strong cross-lingual transferability. Multilingual safety further varies with how effectively a model retrieves or interprets harmful instructions. When harmful intent is issued through text, languages with stronger linguistic grounding more often elicit misuse-enabling responses, while weaker languages produce fewer unsafe outputs. When embedded in the image as typographic content, English scripts are reliably recognised and followed, whereas non-English scripts are rarely parsed by the vision encoder. Lower-resource languages may therefore appear safer, but this is an artefact of comprehension and visual-grounding failures rather than genuine alignment, a phenomenon we term safety-by-failure. In contrast, MLLMs that build multilingual capability throughout their training stages rather than only at instruction tuning, such as Qwen3-VL, exhibit genuine cross-lingual safety, maintaining active refusal across languages rather than masking comprehension failure. Shallow multilingual adaptation, such as fine-tuning on translated instruction data, may produce surface-level understanding that creates illusory safety in low-resource languages; deeper integration across training stages leads to genuine multilingual safety alignment.",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "submitted": "2026-06-02T15:42:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.03793v1",
+      "journal_boost": 0,
+      "score": 12
+    }
+  ]
+}
