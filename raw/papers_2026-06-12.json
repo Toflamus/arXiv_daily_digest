@@ -1,0 +1,729 @@
+{
+  "date": "2026-06-12",
+  "fetched_at": "2026-06-12T23:09:32.570817+00:00",
+  "stats": {
+    "arxiv_count": 359,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 40,
+      "Science Advances": 69,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 8,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 599,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2606.13608v1",
+      "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+      "authors": [
+        "Xiaoyuan Liu",
+        "Jianhong Tu",
+        "Yuqi Chen",
+        "Siyuan Xie",
+        "Sihan Ren",
+        "Tianneng Shi",
+        "Gal Gantar",
+        "Evan Sandoval",
+        "Donghyun Lee",
+        "Daniel Miao",
+        "Peter J. Gilbert",
+        "Nick Hynes",
+        "Mauro Staver",
+        "Warren He",
+        "David Marn",
+        "Andrew Low",
+        "Xi Zhang",
+        "Elron Bandel",
+        "Michal Shmueli-Scheuer",
+        "Siva Reddy",
+        "Alexandre Drouin",
+        "Alexandre Lacoste",
+        "Ramayya Krishnan",
+        "Elham Tabassi",
+        "Yu Su",
+        "Victor Barres",
+        "Chenguang Wang",
+        "Wenbo Guo",
+        "Dawn Song"
+      ],
+      "abstract": "Agent systems are advancing quickly across domains, but their evaluation remains fragmented. Most benchmarks rely on fixed, LLM-centric harnesses that require heavy integration, create test-production mismatch, and limit fair comparison across diverse agent designs. The root problem is the lack of an open, agent-agnostic assessment interface. We advocate Agentified Agent Assessment (AAA), where evaluation is performed by judge agents and all participants interact through standardized protocols: A2A for task management and MCP for tool access. Conventional benchmarking defines two separate interfaces, one for the benchmark and one for the agent, while AAA only needs one; this yields a generic, unified framework that separates assessment logic from agent implementation and enables reproducible, interoperable, and multi-agent evaluation. We further introduce AgentBeats as a concrete realization of AAA: we identify five practical operation modes that make standardized assessment compatible with real-world constraints on openness, privacy, and reproducibility.\n  To evaluate our design at scale, we conduct two studies: a five-month open competition that drew 298 judge agents across 12 categories together with 467 subject agents from independent participants, showing that AAA applies across a heterogeneous range of benchmarks; and a case study on coding agents that confirms agentified evaluation preserves fidelity with the public record while surfacing previously missing head-to-head results, yielding research insights about agent design. Combining a community-scale field study and a controlled coding case study, we verify that AAA delivers coverage, practicality, and fidelity across heterogeneous scenarios at scale. Together, AAA and AgentBeats offer a clear path toward open, standardized, and reproducible agent assessment.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-11T17:23:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13608v1",
+      "journal_boost": 0,
+      "score": 27
+    },
+    {
+      "id": "2606.13662v1",
+      "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+      "authors": [
+        "Amy Xin",
+        "Jiening Siow",
+        "Junjie Wang",
+        "Zijun Yao",
+        "Fanjin Zhang",
+        "Jian Song",
+        "Lei Hou",
+        "Juanzi Li"
+      ],
+      "abstract": "LLM-based agents have shown increasing potential in automating scientific discovery. Given an optimizable metric and an execution environment, they can propose, validate, and iterate scientific solutions, and have produced results that outperform human-designed approaches. As model capabilities continue to improve, we argue that the bottleneck for autonomous scientific discovery is shifting from prescribing agent workflows to designing agent environments: the resources, constraints, and interfaces that shape agent behavior. We frame this as environment engineering: building environments that amplify productive behaviors, such as open-ended exploration, systematic artifact management, and inter-agent collaboration, while suppressing harmful behaviors, such as reward hacking and high-friction human oversight. We present EurekAgent, an environment-engineered agent system for metric-driven autonomous scientific discovery. EurekAgent engineers the environment along four dimensions: permissions engineering for bounded agent execution and isolated evaluation; artifact engineering for filesystem and Git-based collaboration; budget engineering for budget-aware exploration; and human-in-the-loop engineering for easy human supervision and intervention. EurekAgent sets new state-of-the-art results on multiple mathematics, kernel engineering, and machine learning tasks, including new state-of-the-art 26-circle packing results discovered with less than $11 in total API cost. We open-source our code and results, and call for environment engineering as a core research direction for developing reliable autonomous research agents.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-11T17:56:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13662v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2606.13190v1",
+      "title": "Multi-Modal Multi-Agent Robotic Cognitive Alignment enabled by Non-Invasive Consumer Brain Computer Interfaces: A Proof of Concept Exploration",
+      "authors": [
+        "Nataliya Kosmyna",
+        "Liz Jenkins",
+        "Anoop K. Sinha"
+      ],
+      "abstract": "While non-verbal behaviors and expressive movements are essential for natural human-robot interaction, existing methods often overlook a crucial element: the human's internal cognitive state. Frequently, proactive multi-agent systems can interrupt humans at inopportune moments, leading to cognitive overload and decreased task performance. This paper introduces a framework for generating \"cognitively aligned\" multi-agent interactions, enhancing the ability of robotic systems to contextually defer communications to the user of an agent system during moments of high human mental workload and engagement. We present the design and implementation of a closed-loop architecture that explores the interplay between autonomous task execution and real-time neurophysiological focus. Using a consumer-grade Brain-Computer Interface (BCI), our approach continuously monitors Electroencephalography (EEG) spectral band powers while a human performs an engagement-inducing task. We propose an engagement-driven pipeline where an HTTP-based signaling mechanism places a primary agent's sensory inputs and audio outputs into a holding state upon detecting high engagement. This allows secondary agents to seamlessly process complex, delegated tasks in the background. Once the human's cognitive state returns to a lower cognitive load baseline, the primary agent releases the queued agent message. Our preliminary results demonstrate the feasibility of leveraging real-time signal processing, Large Language Models (LLMs), and physical robotic embodiments to create cognitively-aware, non-intrusive multi-agent systems.",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "submitted": "2026-06-11T10:58:31+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13190v1",
+      "journal_boost": 0,
+      "score": 20
+    },
+    {
+      "id": "2606.13220v1",
+      "title": "LLM-as-an-Investigator: Evidence-First Reasoning for Robust Interactive Problem Diagnosis",
+      "authors": [
+        "Fabrizio Marozzo",
+        "Pietro Liò"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used as interactive assistants for technical problem solving. However, when users provide incomplete descriptions or plausible but unverified explanations, LLMs may prematurely align with these assumptions and propose solutions before collecting sufficient evidence. We refer to this behavior as user-driven sycophancy: the tendency of an LLM to reinforce a user-provided hypothesis instead of testing alternative explanations. This paper introduces LLM-as-an-Investigator, an evidence-first agentic AI methodology for robust problem diagnosis. The approach is implemented through a Solution Investigator Agent, which estimates the ambiguity of an initial problem description, generates candidate hypotheses, asks targeted clarification questions, and updates hypothesis probabilities after each answer. Rather than producing an immediate response, the agent continues the investigation until the evidence makes one candidate explanation stronger than the alternatives. To evaluate the approach, we build a benchmark from solved technical forum threads in mechanical, electrical, and hydraulic domains. We use a three-agent evaluation pipeline in which a Problem-Solution Extractor Agent converts solved threads into structured cases, a Ground-Truth Evaluator Agent simulates the user while hiding the known solution, and the tested assistant attempts to recover the solution through dialogue. The experiments compare standard assistants, reasoning-oriented LLMs, and the proposed investigator-based model across LLM backbones. In addition to diagnostic accuracy, we analyze how standard assistants follow misleading user hypotheses in diagnostic cases. The results show that the proposed approach identifies the problem more accurately than direct prompting and reasoning-only baselines, while its evidence-first protocol helps reduce user-induced conversational bias.",
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "cs.ET",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "submitted": "2026-06-11T11:37:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13220v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2606.13607v1",
+      "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+      "authors": [
+        "Zach Studdiford",
+        "Gary Lupyan"
+      ],
+      "abstract": "When large language models (LLMs) fail to generalize or make haphazard errors in reasoning, it is often taken as evidence that LLMs are not truly reasoning, but rather performing a kind of pattern matching. The implication is that people's behavior does not exhibit the same types of failures because human reasoning uses principled and abstract world models. We evaluate human participants and 25 LLMs on their ability to engage in common-sense reasoning about a variety of everyday situations and observe similar patterns of errors in both people and models. We then identify the set of attention heads driving LLM responses and find that these heads implement a form of pattern-matching. These attention heads allow us to predict seemingly inexplicable reasoning errors in people caused by ostensibly irrelevant prompt details. Taken together, our results suggest that everyday causal reasoning in people and LLMs is more consistent with a form of pattern-matching than with abstract world models.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T17:23:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13607v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2606.13673v1",
+      "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+      "authors": [
+        "Seokju Cho",
+        "Ryo Hachiuma",
+        "Abhishek Badki",
+        "Hang Su",
+        "Byung-Kwan Lee",
+        "Chan Hee Song",
+        "Sifei Liu",
+        "Subhashree Radhakrishnan",
+        "Seungryong Kim",
+        "Yu-Chiang Frank Wang",
+        "Min-Hung Chen"
+      ],
+      "abstract": "Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. In this work, we study how the design of this interface shapes the agent's capacity for open-ended spatial reasoning. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task. Both designs offer limited flexibility for open-ended, complex 3D/4D spatial reasoning. We therefore propose SpatialClaw, a training-free framework for spatial reasoning that adopts code as the action interface. SpatialClaw maintains a stateful Python kernel pre-loaded with input frames and a suite of perception and geometry primitives, letting a VLM-backed agent write one executable cell per step conditioned on all prior outputs, enabling the agent to flexibly compose and manipulate perception results and adapt its analysis to both intermediate text and visual observations and the demands of each problem. Evaluated across 20 spatial reasoning benchmarks spanning a broad range of static and dynamic 3D/4D spatial reasoning tasks, SpatialClaw achieves 59.9% average accuracy, outperforming the recent spatial agent by +11.2 points, with consistent gains across six VLM backbones from two model families without any benchmark- or model-specific adaptation.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T17:59:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13673v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.13598v1",
+      "title": "Reward Modeling for Multi-Agent Orchestration",
+      "authors": [
+        "King Yeung Tsang",
+        "Zihao Zhao",
+        "Vishal Venkataramani",
+        "Haizhou Shi",
+        "Zixuan Ke",
+        "Semih Yavuz",
+        "Shafiq Joty",
+        "Hao Wang"
+      ],
+      "abstract": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orchestration Reward Modeling (OrchRM), a self-supervised framework for evaluating orchestration quality without human annotations. OrchRM leverages intermediate artifacts from multi-agent executions to construct win-lose pairs for Bradley-Terry reward model training. Unlike existing MAS test-time scaling and orchestrator training frameworks that rely on costly sub-agent rollouts, OrchRM operates directly at the orchestration level, enabling efficient and high-performing reward-guided orchestrator training and MAS test-time scaling. OrchRM improves training efficiency by up to 10x in token usage while improving MAS test-time scaling performance by up to 8% in accuracy. These gains consistently transfer across multiple domains, including mathematical reasoning, web-based question answering, and multi-hop reasoning, demonstrating orchestration-level reward modeling as a scalable direction for robust multi-agent orchestration. Code will be available at https://github.com/Wang-ML-Lab/OrchRM.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "submitted": "2026-06-11T17:16:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13598v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.12918v1",
+      "title": "MAStrike: Shapley-Guided Collusive Red-Teaming on Multi-Agent Systems",
+      "authors": [
+        "Chejian Xu",
+        "Zhaorun Chen",
+        "Jingyang Zhang",
+        "Freddy Lecue",
+        "Avni Kothari",
+        "Sarah Tan",
+        "Wenbo Guo",
+        "Bo Li"
+      ],
+      "abstract": "Hierarchical multi-agent systems (MAS) are rapidly being deployed in high-stakes workflows across domains such as finance and software engineering. In these systems, safety and security are inherently distributed across role-specialized agents, significantly expanding the attack surface, particularly under coordinated adversarial behaviors such as privilege escalation and cross-agent collusion. Existing red-teaming approaches for MAS remain limited: they rely on heuristic selection of target agents and perturb isolated message streams, leaving critical questions unanswered as which agents are most responsible for system safety, and how compromised agents can coordinate to bypass defenses. We propose MAStrike, a closed-loop framework for collusive red-teaming in hierarchical MAS. We propose the first agent-level Shapley value analysis for MAS, quantifying each agent's marginal contribution to system robustness under task-specific distributions. GGuided by this attribution, MAStrike identifies vulnerable agent coalitions and generates coordinated, role-aware adversarial manipulations. These attacks are iteratively refined through structured causal diagnosis, attributing failure cases to uncompromised agents that block adversarial attempts. We further build a comprehensive MAS red-teaming benchmark and controllable environments spanning diverse hierarchical topologies and domains, including finance, software engineering, and CRM. Extensive experiments across MAS built on multiple frontier models show that MAStrike substantially outperforms heuristic baselines. Our analysis further uncovers non-trivial Shapley value distributions and higher-order interaction structures among agents, revealing critical vulnerabilities and coordination patterns that are overlooked by prior single-agent or template-based methods.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T05:21:39+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.12918v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.13680v1",
+      "title": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
+      "authors": [
+        "Zilin Xiao",
+        "Qi Ma",
+        "Chun-cheng Jason Chen",
+        "Xintao Chen",
+        "Avinash Atreya",
+        "Hanjie Chen",
+        "Vicente Ordonez"
+      ],
+      "abstract": "Retrieval-augmented generation (RAG) has become a standard mechanism for grounding language models in external knowledge, yet conventional retrieval based on lexical or semantic similarity is poorly suited for complex reasoning tasks: a semantically similar problem may demand an entirely different solution strategy, while a superficially different problem may share the same underlying reasoning pattern. We propose Retrieval-Augmented Reinforcement Fine-Tuning (RA-RFT), a post-training framework that teaches language models to reason by analogy. RA-RFT uses gold-relevance distillation to train a retriever that ranks contexts by expected reasoning benefit rather than semantic overlap, and then fine-tunes the policy model via reinforcement fine-tuning methods with retrieved analogous demonstrations, so the model learns to leverage reasoning traces under verifiable outcome rewards. We further analyze the diversity of retrieved contexts and find that reasoning-aware retrieval surfaces complementary solution strategies that provide distinct reasoning scaffolds for individual problems. Across challenging mathematical reasoning benchmarks, RA-RFT consistently outperforms standard reinforcement fine-tuning methods. For example, it improves AIME 2025 average@32 accuracy by 7.1 and 2.8 points over GRPO for Qwen3-1.7B and Qwen3-4B respectively -- suggesting that reasoning-aware retrieval is a complementary axis of improvement and orthogonal to advances in reward design or training curricula.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T17:59:52+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13680v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2606.13572v1",
+      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+      "authors": [
+        "Tanmoy Kanti Halder",
+        "Akash Ghosh",
+        "Subhadip Baidya",
+        "Arijit Roy",
+        "Sriparna Saha"
+      ],
+      "abstract": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios. This gap is critical in regions like rural India, where patients often express complex medical queries in native Indic languages and rely on multimodal inputs such as medical images. Existing English-centric MLLMs struggle to support such use cases, limiting equitable access to AI-driven healthcare assistance. To address this challenge, we introduce ArogyaBodha, a large-scale multilingual multimodal medical question-answer dataset constructed from eight heterogeneous sources, covering 31 body systems, six imaging modalities, and 21 clinical domains across English and seven major Indian languages. We further propose ArogyaSutra, an actor-critic-based multi-agent framework that integrates tool grounding with dual-memory mechanisms for step-wise, reasoning-aware decision making, and uses stored actor-critic simulation trajectories for distillation. Experiments show that our dataset and framework improve multilingual medical reasoning accuracy across all Indic languages, with ablations validating the contribution of each component. The source code and dataset are available at: https://iitp-cse.github.io/ ArogyaSutra/",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T16:59:42+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13572v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.13316v1",
+      "title": "ReSum: Synergizing LLM Reasoning and Summarization with Reinforcement Learning",
+      "authors": [
+        "Xucong Wang",
+        "Ziyu Ma",
+        "Yong Wang",
+        "Shidong Yang",
+        "Hailang Huang",
+        "Renda Li",
+        "Pengkun Wang",
+        "Xiangxiang Chu"
+      ],
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is a central technique for improving long-horizon reasoning in Large Language Models (LLMs). However, existing RLVR methods often encourage unnecessarily long reasoning rollouts, which can degrade reasoning coherence and exhaust the available context budget. Existing approaches to long-context organization often depend on external mechanisms to organize rollouts, rather than enabling the model to manage its own reasoning trajectory. To address this limitation, we propose ReSum, a novel RLVR framework that enables LLMs to compress and organize their reasoning trajectories through self-summarization. Our pilot studies show that self-summarization stabilizes generation by lowering token-level entropy, and that introducing a ``summarization'' phrase can substantially mitigate errors propagated from an incorrect rollout prefix. Motivated by these findings, ReSum adopts a summarization-aware adaptive rollout mechanism that contrastively evaluates whether self-summarization benefits the ongoing reasoning process. Specifically, when the model spontaneously triggers self-summarization, ReSum masks the summarization phrase to create a contrastive branch; for non-summarization positions, it instead randomly injects the phrase to create a matched branch. We further design a summarization-aware advantage to enable finer-grained comparison between contrastive rollout trajectories. Extensive experiments show that ReSum improves performance at an average of 4\\% while reducing rollout length by 18.6\\%.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T13:10:48+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13316v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.13192v1",
+      "title": "Reasoning for Mobile User Experience with Multimodal LLMs: Task, Benchmark, and Approach",
+      "authors": [
+        "Ruichao Mao",
+        "Zhou Fang",
+        "Teng Guo",
+        "Hao Yang",
+        "Yaping Li",
+        "Shaohua Peng",
+        "Maji Huang",
+        "Xiaoyu Lin",
+        "Shuoyang Liu",
+        "Xuepeng Li",
+        "Yuyu Zhang",
+        "Hai Rao"
+      ],
+      "abstract": "User experience (UX) centered on usability, perceived consistency, and functional clarity is fundamental to real-world user interfaces (UI). The application of\n  multimodal large language models (MLLMs) in the field of user interfaces is evolving rapidly, such as visual element grounding, graphical user interface (GUI)\n  agents, and design-to-code generation. However, research efforts on evaluating UX based on UI screenshots are still immature. To address this, we propose UXBench,\n  a novel multimodal benchmark consisting of 2,000 VQA data samples designed to assess MLLMs' ability to perform UI-based reasoning. UXBench includes 8 tasks based\n  on real-world UI screenshots that require fine-grained diagnosis of UX issues across layout relationships, visual hierarchy, and content consistency. Our\n  extensive evaluation of mainstream MLLMs shows that they remain fundamentally limited in their capacity for UI-based reasoning. The results underscore the need\n  for further advancements in this area. To bridge this gap, we propose UI-UX, an MLLM based on Qwen3-VL-4B-Thinking foundation model and enhanced via reinforcement\n  learning with two key innovations: a reward routing mechanism that dynamically balances perceptual understanding and logical reasoning during inference, and an\n  asymmetric transition reward that suppresses redundant or insufficient reasoning steps. Experiments demonstrate that UI-UX achieves state-of-the-art (SOTA)\n  performance on UXBench, attaining an accuracy of 0.7963 -- surpassing Claude-4.5-Sonnet's 0.6550 -- while exhibiting strong generalization across diverse UI tasks\n  and maintaining low inference latency.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T11:00:16+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13192v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.13148v1",
+      "title": "TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?",
+      "authors": [
+        "Dat Tien Nguyen",
+        "Thao Nguyen",
+        "Fadillah Adamsyah Maani",
+        "Huy M. Le",
+        "Muhammad Umer Sheikh",
+        "Numan Saeed",
+        "Muhammad Haris Khan",
+        "Salman Khan"
+      ],
+      "abstract": "Climate and environmental decision-making increasingly requires reasoning across heterogeneous inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs. Weather and climate foundation models can forecast well, but do not reason interactively in language, while large language models (LLMs) reason in language but cannot operate directly on high-dimensional Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation. TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals, Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified execution steps. These results indicate that reliable Earth-science agents must go beyond tool access to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T10:26:03+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13148v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.12821v1",
+      "title": "GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models",
+      "authors": [
+        "Gabriel Diaz-Ireland",
+        "Diego Prieto-Herráez",
+        "Mario García Peces",
+        "Javier Velázquez",
+        "Devika Jain"
+      ],
+      "abstract": "Environmental scientists spend disproportionate effort on data wrangling rather than analysis, and AI agents that automate geospatial workflows remain unvalidated: no benchmark evaluates agents operating through structured tool calling against real APIs. We introduce the GeoNatureAgent Benchmark, the first benchmark for environmental analysis agents that operate via structured tool calls to a production-style geospatial API. It comprises 93 tasks across 18 categories, covering municipality analysis, multi-turn conversation, spatial reasoning, cross-indicator synthesis, error handling and recovery, ranking, comparison, multilingual understanding, habitat analysis, and task rejection. Tasks are evaluated against an open, self-hostable API serving three environmental indicators across Spain and Portugal via sixteen tools. We evaluate seven LLMs (Claude Sonnet 4, DeepSeek V3.2, GLM-5, Gemini 2.5 Pro, Qwen3-235B, GPT-OSS-120B, Llama 4 Scout) under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. We find: (1) Claude Sonnet 4 leads at 60.8% +/- 0.8%, followed by DeepSeek V3.2 at 56.3% +/- 3.1%, with no other model above 51%; (2) the cost-accuracy Pareto frontier is occupied mostly by open-weight models, with DeepSeek V3.2 offering 93% of Claude's capability at 11x lower cost ($0.011/case); (3) comparison tasks remain universally unsolved (0% on close-value comparisons), exposing systematic reasoning limits; and (4) structured tool calling against a real API is more discriminative than general-purpose GIS benchmarks, with accuracies 25-35 points lower. We further show extensibility by integrating BigEarthNet V2 land cover for Portugal alongside Spanish CO2 and erosion indicators. The benchmark, harness, and self-hostable API are publicly available.",
+      "categories": [
+        "cs.AI",
+        "cs.ET"
+      ],
+      "submitted": "2026-06-11T02:35:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.12821v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.13669v1",
+      "title": "Agents-K1: Towards Agent-native Knowledge Orchestration",
+      "authors": [
+        "Zongsheng Cao",
+        "Bihao Zhan",
+        "Jinxin Shi",
+        "Jiong Wang",
+        "Fangchen Yu",
+        "Zhijie Zhong",
+        "Zijie Guo",
+        "Tianshuo Peng",
+        "Zhuo Liu",
+        "Yi Xie",
+        "Xiang Zhuang",
+        "Yue Fan",
+        "Runmin Ma",
+        "Shiyang Feng",
+        "Xiangchao Yan",
+        "Anran Liu",
+        "Peng Ye",
+        "Wenlong Zhang",
+        "Shufei Zhang",
+        "Chunfeng Song",
+        "Fenghua Ling",
+        "Jie Zhou",
+        "Liang He",
+        "Bo Zhang",
+        "Lei Bai"
+      ],
+      "abstract": "Current LLM-based research agents have advanced through agent orchestration, yet largely overlook scientific knowledge orchestration. Existing works often reduce papers to abstracts, surface mentions, and flat \\texttt{cites} edges, omitting key entities, claims, evidence, mechanisms, and method lineages essential for scientific reasoning. To this end, we introduce \\textbf{Agents-K1}, an end-to-end knowledge orchestration pipeline that converts raw documents into agent-native scientific knowledge graphs. Agents-K1 integrates three components under a unifying theoretical foundation: a multimodal parser whose five-module schema captures entities, multimodal evidence, citations, and typed inter-entity relations across the full paper rather than abstracts alone; a 4B information-extraction backbone trained with GRPO under a rule-based reward; and a graphanything CLI, a tri-source agent interface that unifies web search, multimodal graph retrieval, and cross-document traversal. On top of this, we process 2.46 million scientific papers across six subjects to produce \\textbf{Scholar-KG}, of which we release a one-million-paper subset, and the full Scholar-KG is accessible via the SCP link below. The same pipeline can be extended to general-domain corpora and to schema-conformant data synthesis. Extensive experiments demonstrate that Agents-K1 achieves superior performance in scientific information extraction, knowledge graph construction, and multi-hop scientific reasoning.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T17:58:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13669v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.12834v1",
+      "title": "Fantastic Scientific Agents and How to Build Them: AgentBuild for Rietveld Refinement",
+      "authors": [
+        "Woong Shin",
+        "Craig A. Bridges",
+        "Marshall T. McDonnell",
+        "Rafael Ferreira da Silva"
+      ],
+      "abstract": "As scientific workflows shift from deterministic executables to LLM-based agents, the development practices on offer, such as fine-tuning, reinforcement learning, and prompt-and-go, bury the scientist's judgment. We propose treating agent construction as a workflow stage and introduce AgentBuild, which builds a scientific agent from a contract the scientist authors. The contract is a version-controlled rubric, a difficulty-graded curriculum, and a curated external knowledge base. A rubric-driven judge gates a meta-optimizer coding agent that edits the agent within a declared boundary, so the build compiles the agent, not the scientist's judgment. We instantiate this for Rietveld refinement of X-ray diffraction data through GSAS-II behind MCP and A2A, where a blank-harness construction run progresses through a lithium lanthanum zirconium oxide (LLZO) signal-to-noise ladder, reaches the 4 hour scan as a frontier case, and exposes the workflow-scope limits that remain. The same rubric that rewards credible fits also scores trajectory scope, making the frontier a contract failure rather than a pattern-fitting failure. As base models evolve, re-running AgentBuild is a re-tune, not a rebuild, and the scientist's authored contract remains the durable asset.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T03:01:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.12834v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.13681v1",
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "authors": [
+        "Jundong Xu",
+        "Qingchuan Li",
+        "Jiaying Wu",
+        "Yihuai Lan",
+        "Shuyue Stella Li",
+        "Huichi Zhou",
+        "Bowen Jiang",
+        "Lei Wang",
+        "Jun Wang",
+        "Anh Tuan Luu",
+        "Caiming Xiong",
+        "Hae Won Park",
+        "Bryan Hooi",
+        "Zhiyuan Hu"
+      ],
+      "abstract": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-11T17:59:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13681v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.13603v1",
+      "title": "Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models",
+      "authors": [
+        "Daniel Scalena",
+        "Sara Candussio",
+        "Luca Bortolussi",
+        "Elisabetta Fersini",
+        "Malvina Nissim",
+        "Gabriele Sarti"
+      ],
+      "abstract": "Chain-of-thought (CoT) reasoning is the dominant paradigm for inference-time scaling in language models, yet the causal influence of individual steps on the final answer poorly understood. We estimate each step's causal importance via early exit and use this measure to study how answers form across the reasoning traces of several model families. Across diverse tasks, we find that reasoning typically crosses a \\emph{commitment boundary} -- a sharp transition from transient intermediate guesses to a stable, high-confidence answer. This transition often happens in a single step, well before the model's reasoning block ends, and is followed by \\emph{epiphenomenal} CoT steps that leave the final answer probability unaltered. Using attention probes, we show that answer-formation stages can be linearly decoded from intermediate reasoning steps with high accuracy and generalize robustly to unseen reasoning tasks. We exploit this signal to early-exit reasoning blocks at the commitment boundary, reducing the length of CoTs up to 55\\% on average with negligible impact on model performance.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-11T17:21:16+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13603v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.13197v1",
+      "title": "ARMOR-MAD: Adaptive Routing for Heterogeneous Multi-Agent Debate in Large Language Model Reasoning",
+      "authors": [
+        "Fuqiang Niu",
+        "Bowen Zhang"
+      ],
+      "abstract": "Multi-agent debate (MAD) can improve large language model reasoning, but fixed debate pipelines often waste computation and can amplify correlated errors among similar agents. We propose ARMOR-MAD, a training-free heterogeneous MAD framework that treats debate as conditional computation. ARMOR-MAD combines three components: Pre-debate Agreement Routing (PAR) decides whether independently generated Round-0 answers require debate; Early Agreement Stopping Evaluator (EASE) stops debate after convergence; and Semantic Outlier Detection (SOD) down-weights abnormal final answers during aggregation. Across MATH Level 5, GSM8K, MMLU, and MMLU-Pro, ARMOR-MAD consistently improves over fixed-round heterogeneous debate with the same model pool, reaching 65.5\\%, 96.5\\%, 90.0\\%, and 81.5\\% accuracy, respectively. The results suggest that genuine model heterogeneity and agreement-based control are both important for making MAD more accurate and efficient.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T11:02:19+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13197v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.13176v1",
+      "title": "Mental-R1: Aligning LLM Reasoning for Mental Health Assessment",
+      "authors": [
+        "Xin Wang",
+        "Boyan Gao",
+        "Yibo Yang",
+        "David A. Clifton"
+      ],
+      "abstract": "Mental health problems such as anxiety, depression, and suicide remain urgent global challenges, where timely and accurate assessment is critical for effective intervention. Recently, large language models have been explored for mental health assessment. However, existing general-purpose post-training methods do not align with the cognitive processes of human assessment, which may lead to unreliable reasoning outcomes. To bridge this gap, we propose Cognitive Relative Policy Optimization (CRPO), a reinforcement learning framework tailored for the mental health domain. CRPO extends group relative policy optimization by integrating stage-dependent uncertainty modeling into the policy optimization process. Specifically, we introduce a stage-wise entropy regularization mechanism that encourages broad exploration in early reasoning phases and progressively enforces confident decision-making in later stages, mimicking the human cognitive shift from uncertainty to certainty. In addition, inspired by cognitive appraisal theory, we formalize cognitive reasoning stages, thereby guiding theory-grounded interpretable inference. Experiments on 8 mental health datasets show that CRPO achieves an average improvement of 10.4 percentage points in weighted F1-score over the best reinforcement learning baseline. Furthermore, the CRPO-trained model Mental-R1 demonstrates clear advantages compared with existing large language models on reasoning-intensive cases, suggesting that CRPO enhances reasoning capabilities for mental health assessment.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T10:44:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13176v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.13003v1",
+      "title": "The Illusion of Multi-Agent Advantage",
+      "authors": [
+        "Prathyusha Jwalapuram",
+        "Hehai Lin",
+        "Chuyuan Li",
+        "Fangkai Jiao",
+        "Sudong Wang",
+        "Yifei Ming",
+        "Zixuan Ke",
+        "Chengwei Qin",
+        "Giuseppe Carenini",
+        "Shafiq Joty"
+      ],
+      "abstract": "Prevailing wisdom posits that Multi-Agent Systems (MAS) are superior to Single-Agent Systems (SAS), citing advantages like context protection, parallel processing and distributed decision-making. However, empirical support for this claim relies primarily on comparisons with SAS baselines using benchmarks that prioritize isolated reasoning tasks, which do not adequately assess these advantages. Focusing on automatically generated MAS that are designed for enhanced generalizability over manually-designed counterparts, we perform a rigorous, systematic evaluation against SAS, specifically Chain-of-Thought with Self-Consistency (CoT-SC). Across traditional reasoning datasets and tasks with interactive multi-step workflows (e.g., BrowseComp-Plus), we demonstrate that automatic MAS consistently underperform CoT-SC despite being up to 10x more expensive. To isolate these failures from limitations inherent to task structure, we introduce a diagnostic synthetic dataset tailored for MAS featuring explicit task decomposition, context separation and parallelization potential. We show that expert-architected MAS consistently outperforms automatically generated architectures in both raw performance and cost-efficiency on this dataset, demonstrating that existing evaluation frameworks mask critical architectural gaps and inefficiencies of complex MAS by failing to account for the marginal utility of increased computational cost. Critically, systematic deconstruction of the generated MAS architectures reveals that current automated design paradigms produce architectural bloat that prioritizes superficial complexity which does not translate into functional utility, exposing a fundamental misalignment with multi-agent principles.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "submitted": "2026-06-11T07:39:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13003v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.12916v1",
+      "title": "MDForge: Agentic Molecular Dynamics Pipeline Design under Sparse Simulator Feedback",
+      "authors": [
+        "Zehong Wang",
+        "Yijun Ma",
+        "Connor R. Schmidt",
+        "Tianyi Ma",
+        "Weixiang Sun",
+        "Ziming Li",
+        "Xiaoguang Guo",
+        "Chuxu Zhang",
+        "Matthew J. Webber",
+        "Yanfang Ye"
+      ],
+      "abstract": "Molecular dynamics (MD) is the canonical in-silico method for atomistic molecular science, simulating molecular behavior from first-principle physics. Designing an MD pipeline for a new system requires substantial expert knowledge: running it on even one molecule is expensive, ruling out trial-and-error. We automate this expert pipeline-design process with an LLM agent. Unlike existing MD agents that orchestrate a predefined tool set, we treat pipeline design as open-ended code generation in which the agent's behavior is reshaped online by verbal reward. Specifically, we build MDForge, an LLM agent whose in-context update rule densifies the sparse reward via a multi-agent debate among physics experts. On three SAMPL host-guest binding free-energy benchmarks, MDForge automatically designs MD pipelines competitive with human experts. Deployed on a library of unseen candidate guests, its CB[7] pipeline discovers a novel binder that wet-lab competition NMR confirms is a high-affinity, picomolar CB[7] binder. Our data and code are available at https://github.com/Zehong-Wang/MDForge.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-11T05:19:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.12916v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.12835v1",
+      "title": "The Internet of Agentic AI: Communication, Coordination, and Collective Intelligence at Scale",
+      "authors": [
+        "Quanyan Zhu"
+      ],
+      "abstract": "The rapid emergence of autonomous AI agents is transforming artificial intelligence from isolated model inference into distributed systems of reasoning, communication, and action. This paper develops the vision of the Internet of Agentic AI (IoAI): an open ecosystem in which heterogeneous agents discover one another, negotiate responsibilities, exchange context, invoke tools, and execute workflows across cloud, edge, device, organizational, and cyber-physical environments. We synthesize foundations from single-agent agentic AI, multi-agent systems, distributed computing, communication networks, game theory, and security engineering to characterize the architectures and mechanisms required for scalable agent ecosystems. The paper examines agent deployment models, workflow lifecycles, communication protocols, interoperability layers, resource-management challenges, and trust architectures, with case studies in adaptive manufacturing and distributed operational coordination. The resulting framework highlights the central research challenges of controlled emergence, semantic interoperability, secure identity, incentive-compatible coordination, resource-aware orchestration, and governance for large-scale networks of autonomous agents.",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CY",
+        "cs.NI"
+      ],
+      "submitted": "2026-06-11T03:02:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.12835v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.13171v1",
+      "title": "NTS-CoT: Mitigating Hallucinations in LLM-based News Timeline Summarization with Chain-of-Thought Reasoning",
+      "authors": [
+        "Feng Lyu",
+        "Huiqin Yan",
+        "Sijing Duan",
+        "Hao Wu",
+        "Shuang Gu",
+        "Xue Qiao",
+        "Weixu Zhang",
+        "Haolun Wu"
+      ],
+      "abstract": "The rapid updates of online news make tracking event developments challenging, highlighting the need for timeline summarization (TLS). Hallucinations, where LLM-generated content deviates from source news, still remain a critical issue in LLM-based TLS and are not well studied in existing works. To bridge this gap, we identify two primary types of hallucinations: unfaithful content during news summarization and information omission in date-event summarization. Then, we propose NTS-CoT, a novel framework that leverages Chain-of-Thought (CoT) reasoning to mitigate hallucinations in TLS. The framework consists of three key modules: i) Element-CoT to capture essential news elements for faithful summarization, ii) Date Selection to combine temporal saliency and event prominence for timestamp selection, and iii) Causal-CoT to infer causal relationships and reduce omissions in date-event summarization. Extensive experiments, including quantitative analysis on three TLS benchmarks and human evaluation, demonstrate that NTS-CoT outperforms state-of-the-art baselines, effectively mitigating hallucinations and improving LLM-based TLS performance. Our source code is available at https://anonymous.4open.science/r/NTS-CoT .",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T10:42:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13171v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.13643v1",
+      "title": "Recursive Agent Harnesses",
+      "authors": [
+        "Elias Lumer",
+        "Sahil Sen",
+        "Kevin Paul",
+        "Vamse Kumar Subbiah"
+      ],
+      "abstract": "Recursive language models (RLMs) showed that recursion over model calls is an effective strategy for long-context reasoning, and production coding agents have begun to write code that spawns subagents at scale, most recently in Anthropic's dynamic workflows. We name and study the pattern between these two lines of work, where the recursive unit is a full agent harness with filesystem tools, code execution, and planning rather than a model call with no tools. We call this the Recursive Agent Harness (RAH) and frame it as harness recursion, the code-first extension to the model recursion of RLMs. A parent agent generates and runs an executable script that spawns subagent harnesses in parallel for fine-grained workloads and uses structured function calls for small subtasks. We provide a controlled evaluation on long-context reasoning. With the backbone held fixed at GPT-5 to match the published Codex and RLM baselines, RAH improves the Codex coding-agent baseline from 71.75% to 81.36% on Oolong-Synthetic (199 samples, 13 context-length buckets up to 4M tokens), a gain attributable to the harness rather than the model. With a stronger backbone, Claude Sonnet 4.5, the same design reaches 89.77%.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-11T17:47:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13643v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.13468v1",
+      "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests -- Insights from the AIDev Dataset",
+      "authors": [
+        "Mahmoud Abujadallah",
+        "Ali Arabat",
+        "Mohammed Sayagh"
+      ],
+      "abstract": "AI coding agents are increasingly used to generate pull requests (PRs) that propose code fixes in software projects. From a first exploration of the AIDev dataset, we find that 46.41\\% of the fixes proposed by the agents Copilot, Devin, Cursor, and Claude are rejected. This represents a significant amount of wasted resources that require human reviews, verifications, and running tests and validations for fixes that are merely discarded. Our goal in this paper is to understand the failure modes of AI-agents, an understanding that is crucial for better integrating AI-agents as efficient teammates. In this paper, we conduct a qualitative study on a representative sample of 306 non-merged pull requests created or co-authored by the agents mentioned earlier, followed by a quantitative analysis of the reasons for rejection. Our qualitative findings identify 14 reasons divided into four high-level categories for rejecting AI-agent fixes. We observe that developers can reject fixes due to fixes whose implementation is incorrect (e.g., incomplete, wrong approach), fixes that do not pass the continuous integration (CI) pipelines and fail tests, fixes for which the agent is unable to perform the implementation (e.g., no code generated, sessions lost), and fixes whose priority is low. Our results shed light on the importance of better guiding the model at these levels: (1) proposing hints about the approach to follow for fixing an issue, (2) outlining constraints or limitations regarding the approaches that should not be taken, and (3) instructing the agent on how to validate the implementation through CI pipelines and without introducing a breaking change. Our results suggest the need for good prioritization of tasks so that generated fixes do not lead to wasted human review efforts or wasted agent resources (e.g., tokens, compute, or allowed number of requests).",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T15:19:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13468v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.13349v1",
+      "title": "From Passive Generation to Investigation: A Proactive Scientific Peer Review Agent",
+      "authors": [
+        "Haishuo Fang",
+        "Yue Feng",
+        "Iryna Gurevych"
+      ],
+      "abstract": "Large language models (LLMs) have shown promise in automating scientific peer review. However, existing approaches often struggle to generate in-depth reviews supported by concrete evidence. We argue that a key limitation is the lack of flexibility to proactively investigate suspicious parts of a paper based on accumulated evidence, as human reviewers do. In this paper, we explore how to enable an LLM-based review agent to perform such proactive investigation. We find that this can be naturally formulated as a Markov Decision Process (MDP), and propose ProReviewer, a scientific peer review agent that proactively reviews a paper guided by a maintained, structured review log. The structured review log serves as a workspace for the agent to track evidence and intermediate findings collected during review. Experiments show that ProReviewer with an 8B backbone, trained by supervised fine-tuning and optimized by reinforcement learning, achieves the highest average score across five quality dimensions, outperforming prompt-based methods with much larger frontier LLMs by up to 39% and the strongest fine-tuned baseline by 16% relatively. It also attains the highest win rates against baselines in human evaluation.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-11T13:38:23+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13349v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.13233v1",
+      "title": "ReSET: Accurate Latency-Critical NVFP4 Reasoning via Step-Aware Temperature Scaling",
+      "authors": [
+        "Sihwa Lee",
+        "Janghwan Lee",
+        "Donghoon Yoo",
+        "Jae Gon Kim",
+        "Hanyul Ryu",
+        "Soojung Ryu",
+        "Jungwook Choi"
+      ],
+      "abstract": "Large reasoning models (LRMs) improve complex problem-solving by generating long intermediate reasoning traces, but this substantially increases inference costs. NVFP4 inference offers a promising approach to reduce both computational and memory costs through hardware-supported low-precision execution. However, directly applying NVFP4 to LRMs introduces two practical limitations: reasoning accuracy degrades under quantization, and existing NVFP4 kernels do not fully realize latency benefits in small-batch autoregressive decoding. In this work, we analyze the effect of NVFP4 quantization on token-level uncertainty during reasoning. We show that quantization increases incorrect sampling at low-entropy symbolic tokens, while causing over-concentration on a small set of tokens in high-uncertainty reasoning steps. Based on this observation, we propose \\textbf{ReSET}, a reasoning-step entropy-based temperature-scaling method that estimates step-level uncertainty online and adapts the decoding temperature using both token-level and step-level entropy signals. To address the latency gap, we further design a CUDA-core small-$M$ NVFP4 kernel for latency-critical autoregressive decoding. Across reasoning benchmarks and model scales, ReSET improves NVFP4 reasoning accuracy by up to $\\sim\\!$2 points over the NVFP4 baseline. Our CUDA-core small-$M$ kernel further improves latency-critical decoding, delivering up to $2.5\\!\\times$ kernel-level speedup over NVFP4 vLLM and approximately $2\\!\\times$ end-to-end decoding speedup over BF16. Code is available at https://github.com/aiha-lab/ReSET.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-11T11:47:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13233v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.13177v1",
+      "title": "MemRefine: LLM-Guided Compression for Long-Term Agent Memory",
+      "authors": [
+        "Minjae Kim",
+        "Jinheon Baek",
+        "Soyeong Jeong",
+        "Sung Ju Hwang"
+      ],
+      "abstract": "Large language model (LLM) agents are increasingly expected to operate over long-term interactions, where information from past dialogues must be preserved and recalled to support future tasks. However, as interactions accumulate, the memory store grows without bound and fills with redundant entries that inflate storage cost and degrade retrieval by crowding out the most useful evidence. Furthermore, this is especially limiting on resource-constrained platforms with hard memory budgets, motivating us to formulate storage-budgeted memory management, the task of keeping an already constructed memory store within a fixed budget while preserving information useful for future interactions. To this end, we then propose MemRefine, an LLM-guided framework that, since surface similarity poorly reflects factual value, uses similarity only to propose candidate pairs and defers delete, merge, and preserve decisions to an LLM judge based on factual content, iterating until the budget is met. Across multiple memory frameworks and long-term conversation benchmarks, MemRefine consistently meets target budgets while preserving downstream performance and outperforming rule-based baselines under tight budgets.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-11T10:46:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13177v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.13120v1",
+      "title": "EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge",
+      "authors": [
+        "Yunhan Wang",
+        "Jiaan Wang",
+        "Lianzhe Huang",
+        "Xianfeng Zeng",
+        "Fandong Meng"
+      ],
+      "abstract": "Search Agents -- large language models augmented with search tools -- have intensified the need for future-proof evaluation benchmarks. Existing benchmarks such as BrowseComp rely on static knowledge, making them vulnerable to test-set contamination and parametric memorization. Consequently, models can achieve high scores through fact recall rather than genuine retrieval, obscuring true browsing competence via reasoning shortcuts.\n  In this paper, we introduce EvoBrowseComp, an evolving benchmark of 400 English and 400 Chinese contamination-free complex questions synthesized via live-web traversal. To collect these questions, we design a three-agent collaborative framework: (1) a QA synthesis agent that retrieves fresh knowledge from the live web to synthesize QA pairs; (2) an information filtering agent that filters retrieved knowledge in terms of credibility and popularity to block parametric shortcuts; and (3) a high-level guidance agent that formalizes questions into reasoning graphs to reduce logical redundancy and shortcuts in synthesized QA pairs. Because the framework supports fully automated synthesis, EvoBrowseComp can be regularly updated to prevent data contamination and maintain temporal freshness. Extensive experiments confirm its great difficulty, requiring broad horizontal search. It establishes a scalable paradigm for auto-updatable, high-difficulty benchmarking that keeps pace with both evolving world knowledge and advancing agent capabilities.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-11T09:48:32+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.13120v1",
+      "journal_boost": 0,
+      "score": 11
+    }
+  ]
+}
