@@ -1,0 +1,675 @@
+{
+  "date": "2026-06-16",
+  "fetched_at": "2026-06-16T23:18:41.158418+00:00",
+  "stats": {
+    "arxiv_count": 381,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 40,
+      "Science Advances": 69,
+      "Nature Machine Intelligence": 0,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 0
+    },
+    "total_after_dedup": 597,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2606.16328v1",
+      "title": "AdaSTORM: Scaling LLM Reasoning on Dynamic Graphs via Adaptive Spatio-Temporal Multi-Agent Collaboration",
+      "authors": [
+        "Bing Hao",
+        "Ruijie Wang",
+        "Haodong Qian",
+        "Yunlong Chu",
+        "Yuhang Liu",
+        "Yumeng Lin",
+        "Minglai Shao",
+        "Jianxin Li"
+      ],
+      "abstract": "Large Language Models (LLMs) demonstrate remarkable potential in dynamic graph reasoning, but suffer from a scaling bottleneck: current models can only handle graphs with tens of nodes, constrained by exponential reasoning overhead and finite context windows. While multi-agent systems (MAS) offer collective reasoning and topology-aware orchestration, capabilities naturally suited for graph-structured tasks, their application to dynamic graphs remains unexplored. This paper presents Scaling LLM Reasoning on Dynamic Graphs via Adaptive Spatio-Temporal Multi-Agent Collaboration (AdaSTORM), a framework that reformulates large-scale dynamic graph reasoning into two stages: (i) Adaptive Partitioning, partitioning large-scale dynamic graphs into subregions that match the model's reasoning capacity while minimizing inference cost; and (ii) Collaborative Reasoning, aligning graph partition topologies with a spatio-temporal decoupled multi-agent architecture. AdaSTORM is the first multi-agent framework tailored for dynamic graph reasoning. Extensive experiments show that AdaSTORM successfully breaks through the scaling bottleneck, scaling reasoning to thousand-node graphs with over 90% accuracy across several large-scale dynamic graph settings without external tools, significantly outperforms seven competitive baselines. Furthermore, it achieves state-of-the-art accuracy on existing benchmarks and generalizes robustly to real-world datasets. The source code is available at: https://github.com/irisorchid107/AdaSTORM/.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T07:32:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16328v1",
+      "journal_boost": 0,
+      "score": 28
+    },
+    {
+      "id": "2606.16710v1",
+      "title": "Misinformation Propagation in Benign Multi-Agent Systems",
+      "authors": [
+        "Jonas Becker",
+        "Jan Philip Wahle",
+        "Terry Ruas",
+        "Bela Gipp"
+      ],
+      "abstract": "Multi-agent systems, in which multiple large language model agents solve problems through turn-based interaction, are increasingly deployed in high-stakes settings such as medical diagnosis, legal analysis, and forensic decision-making. Their reliability can be at risk when single agents reason from incorrect or misleading context, e.g., from tool calls, since errors may propagate through agent interactions. This work studies this risk by injecting intent-based misinformation into benign single-agent and multi-agent systems across reasoning, knowledge, and alignment tasks. We find that misinformation can degrade single-agent performance and persists across multi-agent debate, with agents often retaining answers introduced by misinformed peers. Nevertheless, multi-agent debate reduces the resulting performance degradation compared to single-agent prompting, especially when most agents are not exposed to misinformation. Robustness depends on group composition and decision protocol. Consensus can be more stable than voting under peer pressure, while majorities can often steer misinformed agents back toward correct answers. Our results show that misinformation robustness in multi-agent systems depends on the underlying model and also on how agents exchange information and aggregate decisions.",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T13:40:01+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16710v1",
+      "journal_boost": 0,
+      "score": 27
+    },
+    {
+      "id": "2606.16613v1",
+      "title": "CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies",
+      "authors": [
+        "Issa Sugiura",
+        "Daichi Hattori",
+        "Kazuo Araragi",
+        "Keita Ogawa",
+        "Shota Onose",
+        "Taro Makino",
+        "Teppei Usuki",
+        "Takashi Ishida"
+      ],
+      "abstract": "As LLM agents become capable of increasingly long-horizon tasks, evaluating their performance in economic systems is becoming increasingly important. Unlike existing benchmarks that primarily evaluate a single agent interacting with a passive environment, economic systems are inherently multi-agent, requiring autonomous agents to communicate, negotiate, and transact while pursuing their own objectives over extended periods. We introduce CoffeeBench, a benchmark for evaluating LLM agents in a long-horizon multi-agent economy composed of heterogeneous firms. In CoffeeBench, two farmers, two roasters, and two retailers autonomously operate their businesses over a 90-day simulation, each seeking to maximize cumulative net income through communication and transactions while managing cash, inventory, and pricing. The evaluated model controls one coffee roaster, while the remaining firms are controlled by fixed reference agents. Across several recent open-weight and proprietary LLMs, all models outperform a passive baseline that takes no actions, with most achieving positive net income. Analysis of agent behavior reveals substantial differences in long-horizon economic interaction: higher-performing models communicate more actively with other firms, whereas Claude~Haiku~4.5 exhibits an idle-drift failure mode, repeatedly choosing inaction despite producing coherent assessments and plans. We release our code and agent trajectories to support future research.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T12:04:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16613v1",
+      "journal_boost": 0,
+      "score": 23
+    },
+    {
+      "id": "2606.16478v1",
+      "title": "Tensor-Coord: Algebraic Decomposition of Joint Plan Tensors for Conflict-Free Multi-Agent LLM Planning",
+      "authors": [
+        "Mudit Rastogi"
+      ],
+      "abstract": "Large language models (LLMs) remain limited in multi-agent planning because independently generated plans can create coordination failures such as spatial collisions, resource contention, and temporal deadlocks. We introduce Tensor-Coord, a multilinear algebra framework that represents the joint plan of N agents as a third-order tensor \\(T \\in R^{N \\times H \\times A}\\) over agents, timesteps, and actions. Canonical Polyadic (CP) and Tucker decompositions are used to identify latent coordination structure. The minimal epsilon-approximate CP rank R* defines a computable coordination complexity measure, with \\(CC(Pi)=(R*-N)/N\\). We prove that R*=N is necessary and sufficient for plan independence. The residual \\(E=T-T_{R*}\\) defines a conflict score over agent pairs, timesteps, and actions, localizing failures without domain-specific rules. Tucker factors provide interpretable agent roles, temporal phases, and action clusters that are converted into natural language constraints for iterative LLM replanning. Experiments on multi-robot delivery tasks across Easy (2 agents, 5x5 grid), Medium (3 agents, 5x5 grid), and Hard (4 agents, 5x5 grid) settings show convergence to conflict-free plans in 100% of 2-agent cases within 1.4 iterations on average, 80% of 3-agent cases within 3.2 iterations, and 60% of 4-agent cases within 4.0 iterations. CP rank scaled approximately linearly as \\(R*(N) = 3.9N + 0.5\\), supporting its use as a predictor of coordination complexity.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T09:44:26+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16478v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2606.16428v1",
+      "title": "LectūraAgents: A Multi-Agent Framework for Adaptive Personalized AI-Assisted Learning and Embodied Teaching",
+      "authors": [
+        "Jaward Sesay",
+        "Yue Yu",
+        "Siwei Dong",
+        "Yemin Shi",
+        "Guangyao Chen",
+        "Börje F. Karlsson"
+      ],
+      "abstract": "Effective personalized AI-assisted learning demands systems that can not only generate accurate learner-specific educational materials, but also dynamically adapt their instruction to diverse learners. However, existing educational agents have primarily focused on lecture content automation and simulations, which often fall short of modelling multimodal and embodied instructional methods tailored for the individual learner. To this end, we propose LectūraAgents - a multi-agent framework that enables personalized learning through end-to-end adaptive embodied teaching. At its core, LectūraAgents mirrors a professor-student relationship, in which a ProfessorAgent leads a collaborative team of specialized subordinate agents through research, planning, review, and embodied delivery of lecture contents that adapt to a learner's needs. The framework offers three main contributions: (1) a hierarchical multi-agent architecture for end-to-end personalized learning; (2) an adaptive embodied teaching mechanism, wherein the ProfessorAgent executes visible and pedagogically motivated teaching actions (e.g., handwrite, highlight, underline, etc.) over contents in a teaching environment; and (3) a Teaching Action-Speech Alignment (TASA) algorithm that employs salience-based heuristics and temporal semantic segmentation to generate coherent teaching action sequences aligned with learner profiles. We evaluate LectūraAgents on diverse courses at high school, undergraduate, and graduate levels using sample-specific rubric-based analysis; with generated lecture materials and teaching actions assessed and validated by expert educators. Experimental results show consistent gains in lecture content quality, embodied teaching quality, assessment, and personalization over existing approaches, positioning LectūraAgents as a pedagogically well-grounded framework for personalized learning at scale.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "submitted": "2026-06-15T09:03:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16428v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2606.16118v1",
+      "title": "Know Your Limits : On the Faithfulness of LLMs as Solvers and Autoformalizers in Legal Reasoning",
+      "authors": [
+        "Olivia Peiyu Wang",
+        "Sanna Wong-Toropainen",
+        "Daneshvar Amrollahi",
+        "Ryan Bai",
+        "Tashvi Bansal",
+        "Arush Garg",
+        "Leilani H. Gilpin"
+      ],
+      "abstract": "Large Language Models (LLMs) achieve strong performance on reasoning tasks, but whether this reflects faithful logical inference or heuristic approximation remains unclear. We study this question in legal entailment by comparing three paradigms, including pure LLM classification, LLM-based Formal Reasoning, and solver-based Formal Reasoning using the Z3 SMT solver, on a re-annotated subset of ContractNLI across five LLMs. Our re-annotation reveals a systematic and measurable gap between pragmatic legal interpretation and strict formal entailment, where a substantial proportion of legally sound inferences are not formally grounded without additional unstated assumptions. While introducing formal structure improves accuracy, with LLM-based Formal Reasoning achieving the highest benchmark performance, we show that this gain does not imply faithful reasoning. We identify three recurring failure modes: scope laundering, where LLMs report solver-inconsistent classifications without executing the underlying formal reasoning, producing conclusions that appear logically grounded but are not; implicit constraint blindness, where LLMs overlook logical constraints present in formal representations; and program synthesis failures, where LLMs generate incorrect Z3 code despite structured prompting. Critically, scope laundering persists across all models, raising serious concerns about the faithfulness of LLM-based formal reasoning as a proxy for symbolic execution. These results reveal a fundamental gap between benchmark accuracy and logical faithfulness.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LO"
+      ],
+      "submitted": "2026-06-15T02:14:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16118v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2606.16562v1",
+      "title": "MIRAGE: Auditing Anti-Muslim Bias in Frontier LLMs Across Reasoning, Agentic, and Time-Coupled Conditions",
+      "authors": [
+        "Noor Islam S. Mohammad",
+        "Tamim Sheikh"
+      ],
+      "abstract": "Five years after the discovery of persistent anti-Muslim bias in large language models, most evaluations remain confined to single-turn prompt completion, a setting that no longer reflects how frontier LLMs are deployed. We introduce \\textbf{MIRAGE} (Muslim-Identity Reasoning and Agentic Generation Evaluation), a benchmark of 1{,}200 prompts spanning three deployment-realistic conditions: direct completion, chain-of-thought reasoning, and simulated agentic decision-making across content moderation, lending triage, refugee claim summarization, and hiring screens. Across six frontier models, we find that (i) chain-of-thought reasoning \\emph{amplifies} rather than suppresses Muslim-violence associations by 12--34\\% relative to direct completion, (ii) agentic decisions exhibit a 9--22 percentage-point asymmetry between Muslim and matched non-Muslim cases on identical evidence, and (iii) bias is sharply time-coupled to retrieved news context, increasing 18--27\\% under recent-conflict retrieval. Existing prompt-based mitigations transfer poorly across our three conditions, suppressing direct-completion bias while leaving agentic asymmetry largely intact. We release MIRAGE and an open evaluation harness to support targeted mitigation research.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T11:04:42+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16562v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2606.16307v1",
+      "title": "State-Grounded Multi-Agent Synthetic Data Generation for Tool-Augmented LLMs",
+      "authors": [
+        "Rahul Khedar",
+        " Eshita",
+        "Sneha Teja Sree Reddy Thondapu",
+        "Mayank Malhotra",
+        "Arup Das",
+        "Jitesh Chandra",
+        "Yun-Shiuan Chuang",
+        "Chaitanya Kulkarni",
+        "Arun Menon",
+        "Linsey Pang",
+        "Avinash Karn",
+        "Mouli V",
+        "Prakhar Mehrotra"
+      ],
+      "abstract": "Training tool-augmented LLM agents requires large corpora of multi-turn, tool-grounded conversational data that is expensive to annotate, privacy-constrained in production settings, and largely absent from public datasets. We present StateGen, a synthetic data generation platform that produces scored, reasoning-trace-rich training conversations by orchestrating a four-role LLM loop: a persona-conditioned user simulator, an agent under test, a state-grounded tool simulator, and a multi-axis LLM judge. The key architectural contribution is an authoritative state manager that maintains a structured world-state object across turns, enforcing a backend-is-truth invariant that eliminates the dominant class of tool-call hallucinations by construction. StateGen extends naturally to hierarchical multi-agent settings by declaring sub-agents as tools, all sharing a single state object. We report results on 64,698 evaluated conversations across three production corpora: tool-call hallucination scores reach 9.66/10, the system supports persona-driven variation via a 23-dimensional trait vector, and a cleanly separated train and golden evaluation set split confirms the data is not memorization bait (per-criterion gap analysis). Comparison with eight external systems shows that no single publicly available platform combines multi-turn generation, state-grounded tool simulation, hierarchical multi-agent support, and built-in judge scoring.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T07:13:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16307v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2606.16934v1",
+      "title": "Exploring Extrinsic and Intrinsic Properties for Effective Reasoning with Code Interpreter",
+      "authors": [
+        "Patomporn Payoungkhamdee",
+        "Napat Laosaengpha",
+        "Jenta Wonglertsakul",
+        "Pittawat Taveekitworachai",
+        "Pume Tuchinda",
+        "Panjapong Poobanchuen",
+        "Ekapol Chuangsuwanich",
+        "Can Udomcharoenchaikit",
+        "Samuel Cahyawijaya",
+        "Peerat Limkonchotiwat",
+        "Sarana Nutanong"
+      ],
+      "abstract": "Reasoning with a Code Interpreter (CI) has emerged as an effective paradigm for enhancing the reasoning capabilities of large language models (LLMs) through executable computation and iterative verification. Despite its growing adoption, the behavioral properties underlying effective code reasoning remain largely underexplored. In this work, we investigate code reasoning from two distinct perspectives inspired by prior studies of natural language reasoning: extrinsic properties, represented by crucial tokens, and intrinsic properties, represented by code-specific cognitive behaviors. Across multiple LLMs, we find that stronger CI reasoning models consistently exhibit a higher prevalence of crucial tokens and cognitive behaviors, particularly verification, backtracking, and backward chaining. Building on these observations, we examine how these properties can be leveraged during both inference and training. At inference time, appending code-specific crucial tokens improves performance on several reasoning capabilities, including mathematical, ordering, and optimization, while yielding limited benefits elsewhere. At training time, augmenting a state-of-the-art framework with code-specific cognitive behaviors improves supervised fine-tuning and reinforcement learning performance in two of three evaluated models. Further analysis shows that these behaviors reduce overthinking in incorrect responses and improve token efficiency, while also revealing factors that limit gains in a certain model. Our findings provide the first systematic characterization of effective reasoning with CI and demonstrate both the potential and limitations of leveraging key properties to improve CI-based reasoning.",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T16:34:00+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16934v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.16811v1",
+      "title": "Scaling LLM Reasoning from Minimal Labels: A Semi-Supervised Framework with a Lightweight Verifier",
+      "authors": [
+        "Keizo Kato",
+        "Chenhui Chu",
+        "Yugo Murawaki",
+        "Sado Kurohashi"
+      ],
+      "abstract": "For the development of Large language models (LLMs), recent approaches to generating pseudo intermediate reasoning have shown remarkable progress. But they typically rely on large numbers of correctly annotated answers to assess reasoning quality. This paper presents a semi-supervised framework that scales reasoning learning from minimal supervision, turning reasoning verification itself into a data creation mechanism. We train a lightweight reasoning-correctness classifier on only a few labeled samples, which judges whether intermediate reasoning traces generated by an LLM are valid. Furthermore, an entropy-based confidence threshold filters out unreliable samples, and the remaining high-confidence reasoning traces are used to fine-tune the model. Experiments on Verifiable Math Problems (Orca-Math subset) and Question Answering on Image Scene Graphs (GQA) with Visual Programming show that our method achieves accuracy comparable to using 10-15x more labeled data. Ablation analyses confirm that both the classifier and entropy filtering are essential for scalable and noise-resistant pseudo-labeling. By replacing expensive answer-level supervision with lightweight reasoning verification, our method provides a practical path toward constructing large-scale reasoning resources and paves the way for future autonomous reasoning systems that learn from minimal human input.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T14:55:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16811v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.16723v1",
+      "title": "AgentFairBench: Do LLM Agents Discriminate When They Act?",
+      "authors": [
+        "Triveni Morla",
+        "Rohith Reddy Bellibaltu",
+        "Manpreet Singh",
+        "Manmeet Singh Kapoor"
+      ],
+      "abstract": "Large language model (LLM) agents increasingly take actions (screening applicants, recommending credit, triaging patients), yet fairness for LLMs is still measured by grading answers. We introduce AgentFairBench, a cheap, reproducible, multi-domain benchmark for demographic disparity in the actions of LLM agents. Grounded in a companion framework, the Bias Conduction Framework (BCF, restated here), it spans three regulator-anchored domains: hiring, lending, and medical triage. Synthetic, demographic-neutral profiles are evaluated in counterfactual matched sets that vary only a name-coded race x gender signal (in the Bertrand Mullainathan tradition), under four agent scaffolds of increasing agency (direct, chain-of-thought, multi-agent deliberation, tool-augmented). A NumPy-only harness computes counterfactual flip rate, mean absolute score difference (MASD), action-rate disparity, and tool-invocation disparity, with bootstrap confidence intervals, paired tests, and false-discovery-rate control, for single-digit dollars per model. A live leaderboard with a held-out private split and a contamination canary admits external models by submission. Our pilot (864 decisions plus a test-retest replication) carries a methodological lesson: comparing a six-group score spread against a two-run noise difference overstates disparity by ~ 2.4X through statistic arity alone. Against an arity matched noise floor and an omnibus group test, claude haiku 4 5 shows no demographic effect above sampling noise (0 of 120 pairwise and 0 of 9 omnibus contrasts survive correction); a planted-bias test confirms the instrument detects disparity when present. The contribution is a sound, sensitive, adoption-ready instrument, the arity matched null methodology, and open artifacts to scale it. Code, data, and harness are released under open licenses, with an anonymized review artifact.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T13:50:26+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16723v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.16545v1",
+      "title": "Can LLM Coding Agents Reason About Time Series?",
+      "authors": [
+        "Filip Rechtorík",
+        "Ondřej Dušek",
+        "Zdeněk Kasner"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly being used for automated decision-making systems in finance, healthcare, or environmental monitoring. Time series data are ubiquitous in these fields, yet hard to process automatically. Can time series be analyzed by LLM agents? We examine three approaches: providing the agent with raw numerical data, using the LLM as a coding agent, or a combination of both. In the coding agent setup, the model iteratively queries the data using Python code. Using two time series understanding benchmarks, we show that agents with code access can outperform models processing raw data by up to 10%. However, even the best performing agent still answers about 22-34% of the questions incorrectly. To get insights into models' strategies and reasoning gaps, we analyze the model outputs with a strong LLM judge. Our analysis reveals that coding agents can select appropriate statistical tests, but often miss important nuances. Meanwhile, models with access to raw data can reach the right conclusions using back-of-the-envelope calculations.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T10:49:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16545v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2606.16276v1",
+      "title": "SpecAlign: Efficient Specification-Grounded Alignment of Large Language Models via Synthetic Data",
+      "authors": [
+        "Wenjie Wang",
+        "Yue Huang",
+        "Zhengqing Yuan",
+        "Han Bao",
+        "Shiyi Du",
+        "Yuchen Ma",
+        "Yue Zhao",
+        "Yanfang Ye",
+        "Xiangliang Zhang"
+      ],
+      "abstract": "As large language models (LLMs) are increasingly deployed in real-world applications, alignment is no longer governed by a single universal notion of safety or helpfulness, but instead by provider- or application-specific model specifications. These specifications are typically long, structured, and frequently updated, yet existing alignment pipelines lack a systematic mechanism to operationalize them as training signals. In this paper, we propose specification-grounded alignment, a new alignment paradigm that treats provider-authored model specifications as the primary alignment target rather than abstract principles or static benchmarks. To instantiate this paradigm, we introduce SpecAlign, a framework that synthesizes alignment data directly from specification documents. SpecAlign combines structured rule annotation, controllable specification instantiation, and multi-agent adversarial data synthesis to generate fine-grained, boundary-aware preference pairs that capture both compliant behaviors and meaningful specification violations. Experiments across multiple model specifications and backbone models demonstrate that training with SpecAlign consistently improves rule compliance while preserving general capabilities and avoiding over-conservative behavior. These results suggest that grounding alignment in explicit model specifications enables rapid, precise, and scalable adaptation of LLM behavior to evolving policy requirements.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T06:30:52+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16276v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2606.16576v1",
+      "title": "Can LLM Agents Infer World Models? Evidence from Agentic Automata Learning",
+      "authors": [
+        "Reef Menaged",
+        "Gili Lior",
+        "Shauli Ravfogel",
+        "Roee Aharoni",
+        "Gabriel Stanovsky"
+      ],
+      "abstract": "We propose agentic automata learning to evaluate the extent to which tool-calling LLM agents can uncover hidden environments through interaction. In our setup, an agent should uncover a hidden deterministic finite automaton (DFA) by interacting with an oracle through (1) membership queries (\"Does this string belong to the target language?\") and (2) equivalence queries (\"Is this the target DFA?\"). This yields a scalable testbed with controlled task complexity, measurable interaction efficiency, and strong baselines (classic automata-learning algorithms). Evaluating state-of-the-art LLMs, we find that performance drops sharply as DFA size increases. Reasoning models are markedly stronger than non-reasoning models, yet trajectory analyses reveal recurring failures in query planning, evidence integration, and hypothesis construction. Overall, our results show that current LLM agents can sometimes perform non-trivial interactive discovery, but remain far less robust and efficient than classic algorithms for the task.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T11:23:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16576v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2606.16222v1",
+      "title": "Latent Thought Flow: Efficient Latent Reasoning in Large Language Models",
+      "authors": [
+        "Xiandong Zou",
+        "Jing Huang",
+        "Jianshu Li",
+        "Pan Zhou"
+      ],
+      "abstract": "Large Language Models (LLMs) increasingly rely on intermediate reasoning, yet explicit Chain-of-Thought (CoT) suffers from a linguistic space bottleneck: each thought must be decoded into tokens, causing high inference overhead. Latent reasoning moves deliberation into continuous space, but existing methods mostly learn deterministic or reward-maximizing paths, lacking a principled way to allocate probability across trajectories with different correctness and costs. We propose Latent Thought Flow (LTF), which models reasoning as variable-length continuous trajectories and trains a sampler to match a reward-induced posterior over answer quality and computation cost. We instantiate this with a continuous GFlowNet using stochastic latent transitions. To handle sparse answer supervision, we introduce an Entropy-Weighted Subtrajectory Balance objective for intermediate rewards and a reference-prior regularizer to anchor exploration. Experiments under finetuning and transfer learning settings show that LTF outperforms explicit CoT and latent reasoning baselines, improving accuracy by 9.5% while reducing reasoning length by 27.2% on average compared with strong latent reasoning baselines.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T05:02:46+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16222v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2606.16988v1",
+      "title": "Agent trajectories as programs: fingerprinting and programming coding-agent behavior",
+      "authors": [
+        "Hamidah Oderinwale"
+      ],
+      "abstract": "Benchmark scores tell you what an agent got right; they do not tell you how it got there. In this work, we introduce methods for comparing agents procedurally in different contexts, where the model, tasks, and approaches vary. We compare ten agents and find that they are identifiable by their behavioral habits, which we define as fingerprints: a probe over these procedural signatures attributes an unseen trajectory to the correct agent at 85.7% accuracy, controlling for leakage across tasks. We develop procedural representations for agent problem-solving procedures with an emergent vocabulary induction technique that is meant to be maximally compressive to avoid surface-level variation while being expressive enough to unveil the quirks of the models' patterns. We apply our framework to the software engineering evaluation dataset SWE-Bench to study the structural distinctness of agent trajectories and find that behavior is most similar between models from similar release periods and those that are distilled from one another (e.g., a distilled student model and its teacher have a Jensen-Shannon divergence of 0.25, about half the distance between other model pairs). As more models saturate evaluations, we believe that it will be important to probe model behavior along more holistic dimensions than success rates alone. We introduce ProcGrep, a library for auditing and evaluating agents for how they approach tasks at a procedural level given their traces in a top-down fashion. We believe this work has a range of applications to help developers work with and program coding agents, such as task-aware model routing, agent monitoring, and finer-grained cost analysis.",
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T17:28:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16988v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.16783v1",
+      "title": "Gen-VCoT: Generative Visual Chain-of-Thought Reasoning via Diffusion-Based RGB Intermediate Representations",
+      "authors": [
+        "Zhiqiang Zhou",
+        "Junliang Dai",
+        "Xu ling"
+      ],
+      "abstract": "Multimodal large language models (MLLMs) excel at visual reasoning but rely on text-based chain-of-thought (CoT), lacking interpretable visual intermediates. Existing methods use opaque tokens or external tools, missing key properties. We propose Gen-VCoT, a framework using expert vision models to generate RGB images as reasoning intermediates. It has three stages: visual grounding (SAM segmentation), geometric reasoning (Marigold depth maps), and semantic reasoning (Qwen2-VL integration). An adaptive router selects reasoning depth. Evaluations show Gen-VCoT improves spatial (25% better) and depth (50% better) questions, but may hurt simple factual queries. Text CoT outperforms visual intermediates on CLEVR (91.2% vs 62.5%), showing task-dependent optimal representations. Gen-VCoT establishes a new paradigm for interpretable multimodal reasoning.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T14:27:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16783v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2606.17053v1",
+      "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+      "authors": [
+        "Peiyang Xu",
+        "Bangzheng Li",
+        "Sijia Liu",
+        "Karthik R. Narasimhan",
+        "Pramod Viswanath",
+        "Prateek Mittal",
+        "Xingyu Fu"
+      ],
+      "abstract": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that improves long-horizon reasoning and multimodal performance through an \\emph{indirect} auxiliary objective. Instead of supervising only the final answer, ContextRL presents the model with a query, an answer, and two highly similar contexts, and rewards it for selecting the context that supports the query--answer pair, thereby encouraging fine-grained grounding. We construct contrastive context data in two domains: for coding agents, trajectories serve as contexts, yielding 1k pairs built via condition filtering; for multimodal reasoning, images serve as contexts, yielding 7K pairs built via generative editing and similarity search. ContextRL achieves average gains of +2.2% over standard GRPO on 5 long-horizon benchmarks, and +1.8% across 12 diverse visual question answering benchmarks. To disentangle the effect of the proposed objective from that of additional data, we compare against data-augmentation baselines that repurpose the same contrastive contexts as standard query--context--answer examples. These baselines provide little to no improvement, showing that the gains arise from the proposed context-selection objective rather than from the contrastive data alone.",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "submitted": "2026-06-15T17:59:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.17053v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.17024v1",
+      "title": "ExpRL: Exploratory RL for LLM Mid-Training",
+      "authors": [
+        "Violet Xiang",
+        "Amrith Setlur",
+        "Chase Blagden",
+        "Nick Haber",
+        "Aviral Kumar"
+      ],
+      "abstract": "Sparse reward reinforcement learning (RL) has become a standard tool for improving LLM reasoning, but its success depends critically on the coverage present in the base model. In practice, models are often primed for RL through \\emph{mid-training} on curated reasoning traces that teach useful primitive skills such as decomposition, verification, or self-correction. Although effective, this strategy requires manually specifying what the model should learn, and it remains unclear whether such primitive coverage is enough for much harder problems, which require combining these skills into broader solution strategies. We study a more automated approach: \\emph{RL-based mid-training} using large corpora of human-written question-answer data. Rather than treating reference solutions as targets to imitate, our method, ExpRL, uses them as \\emph{reward scaffolds}: references are hidden from the policy and used only to construct problem-specific grading rubrics for judging on-policy reasoning traces. The policy samples from the original problem prompt, while an LLM judge compares the sampled reasoning trace against the reference solution and assigns outcome-level or process-level dense rewards. This lets ExpRL reinforce partial progress, useful intermediate reductions, and productive reasoning behaviors that sparse final-answer rewards often fail to upweight. On challenging math reasoning tasks, ExpRL yields stronger RL priming than SFT, sparse-reward GRPO, and self-distillation, and provides a better initialization for subsequent sparse-reward RL. Additional mixed-domain experiments further suggest that ExpRL can extend beyond the original math-only setting.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T17:50:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.17024v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.16360v1",
+      "title": "Tyler: Typed Latent Reasoning for Language Models -- When to Think, What to Compute, and How Much to Allocate",
+      "authors": [
+        "Hanyu Lin",
+        "Min Cai",
+        "Jiawei Wen",
+        "Haodi Zhang"
+      ],
+      "abstract": "Chain-of-thought (CoT) prompting improves reasoning in large language models (LLMs) by externalizing intermediate computation as discrete text tokens, but this textual interface also introduces redundancy and inference overhead. Latent reasoning offers a promising alternative by carrying part of the computation in continuous representations. However, existing methods typically predefine when latent computation is invoked and how it is allocated during decoding, leaving a key problem unresolved: when to invoke latent computation, what type of computation to perform, and how much budget to allocate. We propose \\textbf{Ty}ped \\textbf{L}at\\textbf{e}nt \\textbf{R}easoning (Tyler), a typed and budget-aware framework for latent reasoning during autoregressive decoding. Tyler learns a policy that, at each decoding step, chooses between emitting a text token and switching to a latent computation module specialized for a particular reasoning function. Once invoked, an operator maps the current reasoning state into latent tokens that support global planning, local state updates, or reusable procedural abstraction. Across extensive experiments on three backbone LLMs, Tyler improves accuracy by up to 14.49 points over CoT and by up to 4.30 points over the strongest competing baseline. It further generalizes across diverse reasoning domains and achieves the best final-stage performance with the lowest forgetting.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T07:56:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16360v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.16316v1",
+      "title": "RL-Index: Reinforcement Learning for Retrieval Index Reasoning",
+      "authors": [
+        "Yongjia Lei",
+        "Nedim Lipka",
+        "Zhisheng Qi",
+        "Utkarsh Sahu",
+        "Koustava Goswami",
+        "Franck Dernoncourt",
+        "Ryan A. Rossi",
+        "Yu Wang"
+      ],
+      "abstract": "Retrieving external knowledge is essential for solving real-world tasks, yet it remains challenging when the relationship between a query and its relevant knowledge involves implicit and complex reasoning beyond surface-level semantic or lexical matching (e.g., mathematical problems relying on the same theorem or coding requiring deep reasoning). Existing approaches primarily rely on query-side reasoning (e.g., query rewriting), which introduces significant online latency and underutilizes the opportunity to perform reasoning over the knowledge corpus itself (i.e., index-side reasoning). In this paper, we propose RL-Index, an agentic indexing framework that formulates retrieval index reasoning as a reinforcement learning problem. Instead of performing reasoning at query time, RL-Index shifts reasoning to the indexing stage by augmenting documents with LLM-generated rationales that explicitly encode the latent query-knowledge relationship. To optimize the quality of these rationales, we employ Group Relative Policy Optimization (GRPO) and use retrieval similarity as a verifiable reward signal, enabling direct optimization of indexing decisions for retrieval effectiveness. Extensive experiments on the BRIGHT benchmark demonstrate that RL-Index consistently improves both retrieval and downstream question-answering performance, while significantly reducing online inference latency. Moreover, the learned rationale augmentation generalizes across diverse retrievers and generators, highlighting its robustness as a plug-and-play indexing strategy across different retrieval systems.",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T07:22:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16316v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.16149v1",
+      "title": "LiteOdyssey: A Lightweight Reasoning AI Agent for Interpretable Rare-Disease Diagnosis",
+      "authors": [
+        "Minh-Ha Nguyen",
+        "Erica Gray",
+        "Chih-Ting Yang",
+        "Rizwan Hamid",
+        "Lingyao Li",
+        "Siyuan Ma",
+        "Thomas A. Cassini",
+        "Cathy Shyr"
+      ],
+      "abstract": "Most medical AI systems improve by scaling additional machinery: more fine-tuning data, more agents, and/or larger retrieval databases. In rare-disease diagnosis, however, such scaling can produce systems that are difficult to deploy, audit, and maintain. We asked whether state-of-the-art diagnostic performance could instead be achieved by extending the reasoning chain of a single AI agent: guiding it with a diagnostic policy, developed through human-AI collaboration and augmenting with freely available biomedical tools. We introduce LiteOdyssey, a lightweight rare-disease diagnostic framework that guides reasoning language model through a clinical genetics workflow. This framework was developed through Policy Iteration with Human Feedback (PIHF) and uses dynamic access to public biomedical tools. On two challenging benchmarks that provide only patient clinical features, LiteOdyssey achieved state-of-the-art performance, with an overall disease Recall@1 of 59.3% over the combined 1,243 cases of LIRICAL (n = 370) and the PhenoPacket Store (n = 873). Both benchmarks have a high proportion of ultra-rare disease (a prevalence below 1 in 1,000,000, with ultra-rare shares of approximately 45% and 52.8%, respectively). On the more difficult PhenoPacket subset, where causal diseases were not mapped to Orphanet in our rarity-mapping pipeline, LiteOdyssey achieved 60.7% Recall@1, compared with 10.7% for the same baseline model (GPT-5.4) without tools. This performance was achieved without fine-tuning, multi-agent ensembles, or a large case-retrieval database. Gains were also observed in the following: on cases never seen during development, on a private cohort of real-world rare disease patients, and on a smaller open-weights model. LiteOdyssey suggests a path toward rare-disease AI systems that are accurate, easier to deploy, and more transparent for physician review.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T03:10:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16149v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2606.16987v1",
+      "title": "Consensus-based Agentic Large Language Model Framework for Harmonized Tariff Schedule Code Classification",
+      "authors": [
+        "Truong Thanh Hung Nguyen",
+        "Khanh Van Quynh Nguyen",
+        "Hoang-Loc Cao",
+        "Tri Duong",
+        "Phuc Ho",
+        "Van Pham",
+        "Loc Nguyen",
+        "Hung Cao"
+      ],
+      "abstract": "Accurate Harmonized Tariff Schedule (HTS) code classification is essential for customs clearance, duty assessment, trade statistics, and regulatory compliance in maritime logistics. However, exact HTS classification remains challenging because product descriptions are often short, incomplete, or ambiguous, while correct classification depends on hierarchical tariff structures, legal notes, and jurisdiction-specific rules. This paper proposes an agentic large language model (LLM) framework for Canadian 10-digit HTS code classification in smart-port and maritime logistics environments. The framework integrates multi-agent information retrieval, semantic retrieval over official tariff documents, evidence-grounded reasoning, consensus-based validation, element-wise voting across hierarchical code components, confidence estimation, and human-in-the-loop escalation. We evaluate the framework on a private dataset of 3,300 domain-expert-labeled product records collected from logistics and delivery contexts. Experimental results show that exact 10-digit classification remains difficult even for advanced LLMs, with performance decreasing from coarse chapter-level prediction to fine-grained tariff and statistical suffix assignment. These findings demonstrate the need for evidence-grounded, uncertainty-aware, and human-centered classification workflows rather than fully autonomous single-step prediction. The proposed framework supports more interpretable, accountable, and compliance-oriented HTS classification for maritime logistics and smart-port operations. Our code is available at https://github.com/Analytics-Everywhere-Lab/hts.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T17:24:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16987v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.16821v1",
+      "title": "How Much Can We Trust LLM Search Agents? Measuring Endorsement Vulnerability to Web Content Manipulation",
+      "authors": [
+        "Yimeng Chen",
+        "Zhe Ren",
+        "Firas Laakom",
+        "Yu Li",
+        "Dandan Guo",
+        "Jürgen Schmidhuber"
+      ],
+      "abstract": "Large language model (LLM)-based search agents synthesize open-web content into actionable recommendations on behalf of users, creating a risk that attacker-published pages are transformed into endorsed claims. We introduce SearchGEO, a controlled evaluation framework for measuring endorsement corruption in LLM-based web-search agents, combining a web-evidence manipulation pipeline, a five-mode attack taxonomy, and multiple output-level metrics. We evaluate 13 LLM backends on 308 cases each. Results show that vulnerability patterns vary across backends: overall attack success rate (ASR) ranges from 0.0% on Claude-Sonnet-4.6 to 31.4% on Gemini-3-Flash, the strongest attack mode differs by model family, and the same deployment scaffold could amplify or decrease ASR on different backends. An auxiliary agent-skill probe, where endorsement becomes an install command, exposes a sharp split among otherwise robust backends: Claude over-rejects while GPT over-trusts. These findings argue for treating recommendation reliability under adversarial search content as a first-class dimension of backend safety evaluation.",
+      "categories": [
+        "cs.CL",
+        "cs.CR",
+        "cs.CY",
+        "cs.IR"
+      ],
+      "submitted": "2026-06-15T15:05:25+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16821v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.16774v1",
+      "title": "OpenClaw-Skill: Collective Skill Tree Search for Agentic Large Language Models",
+      "authors": [
+        "Tianyi Lin",
+        "Chuanyu Sun",
+        "Jingyi Zhang",
+        "Changxu Wei",
+        "Huanjin Yao",
+        "Shunyu Liu",
+        "Xikun Zhang",
+        "Liu Liu",
+        "Jiaxing Huang"
+      ],
+      "abstract": "Equipping Large Language Model (LLM) agents with effective skills is crucial for solving complex tasks in real-world systems like OpenClaw. In this work, we aim to develop a framework that automatically constructs such reusable skills to enhance LLMs in tool use, multi-step reasoning, and dynamic environment interaction. To this end, we propose Collective Skill Tree Search (CSTS), a novel tree-search-based skill construction framework that constructs structured, diverse and generalizable tree of skills. The core idea of CSTS is to leverage collective intelligence to jointly search, identify and compose effective skills via two iterative phases: Collective Skill Node Generation (CSN-Gen) and Collective Skill Node Assessment (CSN-Assess). CSN-Gen exploits collective knowledge from multiple models to explore diverse candidate skills for each subtask, enabling comprehensive skill exploration. CSN-Assess employs multiple models as judges to evaluate and select skill nodes with two scoring mechanisms: (1) collective quality scoring that aggregates independent evaluations to produce a robust estimate of skill effectiveness, and (2) collective transferability scoring that explicitly verifies whether a skill generalizes well across different models. With CSTS, we construct a set of comprehensive tree of skills along with skill-augmented training data, enabling models to effectively learn and utilize skills. Besides, we introduce Collective Skill Reinforcement Learning, which actively selects multiple relevant skills from the tree to broaden solution-space exploration, avoid being trapped by a single skill and its resulting homogeneous or suboptimal solutions. As a result, our trained model, OpenClaw-Skill, exhibits outstanding agentic capabilities in long-horizon planning, tool use and generalization over challenging benchmarks.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T14:20:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16774v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.16591v1",
+      "title": "SING: Synthetic Intention Graph for Scalable Active Tool Discovery in LLM Agents",
+      "authors": [
+        "Qiao Xiao",
+        "Haochen Shi",
+        "Yisen Gao",
+        "Wenbin Hu",
+        "Huihao Jing",
+        "Tianshi Zheng",
+        "Baixuan Xu",
+        "Ziheng Zhang",
+        "Weiqi Wang",
+        "Haoran Li",
+        "Jiaxin Bai",
+        "Yangqiu Song"
+      ],
+      "abstract": "Large language model (LLM) agents increasingly rely on agent harnesses that manage context, tools, and multi-turn execution, making tools a central interface for acting in realistic digital environments. As harness-connected tool ecosystems expand to hundreds or thousands of APIs, services, and task-specific skills, exhaustive tool schema injection becomes costly and imposes a closed-world assumption that limits agents to a predefined static inventory. Retrieval-augmented tool selection offers a natural alternative, but existing one-shot retrieval methods often fail to align isolated tool descriptions with the agent's true task intention, especially in long-horizon tasks where required capabilities emerge through decomposition, observations, and newly induced subgoals. We propose SING, an intention-aware active tool discovery framework that builds an intention-tool graph linking user intentions, tool capabilities, and tool collaboration patterns, and dynamically retrieves tools according to evolving task states. Using a unified corpus of 7,471 tools, we evaluate SING on three real-world tool-use benchmarks. SING improves Global Recall@5 by up to 59.8% and downstream success rate by up to 28.9% over baselines, while reducing full-corpus tool-schema exposure by 99.8%, demonstrating that intention-aware graph structure enables more accurate and context-efficient tool discovery in large-scale agentic ecosystems.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T11:37:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16591v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.16211v1",
+      "title": "Weaving Multi-Source Evidence for Biomedical Reasoning: The BioMedHop Benchmark and BioWeave Framework",
+      "authors": [
+        "Xingyu Tan",
+        "Shiyuan Liu",
+        "Xiaoyang Wang",
+        "Qing Liu",
+        "Xiwei Xu",
+        "Xin Yuan",
+        "Liming Zhu",
+        "Wenjie Zhang"
+      ],
+      "abstract": "Biomedical question answering (QA) increasingly requires reasoning over interacting entities, where supporting evidence is scattered across biomedical knowledge graphs, literature documents, and web-accessible resources. However, existing biomedical QA benchmarks mainly focus on exam-style knowledge, literature comprehension, or short-range multi-hop inference, leaving source-conditioned graph reasoning and evidence topology construction underexplored. To fill this gap, we introduce BioMedHop, a multi-source graph-grounded benchmark for evaluating biomedical reasoning over structured evidence topologies. BioMedHop contains 10,045 instances across KG, document, web, and hybrid evidence settings, covering shared-neighbor matching, intersection reasoning, path-based reasoning, and counting, with option-based, open-ended, and numeric count renderings. To support this benchmark, we further propose BioWeave, a source-aware reasoning framework that retrieves biomedical KG paths, gathers supporting clues from documents and web sources, assembles them into a unified evidence graph, and verifies answers through entity-level evidence support. Comprehensive experiments show that BioWeave achieves the best overall performance among compared methods on BioMedHop, outperforming the strong hybrid baseline ToG-2 by 10.5% in the overall average. Moreover, BioWeave consistently improves different LLM backbones and enables smaller models, such as Qwen3-4B, to achieve reasoning performance comparable to GPT-4-Turbo.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T04:38:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16211v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.16074v1",
+      "title": "PVminerLLM2: Improving Structured Extraction of Patient Voice via Preference Optimization",
+      "authors": [
+        "Samah Fodeh",
+        "Linhai Ma",
+        "Ganesh Puthiaraju",
+        "Srivani Talakokkul",
+        "Afshan Khan",
+        "Elyas Irankhah",
+        "Sreeraj Ramachandran",
+        "Ashley Hagaman",
+        "Sarah Lowe",
+        "Aimee Roundtree"
+      ],
+      "abstract": "Motivation: Patient-generated text contains critical information on patients' lived experiences, social context, and care engagement, but remains largely unstructured, limiting its use in patient-centered outcomes research. Prior work introduced the PV-Miner benchmark and PVMinerLLM models for structured extraction. However, supervised fine-tuning (SFT) alone struggles with rare, fine-grained, and unevenly distributed errors, particularly in token-critical structured outputs.\n  Results: We present PVminerLLM2, an improved set of LLMs for structured patient voice extraction that applies preference optimization to address token-critical errors beyond the reach of supervised fine-tuning. Our method introduces (i) a preference objective with token-level gated stabilization term that prevents degradation of absolute token likelihood under preference optimization, and (ii) confusion-aware preference pair construction to better capture low-separation distinctions. We further incorporate token-importance weighting and inverse-frequency reweighing to address token imbalance and class skew. Across multiple model sizes, PVMinerLLM2 consistently outperforms strong baselines, achieving gains of up to 4.43% (Code), 3.50% (Sub-code), and 1.55% (Span), and outperforms baseline LLM trained with existing preference optimization methods.\n  Availability and Implementation: The supplementary material, code, evaluation scripts, and trained models for PVminerLLM2 are publicly available at: https://github.com/Data-Mining-Lab-Yale/PVminerLLM2",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-06-15T00:18:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16074v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2606.16629v1",
+      "title": "Islamic Large Language Models: From Knowledge Acquisition to Trustworthy and Hallucination-Resistant AI",
+      "authors": [
+        "Mohammed Amine Mouhoub"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used for knowledge-intensive question answering, including religious and legal questions. Islamic knowledge is a particularly demanding setting: answers are expected to be grounded in authoritative sources, citations must be exact, Arabic varieties differ substantially from the language of classical sources, and legitimate jurisprudential disagreement must be represented rather than collapsed into a single answer. This survey reviews the emerging field of Islamic LLMs and trustworthy Islamic AI. We organize the literature around Arabic NLP and Arabic-centric LLMs, Islamic NLP resources, Qur'anic question answering, Islamic knowledge benchmarks, retrieval-augmented generation, Islamic legal reasoning, inheritance reasoning, hallucination evaluation, and trustworthiness. We argue that fluency in Arabic is not sufficient for Islamic AI. Reliable systems require curated sources, retrieval and verification modules, citation-aware generation, madhhab-aware reasoning, human expert evaluation, and benchmarks that measure not only answer accuracy but also faithfulness, source validity, and reasoning quality. The survey concludes with a research agenda for hallucination-resistant Islamic AI systems.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-06-15T12:22:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16629v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2606.16511v1",
+      "title": "Tail-Shape Estimation in LLM Evaluation Is Fragile: A Protocol for Diagnosing False Positives",
+      "authors": [
+        "Luca Zhou"
+      ],
+      "abstract": "Recent work motivates moving large language model (LLM) evaluation from mean-based to tail-aware metrics, including conditional value-at-risk and tail-index estimates of reward-model error. We ask whether the canonical extreme-value-theory tail-index parameter, which isolates how heavy a tail is from how large the tail mass is, adds discriminative information beyond the mean and a standard tail-magnitude statistic in LLM evaluation. We pre-register a protocol covering admissibility, goodness-of-fit, threshold-stability, and effect-size requirements for any positive tail-shape claim. The protocol is the contribution of this paper; the empirical study below is a demonstration of what its gates catch. Applied to a standard LLM toxicity-evaluation setup under two structurally different scorer families, the protocol catches three distinct modes of false positives that a naive analysis would have published, and rejects the headline tail-shape claim on both scorers. We conclude that tail-shape estimation in the LLM toxicity-evaluation setups we examined is more fragile than the recent literature suggests, and recommend the protocol as a starting point for tail-index claims in similar setups.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-06-15T10:13:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2606.16511v1",
+      "journal_boost": 0,
+      "score": 10
+    }
+  ]
+}
