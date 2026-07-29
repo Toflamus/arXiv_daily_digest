@@ -1,0 +1,641 @@
+{
+  "date": "2026-07-29",
+  "fetched_at": "2026-07-29T22:53:40.664128+00:00",
+  "stats": {
+    "arxiv_count": 292,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 38,
+      "Science Advances": 47,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 500,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2607.25816v1",
+      "title": "Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL",
+      "authors": [
+        "Jiabao Ji",
+        "Yujian Liu",
+        "Li An",
+        "Rohit Jain",
+        "Gungor Polatkan",
+        "Siyu Zhu",
+        "Shiyu Chang"
+      ],
+      "abstract": "Large language model agents often spend substantial wall-clock time waiting for tool call results. Tool-call speculation can hide this latency by predicting and pre-executing an agent's next tool call if the prediction matches the agent's eventual tool call, but existing speculators are typically separate draft models or cached traces that are poorly aligned with the deployed agent's own behavior. We identify this speculator-agent gap and show that the target agent itself is a strong next-call speculator. This points to a simpler design: unifying the agent and speculator within the same model. In this paper, we introduce the self-speculating agent, a single model that both solves tasks in agent mode and predicts its next tool call from partial trajectories in speculator mode, fully reusing prefix KV cache. To enable this dual-mode agent without degrading performance, we propose a joint agent-speculator reinforcement learning method, which derives speculation targets from the agent's own rollouts and alternates agent and speculator updates. Across agentic search QA and conversational tool-use agentic tasks, our method improves average next tool-call Hit@1 from 44.1 to 61.2 for Qwen3-4B and from 48.9 to 66.3 for Qwen3.5-4B, while preserving agent task success.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T15:00:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25816v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2607.25656v1",
+      "title": "OrchBench: Evaluating Multi-Agent Orchestration Plans in Isolation via Deterministic Simulation",
+      "authors": [
+        "Zhenzhen Ren",
+        "Jiyan He",
+        "Xinpeng Zhang",
+        "Zhenxing Qian",
+        "Ke Han",
+        "Shuxin Zheng",
+        "GuoBiao Li",
+        "Xiaoqing Zhang"
+      ],
+      "abstract": "Complex tasks often decompose into parallelizable yet interdependent subtasks, making orchestration critical to the performance of multi-agent systems (MAS). Existing evaluations typically rely on end-to-end execution, which conflates orchestration-plan quality with worker capabilities, tool reliability, and environmental noise. Moreover, the time and token costs of real execution grow rapidly with workflow scale, making systematic evaluation expensive. We present OrchBench, a simulation-based benchmark for evaluating multi-agent orchestration plans in isolation. Starting from real-world tasks, OrchBench constructs directed acyclic graphs (DAGs) that encode task dependencies, with controlled sizes and degrees of parallelism. Given a DAG, a per-agent context limit, and an agent budget, the evaluated planner assigns subtasks to agents and specifies cross-agent information transfers and their retention ratios. A deterministic simulator evaluates the resulting plan without invoking worker agents and returns interpretable measures of result quality, makespan, and token cost. The simulated scores produced by OrchBench correlate strongly with quality scores from Claude Code executions, achieving a Pearson correlation of \\(r=0.816\\), while requiring only \\(1.3\\%\\) of the tokens and \\(10.3\\%\\) of the wall-clock time. Across diverse planners and workflow scales, we find that preserving task-critical information is more important than simply increasing the number of agents, and the benefits of parallelism diminish as coordination failures accumulate. These results establish OrchBench as an efficient and interpretable benchmark for comparing and diagnosing multi-agent orchestration plans.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T12:43:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25656v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2607.25369v1",
+      "title": "ODYSSE: Episode-wise Policy Optimization for Personalized Agentic Reasoning",
+      "authors": [
+        "Jiaqi Zhang",
+        "Tong Chen",
+        "Junliang Yu",
+        "Quoc Viet Hung Nguyen",
+        "Hongzhi Yin"
+      ],
+      "abstract": "Agentic systems have rapidly advanced in their ability to interact with real-world environments, leverage external tools, and provide services for users. However, unlike natural-world tasks that assume well-defined instructions, human-centered scenarios are characterized by ambiguous requests that lead to large, open-ended solution spaces. Decoding users' personalized preferences is therefore essential for narrowing the candidate solution space. This introduces a new challenge, personalized agentic reasoning, which requires agents to jointly interact with both users and environments to deliver personalized services. In this paper, we present ODYSSE, a Reinforced Fine-Tuning (RFT) framework for personalized agentic reasoning. At its core, ODYSSE proposes Episode-wise GRPO (ESPO), a novel extension of Group Relative Policy Optimization (GRPO) designed to address long action horizons and strong cross-step dependencies in personalized agentic reasoning. Rather than optimizing individual steps independently, ESPO introduces an episode-level reward mechanism together with episodic advantage estimation, enabling upstream evidence to effectively guide downstream personalized decisions and allowing agents to progressively resolve ambiguous user requests across multiple interaction steps. We further propose an episodic batch sampler that groups actions from the same episode into unified training batches, facilitating coherent optimization under ESPO. We evaluate ODYSSE on realistic long-horizon personalized GUI reasoning tasks. Experimental results demonstrate that ODYSSE consistently outperforms both specialist and general-purpose LVLMs, highlighting its effectiveness for personalized agentic reasoning.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T07:25:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25369v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2607.25297v1",
+      "title": "Hybrid Analysis for Secure MCP Tool Use in LLM Agents",
+      "authors": [
+        "Ping He",
+        "Yuexiang Xie",
+        "Yaliang Li",
+        "Shouling Ji"
+      ],
+      "abstract": "The rapid development of large language model (LLM) agents has enabled their broad adoption across diverse real-world tasks. To standardize interactions between LLM agents and external environments, Model Context Protocol (MCP) tools have emerged as a de facto standard and have been widely integrated into these systems. However, the use of MCP tools also introduces new safety risks, as LLM agents can be induced to perform malicious or unauthorized actions. Although prior work has proposed defenses for securing tool use in LLM agents, most methods rely on static analysis, i.e., inspecting prompts and generated outputs, which limits the defense effectiveness and robustness. To address these limitations, we propose MTGuard, a hybrid analysis-based defense framework designed to safeguard the use of MCP tools in LLM agents by leveraging lifecycle-aware static-dynamic co-analysis. Extensive evaluation demonstrates that MTGuard effectively mitigates multiple categories of harmful tool use across different LLM agents while maintaining performance on benign user tasks.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T05:17:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25297v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2607.25145v1",
+      "title": "Agentic AI for Scientific Reasoning in Autonomous Quantum Sensing Experiments",
+      "authors": [
+        "Takuya Isogawa",
+        "Ryotaro Okabe",
+        "Nutdech Phadetsuwannukun",
+        "Mingda Li",
+        "Paola Cappellaro"
+      ],
+      "abstract": "We implement an agentic AI workflow built around a large language model (LLM) agent for autonomous experiments with nitrogen-vacancy (NV) centers in diamond. NV centers are a widely used platform for quantum sensing, and the ability to control many measurements from a computer makes NV experiments a natural setting for autonomous workflows. We make two main contributions. First, we demonstrate an autonomous NV experiment workflow that combines persistent project records, quantitative calculation and data analysis tools, and deterministic experiment control. In one autonomous experiment, the agent selected a single NV center, calibrated its resonant frequency, measured \\(T_2^\\ast\\) with Ramsey measurements, and added a Carr--Purcell--Meiboom--Gill (CPMG) measurement to check a weak feature that could be related to nearby \\(^{13}\\mathrm{C}\\). Second, we introduce two offline benchmarks that evaluate the agent's reasoning separately from laboratory execution. We evaluated both benchmarks with GPT-5.4, GPT-5.5, and GPT-5.6 Sol. In the Ramsey checkpoint benchmark, greater reasoning effort generally improved recognition of a residual resonance calibration offset. By contrast, in the pulsed optically detected magnetic resonance (pODMR) data evaluation benchmark, pulse sequence information alone produced more false positive resonance judgments at higher reasoning effort. Requiring an expected signal calculation kept false positive rates low across all three models and reasoning settings. The results suggest a clear division of labor for autonomous experiments. The agent forms scientific hypotheses and uses quantitative tools to evaluate data, while deterministic code controls the hardware and enforces safety constraints.",
+      "categories": [
+        "quant-ph",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-27T23:43:21+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25145v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2607.25140v1",
+      "title": "How Affect Propagates among LLM Agents: Emergent Emotional Contagion in Crowd Simulation",
+      "authors": [
+        "Funda Durupinar"
+      ],
+      "abstract": "This paper studies the behavior of language models in a multi-agent crowd simulation, focusing on how affect propagates among agents that perceive and appraise one another. Each agent perceives its neighbors through visual, auditory, and tactile channels, then appraises these perceptions in light of its prompted personality profile, memory, current affective state, and situational context. Appraisal is carried out by an LLM, which updates the agent's internal affective state and selects its outward expression. The architecture contains no hand-authored mechanism for directly transferring affective state between agents; instead, inter-agent influence arises through the perception-appraisal-expression loop. The agent representation draws on the Big Five personality model and Russell's circumplex model of affect. To limit latency, low-level steering and navigation are handled by a conventional crowd simulator operating independently of the LLM-based cognitive layer.\n  We evaluate the architecture across five scenario environments spanning alarming, joyful, and neutral situations in different spatial layouts. The results show that the system produces emotional contagion dynamics with spatial, temporal, and personality-dependent structure in sparse, small crowds. Alarm spreads from seeded agents as a traveling front, the mean alarmed fraction settles at a nonzero plateau, and the distribution of prompted personality profiles determines whether an ambiguous alarm ignites panic and whether a provocation is interpreted as anger or fear. We further evaluate the appraisal step through controlled experiments across prompt variants, sampling temperatures, and four model backends, showing that the dynamics are backend-dependent.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.GR",
+        "cs.MA"
+      ],
+      "submitted": "2026-07-27T23:22:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25140v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2607.25877v1",
+      "title": "Runtime Uncertainty Monitoring for LLM-Based Multi-Agent Systems Using Bayesian Networks",
+      "authors": [
+        "Bart Custers",
+        "Koorosh Aslansefat"
+      ],
+      "abstract": "This paper investigates how multi-agent systems (MAS)-based on large language models (LLMs) can support actuarial risk modelling, with a particular focus on uncertainty quantification. Actuarial workflows represent a high-stakes decision-support setting where unreliable outputs may lead to incorrect risk assessment, unfair pricing, and regulatory non-compliance. To address uncertainty introduced by the probabilistic nature of LLMs and dependencies between agents, a multi-agent framework is proposed in which specialised agents perform data preparation, modelling, review, and explanation tasks under a central hub. The main contribution is a novel approach to uncertainty propagation using token-level log-probabilities and a Bayesian Network. Importantly, log probabilities are not treated as direct probabilities of correctness or task success. Instead, length-normalised log-probability summaries are transformed into calibrated task-level confidence estimates before incorporation into the Bayesian Network. Results show that the framework reproduces baseline actuarial performance while providing additional insight into workflow stability and runtime uncertainty propagation.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T15:39:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25877v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2607.25420v1",
+      "title": "MARS: Multi-Agent Re-ranking for Repeat-Order Food Delivery Recommendation",
+      "authors": [
+        "Jiahao Tian",
+        "Zhenkai Wang"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used in recommender systems, but it is often unclear how much performance can be obtained from strong pre-trained backbones alone when they are placed inside a structured recommendation pipeline. In this paper, we present MARS, a modular multi-agent re-ranking framework for repeat-order food delivery recommendation. MARS serves as a controlled hybrid framework for studying how far pre-trained LLMs can go in this setting when combined with lightweight collaborative retrieval and contextual filtering. MARS performs coarse-to-fine recommendation in two stages: cuisine prediction followed by vendor ranking. The framework combines LightGCN-based global preference signals, Swing-based local peer evidence, geospatial filtering, and prompt-driven LLM reasoning over behavioral, temporal, and geographic context. We evaluate MARS on two real-world Delivery Hero benchmarks, DHRD-SE and DHRD-SG, and compare it against heuristic, sequential, graph-based, and food-delivery-specific baselines. We also provide detailed implementation and evaluation protocols, including prompting and decoding. Our study makes three contributions. First, it presents a modular multi-agent framework for repeat-order food delivery recommendation that integrates collaborative signals and LLM-based re-ranking in a transparent pipeline. Second, it shows that strong pre-trained backbones can already be competitive in repeat-order recommendation when paired with lightweight collaborative retrieval. Third, it establishes a reproducible evaluation setting for hybrid LLM recommenders in food delivery.",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T08:18:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25420v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2607.25400v1",
+      "title": "COVENANT: Natural-Language Workflow Compilation for Aligned Agent Execution",
+      "authors": [
+        "Jincheng Wang",
+        "Min Zheng",
+        "Tao Wei"
+      ],
+      "abstract": "Large language model (LLM) agents are increasingly entrusted with natural-language workflow instructions (e.g., retail-payment policies) that specify not only what outcome to achieve, but also which steps, branches, and tool interactions are permitted. When these instructions are supplied as prompt context, however, the model retains control over both procedure selection and step execution. As interactions accumulate, an agent can skip required steps, take unsupported branches, or execute a valid step with unsupported arguments or effects--a failure mode we call workflow misalignment. In this work, we propose COVENANT, a compiler-and-interpreter architecture for workflow-aligned agent execution. Our key insight is to treat workflow instructions as source programs rather than prompts. COVENANT converts the instructions into a workflow abstract syntax tree (WAST) and lowers it to a workflow control-flow graph (WCFG). At runtime, a controller interprets the WCFG one node at a time, checks each proposal against requirements extracted from the instructions before committing controller state or advancing the graph, and returns diagnostic feedback for repair. To evaluate COVENANT, we use 120 cases from three existing benchmarks, spanning seven workflow scenarios. Compared with state-of-the-art LLM agents, COVENANT improves benchmark success from 50.00% to 83.33% and reduces the workflow-misalignment failure rate from 42.50% to 15.83% (62.75% relative). These results show that COVENANT substantially mitigates workflow misalignment, moving LLM-agent alignment beyond isolated prompt following toward reliable execution of complex and multi-step workflows.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T07:59:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25400v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2607.25947v1",
+      "title": "A Cost-Effective Multimodal LLM Reasoning Framework for Question Answering over Irregular Clinical Time Series",
+      "authors": [
+        "Frank Nie",
+        "Ethan B Liu",
+        "Yuan Zhu",
+        "Wei Fan",
+        "Jindong Han"
+      ],
+      "abstract": "Question answering (QA) over irregular clinical time series (ICTS) plays a pivotal role in a wide range of healthcare applications. Although recent multimodal time-series large language models (LLMs) have shown considerable promise in general-purpose time-series QA, they remain poorly equipped to model the sparsity, asynchrony, and irregular sampling patterns of clinical observations. To fill this gap, we propose ClinPRISM, a cost-effective multimodal LLM reasoning framework for question answering over ICTS data. First, we devise an irregularity-aware multi-scale encoder to capture sparse clinical evidence at diverse temporal scales. Then, we propose a temporal evidence distiller to integrate representations across these scales and compress them into a small number of LLM-compatible tokens. Moreover, we introduce a progressive alignment strategy that sequentially aligns the irregular trajectories with the LLM's textual embedding space. To facilitate training, we construct 30,000 clinical time series paired with multi-scale descriptions, together with 41,000 instruction-tuning instances spanning 11 tasks. Using a 4-billion-parameter LLM backbone, ClinPRISM achieves state-of-the-art performance on the held-out evaluation benchmark while using only 16 time-series tokens and achieving an average inference latency of 0.15 seconds per question.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-07-28T16:33:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25947v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2607.25485v1",
+      "title": "PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents",
+      "authors": [
+        "Korosh Vatanparvar",
+        "Ashutosh Joshi",
+        "Maria Xenochristou",
+        "Mohammad Abuzar Hashemi",
+        "Prasad Kasu",
+        "Deepak Bansal",
+        "Daniel Lopez-Martinez",
+        "Anchal Nema",
+        "Ramya Ganesan",
+        "Will Kimbrough",
+        "Alex Woody",
+        "Yadunandana Rao",
+        "Dilek Hakkani-Tur",
+        "Wilko Schulz-Mahlendorf"
+      ],
+      "abstract": "Health AI is evolving from answering questions to agentic systems that converse with patients, reason about health records, and act on their behalf. Primary care guards against diagnostic errors and unsafe care; agents assisting in this domain warrant evaluation against the same risks. Current benchmarks focus on medical knowledge, assessed through isolated question-answering or clinician-facing tasks. PatientAgentBench benchmarks patient-facing agentic healthcare; it evaluates a foundation model, wrapped in an agent with a sandbox of healthcare tools, conversing with a simulated patient. Each conversation is scored by an LLM-as-a-Jury across six dimensions via over a hundred conversation-agnostic, clinician-grounded criteria. To validate alignment, licensed clinicians annotated shared conversations, yielding 79-93% adjacent agreement between jury and expert raters, on par with or exceeding clinician inter-rater agreement. We benchmarked 10 models across four families on the same 1,200 scenarios and found clinical gaps. Triage quality is the most discriminating dimension: pass rates rise from 32% for the weakest models to 88% for the strongest, with agents often acting on administrative requests without clinical screening. Clinical safety and workflow accuracy follow the same pattern: the weakest models fail often, fabricating unexecuted actions, while frontier models fail on only 1-3% of cases, from unverified tool outputs and omitted crisis resources in an emergency. More capable models narrow these gaps but do not close them; the strongest scores only 4.25 of 5 overall. These failures surface only in sustained, tool-using conversations against realistic patient records, confirming that static benchmarks are insufficient as healthcare agentic systems gain autonomy. We release the framework as a reproducible, clinician-validated evaluation standard to help the field close this gap.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-07-28T09:24:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25485v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2607.25446v1",
+      "title": "Toward an Organizational Science of Multi-Agent LLM Systems: Decoupling Who, How, and Which Algorithm",
+      "authors": [
+        "Huan Chen",
+        "Xiang Song",
+        "Jian Jin",
+        "Pan Ren",
+        "Liang-Jie Zhang"
+      ],
+      "abstract": "Multi-agent frameworks built on large language models (LLMs) routinely entangle three logically distinct concerns: who is on the team (organization), how members align (coordination), and which algorithm fuses their work (collaboration protocol). IMACS (Intelligent Multi-Agent Collaboration System) separates the three into orthogonal, independently swappable layers. Classic organizational theory (Belbin roles, Mintzberg coordination, RACI accountability) becomes executable, validated configuration, and the framework places six published collaboration algorithms behind a common interface while exposing roles, coordination, and accountability as independently configurable factors. We use this separation to conduct controlled comparisons in which organizational assignments vary while the collaboration protocol is held fixed. It also turns protocol choice into a variable that can be learned: Adaptive Org Routing, a contextual-bandit meta-protocol, selects a protocol per task under an explicit quality-cost tradeoff, outperforms every fixed protocol in a controlled study, and trains online on real benchmark and LLM-judge rewards. The ablations expose a mechanism. Accountability placement changes outcomes exactly when the protocol routes the deliverable through the accountable agent, and the winning placement flips across model families, so organizational design cannot be hard-coded; it must be revalidated, or learned, for each model binding.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-28T08:35:21+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25446v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2607.25408v1",
+      "title": "Context Assembly as the Controlled Variable: A Control-Theoretic View of Harness Policies for Frozen LLM Agents",
+      "authors": [
+        "Debjyoti Paul"
+      ],
+      "abstract": "A growing body of 2026 work applies control theory to LLM agents: Lyapunov-certified stability for tool-mediated controllers (Prinos et al., \"Stable Agentic Control\", 2026), sample-complexity bounds for sparse policies over massive discrete tool universes (Majumdar, \"Sparse Agentic Control\", 2026), and regulatory-control decompositions of multi-agent systems into auditable feedback loops (Nogueira and Skogestad, 2026). We do not claim to introduce control theory to LLM agents -- that ship has sailed. Our narrower claim is about what the controlled variable is. Prior work controls tool selection, inter-agent message routing, or the agent's raw action stream. We instead treat context assembly itself -- which prompt template, which few-shot demonstrations, how much retrieved context, how many planning/verification passes -- as the controlled variable, learned online by a contextual bandit or REINFORCE policy sitting outside a frozen model. This paper develops the formal decomposition (inner frozen policy $π_θ$, outer context policy $π_φ$), gives a stability argument for the online controller in the sense used by Zhang et al. (2026) (non-decreasing expected reward under bounded policy change), and reports an uncertainty-calibration analysis of the controller's own confidence against realized task outcomes. The applied counterpart to this paper instantiates the same controller across three domains and two model providers and releases the dataset, trajectory logs, and a deployment recipe; here we focus on the formal framing and the stability/uncertainty evidence a control-theoretic claim requires.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T08:07:06+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25408v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2607.25283v1",
+      "title": "ContractHIL-HLS: Contract-Aligned Multi-Agent Workflow with Hardware-in-the-Loop Feedback for HLS Design",
+      "authors": [
+        "Jingbo Zhang",
+        "Haoxiang Sun",
+        "Wenbo Wang",
+        "Wenbo Zhang"
+      ],
+      "abstract": "This paper presents ContractHIL-HLS, a contract-aligned multi-agent workflow for practical high-level synthesis (HLS) engineering. The workflow makes three contributions. First, it introduces a structured contract as the semantic-alignment and task-execution artifact that translates natural language requirements into explicit interfaces, constraints, validation checks, and rollback rules. Second, it incorporates hardware information into the feedback loop by feeding HLS, Vivado, PYNQ runtime, power, and failure evidence back into generation, thereby extending LLM-assisted HLS from kernel code toward system- and board-level closure. Third, it decomposes agents by semantic lowering and execution tasks rather than by conversational roles: a Contract Agent lowers natural language into the contract, an HTML Agent renders the contract as persistent structured HTML, and a Hardware-in-the-Loop Agent implements and revises the design with measured evidence. We evaluate ContractHIL-HLS in two parts. On 94 locally executable HLS-Eval tasks, the structured contract provides the largest small design gain, improving the estimated single-sample testbench pass rate from 64.0% to 70.2%; the full flow reaches 70.4% pass@1 and 76.6% pass@5. Because HLS-Eval does not exercise board-level design, we also validate ContractHIL-HLS on a board tested ML-KEM/ML-DSA post-quantum cryptography (PQC) secure-message accelerator, where the retained dual-bitstream organization reduces six-message average text runtime from 207.3 ms to 52.4 ms with positive routed WNS on both images while preserving decrypted-message verification. We open-source our work at BJUT-CS316-LAB/ContractHIL-HLS (https://github.com/BJUT-CS316-LAB/ContractHIL-HLS).",
+      "categories": [
+        "cs.AI",
+        "cs.AR",
+        "cs.CR"
+      ],
+      "submitted": "2026-07-28T04:41:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25283v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2607.25182v1",
+      "title": "TabRank: Chain-of-Thought Distillation for Table Re-Rankers",
+      "authors": [
+        "Adarsh Singh",
+        "Kushal Raj Bhandari",
+        "Jianxi Gao",
+        "Soham Dan",
+        "Vivek Gupta"
+      ],
+      "abstract": "The ability to retrieve relevant tables for answering questions is a key task for structured information retrieval. Multi-stage retrieval systems rely heavily on rerankers to refine candidate lists produced by efficient first-stage retrievers. As a result, neural rerankers and LLM-based reranking methods have become increasingly important due to their superior capacity for semantic understanding and reasoning compared to conventional sparse or dense retrieval models. Recently, Large Reasoning Models (LRMs) equipped with explicit chain-of-thought (CoT) reasoning have shown strong improvements in ranking quality in unstructured passage retrieval. In this work, we present TabRank, a framework for training reasoning rerankers for Tabular Retrieval. We first present a comprehensive dataset of 6728 reasoning traces for tabular reranking on the Natural Questions Tables dataset. We then explore two variants of training a compact reasoning model on these reasoning traces: explicit CoT distillation and conditioning the student reranker on the teacher's reasoning trace within the prompt. We stress-test TabRank on several out-of-distribution generalization settings on diverse domains and multi-table scenarios. Our approach significantly improves performance across a variety of table retrieval datasets, increasing Acc@10 by 30.5% on HybridQA, 15.2% on SQA, 52.9% on TabFact, and 13.1% on TATQA subsets of the Multi-Table QA Benchmark compared to the base model. Notably, TabRank generalizes effectively to multi-table reasoning. Our code, data and models are available at https://github.com/AdarshSingh7647/TabRanker",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "submitted": "2026-07-28T01:23:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25182v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2607.25992v1",
+      "title": "MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents",
+      "authors": [
+        "Shuyue Wei",
+        "Chang Liu",
+        "Zimu Zhou",
+        "Yongxin Tong",
+        "Lizhen Cui"
+      ],
+      "abstract": "Recently, memory management has become a key infrastructure for LLM-based agents, as it directly affects long-horizon reasoning, personalized responses, and knowledge reuse. However, existing LLM memory systems typically adopt a coarse-grained (utility-agnostic) manner that treats heterogeneous user-LLM interaction records uniformly, leading to redundant and low-impact records persisting in the memory repository. To address this challenge, we present MemLens, a value-aware memory management system that takes memory records as first-class data objects. MemLens provides an end-to-end interactive analytics dashboard that exposes the complete memory lifecycle, including Shapley-style memory evaluation, value-aware storage, and memory-assisted response. Through a study-copilot application, the system enables users to inspect memory values, visualize hierarchical memory structures, and compare various memory management strategies in terms of response quality, retrieval latency, and token consumption. Therefore, our MemLens can serve as an efficient, interpretable, and personalized long-term memory management system for LLM-based agents.",
+      "categories": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T17:08:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25992v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.25890v1",
+      "title": "Distributing Security Controls Through Harness Engineering",
+      "authors": [
+        "William Robert Gore"
+      ],
+      "abstract": "AI coding agents are being adopted at historic speed, yet security and risk concerns remain the primary barrier to scaling agentic AI across organizations. Existing security controls for coding agents are not systematically distributed to engineering teams, and vendor-native solutions introduce ecosystem dependencies that may not suit every deployment context. This paper investigates whether off-the-shelf security controls can be implemented on commercial AI coding agents and scaled to a distributed user base via a custom agent harness. A phased testing methodology was applied across four agent configurations --- two commercial agents with and without controls, a baseline harness, and a security-hardened harness --- using a 23-test suite derived from the OWASP Top 10 for Agentic Applications. SHarD (Secure Harness Distribution), a distributable harness built on the Pi agent harness, demonstrated that three categories of security controls --- OS sandboxing, skill scanning, and tool restriction --- can be embedded and distributed via a single install command while retaining equivalent efficacy to direct installation on commercial agents. SHarD achieved an adjusted score of 100\\%, matching the best securely configured commercial agent, with no regression across any test category. Notable observations include evidence that model non-determinism produces inconsistent security outcomes and that autonomous agent behavior can cross system boundaries in ways that OS sandboxing directly mitigates. Initial characteristics toward a control harness fitness framework are proposed, and a third research question is identified for future investigation.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T15:50:16+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25890v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.25873v1",
+      "title": "How Do LLMs Read Bug Reports? An Empirical Study of Attention in LLMs for Automated Program Repair",
+      "authors": [
+        "Ramtin Ehsani",
+        "Irene Manotas",
+        "Saurabh Pujar",
+        "Luca Buratti",
+        "Preetha Chatterjee"
+      ],
+      "abstract": "Large Language Model (LLM)-based Automated Program Repair systems are advancing rapidly, yet their performance remains inconsistent. Even when provided with the same contextual information, an LLM may generate a correct patch for one bug but fail on another closely related bug. Why this happens remains poorly understood, and it is unclear how LLMs prioritize the diverse information in bug reports and whether model attention affects repair success. In this paper, we present the first empirical study of attention patterns in LLM-based program repair, providing interpretable insights into how models process bug reports and where their attention is concentrated during repair. We analyze 319 real-world Python and Java bugs from SWE-bench Verified and Multi-SWE-bench to study (RQ1) how model attention is distributed across bug report sections, (RQ2) how attention patterns within each section differ between successful and unsuccessful repairs, and (RQ3) how these patterns compare to information developers consider important for bug fixing. We find that successful repairs are characterized by diffused attention across multiple diagnostic components such as bug descriptions, stacktraces, and test cases, while failures often exhibit over-localized attention toward metadata such as version information. We further observe that stronger alignment between model attention and developer-identified key sections and phrases is associated with higher repair success. Our results provide the first empirical evidence that attention misallocation is a key factor in LLM-based APR failures, and offer actionable insights for designing more interpretable and reliable future APR systems.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T15:38:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25873v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.25579v1",
+      "title": "IRIS: Reusable Identity Representations from Frozen LLMs for Entity Alignment",
+      "authors": [
+        "Xinran Liu",
+        "Shengtao Li",
+        "Shouqian Shi",
+        "Ge Wang",
+        "Xin-Wei Yao"
+      ],
+      "abstract": "Entity alignment (EA) identifies entities across knowledge graphs (KGs) that refer to the same real-world object. Conventional EA methods mainly exploit explicit graph structures and textual fields, which often provide insufficient semantic understanding to recognize the same entity under heterogeneous descriptions and distinguish it from semantically similar entities. Although large language models (LLMs) offer deeper entity understanding, existing LLM-based EA methods largely use this capability for auxiliary generation or candidate-conditioned decisions. Consequently, such understanding is not distilled into a stable and directly comparable identity space, leaving alignment tied to specific KG pairs or candidate sets and requiring repeated processing as the matching context changes. To address these limitations, we propose IRIS (Identity Representations from Internal States), a training-free framework that constructs for each entity an iris-like signature encoding its distinctive and stable identity characteristics. IRIS derives these signatures by eliciting identity-oriented contextual representations from a frozen LLM, thereby forming a shared space in which each entity is encoded once and can be aligned across different KGs through direct similarity comparison, without pair-dependent representation construction or candidate-wise LLM inference. Across four established EA benchmarks and two frozen LLM backbones, the best IRIS variants achieve Hits@1 scores of 100.00, 99.38, 98.31, and 97.99 on D-Y-15K V2, DBP-WIKI, ICEWS-WIKI, and ICEWS-YAGO, respectively.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T11:05:46+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25579v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.25152v1",
+      "title": "When Do Agent Loops Mistake Stagnation for Progress? Self-Evaluation Bias and Externally Grounded Verification in Long-Running Autonomous LLM Agent Loops",
+      "authors": [
+        "Hyundoo Park",
+        "Byungho Choi"
+      ],
+      "abstract": "Long-running autonomous agents plan, act, and judge their own completion without human intervention. When an agent grades its own work, self-evaluation bias takes hold: plausible changes are accepted as progress while real-world outcomes stagnate or regress. We name this failure mode the progress mirage and show, with controlled measurement, that it is a question of what the evaluator is grounded in. We built a testbed that holds the agent and its tool surface fixed and manipulates only the information-channel type of the evaluator that gates the loop. A world-state oracle, unfakeable in principle, is enforced by container and network isolation and verified at every run. Across 54 cycles a frontier agent claimed improvement every time, yet 56 percent had a measured delta of zero or below. Self-report was thus uninformative, and the self-verdict gate degenerated into accept-all, eroding the best deployed state it had reached by 19 percent. Even the strongest in-band judge, reading the full artifact text, the change diff, and its own verdict history, accepted cycles of which 44 percent were real-world regressions and rejected 38 percent of real improvements; the preregistered adversarial hypothesis that a strong judge closes the gap was rejected. On a boundary task whose success specification is verifiable from the artifact itself, the same judge's mirage vanished to zero and the gap collapsed within the registered threshold, showing that the gap depends on where the success signal resides. A sign-only variant returning only the acceptance verdict kept real-world output similar to full feedback (110.0 versus 113.0), locating the benefit in the gate's grounding rather than in feedback content. For open-ended objectives whose success signal lives outside the transcript, scaling up the judge is not enough; out-of-band evaluation with real-world access is a structural requirement.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-27T23:52:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25152v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.25754v1",
+      "title": "Cooperative Multi-UAV Navigation in Complex Environments via Systematic Multi-Agent Deep Reinforcement Learning",
+      "authors": [
+        "Yu Su",
+        "Nabil Aouf"
+      ],
+      "abstract": "Cooperative navigation of multi-agent UAVs in complex environments faces key challenges including local optima traps, sparse rewards, learning imbalance among agents, and insufficient cross-scenario generalisation. This paper proposes a multi-agent deep reinforcement learning framework that addresses these issues through coordinated exploration, demonstration exploitation, safe curriculum scheduling, and structure-aware generalisation. First, a perception mechanism combining memory of visited states, directional novelty estimates, and penalty backpropagation enables agents to proactively detect and escape local optima. Second, a hierarchical collaborative demonstration buffer with tiered behaviour cloning manages trajectories by degree of team collaboration and applies differential supervision to the actor network, improving demonstration utilisation under sparse collaborative signals. Third, a safety-aware dual-condition curriculum scheduling mechanism reviews mastered scenarios through back-testing and experience pre-filling during training, suppressing catastrophic forgetting while ensuring both task performance and flight safety. For generalisation, local geometric features computed from sensor readings are abstracted into a domain parameter, through which a structure-aware gating network and mixture-of-experts mechanism condition the policy on local structural patterns rather than scenario-specific coordinates, enabling cross-scenario transfer without exposure to the target environment. The framework is further validated under mixed static-dynamic obstacle settings, showing robust adaptability to dynamic disturbances. Simulation results confirm strong performance in collaboration success rate, navigation robustness, zero-shot cross-scenario generalisation, and dynamic environment adaptability.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-07-28T14:16:11+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25754v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.25718v1",
+      "title": "Tools Are Not Islands: Set-Level Tool Retrieval for LLM Agents via Query-Conditioned Hyperedge Prediction",
+      "authors": [
+        "Xinyi Hong",
+        "Pinjun Dong",
+        "Xinyang Yu",
+        "Binyan Jiang"
+      ],
+      "abstract": "Large language model (LLM) agents increasingly rely on invoking external tools to complete real-world tasks. Tool retrieval, which selects a small task-relevant subset from a library of thousands of tools before the agent acts, has therefore become a critical component of LLM agent pipelines. However, existing retrievers either score each tool in isolation or assemble the tool set sequentially, so the joint utility of a candidate set is never evaluated as a whole. In this paper, we propose HYSET, short for HYperedge-based SEt-level Tool retrieval. Our contributions are threefold: (i) we formulate tool retrieval as query-conditioned hyperedge prediction on a tool co-invocation hypergraph, under which the tool set itself becomes the unit of scoring and most existing retrieval paradigms reduce to restricted instances; (ii) we capture size-dependent tool compatibility through cardinality-specific interactions; and (iii) we design HYSET as a pre-selection module requiring no modification to the downstream agent. Experiments on ToolBench demonstrate that HYSET consistently outperforms state-of-the-art baselines in both tool retrieval performance and end-to-end task success. Beyond the in-domain setting, HYSET further supports zero-shot/few-shot transfer, generalizing to held-out tools/categories and unseen domains with minimal supervision.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "submitted": "2026-07-28T13:45:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25718v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.25612v1",
+      "title": "Multi-Sensor Alignment for Weather Simulations",
+      "authors": [
+        "Samsad Alam",
+        "Devyani Lambhate",
+        "Aditya Mohan",
+        "Vishal Kumar",
+        "Vaibhav Katewa"
+      ],
+      "abstract": "Perception tasks for autonomous vehicles need to work satisfactorily in adverse weather conditions. Due to lack of real-world weather datasets, weather simulations are a promising alternative. To ensure simulations closely mirror real-world weather data, it's crucial that they represent the same weather characteristics, including severity and particle positioning, across different sensors. To achieve this, we propose the Reference Dataset Alignment Method (ReDAM) for weather intensity alignment in fog and Unified-weather-edit (inspired by Weather-edit[1]) for particle positioning alignment in rain and snow. We validate both alignment methods using statistical and geometrical tests, respectively. We find that 3D detection models for non-aligned versions tend to be overly optimistic as compared to aligned versions. We also show the aligned-multi-sensor simulation's effectiveness for achieving robustness for 3D object detection task by finetuning existing sensor fusion models on it.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T11:43:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25612v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.25186v1",
+      "title": "MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios",
+      "authors": [
+        "Xiao Li",
+        "Mouxiao Bian",
+        "Zhaodi Wu",
+        "Sijie Ren",
+        "Juechen Chen",
+        "Lu Lu",
+        "Jingru Ding",
+        "Yun Zhong",
+        "Jie Xu",
+        "Yixiu Liang",
+        "Junbo Ge"
+      ],
+      "abstract": "Background: Most medical large language model (LLM) benchmarks focus on examination knowledge or isolated tasks and may not reflect the longitudinal, multimodal, and safety-critical workflow of cardiovascular care. Objective: To develop MyoCardBench, a real-world benchmark spanning the cardiovascular care continuum, and assess LLM performance across clinical dimensions and specialist tasks. Methods: MyoCardBench includes 2,263 items from 13 task-specific datasets derived from de-identified cardiovascular records and examination data. Sixteen cardiology physicians conducted annotation and reference construction, followed by cross-review from two senior cardiologists. Seven LLMs generated 15,841 outputs under standardized zero-shot settings. Open-ended tasks were evaluated using key-point coverage and holistic clinical quality, while CardioEthics was scored by accuracy. Results: GPT-5.4 achieved the highest macro-average (62.55) and item-weighted mean (62.19), followed by Gemini 3.1 Pro (59.95) and Qwen 3.6 27B (59.72). GPT-5.4 ranked first in all three dimensions. CardioAuxReport performed best (86.38), whereas CardioECGRead (17.25) and CardioEthics (17.34) were lowest. The largest gaps between holistic clinical quality and key-point coverage occurred in CardioComm (52.71), CardioEmergRescue (52.05), and CardioTreatPlan (48.80). Conclusions: To our knowledge, MyoCardBench is the largest real-world, multi-task benchmark for LLM evaluation across the cardiovascular care continuum and offers the broadest coverage of clinically authentic cardiology scenarios reported to date. It provides a rigorous framework for identifying model strengths, clinically important omissions, and priorities for future development.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-07-28T01:39:52+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25186v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.25135v1",
+      "title": "ScalableRAG: High-Quality RAG at Zero Ingestion Cost",
+      "authors": [
+        "Hilaf Hasson",
+        "Aditya Chakravarty",
+        "Jayant Thomas",
+        "Krishna Gogineni"
+      ],
+      "abstract": "Recent advances in RAG aim to optimize for performance by paying high ingestion costs for knowledge ingestion: building knowledge graphs or extracting SQL tables. In this work we show that the operations that such knowledge bases allow can be replicated with zero ingestion costs (not even a vector database); in fact our solution, Zero-Ingestion ScalableRAG, handily out-performs all baselines (including knowledge graph approaches) in three out of the six corpora considered here, and only marginally missing maximum performance on the other three, with average accuracy across all six datasets 7.36% above the next most competitive baseline. It achieves this by keeping a workspace of document sets and values sets that it can write into and read from, allowing for on-the-fly aggregative reasoning in all situations where grouping is required on a primary key that is in one to one correspondence with a subset of the total document set.\n  Capping the number of LLM calls by a constant independent of the corpus size, we also introduce Limited-Ingestion ScalableRAG, which does use a minimal vector database as well as an automated pattern discovery from a sample of documents, to further improve accuracy at scale. Our code is available at https://github.com/cohesity/ScalableRAG .",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-27T23:03:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25135v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.25915v1",
+      "title": "Penelope: Localized Latent Recurrence for Efficient Structured Reasoning",
+      "authors": [
+        "Yutong Chen",
+        "Shouqian Shi",
+        "Xinran Liu",
+        "Haochen Wang",
+        "Jiaying Wang",
+        "Tianxing Xu",
+        "Yuanxi Wang",
+        "Zirui Ding"
+      ],
+      "abstract": "Complex structured reasoning tasks often require additional computation, yet current language models obtain it mainly by increasing parameter scale or by serializing intermediate steps as chain-of-thought (CoT) tokens. The former raises training and deployment costs, while the latter ties reasoning computation to autoregressive output length. We introduce Penelope, an efficient latent-reasoning framework for pretrained decoder-only Transformers that localizes recurrent computation to a selected decoder interval. The lower decoder prefix is evaluated once to construct a problem-conditioned boundary memory, which is then iteratively refined through time-modulated GRU dynamics and recurrent readout states before answer generation. A progressive CoT-to-latent curriculum transfers visible reasoning into this internal recurrent path, allowing additional computation to be allocated in latent space without repeatedly executing the complete decoder or generating a long intermediate trace. Experiments on open-source structured-reasoning benchmarks show that, at validation-selected latent budgets, Penelope attains competitive accuracy relative to established latent-reasoning models while reducing measured inference latency. These results show that latent refinement can be localized to a narrow decoder interval, reducing repeated full-decoder execution without generating a long visible reasoning trace and providing a practical accuracy-efficiency tradeoff for decoder-only Transformer models.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-28T16:06:46+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25915v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2607.25886v1",
+      "title": "RSIBench-Data: Benchmarking Data-Centric Research for Recursive Self-Improvement",
+      "authors": [
+        "Fanqing Meng",
+        "Lingxiao Du",
+        "Qiguang Chen",
+        "Ziqi Zhao",
+        "Haocheng Lu",
+        "Mengkang Hu",
+        "Michael Qizhe Shieh"
+      ],
+      "abstract": "Recursive self-improvement requires turning evidence of model failures into better models. Data-centric post-training research entails diagnosing capability gaps, designing and validating training-data strategies, and learning from checkpoint feedback. Can LLM agents automate this loop? Existing benchmarks entangle research decisions with optimization, serving, evaluation, and systems implementation, obscuring agents' research capability. We introduce RSIBench-Data, a controlled benchmark of LLM agents as data-centric researchers with a fixed post-training stack. Agents iteratively revise training-data strategies for a fixed target model; training and serving use Tinker-backed services, official evaluation runs through Harbor and E2B sandboxes, and budgets are fixed across agents. We evaluate four frontier agents on six benchmarks across software engineering, terminal use, scientific question answering, and mathematics. Agents demonstrate core data-centric research capabilities: in 58.33\\% of settings, they improve upon the first valid attempt by refining strategies from feedback. However, improvement is inconsistent. Among searches continuing after the best observed score, 78.26\\% end with a lower-scoring final attempt, while the rest only recover the same peak. A strong candidate may therefore appear early or midway through a run even as later revisions fail. Trajectory analysis identifies four patterns in stronger runs: accurate hypotheses, validation-grounded supervision, behavior-aligned data, and preservation of strong checkpoints. These findings suggest that current agents can make useful data-centric discoveries but cannot yet translate feedback into consistent improvements. RSIBench-Data provides a measurable, auditable testbed for the research capabilities required for recursive self-improvement. We open-source our code at https://github.com/evolvent-ai/RSIBench-Data.",
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "submitted": "2026-07-28T15:46:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25886v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2607.25728v1",
+      "title": "Shared Voxel-Map-Based Cooperative Indoor UAV Guidance with a Multi-Agent Soft Actor-Critic Controller",
+      "authors": [
+        "Thomas Hickling",
+        "Dylan Wynne",
+        "Yu Su",
+        "Nabil Aouf"
+      ],
+      "abstract": "This paper presents a cooperative indoor UAV guidance framework that combines a shared voxel-map world model with a multi-agent Soft Actor-Critic (MASAC) controller. Multiple drones fuse 360 LiDAR observations into a common world-frame occupancy map, which is converted into a compact bird's-eye-view (BEV) representation and provided to each agent as an ego-aligned local crop. This integrate-in-world, act-in- ego design enables consistent multi-UAV spatial fusion whilst retaining decentralised continuous control. The policy combines BEV map features, near-field obstacle observations, and compact goal and peer-state information within a centralised-training, decentralised-execution framework. In simulation, the learned controller achieves a 90.3% success rate in corridor navigation, outperforming Astar planning, an artificial potential field controller, and a prior guidance method. To address residual sim-to-real mismatch, the simulation-trained policy is further adapted using offline imitation fine-tuning from real-world data. Real-world experiments in GNSS-denied indoor environments demonstrate stable two-UAV cooperative operation across increasingly chal- lenging obstacle layouts. The results show that shared voxel-map representations provide an effective and scalable spatial substrate for learned cooperative indoor UAV guidance.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-28T13:52:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25728v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2607.25366v1",
+      "title": "Sharpness-aware Model Merging with Salience Recovery for LLM-based Cross-Domain Sequential Recommendation",
+      "authors": [
+        "Huwei Ji",
+        "Jiajie Su",
+        "Yuyuan Li",
+        "Xiaohua Feng",
+        "Chaochao Chen"
+      ],
+      "abstract": "LLM-based Cross-Domain Sequential Recommendation (CDSR) leverages LLMs to enhance target performance via deep semantic reasoning, alleviating the dependency on overlapping users. Among LLM-based paradigms, model merging is particularly promising for multi-domain scenarios due to its superior scalability and flexibility in integrating diverse knowledge sources. However, our empirical investigations reveal two critical bottlenecks: (1) cross-domain knowledge conflict; and (2) performance saturation in multi-domain fusion. Our analysis attributes these phenomena to parameter-level misalignment and statistical homogenization during the merging process. To address these bottlenecks, we propose SharpRec, Sharpness-aware Model Merging with Salience Recovery for LLM-based CDSR, a framework designed to lift the performance upper bound of merged models. SharpRec incorporates two synergistic modules: Sharpness-aware Geometric Alignment to establish a stable geometric foundation for interference-free fusion; and Preference Salience Activation to effectively recover the distinctive features essential for bolstering target domain performance. Extensive experiments in both dual-domain and multi-domain scenarios demonstrate that SharpRec consistently outperforms state-of-the-art baselines.",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-28T07:17:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25366v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2607.25340v1",
+      "title": "Cardiologent: Multi-Agent Clinical Decision Support for Patient-Level Arrhythmia Assessment, Urgency, and Management",
+      "authors": [
+        "Sukju Oh",
+        "Moo-Yong Rhee",
+        "Jae-Sik Jang",
+        "Sukkyu Sun"
+      ],
+      "abstract": "The same episode of atrial fibrillation is a minor finding in a healthy adult and grounds for anticoagulation in an elderly patient with hypertension: identical signal, opposite decision. Naming the rhythm is only the start; what determines a patient's outcome is the judgement that follows -- what the arrhythmia is across the whole record, what it means for this patient, and what should be done about it. Recent work pairing large language models with the ECG stops short of this, reading one recording without assembling a patient-level finding; and agentic systems built around it either receive the arrhythmia a device has already detected or target a different diagnostic task, stopping before the decision this task requires. We formulate patient-level arrhythmia decision support as a task and present Cardiologent, a multi-agent system that spans it from detection to decision. An agent for each signal -- a single ECG lead and the photoplethysmogram a wearable acquires -- grounds its window reading in measured features rather than a bare label; the readings are assembled into the patient's rhythm profile and, with the patient's own data, reasoned against clinical guidelines retrieved for the case, with a critic checking each conclusion against the guideline it cites. We evaluate the clinical decision rather than the report, across integrated diagnosis, clinical significance, and urgency and management. Cardiologent scores highest on every axis, first on every patient-level task under both cardiologists and an at-scale LLM judge -- whose agreement with the cardiologists (ICC 0.74, 0.66) matches theirs with each other (0.67). Because each conclusion traces to a cited guideline and is validated against expert cardiologists, it yields decisions a clinician can audit rather than act on blindly -- a step toward use in continuous monitoring.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-07-28T06:43:39+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.25340v1",
+      "journal_boost": 0,
+      "score": 10
+    }
+  ]
+}
