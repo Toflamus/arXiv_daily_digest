@@ -1,0 +1,685 @@
+{
+  "date": "2026-07-31",
+  "fetched_at": "2026-07-31T22:53:03.756052+00:00",
+  "stats": {
+    "arxiv_count": 399,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 0,
+      "Science": 42,
+      "Science Advances": 90,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 0,
+      "Nature Materials": 0,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 0
+    },
+    "total_after_dedup": 555,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2607.27512v1",
+      "title": "Belief Coevolution in a Social Network of Generalist and Specialist Large Language Models",
+      "authors": [
+        "Germans Savcisens",
+        "Samantha Dies",
+        "Courtney Maynard",
+        "Tina Eliassi-Rad"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly deployed in multi-agent environments. However, the processes by which beliefs form and propagate among interacting LLMs remain poorly understood. We introduce CoevolveSim, a framework for studying belief diffusion within networked LLM populations. CoevolveSim allows us to isolate and study three factors: domain specialization, social-role assignment, and social network structure. Within this framework, generalist and specialist LLM agents exchange and revise beliefs. In each round, an LLM agent observes a summary of its neighbors' beliefs before updating its own. We run 1,280 controlled simulations spanning four scenarios, two network structures, and 20 medical-indication statements. We find that persona-style role assignment and network structure reshape individual belief revision but have minimal effect on population-level consensus. In contrast, introducing (finetuned) specialist LLMs more than doubles the shift in consensus and gives rise to consistent asymmetries in exerted influence. We further show that simple persistence-based opinion-dynamics models reproduce collective outcomes in all-generalist LLM populations, whereas heterogeneous LLM populations require population-level belief composition to reproduce consensus and agent identity to predict individual belief transitions. Our results indicate that realistic simulation of belief diffusion in multi-agent LLM systems requires a diverse set of underlying LLMs, not persona prompting alone.",
+      "categories": [
+        "cs.CL",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "submitted": "2026-07-29T23:02:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27512v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2607.28527v1",
+      "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+      "authors": [
+        "Mao-xun Huang",
+        "Jerry Wang",
+        "Yi-Cheng Lai",
+        "Zhengxin Zhang",
+        "Claire Cardie",
+        "Hen-Hsen Huang"
+      ],
+      "abstract": "Large language model-based multi-agent systems improve complex problem solving through task decomposition, agent specialization, information exchange, and intermediate validation. However, existing systems typically treat communication topology as a fixed design choice or an offline optimization target. We introduce MANTA, a framework for Multi-Agent Network Topology Adaptation that enables communication structures to self-evolve at inference time. Before execution, MANTA initializes a task-conditioned topology from prior structural experience. During deployment, it monitors collaboration traces and applies bounded structural updates when the current organization becomes insufficient. These updates can modify agent roles, communication links, execution order, information visibility, and validation pathways while preserving the task interface and agent budget. We evaluate MANTA against representative single-agent and multi-agent baselines on five benchmarks spanning information seeking, tool use, planning, workflow execution, and mathematical reasoning. MANTA achieves the highest average score of 74.0, outperforming the strongest baseline by 5.8 percentage points and obtaining the best result on PlanCraft. These results show that inference-time self-improvement can extend to the architecture of collaboration itself.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T17:01:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28527v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2607.27783v1",
+      "title": "Reasoning Consensus: Structural Ensembling of LLM Reasoning via Weighted DAG Aggregation",
+      "authors": [
+        "Amruta Parulekar",
+        "Jinu Lee",
+        "Dilek Hakkani-Tür",
+        "Hari Sundaram"
+      ],
+      "abstract": "Large Language Models (LLMs) explore problems through chain-of-thought, but this exploration is buried in unstructured prose. On high-stakes tasks, users cannot tell which steps are well-supported, which alternatives were seriously considered, or how the final conclusion compares to those the model discarded. We propose a framework that ensembles the reasoning structure, not just the answers, of multiple LLMs by weighted merging of Directed Acyclic Graphs (DAGs) extracted from reasoning chains. We weight each step by how many traces independently attest to it, to return \"Consensus Reasoning\". Across six benchmarks spanning statutory interpretation, graduate-level science, narrative multi-hop reasoning, and first-order logic, our ensemble outperforms a matched-budget majority-vote baseline, with a maximum accuracy gain of 3.1% on MuSR-MM (narrative multi-hop reasoning). On a single model, the framework matches or exceeds self-consistency at the same trace budget while additionally exposing an inspectable consensus reasoning graph. Ensemble weights correlate with LLM-judge rankings of reasoning quality at Spearman $ρ= 0.30$-$0.51$, and consensus subgraphs are preferred over alternatives leading to the majority-vote answer in 54.4-65.4% of head-to-head comparisons across five of six datasets. We observe that our framework can also be used to analyze diverse reasoning perspectives for a problem.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-30T07:14:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27783v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2607.27760v1",
+      "title": "Hierarchical Latent Reasoning for LLM-based Recommendation",
+      "authors": [
+        "Peiyu Hu",
+        "Siying Gu",
+        "Weihai Lu",
+        "Zhuodong Liu",
+        "Yuntian Tang",
+        "Jiahao Liang",
+        "Yiying Xie",
+        "Jiang Rong",
+        "Zhaokai Luo",
+        "Zhiyong Wang",
+        "Jia Wang"
+      ],
+      "abstract": "Large Language Models (LLMs) have shown strong potential for recommendation by leveraging their semantic understanding and contextual modeling capabilities. Recent studies further introduce reasoning mechanisms to improve user preference modeling. However, explicit natural-language reasoning incurs substantial inference overhead, whereas existing latent reasoning methods mainly focus on generating or verifying intermediate states, leaving their layer-wise preference roles and contributions insufficiently characterized. We propose HiLaR, a Hierarchical Latent Reasoning framework with layer-aware reinforcement optimization for LLM-based recommendation. HiLaR constructs temporal-guided hierarchical user preference representations, aligns them with multiple LLM latent reasoning states, and organizes the reasoning process from broad preferences to fine-grained current intents. To further optimize the reasoning trajectory, HiLaR combines final recommendation feedback with layer-aware process rewards derived from the marginal target-likelihood gain of each state. Experiments on four Amazon benchmark datasets show that HiLaR generally outperforms strong sequential, generative, and LLM-based recommendation baselines. Ablation and sensitivity analyses further verify the contribution of hierarchical representation learning, latent alignment, and process-level optimization. Our code is available in https://github.com/hupeiyu21/HiLaR.",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T06:58:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27760v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2607.27879v1",
+      "title": "ARES: Adaptive Reasoning-Effort Steering for PPA- and Cost-Aware RTL Optimization with LLM Agents",
+      "authors": [
+        "Stef Cuyckens",
+        "Mihaela Jivanescu",
+        "Jun Yin",
+        "Chao Fang",
+        "Marian Verhelst"
+      ],
+      "abstract": "Large language model (LLM) agents optimize the power, performance, and area (PPA) of register-transfer-level (RTL) designs by iterating over edits, synthesis, and PPA analysis, paying a dollar cost for every LLM call. Prior agents report the quality reached without its normalized cost, attribute that quality to an engineered cross-design memory, and hold the reasoning effort of every call fixed. We propose Ares with three corresponding innovations. (1) We introduce a normalized dollar cost per LLM call reported alongside the figure of merit (FoM), enabling fair comparison across effort levels and optimizers. (2) Using this accounting, we find the construction of the long-term memory matters little. An engineered memory brings no dependable gain over a plain concatenation of the same experience. (3) We instead adapt the per-call reasoning effort by escalating to deeper reasoning only once progress at a lower effort stalls, via a patience counter fit on 21 training designs, allocating reasoning where it pays rather than uniformly across all iterations. On three test designs unseen during training, the effort policy lowers the FoM by 23-27% where the best fixed effort reaches 16-23%, at equal normalized cost. Ares closes up to 83% of the gap from an LLM-drafted multiply-accumulate unit to its highly hand-optimized counterpart, and reaches a 25% deeper FoM than state-of-the-art Dr. RTL at 12% of its tokens.",
+      "categories": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T08:53:32+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27879v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2607.28154v1",
+      "title": "OPLD: On-Policy Latent Distillation for Multimodal Reasoning",
+      "authors": [
+        "Shoutai Zhu",
+        "Tianyang Xu",
+        "Bin Sun",
+        "Mingyuan Xu",
+        "Yu Liu",
+        "Qinzhen Guo"
+      ],
+      "abstract": "Interleaved multimodal Chain-of-Thought (CoT) improves visual reasoning by incorporating auxiliary visual evidence into intermediate reasoning. However, existing approaches remain constrained by externally defined reasoning traces and visual operations, limiting their ability to develop flexible and abstract visual thinking. Reasoning with latent has recently offered a promising direction by internalizing intermediate computation into continuous representations. Nevertheless, existing visual-latent methods mainly supervise latent states through alignment with compressed auxiliary visual features, treating them as proxies for visual observations rather than active reasoning states. Consequently, they capture the provided evidence but fail to fully internalize the abstract reasoning process induced by multimodal CoT. In this paper, we propose OPLD (On-Policy Latent Distillation), a simple framework that transfers the reasoning capability induced by privileged multimodal CoT into latent reasoning representations. Extensive experiments on diverse multimodal benchmarks demonstrate that OPLD consistently outperforms existing latent reasoning methods and achieves state-of-the-art performance on multiple benchmarks. The results suggest that supervising latent representations at the reasoning-process level provides a more effective paradigm for multimodal latent reasoning than conventional feature-level alignment.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T12:57:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28154v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2607.28374v1",
+      "title": "LEDGERMIND: Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger",
+      "authors": [
+        "Enjun Du",
+        "Hange Zhou",
+        "Chenxu Du",
+        "Siyi Liu",
+        "Zirong Chen",
+        "Ziyu Zheng",
+        "Yongqi Zhang"
+      ],
+      "abstract": "Multimodal agents for visual question answering increasingly operate as multi-step trajectories that interleave perception, retrieval, and reasoning, yet evaluation still largely reduces to final-answer accuracy. This aggregate signal cannot tell whether a correct answer was reached through grounded evidence, language priors, or accidental error cancellation. We propose to treat a multimodal agent trajectory as a provenance-constrained state machine: tool outputs are normalized into a Structured Evidence Ledger that serves as the trajectory state, downstream reasoning and decision claims may cite only active ledger entries, grounding is checked at the entity and numeric level, and repair is realized as typed state transitions that cannot introduce content without tool-produced provenance. We instantiate this design as LedgerMind (Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger), augmented by a Three-Layer Grounding Protocol, an Adaptive Dual-Path Dispatcher that matches reasoning depth to question complexity, and an Event-Triggered Verification-and-Repair engine with a formal provenance non-amplification guarantee. We use LedgerMind to target four recurring failure patterns that final-answer accuracy tends to obscure: unsupported intermediate reasoning, citation-backed entity hallucination (Phantom Grounding), over-reasoning on simple queries, and repair-time amplification. Experiments across multiple multimodal reasoning benchmarks and backbone MLLMs show that LedgerMind improves both answer accuracy and trajectory-level faithfulness.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-07-30T15:35:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28374v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2607.28006v1",
+      "title": "MMLDSum-LLM: Multimodal Long-Document Summarization with Visual-Alignment and Keyword-Aware",
+      "authors": [
+        "Xianpeng Zhang",
+        "Jiahua Yang",
+        "Dongyu Chen",
+        "Lei zhang",
+        "Jian Ma",
+        "Xu guohuan",
+        "Haonan Lu",
+        "Tianhuang Su",
+        "Chuangchuang Wang",
+        "Kai Tang"
+      ],
+      "abstract": "Multimodal long documents are core carriers of professional knowledge, where critical evidence is sparsely distributed across paragraphs and modalities. This easily causes key information omission and cross-modal hallucinations in summarization by multimodal LLMs. These issues stem from attention drift in long-range dependency modeling and gaps in inter-modal alignment. To address this, we introduce MMLDSum-Bench, a high-quality benchmark for multimodal long-document summarization, covering multiple domains, context-length scales, and visual-textual modality distributions. We further propose MMLDSum-LLM, a reproducible two-stage training framework that combines supervised fine-tuning with visual-alignment weighted loss and keyword-aware weighted loss, followed by GRPO with a multi-objective reward (keyword coverage, image-text alignment, ROUGE, and length control). Extensive experiments on MMLDSum-Bench, comparing against leading closed-source and open-source multimodal models under a unified evaluation protocol - including LLM-as-a-judge scoring, atomic-claim precision/recall, image-text alignment (ITA), and ROUGE - demonstrate that our approach significantly improves key-information coverage and cross-modal consistency.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T10:54:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28006v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2607.27877v1",
+      "title": "An Empirical Study of Coordination Mode as the First-Class Citizen in From-Scratch Multi-Agent Coding",
+      "authors": [
+        "Yanyu Ren",
+        "Yunfeng Bai",
+        "Xizheng Wang",
+        "Li Chen",
+        "Dan Li"
+      ],
+      "abstract": "Multi-agent vibe coding promises to accelerate software development, yet existing benchmarks rely on synthetic environments that ignore practical time and monetary costs, conflate reasoning with communication, and reward only superficial completion. We introduce multi-agent from-scratch evaluation benchmark, MSEval, evaluating multi-agent coding on real-world tasks. Grounded in 10 authentic, full-stack projects across 10 domains, MSEval scores performance using hierarchical requirements and deterministic rubrics.\n  Its execution engine, LegoGent, tests 10 collaboration topologies where agents coordinate via periodic sync intervals and deploy through native CI/CD pipelines. Concurrently, the automated grader TAgent dynamically probes implementations to jointly measure functional success, latency, and prefix-cached token cost. Across 100 runs, MSEval reveals that organizational topology rivals model capability in shaping the speed--cost--quality trade-off. For identical tasks and models, varying the topology shifts scores by over 30 points and doubles wall-clock time. Structured pipelines converge fastest with the highest quality, whereas heavy managerial oversight degrades performance. Ultimately, MSEval establishes a rigorous, reproducible standard for measuring how multi-agent teams actually build software. The benchmark is released at https://github.com/robinren03/MSEval.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T08:53:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27877v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2607.27994v1",
+      "title": "SKIMIX: Multi-Agent Harness-Time Scaling with Skill Mixture for Dynamic Harness Engineering",
+      "authors": [
+        "Jia Luo"
+      ],
+      "abstract": "AI agents increasingly rely on large skill libraries, but selecting, combining, and maintaining skills remains difficult. We propose SKIMIX, a multi-agent framework in which agents with different skill portfolios collaborate through iterative refinement. SKIMIX combines embedding-based skill retrieval, submodular anti-dilution routing, and adaptive skill evolution. Across six reasoning benchmarks, multi-agent collaboration substantially improves open-ended mathematical reasoning but offers limited or negative gains on multiple-choice tasks. Agent-count scaling is non-monotonic, and most improvements arise during the first refinement round. These results show that task characteristics determine whether skill-level ensembles help and provide practical guidance for scalable agent design.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T10:40:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27994v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2607.27958v1",
+      "title": "$Σ$-Mem: An Online Reliability Memory for LLM-based Multi-Agent Systems",
+      "authors": [
+        "Peilin Feng",
+        "Suorong Yang",
+        "Soujanya Poria"
+      ],
+      "abstract": "Memory is central to long-horizon LLM agents, yet existing memory systems primarily preserve interaction content rather than modeling which agents can be trusted and under what conditions. This limitation is particularly important in multi-agent systems, where a central model may be unable to directly verify plausible or correlated peer responses. We introduce $Σ$-Mem, an online reliability memory that records historical competence evidence for individual peers and peer relationship evidence across the peer set. Both forms of evidence are maintained as real symmetric states and updated from post-decision correctness feedback. By Weyl's inequality, the spectral change caused by each event-level update is bounded, enabling stable online adaptation without retraining the underlying models. $Σ$-Mem provides a general write-and-read interface: the same memory can be used for residual steering of a central model, response-free peer routing, or reliability-weighted voting. Across five Qwen-family models, $Σ$-Mem adapts to counterfactual reliability shifts and generalizes to unseen peers and task domains. Direct memory readouts also outperform majority voting and the best fixed peer over the full OOD evaluation set. Moreover, performance improves consistently as more correctness feedback becomes available, indicating that $Σ$-Mem progressively accumulates actionable reliability information. These results establish reliability memory as a reusable foundation for adaptive coordination in LLM-based multi-agent systems.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T10:05:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27958v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2607.28242v1",
+      "title": "Agentic Metaverse Services: A New As-a-Service Paradigm",
+      "authors": [
+        "Xiaofei Xu",
+        "Quan Z. Sheng",
+        "Zhongjie Wang",
+        "Boualem Benatallah",
+        "Xiao Wang",
+        "Ruipeng Han"
+      ],
+      "abstract": "Generative Artificial Intelligence (GenAI) is reconstructing the digital virtual world, upgrading agents through enhancing their abilities in autonomous learning, multi-modal interaction, content generation, and collaborative decision-making. In particular, the shift from conversational chatbots to agentic AI, the most recent significant technical breakthrough of GenAI, has brought a new form of services, agentic services and Agent-as-a-Service (AaaS), in which the agent's abilities are encapsulated, such as perception, decision-making, execution, collaboration, and content generation, to provide the customized agent services to users. The metaverse is a virtual ecosystem for human life, work, creation, and entertainment, supported by the new generation of digital technologies. Through combining agentic services and the metaverse, an Agentic Metaverse Service, denoted as AMServ, is produced for metaverse business processing, as a new form of metaverse service. The AaaS in the metaverse environment, denoted as Meta-AaaS, as an approach to realize AMServ, has become a new paradigm of agentic services and service computing. This paper overviews the evolution and new features of agents and services empowered by GenAI, reveals the roles and principles of agentic services in the metaverse environment, presents the forms, characteristics, and principles of the AMServ and the Meta-AaaS, discusses the typical application examples of the AMServ and the Meta-AaaS, and finally points out the new tendencies and research directions of the AMServ and the Meta-AaaS. The AMServ and the Meta-AaaS will bring great opportunities to human society and services in the AI era, and promote the rapid development of emerging service industries in the future.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-07-30T14:06:23+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28242v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2607.27773v1",
+      "title": "ChronoMem: Version Control and Semantic Rollback for Large Language Model Agent Memory",
+      "authors": [
+        "Yongye Su",
+        "Wujiang Xu",
+        "Chaoji Zuo",
+        "Elisa Bertino"
+      ],
+      "abstract": "LLM agents increasingly rely on long-term memory to support multi-session interaction and personalization. However, existing agent memory systems are designed around forward-only evolution, continuously accumulating, consolidating, and overwriting knowledge, with no principled mechanism to inspect, version, or revert prior states. This makes agents brittle under corrections, concept drift, and memory corruption, particularly after they have already been exposed to subsequent information. We present ChronoMem, a semantic version-control layer for agentic memory integrated into the production-ready, open-source Agent Development Kit by Google. ChronoMem commits whole-memory snapshots at each memory write, maintains structured version histories, and supports natural-language rollback requests by mapping undo intents to concrete historical versions through hybrid lexical and semantic retrieval, rank fusion, and reranking. We further introduce a post-exposure evaluation protocol that tests whether an agent can behave counterfactually after rollback by answering queries and summarizing history as if future updates had never occurred. On long-horizon conversational benchmarks augmented with evolving memory states and rollback tasks, ChronoMem substantially improves rollback-consistent question answering and history summarization relative to prompt-only and retrieval-only baselines, while achieving strong performance in semantic version selection. To our knowledge, ChronoMem is the first open-source system and benchmark for systematic semantic global memory rollback in LLM agents.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-07-30T07:07:39+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27773v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2607.28589v1",
+      "title": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+      "authors": [
+        "Md. Mehrab Hossain Opi",
+        "Robiul Islam Ryad",
+        "Md. Umar Faruk"
+      ],
+      "abstract": "Post-training quantization (PTQ) has emerged as an effective solution for deploying Vision Transformers (ViTs) on resource-constrained devices. However, existing PTQ methods typically employ uniform bit-widths across transformer components, overlooking their heterogeneous sensitivity to quantization and leading to inefficient precision allocation. In this paper, we propose {MixFrag, a fragility-guided mixed-precision PTQ framework for Vision Transformers. MixFrag first estimates component-level quantization fragility by measuring the Kullback--Leibler (KL) divergence between full-precision and isolated quantized output distributions using a small calibration set. It then formulates bit allocation as a Multiple-Choice Knapsack Problem (MCKP), enabling adaptive layer-wise precision assignment under a target bit budget. Extensive experiments on ImageNet-1K across multiple Vision Transformer architectures demonstrate that MixFrag achieves competitive classification performance under practical mixed-precision settings. Furthermore, evaluations on COCO object detection and instance segmentation show that MixFrag achieves state-of-the-art performance among existing mixed-precision PTQ methods, improving the previous best method by up to 9.6 AP under the challenging MP3/MP3 setting. Additional analyses validate the proposed fragility metric and demonstrate its strong correlation with the learned bit allocation. These results establish MixFrag as an effective framework for mixed-precision post-training quantization of Vision Transformers.",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-30T17:43:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28589v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.28580v1",
+      "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+      "authors": [
+        "Jiacheng Tao",
+        "Qingyun Sun",
+        "Haonan Yuan",
+        "Ziwei Zhang",
+        "Jianxin Li"
+      ],
+      "abstract": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop reasoning tasks. Existing methods primarily focus on independent instance-level matching, which often fails to capture explicit relationships across modalities and documents. Although Graph-enhanced methods introduce structural modeling, they face a fundamental challenge in multimodal scenarios: incorporating fine-grained visual features leads to rapid graph expansion and retrieval noise, whereas coarse-grained representations cause the discarding of critical local evidence. To address this dilemma, we propose DualG-MRAG, a Dual-tier framework that introduces a decoupled architecture comprising Macro-reasoning and Micro-matching Graphs for Multimodal RAG. Specifically, to suppress retrieval noise by isolating global structural reasoning from fine-grained evidence matching, we construct a Macro Graph for global topological routing and a Micro Graph for precise local verification. Subsequently, to enable dynamic relevance propagation across heterogeneous evidence sources, we formulate retrieval as a query-driven message passing process via a GNN Retriever. Furthermore, to provide the generative model with coherent structural guidance, we introduce a dynamic programming decoding mechanism that extracts explicit reasoning paths directly from the GNN's forward pass, replacing the standard input of isolated document chunks. Extensive experiments demonstrate that DualG-MRAG outperforms baselines in both evidence recall and complex QA accuracy.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T17:40:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28580v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.28229v1",
+      "title": "EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents",
+      "authors": [
+        "Luigi Sigillo",
+        "Matteo Silvestri",
+        "Francesco Tabaro",
+        "Rajat Bhatnagar",
+        "Syed Irtaza Mubashar",
+        "Matt Jeffryes",
+        "Daljit Nijjer",
+        "Vittorio Perera",
+        "Ola Spjuth",
+        "Julio Saez-Rodriguez",
+        "Melissa Harrison",
+        "Fabio Petroni"
+      ],
+      "abstract": "The web is increasingly accessed by AI agents rather than humans. Every agent needs knowledge, especially in the life-sciences, where agentic pipelines are growing fast. Access to the literature is a crucial part of that need, and resources such as Europe PMC, with over 40M indexed records, are widely used to meet it. Yet these resources were not built for AI agents: they take keywords and complex syntax and return whole papers, so every agent must learn the syntax, issue several searches, and read full papers to find the evidence it needs. We introduce EMBL AI Librarian, a knowledge layer that upgrades the Europe PMC interface for AI agents: an agent asks in natural language and receives evidence that answers it. A single LLM orchestrates the whole knowledge retrieval process: it plans complementary subqueries executed by the live Europe PMC search engine, then reads the selected papers and locates the relevant evidence. We evaluate Librarian across four benchmarks: literature synthesis, claim verification, open-domain question answering, and downstream biology tasks such as protocol questions and sequence manipulation. On ScholarQABench, Librarian improves Citation F1 by more than $16$ points over strong recently published baselines. Used as the retrieval layer of an existing claim-verification pipeline, it increases agreement with expert consensus; and on the open-form LitQA2 benchmark, a GPT-5.4 agent scores about $8$ points higher when grounded in Librarian than with web search. Overall, our results show that equipping life-science agents with the Librarian knowledge layer improves performance across a range of tasks. We release our code publicly at https://github.com/petroni-lab/librarian",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "submitted": "2026-07-30T14:00:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28229v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.28200v1",
+      "title": "Vibe-FDTR: An agent-oriented framework for reproducible frequency-domain thermoreflectance data analysis",
+      "authors": [
+        "Fuwei Yang",
+        "Weiheng Li",
+        "Bai Song"
+      ],
+      "abstract": "Frequency-domain thermoreflectance (FDTR) is a laser pump-probe technique widely used to measure thermal properties at the micro- and nanoscale; however, it relies on a complex data analysis procedure that demands substantial domain expertise and is susceptible to subtle human errors. Here, we present Vibe-FDTR, an agent-oriented framework that enables large language model (LLM) agents to perform reliable and reproducible FDTR analyses directly from natural language requests. This framework couples a configuration-driven FDTR code package, which enforces physical and parametric consistency, with procedural agent skills that translate user intentions into organized and verifiable analysis steps. We evaluate Vibe-FDTR using a controlled benchmark with two levels: synthetic single-step tasks and real-data multi-step tasks based on measurements of gold-coated graphite samples. Across the two levels, agents using Vibe-FDTR achieve success rates of 100% and 98.9%, respectively. In sharp contrast, ablating skills (Code-agent) reduces performance to 91.4% and 36.7%, which drops further to 38.6% and 0% when the domain package is also omitted (Agent-only). Beyond success rate, Vibe-FDTR also reduces computational cost by 87.7% relative to the Code-agent variant and cuts execution time by more than 60%. Finally, an optional expert mode supports experimental planning via autonomous sensitivity and uncertainty evaluations, and formulates physically grounded recommendations for underspecified tasks. These results demonstrate that encapsulating domain code and expert knowledge into agent skills offers a promising route toward low-barrier, autonomous, and trustworthy thermal metrology.",
+      "categories": [
+        "physics.app-ph",
+        "cond-mat.mtrl-sci",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T13:38:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28200v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.28146v1",
+      "title": "Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game",
+      "authors": [
+        "Niklas Bauer",
+        "Lars Benedikt Kaesberg",
+        "Akiko Aizawa",
+        "Jan Philip Wahle",
+        "Bela Gipp",
+        "Terry Ruas"
+      ],
+      "abstract": "As large language models (LLMs) are deployed as agents in high-stakes settings, such as medical and legal systems, understanding their deceptive capabilities is fundamental to safety. Controlled social deduction games provide a reproducible proxy for isolating and evaluating these complex adversarial behaviors. We present the open-source benchmark framework ParliamentBench based on the game Secret Hitler to evaluate LLMs in scenarios that require deception, persuasion, and reasoning under information asymmetry. We evaluate 16 LLMs across 1,600 simulated matches playing each other, playing against humans, and compare them against a large set of online games. We introduce three novel metrics that isolate social deduction, reasoning, and deceptive consistency. Our experiments reveal that frontier models achieve strong performance across cooperative and deceptive roles, with a strong top-four cluster (GPT-5.4, Kimi K2.5, Grok 4.1 Fast, and DeepSeek 3.1 Terminus), whereas the weakest models fall short of random (33%) and simple algorithmic (45%) baselines. Most LLMs struggle to maintain a consistent deceptive persona throughout an entire game, with deception retention dropping below 50%.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T12:54:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28146v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.27677v1",
+      "title": "Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness",
+      "authors": [
+        "Fouad Bousetouane"
+      ],
+      "abstract": "AI agents are moving into production workflows where they retrieve information, call tools, maintain state, and act on behalf of users or organizations, but many release decisions still rely on capability signals, demos, or behavioral tests that do not show whether an agent is ready to operate under production constraints. Capability is therefore not production readiness. This paper introduces the ProofAgent Index (PAI), a governance readiness index for AI agents. PAI combines four dimensions of deployment evidence: Evaluation, Context, Compliance, and Governance. Evaluation measures observed behavior, Context measures the operating environment that shapes that behavior, Compliance measures alignment with applicable rules and controls, and Governance measures whether the organization can authorize, monitor, audit, and control the agent during operation. PAI is implemented inside ProofAgent Harness, an open source infrastructure for auditable AI agent evaluation and governance. Validation across two heavily regulated domains, healthcare and finance, shows that PAI carries held out readiness signal and separates higher risk from lower risk configurations. The results show that context engineering strongly changes reliability, capability improves behavior but does not determine readiness, and governance evidence must remain visible rather than averaged away. PAI reframes agent release from a faith based deployment decision into an auditable readiness decision.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T04:44:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27677v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2607.28461v1",
+      "title": "Fast and Accurate Foundation Models for Equivariant Machine-Learned Interatomic Potentials",
+      "authors": [
+        "Seán R. Kavanagh",
+        "Chuin Wei Tan",
+        "Menghang Wang",
+        "Marc L. Descoteaux",
+        "Gabriel de Miranda Nascimento",
+        "Ulrik Unneberg",
+        "Laura Zichi",
+        "Francesco Libbi",
+        "Norma Rivano",
+        "Austin Glover",
+        "Vivek Bharadwaj",
+        "Anders Johansson",
+        "William C. Witt",
+        "Albert Musaelian",
+        "Boris Kozinsky"
+      ],
+      "abstract": "Machine-learned interatomic potentials (MLIPs) have emerged as a transformative tool for computational materials science and chemistry, with universal potentials trained on large and diverse datasets now routinely deployed as 'foundation models' for downstream fine-tuning in targeted chemical spaces. Many scientific applications of the resulting models, such as molecular dynamics (MD), require high inference and training speeds as well as accuracy. In this work, we examine the limits of equivariant MLIPs, which directly encode physical symmetries in model architectures, to achieve these competing targets -- particularly in the regime of extremely large datasets where data efficiency is less critical. We show how this trade-off can be addressed, and present a family of foundation potentials in the NequIP and Allegro equivariant MLIP architectures which achieve leading inference speeds and strong scalability as well as excellent accuracies across a range of community benchmarks -- spanning materials discovery, thermal conductivity prediction, and near-equilibrium mechanical and thermodynamic properties. Accelerations implemented within the NequIP infrastructure now permit training of high-accuracy foundation potentials on ultra-large datasets with dramatically reduced computational cost. Alongside, we show that efforts to improve model accuracy for materials discovery should focus on dataset diversity and improved, consistent descriptions of transition metal compound energy surfaces.",
+      "categories": [
+        "physics.comp-ph",
+        "cond-mat.mtrl-sci",
+        "physics.app-ph",
+        "physics.chem-ph"
+      ],
+      "submitted": "2026-07-30T16:22:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28461v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.28227v1",
+      "title": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+      "authors": [
+        "Hanzhang Zhou",
+        "Panrong Tong",
+        "Xu Zhang",
+        "Quyu Kong",
+        "Chenglin Cai",
+        "Tianyu Xia",
+        "Gongjie Zhang",
+        "Jianan Zhang",
+        "Long Li",
+        "Long Chen",
+        "Lei Wang",
+        "Gaole Dai",
+        "Pengxiang Li",
+        "Liangyu Chen",
+        "Yue Wang",
+        "Steven Hoi"
+      ],
+      "abstract": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execute workflows across platforms, combine GUI interaction with CLI execution, complete long-horizon tasks, proactively initiate useful services, and autonomously improve their capabilities with minimal human effort. Guided by this vision, we present Qwen-UI-Agent, a real-world centric foundation GUI agent spanning mobile, computer-use, web, and DeepSearch environments. Qwen-UI-Agent combines diverse sandbox environments with a large-scale real-device mobile runtime. Its unified action space interleaves GUI operations with CLI execution and generates batched actions in a single model turn. An AutoResearch-style data flywheel uses agents to construct tasks and environments, diagnose failures, and plan subsequent iterations. Online RL supports training on trajectories exceeding 100 turns, with over 10,000 concurrent environments accelerating rollout. A lightweight harness layer supports proactive service initiation and stateful workflows across mobile and computer.\n  Across a broad suite of evaluations, Qwen-UI-Agent sets state-of-the-art performance on mobile-use benchmarks while delivering competitive performance on computer- and browser-use tasks against frontier models, including Opus 4.8, Gemini 3.1 Pro, and GPT-5.6 Sol. On mobile use, it achieves 82.1% on MobileWorld, 92.2% on MobileWorld-Real, and 97.5% on AndroidDaily. On computer use, it achieves 79.5% on OSWorld-Verified and a 40.0% partial-progress score on OSWorld-v2. On browser use and GUI grounding, it achieves 73.6% on WebArena and 81.5% on ScreenSpot-Pro, respectively.",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "submitted": "2026-07-30T13:58:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28227v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.28048v1",
+      "title": "SKILL-KD: Contrastive Skill Distillation for LLM Agents",
+      "authors": [
+        "Qiming Shi",
+        "Yibo Dou",
+        "Jiawen Zhu",
+        "Yulong Tao",
+        "Linbo Jin",
+        "Zhaolu Kang",
+        "Yunfan Zhou",
+        "Di Weng"
+      ],
+      "abstract": "Skill-based prompting has become a practical mechanism for improving large language model (LLM) agents, yet existing skill acquisition methods often treat skills as experience summaries, memory entries, or direct summaries of successful demonstrations. This creates a mismatch for weaker student agents: when a student fails because it lacks task knowledge or operational strategy, its failed trajectory may not contain enough evidence to infer the missing behavior, while the teacher trajectory may be too implicit to be internalized as reusable guidance. We propose SKILL-KD, a contrastive skill distillation framework that treats skills as an explicit distillation medium between agents of different capabilities. Given a student failure and the teacher trajectory on the same task, SKILL-KD distills their actionable discrepancy into a textual skill patch, evaluates the patch by re-running the student, and iteratively refines the patch when the student still fails. To prevent repeated local updates from causing skill drift, SKILL-KD further maintains trace-linked edit histories and performs Drift-Aware Skill Consolidation, deciding whether each patch should add a new rule, delete or modify an existing rule, or be skipped. Across five agent benchmarks and two student settings, SKILL-KD consistently improves frozen student agents over fixed-model adaptation baselines.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T11:27:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28048v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.27973v1",
+      "title": "TAPO: Transition-Aware Policy Optimization for LLM Agents",
+      "authors": [
+        "Cong Li",
+        "Peixi Peng",
+        "Yisen Zhao",
+        "Xinyu Hu",
+        "Shudong Liu",
+        "Zhan Su",
+        "Zhuojian Li"
+      ],
+      "abstract": "Recently, Reinforcement Learning (RL) has emerged as a crucial paradigm for the post-training of Large Language Model (LLM) agents. However, existing methods predominantly rely on sparse task rewards for policy optimization, failing to fully exploit another class of inherently dense supervisory signals naturally present during online interaction: environmental feedback following action execution. Recent theoretical studies suggest that generalization in multi-step, goal-oriented tasks hinges on predictive knowledge of environmental consequences. Inspired by this, we propose TAPO: Transition-Aware Policy Optimization for LLM Agents, a unified training framework that alternates between policy optimization and transition supervision. Beyond standard RL updates, TAPO repurposes rollout data to apply action-conditioned next-observation prediction supervision on a shared backbone model. This approach enhances the model's sensitivity to environmental transition dynamics and action consequences while concurrently optimizing the policy. It serves as a computationally lightweight, plug-and-play enhancement module for existing agent RL algorithms, requiring no additional expert data, extra sampling costs, or inference-time overhead. We conduct systematic experiments on WebShop and ALFWorld, integrating foundation models of various scales with different policy optimization algorithms. Empirical results demonstrate that TAPO consistently improves task performance over pure policy optimization baselines.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T10:17:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27973v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.27797v1",
+      "title": "Revisiting Predictive Process Monitoring in the Age of Foundation Models: A Comparative Study of Sequence, Tabular, and LLM Approaches",
+      "authors": [
+        "Lennart Fertig",
+        "Lukas Kirchdorfer",
+        "Tobias Sesterhenn"
+      ],
+      "abstract": "Predictive process monitoring (PPM) leverages event logs to forecast the future of running process instances, for instance, predicting the next activity, the remaining time until case completion, or the time to the next event. While PPM research in recent years has been dominated by deep sequence models trained from scratch, such as Long Short-Term Memory (LSTM) models, foundation-model approaches---particularly large language models (LLMs)---are increasingly explored for PPM. At the same time, tabular foundation models with in-context learning capabilities offer a promising alternative but have not yet been systematically benchmarked for PPM. Thus, it remains unclear whether classical sequence-based models remain competitive in this evolving landscape. This paper compares the three modeling paradigms both conceptually and empirically through a controlled benchmark across multiple datasets and prediction tasks. The results show that sequence models consistently perform best for next activity prediction, whereas tabular foundation models are competitive on temporal tasks, with LLMs usually lagging behind despite higher cost.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-07-30T07:36:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27797v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.27761v1",
+      "title": "DAS-PMVC: A Framework for Partial Multi-View Clustering via Dual Alignment and Structure Enhancement",
+      "authors": [
+        "Shubin Ma",
+        "Liang Zhao",
+        "Chuanye He",
+        "Zhenjiao Liu",
+        "Liang Zou",
+        "Lin Yuanbo Wu",
+        "Yu Shao"
+      ],
+      "abstract": "In recent years, multi-view clustering has attracted widespread research interest. However, due to limitations in data collection devices, data across different views often suffer from misalignment, leading to the partial view alignment problem (PVAP). To mitigate the impact of view asymmetry and irrelevant samples, this paper proposes a framework for partial multi-view clustering via dual alignment and structure enhancement (DAS-PMVC), which leverages view structure consistency and semantic relevance. Specifically, DAS-PMVC includes three parts: \\textbf{anchor graph structure alignment}, where sample joint embedding representations with consistent latent space are derived from anchor point relationships for initial view alignment; \\textbf{structure-enhanced feature learning}, where the model learns view structure information through pretraining and combines multi-view graph convolutional networks to further extract deep latent features from the aligned graph structure to improve the discriminative power of representations; and \\textbf{a dual alignment strategy}, where initial alignment is performed through the anchor graph in the pretraining phase, and contrastive learning loss and the Hungarian algorithm are introduced in the training phase to further optimize the alignment of latent features. Experimental results on various datasets demonstrate that the DAS-PMVC framework outperforms existing state-of-the-art methods in clustering performance, showcasing its effectiveness and superiority.",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "submitted": "2026-07-30T07:01:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27761v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.27631v1",
+      "title": "ReDiPPO: Reference-Guided Value Calibration and Discrepancy-Aware Token Reweighting for Mathematical Reasoning",
+      "authors": [
+        "Zhenrong Zhang",
+        "Fei Wu",
+        "Jun Du",
+        "Jianshu Zhang",
+        "Si Wei"
+      ],
+      "abstract": "Reinforcement learning has emerged as an effective paradigm for enhancing the mathematical reasoning capabilities of large language models. Among existing policy optimization methods, Proximal Policy Optimization (PPO) remains particularly appealing because its learned critic can, in principle, provide token-level credit assignment. However, in mathematical reasoning tasks characterized by long reasoning horizons and sparse outcome rewards, reliable token-level credit assignment remains challenging. The standard critic often fails to accurately evaluate intermediate reasoning states, resulting in noisy advantage estimates and suboptimal policy updates. In this paper, we propose ReDiPPO, a Reference-guided and Discrepancy-aware PPO framework for mathematical reasoning. ReDiPPO introduces a reference-guided critic that uses reference answers as training-time privileged signals to provide more accurate value estimation. Meanwhile, it retains a standard critic and quantifies the token-level reference-standard discrepancy between the standard value estimate and the reference-guided value estimate. This discrepancy serves as an indicator of difficult reasoning states and is used to reweight the corresponding token-level advantages during PPO optimization. Extensive experiments on diverse mathematical reasoning benchmarks demonstrate that ReDiPPO improves value-estimation accuracy and consistently outperforms strong policy optimization baselines, including PPO, DAPO, and GSPO, in final reasoning performance. Our code is available on https://github.com/cii030/ReDiPPO.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-07-30T03:42:52+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27631v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.27556v1",
+      "title": "Evaluating Agentic Bioinformatics through Function, Evidence, and Validation",
+      "authors": [
+        "Phuc Pham",
+        "Truong-Son Hy"
+      ],
+      "abstract": "Large language model agents increasingly plan, execute, and interpret biological analyses, yet fluent responses, successful tool calls, and benchmark performance alone do not establish scientific credibility. Existing reviews primarily organize biological agents by application, architecture, and agentic capability, but do not jointly operationalize the accountability of agent-generated workflows. We address this gap by treating the inspectable workflow trajectory, rather than architecture or final output alone, as the primary unit of analysis. We introduce the Function--Evidence--Validation (FEV) framework, which separates demonstrated workflow operations, traceable support for actions and claims, and use-case-specific validation. Using FEV, we map 109 agentic or agent-adjacent systems and 28 benchmark or evaluation resources, representing 128 unique publications across genomics, single-cell and spatial omics, protein science, drug discovery, computational pathology, and general bioinformatics automation. Across domains, planning and tool-mediated execution have advanced more rapidly than replayability, provenance, robust scientific assessment, external validation, and prospective empirical testing. We therefore argue that agentic bioinformatics should be assessed through workflow correctness rather than final-answer correctness alone. FEV provides a practical basis for comparing systems and designing transparent, auditable, and scientifically accountable bioinformatics workflows.",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-07-30T01:00:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.27556v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2607.28478v1",
+      "title": "Would You Walk to the Car Wash? Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
+      "authors": [
+        "Zheng Wu",
+        "Chenhao Xue",
+        "Shijie Zheng",
+        "Yijie Lu",
+        "Cheng Yang",
+        "Zhuosheng Zhang"
+      ],
+      "abstract": "As large language models (LLMs) continue to advance in complex reasoning tasks, they have learned to heavily prioritize explicit conditions provided in the input. However, in everyday commonsense reasoning, this mechanism exposes a critical vulnerability which we term Salience Bias: models become easily hijacked by useless explicit distractors (e.g., numerical values), leading them to ignore the implicit physical or commonsense prerequisites of a task. A critical open question is whether this failure reflects a genuine gap in commonsense knowledge or merely its suppression under misleading task framing. To investigate this, we construct the SaliTrap Benchmark, a high-quality dataset across four trap dimensions. Evaluating 12 state-of-the-art LLMs, we find that all mainstream models suffer significantly from salience bias, with severity scaling with distractor density and detecting the trap often decoupled from actually avoiding it. Crucially, by re-eliciting the same models with the task framing stripped away, we show that this is overwhelmingly a failure of \\textbf{knowledge suppression rather than knowledge absence}: a context-free knowledge probe alone recovers over 90\\% of sycophantic-compliance failures, revealing that the requisite commonsense is intrinsically present but actively crowded out by salient distractors that lure the model into over-compliant, unnecessary computation. Building on this diagnosis, we further show that lightweight, inference-time prompting alone substantially closes the gap without any retraining. Our findings relocate the bottleneck of commonsense reasoning failures from model competence to elicitation, and we release SaliTrap as a testbed for this blind spot. The codes are available at https://github.com/Wuzheng02/SaliTrap.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-07-30T16:30:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28478v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2607.28347v1",
+      "title": "LLMs struggle to simulate human belief updates in controlled environments",
+      "authors": [
+        "Sebastian Pohl",
+        "Harsh Mehta",
+        "Pranav Mambayil",
+        "Abdul Ghafoor",
+        "Franziska Lesigang",
+        "Yufang Hou",
+        "Christian Hilbe"
+      ],
+      "abstract": "LLMs are increasingly deployed as proxies for human study participants in social science experiments, yet the fidelity of this practice has rarely been tested directly. We test whether six LLMs can simulate individual human belief updates, comparing LLM outputs 1-to-1 against ground truth data from 391 UK participants on Prolific, who updated their stances on three discussion topics after reading Reddit comments. Each participant was simulated by an LLM conditioned on a persona derived from their demographic and personality trait data. We find that some LLMs (Qwen3-32B and GPT-5-Mini) can match the human post-stance distribution, but only when given participants' actual initial stances. All six models fail to simulate initial stances themselves and to produce faithful belief updates from self-generated stances. Three systematic biases emerge across all models: overrepresentation of neutral positions, more frequent but smaller belief shifts than humans, and a failure to rank comments by convincingness. Demographic and personality trait personas had no consistent effect on fidelity. LLM simulations of human belief dynamics are only reliable when grounded in realistic starting conditions, that current multi-round social media simulations rarely provide.",
+      "categories": [
+        "cs.CL",
+        "cs.SI"
+      ],
+      "submitted": "2026-07-30T15:19:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28347v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2607.28175v1",
+      "title": "AgenticASR: Refining Speech Recognition in Real-World Scenarios via an Agentic Approach",
+      "authors": [
+        "Zixuan Jiang",
+        "Binghao Qiang",
+        "Jiaying Chi",
+        "Yanqiao Zhu",
+        "Kai Yu",
+        "Xie Chen"
+      ],
+      "abstract": "Automatic speech recognition (ASR) has achieved substantial gains in transcription accuracy, yet verbatim transcription does not necessarily produce readily usable text. It retains fillers, repetitions, false starts, and self-corrections that increase reading effort, obscure the speaker's final intent, and propagate unresolved or abandoned content to downstream tasks. Existing spoken-to-written methods process completed audio or transcripts but cannot revise emitted text when later speech changes how preceding content should be interpreted. We therefore formulate Agentic Speech Recognition (AgenticSR), an audio-to-clean-text task that removes disfluencies, resolves self-corrections, and normalizes written form while preserving the speaker's final intent. AgenticASR implements this task through an ASR--Refiner architecture that repeatedly transforms a bounded active context and replaces its corresponding output span as audio arrives. This enables continual emission and revision over streams of arbitrary duration. We also introduce AASR-Bench, a bilingual benchmark with fine-grained atomic rubrics. Across multiple ASR front ends, AgenticASR attains the highest AASR-Bench scores among evaluated systems. A human--AI agreement study shows that rubric-based judgments align with independent expert assessments. Ablations characterize Refiner capacity, context length, and the quality--latency trade-off between online and offline inference. Together, these results establish AgenticASR as a practical framework for intent-preserving clean transcription during ongoing speech. Code, AASR-Bench, and a demo will be released at https://github.com/AnXMuy/AgenticASR.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-07-30T13:12:25+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2607.28175v1",
+      "journal_boost": 0,
+      "score": 10
+    }
+  ]
+}
