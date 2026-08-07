@@ -1,14 +1,14 @@
 {
   "date": "2026-08-07",
-  "fetched_at": "2026-08-07T01:28:05.544047+00:00",
+  "fetched_at": "2026-08-07T22:26:29.797793+00:00",
   "stats": {
-    "arxiv_count": 500,
+    "arxiv_count": 296,
     "arxiv_error": null,
     "journal_counts": {
       "Nature": 75,
       "Science": 36,
-      "Science Advances": 43,
-      "Nature Machine Intelligence": 8,
+      "Science Advances": 86,
+      "Nature Machine Intelligence": 0,
       "Nature Computational Science": 0,
       "Nature Methods": 8,
       "Nature Materials": 8,
@@ -16,74 +16,27 @@
       "Nature Chemical Engineering": 0,
       "Nature Biomedical Engineering": 8
     },
-    "total_after_dedup": 694,
+    "total_after_dedup": 525,
     "top_n": 30
   },
   "top30": [
     {
-      "id": "2608.05266v1",
-      "title": "Agentic self-driving microscopy benchmarks support qualification but do not necessarily generalize to unseen tasks",
+      "id": "2608.06347v1",
+      "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
       "authors": [
-        "Nathan S Johnson",
-        "Ian Abshire"
+        "Xinye Wang",
+        "Junxiao Liu",
+        "Shujian Huang"
       ],
-      "abstract": "Large language model agents are increasingly being developed to control a wide range of scientific characterization tools including microscopes and synchrotron beamlines. Research into agentic control of physical infrastructure is nascent and there are few well-established paradigms for how to engineer an agentic system. There are many choices to make when designing a microscopy agent, including the choice of LLM, the number of agents to use, agent responsibilities and delegation rules, retrieval-augmented generation parameters, and more. When designing and optimizing an agentic microscope controller, researchers not only want to ensure that the agent can correctly perform known tasks but also that the agent can generalize to new tasks that it has not encountered before. In this study, we develop a benchmark and trace-logging framework that reveals a) how different choices of agent architecture impact performance at microscopy tasks and b) the limitations of benchmarks for predicting if a particular agent will perform well on unseen microscopy tasks. The framework was used to evaluate one-, two-, and three-agent graph topologies, five LLMs, RAG and context parameters, and operational constraints across 53 microscopy benchmark tests. In total, 105 agent configurations, 1,949 individual test runs, and 49,109 RAG retrievals were recorded. Direct comparisons showed clear differences in latency, token use, cost, and failure mode between configurations. However, surrogate models trained on agent architecture and test results did not reliably predict an agent's performance on new, unseen tasks. These results show that these benchmarks are useful for qualification, regression testing, diagnosis, and direct comparison, but the current heterogeneous test suite does not support a task-independent global configuration model.",
+      "abstract": "Multilingual reasoning transfer is crucial for extending reasoning capabilities of large language models (LLMs) beyond high-resource languages. On-policy self-distillation (OPSD) and its variants have emerged as a promising paradigm, providing dense token-level supervision on student-generated rollouts, yet their objectives do not explicitly prioritize reasoning signals most critical to cross-lingual transfer. We characterize that target-language reasoning comprises the generation of both surface text and reasoning pivots, which are decisions that advance or redirect the reasoning process and shape subsequent inference. This motivates concentrating privileged distillation around such pivots. We therefore propose RP-OPSD, Reasoning-Pivot-guided On-Policy Self-Distillation, using the distributional shift between matched teacher views with and without an English reference solution as an operational proxy to guide privileged distillation and reference anchoring. Experiments on mathematical reasoning benchmarks covering 17 languages and multiple difficulty levels show that our method outperforms strong multilingual reasoning baselines and OPSD variants. Further analysis reveals that RP-OPSD concentrates privileged distillation on reasoning-control and problem-condistioned state-update tokens, while downweighting it for tokens that mainly support surface realization. Our code is available at https://github.com/NJUNLP/RP-OPSD.",
       "categories": [
-        "cs.AI",
-        "cond-mat.mtrl-sci",
-        "cs.LG"
-      ],
-      "submitted": "2026-08-05T17:58:53+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05266v1",
-      "journal_boost": 0,
-      "score": 22
-    },
-    {
-      "id": "2608.05375v1",
-      "title": "DoctorAgents: an agentic framework to iteratively refine AutoML pipeline for small clinical temporal data",
-      "authors": [
-        "Ruilin Wang",
-        "Bo-Hong Wang",
-        "Elizabeth Kourbatski",
-        "Jun Bai",
-        "Hegang Chen",
-        "Ziyang Song",
-        "Gilles Boire",
-        "Marie Hudson",
-        "Yue Li"
-      ],
-      "abstract": "Clinical machine learning (ML) has the potential to support high-stakes medical decision-making, but reliable deployment is often constrained by scarce, heterogeneous, and temporal complexity. Developing effective ML pipelines for such data remains time-consuming and error-prone, while existing automated machine learning (AutoML) systems only partially address this challenge because they largely rely on brute-force search over predefined spaces and lack explicit reasoning and memory. We therefore reformulate AutoML for small clinical data from exhaustive search to reasoning-driven refinement. We propose DoctorAgents, an agentic AI framework that autonomously constructs and optimizes end-to-end ML pipelines through specialized large language model (LLM) agents for generation, validation, and refinement. DoctorAgents backpropagates natural-language feedback through textual gradient descent to perform targeted updates without exhaustive search. Experiments across diverse clinical tasks show that DoctorAgents consistently outperforms established AutoML baselines while producing more interpretable task-specific representations.",
-      "categories": [
-        "cs.AI",
-        "cs.LG",
-        "cs.MA"
-      ],
-      "submitted": "2026-08-05T19:52:55+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05375v1",
-      "journal_boost": 0,
-      "score": 19
-    },
-    {
-      "id": "2608.04759v1",
-      "title": "Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs",
-      "authors": [
-        "Yang Yang",
-        "Jiawei Chen",
-        "Tairan Chen",
-        "Zhaoxia Yin"
-      ],
-      "abstract": "Although Multimodal Large Language Models (MLLMs) have made substantial progress, their spatial reasoning may still produce intermediate judgments inconsistent with the input image, allowing errors to propagate through the reasoning chain and affect the final answer. Existing methods mainly improve spatial reasoning through training or additional spatial information, without considering whether the reasoning process itself is faithful to the model input. Our study shows that unfaithful reasoning chains significantly reduce final-answer accuracy. To address this issue, we propose a modular and training-free framework for spatial reasoning verification and correction. The framework constructs a Spatial Evidence Graph (SEG), which associates atomic spatial evidence extracted from Chain-of-Thought reasoning with visual entities, spatial relations, source steps, and visual evidence. Spatial Evidence Reliability Assessment (SERA) evaluates the reliability of visual evidence based on object existence, localization, and geometric measurements. The framework then identifies the earliest spatial evidence unit contradicted by reliable visual evidence and guides the original MLLM to revise the subsequent reasoning and final answer. Across 15 model-dataset settings, our method achieves an average accuracy of 68.94%, outperforming the compared baselines by 8.55 percentage points on average. Our code will be open-sourced.",
-      "categories": [
-        "cs.CV",
         "cs.CL"
       ],
-      "submitted": "2026-08-05T12:26:23+00:00",
+      "submitted": "2026-08-06T17:52:06+00:00",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.04759v1",
+      "link": "http://arxiv.org/abs/2608.06347v1",
       "journal_boost": 0,
-      "score": 18
+      "score": 16
     },
     {
       "id": "2608.06022v1",
@@ -266,6 +219,24 @@
       "score": 15
     },
     {
+      "id": "2608.06292v1",
+      "title": "NeSy-RAG: Neuro-Symbolic RAG for Explainable Question Answering",
+      "authors": [
+        "Jonas Gann",
+        "Michael Gertz"
+      ],
+      "abstract": "Retrieval-augmented generation (RAG) improves question answering by grounding large language models (LLMs) in external knowledge such as text corpora. However, its reasoning process remains largely opaque: intermediate reasoning steps are difficult to verify and cannot be reliably attributed to specific evidence. Moreover, missing user-specific context is rarely detected systematically, often leading to incomplete or incorrect output.\n  We propose NeSy-RAG, a modular neuro-symbolic RAG framework that synthesizes attributable Prolog modules from retrieved text chunks. For each chunk, the system generates semantically meaningful predicates that encode Boolean claims, which may depend on user facts. Using joint natural language-code embeddings, predicates are retrieved and composed into Prolog queries. To address incomplete user context, we introduce a symbolic knowledge-gap detection mechanism that identifies missing user facts whose truth values affect the query outcome and automatically triggers follow-up interactions.\n  Executing the resulting Prolog queries yields deterministic answers together with transparent execution traces that link each reasoning step to its originating source. On the ShARC benchmark, without domain-specific training, NeSy-RAG achieves 61.1% accuracy, outperforming a same-model RAG baseline that achieves 42.8% accuracy.",
+      "categories": [
+        "cs.CL",
+        "cs.SC"
+      ],
+      "submitted": "2026-08-06T17:16:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.06292v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
       "id": "2608.05583v1",
       "title": "The Judgment-Consequence Gap: LLM Moral Reasoning in Healthcare Decisions",
       "authors": [
@@ -301,50 +272,6 @@
       "submitted": "2026-08-06T03:57:15+00:00",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2608.05576v1",
-      "journal_boost": 0,
-      "score": 14
-    },
-    {
-      "id": "2608.05120v1",
-      "title": "DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery",
-      "authors": [
-        "Roberto Aliaga Medina",
-        "Paulina Quintanilla",
-        "Antonio del Rio Chanona"
-      ],
-      "abstract": "Kinetic model discovery is a central challenge in chemical engineering, as accurate rate expressions are essential for understanding and controlling chemical and biological processes. Symbolic regression (SR) has emerged as a powerful data-driven approach for identifying interpretable kinetic models, but usually operates without domain knowledge, often exploring physicochemically implausible models. Large language models (LLMs) offer a promising avenue for injecting domain expertise into this search. Here, we introduce an LLM-guided SR framework, embedding an LLM module within an iterative SR algorithm for automated kinetic model discovery. The LLM performs two roles at each iteration: (1) a qualitative physicochemical critique of the best SR candidates, and (2) the proposal of new candidate rate expressions guided by the SR-generated models and embedded chemical knowledge. Our framework is evaluated on four in silico case studies of increasing complexity, spanning heterogeneous catalysis and bioprocess systems. Results show the LLM-guided framework reduces iterations to identify the ground-truth model by $41.7-79.3\\%$ versus a state-of-the-art SR framework, with the LLM directly proposing the correct model structure in over half of the guided runs. In practical settings, where each iteration typically requires a new wet-lab experiment, this translates into a substantial reduction in experimental effort. Predictive performance on an independent validation set is equivalent between both approaches, with $R^2>0.98$ in all case studies. Ablation studies indicate that both the SR component and the LLM scale contribute to this performance, with a reduced-size LLM largely retaining discovery efficiency. These findings demonstrate that LLMs can effectively inject domain knowledge into scientific model discovery, paving the way toward fully automated, domain-aware kinetic modelling pipelines.",
-      "categories": [
-        "cs.LG",
-        "cs.CE",
-        "cs.SC"
-      ],
-      "submitted": "2026-08-05T17:48:45+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05120v1",
-      "journal_boost": 0,
-      "score": 14
-    },
-    {
-      "id": "2608.04905v1",
-      "title": "PRIMAL3: Pathfinding via Reinforcement and Imitation Multi-Agent Learning - Leveraging LaCAM3",
-      "authors": [
-        "Chengyang He",
-        "Tanishq Duhan",
-        "Gadiel Sznaier Camps",
-        "Fangyuan Wang",
-        "Yuhong Cao",
-        "Jiankai Sun",
-        "Ge Sun",
-        "Mac Schwager",
-        "Guillaume Sartoretti"
-      ],
-      "abstract": "We present PRIMAL3, an ultra-large-scale learning-based framework for multi-agent pathfinding (MAPF) that integrates reinforcement learning, topology-aware communication, LaCAM3-guided training, and PIBT-based action refinement. PRIMAL3 targets failures at topologically critical states, where agents must coordinate decisively around bottlenecks, dead ends, and persistent conflicts. Each agent is represented using features derived from cut vertices, dead-end regions, shortest-path distances, and blocking estimates. Two complementary graphs capture agent interactions: a same-direction following graph propagates multihop context along compatible paths, while a different-direction conflict graph differentiates agents competing for shared space through masked attention and relative features. During training, we propose to let policy entropy identify uncertain agents, for which LaCAM3 provides confidence-triggered action interventions and label-smoothed imitation targets. During execution, a priority-aware PIBT module refines the proposed joint actions using persistent, learned, and distance-aware priorities together with policy-aware fallback preferences while maintaining collision-free execution. The resulting framework combines learned exploration with structured expert guidance without requiring LaCAM3 at inference. Experiments demonstrate that PRIMAL3 substantially outperforms state-of-the-art learning-based baselines and scales to ultra-large instances with up to city-level 100,000 agents. Real-world experiments further demonstrate the feasibility of deploying PRIMAL3 on physical robotic systems and ablation studies validate the individual contributions the components we proposed. Project page: https://marmotlab.github.io/PRIMAL3/",
-      "categories": [
-        "cs.RO"
-      ],
-      "submitted": "2026-08-05T14:33:59+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.04905v1",
       "journal_boost": 0,
       "score": 14
     },
@@ -417,22 +344,6 @@
       "submitted": "2026-08-05T22:29:20+00:00",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2608.05446v1",
-      "journal_boost": 0,
-      "score": 13
-    },
-    {
-      "id": "2608.05030v1",
-      "title": "From Score Matrices to Football-Aware Match-State Simulation: An Auditable LLM Harness for Exact-Score Reranking",
-      "authors": [
-        "Shaopeng Liang"
-      ],
-      "abstract": "Football score forecasting combines a strong statistical core with a difficult contextual edge. Dynamic Poisson-family models estimate team strength, expected goals, and coherent score probabilities, but do not directly understand roles, tactical matchups, motivation, or how a first goal changes behaviour. Large language models (LLMs) can reason about such concepts, yet are not calibrated probability engines. We combine both components through an auditable information harness. This paper documents four iterations: V1, a dynamic score-driven Dixon-Coles baseline; V2, which maps LLM contextual ratings back into expected-goal parameters; V3, which replaces scalar correction with goal-by-goal simulations over a frozen score-candidate set; and V4, which adds shared first-breakthrough and post-goal cascade judgments, time-aware stopping, and deterministic tail candidates. The harness defines input semantics, supplies pre-match evidence, and constrains the LLM to an inspectable reasoning route. On a chronological replay of the first 150 matches of the 2025-26 English Premier League, V1 achieved 10.0% Top-1 and 26.7% Top-3 exact-score accuracy. V3 reached 12.0% and 30.0%, while V4 reached 14.7% and 30.7%. V4 increased candidate coverage from 77.3% to 84.7%, although no added tail candidate became a Top-3 exact hit. V1's native 1X2 distribution achieved 53.3% argmax accuracy, 0.9878 log loss, 0.5870 Brier score, and 0.2095 ranked probability score. These results are exploratory: the development slice is not an untouched benchmark, and temporal input isolation cannot exclude outcome memory in a closed LLM. The contribution is an auditable hybrid architecture, a clear design evolution, and negative findings showing where football-aware simulation does and does not improve score selection.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-08-05T16:34:53+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05030v1",
       "journal_boost": 0,
       "score": 13
     },
@@ -517,138 +428,26 @@
       "score": 12
     },
     {
-      "id": "2608.05340v1",
-      "title": "Multi-Agent Transformer for Queue-Level XR Traffic Scheduling in TSN Networks",
+      "id": "2608.06312v1",
+      "title": "Benchmarking and Enhancing LLMs for Rule-Intensive Review of National Standard Documents",
       "authors": [
-        "Marcos Carvalho",
-        "Fatih Temiz",
-        "Shavbo Salehi",
-        "Melike Erol-Kantarci",
-        "Daniel F. Macedo"
+        "Tao Wang",
+        "Qihao Yang",
+        "Rongjiao Liang",
+        "Lianghong Lin",
+        "Haitao Wang",
+        "Xinyu Cao",
+        "Tianyong Hao"
       ],
-      "abstract": "Time-Sensitive Networking (TSN) and Mobile Edge Computing (MEC) hold strong potential for enabling ultra-reliable low-latency communication for time-sensitive applications, such as eXtended Reality (XR). However, the widespread adoption of XR introduces significant challenges due to co-located services in MEC environments, leading to contention for shared network resources. Moreover, XR traffic types have distinct characteristics and criticality in terms of timing requirements, further increasing the complexity and dynamics of such environments. Although reinforcement learning has shown promise for TSN scheduling optimization in dynamic network scenarios, existing approaches rely on centralized or high-level multi-agent designs and are typically tailored to periodic and predictable industrial traffic, limiting their applicability to XR workloads. As a result, these approaches suffer from (i) limited ability to capture inter-queue dependencies due to coarse-grained control, and (ii) poor adaptability to highly dynamic and heterogeneous XR traffic. To address these gaps, we propose a multi-agent reinforcement learning approach for queue-level XR traffic scheduling. We adopt the multi-agent transformer (MAT) to model inter-queue dependencies via attention over agents' observations and actions, enabling implicit coordination across heterogeneous co-located XR applications. Our simulation results show that the proposed method outperforms baselines, achieving up to 71.42% latency reduction and up to 83.2% reduction in failure rate, while consistently achieving high reliability across all queues.",
-      "categories": [
-        "cs.NI",
-        "cs.AI"
-      ],
-      "submitted": "2026-08-05T18:57:24+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05340v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2608.05148v1",
-      "title": "Reasoning Core: Designing Broad Procedural Data for Completion-Supervised Reasoning Training",
-      "authors": [
-        "Damien Sileo",
-        "Valentin Lacombe",
-        "Dimitri Kachler"
-      ],
-      "abstract": "Procedural generators produce useful verifiable reasoning problems at scale, but have received less attention as data for completion-supervised fine-tuning. We introduce Reasoning Core, a collection of 50 generators spanning mathematics, logic, planning, state tracking, formal languages, structured data, games, causality, and code, with semantic scorers, difficulty controls, and task evaluators. Under a matched completion-supervised protocol, we compare Reasoning Core with Procedural Warmup, Reasoning Gym, and SynLogic across four base-model settings and multiple training durations. In the primary 3B comparison, Reasoning Core achieves the highest mean scores on DROP, LogiQA, and ARC-Challenge, exceeding both the baseline without procedural data and all three alternative procedural collections. Task-level analyses show that semantic validity alone does not ensure training utility, highlighting compact targets and calibrated difficulty as important design factors. We ran audits combining model-assisted review, human adjudication, and regression testing. Applied throughout Reasoning Core development and to the other collections, they reveal subtle mismatches among generation, rendering, targets, and scoring, a reminder that procedural generation alone does not guarantee correctness. The library, generated datasets, and audit material are publicly available.",
+      "abstract": "Large language models (LLMs) increasingly support complex professional tasks, yet their capabilities in rule-intensive document review remain insufficiently evaluated. National standard documents, such as China GB/T standards, offer a representative testbed: they are lengthy, highly structured, and governed by explicit rules for scope, terminology, normative wording, and cross-section consistency. Existing benchmarks focus on domain knowledge and question answering, largely overlooking intrinsic quality review for professional documents. Such reviews rely heavily on human experts, making them costly and difficult to scale. To bridge this gap, we introduce GB/T-Bench, the first benchmark for the structured review of national standard documents. Its GB/T Review Taxonomy is a hierarchical schema covering document structure, scope alignment, normative modality, terminology consistency, and normative references, with 25 diagnosable error types. A controllable counterexample generation mechanism combines deterministic rules and constrained LLM rewriting to process 488 documents into 7,306 traceable review error instances for evaluation. We also develop a diagnosis-oriented evaluation protocol requiring exact matches on error location, review dimension, and error type, plus document-level coverage metrics. We further propose GB/T-Reviewer, a multi-agent framework that converts review knowledge into specialized skills and coordinates global inspection, targeted diagnosis, rule scanning, and result verification. Experiments with 14 mainstream LLMs reveal a substantial human-LLM gap: the strongest model achieves only 0.3280 CMCS versus 0.6640 for experts. GB/T-Reviewer raises the best CMCS to 0.5094, showing the value of structured skill coordination for rule-intensive document review. This work paves the way for trustworthy AI in standardization and other high-stakes document domains.",
       "categories": [
         "cs.CL"
       ],
-      "submitted": "2026-08-05T17:59:44+00:00",
+      "submitted": "2026-08-06T17:27:23+00:00",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05148v1",
+      "link": "http://arxiv.org/abs/2608.06312v1",
       "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2608.05242v1",
-      "title": "Disentangling 3D Modeling from Spatial Reasoning",
-      "authors": [
-        "Haoze Sun",
-        "Jiequan Cui",
-        "Qingshan Xu",
-        "Richang Hong"
-      ],
-      "abstract": "In this work, we explore an alternative paradigm for spatial reasoning by explicitly disentangling 3D perception from reasoning, rather than jointly acquiring implicit 3D perception and reasoning through large-scale training. Our key observation is that modern perception models excel at estimating continuous 3D geometry, whereas large language models (LLMs) are particularly effective at compositional and symbolic reasoning. Motivated by these complementary strengths, we propose the Disentangled Spatial Reasoner (DiSR), a simple yet effective framework that reconstructs the physical world into structured 3D evidence using off-the-shelf expert perception models and fine-tunes an LLM with LoRA to perform reasoning solely over this explicit geometric evidence. Without large-scale 3D VQA training or complex tool-use policies, DiSR achieves competitive performance on popular spatial reasoning benchmarks. Beyond its strong performance, DiSR offers improved interpretability, modularity, and computational efficiency, demonstrating that explicit separation of perception and reasoning is a scalable and effective alternative paradigm to end-to-end modeling for spatial intelligence.",
-      "categories": [
-        "cs.LG",
-        "cs.CV"
-      ],
-      "submitted": "2026-08-05T14:32:48+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.05242v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2608.04872v1",
-      "title": "A-SR: Self-Evolving Agentic LLMs for Symbolic Regression via Hierarchical Coordination",
-      "authors": [
-        "Wenxiao Zhao",
-        "Dong Liu",
-        "Kaiyi Xu",
-        "Feng Liu",
-        "Zhen Zhao",
-        "Fei Ben",
-        "Shu Wang",
-        "Wenhao Li",
-        "Yingnian Wu",
-        "Fenghua Ling",
-        "Haobo Li",
-        "Lei Bai"
-      ],
-      "abstract": "Symbolic regression aims to discover closed-form equations from data, but existing LLM-guided methods often rely on a unified proposal loop that compresses heterogeneous search failures into a scalar score and a single prompt. We propose A-SR, a self-evolving agentic framework that shifts the control unit from expression edits to role-conditioned evidence views. A-SR coordinates formula discovery through routing among coordination protocols, an online evaluator-reward role policy, and state-routed process memory. During search, evaluator feedback characterizes reliability and productivity, updates role-level utilities, and routes elite motifs, failure traces, and validity diagnostics to different agents. The framework self-evolves at two timescales: within a run, it adapts the search process without updating LLM parameters; across runs, recorded trajectories can be distilled into open-source LLMs as role-conditioned proposal priors. Averaged over the four LSR-Synth scientific domains in LLM-SRBench, A-SR improves Acc@0.01 over baselines from 25.79% to 48.30% with Llama3.1-8B, while A-SR-LoRA improves the corresponding Qwen3-4B result from 24.58% to 38.29%. On four real-world scientific discovery tasks, A-SR obtains the best in-distribution or out-of-distribution normalized mean squared error on 7 of 8 reported metrics.",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "submitted": "2026-08-05T14:01:10+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.04872v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2608.04828v1",
-      "title": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
-      "authors": [
-        "Jinyi Han",
-        "Yuanjian Xu",
-        "Ying Liao",
-        "Xinyi Wang",
-        "Zishang Jiang",
-        "Zixiang Di",
-        "Fanyang Lu",
-        "Zhichao Hu",
-        "Yanghua Xiao"
-      ],
-      "abstract": "Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed. Existing evaluations mostly judge the quality of a skill or its contribution to task success, leaving unexamined whether an agent can recognize a relevant skill and apply it on its own. We introduce Skill-Use, a benchmark that evaluates skill use under progressive disclosure, where an agent sees only a skill's name and short description and must retrieve the full procedure before following it. Skill-Use separates three facets of skill use. Trigger measures whether the agent invokes the relevant skill, Compliance measures how faithfully it follows the prescribed procedure, and Boundary measures whether it avoids forbidden operations. A Skill-Use (SU) score combines the three and credits execution only after the skill is triggered. Skill-Use pairs 79 real skills with 177 executable tasks across nine domains, each grounded in real files, run in an isolated Docker sandbox, and scored by a trajectory-based rubric. Evaluating eight LLMs under two agent harnesses, we find that reliable skill use remains out of reach, as the strongest configuration reaches an SU of only 0.613. Triggering and procedural compliance fail as independent bottlenecks, and both scores and model rankings shift with the harness, so skill use behaves as a capability conditioned on the harness rather than a fixed property of the model.",
-      "categories": [
-        "cs.CL"
-      ],
-      "submitted": "2026-08-05T13:29:16+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.04828v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2608.04670v1",
-      "title": "Easy to Complete, Hard to Choose: Investigating LLM Performance on the ProverbIT Benchmark",
-      "authors": [
-        "Enrico Mensa",
-        "Lorenzo Zane",
-        "Calogero Jerik Scozzaro",
-        "Matteo Delsanto",
-        "Tommaso Milani",
-        "Daniele Paolo Radicioni"
-      ],
-      "abstract": "Large Language Models (LLMs) have transformed computational linguistics and achieved remarkable performance across numerous natural language processing tasks, yet significant gaps persist in understanding how these systems process culturally embedded linguistic expressions. This paper introduces ProverbIT, a novel Italian benchmark comprising 100 multiple-choice questions designed to evaluate LLMs' ability to complete Italian proverbs. We assess 13 frontier models, including Large Reasoning Models (LRMs) and traditional LLMs, across three tasks: proverb completion, multiple-choice selection with correct answers, and multiple-choice selection without correct answers. Our evaluation reveals surprising results: while nearly all models demonstrate knowledge of the proverbs through successful completion tasks, performance drops dramatically when transitioning to multiple-choice formats without correct answers, with even state-of-the-art reasoning models showing substantial degradation. Through detailed Chain-of-Thought analysis of two LRMs, we uncover that models exhibit a strong bias toward selecting literal synonyms and frequently mention correct proverb endings during reasoning without successfully identifying their absence from the given options. These findings suggest that current LLMs rely heavily on memorized patterns rather than deeper semantic understanding of culturally grounded expressions, highlighting important limitations in their reasoning capabilities for figurative language comprehension.",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "submitted": "2026-08-05T10:28:51+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2608.04670v1",
-      "journal_boost": 0,
-      "score": 12
+      "score": 11
     },
     {
       "id": "2608.06253v1",
@@ -668,6 +467,214 @@
       "link": "http://arxiv.org/abs/2608.06253v1",
       "journal_boost": 0,
       "score": 11
+    },
+    {
+      "id": "2608.05695v1",
+      "title": "DreamGuard: Efficient Runtime Guardrail for LLM Agents via Risk-Aware World Model",
+      "authors": [
+        "Wenhao Lin",
+        "Chenyu Yu",
+        "Xingwei Lin",
+        "Sicong Cao",
+        "Xiang Chen",
+        "Lei Xue",
+        "Le Yu",
+        "Letian Sha",
+        "Chunming Wu"
+      ],
+      "abstract": "As large language model (LLM) agents increasingly invoke external tools and interact with real-world systems, unsafe actions may cause irreversible consequences on external states, user data, and downstream services. Recent runtime guardrails mitigate such risks by checking proposed actions before execution, but many remain reactive: they primarily assess the apparent safety of the current action, lacking an explicit model of how risk evolves across the trajectory. This limitation creates a critical blind spot for long-horizon risks, where individually benign-looking actions can gradually drift the agent toward hazardous states. In response, we propose DreamGuard, a proactive guardrail for LLM agents built around a risk-aware world model. The world model maintains a compact recurrent latent state over the trajectory and predicts future latent states from which DreamGuard derives immediate-hazard and prefix-risk evidence. It then fuses these multi-horizon signals into intervention decisions before execution. Experiments across four benchmarks and an online guardrail evaluation show that DreamGuard outperforms generic, reactive, and proactive guardrail baselines, achieves the best safety-utility trade-off among evaluated guardrails, and maintains an average end-to-end latency of 25 ms per call.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "submitted": "2026-08-06T07:37:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.05695v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.05588v1",
+      "title": "Search-Aided Joint Agent-Environment Reinforcement Learning for Robust Lifelong Multi-Agent Path Finding with Rotations",
+      "authors": [
+        "He Jiang",
+        "Jingtian Yan",
+        "Yulun Zhang",
+        "Yimin Tang",
+        "Tanishq Duhan",
+        "Rishi Veerapaneni",
+        "Guillaume Sartoretti",
+        "Jiaoyang Li"
+      ],
+      "abstract": "Lifelong Multi-Agent Path Finding (LMAPF) requires repeatedly planning collision-free paths for agents that continuously receive new goals upon reaching their current ones. While many learning-based planners have been proposed for LMAPF, most rely on oversimplified kinematic assumptions that may overlook motion constraints critical to real-world performance. In this work, we study a more realistic LMAPF model derived from many real-world automated warehouse systems, termed LMAPF-R2, which incorporates robust safety constraints and in-place rotation constraints. These constraints substantially increase coordination difficulty, particularly in highly constrained spaces. To address these challenges, we propose Search-Aided Joint Reinforcement Learning (SJRL). We first augment neural policies with Causal PIBT, a single-step search-based planner that resolves agents' collisions and propagates their intentions. We then introduce a unified RL formulation that jointly optimizes agent and environment policies, where the environment policy learns graph edge costs to provide global movement guidance via backward Dijkstra search. Experiments demonstrate that SJRL achieves significant improvements over the strong search-based planner, Causal-PIBT, across multiple high-density maps. We further validate SJRL in a challenging mixed-reality warehouse environment with 8 physical robots and 248 virtual robots.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-08-06T04:17:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.05588v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.06223v1",
+      "title": "TS-RAG: Retrieval Augmented Generation for Time Series Forecasting",
+      "authors": [
+        "Yixiong Xiao",
+        "Congxi Xiao",
+        "Jingbo Zhou"
+      ],
+      "abstract": "While deep learning models, particularly transformer-based architectures, have shown impressive performance in time series forecasting, the application of retrieval-augmented generation (RAG) in this domain remains limited. Since RAG has proven effective in enhancing the capabilities of large language models by incorporating relevant external information, retrieving similar time series sequences as references might also improve accuracy in time series forecasting tasks. However, most time series models are constrained by limited training data, smaller parameter scales, and a lack of the extensive generative capabilities found in large language models. Simply concatenating reference sequences into the prompt, as done in language models, may not yield the expected results. To address these challenges, we propose a novel approach, TS-RAG, which leverages RAG to enhance forecasting performance. The framework introduces specially designed reference tokens to effectively fuse information from the input sequence with that from retrieved similar sequences, enabling a more robust capture of complex temporal dynamics. Experimental results demonstrate that TS-RAG achieves consistent state-of-the-art performance across several real-world forecasting benchmarks.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-08-06T16:12:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.06223v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.06108v1",
+      "title": "Evaluating Investment Logic in Large Language Models: A Real-World Benchmark Towards Personalzied Financial Agents",
+      "authors": [
+        "Yuanhong Jiang",
+        "Jingjie Zou",
+        "Zhenghong Lin",
+        "Xusheng Yu",
+        "Qiqi Huang",
+        "Shuai Jia",
+        "Shijie Dai"
+      ],
+      "abstract": "Investment competence is inherently personalized: the same market evidence can justify different actions for investors with different goals, horizons, portfolios, and risk boundaries. Yet financial LLMs are evaluated either by static question answering or by terminal profit and loss. The former omits agency; the latter cannot reveal whether a profitable action was grounded, profile-consistent, or merely lucky. We ask whether the community is using the wrong ruler for consequential agents.\n  We introduce \\textsc{InvestLogicBench}, a process-native benchmark containing 201,247 documented decisions from 151 real-world investors. Each episode instantiates a \\textbf{P$\\rightarrow$E$\\rightarrow$R$\\rightarrow$D$\\rightarrow$O} trace: investor \\textit{Profile}, observable market \\textit{Events}, investment \\textit{Reasoning}, executable \\textit{Decision}, and delayed \\textit{Outcome}. The release includes profile construction, point-in-time event binding, structured logic, horizons, outcomes, and post-mortems, and supports comprehension, profile-conditioned generation, and end-to-end replay. Across four leading LLMs, logical plausibility remains near 4/5 while event grounding is only 0.8--2.8/5; return and process quality also disagree. These results expose polished but weakly grounded reasoning that outcome-only evaluation hides. We further argue that P$\\rightarrow$E$\\rightarrow$R$\\rightarrow$D$\\rightarrow$O should be a data-system interface, requiring versioned profiles, temporal provenance, inspectable retrieval, decision ledgers, and replayable outcomes. Finance is our stress test for a broader class of personalized, consequential agents.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-06T14:41:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.06108v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.06027v1",
+      "title": "FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India",
+      "authors": [
+        "Aman Dalmia",
+        "Sanskriti Midha",
+        "Jigar Doshi"
+      ],
+      "abstract": "In India, almost every social benefit starts with a form, yet the people who need these benefits most are often unable to read or write. Reaching them requires a spoken conversation. Today that work falls to frontline health workers who enroll beneficiaries one at a time, a poor use of stretched capacity. We built FormBharo (\"fill the form\" in Hindi), a voice agent that fills a structured form over a phone call under tight latency and cost budgets by pairing Large Language Models (LLMs) with deterministic, rule-based validation and flow control. It is being piloted with ARMMAN, an NGO running large-scale maternal and child mobile-health programs in India, to enroll low-income, Hindi-speaking mothers in antenatal and postnatal care. To our knowledge, it is the first voice agent piloted to fill an enrollment form for this population. We openly release FormVoiceAgentBench, a benchmark pairing human-recorded Hindi audio with 3,760 multi-turn conversation tests across 960 simulated calls, to evaluate our agent's components (transcription, extraction, reply generation) and end-to-end form completion under real acoustic variations. Form completion drops by up to ~41 points when LLMs receive error-prone real-speech transcripts instead of reference ones. The rule-based controls recover many turn-level extraction errors, helping smaller, cheaper models match or surpass frontier models on form completion. Component performance does not predict end-to-end performance: GPT-5.5 leads turn-level extraction accuracy on reference transcripts (99.8%) but ranks lower on form completion. Since errors both propagate and cancel across the pipeline, the optimal model choice of models emerges only through end-to-end evaluation. Finally, no single model is best across accuracy, cost, and latency at once, so we use a Pareto-based weighted-sum scalarization to select a deployable configuration balancing the three.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "submitted": "2026-08-06T13:34:22+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.06027v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.05987v1",
+      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+      "authors": [
+        "Zi-Han Wang",
+        "Zhengxi Lu",
+        "Zhiyuan Yao",
+        "Jinyang Wu",
+        "Jie Wu",
+        "Zhengzhou Cai",
+        "Yueqing Sun",
+        "Ziang Ye",
+        "Linji Hao",
+        "Qi Gu",
+        "Xunliang Cai",
+        "Yongliang Shen",
+        "Yujiu Yang"
+      ],
+      "abstract": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in agentic reinforcement learning. AgentOPSD aggregates token-level teacher-student log-probability gaps into turn-level evidence and recursively updates a Bayesian belief state in log-odds space. This yields a principled reweighting scheme that converts sparse outcome supervision into turn-level credit signals and identifies pivotal turns through the marginal belief revision between consecutive states. The method is fully compatible with standard policy optimization and requires neither an additional critic nor extra rollouts. We evaluate AgentOPSD on ALFWorld, WebShop, and Search-QA using Qwen2.5 models at two scales (3B and 7B). AgentOPSD outperforms GRPO and strong self-distillation baselines, achieving 89.1% success on ALFWorld with Qwen2.5-7B. Ablation studies attribute the gains to turn-level aggregation and history-dependent recursive belief updates.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-08-06T13:00:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.05987v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.05573v1",
+      "title": "SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution",
+      "authors": [
+        "Zhi Han",
+        "Chenxi Zeng",
+        "Liuhaichen Yang",
+        "Zihan Guo",
+        "Ming Zhou",
+        "Yang Li"
+      ],
+      "abstract": "LLM agents increasingly execute long-horizon tasks through tool use and environment interaction, shifting evaluation from final-response scoring to verification of complete executions. For skill-augmented agents, verification additionally requires the procedural knowledge encoded in task-time skills, because this knowledge indicates what evidence to inspect and which failures are task-critical. However, existing judge benchmarks often expose final responses or static trajectories, and rarely combine task-time skills with directly inspectable artifacts and environments. We therefore introduce SkillTV-Bench, a 681-case benchmark of real agent trajectories from 50 tasks across eleven domains, designed to evaluate skill-aware trajectory verification for both LLM-as-a-Judge and Agent-as-a-Judge methods. Additionally, we propose SkillTV-Evolve, which externalizes verification knowledge as a reusable JudgeSkill that guides an agent judge to plan targeted inspections and issue evidence-grounded verdicts. On a disjoint development pool, an automated evolution loop further refines the JudgeSkill using misjudged cases. On SkillTV-Bench, the refined skill increases the same agent judge's accuracy by 14.8 percentage points. In offline rollout-pool selection, it increases selected-trajectory success from 22.9% with one rollout to 45.5% with ten rollouts. The code and data are available at https://github.com/HanZhi306/SkillTV-Bench",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-06T03:52:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.05573v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.06301v1",
+      "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
+      "authors": [
+        "Varun Ursekar",
+        "Apaar Shanker",
+        "Yash Maurya",
+        "Shehab Yasser",
+        "Vijay S. Kalmath",
+        "Veronica Chatrath",
+        "Yuan Xue"
+      ],
+      "abstract": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automated harness optimization -- the iterative and evaluation-guided improvement of a harness by an AI system -- both an important route to improving AI systems and a demanding capability for AI systems themselves. Yet the community lacks a common protocol for measuring how well frontier LLMs perform at this task. We introduce HarnessOpt-Bench, a benchmark for end-to-end harness optimization under expensive and stochastic evaluation. An optimizer, an LLM paired with a coding harness, receives a target agent's seed harness, graded evaluation feedback, and a fixed target-evaluation budget. It edits the harness and nominates a final candidate, which is scored by its normalized gain over the seed on a held-out test partition that remains inaccessible throughout search. A trusted execution environment enforces the evaluation boundary, meters target-agent resource use, and preserves candidate versions for audit. We evaluate 5 frontier LLMs as optimizers both under a shared coding harness and under their native harnesses across 4 downstream tasks, over 111 scored runs. Experiment results show that optimizer models separate more than the coding harnesses they act through, native harnesses are not consistently superior, and gains vary substantially across tasks and seed regimes. These results establish harness optimization as a measurable and discriminative capability with large space for improvement.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-08-06T17:21:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.06301v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2608.06294v1",
+      "title": "QuanTiMedAI: Quantum-Enhanced Time-Series Model guided by Agentic AI for Cardiac Arrest Mortality Prediction",
+      "authors": [
+        "Mutasim Fuad Sarker",
+        "Adiba Rahman Namira",
+        "Wafa Binte Alam",
+        "Md Adnan Arefeen",
+        "Mahzabeen Emu",
+        "Sumaiya Tabassum Nimi"
+      ],
+      "abstract": "Cardiac arrest remains one of the most lethal conditions encountered in intensive care units. Despite the growing availability of electronic health record data, existing mortality prediction studies in this population largely depend on static summaries derived from early admission. Such approaches ignore the temporal progression of physiological deterioration and recovery that unfolds throughout a patient's ICU stay. To address this limitation, we introduce QuanTiMedAI, a quantum-agentic framework developed for cardiac arrest mortality prediction using agentic AI guided quantum enhancement time series model. The proposed system combines an agentic large language model (LLM) for clinically informed feature discovery with a compact quantum recurrent network for temporality aware mortality prediction. Our findings demonstrate that agentic LLM-guided feature selection consistently outperforms conventional feature selection approaches, and the proposed quantum architecture achieves competitive predictive performance through nonlinear feature enhancement while keeping the number of parameters very low. Through extensive experimentation on a MIMIC-IV cohort of cardiac arrest patients, QuanTiMedAI's quantum-enhanced architecture attains an AUROC of 0.852 using only 605 parameters, an improvement of approximately 2.9\\% over a current state-of-the-art baseline for this task. A structured ablation study systematically validates the contribution of each architectural design choice. These results show that quantum-enhanced sequential modeling can exceed classical recurrent networks while using substantially fewer parameters.",
+      "categories": [
+        "cs.AI",
+        "cs.ET"
+      ],
+      "submitted": "2026-08-06T17:18:03+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.06294v1",
+      "journal_boost": 0,
+      "score": 9
     }
   ]
 }
