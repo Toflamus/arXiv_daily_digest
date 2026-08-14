@@ -1,0 +1,752 @@
+{
+  "date": "2026-08-14",
+  "fetched_at": "2026-08-14T22:14:19.132759+00:00",
+  "stats": {
+    "arxiv_count": 302,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 39,
+      "Science Advances": 85,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 0
+    },
+    "total_after_dedup": 541,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2608.13472v1",
+      "title": "AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models",
+      "authors": [
+        "Mohammed Ayman Habib",
+        "Rylan Hart",
+        "Morteza Fayazi"
+      ],
+      "abstract": "Analog circuit design is a time-consuming, iterative process in a nonlinear and high-dimensional design space that relies heavily on expert intuition. Among recent developments, LLMs have introduced a promising approach by bringing natural language reasoning to circuit design tasks. The majority of conventional LLM-based approaches provide fragmented solutions that focus either only on sizing or topology generation. These methods require adding specific technical knowledge manually, which is inefficient and prone to hallucinations during circuit sizing. Moreover, the inherent trade-off in meeting different specs makes current approaches iterative and tedious. Another shortcoming is the inability to create innovative topologies, which may lead to sub-optimal designs due to reliance on conventional topologies. In this paper, we present AaLLM, an open-source end-to-end multi-agent LLM workflow that takes user specs as input and outputs the appropriate netlist, encompassing both topology generation and circuit sizing. AaLLM automates the creation of a relevant knowledge base from research papers and textbooks to combat tedious manual data collection. A RAG model is implemented to emulate circuit design expertise using this knowledge base. Moreover, AaLLM uses a novel tri-agent feedback system comprising a Designer that determines circuit component values, a Critic that scrutinizes these values, and an Evaluator that minimizes circuit sizing iterations by arbitrating between the other two agents. AaLLM-generated novel topologies achieve a figure of merit (FoM) comparable to that of known topologies, and up to 3x higher for certain circuits. Testing on several circuit topologies, our results show a 3x - 4.5x decrease in the number of SPICE calls at inference when compared to SOTA multi-agent LLM pipelines. The results also show a 40x decrease in wall-clock time compared to existing approaches.",
+      "categories": [
+        "eess.SY",
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T16:57:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13472v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2608.12877v1",
+      "title": "ReflectFact: Self-Reflective Agents for Improving Comprehension and Reasoning in Multi-Hop Fact Verification",
+      "authors": [
+        "Runze Zhao",
+        "Zixin Tang",
+        "Xiaoshuai Hao",
+        "Leyuan Chang",
+        "Xiaopeng Fu",
+        "Boyu Qiao",
+        "Dongyang Zhang"
+      ],
+      "abstract": "Multi-hop fact verification, which verifies claims by reasoning over multiple pieces of evidence, is critical for combating misinformation on social media yet remains highly challenging. Recent methods primarily rely on multi-agent collaboration to decompose fact verification into specialized subtasks. However, these methods face two critical limitations: (1) agents may perform individual subtasks without sufficient awareness of the global verification objective, causing their reasoning to deviate from the intended direction; and (2) conflicts between parametric knowledge and the provided evidence may undermine evidence-grounded reasoning and lead to incorrect verdicts. To address these challenges, we propose ReflectFact, a novel self-reflective agent framework for multi-hop fact verification. ReflectFact introduces three key tasks. Explicit Reasoning Path Planning builds an evidence-grounded reasoning path by resolving implicit entities, decomposing the claim into sub-questions, and integrating the verified facts into a verdict. Evidence-Drift Verification makes the agent re-answer by quoting the supporting evidence when a grounded answer merely echoes its parametric prior, thereby calibrating evidence deviation to ensure grounded comprehension. Reasoning Reflection Verification re-examines each reasoning step and regenerates it once an inconsistency is detected, correcting reasoning flaws such as location bias and replacement bias through a global task perspective. Subsequently, the agent aggregates validated reasoning chains to yield reliable verdicts. Extensive experiments on HOVER and EX-FEVER demonstrate that ReflectFact effectively remedies the comprehension and reasoning defects of existing methods, achieving state-of-the-art performance and respectively outperforming the strongest baseline by 3.32\\% and 2.78\\% on the two datasets.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T06:41:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12877v1",
+      "journal_boost": 0,
+      "score": 20
+    },
+    {
+      "id": "2608.13221v1",
+      "title": "TsuGO: Probing Search Efficiency in LLM Reasoning via Go Life-and-Death Problems",
+      "authors": [
+        "Shunwen Bai",
+        "Ziping Ma",
+        "Chaoyang Zhang",
+        "Yarong Wang",
+        "Jiale Liu",
+        "Zhen Qin",
+        "Qingpei Guo"
+      ],
+      "abstract": "The evaluation of LLM reasoning is moving from final-answer accuracy to process-level assessment, yet existing methods still fail to capture how models plan reasoning paths and allocate reasoning resources--that is, how they organize search. Prior process-level methods focus on the coherence and redundancy of chain-of-thought (CoT), and most benchmark tasks have a single objective solvable by static capabilities such as derivation and tool use, leaving search organization unmeasured. We introduce TsuGO, a process-level reasoning benchmark for evaluating Search Efficiency in LLM reasoning through Go life-and-death problems. These problems provide closed and verifiable solution spaces with an inherent adversarial structure, making candidate generation, response checking, branch comparison, and backtracking necessary parts of reasoning rather than incidental trace patterns. By constraining the solution space, TsuGO disentangles domain knowledge from search organization, parses CoT into a structured search tree, and reports Search Efficiency together with Token Efficiency and other diagnostic metrics and visualizations. Experiments show that current LLMs remain far from stable tsumego solving: stronger models succeed by finding the correct candidate earlier and sustaining effort on productive branches, but most models still behave much closer to unguided search algorithms than to neural-guided KataGo. Longer CoT or higher Token Efficiency does not necessarily imply better search. Our results identify search organization and reasoning-resource allocation as missing dimensions in LLM reasoning evaluation.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T13:24:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13221v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2608.13476v1",
+      "title": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+      "authors": [
+        "Saisha Shetty",
+        "Satvik Tripathi",
+        "Austin Lin",
+        "Colin Zhao",
+        "Theodore Kim",
+        "Don Enwerem",
+        "Jacinta Arnold",
+        "Shahriar Faghani",
+        "Tessa S Cook"
+      ],
+      "abstract": "We present Multi-Agent Reasoning and Coordination (MARC), an open-source framework that replaces monolithic LLM prompting with deterministic multi-agent orchestration for clinical reasoning. MARC coordinates role-specialized agents for extraction, reasoning, answer generation, and evaluation, with explicit context passing and traceable intermediate outputs, enabling stage-wise failure attribution. We additionally introduce a Decomposer module that generates task-specific agent prompts from a plain-language description, eliminating manual prompt engineering. The framework supports both API-based and local CPU-compatible deployments and is entirely configurable via YAML, without code modifications. MARC is designed to be model-agnostic, interpretable, and accessible to clinical domain experts without programming expertise. The full framework is available at https://github.com/Penn-RAIL/MARC-v1.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-08-13T17:00:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13476v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2608.12875v1",
+      "title": "The Embedder's Dilemma: LLMs Are Better, but at What Cost?",
+      "authors": [
+        "Adnan El Assadi",
+        "Niklas Muennighoff",
+        "Jinhyuk Lee"
+      ],
+      "abstract": "Should you replace your text-embedding pipeline with a large language model? We answer this with a controlled, cost-aware comparison of ten LLMs across six families and 26 embedding models (118M to 14B parameters) on 37 tasks spanning classification, semantic textual similarity (STS), clustering, pair classification, and retrieval. In aggregate the two paradigms are effectively tied: the best LLM (Gemini 3.1 Pro, 77.6) and the best embedding model (77.2) differ by 0.4 points. Their strengths differ by task: LLMs lead on reasoning-heavy retrieval, embedding models lead on classification, and the two match on clustering, STS, and pair classification. Reaching that parity is expensive. An LLM costs up to 1,431x more than an embedding model of comparable quality (USD 154 vs. USD 0.11 per benchmark pass), and the open LLMs tested process tokens 2.5 to 736x more slowly on the same GPU. Reasoning tokens account for 28 to 81% of LLM inference cost; lower reasoning budgets preserve or improve retrieval quality for most models in our ablation. The Pareto frontier contains the leading embedding models and one LLM, Gemini 3.1 Pro. These results support a division of labour: use embedding models for similarity, classification, and clustering, and reserve LLMs for reasoning-intensive retrieval. Our code, datasets, and results are publicly available at https://github.com/embeddings-benchmark/embedders-dilemma.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-08-13T06:39:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12875v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2608.13317v1",
+      "title": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
+      "authors": [
+        "Yanwen Peng",
+        "Delvin Ce Zhang",
+        "Xi Wang",
+        "Nikolaos Aletras"
+      ],
+      "abstract": "Large language model based multi-agent systems usually communicate in text, i.e., using discrete tokens. However, text introduces a discrete bottleneck. Converting the sender's continuous hidden states into discrete tokens discards information that token identities alone cannot capture. Recent work proposes latent communication as an alternative, where agents transmit hidden representations directly without converting them to text. However, existing latent methods either inject working memory layer by layer across the transformers, or require trained projectors that limit portability. We propose StateBridge, a training-free latent communication approach that aligns the sender's final-layer hidden states to the receiver's input space via a closed-form orthogonal transformation. Lightweight norm calibration and vocabulary anchoring ensure compatibility with the pretrained input distribution. The aligned states are prepended to the input of the receiver agent as a continuous prefix. We evaluate StateBridge on math reasoning, code generation, and question answering with four models from two families. StateBridge achieves the best or tied-best score on 22 out of 26 model-task pairs, consistently outperforming the strongest baseline.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T14:40:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13317v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2608.12888v1",
+      "title": "When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory",
+      "authors": [
+        "Ruizhe Li",
+        "Licheng Zhang",
+        "Benfeng Xu",
+        "Mingxuan Du",
+        "Zheren Fu",
+        "Weidong Chen"
+      ],
+      "abstract": "Agent-memory systems increasingly buy retrieval quality with structure, transforming raw conversation histories into summaries, embeddings, trees, or knowledge graphs before any question is asked. We ask how much of that benefit comes from the structure itself, rather than from competent retrieval over the raw history. We present ReFind, an agent-controlled search interface that builds no semantic structure at all: it leaves the conversation archive unmodified, indexes it lexically at turn granularity, and combines a generic iterative keyword-search loop with four chat-native controls grounded in empirical refinding work: session-aware rank fusion, local context expansion, temporal narrowing, and skipping already-inspected sessions. A separate reasoning stage answers from the collected evidence. Across a broad suite of conversational-memory tasks (single- and multi-hop QA, event ordering, and fact consolidation), roughly 2,800 questions on precise-retrieval and fact-tracking capabilities evaluated under the incremental multi-turn setting of MemoryAgentBench, ReFind attains the highest mean accuracy (58.2) of any system compared, above the strongest graph- and tree-based memory systems (HippoRAG 2, 53.2), all under a GPT-4o-mini backbone matched to every reused baseline. Controlled comparisons to single-shot BM25, a matched generic-agentic BM25 control, component removals, and agentic dense/hybrid variants separately support the roles of agent control, chat-native controls, and lexical retrieval. On LongMemEval-S/M, the same interface reaches 93.2 +/- 3.3 and 89.3 +/- 6.0 with GPT-5-mini. The results indicate that for precise, evidence-grounded questions over chat archives, much of the benefit credited to elaborate memory structures is recoverable by giving an agent controllable search over the unmodified record, with no LLM-based index construction at all.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-08-13T07:10:22+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12888v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2608.12626v1",
+      "title": "LLMs Are Not Good Strategists, Yet Memory-Enhanced Agency Boosts Reasoning",
+      "authors": [
+        "Yi Wu",
+        "Zhimin Hu"
+      ],
+      "abstract": "Strategic reasoning in Large Language Models (LLMs) within long-horizon environments is often limited by inconsistent subgoals. In these settings, finite attention resources prevent the model from maintaining strategic coherence over thousands of steps. This limitation leads to strategic drift, where localized decisions fail to sustain a coherent trajectory across reasoning. To address this, we introduce EpicStar, a framework that enables agents to learn memory as policy to tackle long-horizon reasoning. Specifically, the agent maintains a bank of successful past episodes as a heuristic alongside a working memory to track short-term environmental changes. During inference, a dynamic gating mechanism determines whether to execute a retrieved action directly or to perform new reasoning through a contextual fusion of the retrieved episodes and current working memory. Utilizing StarCraft II as the testbed, we evaluated EpicStar against diverse opponent styles. It significantly outperforms baseline methods, achieving higher win rates while consuming an order of magnitude fewer tokens, and it maintains this advantage consistently across difficulty levels and opponent strategies. Our findings provide compelling evidence that structured cross-episode memory is essential for enabling LLM agents to perform robust, long-term strategic execution in dynamic, autonomous settings.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-08-12T22:17:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12626v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2608.13505v1",
+      "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+      "authors": [
+        "Lei Bai",
+        "Jiaqi Cao",
+        "Chiyu Chen",
+        "Guanzhou Chen",
+        "Kai Chen",
+        "Guangran Cheng",
+        "Erfei Cui",
+        "Xuanlang Dai",
+        "Shengyuan Ding",
+        "Shangheng Du",
+        "Yanhui Duan",
+        "Yue Fan",
+        "Youqing Fang",
+        "Quan Gan",
+        "Yuanyuan Gao",
+        "Jiaye Ge",
+        "Lixin Gu",
+        "Yuzhe Gu",
+        "Qipeng Guo",
+        "Junjun He",
+        "Xin Hong",
+        "Ming Hu",
+        "Zhouqi Hua",
+        "Haian Huang",
+        "Junhao Huang",
+        "Zixian Huang",
+        "Minxi Jin",
+        "Lingkai Kong",
+        "Alexander Lam",
+        "Zehao Li",
+        "Zonglin Li",
+        "Tianhao Liang",
+        "Dahua Lin",
+        "Junyao Lin",
+        "Tianyang Lin",
+        "Zhouhan Lin",
+        "Jiangning Liu",
+        "Jin Liu",
+        "Kuikun Liu",
+        "Wenran Liu",
+        "Yifei Liu",
+        "Yuhong Liu",
+        "Yuhong Liu",
+        "Zhoumianze Liu",
+        "Ziyan Liu",
+        "Ziyu Liu",
+        "Haijun Lv",
+        "Han Lv",
+        "Chengqi Lyu",
+        "Le Ma",
+        "Ningsheng Ma",
+        "Zerun Ma",
+        "Haoyang Peng",
+        "Runyu Peng",
+        "Jifei Shan",
+        "Zixin Shang",
+        "Kou Shi",
+        "Xiang Shi",
+        "Qisheng Su",
+        "Xuerui Su",
+        "Hao Sun",
+        "Xiao Sun",
+        "Yanan Sun",
+        "Yu Sun",
+        "Huanze Tang",
+        "Yinghao Tang",
+        "Wenhui Tian",
+        "Zhongbo Tian",
+        "Bingli Wang",
+        "Haomin Wang",
+        "Jiarui Wang",
+        "Jingzhi Wang",
+        "Rui Wang",
+        "Xiquan Wang",
+        "Yi Wang",
+        "Zhecan Wang",
+        "Ziyi Wang",
+        "Zun Wang",
+        "Rubin Wei",
+        "Lianyi Wu",
+        "Wen Wu",
+        "Yue Wu",
+        "Yuhan Wu",
+        "Zhenyu Wu",
+        "Zijian Wu",
+        "Shuhao Xing",
+        "Jun Xu",
+        "Xingle Xu",
+        "Xuenan Xu",
+        "Xiangchao Yan",
+        "Ziang Yan",
+        "Bowen Yang",
+        "Danni Yang",
+        "Lin Yang",
+        "Zhiqi Yang",
+        "Qian Yao",
+        "Haochen Ye",
+        "Peng Ye",
+        "Jinhui Yin",
+        "Jiashuo Yu",
+        "Dingbo Yuan",
+        "Fei Yuan",
+        "Yuhang Zang",
+        "Bo Zhang",
+        "Chao Zhang",
+        "Chen Zhang",
+        "Hongjie Zhang",
+        "Junming Zhang",
+        "Wenlong Zhang",
+        "Wenwei Zhang",
+        "Yiming Zhang",
+        "Zhuo Zhang",
+        "Ziyang Zhang",
+        "Haiteng Zhao",
+        "Penghao Zhao",
+        "Yibo Zhao",
+        "Zhonghan Zhao",
+        "Zhihang Zhong",
+        "Bowen Zhou",
+        "Peiheng Zhou",
+        "Xin Zhou",
+        "Xinyu Zhou",
+        "Yunhua Zhou",
+        "Dongsheng Zhu",
+        "Yicheng Zou"
+      ],
+      "abstract": "Scientific discovery increasingly requires AI systems that can reason over scientific evidence of heterogeneous modalities, interact with scientific tools and environments, and sustain progress across long task horizons. We present Intern-S2-Preview, a series of scientific agentic foundation models designed to support multimodal scientific understanding, reasoning, generation, and long-horizon tasks. The training pipeline begins with scientific multimodal pre-training over rendered scientific documents, interleaved image-text data, and diverse scientific corpora. Starting from the pretrained checkpoint, we apply a unified post-training pipeline consisting of supervised fine-tuning, scalable multi-task reinforcement learning (RL), black- and white-box agentic RL, and on-policy distillation. This pipeline is supported by practical techniques that improve rollout and training stability and efficiency, including partial rollout with off-policy correction, adaptive length regularization, online speculative decoding, robust multi-task optimization, and trace-aware experience assembly for agentic tasks. At the architecture level, Intern-S2-Preview-397B extends time series modelling from efficient long-sequence understanding to numerical forecasting, while Memory Decoder is studied as a separate memory-augmented path for rapid scientific specialization without modifying the frozen 397B backbone. Evaluations across scientific, multimodal, agentic, and general-purpose benchmarks show that Intern-S2-Preview-397B achieves competitive or leading results in multiple settings. The time series modules improve scientific signal understanding and forecasting on SciTS, while the separate Intern-MemDec-4B extension improves the Biology-Instructions average score from 56.92 to 60.32 without modifying the frozen 397B backbone.",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "submitted": "2026-08-13T17:31:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13505v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2608.13420v1",
+      "title": "Enhancing Virtual Agents through SLMs and Edge-Computing: An Exploratory Evaluation of Think and Memory Processes",
+      "authors": [
+        "Aimilios Hadjiliasi",
+        "Louis Nisiotis"
+      ],
+      "abstract": "Embodied intelligent virtual agents are expected to operate as persistent, adaptive, and context-aware entities within complex virtual and Metaverse worlds. However, implementing cognitively capable agents in such environments is conceptually and technologically challenging. Among a range of blueprints and development approaches, the Cognitive Embodied Agent Architecture (CEAA) has been developed as an implementation-oriented framework for architecting components of perception, memory, reasoning, planning, and embodied action. Considering the recent advances in edge computing and generative AI language models, this paper explores the use of Small Language Models (SLMs) to support edge-based operation of selected CEAA components, focusing on \"Think\" and \"Memory\" as processes central to cognitive orchestration and persistence of virtual agents in interactive virtual worlds. An edge-based virtual agent gateway system was developed and evaluated on an NVIDIA Jetson Orin NX using Qwen2.5 models of different sizes, exploring the system's capability to process service requests and handle memory-driven conversations. A series of simulation experiments evaluated routing accuracy, memory-read performance, and latency, demonstrating an SLM-driven prototype agent system that partially implements selected CEAA processes to support the development of embodied agents whose cognitive \"brain\" can operate efficiently and contextually for interactive experiences in immersive virtual worlds.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T16:12:52+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13420v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.13173v1",
+      "title": "SkillShapley: Boundary-Adaptive Shapley Valuation for Skill Step Attribution in LLM Agents",
+      "authors": [
+        "Chang Liu",
+        "Yuqi Zhang",
+        "Yiman Zhong",
+        "Boyi Liu",
+        "Hengjun Wang",
+        "Shuyue Wei"
+      ],
+      "abstract": "Agent skills are crucial external instructions that enable language agents to execute long procedural tasks such as coding or document processing. Existing agent skills are primarily created through human manual crafting or agent execution traces, with limited understanding of how each step contributes to overall skill performance on specific tasks; i.e., there remains an open problem in quantifying the contribution of individual steps within an agent skill. To address this issue, we first model skill-step attribution as a Shapley value-based contribution estimation problem, and then propose SkillShapley, a step-level attribution framework for agent skills. Notably, SkillShapley operates in two phases, motivated by key empirical insights, i.e., discretized benchmark rewards that create sharp performance cliffs, and step interactions that are largely additive rather than synergistic. Specifically, it first identifies informative coalitional regions, and then adaptively samples new coalitions that can yield reusable marginal evidence. Experiments on skills from the widely adopted SkillsBench demonstrate that our SkillShapley can effectively and efficiently identify high- or low-value skill steps, providing several key takeaways for agent skill creation.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T12:41:03+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13173v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.13046v1",
+      "title": "BoardroomAI: Dependency-Aware Human-Steerable Multi-Agent Deliberation through Evolving Decision Graphs",
+      "authors": [
+        "Sanjeev Manivannan"
+      ],
+      "abstract": "Organizational decisions are co-created while evidence, constraints, and human priorities continue to evolve. In conventional transcript-based multi-agent systems, humans typically provide an initial problem, agents deliberate internally, and the system returns a final response. BoardroomAI instead treats the human as a persistent participant who can intervene by challenging assumptions, modifying constraints, changing priorities, introducing evidence, or redirecting the decision process. We operationalize this human--agent coexistence through four components: (i) a typed decision graph representing evidence, assumptions, constraints, claims, objections, alternatives, risks, decisions, semantic dependencies, and specialist responsibility; (ii) an intervention compiler that converts confirmed human actions into explicit graph updates; (iii) dependency-aware propagation that identifies affected subgraphs, preserves unaffected artifacts, and selectively reactivates relevant specialists; and (iv) an evaluation framework measuring intervention impact, repair coverage, preservation, recomputation, and decision validity. Across 600 generated decision-DAG interventions, propagation matched exhaustive impact computation while inspecting only 14.59% of nodes. In a 12-case exploratory pilot, selective repair recomputed 62.11% of canonical nodes, preserved all gold-unaffected nodes, and produced valid updated decisions in six cases while abstaining in the remaining six. These abstentions show that correct intervention routing may still provide insufficient context for synthesis, motivating a \\emph{decision-sufficient context closure} for human-steered multi-agent deliberation. All results are synthetic and prototype-level.",
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "cs.ET"
+      ],
+      "submitted": "2026-08-13T10:11:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13046v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.13031v1",
+      "title": "UniTraffic-Agent: Unified Traffic Video Reasoning for AI City Challenge 2026 Track 3 with Two Out-of-Domain Evaluations",
+      "authors": [
+        "Peng Li",
+        "Qianqian Xu",
+        "Shilong Bao",
+        "Yangbangyan Jiang",
+        "Qingming Huang"
+      ],
+      "abstract": "Traffic video understanding has become an important problem in intelligent transportation, as road videos provide direct evidence for accidents, violations, and interactions between vehicles and vulnerable road users. A useful system should explain how a traffic event develops, why it happens, and when the relevant interaction occurs, yet this remains difficult for multimodal large language models (MLLMs) because traffic videos contain sparse events and varied viewpoints. We introduce UniTraffic-Agent, the MR-CAS solution for Track~3 of the 10th AI City Challenge, which includes Traffic Anomaly Reasoning (TAR) and two out-of-domain evaluations: FETV for fisheye traffic events and PSI-VQA for pedestrian intention reasoning. UniTraffic-Agent follows an observe--reason--act--verify workflow that samples timestamped visual evidence, reasons over all questions from the same clip in one request, and converts responses through task-specific action adapters. On the official Public leaderboards, MR-CAS ranks 16th on TAR with a score of 0.5780, 2nd on FETV with 0.4884, and 4th on PSI-VQA with 64.4161. The code is available at https://github.com/Roclp/UniTraffic-Agent.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T10:00:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13031v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.12990v1",
+      "title": "LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation",
+      "authors": [
+        "Dongfang Li",
+        "Zixuan Liu",
+        "Junmai Wang",
+        "Jiahe Huang",
+        "Fuhao Li",
+        "Bonian Jia",
+        "Baotian Hu",
+        "Min Zhang"
+      ],
+      "abstract": "Long-horizon LLM agents must preserve information from past interactions to support future tasks. Existing memory systems typically rely on eager consolidation, invoking LLMs after each interaction to extract, summarize, or update memories. This design makes memory construction increasingly costly as conversations grow. Coarse summarization can reduce construction cost but risks discarding fine-grained contextual evidence, whereas larger retrieval contexts or multi-hop LLM reasoning shift the overhead to query time. We present LycheeMemory V2, an efficient long-term memory framework that replaces turn-level consolidation with semantic segment-level consolidation. Instead of consolidating every interaction, LycheeMemory batches multiple exchanges into segments and encodes each finalized segment into context-independent typed memory records. Segment-level batching lowers LLM encoding frequency, while semantic boundary detection helps preserve coherent event-level and temporal evidence compared with fixed-window batching. The resulting records are organized with lightweight structured indexes for query-planned evidence retrieval. Experiments using GPT-4.1-Mini show that LycheeMemory achieves state-of-the-art performance, reaching 89.22% on LoCoMo and 92.20% on LongMemEval-S. Compared with A-Mem, it reduces construction tokens by 86.0% on LoCoMo and 75.9% on LongMemEval-S without increasing query-time token usage. More broadly, our results suggest that the accuracy--cost trade-off of long-term agent memory depends not only on what information is retained, but also on the granularity at which it is consolidated.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-08-13T09:13:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12990v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.12977v1",
+      "title": "Beyond Handcrafted Security: Towards Self-Evolving Defense for LLM Agents",
+      "authors": [
+        "Jiajun Ruan",
+        "Peiyang Li",
+        "Yukun Chen",
+        "Fengting Li",
+        "Chao Feng"
+      ],
+      "abstract": "The expanding operational capabilities of large language model (LLM) agents introduce sophisticated security threats. Runtime defenses have emerged as an effective approach to mitigating these risks by integrating security mechanisms into the agent execution loop. However, existing runtime defenses rely heavily on manually designed interventions and lack a principled framework for their construction and maintenance. In this work, we first develop a harness-level formulation of runtime defense that systematically characterizes how harness mechanisms enable defense construction and provides a unified view of existing runtime defense interventions from a harness perspective. Building on this formulation, we propose HARD (Harness-based Autonomous Runtime Defense Evolution), a self-evolving runtime defense framework that automatically identifies appropriate intervention strategies and iteratively improves defense artifacts based on observed failure traces. HARD transforms runtime defense development from manual engineering into an autonomous evolution process, and extensive experiments demonstrate that it improves security performance over existing handcrafted defenses while preserving benign task utility. Our findings highlight autonomous defense evolution as a promising new paradigm for securing deployed LLM agents, enabling agents to identify defense weaknesses and continuously improve their protection mechanisms.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T08:57:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12977v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.12921v1",
+      "title": "Discovering Efficient and Explainable Communication Topologies for LLM-based Multi-Agent Systems via Causal Inference",
+      "authors": [
+        "Junzhi Li",
+        "Peng He",
+        "Qirui Ji",
+        "Wei Wang",
+        "Lixiang Liu",
+        "Chuxiong Sun"
+      ],
+      "abstract": "The performance of large language model (LLM)-based multi-agent systems (MAS) largely depends on effective communication topologies. Existing topology generation methods, however, typically learn communication topologies through black-box optimization driven solely by task-level rewards. While effective, such optimization provides little insight into why particular communication edges are selected, making it difficult to identify the critical communication subgraphs responsible for successful collaboration. To address this limitation, we propose E2-Explainer, a model-agnostic framework for providing interpretable explanations of communication topologies produced by arbitrary topology generators. Specifically, we formulate topology explanation as a causal attribution problem that identifies compact communication subgraphs supported by edge-level evidence of task preservation. We obtain this evidence with a Granger-style objective that measures how masking each communication channel changes the task outcome and the stability of the final response. The resulting budgeted subgraphs are then distilled into an amortized explainer, enabling efficient post-hoc explanation without repeated edge-level evaluations at deployment. Extensive experiments on multiple reasoning and coding benchmarks demonstrate that E2-Explainer identifies critical communication subgraphs that preserve successful collaboration. These subgraphs can also be executed directly to prune redundant communication edges, substantially reducing communication costs while maintaining competitive task performance.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T08:03:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12921v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.12751v1",
+      "title": "SynAct: A Reasoning-Acting Large Language Model Agent for Adaptive Synthesis Optimization",
+      "authors": [
+        "Fangzhou Liu",
+        "Peiyi Han",
+        "Jiawei Liu",
+        "Yuan Pu",
+        "Zhuolun He",
+        "Rongliang Fu",
+        "Tsung-Yi Ho",
+        "Bei Yu"
+      ],
+      "abstract": "Logic synthesis transforms RTL designs into gate-level netlists, where PPA results are highly sensitive to the choice of optimization commands, making synthesis tuning both high-dimensional and expensive. Previous approaches fall into two categories: automated methods, which perform black-box search over fixed action spaces with limited decision-level interpretability, and LLM-based methods, which typically generate static scripts upfront and cannot adapt to evolving circuit states. We present SynAct, an adaptive closed-loop LLM reasoning--acting agent that iteratively diagnoses live synthesis reports and reasons over the current circuit state, retrieved tool knowledge, and historical optimization experience to issue targeted commands. SynAct focuses on improving timing, particularly worst negative slack (WNS), while maintaining balanced area and power trade-offs. Experiments on a commercial synthesis tool across 14 designs show that SynAct reduces average WNS to 27% of that from bootstrap synthesis.",
+      "categories": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T03:02:25+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12751v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.12743v1",
+      "title": "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence",
+      "authors": [
+        "Haokai Zhang",
+        "Yuhang Ding",
+        "Yunshu Zhou",
+        "Xinze Du",
+        "Shengtao Zhang",
+        "Zhiyue Zhao",
+        "Yuling Xi",
+        "Hao Chen"
+      ],
+      "abstract": "Spatial intelligence is becoming a foundation for embodied agents, robotic planning, and multimodal assistants. To improve the spatial reasoning ability of VLM agents, existing work has mainly followed two lines. One line uses post-training methods, such as supervised fine-tuning and reinforcement learning. Another line adopts an agentic paradigm in which the model calls external spatial tools, such as depth estimation and 3D reconstruction tools, to gather intermediate spatial evidence. We study a complementary and underexplored route: Can a frozen VLM agent improve its spatial reasoning through \\textbf{parameter-update-free self-evolution}, without depending on external expert spatial tools at inference time? We present \\textbf{Spatial Memory Agent (SMA)}, an \\textbf{experience-grounded runtime framework} that converts verified spatial experience into reusable transferable lessons. In a verifiable spatial environment, SMA queries the frozen VLM, obtains a predicted answer and reward, and uses \\textbf{verifier-guided reflection} to distill compact transferable lessons from spatial experience. SMA further assigns each lesson a \\textbf{Transfer Reliability Score (TRS)}, which is initialized uniformly and calibrated from later retrieval outcomes as visit evidence of future transfer reliability. During \\textbf{read-only deployment}, SMA retrieves lessons by semantic filter and similarity-TRS combined ranking, allowing the retrieved memory to guide frozen model inference. Across five representative spatial benchmarks and four base VLMs, SMA achieves the highest macro average in every base-model block and the best accuracy among the evaluated methods in most of the 20 evaluations, establishing a practical parameter-update-free path for spatial self-evolution across the evaluated frozen model scales and environments.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T02:42:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12743v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.12679v1",
+      "title": "Beyond the Best Guess: Improving LLM Solution Coverage with Evolution Strategies",
+      "authors": [
+        "Conor F. Hayes",
+        "Elliot Meyerson",
+        "Kajetan Schweighofer",
+        "Roberto Dailey",
+        "Babak Hodjat",
+        "Risto Miikkulainen",
+        "Xin Qiu"
+      ],
+      "abstract": "Large Language Models (LLMs) are increasingly deployed in discovery domains such as math and science. The usual approach is to present the problem to the model and use its answer as the proposed solution. However, beyond this best guess, discovery can be enhanced by increasing test-time compute. In a process called pass@k, the model is allowed to explore the solution space and generate diverse candidate solutions. Unfortunately, the standard approach to post-training LLMs through Reinforcement Learning (RL) may limit pass@k: the model's output distribution narrows around high-reward outputs, causing the solution coverage to collapse. The alternative is to use Evolution Strategies (ES), a population-based, gradient-free post-training method that optimizes directly in weight space through random perturbations. As this paper shows, ES achieves consistently higher pass@k than RL and produces a broader output distribution with greater solution coverage. This coverage in turn makes it possible to achieve better results in e.g. standard math benchmarks. Thus, ES provides a better foundation for post-training in discovery problems and other domains where diverse solution coverage is critical.",
+      "categories": [
+        "cs.AI",
+        "cs.NE"
+      ],
+      "submitted": "2026-08-13T00:30:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12679v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2608.13315v1",
+      "title": "Keep, Customize, or Exit: Default Design and Token Pricing in LLM Reasoning Services",
+      "authors": [
+        "Ahmet Bugra Gundogan",
+        "Yigit Turkmen",
+        "Melih Bastopcu"
+      ],
+      "abstract": "We study a large language model (LLM) service in which a provider chooses a per-token price and a default reasoning-token allocation, while a user may accept the default, customize the allocation, or exit. Larger allocations can improve accuracy but increase token cost and latency. We model this interaction as a Stackelberg game and derive the user's unique optimal customized allocation in closed form. For any price, the acceptable defaults form either an empty set or a compact interval. We characterize the provider's optimal default through a three-regime rule, reduce equilibrium computation to a one-dimensional price optimization, and prove the existence of the equilibrium. We further show that defaults affect the implemented reasoning allocation only when users value the convenience of avoiding customization; otherwise, every service-providing outcome implements the user's optimal customized allocation. Experiments with two compact open-weight reasoning models on five mathematics and science benchmarks support the accuracy-token model and show how model and task characteristics determine equilibrium prices, defaults, and reasoning allocations.",
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "submitted": "2026-08-13T14:39:48+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13315v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.13168v1",
+      "title": "Which LLM Is Your Ideal Companion? Evaluating Emotional Companion Capabilities of LLMs Based on Adult Attachment Theory",
+      "authors": [
+        "Junkai Zhou",
+        "Shiting Guan",
+        "Zhaoyi Zhang"
+      ],
+      "abstract": "As large language models (LLMs) are increasingly applied for emotional companionship, evaluating their behavior and capabilities in intimate relationships has become a pressing issue. However, existing assessments primarily characterize general personality traits, providing limited insight into model behavior within intimate and emotionally sensitive contexts. Therefore, we introduce adult attachment theory into LLM evaluation and use the Experiences in Close Relationships-Revised (ECR-R) scale to characterize attachment anxiety and avoidance. To evaluate emotional companionship capabilities of LLMs in realistic interaction scenarios, we present an emotional companionship benchmark, ECBench, spanning four scenarios including emotional support, collaborative tasks, conflict resolution, and social guidance, across friendship and romantic relationships. ECBench is utilized to assess model behavior using 11 dialogue-quality metrics and three evaluation methods. We evaluate the attachment tendencies of 32 LLMs and select representative models to investigate how these tendencies manifest in contextualized multi-turn interactions and whether they can be shaped through prompting. Our study provides a theoretical lens from psychology, along with practical tools to understand and select LLMs for emotional companionship.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-08-13T12:32:33+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13168v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.13129v1",
+      "title": "Numeracy in Large Language Models: Fundamental Limitations and Paths to Improvement",
+      "authors": [
+        "Aoxin Ni"
+      ],
+      "abstract": "Large language models (LLMs) achieve strong results on mathematical reasoning benchmarks yet remain unreliable on elementary numerical tasks, including magnitude comparison, large-integer arithmetic, fractions, and scientific notation. This survey examines basic numerical understanding as a capability distinct from high-level mathematical reasoning. We propose the Numerical Grounding Framework (NGF), which decomposes numeracy into Representational Grounding (RG), mapping numeral forms to value, magnitude, and equivalent representations, and Procedural Grounding (PG), executing arithmetic operations in accordance with their mathematical definitions. Using NGF, we organize recent diagnostic benchmarks, failure modes, structural explanations, and mitigation strategies. We review evidence concerning tokenization, positional encoding, embedding geometry, and pretraining-data distribution. We also apply NGF in a coordinated evaluation of three frontier model families across Number Cookbook, NumericBench, and GSM-Symbolic, comparing atomic, contextual, and reasoning-assisted numeracy. Architectural interventions such as digit-aware tokenization and Abacus Embeddings can improve models trained from scratch but are generally unavailable to users of pretrained systems, for whom supervised fine-tuning, reasoning scaffolds, and external tools are more practical. We conclude with deployment recommendations and research directions for more reliable numerical behavior in foundation models.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T12:01:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13129v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.12851v1",
+      "title": "Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents",
+      "authors": [
+        "Xutao Mao",
+        "Liangjie Zhao",
+        "Xiang Zheng",
+        "Cong Wang"
+      ],
+      "abstract": "Self-improving LLM agents convert successful trajectories into persistent cross-task state. An unsafe success can thereby become reusable policy after its triggering input disappears. Skill evolution makes this failure measurable by distilling operational trajectories into executable, transferable, and inspectable procedures. Because evolution optimizes task outcomes rather than procedure safety, compromised experience can cause skill misevolution. Existing benchmarks measure current behavior or static artifacts but cannot attribute risk across authoring, retrieval, and later execution. To expose this lifecycle, we introduce SkillMisevo-Gym, a lifecycle-aware harness that versions skill state across agent frameworks, and SkillMisevo-Bench, a frozen design from malicious exposure to carryover tasks, with concept-aligned benign tasks and nine lifecycle metrics. We also introduce SafeEvolve, a wrapper that repairs unsafe content and governs subsequent reuse. Across 25 agent-method configurations, each covering 525 tasks in 25 episodes, all 21 evolved configurations author unsafe artifacts, while only fifteen lead to fresh-session harm. In the exposure sweep, three malicious tasks raise carryover ASR from 16.0% to 35.3%. Across representative skill evolution methods, SafeEvolve reduces unsafe retrieval and fresh-session harm by 26.7 and 17.3 percentage points, respectively, while mean benign utility changes by only 0.4 points. Together, persistent-adaptation safety must govern what updates write and what future executors reuse. Code is available at https://github.com/henrymao2004/misevolve.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T05:47:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12851v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.12675v1",
+      "title": "Privacy-Preserving RAG by Concealing Sensitive Information from External LLMs",
+      "authors": [
+        "Saleh Almohaimeed",
+        "Saad Almohaimeed",
+        "Mousa Jari",
+        "Fahad Alotaibi",
+        "Khalid A. Alobaid"
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG) is widely used to improve the performance of Large Language Models (LLMs) in answering user queries. Existing privacy research on RAG has focused on preventing unauthorized users from accessing sensitive data. However, another important problem that is often overlooked in RAG privacy research is that external generators have access to the query and the retrieved documents, which may contain confidential information that could potentially be misused or accessed for unintended purposes. In this paper, we introduce the Sensitive Entity Alias Generator (SEAG), a privacy-preserving framework that empowers users to utilize powerful third-party generators without disclosing sensitive information. SEAG introduces a lightweight model that locates sensitive entities, generates corresponding aliases, and constructs an entity replacement table. The table is used to replace sensitive words in the user's query and in the retrieved documents before they are forwarded to an external generator. For this purpose, two datasets were constructed: one for fine-tuning SEAG models to generate entity replacement tables, and another for evaluating the entire SEAG framework. The experimental results demonstrate the success of the SEAG framework. As for the User metric, which measures the ability of the model to provide a correct response to the user while hiding sensitive information from the external generator, all SEAG models achieved over 80% accuracy. Additional analysis further evaluated the ability of SEAG models Qwen-3, LLaMA-3.2, and Phi-4 to hide all sensitive entities within given documents. The results show good performance with total accuracies of 77.83%, 76.73%, and 74.91%, respectively.",
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "submitted": "2026-08-13T00:23:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12675v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2608.12674v1",
+      "title": "Lines and Ladders: A Context-Aware Multi-Agent Framework for Large-Scale Retail Price Taxonomy",
+      "authors": [
+        "Ravi Teja Chunduri",
+        "Srikaran Reddy Boya",
+        "Deep Narayan Mishra",
+        "Ajay Kumar B",
+        "Karthik Kumaran",
+        "Pranay Kona"
+      ],
+      "abstract": "Maintaining price consistency and executing an Every Day Low Price strategy is critical for global retailers. However, with catalogs spanning millions of active items, manual governance of price relationships is infeasible. Inconsistent pricing across item variants distorts customer value perception and cannibalizes sales. To address this, we present a scalable, context-aware Multi-Agent Framework designed to automate the construction of \"Lines and Ladders\" pricing taxonomies. Our framework employs specialized LLM agents to construct these coherent pricing structures by identifying key attributes, extracting multi-modal values, and applying hierarchical grouping logic. Evaluated on real-world enterprise data and deployed in production, our 3-Agent system achieves an F1-score of 0.83 for Lines, outperforming single-agent baselines by mitigating cognitive overload. The system achieves >90% precision and >75% recall in Food & Consumables, and 80.2% assignment accuracy in the unstructured General Merchandise catalog.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-08-13T00:22:22+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12674v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-10805-z",
+      "title": "Agentic profiles for effective AI governance",
+      "authors": [],
+      "abstract": "Nature, Published online: 12 August 2026; doi:10.1038/s41586-026-10805-zA framework comprising four dimensions—autonomy, efficacy, goal complexity and generality—is proposed for characterizing AI agents, supporting the construction of agentic profiles for the effective governance of different AI agents.",
+      "submitted": "2026-08-07T22:14:11.315585+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-10805-z",
+      "journal_boost": 5,
+      "score": 10
+    },
+    {
+      "id": "https://www.nature.com/articles/s42256-026-01278-w",
+      "title": "Beyond representational alignment with brain-guided language models for robust reasoning",
+      "authors": [],
+      "abstract": "Nature Machine Intelligence, Published online: 03 August 2026; doi:10.1038/s42256-026-01278-wXiao et al. show that large language models partially align with human brain activity during deductive reasoning. They further show that brain signals can directly guide and improve model performance, with transfer across reasoning types.",
+      "submitted": "2026-08-07T22:14:18.441840+00:00",
+      "source": "Nature Machine Intelligence",
+      "link": "https://www.nature.com/articles/s42256-026-01278-w",
+      "journal_boost": 3,
+      "score": 10
+    },
+    {
+      "id": "2608.13522v1",
+      "title": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+      "authors": [
+        "Zhe Ye",
+        "Hantao Lou",
+        "Yuechun Sun",
+        "Peiyang Song",
+        "Zhengxu Yan",
+        "Timothe Kasriel",
+        "Qingyang Zhang",
+        "Kaiyu Yang",
+        "Soonho Kong",
+        "Jingxuan He",
+        "Dawn Song"
+      ],
+      "abstract": "AI agents are increasingly used for programming, but do not provide any guarantee on the correctness of generated code. Verified code generation, in which an agent produces both an implementation and a machine-checked proof of its specification, offers a stronger path toward trustworthy AI-generated software. Existing benchmarks in this direction either focus on individual functions or only evaluate proof generation with provided implementations. It is still an open question whether agents can make coherent implementation and proof choices across real multi-module codebases. To bridge this gap, we introduce Vero, the first benchmark to evaluate joint implementation and proof synthesis at the repository level. Vero contains 43 multi-module instances sourced from real-world repositories spanning Python, Dafny, Verus, and Coq, and covering diverse domains from cryptographic protocols to distributed systems. Each instance consists of a multi-module Lean 4 repository with predetermined API interfaces, manually curated formal specifications, and reference implementations, supporting both proof-only and code-and-proof evaluation modes. To improve benchmark reliability, Vero also includes an audit mechanism where agents are allowed to formally prove unsatisfiability of provided specification or incorrectness of reference code, which surfaces and corrects latent code and specification errors during curation. We evaluate frontier coding-agent configurations with Lean toolchain access. The strongest agent fully solves only 27 of 43 instances and closes no specifications on the hardest repositories. Vero provides a concrete testbed for measuring progress toward repository-scale verified software synthesis, where current agents still fall short. We release the benchmark, curation pipeline, and evaluation harness at https://github.com/sunblaze-ucb/vero.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.LO",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "submitted": "2026-08-13T17:41:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13522v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2608.13244v1",
+      "title": "Localize, Then Reason: Visual Latent Structural Reasoning for Molecular Properties and Edits",
+      "authors": [
+        "Xingqiao Lin",
+        "Junmei Wang",
+        "Haocheng Tang"
+      ],
+      "abstract": "Local chemical perception and property reasoning are both essential for understanding how molecular structure determines properties. Current LLM-based chemical reasoning methods either receive SMILES/molecular images together with descriptions of local motifs, or reason directly from molecular images. Neither approach enables the model to focus on chemically meaningful regions before reasoning. To address this gap, we propose Visual Latent Structural Reasoning (VLSR), an end-to-end framework that jointly learns localization and reasoning from molecular images. Central to our approach is a localize-then-reason strategy. VLSR first learns to locate chemically meaningful regions in a molecular image. It then reasons about their property effects in a compact latent workspace before producing the final answer. Under the same inference setup, this design achieves 9.6X higher throughput than a comparable textual-reasoning baseline.",
+      "categories": [
+        "cs.CL",
+        "cs.CE",
+        "q-bio.BM"
+      ],
+      "submitted": "2026-08-13T13:50:26+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.13244v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2608.12984v1",
+      "title": "Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research",
+      "authors": [
+        "Xing Zhang",
+        "Yanwei Cui",
+        "Guanghui Wang",
+        "Peiyang He"
+      ],
+      "abstract": "Long-form research reports generated by large language models drift, contradict themselves, and lose provenance: the same metric appears with different values, and rumor is quoted as confidently as an audited filing. We present a two-tier agentic system that separates a maintained, point-in-time knowledge library from report writing. A deterministic \"librarian\" ingests timestamped sources into a trust-tiered ontology, layering evidence cards, an authoritative metric ledger, and a claim graph into an always-current source of truth, not per-query RAG over raw chunks. A portable multi-agent \"writer\" runtime then composes a contradiction-free, evidence-grounded report at any knowledge cutoff T, reading only evidence with as_of <= T (no look-ahead); red-team verdicts flow back into the librarian. We evaluate on a self-collected, public corpus of 6,130 sources yielding 555,926 evidence cards (SEC EDGAR filings across 295 issuers and 11 sectors, U.S. Bureau of Labor Statistics releases, and Wikipedia). From the one library we compose four point-in-time reports on distinct theses and run eight reproducible experiments, whose headline metrics come from a deterministic quality-control gate, itself validated by defect-injection meta-evaluation at recall 1.0 and precision 1.0. A shared metric ledger removes 6,845 cross-section contradictions to zero. Tier-first selection is correct on 22/22 gold cases where a popularity-first baseline scores only 9/22; trust tiering leaks zero media-sourced numbers, and no government statistic displaces a company's own filing. A red-team refutation propagates back and self-corrects a later run with zero manual edits. Replay exhibits zero look-ahead violations across seven cutoffs while the library grows from 235,373 to 555,312 cards. Difficulty-tiered model routing exceeds the all-Opus quality ceiling while running 3.7x faster than serial.",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "submitted": "2026-08-13T09:09:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2608.12984v1",
+      "journal_boost": 0,
+      "score": 9
+    }
+  ]
+}
