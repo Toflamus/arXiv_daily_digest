@@ -1,0 +1,654 @@
+{
+  "date": "2026-09-02",
+  "fetched_at": "2026-09-02T23:43:46.727009+00:00",
+  "stats": {
+    "arxiv_count": 413,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 39,
+      "Science Advances": 44,
+      "Nature Machine Intelligence": 0,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 611,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2609.01491v1",
+      "title": "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions",
+      "authors": [
+        "Elias Stengel-Eskin",
+        "Newton Sander",
+        "Carlos Bonetti",
+        "Sasha Boguraev",
+        "James Bowler",
+        "Hale Sirin",
+        "Simon Kirby"
+      ],
+      "abstract": "The growing rate at which LLM agents interact with one another raises key questions about language evolution in multi-LLM-agent settings, with implications for safety and monitorability as well as for linguistic accounts of LLMs. To address these questions, we introduce GlossoGen, a novel platform for studying multi-agent language evolution in complex scenarios. Within GlossoGen, we build the SaveVeyru scenario, which requires agents with partial information to communicate under pressure. We find that language evolution does occur between LLM agents, that the resulting languages are compositional and morphologically productive, and that they deviate from the LLMs' English prior in ways that render them incomprehensible to humans. Moreover, we identify several qualities essential to this evolution: pressure towards efficiency; the strength of the models backing the agents; and access to a \"postmortem\" stage in which agents can agree on linguistic conventions. Importantly, we observe that different conditions govern the transmission of language to new agents. Specifically, we find that agents learn new languages from usage alone, take an active role in this learning, and that while stronger models are required for novel language emergence, weaker models can learn an existing language once it has emerged. Taken together, our results indicate that current LLMs have the potential for cumulative cultural evolution -- previously attested only in humans -- with mixed populations of agents developing capacities that go beyond their lowest common denominator.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-09-01T16:22:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01491v1",
+      "journal_boost": 0,
+      "score": 23
+    },
+    {
+      "id": "2609.01045v1",
+      "title": "AgentFactory: Towards Automated Agentic System Design and Optimization",
+      "authors": [
+        "Enci Zhang",
+        "Haofeng Wang",
+        "Yuesheng Zhu",
+        "Xiaole Cui",
+        "Guibo Luo"
+      ],
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities as powerful components in agentic systems, enabling sophisticated reasoning and complex task execution. However, current approaches to manually designing and optimizing agentic systems heavily rely on manual effort, limiting their adaptability and scalability. Recent work has explored the automated optimization of workflow designs. However, these approaches often overlook the crucial role of model capabilities and focus on single performance metrics, failing to address real-world deployment constraints. In this paper, we present AgentFactory, a framework that jointly optimizes both foundation models and workflow structures in agentic systems while considering multiple objectives including performance, cost, and efficiency. AgentFactory leverages advanced LLMs as optimizers to navigate the vast search space of possible configurations, employing a three-stage optimization pipeline to automatically discover effective combinations of fine-tuned models and optimized workflows. Through an iterative optimization process, our framework systematically explores and evaluates different agentic system designs, adapting to task-specific requirements while maintaining operational efficiency. We evaluate AgentFactory across eight benchmarks spanning five domains, including general reasoning, coding, mathematics, medicine, and finance. Our experiments demonstrate that AgentFactory consistently outperforms both manually designed methods and existing automated approaches, achieving an average improvement of 9.1% across all benchmarks, with particularly significant gains in domain-specific tasks (19.6% on MedQA and 18.7% on FinEval). These results establish AgentFactory as a promising approach for developing more capable and efficient agentic systems through automated optimization.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T10:45:11+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01045v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2609.01455v1",
+      "title": "When Safety Routing Breaks: Understanding Alignment Fragility under Benign Fine-Tuning",
+      "authors": [
+        "Yitong Guo",
+        "Xiaoyi Chen",
+        "Siyuan Zhang",
+        "Xiaofeng Wang",
+        "Haixu Tang"
+      ],
+      "abstract": "Benign fine-tuning severely weakens the safety alignment of large language models (LLMs), so we study why refusal behavior is so fragile. While prior work often attributes this failure to gradient conflict, we propose a fundamentally different Fisher-geometric explanation: safety Fisher is low-rank, and alignment makes the safety geometry flatter while preserving an output-routing pathway. After 100 benign fine-tuning examples, this pathway is selectively re-sharpened in output-side MLP modules, explaining the asymmetric fragility: safety can collapse to high attack success rates, while general utility degrades mildly. The routing view also explains why few safety examples can restore refusal behavior, indicating that internal safety-relevant representations are preserved. Finally, we show that LoRA and ASAM mitigate early collapse by suppressing output-side sharpness, but their protection weakens at larger fine-tuning scales. Overall, safety failure is best understood as a disruption of a low-rank output-routing mechanism",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T15:59:32+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01455v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2609.01117v1",
+      "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+      "authors": [
+        "Zhaoliang Chen",
+        "Jie Fu"
+      ],
+      "abstract": "Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where intermediate states are vectors rather than words - sidesteps these constraints, but leaves open how those latent states should be computed. We approach this along two axes. First, we keep a large language model (LLM) frozen and use it for what it is already good at - modeling and decoding sequences - while a small auxiliary network supplies continuous latent thoughts as input. Second, we produce those latents by recurrence: a tiny recurrent reasoner refines them over many steps, decoupling the depth of computation from the size of the model, so that the latents are a product of iterative processing rather than a single forward pass. We instantiate this as Latent Recurrent Thoughts (LRT): a task-dedicated proposer supplies base latents, a recurrent reasoner refines them through bounded residual corrections, and the frozen LLM decodes the answer. On symbolic reasoning with answer supervision but no reasoning traces (Countdown-4, Sudoku) and on natural-language reasoning (HumanEval, MBPP, StrategyQA), LRT substantially outperforms prior frozen-decoder continuous-space reasoning methods under an identical decoder, prompt, data, and training budget, and outperforms non-thinking-mode chain-of-thought prompting on the same backbone at a small fraction of its inference compute.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T11:56:17+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01117v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2609.01073v1",
+      "title": "Post-hoc Alignment of LLM-judges to Human Judgment Distribution",
+      "authors": [
+        "Sebastian Steindl",
+        "Nikos Voskarides",
+        "Alberto Gasparin",
+        "Diego Marcheggiani"
+      ],
+      "abstract": "The LLM-as-a-judge (LLMaJ) framework offers a cost-effective and reproducible solution for automatic evaluation. However, current evaluation practices typically compare LLMaJ judgments against aggregated ground-truth labels, overlooking the valuable information contained in Human Label Variation (HLV). Inspired by an increasing line of work that proposes to leverage HLV, we systematically study LLMaJ performance on predicting both a single, aggregated ground truth hard-label and unaggregated soft-labels that represent Human Judgment Distributions (HJD). Our results across five diverse datasets reveal that while LLMs achieve near human-level performance at hard-label prediction on most tasks, they exhibit poor performance when predicting soft-labels. To address this limitation, we propose NAPHA (eNtropy-Aware Post-Hoc Alignment), a simple yet effective lightweight post-hoc alignment method that matches the LLM distribution to the HJD by first assigning an instance to a discrete entropy class and then routing it to specialized, trained alignment models. We find that NAPHA consistently improves soft-labels prediction across base LLM models and datasets, with particularly strong gains on high-entropy instances where capturing diverse human perspectives is most critical. We also show via oracle experiments that improving entropy class prediction can substantially enhance NAPHA's practical effectiveness.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T11:03:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01073v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2609.00595v1",
+      "title": "SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems",
+      "authors": [
+        "Rui Yang",
+        "Junjie Xu",
+        "Zhengyu Liu",
+        "Neil Fendley",
+        "Yang Hong",
+        "Ziyang Li",
+        "Yinzhi Cao"
+      ],
+      "abstract": "Safe agents can fail together. Multi-agent LLM systems (MAS) move information, state, decisions, and authority across principal boundaries, creating failures that local checks may miss. Without an execution-level view, a multi-agent setting can easily be mistaken for evidence of a genuinely multi-agent security effect. We thus systematize MAS security through an execution-centered analysis of 197 works, covering six interaction interfaces, four adversary positions, seven system-level risks, and eight recurring attack paths. We introduce an A-I-R framework that organizes attacks by adversary position, interaction interface, and resulting system-level risk, unifying otherwise fragmented attack mechanisms across MAS. We organize defenses through a five-part contract covering path target, observation, intervention, trust boundary, and recovery, and identify path closure and recovery as key challenges. We audit 44 evaluation and benchmark works and identify open challenges in isolating interaction effects, designing comparable and diagnostic metrics, supporting reuse across MAS designs, and evaluating open-system operation. Together, these findings motivate an interaction-aware view of MAS security: trace attacks end to end, test whether defenses close those paths, and evaluate system-level effects with appropriate counterfactuals.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T02:34:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00595v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2609.00859v1",
+      "title": "Reinforcement Learning Enhanced LLM Agents for Complex Vehicle Routing Problems",
+      "authors": [
+        "Yi Chen",
+        "Zikang Yu",
+        "Jiahai Wang",
+        "Jinbiao Chen",
+        "Jianpeng Zhou",
+        "Zizhen Zhang"
+      ],
+      "abstract": "Vehicle Routing Problems (VRPs) are fundamental combinatorial optimization problems with widespread applications in various scenarios. The advanced optimization solvers can effectively solve such problems. However, modeling complex VRP variants for solvers often requires substantial domain expertise, which limits the accessibility of advanced optimization technologies. In this paper, we propose Reinforcement Learning Enhanced LLMAgents(RLEA), a multi-agent framework designed to automate the modeling of complex VRPs. RLEA introduces a lightweight neural Planner trained with Soft Q-learning to efficiently orchestrate the actions of LLM-based agents. In addition, we equip the system with an evolutionary memory module and retrieval-augmented generation, enabling the agent to leverage both accumulated experience and external solver knowledge during program generation and refinement for solving VRPs. We evaluated 48 distinct VRP variants across various solvers. The experimental results demonstrate that RLEA outperforms the previous state-of-the-ar method, achieving a 16.67% higher success rate while significantly reducing runtime errors. These results validate that integrating reinforcement learning with LLM-based reasoning is highly effective for automated optimization modeling. The appendix is available at: https://doi.org/10.5281/zenodo.19134435.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T07:56:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00859v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2609.00621v1",
+      "title": "Control-Data Flow Separation: Stable Prompt Optimization in Multi-Agent LLMs",
+      "authors": [
+        "Wentao Zhang",
+        "Syed Shariyar Murtaza",
+        "Junaid Ahmad Bhatti",
+        "Utkarsh Soni",
+        "Yifan Nie",
+        "Eugene Wen",
+        "Yuntian Deng"
+      ],
+      "abstract": "Prompt optimization can improve multi-agent LLM systems, but the prompts being optimized often serve two entangled roles: generating task-relevant content and specifying execution-critical protocols, such as message routing, output formatting, and termination signals, on which the underlying code relies. As a result, a prompt edit intended to improve content generation can inadvertently corrupt the protocol and cause the entire agent pipeline to fail. Our key observation is that these two roles have different representations: execution protocols are typically structured, while task-relevant content is usually expressed in unstructured language. Based on this, we propose control-data flow separation, where execution-critical control is represented as typed, validated program objects, while task-relevant language remains the optimizable data flow for agent communication. This design allows optimizers to improve multi-agent behavior without exposing the routing or formatting interface to prompt drift. Across synthetic reasoning, collaborative review generation, and insurance rating workflows, our framework empirically achieves 100% eventual protocol validity while consistently improving task performance.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "submitted": "2026-09-01T03:04:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00621v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2609.00590v1",
+      "title": "CRAFT: Fine-Tuning Pre-hoc Explainability in AI-native 6G RAN",
+      "authors": [
+        "Pranshav Gajjar",
+        "Vijay K Shah"
+      ],
+      "abstract": "The next generation of mobile networks is envisioned as fully AI-native, with AI-RAN architectures embedding small language models (SLMs) to perform reasoning over real-time telemetry. The state-of-the-art training paradigms for telecom LLMs, exemplified by RANSTRUCT-style supervised fine-tuning (SFT) on curated instruction data, are limited to post hoc rationalization. Here, the explanations, when produced at all, are generated after or independently of the decision, leaving the decision process unauditable. Pre-hoc reasoning, where a causal reasoning trace is produced before the output label, is preferable, and the broader LLM reasoning literature has made real progress toward it via RL methods such as Group Relative Policy Optimization (GRPO). Here we observe that transplanting this recipe into the telecom setting runs into a cold-start barrier: SLMs either learn to output the desired format or learn to predict the label, but rarely both. We identify this barrier and propose CRAFT, which stands for Cold-start Reasoning Alignment via Fine-Tuning, a data-centric method to autonomously generate a verified dataset of (input, trace, label) triplets. CRAFT fine-tunes SLMs on this verified data using low-rank adaptation (LoRA), requiring substantially less compute and wall-clock time than GRPO-based methods. On the TRACTOR and IC xApp telecom datasets, CRAFT achieves up to 86.5% and 94.6% for accuracy and F1 with no parse failures, while direct GRPO and SFT+GRPO fail to exceed 28% and 53.5% F1 with multiple parse failures. We further show that CRAFT-initialized policies serve as a robust foundation for subsequent GRPO fine-tuning, as under diverse reward functions the performance remains consistent with no parse failures. Finally, we demonstrate that CRAFT consumes 59% less energy than GRPO-based baselines, making it a sustainable path to deployable, auditable AI in 6G RAN.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-09-01T02:30:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00590v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.00565v1",
+      "title": "Aligned but Flattened: Analyzing the Trade-off between Cultural Alignment and Diversity in LLMs",
+      "authors": [
+        "Jingshen Zhang",
+        "Shaoyang Xu",
+        "Wenxuan Zhang"
+      ],
+      "abstract": "Cultural fine-tuning has become the de facto paradigm for building culture-aware large language models (LLMs), yet existing optimization exclusively for alignment scores provides an incomplete portrait of cultural fidelity by systematically obscuring inherent cultural diversity. This unidimensional evaluation lens prompts a fundamental question: do models genuinely perceive distinct cultural nuances, or do they merely memorize dominant cultural values? To address this, we propose a synergistic evaluation framework that jointly formalizes cultural alignment and diversity. Through extensive benchmarking of six mainstream LLMs on the World Values Survey, this framework uncovers a systematic and critical trade-off: the pursuit of cultural alignment consistently incurs an acute expense of diversity, leading to severe \"cultural flattening.\" Investigating this behavioral shift, we demonstrate that these superficial alignment gains stem from models artificially anchoring to dominant majorities, converging onto a monolithic response pattern that wipes out the heterogeneous distributions inherent to human groups. Crucially, our mechanistic analysis suggests that this diversity collapse is not merely a behavioral anomaly but more likely a structural consequence of the low-rank bias inherent in neural network optimization. Therefore, our findings expose the limitations of current post-training paradigms and call for a shift toward alignment objectives that preserve cross-cultural pluralism.",
+      "categories": [
+        "cs.SI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T01:59:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00565v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.00513v1",
+      "title": "ISO-RAG: Isoperimetric Noise Control for Retrieval-Augmented Generation",
+      "authors": [
+        "Siyuan Zhang",
+        "Hanchen Wang",
+        "Dong Wen",
+        "Ying Zhang",
+        "Wenjie Zhang"
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG) mitigates large language models (LLMs) hallucinations, yet conventional dense retrieval struggles with the complex reasoning paths of multi-hop question answering (QA). Graph-based RAG captures multi-step relationships but suffers from severe semantic drift and high online latency due to noisy global graph traversals. Thus, we propose ISO-RAG (ISOperimetric Retrieval-Augmented Generation), a geometry-aware RAG framework. By projecting the underlying knowledge graph into a hyperbolic Poincare ball to precompute node-wise isoperimetric profiles, ISO-RAG prunes spurious edges during retrieval, restricting the search space to a strictly localized subgraph. This topological purification regulates Personalized PageRank (PPR) diffusion driving the retrieval process, ensuring exact and low-latency convergence. Experiments on multi-hop QA benchmarks demonstrate that ISO-RAG outperforms state-of-the-art baselines by average absolute gains of 10.0% in retrieval recall and 4.3% in downstream exact match, achieving a superior accuracy-efficiency trade-off by fundamentally eliminating the latency bottleneck of global traversals. Our source code is available at https://github.com/ZaiizaiZHANG/ISO-RAG.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T00:27:33+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00513v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.01432v1",
+      "title": "Citing Less Critically: LLMs Reshape the Rhetoric and Reach of Scientific Citation",
+      "authors": [
+        "Yixuan Liu",
+        "Lin Chen",
+        "Zhuoqi Liu",
+        "Jianglin Lu",
+        "Dakota Murray"
+      ],
+      "abstract": "Scientific citations carry rhetorical intent. Scholars may cite prior work positively (supporting), negatively (contrasting), or neutrally (mentioning). As large language models (LLMs) increasingly assist scientific writing, whether they reproduce citations with the same rhetorical intent as humans remains unclear. We introduce a masked-citation task to compare human and LLM-generated citation behavior. For each citation context, an LLM generates a replacement citation sentence, producing a counterfactual corpus directly comparable to human citation. We analyze what, whom, and how models cite, using an LLM-as-a-judge to classify citation intent and a 20-million-edge coauthorship network to measure social distance between cited authors. Across six popular LLMs and 1,746 top NLP conference papers (63k+ contexts, 132k+ citations), three patterns emerge: (1) Compared with human citation, LLMs cite significantly less critically; (2) LLMs over-cite popular and older papers, a tendency amplified for contrasting citations where human writing more often draws on recent, niche work; (3) Whereas humans often cite within their close social network, especially for supporting citations, LLMs tend to draw on more socially distant authors. Together, these differences are double-edged: LLM citation reaches beyond a scholar's close collaborators while being less critical and amplifying visibility bias, reshaping the rhetoric and reach of scientific citation.",
+      "categories": [
+        "cs.DL",
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "submitted": "2026-09-01T15:42:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01432v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.01404v1",
+      "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
+      "authors": [
+        "Jaewoo Park",
+        "Minyoung Lee",
+        "Sukmin Seo",
+        "Moonbin Yim",
+        "Hyunwook Yoon",
+        "Dohoon Ryu",
+        "Daehee Kim",
+        "Myungseo Song",
+        "Jihyuk Byun",
+        "Seunggyu Chang",
+        "Taeho Kil",
+        "Jiseob Kim",
+        "Bado Lee",
+        "Geewook Kim"
+      ],
+      "abstract": "Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting: dropping an MLLM directly into a drone's control loop, with its entire action space declared solely in the prompt. Recent systems approach this setting but increasingly narrow the model's decision-making. We widen it back. We introduce DroneCATS-Agent, an architecture where the MLLM is a swappable component, and DroneCATS, a benchmark treating the model as the independent variable. Beyond merely flying toward a pixel, our agent entrusts the model to yaw and search, deliberate when unsure, and self-declare arrival---all without fine-tuning or function-calling schemas. Evaluating frontier and open models across four core capabilities---approaching a visible target, tracking a moving one, searching outside the initial view, and commanding a multi-drone fleet---reveals that even the simplest embodied settings are far from solved. Crucially, to identify what breaks first at the edge, our roster scales down to 2B parameters. The findings expose a stark paradox: it is not the flying that fails. Small open models often navigate into the success radius more reliably than frontier models, yet lose the episode by declaring arrival prematurely or not at all. Multi-drone commanding amplifies this divide, with small models failing by blindly copying a single coordinate across distinct views. Viewed as vision-language-action agents, the models' spatial perception holds up, but their action protocol does not. What separates a deployable edge model from a frontier model is not navigation, but the discipline to sustain a declared protocol and emit the correct terminating action. The open problem is closing this gap at onboard compute costs---yielding a fast model that plans persistently and knows exactly when it is done---and DroneCATS is built to measure that distance.",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T15:27:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01404v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.01360v1",
+      "title": "EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems",
+      "authors": [
+        "Jun Hou",
+        "Priya Pitre",
+        "Yi Fang",
+        "Xuan Wang"
+      ],
+      "abstract": "Large language model (LLM) agent failures often contain multiple related errors rather than a single mistake. Existing attribution methods usually identify a responsible agent, step, or root cause, but do not explicitly model dependency between errors. We introduce EDGE, an Error Dependency Graph-guided multi-Error attribution framework. EDGE constructs an error dependency graph from observed error events and validates a reliable causal subset through counterfactual rollout. The inference graph guides a two-stage LLM-as-judge detector for error attribution, and the intervention-validated subgraph provides a more reliable basis for explanation and repair analysis. Experiments on TRAIL and MAST show that EDGE improves category-level multi-error attribution across most evaluated models and settings. Experiments with adapted Who&When-style prompts show that the graph helps across prompting strategies. These results suggest that dependency structure is a useful diagnostic prior for agent failures beyond isolated root-cause prediction.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T15:00:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01360v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.00683v1",
+      "title": "Creative Generation via Multi-Agent Debate: Does Debate Suppress Diversity?",
+      "authors": [
+        "Tien Anh Nguyen",
+        "Khanh-Binh Nguyen",
+        "Van Dai Do",
+        "Svetha Venkatesh",
+        "Hung Le"
+      ],
+      "abstract": "Creative generation tasks, such as narrative writing and scientific ideation, demand both high-quality outputs and distinct responses across independent runs to maximize exploration. Multi-Agent Debate (MAD) has shown strong quality gains on factual and reasoning tasks, making it a natural candidate for creative generation. However, we find its convergence-driven design actively suppresses output diversity across independent runs, creating an inherent trade-off with creative tasks. We theoretically show that preserving diversity among agents within each debate session is a necessary condition for achieving diverse outputs across independent runs. Building on this finding, we propose Creative-MAD, which introduces two synergistic interventions to sustain agent divergence. Specifically, Cognitive Lens Assignment counters identity drift by anchoring each agent to a distinct and persistent cognitive mode, while Embedding-based Peer Selection counters majority pull by limiting each agent's context to its most semantically distant peers. Experiments across four creative benchmarks demonstrate that Creative-MAD significantly enhances both lexical and semantic diversity while maintaining MAD's output quality.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T04:00:42+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00683v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.01338v1",
+      "title": "mzCache: On-Device LLM Memory Management under Multitasking",
+      "authors": [
+        "Hongseung Yu",
+        "Minsung Kim",
+        "Jongseok Park",
+        "Kyunghan Lee"
+      ],
+      "abstract": "On-device mobile Large Language Model (LLM) inference is gaining significant attention. However, mobile devices operate in highly dynamic multitasking environments where users frequently switch between applications. This creates memory pressure, forcing LLM memory (model weights and KV cache) to be evicted by the operating system. When a new inference request arrives, the inference system must restore the evicted memory through slow storage reads or recompute the entire KV cache, severely degrading responsiveness. To address this, we present mzCache, an on-device LLM inference system with specialized memory management for multitasking environments. Under unpredictable memory pressure, mzCache elastically evicts LLM memory and leverages the unified memory of mobile SoCs to enable zero-wait inference on the GPU with concurrent CPU-side restoration. mzCache realizes this through restoration-oriented memory management: LLM memory is partitioned into fine-grained shared buffers to enable partial eviction and restoration with concurrent cross-processor access, while hybrid swap and backward-out eviction policies ensure low-latency restoration from any eviction state. Implemented on llama.cpp and deployed as an Android application, mzCache achieves 2.1-5.5$\\times$ reduction in Time-to-First-Token compared to storage-backed partial offload and demonstrates its effectiveness in real multitasking scenarios.",
+      "categories": [
+        "cs.OS",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-01T14:49:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01338v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.01245v1",
+      "title": "Explore More, Drift Less: Outcome-Only Reinforcement Learning Can Suffice for Long-Horizon Interactive Agents",
+      "authors": [
+        "Liming Pu",
+        "Xiaoxia Li",
+        "Yifu Liu",
+        "Teng Cao",
+        "Bin Yang"
+      ],
+      "abstract": "Reinforcement learning is a natural way to post-train LLM agents for long-horizon interactive tasks judged only by end-of-task verification, yet a shared belief holds that outcome-only RL soon hits a ceiling on small open models. Recent work therefore compensates around the training with denser rewards, SFT priors, skill libraries, curated memory, or multi-agent orchestration. We argue the ceiling is an artifact of two failures of common practice. Signal starvation: group-relative RL with sparse outcome-only rewards yields a gradient only when a task's rollout group mixes successes and failures, so under-scaled exploration silences exactly the hardest, most instructive tasks. Policy drift: squeezing many updates out of a small task pool degrades the policy itself, as an unanchored objective lets the sampling distribution collapse exactly when saturation has already made informative groups rare. We present CANOPY (Coverage-ANchored On-PolicY RL), a minimalist protocol attacking both directly: scale same-task exploration until the natural signal reappears, keep every update on-policy, KL-anchored, and confined to the agent's own action tokens, then cash in an enlarged interaction budget at test time. On AppWorld, a long-horizon interactive coding benchmark, a Qwen3-14B policy trained with CANOPY through environment interaction alone--without task-specific supervision, auxiliary credit signals, or elaborate agent scaffolding--topped the public leaderboard (Feb. 2026; Test-Normal TGC 86.9, Test-Challenge 67.6), and the same design principles lift Qwen3.5-9B on SWE-bench Verified by 16.6 points. Agentic RL alone thus internalizes long-horizon capability directly into a small open model; we plan to release the complete training stack at https://github.com/AlibabaResearch/SignalCoverageRL.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T13:44:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01245v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.00714v1",
+      "title": "ChatDev 2.0: A No-Code Multi-Agent Platform for Developing Everything",
+      "authors": [
+        "Yufan Dang",
+        "Shu Yao",
+        "Bowen Lai",
+        "Chenting Xu",
+        "Ruijie Shi",
+        "Wai-Shing Leung",
+        "Huatao Li",
+        "Chen Qian",
+        "Zhiyuan Liu"
+      ],
+      "abstract": "Large language model (LLM)-based multi-agent systems (MAS) have shown strong potential for solving complex tasks, yet their development forces a tradeoff: code frameworks are expressive but engineering-intensive, while no-code builders simplify authoring but constrain agent interactions to author-defined workflows. We present ChatDev 2.0: DevAll (hereafter DevAll), a no-code platform for building, executing, and inspecting heterogeneous MAS that delivers both high expressiveness and ease of use. In terms of expressiveness, DevAll pairs a declarative executable graph abstraction with a cycle-aware execution engine, so that heterogeneous agents and dynamic and cyclic interactions can be represented and executed within a single framework. For ease of use, an integrated visual interface lets users author, run, monitor, and inspect MAS, including human-in-the-loop steps, entirely without writing code. Experiments demonstrate that DevAll reproduces state-of-the-art MAS across three representative tasks at competitive performance and without task-specific orchestration code, highlighting its effectiveness as a general-purpose platform for LLM-based MAS. DevAll is available at https://github.com/OpenBMB/ChatDev.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "submitted": "2026-09-01T04:47:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00714v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.00700v1",
+      "title": "Value Over Language Model: Detecting Original Contribution in Writing",
+      "authors": [
+        "Vibhhu Sharma",
+        "Thorsten Joachims",
+        "Sarah Dean"
+      ],
+      "abstract": "LLMs have been rapidly adopted across writing tasks, prompting the development of tools for detecting LLM-generated text. Yet, these tools largely measure how much of a document's surface text was written by an LLM and aren't fundamentally designed to measure how much of the information content or ideas originated from the LLM itself rather than being supplied by the user in the prompt. In this work, we design a framework that measures how much value a person adds on top of what a language model could have easily produced by itself. The method requires no training or labeled data and never scores the document's surface text, insulating it from stylistic confounders. Instead, it extracts the document's content at increasing levels of granularity, uses an LLM to reconstruct the document from each partial representation, and compares these reconstructions with those produced from the task description alone. We call this framework Value Over Language Model (VOLM), which measures a document's contribution relative to a replacement-level document that an LLM could produce from the task description alone. We evaluate VOLM with a specific instantiation of this framework across three domains: news articles, ICLR peer reviews, and argumentative essays. VOLM separates human-authored documents from matched LLM-generated documents produced from generic task descriptions, while remaining substantially invariant to content-preserving transformations, including LLM-based reconstruction and round-trip translation. We further find that increasingly constrained content extractors reduce residual differences between LLM-generated and humanized text, demonstrating the importance of disentangling informational content from stylistic variation. We hope these results encourage further work on specialized instantiations of the framework and on assessing human contributions in LLM-assisted writing more generally.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T04:21:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00700v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.00653v1",
+      "title": "EEG-AS: Instance-Level Foundation Model Selection for EEG Foundation Models via Behavior Reconstruction",
+      "authors": [
+        "Yunzhen Zhang",
+        "Ruoxi Piao",
+        "Hasan Onur Keles",
+        "Mustafa Misir"
+      ],
+      "abstract": "Electroencephalography (EEG) is a non-invasive technique for measuring neural activity and has been widely used in neuroscience applications. Recent advances in EEG foundation models have enabled strong performance across diverse neural decoding tasks. However, no single foundation model consistently performs best across datasets or individual EEG instances, while instance-level model selection remains largely unexplored. To address this limitation, we formulate EEG foundation model selection as an instance-level Algorithm Selection (AS) problem. We propose \\textbf{EEG-AS}, an instance-level algorithm selection framework that characterizes each EEG instance using inference-available latent EEG embeddings, handcrafted neurophysiological features, and an anchor foundation model. During training, EEG-AS learns to reconstruct unavailable foundation-model behaviors from privileged prediction tokens conditioned on an anchor foundation model, while during inference it estimates these behaviors without executing the entire model portfolio, enabling efficient selection from seven EEG foundation models. Experiments on seven public EEG benchmarks demonstrate that EEG-AS substantially narrows the gap between the Single Best Solver (SBS) and the oracle upper bound for each instance. These results highlight the effectiveness of instance-level AS for adaptive deployment of EEG foundation models.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T03:30:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00653v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.00624v1",
+      "title": "Trust Your Guide Only When Certain: Uncertainty-Aware Sparse Alignment at Inference Time",
+      "authors": [
+        "Zeen Zhu",
+        "Zhuo Li",
+        "Weiyang Guo",
+        "Liye Zhao",
+        "Haibing Di",
+        "Yequan Wang",
+        "Jing Li"
+      ],
+      "abstract": "A prominent paradigm in inference-time alignment employs lightweight supervisors to steer Large Language Models (LLMs). Through empirical analysis, we identify a structural mismatch in this paradigm: weak supervisors exhibit pervasive high entropy across the vast majority of tokens, yet prevailing dense intervention approaches mandate supervision at every decoding step. This leads to frequent low-confidence interventions that can disrupt valid base-model reasoning and incur substantial utility costs. To resolve this, we propose TUSA (Trust-based Uncertainty Sparse Alignment). Moving away from continuous oversight, TUSA reframes alignment as a dynamic arbitration process, introducing an uncertainty-aware arbiter that authorizes intervention only when two conditions are met: the supervisor is confident and the token is semantically salient. This mechanism effectively filters out uncertainty-driven noise and redundant supervision. Extensive experiments across multiple models and benchmarks show that TUSA consistently improves both safety alignment and general helpfulness. By bypassing approximately 50% of alignment steps, it not only enhances safety preference by up to 15.6%, but also boosts general preference rates by up to 12.0% compared to the dense baseline, demonstrating that selective, high-precision alignment can outperform continuous supervision.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T03:05:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00624v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.01535v1",
+      "title": "Can LLMs Design Video Coding Tools? A Case Study on Planar Mode",
+      "authors": [
+        "Yingwen Zhang",
+        "Meng Wang",
+        "Liqiang He",
+        "Shiqi Wang"
+      ],
+      "abstract": "This paper explores whether large language models (LLMs) can design video coding tools, a highly challenging task due to the intricate algorithmic coupling of tool modifications. In particular, we present an empirical case study on the Planar mode, a long-standing intra prediction tool in video coding standards. Our experiments operate within a generation-and-evaluation loop, with the LLM generating new Planar predictors, encoder trials evaluating their coding performance, and the LLM re-generating refined implementations based on the evaluation feedback. We first examine directly replacing the default Planar mode in the Fraunhofer Versatile Video Encoder (VVenC) under its faster preset. Experimental results demonstrate that the LLM-generated mode can outperform the conventional Planar mode on this lightweight toolset, achieving 0.18% bitrate savings with 0.4% complexity overhead on the standard benchmark. We further extend our evaluation to the Enhanced Compression Model (ECM). Leveraging newly introduced directional Planar modes, we investigate two integration strategies: directly replacing them, and introducing the LLM-generated predictor as an additional prediction mode with new syntax elements. The empirical results suggest that both strategies can yield coding gains under a constrained low-resolution setting. Overall, this study offers preliminary evidence and practical insights, highlighting both the potential and open challenges of LLM-based coding tool design.",
+      "categories": [
+        "cs.MM",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T17:04:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01535v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.01519v1",
+      "title": "When Guardrails Look Effective: Construct Validity Failures in LLM Agent Commerce Evaluation",
+      "authors": [
+        "Peiying Zhu",
+        "Sidi Chang"
+      ],
+      "abstract": "Interactive simulations increasingly evaluate policies in markets populated by language-model agents. Their outputs can look economic---prices, profits, consumer surplus, and welfare---without instantiating the behavior named in the claim. We audit this risk in a multi-turn buyer--seller testbed for configurable hotel transactions. An initial implementation reported welfare gains from two marketplace guardrails of +87.4, +35.0, and +28.8 across a Qwen2.5 1.5B--14B ladder. It also gave guarded and unguarded agents different offer schemas and choice procedures. Holding the schema and buyer chooser fixed changes the paired contrasts to +7.2, -13.9, and +23.8. The four largest 14B single-generation effects averaged +229; after three generations per profile-condition, they averaged +37.6 (95% bootstrap interval [-34.2, 109.3]), while generation residuals account for 49.9% of variation in this post-hoc probe. A seller-incentive check is non-monotone: increasing profit pressure produces less profit than the default seller prompt. Scripted positive controls show why this matters. A profit-maximizing seller already attains first-best welfare, so guardrails mostly redistribute and reduce welfare; they create welfare only when the seller is explicitly programmed to force inefficient bundles. We contribute a construct-validity contract separating incentive validity, protocol isolation, stochastic stability, and welfare accounting, and returning INVALID or INCONCLUSIVE before substantive policy claims. In our case, the original estimate is INVALID under protocol isolation, while the controlled study remains INCONCLUSIVE under incentive validity and stochastic stability. The case does not show that guardrails are ineffective; it shows their apparent value is unidentified until the simulated agents and protocol pass these checks.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T16:48:13+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01519v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.01515v1",
+      "title": "TempCloze: Can Video-LLMs Identify the Missing Middle?",
+      "authors": [
+        "Wenqi Pei",
+        "Henry Hengyuan Zhao",
+        "Yilai Liu",
+        "Jiahao Meng",
+        "Han Chen",
+        "Ziyu Wang",
+        "Hongyang Du"
+      ],
+      "abstract": "Temporal reasoning benchmarks for Video-LLMs are often mediated by language, leaving room for linguistic shortcuts from option wording, answer correlations, or language priors. To reduce such shortcuts, we introduce TempCloze, a video cloze benchmark for evaluating visual temporal reasoning in Video-LLMs. Given the beginning and ending clips of a video, models must identify the true missing middle from four candidates. TempCloze contains 1,521 carefully filtered videos from seven sources, mainly long-take and egocentric videos. We construct same-source distractors along three dimensions: Semantic asks what event should happen, Alignment probes when it should occur, and Progression tests how it should unfold, while shared scenes and objects reduce appearance cues. Our evaluation of 10 proprietary and 21 open-source Video-LLMs reveals Alignment as the primary bottleneck: models often recognize plausible semantic content and local event progression but struggle with temporal alignment. We further conduct error pattern and behavioral sensitivity analyses on TempCloze-Mixed and TempCloze-Hard with four representative models to examine where errors arise and how candidate order, context direction, visible span, frame density, and test-time scaling influence model choices.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T16:45:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01515v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.01216v1",
+      "title": "H2Table: Hierarchical Hypergraph-Enhanced Large Language Models for Complex Table Reasoning",
+      "authors": [
+        "Jia Ling",
+        "Yangfan Wang",
+        "Chen Tang",
+        "Haoming Tan",
+        "Yang Yang",
+        "Yi Guan",
+        "Jingchi Jiang"
+      ],
+      "abstract": "Tables are ubiquitous across diverse domains, yet reasoning over them remains a significant challenge for modern large language models (LLMs). Current approaches typically linearize tables into sequences, inherently overlooking their intrinsic two-dimensional and hierarchical structure. To address this, we propose H2Table (Hierarchical Hypergraph-Enhanced Table Reasoning), a novel framework that represents complex tables as hierarchical nested hypergraphs. To process this representation, we design a tailored hypergraph encoder to facilitate message passing between hyperedges (headers) and nodes (cells), thereby perceiving the semantic entailment relationships between them within complex tables. Furthermore, we introduce a set of learnable query vectors acting as a lightweight bridge to extract representative structural embeddings from the encoder into the LLM. Experimental results demonstrate that our approach effectively handles complex table question answering tasks with hierarchical nested headers. Notably, on the HiTab dataset, H2Table achieves an average improvement of 22.88% over state-of-the-art baselines on highly complex tables with a nesting depth of four. Our code is available at: https://github.com/lila120/h2table.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T13:19:42+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01216v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.01038v1",
+      "title": "Data-Driven Persona-Conditioned Agents for A/B Test Simulation",
+      "authors": [
+        "Ziyad Benomar",
+        "Weronika Łajewska",
+        "Leonardo Perelli",
+        "Saab Mansour"
+      ],
+      "abstract": "A/B testing is the gold standard for evaluating product changes, but each experiment requires real user traffic, engineering effort, and weeks of measurement. We propose a simulation framework that predicts A/B test outcomes using LLM-powered agents conditioned on data-driven personas grounded in real user behavioral signals. Unlike prior work that relies on synthetic or rule-based personas, our agents are constructed from anonymized behavioral data-activity patterns, engagement signals, and inferred demographics-enabling more faithful population modeling. We frame A/B test simulation as a structured question task and systematically study (i) question design formats, (ii) the impact of persona data source and domain alignment, (iii) the trade-off between per-persona behavioral depth and population diversity, and (iv) efficient population subsampling. On a benchmark of 40 A/B tests spanning two metric types, our best configuration achieves 0.75-0.90 directional accuracy depending on the test metric, demonstrating that data-driven personas are a viable path toward fast, low-cost experiment pre-screening.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T10:35:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.01038v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.00921v1",
+      "title": "VIBE-Bench: Evaluating Personalized Large Language Models When Profiles Don't Mean Preferences",
+      "authors": [
+        "Yiwen Jiang",
+        "Yang Deng",
+        "Stephanie Fong",
+        "Zimu Wang",
+        "Yaling Shen",
+        "Wei Feng",
+        "Hongxi Yang",
+        "Xiangyu Zhao",
+        "Zhongxing Xu",
+        "Deval Mehta",
+        "Xuelian Cheng",
+        "Zongyuan Ge"
+      ],
+      "abstract": "Personalized Large Language Models (PLLMs) aim to tailor responses to individual users, where a central challenge is preference reasoning: inferring query-relevant preferences from user-related history. Existing benchmarks, however, largely assume that such preference can be retrieved from semantically related history. We study an underexplored but practically important regime, profile-preference conceptual misalignment (PRCM), where observable profile cues and query-specific preferences lie in different concept spaces, making semantic retrieval inconsistent for personalization. We introduce VIBE-Bench, a benchmark with two psychology-grounded tasks, 3,504 personas and 12,239 dialogues, including a manually verified gold test set, and requires cross-concept preference reasoning beyond surface semantic overlap. Experiments with several personalization methods show that current PLLMs largely rely on shallow semantic correlations and fail to acquire robust cross-concept mappings. These findings establish PRCM as a distinct failure regime in PLLMs and position VIBE-Bench as a focused testbed for advancing preference reasoning beyond semantic matching.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T08:45:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00921v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.00920v1",
+      "title": "VerNav: Verifier-First Low-Latency Vision-and-Language Navigation",
+      "authors": [
+        "Zhixin Wang",
+        "Chengzheyi Yao",
+        "Leyuan Liu",
+        "Xiaosong Zhang",
+        "Yongzhao Zhang"
+      ],
+      "abstract": "Vision-and-Language Navigation (VLN) requires an agent to navigate through unseen 3D environments according to natural-language instructions. Explicit reasoning can improve instruction understanding and semantic grounding, but autoregressive generation at every step accumulates large decision-stage latency over multi-step navigation. We propose VerNav, a verifier-first framework for low-latency LLM-based VLN. The verifier reduces decision-stage latency by replacing per-step autoregressive generation with batched action verification, while an entropy-based adaptive generator is invoked only for uncertain decisions to produce compact state evidence. To further improve navigation performance with the verifier, we introduce a two-stage alignment scheme: (i) VPO improves local action-preference alignment in static verifier training, and (ii) step-level reinforcement fine-tuning provides dense progress rewards over multi-step navigation rollouts during dynamic task execution. Experiments on the Room-to-Room (R2R) benchmark show that the verifier-only decision path of VerNav achieves competitive navigation performance among representative LLM-based VLN agents while reducing average decision-stage LLM latency per step by more than $10\\times$ compared with autoregressive methods.",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "submitted": "2026-09-01T08:45:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00920v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.00738v1",
+      "title": "Escaping Redundant Reasoning: Structure-Aware Search for Inference-Time LLMs",
+      "authors": [
+        "Lu Cheng"
+      ],
+      "abstract": "Inference-time search with large language models (LLMs) often concentrates on a small set of structurally or semantically similar trajectories, leaving alternatives underexplored---a failure mode we call \\textit{reasoning basin collapse}. We introduce BASIN, a training-free, structure-aware selection method that groups reasoning states into basins and penalizes repeated visits to the same strategy, thereby reallocating search across genuinely distinct reasoning paths under a fixed compute budget. Under matched inference budgets, BASIN improves over Tree of Thoughts (ToT) by up to $+22$pp on Game of 24 and $+6.7$pp on MuSR. A quality-aware variant, QA-BASIN, further improves robustness by preserving high-quality basins when unconditional diversification over-explores. To explain when basin-aware selection helps, we introduce the redundancy gap $Δ$, which measures how differently search concentrates for correct versus incorrect predictions: standard ToT often operates near $Δ\\approx 0$, while BASIN consistently shifts $Δ$ positive. More broadly, BASIN suggests structure-aware selection as a simple and general approach to improving inference-time reasoning. Code can be found at https://github.com/GitHubLuCheng/basin.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-01T05:15:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00738v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.00549v1",
+      "title": "Skill Following: Evaluating Actual Skill Use in Retrieval-Enabled LLM Agents",
+      "authors": [
+        "Seonghyeon Cho",
+        "Chanjun Park"
+      ],
+      "abstract": "Large Language Model (LLM) agents increasingly rely on external skills, yet standard evaluations obscure whether retrieving these skills actually helps. Aggregate metrics often compare retrieved versus non-retrieved tasks, introducing severe selection bias and failing to isolate the true effect of skill use. To measure this actual-use capability-which we formalize as Skill Following (SF)-we introduce the Retrieval-Invoked Actual-Use Effect (RAE). RAE computes the same-task outcome difference between matched skill-enabled and skill-disabled executions, conditioned exclusively on tasks where the agent actively retrieved a skill. Evaluating 17 LLMs across coding and mathematical domains, we uncover a stark evaluation paradox: models frequently show positive aggregate retrieval lift but negative RAE. On MBPP+, multiple models that appear to benefit system-wide actually harm their own performance on the exact tasks where retrieval occurred. These findings demonstrate that aggregate averages can create a misleading illusion of tool-use proficiency, whereas RAE directly measures whether the retrieval-to-answer pipeline genuinely rescues more outcomes than it harms.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-01T01:33:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.00549v1",
+      "journal_boost": 0,
+      "score": 10
+    }
+  ]
+}
