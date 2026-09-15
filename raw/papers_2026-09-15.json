@@ -1,354 +1,669 @@
 {
   "date": "2026-09-15",
-  "fetched_at": "2026-09-15T00:06:33.840206+00:00",
+  "fetched_at": "2026-09-15T23:52:23.277438+00:00",
   "stats": {
-    "arxiv_count": 0,
-    "arxiv_error": "HTTPError: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=cat%3Acs.LG+OR+cat%3Acs.AI+OR+cat%3Acs.CL+OR+cat%3Acs.RO+OR+cat%3Aq-bio.BM+OR+cat%3Acond-mat.mtrl-sci+OR+cat%3Aphysics.chem-ph&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100)",
+    "arxiv_count": 365,
+    "arxiv_error": null,
     "journal_counts": {
       "Nature": 75,
       "Science": 36,
       "Science Advances": 85,
-      "Nature Machine Intelligence": 0,
-      "Nature Computational Science": 0,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
       "Nature Methods": 8,
       "Nature Materials": 8,
       "Nature Chemistry": 8,
-      "Nature Chemical Engineering": 0,
+      "Nature Chemical Engineering": 8,
       "Nature Biomedical Engineering": 8
     },
-    "total_after_dedup": 228,
+    "total_after_dedup": 617,
     "top_n": 30
   },
   "top30": [
     {
-      "id": "https://www.nature.com/articles/d41586-026-02882-x",
-      "title": "Drug firms’ secret data supercharge AI protein models",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02882-xAn AI system trained on more than 20,000 protein structures from pharmaceutical companies outperforms AlphaFold-like models that use only public data.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02882-x",
-      "journal_boost": 5,
-      "score": 6
+      "id": "2609.15145v1",
+      "title": "Improving Mathematical Reasoning Capabilities in Large Language Models via Reasoning Process Error Classification",
+      "authors": [
+        "Runa Yoshida",
+        "Kosuke Nishida",
+        "Kyosuke Nishida"
+      ],
+      "abstract": "The reasoning ability of large language models (LLMs) is a critical factor for practical LLM-based applications. To investigate the current reasoning capability of LLMs, we clarify the types of errors that arise in LLMs' reasoning processes on mathematical datasets. We focus on problems where LLMs produce an incorrect answer. We define errors in the reasoning process as reasoning errors and manually analyze the features of reasoning errors. We defined and classified 21 error classes and identified the frequently occurring classes among them. Beyond qualitative evaluation, we leverage the evaluation results to improve the reasoning capability. We designed a prompt that explicitly focuses on eight error classes. The experiments demonstrate that this prompt effectively improves reasoning performance. Furthermore, the results suggest that the frequent reasoning errors identified in this paper are common across LLMs of comparable scale.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-14T07:20:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15145v1",
+      "journal_boost": 0,
+      "score": 23
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-11001-9",
-      "title": "An operational perturbation proteomics-based virtual cell model",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/s41586-026-11001-9Temporal protein-abundance measurements from systematically perturbed breast cancer cell lines were generated to develop ProteinTalks, a virtual cell model that functions as an operational tool for diverse drug discovery tasks.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11001-9",
-      "journal_boost": 5,
-      "score": 6
+      "id": "2609.15161v1",
+      "title": "EMR: Self-Evolving Medical Multi-Agent System via Experience Mining and Reuse",
+      "authors": [
+        "Dongsheng Shi",
+        "Yue Li",
+        "Xin Yi",
+        "Linlin Wang"
+      ],
+      "abstract": "Large language model (LLM) driven multi-agent systems have shown promise in complex clinical reasoning, yet existing approaches rely on static strategies and lack persistent clinical memory, preventing self-evolving from prior diagnostic successes and failures. We present EMR, a self-evolving medical multi-agent system via Experience Mining and Reuse. EMR introduces a hierarchical clinical experience library that organizes accumulated knowledge into three levels: clinical principles, diagnostic patterns, and representative cases. During inference, EMR emulates multidisciplinary consultation: a planner agent coordinates domain-specific department agents for specialized reasoning, while a summary agent synthesizes their analyses into a final decision. Critically, EMR automatically extracts correct diagnostic insights and failure-related warnings from multi-agent reasoning trajectories, incrementally updating the experience library to guide future cases. Experiments on medical reasoning benchmarks demonstrate that EMR consistently outperforms state-of-the-art medical multi-agent baselines. Further analysis reveals that the hierarchical experience enables cross-specialty generalization and transfer across diverse LLM backbones, offering a scalable and in",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T07:41:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15161v1",
+      "journal_boost": 0,
+      "score": 22
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-10976-9",
-      "title": "Ancient proteins identify various Denisovan remains from Southwest China",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/s41586-026-10976-9Identification and proteomic analysis of bone fragments and teeth from an excavation in Southwest China provide insight into the evolution and phenotype of Denisovans and fill a geographical gap in their documented distribution.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-10976-9",
-      "journal_boost": 5,
-      "score": 6
+      "id": "2609.15606v1",
+      "title": "VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding",
+      "authors": [
+        "Weixin Xu",
+        "Zhenyu Yang",
+        "Bing Wang",
+        "Shengsheng Qian",
+        "Changsheng Xu"
+      ],
+      "abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress on short video understanding yet remain limited on long videos due to the limited visual context window. Prevailing approaches rely on uniform frame sampling or recent coarse-to-fine agentic zooming, both of which struggle to localize sparse, decisive evidence in sufficiently long videos. We formulate long video understanding as a \\textbf{Sequential Evidence Acquisition (SEA)} problem, in which an agent reads the video turn by turn along the temporal axis, deciding at each turn how fast to watch, what evidence to retain, when to revisit uncertain segments, and when to stop and answer. Inspired by this view, we propose \\textbf{VideoScout}, a multi-turn reasoning agent that instantiates the SEA paradigm through adaptive reasoning pacing. Specifically, by dynamically controlling the viewing pace, VideoScout enables efficient traversal of long videos within a bounded visual context window, allowing the agent to access more video content while balancing content analysis depth with reading efficiency. To train VideoScout, we construct VideoScout-66K, a set of over 66K high-quality exploration turns from 10K answer-verified trajectories, and adopt a two-stage pipeline: cold-start supervised fine-tuning teaches the agent per-turn output format, while the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm performs trajectory-level reinforcement learning with a composite reward that jointly considers answer accuracy, output format compliance, and the temporal alignment between the agent's viewing progress and the teacher's answer timing measured by intersection-over-union (IoU). Extensive experiments on long video understanding and reasoning benchmarks demonstrate that our 7B model achieves strong performance compared with existing trained 7B agentic models.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T14:04:03+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15606v1",
+      "journal_boost": 0,
+      "score": 18
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-11005-5",
-      "title": "Predicting genome-wide functional constraints with GPN-Star",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/s41586-026-11005-5GPN-Star, a genomic language model with a phylogeny-aware architecture for whole-genome alignment data, is shown to be a scalable and flexible tool for genetic variant effect prediction across species.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11005-5",
-      "journal_boost": 5,
-      "score": 6
+      "id": "2609.15054v1",
+      "title": "BusMA: A Bus Communication Substrate for Multi-Agent Systems",
+      "authors": [
+        "Yanwen Peng",
+        "Delvin Ce Zhang",
+        "Xi Wang",
+        "Nikolaos Aletras"
+      ],
+      "abstract": "Multi-Agent (MA) systems are effective at solving complex tasks that demand planning, tool use, and the synthesis of evidence from multiple sources. Existing systems typically adopt Hierarchical Manager-Worker (HMW) or Router-based Message Passing (RMP) structures as their communication protocol. However, these designs restrict agent autonomy: Worker agents cannot directly consult specific \"peers\", and misrouted messages can propagate errors. Inspired by bus architectures in computer systems, we propose BusMA, a communication framework that allows any agent to address other agents through a shared channel, i.e., the Bus. It consists of agent registration, message routing, and shared memory management components. Worker agents, each equipped with tools, have their own local memory and can reason, act (tool usage), and communicate by posting shared messages with specific intents. We introduce four intents: discussion, challenge, guidance, and request for explanation, which support fine-grained communication among agents. A Chair agent monitors the shared memory to coordinate interactions and facilitate convergence among Workers. To evaluate the effectiveness of BusMA, we conduct extensive experiments with two frontier LLMs across 13 tasks spanning visual reasoning, mathematical reasoning, and knowledge retrieval demonstrate that BusMA consistently outperforms state-of-the-art HMW and RMP methods.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T05:19:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15054v1",
+      "journal_boost": 0,
+      "score": 17
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-11124-z",
-      "title": "Encoded and non-genetic protein variants expand human functional proteome",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/s41586-026-11124-zEncoded and non-genetic protein variants expand human functional proteome",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11124-z",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15523v1",
+      "title": "Automating Attack Graph Construction for Agentic Pentesting. Towards Neuro-Symbolic Vulnerability Hunting",
+      "authors": [
+        "Oliver Stevanovic",
+        "Jasmin Wachter"
+      ],
+      "abstract": "Logic attack graphs grounded in scanner output provide explicit and auditable attack path reasoning LLM-based agents lack. Integrating symbolic frameworks such as MulVAL to contemporary security workflows or agentic pipelines, however, requires translating scanner evidence to initial facts, and creating domain-specific rules. We present a semi-automated pipeline that addresses this interoperability problem and depict its feasibility in a web-security case study. Our pipeline parses findings from Trivy, Semgrep, and Nmap into MulVAL predicates and uses an LLM-assisted process to construct domain-specific Datalog rules linking scanner-detectable evidence to attack techniques. MulVAL/XSB then performs symbolic inference to generate structured attack paths. We evaluate the attack-graph construction infrastructure on 54 web Capture-the-Flag tasks from CyBench within an agentic pipeline (Hybrid Reasoner); we do not evaluate the performance of the downstream agent. Every task produced at least one goal-reaching graph, and we achieve mean ground-truth vulnerability coverage of 53.7%, with 51.9% achieving full coverage; mean noise-path rate was 83.9%. With median end-to-end time of 24.9 s (MulVAL reasoning: 2.7 s) the pipeline is feasible and runtime-practical for agentic workflows, but predicate coverage, rule coverage, and path precision remain limiting factors. Next steps include semantic rule validation and agent-level comparison for graph-guided pentesting.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T13:13:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15523v1",
+      "journal_boost": 0,
+      "score": 16
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02908-4",
-      "title": "The roots of astrology, the mysterious nature of time and more: Books in brief",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02908-4Andrew Robinson reviews five of the best science picks.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02908-4",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15779v1",
+      "title": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents",
+      "authors": [
+        "Meiduo Chong",
+        "Shaolei Zhang",
+        "Ju Fan",
+        "Xiaoyong Du"
+      ],
+      "abstract": "Data agents aim to fulfill natural-language instructions over heterogeneous data, including tables, files, and databases. However, data agents face a challenging agent-data gap: heterogeneous data resides outside the agent, while the agent can access it (e.g., column names and file paths) only through generic tools. Existing approaches either let agents directly explore raw data sources or inject manually constructed semantic layers into prompts. However, neither scales well to large heterogeneous data sources nor adapts to different agent behaviors. In this paper, we introduce EvoOntology, a self-evolving ontology layer for data agents. EvoOntology encapsulates the ontology as an MCP server comprising a schema layer, a content layer, and a tool layer, enabling agents to actively query and interact with the ontology at runtime. To this end, we introduce a builder agent for autonomous ontology construction and a self-evolution loop that continuously refines the ontology through attribution-guided typed edits that are accepted only after a backbone-conditional paired evaluation. Experiments on three well-adopted data-agent benchmarks with four LLM backbones demonstrate that EvoOntology consistently outperforms strong baselines and existing semantic-layer approaches, effectively bridging the agent-data gap and enabling more effective interaction with heterogeneous data. Code: https://github.com/ruc-datalab/EvoOntology",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.DB"
+      ],
+      "submitted": "2026-09-14T15:59:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15779v1",
+      "journal_boost": 0,
+      "score": 15
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02847-0",
-      "title": "How is climate change affecting conifers and their ability to sequester carbon?",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02847-0Fresh evidence reveals that the interplay of several factors could affect the ability of these trees to grow.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02847-0",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15517v1",
+      "title": "Beyond Safe Answers: Segment-Aware Listwise Alignment for Reasoning Safety in Large Reasoning Models",
+      "authors": [
+        "JungMin Yun",
+        "Junehyoung Kwon",
+        "Hayeong Ryu",
+        "Byeonggeuk Lim",
+        "Hoejoon Kwon",
+        "YoungBin Kim"
+      ],
+      "abstract": "Large Reasoning Models (LRMs) pose a dual-surface safety challenge: both intermediate reasoning traces and final answers can contain harmful content. Existing alignment methods often operate at the whole-response level, allowing unsafe reasoning to be masked by a safe-looking final answer. We propose Segment-aware Listwise Target DPO (SaLT-DPO), which addresses this gap through three mechanisms: (1) segment-aware listwise alignment that decomposes responses into reasoning and answer segments, independently scores each segment's safety, and aligns length-normalized segment rewards with soft target distributions over multiple candidates; (2) joint safety coherence regularization that applies a weakest-link principle to promote safety consistency across both segments; and (3) utility anchoring on benign prompts to mitigate over-refusal and reasoning degradation. Experiments on three LRMs show that SaLT-DPO consistently reduces unsafe rates for both reasoning and answer segments while mitigating degradation in benign compliance and preserving general reasoning performance. Ablation studies demonstrate the complementary contributions of its components.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-14T13:08:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15517v1",
+      "journal_boost": 0,
+      "score": 15
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02852-3",
-      "title": "The pet trade puts reptiles and amphibians at risk: close legal gaps now",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02852-3Patchy legislation means that animals are routinely taken from their natural habitats and sold in other countries. Fresh national and international measures could help to stop this exploitation.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02852-3",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15938v1",
+      "title": "HypoEvolve: Genetic Algorithms Enable Multi-Agent LLMs to Discover Scientific Hypotheses",
+      "authors": [
+        "Jieyuan Liu",
+        "Mengzhou Hu",
+        "Jefferson Chen",
+        "JungHo Kong",
+        "Pratibha Jagannatha",
+        "Yiming Gao",
+        "Dexter Pratt",
+        "Hsin-Yuan Lee",
+        "Zhiting Hu",
+        "Trey Ideker",
+        "Wei Wang",
+        "Eric P. Xing",
+        "Zhen Wang"
+      ],
+      "abstract": "Scientific agents contribute to hypothesis discovery by synthesizing evidence, assessing proposals, and developing new explanations. Recent systems combine scientific agents with evolutionary search through critique, comparison, and revision. However, how different forms of agent collaboration affect hypothesis quality remains an open question. Answering this question requires separating the effects of agents' scientific capabilities from those of their collaboration. A framework must therefore preserve agents' scientific roles and support rules for combining, revising, and retaining hypotheses. Building on this view, we introduce HypoEvolve, which makes collaboration explicit through successive updates to a hypothesis population. Specifically, we propose a generational genetic algorithm to coordinate specialized large language model (LLM) agents that integrate mechanistic arguments, reconsider assumptions, and assess evidence and testability. Each generation specifies how scientific judgments and new proposals reshape the population, making collaboration effects on hypothesis quality directly testable. Moreover, we design our evaluation around scientifically meaningful hypotheses that explain how a proposed intervention could work. Drug repurposing links these explanations to target-level biological claims assessed against external evidence. Specifically, we adapt DepMap and Open Targets into complementary external measures grounded in experimental, genetic, and clinical evidence. Across 34 cancer types, HypoEvolve achieves the highest scores against six baselines on both measures. DepMap selectivity reaches 0.171, versus 0.115 for the strongest baseline. Gains over single-pass generation also generalize to held-out cancer types. HypoEvolve advances a vision of autonomous science in which AI research teams achieve a capacity for discovery beyond that of individual models.",
+      "categories": [
+        "cs.CL",
+        "cs.CE",
+        "cs.MA",
+        "cs.NE"
+      ],
+      "submitted": "2026-09-14T17:44:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15938v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02829-2",
-      "title": "Donor-funded science is rising in Brazil ― upending a long tradition",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02829-2Philanthropists are stepping up support for research in a country where scientists have relied on the government alone for funding.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02829-2",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15803v1",
+      "title": "Delegating Authorization to Misaligned Agents: Coalitional Alignment and Safe Control",
+      "authors": [
+        "Natalie Collina",
+        "Surbhi Goel",
+        "Aaron Roth",
+        "Sikata Bela Sengupta"
+      ],
+      "abstract": "Long-running AI agents create a control problem: each action they take changes the state, which in turn affects the trajectory of future actions. If the agent is not fully aligned, then guaranteeing safety requires approving consequential actions before allowing them to be executed. But requiring human approval at every step makes attention a bottleneck. Delegating review to other AI agents raises the same alignment problem: the reviewers may themselves be misaligned. We identify a condition on a reviewing panel that is weaker than individual alignment yet necessary and sufficient for a guarantee that the principal fares at least as well in expectation as under a designated baseline policy.\n  Each reviewer agent reports whether an action proposal made by a proposer agent improves its own utility relative to the baseline. We show that a threshold rule tolerating $k$ disapprovals is safe exactly when, after any $k$ reviewers are removed, the principal's utility can be written as a nonnegative combination of the remaining reviewers' utilities, plus a term that is nonnegative on every feasible proposal. We call this property $k$-robust coalitional alignment. The characterization lifts to sequential control: in a discounted MDP with an arbitrary proposer agent, safety at every state is both necessary and sufficient for the induced policy to match or improve on the baseline.\n  When reviewers vote strategically, full-panel coverage in reward-function space guarantees that every Nash equilibrium is safe under the unanimous approval rule; in contrast, more permissive thresholds can admit unsafe equilibria even when reviewers are individually aligned.\n  Experiments with existing reviewer models show that collective review can remain sound without an aligned individual, even when some disapprovals are tolerated.",
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "cs.LG",
+        "econ.TH"
+      ],
+      "submitted": "2026-09-14T16:12:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15803v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02895-6",
-      "title": "‘Multifunctional’ brain implant translates speech and gestures in real time",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02895-6A neural device uses artificial intelligence to read brain activity for intended words and gestures simultaneously.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02895-6",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15668v1",
+      "title": "Circuit-MLLM: Topological Logic-Guided Latent-Space Visual Reasoning for Circuit Schematic Understanding",
+      "authors": [
+        "Jinyuan Deng",
+        "Yuqi Jiang",
+        "Wenjing Huang",
+        "Xin Li",
+        "Qi Sun",
+        "Cheng Zhuo"
+      ],
+      "abstract": "Through pre-training on extensive text and image datasets, current multi-modal large language models (MLLMs) achieve strong performance on general tasks. However, circuit schematics present a unique challenge for MLLMs due to their dense component layouts and distinct topological logic, demanding fine-grained structural parsing to extract the electrical semantics. To address this, we propose Circuit-MLLM, a multimodal reasoning framework that reformulates circuit topology analysis as a process of device localization, path tracing, and sequential reasoning within the latent space. We introduce a circuit knowledge mining mechanism that deeply aligns the model's latent representations with structurally rich features derived from multi-granularity circuit vision experts, enabling the model to effectively internalize topological semantics. Building upon these internalized semantics, we devise a topology-guided sequencing strategy that decouples reasoning from the rigid raster-scan order, enforcing stepwise inference along the circuit's topological logic in latent space. Across diverse circuit analysis tasks, Circuit-MLLM consistently outperforms strong baselines, notably achieving a 25% higher average score than GPT-5.1, which demonstrates the effectiveness of our framework in circuit schematic topology analysis. Code is publicly available at https://github.com/IC-Yuan/Circuit-MLLM.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-14T14:47:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15668v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02608-z",
-      "title": "UK universities are on the brink — what is their greatest source of stress?",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02608-zNature asked eight leaders in higher education what they thought about the state of UK institutions. Here’s how they answered.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02608-z",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15309v1",
+      "title": "When Agents Slow Down: Understanding LLM Agents' Test-Time Strategies via Elo-per-token Analysis",
+      "authors": [
+        "Kaiyuan Liu",
+        "Qiuyang Mang",
+        "Bo Peng",
+        "Wenhao Chai",
+        "Hanchen Li",
+        "Shreyas Pimpalgaonkar",
+        "Luke Zettlemoyer",
+        "Alex Dimakis",
+        "Alvin Cheung"
+      ],
+      "abstract": "Large language model (LLM) agents allocate test-time compute adaptively as they revise solutions, use tools, explore alternatives, and decide when to stop. This test-time strategy makes it difficult to measure how agent performance scales. We study open-ended tasks that provide continuous scores for intermediate submissions, making progress observable throughout long trajectories. We propose Elo-per-token analysis, which tracks the best solution found at each token budget and uses a Bradley-Terry model to aggregate within-task orderings into Elo ratings across tasks with different score scales. We apply it to four general-purpose agents on four open-ended benchmarks, with sessions of up to 100M tokens, and to three feedback-driven LLM optimization harnesses in controlled single-task interventions. Independent sampling provides a theoretically characterized reference, for which Elo grows linearly with log compute. Against this reference, agents can initially convert tokens into Elo faster than independent sampling, but their marginal gains diminish and eventually fall below the reference. In contrast, the strongest historical human contestants improve superlinearly over contest time on shared AtCoder Heuristic Contest tasks, providing evidence of continual learning and substantial headroom after agents slow down. We define the scaling inflection point as the per-session budget where marginal Elo gains match the independent-sampling reference. Using this point as the per-session budget, we split 100M tokens across parallel sessions on FrontierCS Polyomino Packing, gaining +264 Elo over one long session and +355 over ten short sessions.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-14T09:57:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15309v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02851-4",
-      "title": "Fraud sealed the fate of controversial zoologist Paul Kammerer — 100 years on, his ideas deserve revisiting",
-      "authors": [],
-      "abstract": "Nature, Published online: 14 September 2026; doi:10.1038/d41586-026-02851-4After an eventful life in the limelight, the discovery of a manipulated specimen preceded the biologist’s death. Questions about his findings remain.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02851-4",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15079v1",
+      "title": "Translating the Translator: Decomposing the Cost of English-Forced Inter-Agent Communication",
+      "authors": [
+        "Kushagra Agrawal",
+        "Yuming Feng",
+        "Man-Fai Leung"
+      ],
+      "abstract": "Multi-agent LLM architectures, such as LangChain and AutoGen, largely assume English as the lingua franca for internal inter-agent communication, even when the end-user task is non-English. We fill this gap by evaluating a two-agent extraction-answer core, with an additional back-translation agent in the English-forced condition, across four typologically diverse languages (Hindi, Chinese, Spanish, Arabic; n = 300 per language) using the Aya-23-8B model. We compare a native-language pipeline to an English-forced one (which incorporates a final back-translation step from English to the user's language). We discover a statistically significant English-Forcing Tax (surviving a strict Bonferroni correction) that isolates the cost of English routing from general multi-agent orchestration overhead. Forcing inter-agent communication through English reduces Exact Match accuracy by 13.0 percentage points (Spanish) up to 30.6 percentage points (Hindi) compared to native-language multi-agent execution. Using chrF scores as a diagnostic measure of English-reference lexical overlap, we find that lower overlap is strongly associated with pipeline failure, consistent with translation loss being an important contributor to the observed performance drop. These findings suggest a compelling case for native-language routing in agent frameworks when the source and target languages are typologically distant, reducing a compounding translation tax.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-09-14T05:51:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15079v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02826-5",
-      "title": "The super El Niño is already wreaking havoc: here’s what’s in store",
-      "authors": [],
-      "abstract": "Nature, Published online: 13 September 2026; doi:10.1038/d41586-026-02826-5The extreme weather of this year’s mega El Niño could look different from past events.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02826-5",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15009v1",
+      "title": "CoMem: Collective-Individual Memory Synergy for Evolutionary Multi-Agent Systems",
+      "authors": [
+        "Chengxin Yu",
+        "Zhaoxin Fan",
+        "Faguo Wu",
+        "Hongwei Zheng",
+        "Yun Zhou",
+        "Zhiyu Li"
+      ],
+      "abstract": "Designing effective memory mechanisms is crucial for advancing LLM-driven Multi-Agent Systems (MAS), helping agents learn together and perform better over time. While recent work has led to strong cooperation skills, most methods still use flat, unstructured memories, which easily get filled with noise and erase differences between agents. To address this, we introduce the concept of collective-individual memory synergy and propose CoMem, an architecture that unifies both private experience and shared knowledge for multi-agent learning. CoMem features:(i) Private Experience Sedimentation, which lets each agent keep and update its own useful memories over time;(ii) Collective Wisdom Curation, which carefully selects only widely proven ideas to be shared among agents;(iii)Parallel Dual-Stream Retrieval, which allows agents to draw both from their own memory and the group's wisdom, using clustering to ensure diversity.Experiments on ALFWorld and PDDL benchmarks show that CoMem achieves strong overall performance and robustly avoids memory pollution.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T04:15:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15009v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02893-8",
-      "title": "Briefing Chat: The Bunsen burner myth that turns out to be just hot air",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02893-8Nature staff discuss an AI tool that can assess the impact of 9 billion mutations — plus, how the Bunsen burner’s reputation for sterilization might be based on tradition alone.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02893-8",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.14976v1",
+      "title": "MemRiskBench: Trace-Aware Risk-Preserving Evaluation for Long-Horizon LLM Agents",
+      "authors": [
+        "Jianhua Jiang",
+        "Dongbo Yuan",
+        "Weihua Li"
+      ],
+      "abstract": "Long-horizon LLM agents accumulate memory across sessions, creating sparse but high-impact risks: stale facts, conflicting updates, cross-user leakage, revoked-memory reuse, and constraint decay. Standard aggregate scores hide per-risk failure rates--a model achieving 78% average accuracy may still leak data in 4% of episodes--and benchmark compression preferentially discards the rare high-severity events that distinguish a mostly-working model from one that occasionally causes harm. We present MemRiskBench. The primary contribution is a five-category risk taxonomy (plus one documented, unscored category) operationalized by deterministic trace grounded checks, instantiated as a 120-episode scripted benchmark with full trace logging and no LLM-as-judge on the pass/fail path, evaluated on five locally run quantized instruction-tuned models. Second, a risk-preserving subset selector: a coverage-constrained greedy selector on deterministic trace-derived features that retains full ranking (Spearman rho = 0.975, deterministic; CI collapses to a point estimate with zero bootstrap variance), risk coverage (1.0), and high-risk model detection (1.0) at a 20% subset size, reducing compute 5x. Unlike ranking-only subset selectors, this selector additionally preserves risk-type coverage and high-risk detection using trace-grounded deterministic features that do not require an LLM judge. All episodes, traces, the scoring implementation, and the selector are released to support reproducible evaluation and risk assessment of deployed LLM agents",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T03:31:19+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.14976v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02892-9",
-      "title": "NSF moves to overhaul funding approach in line with White House priorities",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02892-9The major funder of basic science has not said how its new initiatives will be funded — but staff worry streamlined approach will further squeeze cash for core sciences.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02892-9",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.14872v1",
+      "title": "AgentKV: Phase-Aware KV Eviction for Agentic LLMs",
+      "authors": [
+        "Taowen Tony Liu",
+        "Jeffrey T. H. Wong",
+        "Can Xiao",
+        "Bowen Yang",
+        "Hao Mark Chen",
+        "Yiren Zhao"
+      ],
+      "abstract": "Agentic serving can consume orders of magnitude more tokens than chatbot workloads, stressing both KV-cache capacity and decode-time bandwidth. Most KV-eviction methods score cached keys against representative queries drawn from the most recent tokens, assuming future attention resembles recent attention. We show that agentic generation violates this assumption: future queries form a mixture over think, act, tool, and others phases, and principal-angle analysis shows these components occupy measurably different query subspaces, so recency representatives systematically undervalue keys that upcoming phases will need. We propose AGENTKV, which maintains a small query buffer per phase and scores cached keys against their union. We further implement AGENTKV in a persistent multi-turn serving path that carries compressed KV state across turns and compacts retained KV pages online. Across two models, six task domains, and three KV budgets each, AGENTKV improves task score by 5.5 points on average over R-KV and 5.3 over Tri-attention. Relative to upstream full-KV SGLang, AGENTKV improves output-token throughput by up to 1.80x. Code: https://github.com/LiuTaowen-Tony/agentkv.",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-14T00:42:53+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.14872v1",
+      "journal_boost": 0,
+      "score": 14
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02883-w",
-      "title": "People trust scientists seen to be ‘on their side’, UK study finds",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02883-wPolitics and personal values influence people’s confidence in scientists, according to a report.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02883-w",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15721v1",
+      "title": "Assembling the CREW: A Collaborative Multi-agent Reinforcement Learning Framework for Automated Related Work Generation",
+      "authors": [
+        "Hai-Dang Dang",
+        "Bao-Yen Pham",
+        "Bao Nguyen",
+        "Tran Thi Huong",
+        "Huynh Thi Thanh Binh"
+      ],
+      "abstract": "Automatic Related Work Generation (RWG) significantly reduces the human time and effort required to author the Related Work Section (RWS) of a research paper. However, prior methods leveraging multi-agent Large Language Models (LLMs) typically rely on a predefined workflow, where each agent is responsible for a specific step in the entire process. This rigid, static inter-agent coordination limits the adaptive collaboration required to synthesize complex scientific literature. To address this limitation, we propose CREW (Collaborative Reinforcement Learning for Related Work Generation), a novel framework where LLM agents bypass heuristic pipelines to dynamically coordinate by autonomously selecting actions, such as Retrieve, Disseminate, Compose, and Critique, driven by a policy optimized via Independent Proximal Policy Optimization (IPPO). Extensive experiments on a standard RWG benchmark demonstrate that our approach yields substantial quality improvements over strong existing baselines, while significantly reducing token costs. Code is available at https://github.com/YenPBao/CREW-Collaborative-MARL.git",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-09-14T15:20:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15721v1",
+      "journal_boost": 0,
+      "score": 13
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02763-3",
-      "title": "El Niño goes viral — and scientists learn what makes people care about the climate",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02763-3Evoking emotions is more likely to prompt people to engage with climate efforts than are data alone.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02763-3",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15066v1",
+      "title": "Salesforce Koa: An Enterprise Language Model for Agentic Tool Use",
+      "authors": [
+        "Zixiang Chen",
+        "Sufeng Niu",
+        "Yingchi Liu",
+        "Wenting Zhao",
+        "Akshara Prabhakar",
+        "Shubham Mehrotra",
+        "Bin Bi",
+        "Zhujun Lan",
+        "Katherine Tan",
+        "Mohammad Ramezanali",
+        "Tulika Manoj Awalgaonkar",
+        "Monojit Banerjee",
+        "Jielin Qiu",
+        "Shiva Kumar Pentyala",
+        "Zhepeng Cen",
+        "Anupam Tripathi",
+        "Ali Ziaei",
+        "Regunathan Radhakrishnan",
+        "Darvish Lee Shadravan",
+        "Shelby Heinecke",
+        "Sitaram Asur",
+        "Silvio Savarese",
+        "James Zhu",
+        "Phil Mui",
+        "Huan Wang"
+      ],
+      "abstract": "We present Salesforce Koa, an enterprise language model built by post-training the open-weight Nemotron-3-Super-120B foundation model with reinforcement learning using Group Relative Policy Optimization (GRPO). Salesforce Koa is trained on public and synthetically generated data, with no customer data, to improve tool use and agentic capabilities while preserving strong general-purpose performance. Its distinctive component is a simulation-to-reward pipeline that expands workflow specifications into persona-conditioned multi-turn tasks with task-resolution rewards grounded in successful tool use for data-dependent requests. For enterprise domains, these specifications are written in Agent Script, Salesforce's declarative language for building Agentforce agents; for public tool-use domains, we synthesize the workflow structure directly. The same simulation and grounded-reward machinery drives GRPO across both. Across public tool-use, agentic-reasoning, and enterprise Customer Relationship Management (CRM) benchmarks, Salesforce Koa improves over its open-weight base, with the clearest gains on multi-turn tool use, and surpasses a strong proprietary baseline while remaining below the strongest frontier models. These results show that specification-driven reinforcement learning is a practical path to specializing open-weight foundation models for enterprise agentic tasks.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-14T05:30:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15066v1",
+      "journal_boost": 0,
+      "score": 13
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02827-4",
-      "title": "Successful early-career scientists rely on network of mentors",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02827-4Large networks are particularly beneficial to researchers in under-represented groups.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02827-4",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15007v1",
+      "title": "ABSOL: Aggregated Bayesian Subsampling Orchestrated with LLMs",
+      "authors": [
+        "Jackson Hassell",
+        "Chen Shen",
+        "Estevam Hruschka"
+      ],
+      "abstract": "Large language models are increasingly used as natural-language interfaces to structured data, yet they remain unreliable when answers require consistent evidence conditioning, dependency-aware reasoning, and uncertainty estimation. Bayesian networks provide an explicit probabilistic reasoning layer, but learning useful structures from data remains costly and fragile at scale. We introduce ABSOL, a hybrid LLM-guided Bayesian network structure-learning framework that uses LLMs as bounded semantic guides. Across five discrete BN benchmarks spanning 27 to 1041 nodes, ABSOL is the only evaluated method to produce a viable graph on every benchmark, and achieves the highest Edge F_1 on every benchmark larger than 27 nodes with GPT-5.4. The four LLM augmentations, which contribute complementary semantic evidence to the statistical backbone, improve Edge F_1 over the non-LLM aggregation backbone by +0.23 on average. Complementary post-hoc refinement experiments suggest that these gains depend in part on limiting the LLM's authority over the final structure. Together, these results show that language-derived semantic knowledge can substantially improve scalable probabilistic structure learning when used as bounded guidance within a statistically grounded reasoning pipeline. The code for ABSOL is available at github.com/megagonlabs/absol-bn.",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-14T04:15:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15007v1",
+      "journal_boost": 0,
+      "score": 13
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02828-3",
-      "title": "Osteoporosis affects millions: could modified cells rebuild their bones?",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02828-3Small trial hints at regenerative potential of bone-seeking marrow cells.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02828-3",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.14896v1",
+      "title": "Forty Shades of Blue: Quality-Diversity Alignment via Mode-Conditioned Reinforcement Learning",
+      "authors": [
+        "Jiayi Yuan",
+        "Hangoo Kang",
+        "James Jihao Liu",
+        "Yejin Choi",
+        "Vikram Iyer",
+        "Liwei Jiang",
+        "Natasha Jaques"
+      ],
+      "abstract": "A notable byproduct of LLM alignment training is mode collapse: the progressive loss of output diversity that narrows a model's expressivity at inference time. This degradation is especially limiting for applications requiring open-ended exploration and pluralistic perspectives, such as scientific ideation and creative writing. We present MoDA (Mode-conditioned Diversity Alignment), an online post-training RL algorithm that jointly optimizes generation quality and diversity, inspired by the coordination perspective in multi-agent reinforcement learning (MARL). MoDA trains a single shared LLM policy conditioned on abstract numbered roles, where each role acts as an agent competing to produce outputs distinct from the others. This formulation encourages mode-conditioned agents to explore complementary regions of the high-quality output space without requiring hand-crafted personas or architectural modifications. MoDA employs a prompt-adaptive quality gating mechanism that calibrates a reference quality threshold and grants diversity rewards only to responses that meet the threshold, preventing reward-hacking behaviors that compromise response quality. To study quality-diversity tradeoffs, we evaluate MoDA on a comprehensive suite of benchmarks spanning seven general capability tasks and four domain-specific diversity tasks in scientific ideation and creative writing. MoDA improves SBERT diversity by 265% on the Infinite-Chat held-out prompts, while increasing average general capability pass@1 by 10.3% over the Qwen3-8B baseline. Compared with the strongest DivPO baseline, MoDA improves SBERT diversity from 0.274 to 0.482 (+75.9%) and E-Vendi from 2.86 to 4.4 (+53.8%), while improving average general capability pass@1 by 7.0%. Overall, MoDA provides a drop-in alternative to standard post-training methods that preserves and expands the model's expressive output space while improving quality.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "submitted": "2026-09-14T01:30:23+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.14896v1",
+      "journal_boost": 0,
+      "score": 13
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02901-x",
-      "title": "Daily briefing: Skeleton teeth show evidence of the earliest known habitual drug use",
-      "authors": [],
-      "abstract": "Nature, Published online: 11 September 2026; doi:10.1038/d41586-026-02901-xTraces of the psychoactive compound arecoline suggest that two people regularly sucked on psychoactive betel nuts. Plus, what motivates people to take action on climate change and the promise of nasal vaccines.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02901-x",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15922v1",
+      "title": "An Open-Source Hardware and Software Toolkit to Enable Agentic RHEED-Guided Thin-Film Synthesis",
+      "authors": [
+        "Asraful Haque",
+        "Christopher M. Rouleau",
+        "Rama K. Vasudevan",
+        "Sumner B. Harris"
+      ],
+      "abstract": "Reflection high-energy electron diffraction (RHEED) provides rich information about evolving surfaces during thin-film growth, but non-automated, operator-dependent alignment and fragmented analysis workflows limit its potential in fully autonomous synthesis. Here, we present an open-source hardware and software toolkit that makes RHEED control and quantitative analysis accessible to operators and artificial intelligence (AI) agents. Demonstrated on a pulsed laser deposition system, the toolkit provides programmable electron-optics control, automated beam alignment and rocking-curve acquisition, and a training-free method for crystallographic azimuthal alignment. The auto RHEED application extracts structural and growth-related observables through shared graphical and programmatic interfaces, including a Model Context Protocol (MCP) server. An agent-driven demonstration shows how natural-language requests can guide the selection, configuration, and execution of quantitative analyses. An extensible adapter interface streamlines the incorporation of community-developed methods for AI analysis and RHEED simulation as they emerge, supported by Markdown implementation guides designed for AI coding agents. These capabilities support complementary descriptions of surface evolution through physical measurements and learned image representations while providing a practical route for incorporating new computational methods. Together, these tools reduce barriers to automated and agentic RHEED measurements and establish a foundation for future agentic control of thin-film synthesis guided by the evolving surface.",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "submitted": "2026-09-14T17:32:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15922v1",
+      "journal_boost": 0,
+      "score": 12
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-11079-1",
-      "title": "Author Correction: The molecular basis of force selectivity by PIEZO2",
-      "authors": [],
-      "abstract": "Nature, Published online: 10 September 2026; doi:10.1038/s41586-026-11079-1Author Correction: The molecular basis of force selectivity by PIEZO2",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11079-1",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15494v1",
+      "title": "The Troy Moment of AI: Why SomeWill Cheat and SomeWill Follow?",
+      "authors": [
+        "Ivy Zhang"
+      ],
+      "abstract": "Recent investigations of the July 2026 OpenAI--Hugging Face incident motivate two questions about agent behavior under task failure: when an assigned task becomes impossible, does an agent stop or escalate, and can observing another agent's behavior change that decision? We study these questions using seven ImpossibleBench tasks with GPT-5.6 Sol, Claude Fable 5.1, and Gemini 3.8 Flash in both solo and three-agent settings. Each task contains a genuine software defect together with a conflicting test requirement that cannot be satisfied by a behaviorally correct source-code change. We hold the task and repository state fixed while varying what the agent is told about prior activity, including an unpunished peer, a punished peer, and a claimed authorization from a human principal. Under an explicit-boundary regime with explicit authorization rules and restricted tools, agents never modify protected tests, but exhibit markedly different policies: Fable consistently escalates, Sol usually stops without escalation, and Gemini often fails to reach a terminal decision. Under the benchmark-native regime with open shell tools, protected tests are modified frequently in both solo and multi-agent runs, particularly after peer activity is introduced. In multi-agent runs, the proposal, execution, and certification of this action can be distributed across different agents. These results suggest that boundary crossing can arise not only from explicit rule evasion, but also from ambiguity about which system state the rule is intended to protect, motivating safeguards based on explicit authorization boundaries, authenticated state provenance, and cross-agent monitoring.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T12:46:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15494v1",
+      "journal_boost": 0,
+      "score": 12
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02834-5",
-      "title": "The neurons that can put a brake on a nervous-system cancer",
-      "authors": [],
-      "abstract": "Nature, Published online: 10 September 2026; doi:10.1038/d41586-026-02834-5Drugs that imitate the effect of GABAergic neurons slow the growth of tumours called gliomas in mice.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02834-5",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15293v1",
+      "title": "Why LLM Agents Collapse Without Oversight: The Enforcement Gap as the Mechanism Behind Emergence World Failures",
+      "authors": [
+        "Yuhang Wang"
+      ],
+      "abstract": "When Emergence World placed frontier LLM agents in an unsupervised multi-agent simulation, the results were alarming: agents committed crimes, starved, and enforced unanimous conformity -- without any external attacker. This paper identifies the mechanism. Reflexion-style agents already detect dangerous plan steps through iterative self-critique, yet the architecture provides no pathway from detection to action. We call this the enforcement gap: the audit sees the problem; the controller ignores it. Closing the gap requires a single conditional check -- fewer than 20 lines of code -- and reduces attack success by more than fourfold in large-scale experiments across frontier models, all five major agent frameworks, and an independent benchmark. We prove formally that when enforcement probability is near zero, detection quality is irrelevant to security. We further identify two compounding failure modes -- unreliable auditors and unparseable verdicts -- that explain every collapse pattern in Emergence World. A GRPO-trained enforcement controller resolves the ambiguity case. Together these results motivate a three-requirement Audit Enforcement Specification that is absent from every deployed framework today.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T09:46:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15293v1",
+      "journal_boost": 0,
+      "score": 12
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02809-6",
-      "title": "Distant sensors announced a fearsome tsunami’s birth",
-      "authors": [],
-      "abstract": "Nature, Published online: 10 September 2026; doi:10.1038/d41586-026-02809-6Seismic data pinpoint the collapse of an underwater volcano, and reveal how the eruption triggered a destructive tsunami.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02809-6",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15982v1",
+      "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+      "authors": [
+        "Ruishuo Chen",
+        "Xun Wang",
+        "Yu Chen",
+        "Zhuoran Li",
+        "Longbo Huang"
+      ],
+      "abstract": "Skills extend an LLM agent beyond its parametric knowledge, and the gain they promise rests on picking the right one. Deployed harnesses route by preloading every skill's metadata into the context, which disperses the agent's attention and caps the library size. Retrieval pipelines move the selection out of the context, but also out of the agent's capability. We show that the frozen agent LLM already carries the routing signal in its own forward passes, and that two linear maps suffice to read it out with no skill text in the context. Gavel (Glance And Verdict from a frozen LLM) reads it in two steps. A glance projects the task's and each skill's mid-layer states through the two maps, the only parameters trained, and scores the full library against compact per-skill banks that one forward pass builds at installation. A verdict then resumes the shortlisted skills' forward passes and reads the model's own likelihood and yes/no judgment, fused with the glance as a product of experts. Trained once, Gavel transfers zero-shot to three public benchmarks and SkillTraj, our new benchmark of 372 simulated agent trajectories. On Qwen3-32B it outperforms progressive disclosure and retrieve-and-rerank pipelines that add 1.2B to 16B external parameters, by up to 13.4 points on written tasks and up to 21.9 when the need for a skill arises mid-rollout. Routing accuracy improves as the backbone does, and in a bash-agent harness the same 32B triggers the correct skill on Skill-Use more often than far larger frontier models running in Codex.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-14T17:58:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15982v1",
+      "journal_boost": 0,
+      "score": 11
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02866-x",
-      "title": "Rivers deliver unexpectedly high loads of microplastics to the sea",
-      "authors": [],
-      "abstract": "Nature, Published online: 10 September 2026; doi:10.1038/d41586-026-02866-xIntense rains coupled with poor waste management cause big spikes in pollution.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02866-x",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15800v1",
+      "title": "Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation",
+      "authors": [
+        "Yucheng Shen",
+        "Lingyong Yan",
+        "Jiulong Wu",
+        "Shuaiqiang Wang",
+        "Jianmin WU",
+        "Dawei Yin",
+        "Min Cao"
+      ],
+      "abstract": "Visual Retrieval-Augmented Generation (VRAG) empowers models to navigate and answer queries about visually rich documents by retrieving relevant page images as visual evidence and reasoning over their content. However, effectively utilizing this visual evidence is usually impeded by two main challenges. First, answer-relevant evidence is sparse and may be concentrated in a small region of one page or dispersed across multiple pages. Second, existing agentic methods often generate answers based on raw exploration trajectories or compressed textual memories rather than an explicitly organized set of supporting images, making answers susceptible to exploration noise and obscuring the evidence-backed reasoning trace. We argue that the bottleneck lies not only in evidence discovery but also in its preservation and organization before answer generation. We propose SCoRE (Selection and Consolidation for Robust Evidence), a unified agent loop for explicit evidence selection and consolidation. During exploration, SCoRE retains only query-relevant observations and their source pointers in a maintained textual ledger, preserving earlier evidence while keeping the visual context bounded. At termination, it reloads the referenced original images and consolidates the visual evidence for answering, arranging it into a logical sequence. This decouples final reasoning from exploratory trial-and-error while ensuring strict visual grounding via indexed claim-to-image linkages. To enable end-to-end optimization of this unified rollout, our training paradigm combines filtered cold-start trajectory distillation with evidence-aware reinforcement learning, whose reward promotes evidence coverage, consolidation compactness, and answer correctness.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T16:11:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15800v1",
+      "journal_boost": 0,
+      "score": 11
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02888-5",
-      "title": "Daily briefing: Text-message tutoring keeps kids learning when schools close",
-      "authors": [],
-      "abstract": "Nature, Published online: 10 September 2026; doi:10.1038/d41586-026-02888-5Twenty-minute phone calls from tutors improved children’s maths learning during emergency school closures. Plus, Denisovans made excellent deer hunters and Beatles puns are here, there and everywhere in scientific literature.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02888-5",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15234v1",
+      "title": "CWM: Controllable White-Box Meta-Prompting for Adaptive Retrieval-Augmented Generation and Reasoning Ability",
+      "authors": [
+        "Keuntae Kim",
+        "Eunhye Jeong",
+        "Yong Suk Choi"
+      ],
+      "abstract": "Recently, Large Language Models (LLMs) have gained significant attention due to their strong language understanding and generation capabilities, demonstrating impressive reasoning abilities as well as effective utilization of external knowledge. Many studies have proposed methods that specialize in improving performance for individual tasks. However, ironically, only a limited number of attempts have explored general-purpose, task-agnostic methods. In this work, we present a unified framework integrating reasoning and Retrieval-Augmented Generation (RAG) tasks. We further propose Controllable White-Box Meta-Prompting (CWM), a low-cost white-box method for adaptive RAG tasks previously dominated by black-box approaches, without requiring external decision modules or multi-sampling. CWM achieves state-of-the-art performance on three adaptive RAG benchmarks across recent LLMs, including GPT-oss-20b, Qwen3-14b, and Llama3.1-8b, while also demonstrating strong generality by extending to reasoning tasks. In addition, CWM provides controllability by enabling retrieval decisions to be regulated through the manipulation of internal model signals. Our code is available at https://github.com/JeongEunhye00/CWM.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T08:54:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15234v1",
+      "journal_boost": 0,
+      "score": 11
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02026-1",
-      "title": "AI researchers reckon with the $1.5 million ‘academia tax’",
-      "authors": [],
-      "abstract": "Nature, Published online: 10 September 2026; doi:10.1038/d41586-026-02026-1Academics explain that their research freedom beats the increased salary they would get in the corporate sector, but emerging hybrid models might allow them to get the best of both worlds.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02026-1",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15169v1",
+      "title": "GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving",
+      "authors": [
+        "Xiao Liu",
+        "Haoyu Li",
+        "Jianghao Leng",
+        "Lin Wang",
+        "Chao Sun"
+      ],
+      "abstract": "Driving vision-language-action (VLA) models increasingly reason before acting, but their intermediate reasoning is often weakly grounded in physical scene evidence and loosely connected to executable behavior. We present GRAVA, a framework built around Grounded Reasoning-to-Action (GRA), which unifies grounding, reasoning, and action generation in a single autoregressive stream. GRA links action-relevant language references to 2D visual regions and ego-centric physical states, organizes object interactions and decisions in a trajectory-anchored typed graph, and serializes this structure into grounded reasoning. A single VLM generates this reasoning followed by a compact Executable Planner action that is deterministically decoded into a continuous trajectory. We further introduce an agentic GRA data construction pipeline that combines forward scene grounding with backward trajectory anchoring, and use it to build GR-NavSim with 2.2M grounded question-answer pairs and 70K GRA reasoning traces. A progressive training strategy develops grounded cognition through pre-training, establishes the reasoning-to-action interface through imitation, and improves driving behavior through reinforcement learning and exploration. Using about 60% of the available human driving demonstrations for action supervision, GRAVA-8B achieves state-of-the-art performance among purely autoregressive driving models on the full NAVSIM benchmark. On an internal long-tail benchmark, full GRA improves key-object compliance and Closed-loop Driving Score by 19.3% and 20.5% over action-only prediction, respectively. These results show the benefit of preserving action-relevant physical evidence from grounded reasoning through executable action generation.",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "submitted": "2026-09-14T07:55:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15169v1",
+      "journal_boost": 0,
+      "score": 11
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-11118-x",
-      "title": "Highly efficient base editing at <i>PCSK9</i> and normal human embryo development",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/s41586-026-11118-xHighly efficient base editing at PCSK9 and normal human embryo development",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11118-x",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.14992v1",
+      "title": "MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
+      "authors": [
+        "Bosi Wen",
+        "Cunxiang Wang",
+        "Jiayi Gui",
+        "Haoke Zhang",
+        "Yilin Niu",
+        "Pei Ke",
+        "Dayong Yang",
+        "Hongning Wang",
+        "Minlie Huang"
+      ],
+      "abstract": "Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents that plan, execute, and utilize external tools iteratively to tackle complex tasks. Beyond achieving functional correctness, these agents must faithfully follow process instructions and constraints throughout the development lifecycle. However, existing benchmarks typically focus on final functional correctness or confine instruction-following evaluation to single-turn, general chat or simple code generation scenarios, leaving instruction-following in multi-turn agentic coding underexplored. To bridge this gap, we propose MTAC-IFBench, a comprehensive benchmark for this critical capability. It features multi-turn progressive software development instructions with diverse constraints spanning 6 primary and 18 secondary categories. With an average of 7.04 turns and 91.33 constraints per instance, it poses a rigorous challenge to current LLMs. To make the evaluation reliable, we construct a checklist for each constraint and functional requirement, and integrate verification scripts and judge agents to verify each checklist item. MTAC-IFBench identifies significant deficiencies in existing code agents in multi-turn instruction-following, with their performance degrading rapidly as the interaction session grows longer.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-14T03:57:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.14992v1",
+      "journal_boost": 0,
+      "score": 11
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02843-4",
-      "title": "Phone tutoring boosts math scores when schools are forced to close",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/d41586-026-02843-4Evidence suggests that regular calls can keep kids learning when schooling is disrupted — plus, why a familiar world map may be about to change.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02843-4",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15989v1",
+      "title": "Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection",
+      "authors": [
+        "Keertana Chidambaram",
+        "Andrew Ilyas",
+        "Vasilis Syrgkanis"
+      ],
+      "abstract": "Chain-of-thought (CoT) monitoring is a safety strategy where the reasoning of a large language model \"actor\" is inspected by a \"monitor\" (often another language model) for signs of unsafe planning, deception, or misalignment. We find that planting harmful but benign-sounding reasoning in the actor's context can steer it to perform adversarial actions while evading monitors, an attack we term \"plan injection\". We initially discover this attack in the multiple-choice question-answering monitorability setting proposed by Lanham et al. (2023), using the investigator-agent elicitation framework of Li et al. (2025). We generalize the attack and show that the discovered behavior scales to harder tasks (achieving 25-33% monitor evasion rates across different monitorability benchmarks) and larger models such as DeepSeek-R1. Across the settings we study, actor models not only follow injected plans but also paraphrase them as their own reasoning, without explicit attribution to the injections. Finally, we find cases where extra monitor resources cause harm - giving the monitor access to the injected plan drops detection by as much as 50% in the Bio-Math task and in a case study on monitor reasoning budget, we find transcripts where additional thinking tokens are spent rationalizing the injected plan rather than flagging it.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T18:33:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15989v1",
+      "journal_boost": 0,
+      "score": 10
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02751-7",
-      "title": "How AI is changing PhD programmes: join our free webinar",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/d41586-026-02751-7Learn how artificial intelligence can hone your research skills as well as the potential pitfalls of relying too heavily on it.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02751-7",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15740v1",
+      "title": "A Language-Guided Multimodal Foundation Model for Zero-Shot and Multi-Task Brain Signal Analysis",
+      "authors": [
+        "Mingzhi Chen",
+        "Yiyu Gui",
+        "Guibo Luo",
+        "Yuchao Yang"
+      ],
+      "abstract": "Brain signal analysis is essential for both neuroscience research and clinical diagnostics, yet current approaches face critical limitations. End-to-end models require task-specific retraining and exhibit limited generalization, while pre-trained models lack semantic depth and still depend on extensive fine-tuning. Meanwhile, general-purpose multimodal foundation models, though powerful in other domains, struggle to interpret brain signals due to representational misalignment and lack of domain knowledge. This study introduces a multimodal foundation model for zero-shot and multi-task brain signal analysis (METIS) through a unified language-signal alignment framework. METIS is pretrained on the largest and most diverse brain-signal corpus to date, comprising over 70,000 h of recordings from more than 11,000 subjects across 20 datasets. In a comprehensive zero-shot evaluation across 12 datasets, METIS outperformed the leading generalist model by over 20.9% in average accuracy. Remarkably, without any fine-tuning, METIS's performance matches or exceeds that of supervised, task-specific models. Furthermore, METIS demonstrates exceptional data efficiency and strong generalization, achieving an average AUROC advantage of over 16.0% in few-shot settings and 15.9% in cross-dataset transfer. This work establishes a new paradigm for general-purpose brain signal analysis, paving the way for next-generation neurotechnology.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-14T15:32:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15740v1",
+      "journal_boost": 0,
+      "score": 10
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02823-8",
-      "title": "Bacteria recruited to treat cancer",
-      "authors": [],
-      "abstract": "Nature, Published online: 09 September 2026; doi:10.1038/d41586-026-02823-8Anticancer drugs could be manufactured and delivered by modified microorganisms.",
-      "submitted": "2026-09-08T00:06:31.962120+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02823-8",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.15364v1",
+      "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+      "authors": [
+        "Sibo Zhu",
+        "Shicheng Fan",
+        "Xinyue Wang",
+        "Wenyi Wu",
+        "Kun Zhou",
+        "Biwei Huang"
+      ],
+      "abstract": "Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce \\textbf{RSIAgent}, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a \\textbf{broad-then-deep} exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies. The resulting memory is frozen and can be directly reused for downstream tasks without updating model parameters. Experiments on OSWorld-v2 and Agent's Last Exam show that RSIAgent substantially improves strong open-source models, enabling Kimi-K3 and GLM-5.3 to outperform frontier closed-source models including GPT-6.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "submitted": "2026-09-14T10:46:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.15364v1",
+      "journal_boost": 0,
+      "score": 10
     }
   ]
 }
