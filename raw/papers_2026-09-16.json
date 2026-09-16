@@ -1,0 +1,622 @@
+{
+  "date": "2026-09-16",
+  "fetched_at": "2026-09-16T23:59:23.324607+00:00",
+  "stats": {
+    "arxiv_count": 323,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 36,
+      "Science Advances": 49,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 531,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2609.16760v1",
+      "title": "Turn-level Multiscale Density Ratio Estimation for LLM Agents",
+      "authors": [
+        "Zishuo Zhao",
+        "Kai Chen",
+        "Ao Li",
+        "Yuan Liu"
+      ],
+      "abstract": "With the rapid development of Large language model (LLM), agent systems enhanced by LLMs show huge potential in being able to deal with complex tasks, especially involving multi-step thinking or interaction with tools. For applying LLM techniques with a well-designed agent paradigm, post-training of LLM in multiple agent scenarios is necessary to achieve better performance. Among the variable post-training techniques, alignment methods such as PPO, DPO, DIL, and GRPO become popular because many papers show a significant positive impact on the model's performance by punishing negative samples while keeping acceptable training complexity. However, most alignment methods address simple single-turn tasks, and there remains room for improvement for complex multi-turn tasks. We propose Turn-level Multiscale Density Ratio Estimation (tlm-DRE), which assigns different weights on corresponding turns and proposes asymmetric token-level training based on the positive-negative space gaps across multiple turns of tasks. The results of the experiment on a wide range of agent benchmarks show that the proposed method performs competitively compared to traditional alignment methods. The proposed training method enables LLMs to perform robustly in multi-turn reasoning tasks with both in-domain and out-of-domain conditions.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T07:36:23+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16760v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2609.17496v1",
+      "title": "Verifiable Social Reasoning for LLM Assistants",
+      "authors": [
+        "Amir Taubenfeld",
+        "Zorik Gekhman",
+        "Avigail Grinstein-Dabush",
+        "Itay Laish",
+        "Ariel Goldstein",
+        "Marian Croak",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Amir Feder"
+      ],
+      "abstract": "LLM assistants are widely used for daily social advice, yet evaluating their social reasoning in such consultation settings remains challenging since (i) it requires setups where the assistant learns about social situations from subjective user narratives, and (ii) social properties, such as others' intentions, typically lack verifiable ground truth. To address these challenges, we introduce Fuse, a multi-agent simulation framework for studying user-mediated social reasoning. In Fuse, a target agent with a hidden motive interacts with other agents including one representing the user, who then consults the evaluated assistant to infer the target's motive, providing verifiable ground truth by construction. Simulation faithfulness is validated through a human study with 24k annotations. We apply Fuse to 12 LLMs and demonstrate its analytical utility by systematically isolating key factors, showing that (i) user mediation compounds the inherent difficulty of social reasoning; (ii) LLMs exhibit systematic sensitivity to biased user framing; (iii) models can require more details than humans need to reach a correct prediction; and (iv) longer conversations do not always improve performance despite providing opportunities for clarifying questions. We open-source Fuse and a dataset with 21k examples.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T17:37:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17496v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2609.16589v1",
+      "title": "Do LLMs Have Values? A Quantitative Analysis and Alignment Framework for Values in Large Language Models",
+      "authors": [
+        "Keqing Zhang",
+        "Jingyu Chen",
+        "Yufan Liu",
+        "Yongqiang Zhu",
+        "Nai Ding",
+        "Lai Jiang",
+        "Congyan Lang",
+        "Bing Li",
+        "Weiming Hu"
+      ],
+      "abstract": "As Large Language Models (LLMs) increasingly handle complex subjective tasks, aligning their intentions and behaviors with human values has become a critical scientific challenge. However, current efforts are confounded by a striking behavioral paradox: they fluctuate unpredictably under minor wording changes (\"swing\"), yet stubbornly ignore explicit instructions to correct ingrained biases (\"rigidity\"). Resolving this duality is critical for reliable AI alignment. To systematically understand and safely steer these latent subjective preferences, our study is structured around three fundamental questions. First, do LLMs possess an intrinsic value system? By projecting responses from 106 LLMs (150,000 queries per model) and 95,000 human survey profiles into a shared sociological space, we empirically confirm that they do. However, they do not mirror human diversity, instead crystallizing into a highly concentrated, idealized value core. Second, how can these values be quantified? We propose the Prior-Environment-Cognition (PEC) framework. This model mathematically defines value expression as the joint outcome of inherent dispositions like parameter weights (Prior), external contexts such as user prompts (Environment), and internal reasoning processes like Chain-of-Thought (Cognition). Finally, how can LLMs' values be aligned toward a desired target? Using PEC diagnostics, we establish an adaptive \"Alignment Prescription\". Rather than blindly applying resource-intensive training, this method identifies the minimum effective intervention needed for each dimension, ranging from zero-cost prompts to targeted parameter updates. Extensive empirical validation confirms that our approach successfully verifies the presence of LLM values, accurately quantifies their shifts, and achieves more efficient and precise steering than conventional blind training, all without degrading general capabilities.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T03:35:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16589v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2609.16519v1",
+      "title": "AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research",
+      "authors": [
+        "Bernie Boscoe",
+        "Srinath Saikrishnan",
+        "Vikram Seenivasan",
+        "Jack Stark",
+        "Andrew Lizarraga",
+        "Morgan Himes",
+        "Jonathan Soriano",
+        "PJ Allen",
+        "Tuan Do"
+      ],
+      "abstract": "Scientific research increasingly relies on large, heterogeneous data sources, motivating interest in retrieval-augmented generation (RAG) systems that provide natural language access to scientific knowledge and research workflows. Researchers are exploring the viability of these systems as natural language interfaces for document search and for generating analysis code and pipeline components. At the same time, concerns about data privacy and control over research infrastructure have motivated interest in open-weight models and open-source deployments hosted within research institutions.\n  In astronomy, this development follows a long history of computational infrastructure development, from archival databases and SQL-based systems to LLM-assisted research tools. This paper presents a domain-expert evaluation of faithfulness for AquiLLM, an open-weight, offline RAG-LLM platform designed to support scientific research groups in the use and preservation of tacit and formal knowledge.\n  We define faithfulness as the extent to which generated responses remain grounded in retrieved scientific context without unsupported claims or omissions. We report results from an astronomy case study evaluating AquiLLM across retrieval and scientific analysis tasks. AquiLLM performs most reliably on explicit retrieval-oriented questions grounded in the RAG collection, while faithfulness degrades for queries requiring synthesis or ambiguity resolution. These results highlight both the promise and limitations of open-weight RAG-LLM systems for scientific research and demonstrate the importance of domain-expert evaluation beyond standard benchmark leaderboards.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T02:09:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16519v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2609.17331v1",
+      "title": "Self-Emergence Agent Architecture:Behavior-Inertia HMM, Reflexive Metacognition,and Social-Contrastive Self-Modeling",
+      "authors": [
+        "Xiaoyang Liu"
+      ],
+      "abstract": "Large language model (LLM) agents exhibit strong language-generation and problem-solving capabilities, yet suffer from three structural limitations: personality drift, non-evolutionary reflection, and the absence of a self-other boundary. Existing generative-agent simulations rely on static memory and fixed prompts, maintaining neither behavioral inertia nor endogenous self-evolution. We propose the Self-Emergence Agent Architecture (SEAA), which integrates three components: (i) a Hidden Markov Model (HMM) that encodes long-term behavioral and cognitive inertia as an editable state-transition matrix; (ii) a Reflexion-style verbal metacognition loop whose output updates the HMM parameters themselves, rather than merely being stored as text; and (iii) a multi-agent social environment in which initially identical agents continuously compare their behavior with others'. The three components form a closed loop: social action $\\to$ feedback $\\to$ self-reflection $\\to$ inertia update $\\to$ differentiated action. We state three falsifiable hypotheses and provide a reproducible experimental protocol with operational metrics. A language-model-free prototype shows the loop spontaneously breaks symmetry: initially identical agents consolidate distinct, stable personalities whereas matched controls do not. Experiments with a hosted LLM surface these differences as distinct first-person self-narratives, and a five-agent deliberation spontaneously develops social structure---a consensus hub and a unanimously rejected outlier---absent in the control. Following an epistemologically agnostic stance inspired by Zhuangzi, SEAA studies only observable behavioral emergence and makes no claim about subjective qualia. This work contributes a unified framework, a concrete architecture with pseudocode, mechanistic evidence, and a microscope-style sandbox for studying artificial-self emergence.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T15:36:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17331v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2609.16599v1",
+      "title": "Large Language Models in the Loop: A Stability- and Network-Aware Survey in Networked Control, Cyber-Physical, and Multi-Agent Systems",
+      "authors": [
+        "Haiping Du",
+        "Linping Chan"
+      ],
+      "abstract": "Modern networked control systems (NCSs), cyber-physical systems (CPSs), and complex multi-agent network systems (CNSs) increasingly rely on large language models (LLMs) for high-level decision-making. However, the slow, stochastic nature of LLMs directly conflicts with the strict stability and safety guarantees required by these physical systems. This survey presents a unified analysis of how LLMs can be admitted into the control loop of NCS, CPS, and CNS without compromising closed-loop guarantees. We organize this around a core principle: the LLM operates as a slow supervisor adjusting high-level goals and constraints, while a fast, certified inner loop maintains physical stability. Under this framework, LLM integration maps directly to classical networked control challenges, where inference latency acts as delay, API failures as packet dropouts, tokenization as quantization, and hallucinations as bounded disturbances. We assess current developments across all these three domains, highlighting that rising model capabilities are frequently accompanied by a drop in formal safety assurances. Finally, we propose concrete future research directions, identifying the widespread lack of formal stability proofs as the field's central open problem.",
+      "categories": [
+        "eess.SY",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T03:50:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16599v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2609.17019v1",
+      "title": "SKIP: a Self-knowledge-guided Step-wise Preference Learning Framework for Concise Reasoning",
+      "authors": [
+        "Qinhong Lin",
+        "Yuhao Zhang",
+        "Yinglun Feng",
+        "Zhongliang Yang",
+        "Linna Zhou"
+      ],
+      "abstract": "While Chain-of-Thought (CoT) reasoning has been proven to be effective, it often leads to overthinking, resulting in computational overhead, inference latency, and even degraded performance in large language models (LLMs). Existing concise reasoning frameworks significantly compromise accuracy while compressing the length of output. In this paper, we propose SKIP, a self-knowledge-guided step-wise preference learning framework. Starting with lightweight fine-tuning to adjust the model's output style, SKIP introduces a carefully designed knowledge probing mechanism to guide model to output an answer at each reasoning step. Based on the correctness of intermediate steps, we construct preference data that guide the model toward more efficient and correct reasoning by leveraging DPO. Experimental results demonstrate that our method effectively improves reasoning compression while mitigating performance degradation after fine-tuning. Besides, SKIP shows strong generalization ability on out-of-distribution datasets. We further conducted ablation studies on the component parameters of our framework.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T11:29:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17019v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.16739v1",
+      "title": "Japanese Stroke LLM Evaluation: A Conversational Benchmark for Safe Stroke Care in Japanese Using Large Language Models",
+      "authors": [
+        "Keisuke Masuda",
+        "Kazutaka Yatsushiro",
+        "Hirohumi Iwamoto",
+        "Hirofumi Hirano",
+        "Ryosuke Hanaya"
+      ],
+      "abstract": "Background: Large language models (LLMs) have achieved physician-comparable performance on multiple-choice medical knowledge examinations, but their capabilities in clinical history taking, urgency assessment, and safety remain insufficiently evaluated. We proposed Japanese Stroke LLM Evaluation, a multi-turn conversational benchmark for stroke care in Japanese, and evaluated LLM performance and safety under practice-oriented conditions. Methods: We created 10 stroke and related-condition cases and evaluated LLMs in multi-turn Japanese conversations. The LLM acted as physician, while a board-certified neurosurgeon acted as simulated patient and evaluator. Each case comprised history-taking and action phases scored using pre-specified criteria. Errors that could directly threaten life were defined as critical mistakes. The safety threshold was at least 80% overall with zero critical mistakes. Eighteen models were evaluated in October 2025 and June 2026. Results: Claude Fable 5 achieved the highest score (87.4%) with zero critical mistakes, followed by Claude Opus 4.7 (80.3%) and GLM-5.2 (75.6%). Two leaders met the safety threshold. Eleven models made 17 critical mistakes, including failure to confirm laboratory results or blood glucose before t-PA, surgery before airway stabilization, omission of cervical vascular evaluation, and t-PA outside its indication. History-taking question count correlated with history-taking score (r = 0.648, p = 0.007). Conclusions: Japanese Stroke LLM Evaluation provides a benchmark for LLM performance under practice-oriented conditions, including a cap on history-taking questions. Cases and evaluations were created by neurosurgical specialists rather than using an LLM-as-judge approach. Performance improved across cloud-based and on-premise models in 2026, with some exceeding the safety threshold. Further evaluation using real-world cases is required.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T07:13:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16739v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.17193v1",
+      "title": "End-to-End Latency-Minimizing and Load-Balanced Request Scheduling for Edge LLM Inference in Agentic AI Services",
+      "authors": [
+        "Zhen Li",
+        "Jun Cai",
+        "Haoran Gao",
+        "An Li",
+        "Tan Li"
+      ],
+      "abstract": "Large language model (LLM)-powered agentic AI services increasingly demand low-latency inference, motivating the deployment of LLMs across distributed edge servers. However, heterogeneous communication and computing capabilities, together with dynamically evolving inference states, make the edge server selection for each incoming request time-varying and tightly coupled across slots. In this paper, we investigate an online request scheduling framework for edge LLM inference that jointly minimizes long-term average end-to-end latency and regulates workload distribution across heterogeneous edge servers. Two main challenges arise in this context. First, conventional latency models cannot accurately capture the fine-grained dynamics of multi-stage LLM execution. Second, the latency consequence of a scheduling decision is observed only after request completion, making immediate decision evaluation difficult. To address these challenges, we develop a cross-slot inference model that captures transmission, prefill, iteration-level decoding, and key-value (KV) cache evolution for each diverse request, and characterize server workload through a KV cache memory-time consumption metric. We propose the LYREO approach that transforms the long-term load-balancing constraint via Lyapunov optimization and employs reward redistribution with sequencebased return prediction to convert delayed outcomes into timely learning signals for earlier decisions. Simulations under various configurations demonstrate that LYREO consistently achieves lower latency and more balanced load distribution than representative learning-based and heuristic baseline schemes.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T13:50:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17193v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.16466v1",
+      "title": "Scaling LLM Agents for Materials Design through Hierarchical Collective Reasoning",
+      "authors": [
+        "Jaehwan Choi",
+        "Yousung Jung"
+      ],
+      "abstract": "Materials design must reconcile competing functional requirements with stability and synthesis constraints. Generative models can produce stable, novel crystals, but accommodating detailed natural-language design instructions remains challenging. Here we introduce HiMatGen, a framework for scaling large language model agents through hierarchical collective reasoning. Built from GPT-5.6 Terra, HiMatGen connects 100 investigators in discussion pods across ten scientific domains with tool-enabled domain representatives. Representatives investigate proposals, exchange evidence across domains and return findings and unresolved questions to their pods. This bidirectional exchange turns specialist disagreements into structural revisions and alternative designs. Across six chemical systems, HiMatGen produces 1.9 times as many final crystal candidates and 1.7 times as many stable, unique and novel (SUN) structures as a tool-enabled GPT-6 Astra single-agent baseline. In property-directed tasks, the complete HiMatGen workflow outperforms same-model single-agent and independent-generation controls. Comparisons with MatterGen and Chemeleon2 demonstrate its ability to develop diverse crystals satisfying joint functional and chemical requirements. In a paired comparison initialized from the same proposals, hierarchical discussion reduces debate-stage token usage by a factor of 22 relative to full debate. HiMatGen provides an approach to materials design that sustains the exchange of scientific knowledge and computational evidence throughout iterative exploration as the agent population grows.",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "submitted": "2026-09-15T00:35:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16466v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.17527v1",
+      "title": "Agentic Societies Need a Social Harness",
+      "authors": [
+        "Tapan Chugh",
+        "Vidushi Singh",
+        "Krish Jain",
+        "Arvind Krishnamurthy",
+        "Ratul Mahajan"
+      ],
+      "abstract": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \\emph{social harness} for inter-agent interactions, in addition to each agent's \\emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities.",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "submitted": "2026-09-15T17:57:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17527v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.16454v1",
+      "title": "Fine-Tuning Fixes Mode Collapse and Over-Dispersion in LLMs",
+      "authors": [
+        "Kirill Skobelev",
+        "Eric Fithian",
+        "X. Y. Han"
+      ],
+      "abstract": "Recent work by Doshi and Hauser (2024), Bisbee et al. (2024), and Xie et al. (2026) raises concerns that outputs from large language models (LLMs) tend to be under-diverse: they repeat or resemble one another more often than responses from the population they are meant to represent, a phenomenon known as mode collapse. In this work, we show that whether mode-collapse, or its opposite, occurs depends on the specific model and dataset used. Further, with sufficient supervised fine-tuning (SFT) data, LLM output diversity converges toward that of the target distribution from which fine-tuning data are sampled. To quantify this comparison, we measure the probability that two responses sampled independently from the same fixed prompt coincide (collide), or their expected similarity under a kernel. We derive a bias-variance decomposition of the expected gap between the model's and target's collision probabilities, showing that SFT is not inherently biased toward mode collapse or its opposite: finite-sample SFT can leave a model either under- or over-dispersed, depending on the model and dataset. Finally, we show that the absolute gap is bounded by the square root of the Kullback-Leibler (KL) divergence from the target distribution to the model. Consequently, a model sufficiently close to optimal under population cross-entropy cannot exhibit arbitrarily miscalibrated diversity. We test the decomposition and the bound in three experiments: small transformers on synthetic languages, four LLMs fine-tuned on human surveys, and these LLMs fine-tuned on CodeNet, a dataset of human code solutions. More target data moves model diversity toward the human (or synthetic target) level in all experiments, consistent with our theoretical predictions. These results show that diversity miscalibration can arise from finite-sample error and shrink as SFT better approximates the target distribution.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T00:19:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16454v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.17376v1",
+      "title": "Large Language Models Develop Belief State Geometry In-Context",
+      "authors": [
+        "Daniel Balcells",
+        "Andrew Jun Lee",
+        "Chirag Rastogi",
+        "Paul M. Riechers",
+        "Adam Shai",
+        "Xavier Poncini"
+      ],
+      "abstract": "Large language models (LLMs) trained on next-token prediction exhibit remarkable in-context learning (ICL) abilities, yet the representations that support ICL remain poorly understood. We consider such representations in a controlled setting: prompting LLMs with data emitted from hidden Markov models (HMMs) and probing for the corresponding belief state -- the posterior distribution over the HMM's hidden states given the observed token history. Across six open-source LLMs prompted with data from 40 HMMs selected for non-trivial belief structure, we find that belief states are linearly decodable from residual stream activations, with peak probe $R^2$-values from 0.83-0.99 across HMM and LLM combinations, ranging from early to late layers. To establish functional relevance, we intervene directly on the probe-identified subspace via patching and steering, resulting in downstream prediction quality on the order of the untampered model, while controls degrade performance substantially. Together, these results provide representation-level evidence that ICL in open-source LLMs approximates optimal Bayesian prediction over a context-inferred generative model. More broadly, our findings extend prior results linking input-distribution structure to activation geometry: from toy networks trained explicitly on HMM data to production-scale LLMs.",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T16:17:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17376v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.17306v1",
+      "title": "Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems",
+      "authors": [
+        "Sara Vera Marjanović",
+        "Jiacheng Xu",
+        "Aleksandr Laptev",
+        "Grigor Nalbandyan",
+        "Erik Arakelyan",
+        "Evelina Bakhaturina"
+      ],
+      "abstract": "Multi-agent Systems (MAS) combine multiple model outputs to solve complex reasoning tasks. However, despite rapid growth of available open-source models, there is limited research on how to select optimal model candidates out of this massive pool. We systematically evaluate 8 model selection strategies (including model size, accuracy and answer diversity) across before-generation (routing) and after-generation (majority-voting, LLM-as-a-judge) MAS architectures on challenging scientific benchmarks. Our findings show a significant gap between theoretical oracle potential and actual performance: Expanding candidate pool sizes often degrades performance below that of the top performing base-model. We find that candidate selection within a single model family is the strategy that yields the best relative performance over a standalone model. These results demonstrate that adding arbitrary models to a heterogeneous MAS can introduce system instability, highlighting model selection as a critical design choice for multi-agent systems.",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T15:17:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17306v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.16563v1",
+      "title": "The MAL Simulator: Cyber Operations Simulation based on Attack & Defense Graphs",
+      "authors": [
+        "Jakob Nyberg",
+        "Sandor Berglund",
+        "Andrei Buhaiu",
+        "Joakim Loxdal",
+        "Pontus Johnson",
+        "Mathias Ekstedt"
+      ],
+      "abstract": "We have developed the MAL Simulator, a cyber operation simulator based on the Meta Attack Language (MAL). The MAL Simulator is intended for decision-driven cyber attack and defense simulations, for system analysis and the development of automated agents. By building the simulator around an attack modeling language, it can be adapted to different target domains without modifying the source code. We used the simulator for two case studies where we trained two types of agents for automated cyber operations: a defensive agent and an offensive agent. To ground the experiments, we base the models in data collected from an emulated network implemented in the cyber range CRATE. We found that the trained attacker policy could reach the designated targets more efficiently than the compared search methods, and that the trained defender agent induced lower costs than a naive heuristic agent under noisy alert conditions. When testing the RL attacker against the RL defender, we found that the performance of the defenders dropped significantly. This emphasizes the importance of cyber attack simulators to facilitate training both offensive and defensive agents. The MAL Simulator and associated tooling is publicly available and provides common interfaces for compatibility with existing machine learning frameworks.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T02:59:01+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16563v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.16557v1",
+      "title": "PunGraph: Retrieval-Enhanced Phonetic-Semantic Graph Reasoning for Pun Understanding",
+      "authors": [
+        "Yuchen Su",
+        "Zijian Huang",
+        "Yaotian Shi",
+        "Shaoxin Zhong",
+        "Ruofan Wang",
+        "Mengze Li",
+        "Yonghua Zhu",
+        "Diana Benavides-Prado",
+        "Michael Witbrock"
+      ],
+      "abstract": "Puns are a challenging form of figurative language that exploit phonetic similarity and semantic ambiguity to convey multiple meanings. Although large language models (LLMs) demonstrate strong language understanding capabilities, they still struggle with pun reasoning due to limited phonetic modeling and uncontrolled end-to-end generation. We propose \\textbf{PunGraph}, a retrieval-enhanced knowledge graph framework for pun understanding. PunGraph constructs a phonetic-semantic lexical graph using the Unisyn phonetic dictionary, IPA and G2P representations, and WordNet definitions, and retrieves candidate words or senses to constrain LLM reasoning within a structured candidate space. We further introduce \\textbf{WebPun}, a new large-scale dataset containing 5,730 annotated heterographic and homographic puns. Experiments on SemEval-2017 and WebPun show that PunGraph consistently improves the performance of small-scale LLMs and achieves competitive results against strong proprietary models. Further analysis shows that retrieval-guided phonetic and semantic constraints effectively reduce common reasoning errors in pun interpretation, highlighting the benefits of integrating structured knowledge with LLMs. We release our code and dataset at https://github.com/ysu132/PunGraph.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T02:54:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16557v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-02880-z",
+      "title": "Turning scientific research papers into interactive AI agents",
+      "authors": [],
+      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/d41586-026-02880-zScientific knowledge is mostly stored in static papers. An automated framework called Paper2Agent can now transform each paper into an active artificial intelligence agent — a virtual corresponding author that answers questions, applies the paper’s methods to new data, and collaborates with other paper agents. This makes research easier to reproduce, reuse and extend.",
+      "submitted": "2026-09-09T23:59:21.782179+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-02880-z",
+      "journal_boost": 5,
+      "score": 10
+    },
+    {
+      "id": "2609.17464v1",
+      "title": "Decomposition Buys Integrity, Not Yield",
+      "authors": [
+        "Rong He"
+      ],
+      "abstract": "Multi-agent systems split a task across a tree of agents and justify the split with folklore: smaller contexts, cleaner separation, parallelism. We ask what the split does to how much of what the leaves discover reaches the root. Model a decomposition as a tree in which an agent handed $b$ items keeps any one with probability $r(b)$. If $r(b)=1/b$, every tree delivers exactly one finding, for every task size and every shape; we verify this to $2.4 \\times 10^{-15}$ on 20,000 random irregular trees. If $r(b)=Cb^{-δ}$, a depth-$k$ tree over $N$ findings yields $C^k N^{1-δ}$: task size and architecture separate, and architecture contributes only $C \\le 1$ per level, so flat is optimal for yield and no arrangement of agents escapes the exponent $δ$. On 600 production deep-research traces $δ= 0.34$ [0.30, 0.38], by three identifications that do not share a failure mode. At a hop where item boundaries come from the tool rather than a text heuristic, and where $b=1$ occurs 550 times, $C = 0.571$ [0.527, 0.615] is observed rather than extrapolated, over 16,082 hops. A tier also costs alignment: on 1,012 annotated multi-agent traces one brief in sixteen goes off-target, giving $μ= 0.939$ and a per-tier penalty $Cμ= 0.536$. Depth is bought on two other axes. The root context is the only state that persists and the only one that cannot cheaply forget, and depth cuts its exposure from $N$ items to $N^{1/k}$. Depth is also cheaper: production flat agents bill as $N^{1.39}$, not the $N^2$ an append-only context predicts, and at equal spend two tiers overtake flat at 403 findings. Across every parameter we measured the model says 0.7% to 11.3% of production sessions are worth delegating, against 7.8% that do. A hazard model on 743,819 production tool calls finds that delegation does not respond to a filling context and is instead an opening move.",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "submitted": "2026-09-15T17:04:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17464v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.17398v1",
+      "title": "Enhancing Accessibility of Medical Texts through Large Language Model-Driven Plain Language Adaptation",
+      "authors": [
+        "Ting-Wei Chang",
+        "Hen-Hsen Huang",
+        "Hsin-Hsi Chen"
+      ],
+      "abstract": "This paper addresses the challenge of making complex healthcare information more accessible through automated Plain Language Adaptation (PLA). PLA aims to simplify technical medical language, bridging a critical gap between the complexity of healthcare texts and patients' reading comprehension. Recent advances in Large Language Models (LLMs), such as GPT and BART, have opened new possibilities for PLA, especially in zero-shot and few-shot learning contexts where task-specific data is limited. In this work, we leverage the capabilities of LLMs such as GPT-4o-mini, Gemini-1.5-pro, and LLaMA for text simplification. Additionally, we incorporate Mixture-of-Agents (MoA) techniques to enhance adaptability and robustness in PLA tasks. Key contributions include a comparative analysis of prompting strategies, finetuning with QLoRA on different LLMs, and the integration of MoA technique. Our findings demonstrate the effectiveness of LLM-driven PLA, showcasing its potential in making healthcare information more comprehensible while preserving essential content.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T16:33:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17398v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.17291v1",
+      "title": "Extracting ontology-compliant knowledge from scientific text describing irradiated materials using large language models",
+      "authors": [
+        "Marco Luca Sbodio",
+        "Marcos Martínez Galindo",
+        "Vanessa Lopez",
+        "Blanca Biel",
+        "Pablo Canca",
+        "Pedro Delgado",
+        "Jesús I. Mendieta-Moreno",
+        "Raphael Tack",
+        "Maria J. Caturla"
+      ],
+      "abstract": "The quest for new materials increasingly relies on predictive models and comprehensive simulations that span scales from atomic to macroscopic levels. However, essential data necessary for these models and simulations are often embedded in scientific literature as unstructured text, limiting reusability and posing challenges for researchers seeking to leverage existing knowledge effectively. While extracting structured data from unstructured text using large language models is gaining popularity, traditional methods typically generate key-value pairs data with straightforward schemas. In contrast, we introduce eolas, a modular pipeline that uses large language models to automatically transform scientific documents into knowledge graphs aligned with a specified ontology. We demonstrate eolas effectiveness in extracting useful information for scientists studying materials designed to endure the extreme temperatures and radiation levels found in fusion reactors. While a human expert might spend between thirty to ninety minutes extracting relevant data from an article, eolas can generate high-quality knowledge graphs in just a few minutes. These are presented in a tabular format with faceted navigation for easy human validation. Additionally, we introduce the first benchmark dataset designed to assess large language models capabilities in constructing knowledge graphs within the domain of irradiated materials. The analysis of 168 experiments using our dataset, various large language models and prompting techniques provides key insights that we summarize into practical guidelines for effectively extracting knowledge graphs aligned with an input ontology.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T15:05:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17291v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.17088v1",
+      "title": "Interactive Memory Learning for Long-Term Conversations",
+      "authors": [
+        "Cai Ke",
+        "Jiangyue Yan",
+        "Han Zhang",
+        "Xin Liu",
+        "Zike Yuan",
+        "Yue Yu",
+        "Hui Wang",
+        "Ruifeng Xu"
+      ],
+      "abstract": "Recent advancements in large language models have significantly enhanced the capabilities of agents in modeling long-term conversations. Despite these successes, existing approaches typically adopt a static heuristic paradigm, where information is passively archived without adaptive memory valuation. Consequently, these methods fail to self-evolve or align their memory management with evolving user needs. To address this, we propose ICML (InteraCtive Memory Learning), a multi-agent framework that transforms the memory mechanism from a passive archive into a learnable, interactive memory policy. Specifically, we first employ a session synthesis pipeline to generate expert data, facilitating rapid test-time adaptation in unseen scenarios. Building on this, ICML utilizes an online reinforcement learning mechanism where a Planner agent selectively encodes high-value information and a Trigger agent dynamically retrieves it to optimize response quality, whereby the two agents co-evolve through continuous interaction feedback. Crucially, both agents are synchronized through a delayed reward mechanism that propagates future feedback back to earlier storage decisions, ensuring memory policies are precisely aligned with user expectations. Experimental results demonstrate that ICML significantly outperforms strong baselines, exhibiting the unique capability to continuously improve response quality as interactions accumulate.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T12:21:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17088v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.16917v1",
+      "title": "Multi-Agent Learning with Cooperation-Driven Optimization Dynamics",
+      "authors": [
+        "Jarod Ketcha Kouakep",
+        "Sreyvi UANN",
+        "Timoteo Carletti"
+      ],
+      "abstract": "Multilayer Artificial Neural Networks trained via backpropagation are the basic blocks of many, more complex, classification algorithms. Their strength lies in the possibility of realizing, with arbitrary precision, any function. This result comes at the cost of the large number of involved parameters to be optimized. In this work, we propose a mechanism for cooperation, i.e., information exchange among several artificial neural networks, with the goal of reducing model complexity while maintaining performance. More precisely, we consider several \"small\" agents, i.e., containing fewer parameters than a reference \"large\" one, that during training share their predictions by incorporating this information into the loss function and thus directly influence weight updates. We consider several strategies for implementing cooperation, e.g., the voter model, majority model, and weighted average model based on an agent's confidence in its prediction. We numerically compare the accuracy of those strategies on several standard benchmarks. Our results support the claim that several small agents can outperform a single large model on a given classification task; the shared signals affect each agent's optimization algorithm by modulating both the descent direction and the step size, converging toward a global consensus. The proposed proof-of-concept significantly reduces the number of parameters to be trained while preserving comparable performance, thereby limiting computational resource usage.",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-15T09:51:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16917v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.16777v1",
+      "title": "Benchmarking Factual Robustness of LLMs via Multi-conversation Persuasion",
+      "authors": [
+        "Zhuoang Cai"
+      ],
+      "abstract": "As Large Language Models (LLMs) increasingly serve as primary knowledge retrieval interfaces, their robustness against \\textit{persuasion attacks}---attempts to inject misinformation or enforce counterfactuals---has become a critical safety concern. Existing red-teaming frameworks typically evaluate models in multi-turn dialogues where the target model retains full conversation history. We identify a critical flaw in this setting termed \\textbf{``Refusal Inertia''}: a model's initial refusal often propagates through subsequent turns largely to maintain contextual consistency, thereby masking its true vulnerability to sophisticated, isolated persuasion attempts. To rigorously evaluate the ``cold-start'' defense capabilities of SOTA models, we introduce the \\textbf{SAST-IR} (Stateful Attacker, Stateless Target - Iterative Refinement) framework. By enforcing a memory wipe on the target while retaining the attacker's history, we simulate a worst-case adversarial setting using \\textbf{multi-turn} (stateless) iterations. Leveraging \\textbf{CP-Agent} (Cognitive Persuasion Agent), an enhanced diagnosis-guided agent, our experiments on the custom \\textsc{CounterFact-Strict} dataset ($N=50$) yield alarming results: simple, diverse attack strategies achieved a staggering \\textbf{96\\%} success rate, exposing severe brittleness in memory-less defense. Furthermore, we reveal a \\textbf{``Complexity Paradox''}: while complex, iteratively refined attacks are effective, they often trigger defensive compliance, whereas simple strategies achieve a higher rate of genuine persuasion (\\textbf{84.7\\%}). Our code and dataset are available at GitHub, https://github.com/cza1006/llm-persuasion-defense.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-15T07:46:01+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16777v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.16724v1",
+      "title": "CorrRisk-WM: Corridor-Conditioned Risk World Modeling for Safety-Critical Trajectory Planning",
+      "authors": [
+        "Tingyu Guo",
+        "Reza Langari"
+      ],
+      "abstract": "Safe local planning requires forecasting surrounding-agent motion and evaluating candidate-specific risks, since identical agent motion can pose different risks to different ego trajectories. We present CorrRisk-WM, a planning-oriented partial world model coupling environment evolution with supervised intrusion and near-miss prediction over bounded candidate-trajectory corridors. A latent environment model recursively predicts agent states and updates agent-agent and agent-map interactions. Each candidate queries the evolving environment through footprint- aware geometry and learned agent-corridor representations. A lightweight recurrent risk module uses temporal context to estimate per-slice hazards; survival aggregation yields first-entry and horizon-level event probabilities. On 29,176 scenarios from 100 Waymo validation shards, CorrRisk-WM achieves intrusion average precision (AP) of 0.8567 and 1-m near-miss first-entry AP of 0.8671. In baseline comparisons, it attains the highest near-miss AP at all three distance thresholds and the lowest observed open-loop collision rate (4.88%), with route progress of 15.35 m. Across three seeds, removing dynamic environment modeling or candidate-conditioned geometric interaction reduces mean intrusion AP from 0.8590 to 0.7624 and 0.7252, respectively. These results support coupling environment evolution with candidate-conditioned geometric reasoning for risk prediction and safety-oriented candidate selection.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-09-15T06:56:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16724v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.16627v1",
+      "title": "Quantifying Organizational Environmental Action from Web Data and Large Language Models",
+      "authors": [
+        "Quinn Reynolds",
+        "Daniel Shore",
+        "Vianey Leos Barajas",
+        "Tanhum Yoreh",
+        "Meredith Franklin"
+      ],
+      "abstract": "Quantifying organizational environmental action from publicly available web content remains a challenging environmental data science problem because relevant information can be dispersed across multiple webpages and is primarily communicated through unstructured text. We present a scalable computational framework for transforming organizational web content into structured measures of environmental action and demonstrate the approach using Jewish congregations in the United States. We constructed a national database of 4,964 congregations by integrating multiple geospatial, knowledge-base, directory, and manually reviewed sources. Of these, 2,657 had active websites that were successfully crawled, producing a corpus of 154,454 webpages. We compared three approaches for detecting environmental actions: keyword retrieval followed by large language model (LLM) classification, semantic vector retrieval followed by LLM classification, and direct LLM classification classification without preliminary retrieval. Agreement with an expert human reviewer was lowest for keyword retrieval ($κ$ = 0.26), higher for semantic vector retrieval ($κ$ = 0.42), and similar for direct LLM classification ($κ$ = 0.40). Although semantic retrieval achieved the highest agreement, its retrieval recall was 0.87, indicating loss of relevant content before classification. Applied to the complete corpus, direct LLM classification identified at least one environmental action at 1,398 congregations (53%), providing greater coverage than either retrieval-based approach. These results demonstrate that preliminary retrieval can reduce computational cost but may exclude relevant information before it reaches the classifier. The framework provides a reproducible approach for extracting organization-level environmental information from unstructured web content that can be adapted to other institutions.",
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.IR"
+      ],
+      "submitted": "2026-09-15T04:43:23+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16627v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.16541v1",
+      "title": "A Cyber Range Evaluation of Autonomous Network Incident Response Agents",
+      "authors": [
+        "Jakob Nyberg",
+        "Teodor Sommestad",
+        "Andrei Buhaiu",
+        "Joakim Loxdal",
+        "Pontus Johnson",
+        "Mathias Ekstedt"
+      ],
+      "abstract": "We test the performance of agents for automated network intrusion response in a cyber range intended for human operator training. The range implements an emulated networking environment with a variable network topology, red-team emulation and simulated user agents. The goal of the defensive agents is to prevent hosts in the network from being accessed by the red-team agent, while minimizing the availability costs induced from defensive measures. Alerts are generated using a SIEM platform and mapped to a data modeling language used by the agents. We test a combination of heuristic agents and policies learned using reinforcement learning. The learned policies are optimized to minimize the combined cost using a cyber attack simulator modeling the network. We found that the reinforcement learning agents were overall more efficient at defending the system than the heuristic policy, and that the performance depends highly on the policy of the adversary in combination with the simulated users.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T02:36:15+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16541v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "2609.16487v1",
+      "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+      "authors": [
+        "Aniruddha Tamhane",
+        "Raghavendra Addanki",
+        "Ayushi Aggarwal",
+        "Aditya Bansal",
+        "Rui Wang",
+        "Charles Menguy",
+        "Swati Jain"
+      ],
+      "abstract": "We present a framework for evaluating data-science agents on live, continuously updated data using executable ground truth and format-agnostic factoid scoring. Consider this example query: \"what were last week's audience sizes\"---the reference answer changes as the underlying data changes, so static references become outdated and standard LLM-as-a-judge pipelines cannot verify responses against a fixed ground truth. Our central contribution, ground-truth-as-code, encodes each expected answer as an executable reference function that recomputes the answer directly from live data at evaluation time, ensuring the reference remains consistent with the system it describes. We combine this with a factoid-level, format-agnostic judge that decomposes both the agent's response and the computed ground truth into atomic claims and scores precision, recall, and accuracy over them, irrespective of the response format (prose, list, table, HTML, etc.). The approach is applicable to agents whose expected outputs can be expressed as executable data computations. We validate the framework through a human--LLM agreement study on an internally developed machine learning skill deployed in production, using a synthetic database constructed to reproduce production schemas and entity relationships. Relative to a natural-language ground-truth baseline, our method achieves a 29% improvement in the Matthews Correlation Coefficient (MCC)---a class-balanced measure of agreement between expert annotators and LLM-as-a-judge predictions---and a 16% reduction in token consumption per test case, while a self-directed baseline lacking explicit ground truth is anti-correlated with human judgment. Agents that perform multi-source data integration and computation over non-stationary data are routinely deployed in industry; we propose ground-truth-as-code as a practical methodology for their evaluation.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "submitted": "2026-09-15T01:20:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.16487v1",
+      "journal_boost": 0,
+      "score": 9
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-11044-y",
+      "title": "Reimagining research papers as interactive and reliable AI agents",
+      "authors": [],
+      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/s41586-026-11044-yPaper2Agent converts research papers into interactive artificial intelligence agents by turning manuscripts, code and data into model context protocol-based tool-invoking systems that reproduce original results, answer new scientific queries and collaborate to generate novel insights.",
+      "submitted": "2026-09-09T23:59:21.782179+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-11044-y",
+      "journal_boost": 5,
+      "score": 9
+    },
+    {
+      "id": "2609.17221v1",
+      "title": "Grounding SWE-Agent Decisions in Architecture-0 Design: Navigating Unknown Unknowns through Physical Mapping",
+      "authors": [
+        "Zhongkai Wang",
+        "Yan Liu"
+      ],
+      "abstract": "Autonomous Software Engineering Agents (SWE-Agents) excel in deterministic coding tasks but struggle with Architecture 0, the nascent system design phase plagued by implicit engineering constraints, or Unknown Unknowns (UUs) that are rarely stated explicitly. To investigate how agents navigate UUs, we explore a progressive trajectory across pure-text self-play, tool-augmented feedback, and external physical mapping. Our empirical analysis reveals a cascading chain of failures. Pure-text reasoning inevitably devolves into polite consensus or plausible yet physically impossible fabrications. Attempting to bridge this gap via an early-stage execution sandbox unexpectedly triggers Specification Gaming: agents exploit their autonomy over validation scripts to bypass physical constraints, achieving superficial success without resolving core architectural flaws. To resolve this self-validation trap, we propose the Physical Mapping Guard (PMG). Grounded in the software engineering principle of Separation of Concerns, PMG revokes verification authority from the agent, forcing semantic intents to be evaluated by an external, deterministic Semantic-to-Physical (S2P) mapping engine. Extensive evaluations demonstrate that PMG completely eradicates physical-layer and validation-layer gaming. By precisely isolating residual failures to semantic reinterpretations and auditor overreach, PMG marks a critical step toward genuine affordance grounding in automated architectural design.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T14:04:33+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17221v1",
+      "journal_boost": 0,
+      "score": 8
+    },
+    {
+      "id": "2609.17128v1",
+      "title": "FirmCORe: A Benchmark for Structured Reasoning about Inter-Firm Collaboration Opportunities",
+      "authors": [
+        "Tian Du",
+        "Tiantong Wu",
+        "Yafei Wang",
+        "Mengyu Liu",
+        "Xingyan Chen",
+        "Mu Wang"
+      ],
+      "abstract": "Comprehensive structured data on inter-firm relationships is often scarce or inaccessible because many relationships are privately negotiated, selectively disclosed, and fragmented across proprietary databases. This scarcity hinders the discovery of collaboration opportunities, particularly for startups and small and medium-sized enterprises. Firm profiles are readily available, but collaboration potential cannot be inferred from business similarity alone, since similar firms may be competitors, whereas dissimilar firms may offer complementary products, technologies, channels, capabilities, or capital. We present FirmCORe (Inter-Firm Collaboration Opportunity Reasoning), a human-annotated benchmark for pairwise reasoning over weakly structured firm profiles, comprising 2,805 labeled firm pairs. Given two firm profiles, a model must determine whether the available evidence supports a collaboration opportunity and, for positive pairs, jointly predict its strength, primary collaboration type, and role direction. FirmCORe also provides parallel Chinese- and English-language evaluation sets containing identical instances and gold labels, enabling controlled analysis of input-language sensitivity. Experiments with representative locally deployed and hosted large language models (LLMs) show that the strongest model achieves a macro-F1 score of 74.51 for opportunity detection but only 61.57% exact match across all four output fields. Language effects vary across models, and high cross-language agreement can mask errors shared across languages. These results indicate that current LLMs are substantially more reliable at detecting broad collaboration opportunities than at identifying their specific types and role directions.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-15T12:54:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.17128v1",
+      "journal_boost": 0,
+      "score": 8
+    }
+  ]
+}
