@@ -1,354 +1,683 @@
 {
   "date": "2026-09-22",
-  "fetched_at": "2026-09-22T00:26:28.692623+00:00",
+  "fetched_at": "2026-09-22T23:55:47.302600+00:00",
   "stats": {
-    "arxiv_count": 0,
+    "arxiv_count": 337,
     "arxiv_error": null,
     "journal_counts": {
       "Nature": 75,
       "Science": 37,
       "Science Advances": 94,
-      "Nature Machine Intelligence": 8,
-      "Nature Computational Science": 8,
+      "Nature Machine Intelligence": 0,
+      "Nature Computational Science": 0,
       "Nature Methods": 8,
       "Nature Materials": 8,
-      "Nature Chemistry": 8,
-      "Nature Chemical Engineering": 0,
+      "Nature Chemistry": 0,
+      "Nature Chemical Engineering": 8,
       "Nature Biomedical Engineering": 0
     },
-    "total_after_dedup": 246,
+    "total_after_dedup": 567,
     "top_n": 30
   },
   "top30": [
     {
-      "id": "https://www.nature.com/articles/d41586-026-02880-z",
-      "title": "Turning scientific research papers into interactive AI agents",
-      "authors": [],
-      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/d41586-026-02880-zScientific knowledge is mostly stored in static papers. An automated framework called Paper2Agent can now transform each paper into an active artificial intelligence agent — a virtual corresponding author that answers questions, applies the paper’s methods to new data, and collaborates with other paper agents. This makes research easier to reproduce, reuse and extend.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02880-z",
-      "journal_boost": 5,
+      "id": "2609.24831v1",
+      "title": "GRUET: Quantifying Uncertainty of Agentic Reasoning-and-Acting Processes",
+      "authors": [
+        "Shuang Liang",
+        "Xin-Yu Hu",
+        "Shao-Qun Zhang"
+      ],
+      "abstract": "Agents have attracted considerably increasing attention due to the power of executing both Reasoning and Acting (ReAct) in open and dynamic environments. The ReAct process typically exhibits a multi-turn trajectory in which one drives Large Language Models (LLMs) to generate both reasoning chains and task-specific actions in an interleaved manner. However, agents often suffer from significant uncertainty, where identical tasks yield divergent trajectories; trajectories with higher uncertainty often produce incomprehensible behaviors, severely undermining agent credibility. This work conjectures that such trajectory-level uncertainty frequently stems from cumulative turn-level reasoning uncertainty induced by LLMs; the latter often exhibits a collection of branches of divergent reasoning chains and their resulting actions. Built upon this, we present the Graph-based Reasoning UncErtainty in Trajectories (GRUET) method for the uncertainty quantification of ReAct, comprising turn-level reasoning uncertainty quantification and trajectory-level uncertainty aggregation; the former precisely quantifies reasoning uncertainty via modeling the reasoning space spanned by potential reasoning branches as a graph and then approximating the reasoning space complexity with graph complexity, while the latter employs simple aggregation strategies for quantifying the overall trajectory credibility. Empirical evaluations across nine LLMs and five benchmarks validate the effectiveness of our proposed GRUET in terms of selective generation performance, measured by AUROC, AUPRC, and AUARC.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T16:15:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24831v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2609.24710v1",
+      "title": "Reasoning Topology Matters: A Controlled Study of LLM-Based Cybersecurity Analysis",
+      "authors": [
+        "Jiling Zhou",
+        "Aisvarya Adeseye",
+        "Antti Hakkala",
+        "Seppo Virtanen",
+        "Jouni Isoaho"
+      ],
+      "abstract": "Large Language Models (LLMs) are increasingly used in cybersecurity, where accurate analysis often requires multi-step and context-dependent reasoning over complex and heterogeneous data. However, existing prompting approaches typically focus on eliciting reasoning without explicitly considering how intermediate reasoning steps are structurally organized. We introduce Security Reasoning Topology, which models reasoning through three representative structures: Linear, Branching, and Graph. To evaluate their effects, we conduct controlled experiments on three cybersecurity datasets covering MITRE ATT&CK network traffic, cyber threat intelligence (CTI), and CVE vulnerability analysis. We evaluate multiple LLMs, including Llama 2 (7B, 13B, 70B), GPT-5.1, and Mistral Large 3, while keeping task inputs consistent and controlling reasoning structure through system-level prompting. Results show that reasoning topology substantially affects performance: Graph reasoning achieves the highest overall accuracy, improving over few-shot prompting by 9.8-12.2 percentage points across datasets, while Branching provides a strong intermediate solution. The results further show that the effect of reasoning topology remains consistent across model families and scales, highlighting reasoning topology as an important design factor for LLM-based cybersecurity analysis.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T14:52:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24710v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2609.24662v1",
+      "title": "DUMA-Bench: A Dual-Control Multi-Agent Benchmark for Evaluating LLM Agent Security",
+      "authors": [
+        "Ivan Aleksandrov",
+        "German Kochnev",
+        "Sabrina Sadiekh",
+        "Yaroslav Rogoza"
+      ],
+      "abstract": "LLM-based agents increasingly operate in environments where they interact with users, tools, and external systems. Yet most security evaluations assume passive users and static control, ignoring the interactive dynamics that shape real agent behavior. We introduce \\textbf{DUMA-Bench}, a benchmark and evaluation protocol for measuring agent security under \\emph{dual-control} interaction, where both the agent and the user can influence the shared environment state. DUMA-Bench extends $τ^2$-bench ~\\cite{barres2025tau} with adversarial environments covering eight vulnerability classes, including RAG poisoning, cross-agent manipulation, and unsafe output handling. We evaluate \\textbf{14 models from five model families} (OpenAI, Anthropic, DeepSeek, Qwen, and Z.ai) across eight domains and multiple user-behavior regimes. Across our experiments, introducing dual-control interaction increases the attack success rate from \\textbf{26.9\\%} to \\textbf{41.1\\%}. These results show that agent security is not solely a property of the model but emerges from the interaction between the model, the user, and the environment. DUMA-Bench provides a missing evaluation layer for studying security in realistic agent deployments.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T14:28:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24662v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2609.24372v1",
+      "title": "URA-NER: A Unified Retrieval-Augmented Framework with Retrieval Alignment and Uncertainty Reduction for Low-Resource NER",
+      "authors": [
+        "Jingyu Wang",
+        "Shijie Wu",
+        "Fusheng Jin"
+      ],
+      "abstract": "In-context learning (ICL) based on large language models (LLMs) has shown promising potential in alleviating performance bottlenecks caused by the limited availability of annotated data in Named Entity Recognition (NER). However, existing methods still face issues of retrieval misalignment and generation uncertainty, making their performance heavily dependent on the LLM's capabilities. As the parameter scale of LLMs decreases, their performance in few-shot settings deteriorates significantly. In this paper, we propose a novel unified retrieval-augmented framework, URA-NER, including three key components: Progressive Granularity Retrieval (PGR), Model-aware Representation Enhancement (MaRE), and Reason-aware Knowledge Verification. PGR is a two-stage retrieval mechanism that achieves stage alignment. It first retrieves demonstrations for span detection based on the query's global semantics, and then for type classification based on the specific entity context, providing fine-grained local information. Moreover, MaRE employs entity pre-recognition to guide the construction of representations, ensuring the query and demonstrations are aligned within the LLM's semantic space and attention pattern. In addition, to mitigate generation uncertainty, we propose RaKV, a closed-loop \"generation-retrieval-verification\" process. It explicates the LLM's reasoning paths, leverages them for the retrieval of external knowledge, and reorganizes the knowledge into verification evidence aligned with the original reasoning paths. We conduct extensive experiments on multiple low-resource NER datasets. Results demonstrate that URA-NER significantly enhances the performance of LLMs under low-resource settings, with particularly pronounced gains for smaller LLMs, achieving new state-of-the-art results on several benchmarks.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T10:04:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24372v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2609.24760v1",
+      "title": "Construting Reverse Thinking: Developing Large Language Models' Reverse Thingking Ability",
+      "authors": [
+        "Xin Liu",
+        "Yunhai Li",
+        "Chunfu Jia",
+        "Ziliang Chen",
+        "Jisen Song"
+      ],
+      "abstract": "When facing complex problems, humans tend to try various ideas for different issues. Human thinking patterns exhibit remarkable flexibility in adapting to diverse scenarios. GPT-o1, GPT-o3, and DeepSeek-R1 adopt long chain-of-thought models to address complex problems by increasing reasoning depth, which default to a forward reasoning mode. We conducted statistical analysis on the accuracy of different mathematical problem datasets on models of different scales, and found five reasons for errors: Insufficient solution-space coverage, Computational mistakes, Unverified assumptions, Ignoring constraint conditions, Maximum response length limitation. To address the above issues, we proposed a backward reasoning pattern construction method aimed at enhancing the model's reverse thinking ability and dynamic adaptability. First, we constructed an easy-hard two-stage Math dataset for training large models and gradually improving their inference ability at different difficulty levels. The dataset contains forward reasoning paths as well as backward reasoning paths. And a two-stage supervised fine-tuning process is applied to progressively train the model's backward reasoning capability. Furthermore, a fine-grained reward mechanism is developed, employing smoothed reward signals to strengthen the model's ability to autonomously select thinking modes during the reasoning process, thereby avoiding reward hacking. A linear-decay balanced sampling strategy is designed to maintain a balance between forward and backward reasoning path samples during training, enabling the model to converge quickly and stably. Experimental results show that our method significantly improves reasoning efficiency and accuracy in tasks such as mathematical proofs, offering a flexible and efficient reasoning paradigm for solving complex problems.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T15:29:46+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24760v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2609.24979v1",
+      "title": "LoRA-generating hypernetworks for efficient on-device LLM generative personalization",
+      "authors": [
+        "Sean Augenstein",
+        "Li Ding",
+        "Jihwan Lee",
+        "Keith Rush",
+        "Andrey Zhmoginov"
+      ],
+      "abstract": "On-device large language models (`LLMs'), e.g. running on mobile phones, are ripe for improvement via personalization. The limited compute resources of mobile devices impose limits on model scale and thus model quality, making any realizable quality gains highly impactful. At the same time, their personal nature (i.e., the close coupling to a particular user) means that a given on-device LLM tends to be used in similar, predictable patterns over the course of time. This paper presents a novel method for personalizing on-device LLMs. It trains a hypernetwork to map a user's context tokens to a low-rank adaptation (`LoRA') well-suited to that user. Once the trained common artifacts are deployed to users' devices, each user uses the hypernetwork to synthesize (entirely on device) a personalized LoRA. This approach blends the benefits while avoiding the drawbacks of two existing approaches to LLM customization: in-context learning (`ICL') and parameter-efficient fine-tuning (`PEFT'). Like ICL (and unlike PEFT), the on-device phase of our approach is computationally feasible, requiring only forward passes through neural networks. Like PEFT (and unlike ICL), our approach modifies the `target' base LLM via weights (the LoRA), avoiding negative consequences (e.g. increased latency) associated with extending the input sequence. Our approach is particularly well-suited to the mobile device regime. Apart from the on-device compute and latency benefits mentioned, it also requires minimal additional storage, as internally its architecture partly leverages the same LLM weights as belong to the target LLM to be personalized. We demonstrate the benefits of LoRA-generating hypernetworks on several representative personalization datasets, comparing against baselines like ICL and PEFT. Of note, our personalization experiments focus on more challenging and less studied long-form text generation tasks.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-09-21T17:55:48+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24979v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2609.23986v1",
+      "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+      "authors": [
+        "Dongming Jiang",
+        "Yi Li",
+        "Bingzhe Li"
+      ],
+      "abstract": "Agentic memory is becoming essential for long-horizon AI agents, yet many existing systems rely on autoregressive LLMs to control how memories are organized, retrieved, and used, placing expensive generation on the critical path of memory operations. We introduce \\textbf{\\method}, a new agentic memory architecture inspired by System-One/System-Two cognition. System One captures fast, lightweight decision-making, whereas System Two performs slower, deliberative reasoning. Jev-Mem brings this division of labor to agentic memory through a dedicated System-One control plane, a structured multi-relational memory plane, and a System-Two reasoning plane. The System-One controller governs memory typing and relational organization during construction, and dynamically performs query routing, retrieval-budget allocation, graph traversal, candidate scoring, and adaptive stopping during retrieval. System Two is invoked only for complex reasoning and answer synthesis. This design improves both memory effectiveness and system efficiency: on LoCoMo Jev-Mem achieves an overall LLM-as-a-Judge score of 0.777, an 11.0\\% relative improvement over the strongest baseline, while reducing memory construction time to 158\\,s, a 6.6$\\times$ speedup over the fastest competing memory system, and lowering average query latency to 0.93\\,s, a 36.7\\% reduction.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-21T01:43:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.23986v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2609.24974v1",
+      "title": "Harness-Zero: Harness Distillation via Agent-as-Harness",
+      "authors": [
+        "Haoran Ye",
+        "Yuxing Lu",
+        "Haonan Dong",
+        "Zhaochen Su",
+        "Guojie Song"
+      ],
+      "abstract": "Agent harnesses, the external systems that mediate model-environment interaction, can substantially improve agent performance, but their gains remain tied to the harness at deployment. Because the best harness varies across domains, instances, and models, a general-purpose agent must either settle for a suboptimal shared harness or route among an ever-growing set of specialized ones. We therefore study agent harness distillation: using a domain- or instance-optimized harness as training-time guidance and transferring the behaviors it induces into model weights, so that its gains survive under a single fixed target harness. The challenge is that the two harnesses differ in action space and available information, so guidance from the optimized harness cannot serve directly as supervision for the target one. We introduce Harness-Zero, which enables harness distillation through agent-as-harness. Guided by the optimized harness, a harnessing agent corrects student responses before execution in the target harness's action space, turning harness guidance into training demonstrations. Fine-tuning on the resulting trajectories internalizes harness-induced behavior into the model, so the specialized harness can be removed at deployment. Our experiments spanning knowledge work, tool use, and science domains show that: (1) For frontier LLMs using the same evolved harness, agent-as-harness outperforms code-as-harness. (2) With the specialized harness removed at deployment, Harness-Zero improves the base model's macro-average task success from 23.3% to 44.3%, even exceeding the 41.7% it reaches with that harness still attached. (3) Harness-Zero recovers harness-induced behaviors absent from the base model, with 82.3% average recovery across 28 patterns in the three domains.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.NE"
+      ],
+      "submitted": "2026-09-21T17:55:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24974v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.24967v1",
+      "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+      "authors": [
+        "Xinrui Shi",
+        "Yanzhe Zhang",
+        "Diyi Yang"
+      ],
+      "abstract": "LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rewards. We introduce realistic constraints that make compliance with the verification protocol incompatible with reward maximization, and find that agents increasingly deviate from the protocol over repeated interactions. Collusion emerges in 94% of trajectories across 10 models, and more capable models within the same family reach it earlier. Controlled peer interventions show that collusion is shaped by peer behavior, while ablations reveal additional effects of reward structure, the verification feedback agents receive, and their interaction history. In particular, restricting the amount and scope of interaction history available to agents reduces collusion. Overall, our findings show that long-horizon interaction can reshape how agents coordinate in ways that create safety risks.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-21T17:52:48+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24967v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.24650v1",
+      "title": "Assessing Readability with LLMs: The Role of Reasoning and Few-Shot Prompting",
+      "authors": [
+        "Raphaël Thieffry",
+        "Matej Martinc"
+      ],
+      "abstract": "Readability assessment is essential for tailoring texts to intended audiences across educational, healthcare, and information retrieval domains. However, traditional readability formulas struggle to generalize across genres and languages, while supervised machine learning models rely on scarce, domain-specific annotated corpora, limiting their applicability--particularly for less-resourced languages. Large Language Models (LLMs) offer a highly scalable, multilingual alternative that requires no task-specific training, yet the impact of advanced prompting strategies on their performance remains underexplored. In this paper, we conduct a systematic benchmark of diverse open-source LLMs for multilingual readability assessment, focusing on the prediction of discrete readability levels required by educational frameworks. In addition to English, we evaluate our approach on a less-resourced language, Slovenian, to establish whether LLMs remain effective in low-resource settings. Specifically, we investigate the influence of explicit reasoning, demonstrating that Chain-of-Thought (CoT) prompting and reasoning-oriented models yield significant improvements over direct answering. Furthermore, our exploration of few-shot in-context learning reveals that providing just one labelled example per category (1-shot) substantially enhances prediction quality compared to zero-shot settings, with additional examples offering diminishing returns. By comprehensively comparing these approaches against traditional unsupervised metrics and state-of-the-art supervised baselines, we establish the viability of out-of-the-box LLMs as robust, cross-lingual readability assessors.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-21T14:22:39+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24650v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.24165v1",
+      "title": "APEXA: Execution-Integrity Enforcement for Multi-Agent LLM Automation of Synchrotron Data Reduction",
+      "authors": [
+        "Pawan K. Tripathi",
+        "Hemant Sharma",
+        "Andrew Chuang",
+        "Mathew J. Cherukara"
+      ],
+      "abstract": "Synchrotron data reduction, detector calibration followed by azimuthal integration of terabyte-scale diffraction series, is a multi-step, expert-bound bottleneck that increasingly limits the science rate of user facilities. LLM agents promise to collapse it, but driving a real pipeline with a stochastic model creates a failure mode chat benchmarks cannot see: an agent can report a calibration that was never computed. Correctness here is a property of what executed, not of the transcript. We present APEXA, a deployed multi-agent framework (61 tools over heterogeneous compute, run as a single reasoning loop) automating calibration and integration from natural language at a major light source. We make three contributions. First, execution-integrity enforcement: a deterministic tool-layer guard that refuses to surface any result not backed by an executed tool call, with a parser tolerant of cross-model tool-call format drift: in deployment, a frontier model fabricated a complete calibration-comparison report for commands that never ran, which the guard converts to an explicit non-result; the same code gates an optional motor-control surface at 0/200 adversarial violations against a simulated IOC, versus 15/200 for an equivalent safety prompt. Second, we release APEXA-Bench, an evaluation harness of 58 facility tasks (50 base plus an 8-task cross-detector slice) organized by a four-class physical-consequence taxonomy, the first benchmark axis we know of separating a wasted compute cycle from a damaged instrument; its cross-detector grading against NIST-traceable lattice constants surfaced two latent pipeline bugs. Large-scale agent scoring is left to a full-length study. Third, we validate APEXA on real beamline data: from one natural-language prompt it recovers detector geometry and integrates a full attenuation/exposure sweep. We release the framework, harness and traces.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T06:33:11+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24165v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2609.24927v1",
+      "title": "Et Tu, Brute? Economic Misalignment in Personal AI Agents",
+      "authors": [
+        "Aman Priyanshu",
+        "Supriti Vijay",
+        "Brian Jabarian",
+        "Niloofar Mireshghallah"
+      ],
+      "abstract": "Personal AI agents make recommendations and take actions on people's behalf in high-stakes economic contexts, e.g., buying a flight, choosing health insurance, or selecting a graduate program. The agent is given access to the user's personal context, e.g., their email inbox and a structured profile of personal attributes, with the intention of making an optimal, personalized decision for the user. We show that by simply providing this personal context, the agent steers recommendations based on inferred wealth, without being explicitly instructed to do so. In a suite of 325K experiments on 13 agents across three types of economic decisions (flights, health insurance, and graduate programs), we find that 8 models systematically choose more expensive options for wealthier users when requests are identical. This steering continues even when it directly goes against the user's stated objective: when explicitly instructed to find the cheapest option, some agents still act on the wealth profile they have inferred. It also occurs when wealth is inferred from ambient data, such as emails unrelated to the task. And it persists under privacy controls that block specific attributes: blocking financial attributes largely removes the disparity, but blocking other attributes leaves it unchanged and can increase it by up to 40% for insurance, as agents rely on the remaining signals to infer wealth. Larger and more capable models are no better; Claude Opus 4.8 shows the largest effect. We term this misalignment \"adversarial delegation\", in which the very conditions that make a personal AI agent useful - access to personal information - enable it to act against the user's interests.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T17:22:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24927v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.24631v1",
+      "title": "From Semantic Decisions to Feasible Trajectories: Self-Evolving LLM-Guided Optimal Control for Narrow-Space Parking",
+      "authors": [
+        "Zhengbao Yao",
+        "Yuanfu Luo",
+        "Kehan Xue"
+      ],
+      "abstract": "Autonomous parking in nonconvex and narrow environments remains challenging. Although optimal-control methods can explicitly enforce vehicle dynamics and collision constraints, nonconvexity compromises solver robustness and can cause failures. Large language models (LLMs) exhibit strong semantic reasoning capabilities, but directly generating dense trajectories makes it difficult to guarantee physical feasibility. We introduce SE-LLM-OCP, a unified framework in which LLMs make high-level discrete maneuver decisions, while an optimal-control module enforces low-level vehicle dynamics and collision constraints. Online, the LLM proposes sparse maneuver plans, decomposing the parking task into a sequence of short-horizon trajectory-optimization problems. A low-level solver then sequentially solves optimal-control problems. If the solver fails, the LLM aggregates failure evidence from the solver and validation stages to guide replanning. Offline, SE-LLM-OCP automatically evolves a structured decision-making knowledge base from scratch, driven by accumulated online failures. We validate our proposed framework in simulation on a car-like vehicle model and on a differential-drive robot. Our experimental results show that SE-LLM-OCP enables safer autonomous parking in narrow scenarios and demonstrates transfer of the same maneuver representation to a different kinematic platform.",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T14:12:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24631v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.24446v1",
+      "title": "ActGov: Governing LLM Agent Actions via Policy-Constrained Validation",
+      "authors": [
+        "Kaiyuan Zhang",
+        "Yuke Peng",
+        "Ke Jiang",
+        "Yinqian Zhang"
+      ],
+      "abstract": "Large language model (LLM) agents increasingly execute long-horizon workflows through external tools, allowing untrusted outputs to influence subsequent actions and exceed user authorization. Existing defenses isolate injected content or constrain execution with predefined plans and static policies, but these approaches are brittle under dynamic workflows and scale poorly across extensible tool ecosystems.\n  In this work, we present ActGov, a runtime enforcement framework that validates each LLM-proposed tool action before it causes external effects. Built on a unified semantic model of authorization, actions, runtime context, and security constraints, the ActGov-Policy component iteratively constructs a policy set from tool specifications, benign tasks, and observed failure traces, with each update verified through SMT-based counterexample checking. At runtime, ActGov-Runtime abstracts each tool call into finite policy records and permits it only if it remains within the task-scoped authorization boundary and satisfies all applicable policies. This per-action enforcement preserves authorization throughout long-horizon, dynamically branching workflows.\n  We evaluate ActGov on the AgentDojo and AgentDyn benchmarks across multiple models and attack configurations. It shows that ActGov consistently reduces the success rate of indirect prompt-injection attacks while preserving task utility, significantly outperforming existing defenses. These results demonstrate that ActGov can enforce fine-grained authorization over dynamic agent executions without relying on the underlying LLM to correctly identify malicious instructions.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T11:47:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24446v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.24146v1",
+      "title": "Mind or Message? Auditing Theory of Mind in Multi-Agent Social Simulation",
+      "authors": [
+        "Cong Li",
+        "Cheng Chen",
+        "Thomas Fung",
+        "Alex Rossi",
+        "Yi Li"
+      ],
+      "abstract": "Language model agents are increasingly used to simulate social interaction, and the resulting transcripts read as though the agents understand one another. We ask whether that appearance rests on a model of the partner's mind or on the surface record of what the partner said. We build a social simulation in which both questions have exact answers: 40 multi-issue negotiations whose hidden preference weights and whose full Pareto frontier are known by construction. Two model families negotiate across 160 dyads, every transcript is frozen before any measurement, and 2880 counterfactual probes then hold the evidence byte identical while moving one factor at a time: the reader's own stake, the partner's tone, an identity label, and the order of recursion. The agents are socially fluent and economically poor. They reach agreement in 96.2% of dyads with 0 protocol failures, yet only 0.7% of deals land on the Pareto frontier, they leave 20.5% of the available joint value unclaimed, and they miss the one issue on which their interests are perfectly aligned in 76.6% of deals; on the frontier and on that aligned issue, a package drawn at random from the set both sides would accept does as well. The probes locate the failure. Swapping only the reader's own payoff sheet, while the partner's words and offers stay identical, moves the inferred top priority by 15.0 percentage points, which is egocentric projection rather than inference, while a tone rewrite moves it by 5.3 percentage points and an identity label by 0.0. Most tellingly, an agent predicts what its partner believes about it 72.5% of the time while that partner's belief is itself correct only 51.2% of the time: the agents track the conversation far better than they track the mind behind it.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-09-21T05:58:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24146v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.24137v1",
+      "title": "Data Agents: Agentic Data Systems",
+      "authors": [
+        "Guoliang Li",
+        "Peiyao Zhou",
+        "Xuanhe Zhou",
+        "Ji Sun",
+        "Yuyu Luo",
+        "Ju Fan"
+      ],
+      "abstract": "Traditional data systems face profound limitations in the AI era, relying on human-crafted pipelines, lacking semantic understanding of heterogeneous data, and operating through rigid, reactive processing. To address these challenges, we propose a new paradigm called the Data Agent, designed to manage, process, and analyze data with minimal human intervention. Data agents autonomously execute a wide range of data-related tasks, transforming traditional data systems by shifting from manual design to autonomous orchestration, from literal manipulation to semantic interpretation, and from reactive to proactive processing. Our Data Agent system includes six components: semantic data organization, semantic operators, agentic pipeline orchestration and optimization, feedback-driven refinement, memory management, and proactive adaptation. Building on this foundation, we also develop two specialized agents: the data analytics agent and the data science agent. Experiments on real benchmarks demonstrate significant performance gains of our data agent over state-of-the-art methods. We identify open challenges to guide future research in building fully autonomous data systems.",
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-21T05:45:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24137v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2609.24362v1",
+      "title": "VLM-in-Sandbox: Visual Workspaces for Agentic Visual Reasoning",
+      "authors": [
+        "Hexiong Yang",
+        "Mingrui Chen",
+        "Jie Cao",
+        "Ran He"
+      ],
+      "abstract": "Sandboxed computer environments support multi-step reasoning with tools, executable programs, and persistent files, yet their extension from language models to vision-language models (VLMs) introduces a distinct state-management problem. Visual reasoning produces intermediate image-valued evidence---crops, masks, overlays, zoomed regions, and analytic renderings---that must remain addressable without accumulating unboundedly in multimodal context. We introduce VLM-in-Sandbox, a training-free framework for agentic multimodal reasoning in controlled computer environments. Its Visual Workspace registers generated artifacts in an image ledger, maintains a bounded active visual context, and lets the model explicitly promote selected evidence for subsequent inspection. This separates visual evidence generation, performed by sandbox tools, from visual evidence management. Across seven benchmarks and four base VLMs, VLM-in-Sandbox achieves the highest sample-weighted average accuracy among Vanilla VLM, Append-only Sandbox, and the proposed method. A compiler-matched $2\\times2$ study on 1,260 examples further separates model-directed visibility from bounded retention: VLM-in-Sandbox reaches 66.27% accuracy with 18.6% fewer total tokens than the automatic, retain-all control. Over all 6,350 submitted GPT-4.1-mini examples, it produces 302 rescues and 142 regressions relative to Original Append-only. A local vLLM study with prefix caching confirms that the smaller request workload also reduces uncached tokens, time to first token, and end-to-end latency. These results identify explicit visual evidence state as a central abstraction for sandboxed VLM agents.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T09:52:48+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24362v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.24346v1",
+      "title": "LADDER: Graph-Guided Diffusion Language Models for Efficient Multi-Hop Reasoning",
+      "authors": [
+        "Senlei Zhang",
+        "Linhao Luo",
+        "Qian-Wen Zhang",
+        "Siyu An",
+        "Junnan Dong",
+        "Shuhao Zhang",
+        "Xing Sun"
+      ],
+      "abstract": "Graph Retrieval-Augmented Generation (GraphRAG) has remarkably enhanced large language models on complex reasoning by leveraging structured entity topologies. However, existing frameworks heavily rely on standard autoregressive language models where the nature of inherent sequential generation severely hinders overall inference efficiency. Inspired by Diffusion Language Models (DLMs) that offer massive parallelism via continuous refine-in-parallel decoding, we aim to accelerate GraphRAG in the discrete space. However, it remains non-trivial for two challenges. First, partially denoised drafts are highly dynamic and uncertain, making dynamic graph grounding non-trivial. Second, raw denoising states are inherently noisy and unstable, making synchronous graph retrieval and multi-hop aggregation computationally prohibitive. To this end, we present LADDER, a novel framework that bridges diffusion language modeling with GraphRAG through graph-guided parallel decoding. Specifically, (i) we propose an event-driven self-clocking retrieval, inspired by our key insight that 88% of target entities emerge early in the partially denoised state, leading final commitment by an average of 5.7-9.6 steps. This mechanism dynamically triggers graph retrieval only when the set of graph-linkable entities expands, yielding an asynchronous self-clocking policy that bypasses learned gates or heuristic thresholds. (ii) An incomplete-query graph propagation module is designed to process the newly emerging entity queries using a specialized graph foundation model, continuously aggregating multi-hop evidence to sharpen parallel predictions and accelerate overall decoding convergence. Extensive experiments on three challenging multi-hop QA benchmarks show that LADDER raises average exact match from 39.6% to 45.2% while achieving a 4.1x latency reduction.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T09:41:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24346v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2609.24972v1",
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "authors": [
+        "Peng Xia",
+        "Rujun Han",
+        "Zifeng Wang",
+        "Yanfei Chen",
+        "Yufan Zhang",
+        "Yoonho Lee",
+        "Chengsong Huang",
+        "Han Yu",
+        "Zhongying CuiZhu",
+        "Yifei Ming",
+        "Huaxiu Yao",
+        "Burak Gokturk",
+        "Tomas Pfister",
+        "Chen-Yu Lee"
+      ],
+      "abstract": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-09-21T17:54:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24972v1",
+      "journal_boost": 0,
       "score": 10
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-11044-y",
-      "title": "Reimagining research papers as interactive and reliable AI agents",
-      "authors": [],
-      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/s41586-026-11044-yPaper2Agent converts research papers into interactive artificial intelligence agents by turning manuscripts, code and data into model context protocol-based tool-invoking systems that reproduce original results, answer new scientific queries and collaborate to generate novel insights.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11044-y",
-      "journal_boost": 5,
+      "id": "2609.24911v1",
+      "title": "SocioVerse2: A Longitudinal Dynamic Social Simulation Framework under a Human-AI Co-evolutionary Paradigm",
+      "authors": [
+        "Xinnong Zhang",
+        "Jiayu Lin",
+        "Jia Wang",
+        "Yixu Huang",
+        "Xinyi Mou",
+        "Yingqian Wu",
+        "Jingcong Liang",
+        "Shijun Lei",
+        "Jianing Shi",
+        "Guanying Li",
+        "Siyuan Wang",
+        "Hanjia Lyu",
+        "Zhenfei Yin",
+        "Yunlu Yin",
+        "Siming Chen",
+        "Yulan He",
+        "Jiebo Luo",
+        "Xuanjing Huang",
+        "Liyin Jin",
+        "Baohua Zhou",
+        "Hanqi Yan",
+        "Zhongyu Wei"
+      ],
+      "abstract": "Social simulation offers the social sciences an experimental instrument that the real world cannot supply, and generative agents have transformed it by acting as silicon samples that unite agent-based modeling with real behavioral data. Existing platforms verify collective behavior, align simulated populations with real societies in cross-sections, and employ autonomous agents for the research process. However, two social science requirements remain without systematic support: intervention in the content of a simulation and the researcher's control over the process that produces it. We present SocioVerse2, which extends SocioVerse 1.0 into a human-AI co-evolutionary paradigm built from two loops and one infrastructure. The longitudinal simulation loop simulates the target population with evolving environments and forks counterfactual branches via interventions. The controllable research loop takes the study itself as an editable state and updates state versions via controllable editing. The social science agentic infrastructure carries both loops through composable skills with researcher checkpoints, a population service over five persona pools, and an environment service over 21 real-world signal sources with point-in-time guarantees. We validate SocioVerse2 across three case families and seven case studies, from reproducing canonical agent-based models to modeling policy processes on real records and nowcasting macro-economic indices beyond the response model's knowledge cutoff. With the human-AI co-evolutionary paradigm, these cases go beyond system demonstrations to become substantive studies that investigate frontier questions in their respective disciplines. Code, data services, and a workbench are released as open-source resources.",
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "submitted": "2026-09-21T17:14:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24911v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.24862v1",
+      "title": "When Tomorrow Becomes Today: Self-Evolving Policies for Agentic Time-Series Forecasting",
+      "authors": [
+        "Yifan Hu",
+        "Xilin Dai",
+        "Zhiyuan Qu",
+        "Yiding Liu",
+        "Zewei Dong",
+        "Jiang-ming Yang",
+        "Qiang Xu"
+      ],
+      "abstract": "Agentic time series forecasting concerns systems whose underlying mechanisms evolve, making the relative effectiveness of numerical models, reasoning strategies, and intervention rules inherently time-varying. Consequently, a time series agent must adapt the forecasts it produces and the orchestration policy that determines which components to trust and how to coordinate them. The deployment process naturally provides supervision for this adaptation as forecast horizons elapse and realized targets reveal the effectiveness of earlier decisions. Committing all numerical expert forecasts and candidate agent paths before target observation allows each realized outcome to evaluate the entire alternative set, providing delayed feedback without additional annotation. However, existing time series agents primarily incorporate prior experience through forecast refinement, reflection, or retrieval, without systematically converting realized outcomes into persistent updates to the joint orchestration policy governing later origins. To exploit this delayed feedback systematically, we introduce TimEvolve, a frozen-backbone time series agent that converts each realized outcome into persistent joint updates of expert trust, agent path selection, and intervention strength. A temporally ordered predict, reveal, and update protocol applies this feedback to subsequent forecasts. Experiments across eight Time-MMD domains show that TimEvolve achieves the best average MSE and MAE ranks among fifteen methods and the lowest errors on both metrics in seven domains. These results demonstrate the value of learning forecasting policies from the futures encountered during deployment.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T16:33:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24862v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.24515v1",
+      "title": "Beyond Predictable Paths: Redefining AI Security Incident Reporting for Agents",
+      "authors": [
+        "Anastasia Pustozerova",
+        "Eugene Bagdasarian",
+        "Luca Beurer-Kellner",
+        "Battista Biggio",
+        "Nico Ebert",
+        "David Filip",
+        "Marc Fischer",
+        "Heather Frase",
+        "David Hofer",
+        "Juliane Hoffmann",
+        "Daphne Ippolito",
+        "Somesh Jha",
+        "Sean McGregor",
+        "Esfandiar Mohammadi",
+        "Luca Nannini",
+        "Cristina Nita-Rotaru",
+        "Alina Oprea",
+        "Kevin Paeth",
+        "Andrew Paverd",
+        "Jonathan Petit",
+        "Andreas Rauber",
+        "Christian Riess",
+        "John Sotiropoulos",
+        "Andreas Wespi",
+        "Kathrin Grosse"
+      ],
+      "abstract": "AI agents are being deployed rapidly, accompanied by a growing number of AI-specific attacks and corresponding incidents. As incident reporting becomes increasingly important for legal compliance, governance, accountability, and security; current frameworks must be adapted to the unique characteristics of AI agents. In this paper, two editorial authors compare AI systems and AI agents and, drawing on input from 23 experts in academia and industry, identify the information required for reporting incidents where the security of AI agents is harmed. %involving AI agents. Potential reporting elements include, for example, agent memory and memory accesses, actual and potential levels of autonomy, and tool usage. Based on these findings, we identify several open research questions, including how to efficiently record incidents and how to determine whether vulnerabilities and incidents generalize. Expert feedback also highlighted potential reporting weaknesses, such as risks of data leakage and attacks targeting the reporting infrastructure itself, creating additional research needs. Lastly, we summarize privacy requirements and outline research directions for the secure and trustworthy deployment of AI agents.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T12:53:51+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24515v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.24480v1",
+      "title": "Fathom-Vaidya: Advancing Medical Reasoning with Rubric-Based Rewards",
+      "authors": [
+        "Kalash Shah",
+        "Kunal Singh",
+        "Snehan J",
+        "Shreyas Singh"
+      ],
+      "abstract": "Deploying Large Language Models (LLMs) in healthcare requires robust performance across two complementary dimensions - diagnostic reasoning: the convergent, evidence-driven task of inferring a patient's condition from clinical data to produce a diagnosis, and clinical healthcare reasoning: the broader, navigational judgment required to communicate, plan, and adapt across multi-turn clinical interactions where a single correct answer may not exist. Recent benchmarks such as HealthBench and MedXpertQA reveal persistent weaknesses in both areas, exposing failures in complex diagnostic scenarios and limitations in contextual, patient-centered dialogue. We introduce a sequential training framework that targets these facets using synthetic data and rubric-based reinforcement learning. First, we improve diagnostic reasoning using MedBullets-derived questions with rule- and rubric-guided Reinforcement Learning (RL). We then shift to clinical reasoning by generating 5.3k synthetic multi-turn scenarios, each paired with multi-dimensional rubrics to comprehensively assess the response. This approach yields over 10% improvement on MedXpertQA, and our 30B model achieves 50.1% accuracy on HealthBench-Hard, surpassing proprietary baselines including GPT-5 (thinking). Our results show that targeted synthetic datasets and rubric-based training can systematically improve both diagnostic and interactive clinical reasoning in medical LLMs.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-21T12:19:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24480v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.24352v1",
+      "title": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs",
+      "authors": [
+        "Kohsei Matsutani",
+        "Gouki Minegishi",
+        "Core Francisco Park",
+        "Takeshi Kojima",
+        "Yusuke Iwasawa",
+        "Yutaka Matsuo"
+      ],
+      "abstract": "Large language models (LLMs), when acting as agents, are expected to take observed data in context, infer the latent state space underlying the world, and leverage it for downstream prediction. However, prior work demonstrated that LLMs struggle to use representations learned in context on a graph tracking task, where the model needs to construct a representation of the graph governing data generation process and use it for subsequent predictions. In this paper, we show that extending this to few-shot settings, where each demonstration is generated from a different world with either the same or different graph topologies, enhances its prediction on 6 models from 4 model families. To understand this improvement, we linearly probe a low-dimensional world representation that encodes graph information in the hidden states. Notably, we find that few-shot demonstrations relocate the world representation and increase its predictive use. Specifically, for each model, these world representations shift in directions nearly orthogonal to their original subspace, and interventions on these representations selectively impair performance more than interventions on other subspaces. Consistent with this insight, we show that few-shot demonstrations with observations from different worlds improve performance on ARC-AGI-1&2, web agent tasks, and Othello. Our findings elucidate the role and internal mechanisms of few-shot demonstrations in in-context world modeling. More broadly, our work advances our understanding of how LLM agents learn from in-context observations and provides implications for their further improvement.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T09:44:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24352v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.24145v1",
+      "title": "MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation",
+      "authors": [
+        "Lucky Kant Nayak",
+        "Narayanan Palghat Parameswaran",
+        "Neehar Peri",
+        "Deva Ramanan"
+      ],
+      "abstract": "We present MimicAgent, a prompt-to-trajectory generation framework for learning dynamic quadruped skills. Although reward shaping is extensively used when training quadruped policies, navigating the resulting reward landscape is notoriously difficult, requiring hours of \"graduate student descent\". Eureka attempts to automate reward design with LLMs, but we find that it struggles to generalize across diverse skills and morphologies. Our key observation is that it is far easier for a human - and by association, an LLM - to generate reference motions than to shape reward functions. Our hypothesis is motivated by the success of example-guided RL for humanoids, which exploits large-scale motion capture datasets as references for training locomotion policies. Unlike humanoids, quadrupeds lack such reference motion data. Towards this end, we propose MimicAgent, an agentic harness that, given a skill prompt, generates quadruped reference trajectories with coding agents. These coarse reference trajectories are then used to train example-guided RL policies that are deployable in simulation and in the real-world. Notably, we find that when prompting Claude Fable 5.1 within our agentic harness, 87% of prompts yield semantically aligned reference trajectories.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-09-21T05:56:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24145v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.23954v1",
+      "title": "Djinnlang: Higher-Level Programming by Unambiguous Specification with an LLM in the Compiler",
+      "authors": [
+        "Simon Henniger",
+        "Stephen Chong",
+        "Nada Amin"
+      ],
+      "abstract": "Programmers write formal specifications, and LLMs implement them, proving that each implementation matches its spec. Taken to its extreme, this makes specification languages the new programming languages. We argue that an unambiguity constraint is key: in addition to proving that its implementation satisfies the specification, the LLM must also prove that any other implementation satisfying it must produce the same outputs on the same inputs, i.e. that the relation formed by the constraints is deterministic. This leaves the LLM no leeway on program semantics: as with a conventional compiler, the generated code never needs to be read and can be regenerated from the spec at any time. Under this constraint and with a powerful LLM, the difference between a specification language and a programming language becomes essentially meaningless, and the LLM essentially becomes a part of the compiler toolchain. The arrangement doubles as a strong form of AI control: an untrusted model writes the code, yet its work is tightly checked by a verifier.\n  To demonstrate that our LLM-in-the-compiler paradigm is feasible when supported by our unambiguity constraint, we present Djinnlang, a high-level specification language built for this future. A Djinnlang program consists only of specifications --- the programmer never writes executable code. In place of a traditional compiler, a symbolic translator lowers each spec to Dafny stubs and proof obligations, and a driver harness orchestrates an LLM that fills in implementations and proofs, all checked by the Dafny verifier. We evaluate our language and implementation on multiple examples and we show that it is self-hosting: an LLM can implement the Djinnlang translator from its specification and the reimplementation can verify itself.",
+      "categories": [
+        "cs.PL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "submitted": "2026-09-21T00:00:09+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.23954v1",
+      "journal_boost": 0,
+      "score": 10
+    },
+    {
+      "id": "2609.24983v1",
+      "title": "onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction",
+      "authors": [
+        "Lei Yang",
+        "Mengyin Liu",
+        "Jia Wang",
+        "Hangyu Guo",
+        "Liang Zhao",
+        "Zheng Ge",
+        "Kang An",
+        "Binxing Jiao",
+        "Qi Han",
+        "Daxin Jiang",
+        "Siqi Shen",
+        "Xiangyu Zhang"
+      ],
+      "abstract": "We present onPanda, an interactive tool for efficiently annotating LLM alignment data and agent trajectories. onPanda adopts token-level correction as its core interaction: while reading a model response, the annotator locates the first inappropriate token and either picks a substitute from the model's candidate tokens or types the correct text via free-form editing. The system then truncates everything after that position and continues generation from the corrected prefix, repeating this locate-correct-continue loop until a satisfactory response is obtained. This mechanism lets annotators precisely steer model outputs at low cost: a small controlled study suggests that onPanda reduces median annotation time by 52% over manual post-editing. Since the vast majority of tokens in the final response are generated by the model itself, the resulting data largely preserves the model's sampling distribution and is well suited for constructing on-policy SFT and preference data. Furthermore, the token-level corrections recorded during annotation provide fine-grained supervision with precise positions and naturally paired positive--negative samples. onPanda also connects to external tools and harnesses, enabling interactive trajectory annotation in realistic environments. In addition, we release Panda-CVL, a dataset annotated with onPanda, together with a benchmark for token-level correction.",
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "submitted": "2026-09-21T17:56:53+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24983v1",
+      "journal_boost": 0,
       "score": 9
     },
     {
-      "id": "https://www.nature.com/articles/s41586-026-10985-8",
-      "title": "Overmassive black holes and little red dots naturally form in simulations",
-      "authors": [],
-      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/s41586-026-10985-8Observations from the JWST reveal an unexpectedly abundant population of little red dots and overmassive black holes in the early Universe, which are confirmed by their formation in fully cosmological radiation-hydrodynamic simulations.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-10985-8",
-      "journal_boost": 5,
-      "score": 8
+      "id": "2609.24838v1",
+      "title": "MedRSI: Recursive Self-Improvement for Medical Agents via Clinically Aligned Self-Evolution",
+      "authors": [
+        "Junde Wu",
+        "Jiayuan Zhu",
+        "Minghao Hu",
+        "Fenglin Liu",
+        "Jiazhen Pan"
+      ],
+      "abstract": "Medical agents increasingly combine general reasoning models with specialized clinical tools, yet their capabilities remain largely fixed by what clinicians and engineers design before deployment. Recursive self-improvement (RSI) offers a different paradigm in which agents learn from their own failures and autonomously expand their capabilities, but directly applying RSI to medicine introduces fundamental safety challenges. We introduce MedRSI, the first recursive self-improvement framework for medicine, which continuously transforms diagnostic failures into new clinical capabilities through tool composition and task-specific model training. Inspired by clinical practice, MedRSI introduces two mechanisms for clinically aligned self-evolution. Clinical-cost-aware failure prioritization directs improvement toward errors according to their potential clinical consequences rather than frequency alone. Fast discovery with slow registration separates rapid capability invention from conservative adoption, allowing new tools to enter the persistent agent only after demonstrating sustained benefit across subsequent patient cohorts. Across public glaucoma and heart disease benchmarks and two private clinical tasks, MedRSI progressively develops segmentation, measurement, prediction, multimodal reasoning, and generative capabilities, surpasses manually engineered medical agents, and autonomously discovers solutions to clinical problems not anticipated by its original designers. Our results show that medical agents need not remain constrained by capabilities specified before deployment: with clinically grounded mechanisms governing what to improve and what to retain, they can continuously construct, validate, and accumulate new capabilities from diagnostic experience. Code is available at https://github.com/ImprintLab/MedRSI.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-09-21T16:19:33+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24838v1",
+      "journal_boost": 0,
+      "score": 9
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02899-2",
-      "title": "AI tool turns any paper into an ‘agent’ that can collaborate and answer complex queries",
-      "authors": [],
-      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/d41586-026-02899-2The Paper2Agent system makes it easier for researchers to reproduce papers and understand work in unfamiliar fields, authors say.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02899-2",
-      "journal_boost": 5,
-      "score": 8
+      "id": "2609.24511v1",
+      "title": "InsertAnything: Generalizable Contact-Rich Precision Insertion from Simulation to Reality",
+      "authors": [
+        "Zhenghua Ma",
+        "Xinpan Meng",
+        "Zeyu Liu",
+        "Muyuan Ma",
+        "Hengdi Zhang",
+        "Houcheng Li",
+        "Long Cheng"
+      ],
+      "abstract": "Contact-rich precision insertion is a key manipulation skill in robotic assembly. Tight clearances make insertion more sensitive to alignment errors and prone to collisions and jamming, while variations in geometry and clearance across parts further complicate policy reuse. We present a reinforcement learning framework that trains insertion policies entirely in simulation for direct deployment without real-world demonstrations or policy fine-tuning. By combining target poses with compact three-dimensional fingertip force feedback, the policy learns to search for alignment and correct its motion despite errors in the estimated hole position. A decoupled gated reward coordinates alignment and insertion. Force-signal smoothing and state-independent standard deviations stabilize the learning process. The resulting policies perform real-world insertion across multiple hole geometries with a minimum nominal clearance of 0.02 mm and improve success while reducing peak contact forces under hole-position errors. Cross-clearance and cross-geometry evaluations further confirm policy generalization. The system achieved the first perfect score of 20/20 on ManipulationNet's peg-in-hole benchmark under its Human-in-the-Loop protocol, with fully autonomous insertion motions. A single policy trained only on a simulated hexagonal insertion task achieved an overall success rate of 95.0% across eight unseen real-world insertion tasks. These results show that learning entirely in simulation can yield precision insertion skills that can be deployed directly and reused across real-world tasks. The project website (https://mzhsoul.github.io/InsertAnything/) provides open-source simulation and real-robot experiment scripts, assets, and trained checkpoints.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-09-21T12:51:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24511v1",
+      "journal_boost": 0,
+      "score": 9
     },
     {
-      "id": "https://www.nature.com/articles/d41586-026-02994-4",
-      "title": "Daily briefing: How to turn a paper into an AI agent",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02994-4A new tool is designed to help researchers interact with published papers. Plus, promising news for an RNA-based treatment for ALS and how psychoactive drugs might have shaped pre-Incan culture.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02994-4",
-      "journal_boost": 5,
-      "score": 7
-    },
-    {
-      "id": "10.1126/science.aed7991",
-      "title": "Geopolitical tensions with the US accelerate Chinese firms’ leveraging of science",
-      "authors": [],
-      "abstract": "Science, Volume 393, Issue 6817, Page 1196-1199, September 2026.",
-      "submitted": "2026-09-15T00:26:27.355769+00:00",
-      "source": "Science",
-      "link": "https://www.science.org/doi/abs/10.1126/science.aed7991?af=R",
-      "journal_boost": 5,
-      "score": 7
-    },
-    {
-      "id": "https://www.nature.com/articles/s42256-026-01298-6",
-      "title": "A collaborative agent with two lightweight synergistic models for autonomous crystal materials research",
-      "authors": [],
-      "abstract": "Nature Machine Intelligence, Published online: 10 September 2026; doi:10.1038/s42256-026-01298-6Shi et al. demonstrate a dual architecture approach for materials research, integrating two lightweight large language models for collaborative reasoning and scientific tool execution. The method achieves competitive performance while remaining affordable and locally deployable.",
-      "submitted": "2026-09-15T00:26:28.151912+00:00",
-      "source": "Nature Machine Intelligence",
-      "link": "https://www.nature.com/articles/s42256-026-01298-6",
-      "journal_boost": 3,
-      "score": 7
-    },
-    {
-      "id": "https://www.nature.com/articles/s42256-026-01302-z",
-      "title": "Steering machine reasoning with brain signals",
-      "authors": [],
-      "abstract": "Nature Machine Intelligence, Published online: 01 September 2026; doi:10.1038/s42256-026-01302-zRepresentational alignment can reveal similarities between human brain activity and language models. Work now demonstrates that it can also guide learning, improving the reliability of artificial reasoning.",
-      "submitted": "2026-09-15T00:26:28.151912+00:00",
-      "source": "Nature Machine Intelligence",
-      "link": "https://www.nature.com/articles/s42256-026-01302-z",
-      "journal_boost": 3,
-      "score": 7
-    },
-    {
-      "id": "https://www.nature.com/articles/s43588-026-01060-3",
-      "title": "Large language models as human proxies",
-      "authors": [],
-      "abstract": "Nature Computational Science, Published online: 18 September 2026; doi:10.1038/s43588-026-01060-3Large language models can potentially serve as human proxies across various roles, enabling nuanced simulations of behavior. This Review categorizes their applications, stressing distinct evaluation methods and validity criteria essential for accurate scientific claims and practical implementations.",
-      "submitted": "2026-09-15T00:26:28.221636+00:00",
-      "source": "Nature Computational Science",
-      "link": "https://www.nature.com/articles/s43588-026-01060-3",
-      "journal_boost": 3,
-      "score": 7
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02913-7",
-      "title": "How fast are you ageing? Ask AI",
-      "authors": [],
-      "abstract": "Nature, Published online: 17 September 2026; doi:10.1038/d41586-026-02913-7A new system will help scientists to refine large language models for longevity research and clarify ‘biological’ age.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02913-7",
-      "journal_boost": 5,
-      "score": 6
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02954-y",
-      "title": "How a team of AIs discovered a promising lung-cancer drug",
-      "authors": [],
-      "abstract": "Nature, Published online: 17 September 2026; doi:10.1038/d41586-026-02954-yResearchers developed a ‘virtual biotech’ made up of as many as 37,000 agents reporting to a ‘chief scientist’.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02954-y",
-      "journal_boost": 5,
-      "score": 6
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02648-5",
-      "title": "Nearly one in seven young, male white voters in the US support white nationalism",
-      "authors": [],
-      "abstract": "Nature, Published online: 16 September 2026; doi:10.1038/d41586-026-02648-5Three national surveys reveal how factors such as gender, age, political alignment and income are correlated with support for white nationalism in the United States.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02648-5",
-      "journal_boost": 5,
-      "score": 6
-    },
-    {
-      "id": "https://www.nature.com/articles/s42256-026-01300-1",
-      "title": "Implicit-bias-like patterns in reasoning models",
-      "authors": [],
-      "abstract": "Nature Machine Intelligence, Published online: 01 September 2026; doi:10.1038/s42256-026-01300-1Lee and Lai study bias-like processing differences in large language reasoning models and find that, for most models, processing stereotypical information takes less computational effort than processing counter-stereotypical information.",
-      "submitted": "2026-09-15T00:26:28.151912+00:00",
-      "source": "Nature Machine Intelligence",
-      "link": "https://www.nature.com/articles/s42256-026-01300-1",
-      "journal_boost": 3,
-      "score": 6
-    },
-    {
-      "id": "https://www.nature.com/articles/s41586-026-11160-9",
-      "title": "Chemist-aligned retrosynthesis by ensembling diverse inductive bias models",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/s41586-026-11160-9Chemist-aligned retrosynthesis by ensembling diverse inductive bias models",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11160-9",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02932-4",
-      "title": "Six principles for supporting academic freedom in universities",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02932-4Many academics are concerned about threats to independent enquiry in higher education. Here’s how it can be protected while taking legitimate concerns into account.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02932-4",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02928-0",
-      "title": "Losing your way of life to climate change matters — and we need a way to measure it",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02928-0Climate losses extend beyond property and income. Policymakers need ways to assess what people value, experience and ultimately stand to lose.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02928-0",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02987-3",
-      "title": "Edible batteries power medical devices in the body",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02987-3The tiny power sources, tested in pigs, dissolve inside the digestive tract after several months.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02987-3",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02890-x",
-      "title": "China punishes prominent academics exposed by research sleuth",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02890-xSeveral scientists investigated for research-integrity violations by video-blogger ‘Student Geng’ have now faced disciplinary measures. The penalties are part of a misconduct crackdown on 31 research teams.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02890-x",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02931-5",
-      "title": "AI co-scientists are revolutionizing how research is done",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02931-5Artificial-intelligence systems can generate hypotheses, design experiments and analyse data — but humans still need to decide what makes sense.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02931-5",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02441-4",
-      "title": "How do I change labs gracefully during my PhD?",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02441-4A scientist in training seeks help in finding a new adviser without damaging existing working relationships.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02441-4",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02981-9",
-      "title": "'Epigenetic' editing is here: gene-tagging technique banishes hepatitis B virus",
-      "authors": [],
-      "abstract": "Nature, Published online: 21 September 2026; doi:10.1038/d41586-026-02981-9Technique uses chemical tags to shut down viral DNA lurking in host’s genome.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02981-9",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02897-4",
-      "title": "Cognitive resilience helps to predict Alzheimer’s dementia",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02897-4The trait could explain why symptoms vary in severity between people with similar brain pathology.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02897-4",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02984-6",
-      "title": "Briefing Chat: Evidence mounts for hidden chambers beyond Tutankhamun's tomb",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02984-6Nature staff discuss data that could point to Nefertiti’s burial place — plus, the implant that translates brain activity into speech and gestures.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02984-6",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02919-1",
-      "title": "Europe pushes for space independence amid geopolitical rifts",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02919-1The European Union is easing its reliance on US space infrastructure — and is seeking to grow its satellite and launch operations.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02919-1",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02184-2",
-      "title": "How research funding took me out of the lab and into leadership",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02184-2Landing two large grants caused Anna Sandak to take on a managerial role in her team and made her reflect on what it means to contribute to research.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02184-2",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02945-z",
-      "title": "First for RNA therapy: man with rare motor-neuron disease improves after treatment",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02945-zGene-targeting treatments could be used to treat other people with rare forms of amyotrophic lateral sclerosis (ALS).",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02945-z",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02943-1",
-      "title": "How to make a brain: new experiments challenge existing picture",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02943-1Research also uncovers an efficient way to grow hindbrain cells from stem cells — a difficult feat.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02943-1",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02922-6",
-      "title": "AI cracked the Navier–Stokes challenge. What does that mean for physics?",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02922-6Physicists and mathematicians are going beyond the classic equations of fluid dynamics to understand turbulence — often with the help of AI.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02922-6",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/d41586-026-02946-y",
-      "title": "Chinese companies doubled down on science after US tech restrictions",
-      "authors": [],
-      "abstract": "Nature, Published online: 18 September 2026; doi:10.1038/d41586-026-02946-yAffected Chinese companies adjusted their sources of knowledge to stay competitive.",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/d41586-026-02946-y",
-      "journal_boost": 5,
-      "score": 5
-    },
-    {
-      "id": "https://www.nature.com/articles/s41586-026-11134-x",
-      "title": "Author Correction: Genomic deletion of malic enzyme 2 confers collateral lethality in pancreatic cancer",
-      "authors": [],
-      "abstract": "Nature, Published online: 17 September 2026; doi:10.1038/s41586-026-11134-xAuthor Correction: Genomic deletion of malic enzyme 2 confers collateral lethality in pancreatic cancer",
-      "submitted": "2026-09-15T00:26:27.154254+00:00",
-      "source": "Nature",
-      "link": "https://www.nature.com/articles/s41586-026-11134-x",
-      "journal_boost": 5,
-      "score": 5
+      "id": "2609.24196v1",
+      "title": "LoopCD: Loop-wise Contrastive Decoding for Improving Reasoning in Looped Language Models",
+      "authors": [
+        "Byeongho Yu",
+        "Junhyuk So",
+        "Eunhyeok Park"
+      ],
+      "abstract": "Looped Language Models (LoopLMs) perform \"latent reasoning\" by recursively refining internal latent representations with shared weights, offering a more effective alternative to explicit verbal reasoning. Despite their effectiveness, we find that LoopLMs remain prone to loop instability: unstable refinement across iterations can produce localized uncertain \"hard\" tokens associated with reasoning errors. To address this, we propose LoopCD, loop-wise contrastive decoding that enhances the reasoning performance of LoopLMs by intervening on these tokens at inference time. Specifically, we exploit the internal dynamics of LoopLMs and contrast the logits from earlier iterations with logits from the last refined iteration to form the final sampling distribution. We find that this strategy is highly efficient, introducing only negligible inference overhead and requiring no additional training, while effectively improving reasoning performance by naturally refining reasoning-critical hard tokens. Extensive experiments show that our method improves the performance of recent representative LoopLMs across various reasoning tasks.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-09-21T07:10:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2609.24196v1",
+      "journal_boost": 0,
+      "score": 9
     }
   ]
 }
