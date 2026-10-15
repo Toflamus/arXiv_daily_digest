@@ -1,0 +1,662 @@
+{
+  "date": "2026-10-15",
+  "fetched_at": "2026-10-15T00:12:58.359138+00:00",
+  "stats": {
+    "arxiv_count": 500,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 36,
+      "Science Advances": 46,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 0,
+      "Nature Materials": 0,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 8,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 697,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2610.18861v1",
+      "title": "Hybrid Reasoning Agents",
+      "authors": [
+        "Jiaru Zou",
+        "Yunzhe Qi",
+        "Sirui Chen",
+        "Federico Bianchi",
+        "Shang Zhu",
+        "Pan Lu",
+        "Jingrui He",
+        "James Zou"
+      ],
+      "abstract": "How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning offers an efficient internal medium but lacks native tool access and reasoning transparency. We bridge these two directions with Hybrid Reasoning Agents (HybridAgents), which dynamically navigate between latent reasoning and text-based interaction throughout a unified generation process. Architecturally, a lightweight HybridLink enables seamless transitions between text and latent modes, while the agent's continuous working memory preserves lossless hybrid context across multiple turns. These designs preserve tool-integrated agentic capabilities while making latent thoughts directly inspectable. Building on this architecture, we further develop dedicated post-training algorithms for hybrid reasoning: HybridSFT stabilizes tool-integrated hybrid generation by teaching the backbone to coordinate with HybridLink, then HybridRL scales reasoning by learning when to think in latent space and when to act through text. We evaluate HybridAgent at 3 model scales across 11 benchmarks covering mathematics, science, medicine, search, and agentic reasoning. Compared with frontier LLM Agents and agentic frameworks spanning both text-based and latent methods, HybridAgent consistently improves performance by 10.4%, while delivering 35.5%-54.7% token reduction, 1.8x-2.6x faster inference, and 2.7x-3.7x cost savings. Code and data are available at https://github.com/togethercomputer/HybridAgent.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-13T17:59:31+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18861v1",
+      "journal_boost": 0,
+      "score": 25
+    },
+    {
+      "id": "2610.17953v1",
+      "title": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
+      "authors": [
+        "Guanting Dong",
+        "Xinyu Yang",
+        "Jiajie Jin",
+        "Yuyang Hu",
+        "Xiaoshuai Song",
+        "Yifei Chen",
+        "Xiaoxi Li",
+        "Jiejun Tan",
+        "Yutao Zhu",
+        "Tat-Seng Chua",
+        "Ji-Rong Wen",
+        "Zhicheng Dou"
+      ],
+      "abstract": "Large language models have evolved from single-turn chatbots into interactive agents capable of long-horizon reasoning. In real deployments, MCP tool services can return noisy feedback and users may intervene to correct the agent, but existing methods provide limited supervision for reflection learning and failure recovery. To bridge this gap, we propose Agent-Reflex, a general training framework for incentivizing proactive reflection in agents. Specifically, Agent-Reflex comprises three stages. First, Environment Reflection Skill Discovery (RSD) injects grounded tool-feedback perturbations into environment scaling, samples a capability-diverse LLM pool, mines matched success-failure pairs, and summarizes reusable reflection meta-skills. Building on this skill library, we then apply Reflective Supervised Fine-Tuning (ReSFT) that converts each skill into supervision for self-reflection, skill recovery, and user-centric correction, strengthening complementary reflective behaviors. Finally, we propose On-Policy Reflective Policy Optimization (ORPO) to combine agentic reinforcement learning under noisy interactions with reflection-guided on-policy distillation to further elicit proactive reflection. Built on Qwen3-8B, Agent-Reflex reaches 58.6 overall on five long-horizon tool-use benchmarks and 29.1 on AgentNoiseBench, surpassing strong environment-scaling and reflection baselines. Experiments on six challenging agent benchmark suites demonstrate the effectiveness of Agent-Reflex. Further analyses show that Agent-Reflex improves agents' robustness to noise while maintaining stable training dynamics, supporting scalable agent training. Our code is available at https://github.com/RUC-NLPIR/Agent-Reflex.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T08:36:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.17953v1",
+      "journal_boost": 0,
+      "score": 22
+    },
+    {
+      "id": "2610.18457v1",
+      "title": "Kairos: Transactional Security Enforcement at the System Boundary for LLM Agents",
+      "authors": [
+        "Kristoffer Hempel",
+        "Nils Loose",
+        "Lorenzo Cavallaro",
+        "Thomas Eisenbarth"
+      ],
+      "abstract": "Large language model (LLM) agents are becoming an integral part of the software development lifecycle, and the capabilities granted to them allow an agent to act with the user's authority on any resource it can access. The reach that gives an agent its utility is equally available to an attacker who can steer it. Anything an agent ingests can carry an injected instruction, and since the model does not reliably distinguish instructions from data, indirect prompt injection should be mitigated by mediating the effects the agent produces. Such mediation faces a structural difficulty. Legitimate work and the first step of an attack often look alike when an individual action is observed, and what separates them lies later in the trace, so a monitor limited to allow and deny is forced to decide before the evidence accumulates. We present Kairos, a reference monitor at the isolation boundary of an unmodified, opaque agent, where a tool call, a shell command, and a script the agent writes all cross the boundary as the same file and network operations, so that confinement holds regardless of the agent's behavior. A declarative policy that states which sources are trusted decides most effects deterministically and defers the rest, which are held while the agent continues speculatively. A decision oracle with bounded authority, such as a language model or a human, releases or refuses each deferred effect on the trace. Across three benchmarks and three agent models, Kairos outperforms existing defenses in the trade-off between attack success and utility. In particular, on AgentDojo, it reduces attack success from 47.0\\% to 2.7\\% while its benign utility stays at the level of the undefended agent.",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-13T14:24:26+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18457v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2610.18240v1",
+      "title": "Beyond Answer Sharing: TrueMAD for Targeted Peer Engagement in Multi-Agent Debate",
+      "authors": [
+        "Dezheng Bao",
+        "Sihang Du",
+        "Renhong Huang",
+        "Zhizhang Yuan",
+        "Yifei Sun",
+        "Yang Yang"
+      ],
+      "abstract": "Multi-agent debate (MAD) aims to improve large language model reasoning by exposing agents to alternative solutions and enabling iterative revision. However, standard broadcast-style MAD makes peer answers visible without requiring agents to engage with a particular peer claim. As a result, reliable reasoning may be suppressed by conflicting or majority responses, limiting achievable performance, while erroneous reasoning may persist and degrade final predictions without actionable feedback. We propose TrueMAD, a backbone-agnostic test-time plug-in that introduces one-to-one, free-form peer advice between answer broadcasting and self-revision. Each source agent responds to a target's current reasoning through support, rebuttal, refinement, or further questions, while the target retains control over how to revise. The same mechanism can augment standard MAD and its improved variants without parameter updates. Across AIME, GPQA-Diamond, and TruthfulQA with Qwen3-30B-A3B, TrueMAD improves agent-level and strict-majority accuracy over MAD by 3.62 and 3.52 percentage points on average, while TrueDMAD improves DMAD by 4.72 and 4.06 points, respectively. Analyses at the utterance, agent-transition, and group levels further show more peer-specific deliberation, more correction-oriented revisions, and more favorable consensus dynamics.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T12:08:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18240v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2610.18230v1",
+      "title": "Holding Agents Accountable with Verifiable Agent Insurance",
+      "authors": [
+        "Cheng Hua",
+        "Taro Tsuchiya",
+        "Nicolas Christin",
+        "Giulia Fanti"
+      ],
+      "abstract": "While AI agents are useful for many tasks, they regularly misbehave in destructive ways, such as deleting important data. While prior work has focused on preventing such misbehavior, we consider how to recover after an agent misbehaves. We propose verifiable agent insurance (VAI), a framework for agent providers to commit financially to promises, a list of programmatically-specified policies that an agent is meant to follow. These promises are embedded in a smart contract on an immutable ledger (e.g., a blockchain) to prevent tampering, along with a monetary escrow. A user who detects a violation of committed promises can prompt a verifier to review agent execution traces, which are logged through the agent harness's shared tool-execution path, without instrumenting each tool separately. Upon verification of the violation, the agent provider's escrow funds are paid to the reporting user. We instantiate VAI as an end-to-end implementation on an Ethereum layer-2 network, and evaluate its coverage on three prominent agent benchmarks, two of which we re-annotated to obtain task-level policy-compliance labels. Currently, many agents do not emit user authorizations and security-relevant information as explicit, structured data objects -- rather, they embed the data needed to verify policy violations in natural language exchanges. Even so, VAI manages to detect violations in 42.2% of runs containing violations across three benchmarks. By augmenting agents to explicitly emit such objects, violation detection rises to 83.0% of traces. Our findings suggest that for improved auditability, agents should be co-designed with their security policies to emit explicit, structured records of user authorization and security-relevant actions.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T12:01:11+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18230v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2610.18614v1",
+      "title": "Can an Agent Learn to Predict Its Own Failure? Outcome-Grounded Confidence Calibration in LLM Agents",
+      "authors": [
+        "Ashutosh Hathidara"
+      ],
+      "abstract": "Controlling an acting LLM agent means deciding, at each step of a long-horizon task, whether to trust its next action, abstain, or hand off to a human. That decision needs a per-step confidence signal predicting whether the current rollout will eventually succeed. The agent's own self-reported verbalized confidence is the natural candidate, but existing reinforcement learning methods calibrate it against the correctness of a decision at the current step. We propose a method to calibrate it against the eventual outcome of a multi-step episode: under GRPO, the group of rollouts for a task supplies success labels, and a proper scoring rule scores each step's confidence against the realized outcome. In offline RL on recorded trajectories of a Qwen2.5-7B agent in ALFWorld, TextWorld, and WebShop environments, the AUROC of step confidence against episode outcome rises from near chance to 0.68-0.85, and the top-10% of steps the agent is most confident about succeed ~4.3x more often than average. In online RL on the live ALFWorld agent, four calibration rewards improve early-step AUROC, expected calibration error goes from 0.42 to below 0.12, and selective execution improves over both the untrained agent and a format-only RL control, without degrading task success. We also introduce an evaluation protocol that separates episode depth, task difficulty, and attempt-level foresight, which shows where the gain lies: the trained agent recognizes from its first step which tasks it will fail, while telling a succeeding attempt from a failing one at the same task is harder, with some early-window signal emerging on TextWorld.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-13T16:00:01+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18614v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2610.18504v1",
+      "title": "How Low Can You Go: Fine-Tuning LLMs with Bayesian Optimization (LlMBO)",
+      "authors": [
+        "Aditya Kulkarni",
+        "Davide Sartor",
+        "Carlos Soto",
+        "Nathan Wycoff"
+      ],
+      "abstract": "Recently, Morris et al. introduced TinyLoRA, a strategy for LLM fine-tuning which introduces arbitrarily few parameters, and demonstrated accuracy improvements using less than $10$ parameters rather than the ${\\gtrsim 10,000}$ typically demanded by LoRA-based methods. However, that study continued to use gradient-based local search methods of the kind deployed for training multi-billion parameter LLMs in the first place. This article is predicated on the observation that, in the low dimensional setting, global optimization methods become tractable, unlocking Large language Model Bayesian Optimization (LlMBO). LlMBO is sample-efficient, gradient-free, memory-light, parallelizes across devices without synchronization, and, unlike policy-gradient methods, can optimize greedy-decoding accuracy directly. We describe numerical experiments comparing LlMBO against GRPO on fine-tuning tasks for a variety of models on a math benchmark suite which show that LlMBO can be a suitable alternative in this regime, matching or exceeding GRPO's fine tuning gains, while using a fraction of the compute and memory.",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "submitted": "2026-10-13T14:58:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18504v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2610.18052v1",
+      "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
+      "authors": [
+        "Bofan Xie",
+        "Chaokun Wang",
+        "Guanchen Ge",
+        "Songyao Wang",
+        "Fang Niu",
+        "Hang Zhang",
+        "Wei Wang"
+      ],
+      "abstract": "Long-term memory has become a core component of large language model (LLM) agents. As agents accumulate personal information over long-term use, users increasingly ask them to delete sensitive or outdated facts. A memory system should honor such requests. It should remove exactly what was requested and keep the rest of its memory intact. However, existing memory benchmarks evaluate only memory writing, retrieval, and organization, so whether agents can forget at the user's explicit request remains under-evaluated. To address this gap, we propose Bemula, the first benchmark dedicated to memory unlearning. It comprises 50 multi-session dialogue instances, 135 forget requests of six types, and 1,742 test questions. Each dialogue has a control version without the requests, so that only systems that have stored the target can earn credit for forgetting. Across the paired versions, five test suites measure storage, removal of the requested information, preservation of unrelated memories, relearning of similar facts, and resistance to extraction attacks. On Bemula, we evaluate six mainstream memory systems under three backbone LLMs, together with the Full Context LLM on two of them. The results are negative. Across all evaluated systems and backbones, no system passes more than 1.5% of forget requests end to end, and most pass none at all. These systems either leave the requested information extractable under simple attacks or delete far more than requested. Memory unlearning therefore remains an open challenge for agent memory design. We release our data and code at https://github.com/Nboxff/bemula-benchmark.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T09:41:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18052v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2610.18874v1",
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "authors": [
+        "Bingxin Xu",
+        "Wenrui Bao",
+        "Xinxin Liu",
+        "Jiawei Zhou",
+        "Yuzhang Shang",
+        "Emilio Ferrara"
+      ],
+      "abstract": "Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) tools under the guidance of a memory and thereby generalizes to new tasks without retraining. This generality comes at a steep price in efficiency. Every primitive requires a round of LLM reasoning over the full interaction history, so the cost of an episode grows with the number of primitives. We find this reasoning largely redundant: once a sub-goal is chosen, its primitives follow a routine already prescribed by memory. We present ChunkAct, which introduces action chunking to agentic robotics. Online, a single call launches a chunk of chained primitives, which executes autonomously and returns control only upon failure. Offline, ChunkAct compiles the memory into these chunks, so execution is memory-free at test time and the planner is reserved for decisions that require reasoning. LLM computation therefore scales with the number of decisions rather than the number of primitives. On LIBERO-Pro, ChunkAct improves task success by 5.0 points over the state of the art in agentic robotics while requiring 2.9x fewer LLM calls, 4.4x fewer input tokens, and 2.3x fewer output tokens.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "submitted": "2026-10-13T17:59:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18874v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.18611v1",
+      "title": "Legal-R1: Agentic Retrieval for Evidence-Based Legal Reasoning",
+      "authors": [
+        "Huaiwen Pang",
+        "Jiale Han",
+        "Junying Chen",
+        "Wenjun Xiao",
+        "Benyou Wang"
+      ],
+      "abstract": "Legal question answering requires answers that are not only plausible, but also grounded in legally valid and citable evidence. Standard retrieval-augmented generation often relies on one-shot semantic matching, which is insufficient when legal evidence must be selected according to authority, applicability, and diversity across heterogeneous sources. We introduce Legal-R1, an agentic retrieval framework for evidence-based legal reasoning. Legal-R1 decomposes legal reasoning into a multi-agent workflow, where a Lawyer agent learns when to retrieve, which legal source to query, what evidence to seek, and when the collected evidence is sufficient. A Legal Assistant agent retrieves from normative legal sources and precedent cases with authority-aware and diversity-aware selection, while a Judge agent generates the final answer from the complete evidence trajectory. We post-train only the Lawyer agent with masked supervised fine-tuning and trajectory-aware reinforcement learning. Experiments on multiple Chinese legal benchmarks show that Legal-R1 improves over general-purpose, legal-specific, and retrieval-augmented baselines.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T15:59:11+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18611v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.18515v1",
+      "title": "A Global View of How LLMs Value Human Time",
+      "authors": [
+        "Yifan He",
+        "Sofie Goethals",
+        "Manon Reusens",
+        "David Martens"
+      ],
+      "abstract": "Large language models (LLMs) increasingly act as personal assistants; however, little is known about how they capture national-level preferences on a global scale. Given that \"time\" is a universal and representative concept, we examine LLMs' time preferences by varying only users' country and measuring the compensation LLMs deem appropriate for a 60-minute appointment delay. We then compare LLMs' responses with GDP per capita on Purchasing Power Parity (GDP_PPP), Mean Income, and a literature-based index (Patience Score). Our results across 193 countries and 5 LLMs demonstrate that people's time across the world is evaluated in noticeably different ways among LLMs, as well as varying levels of robustness under prompt variations. LLMs consistently recommend the highest compensation for Europe, but mostly the lowest for Africa. Based on GDP_PPP, LLMs underestimate the value of time for users living in Asia and South America. These findings indicate that geographical patterns are embedded in LLMs and may translate in different treatment in agentic settings.",
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T15:08:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18515v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.18069v1",
+      "title": "From Agents to Edges: Paired Optimization for Multi-Agent Collaboration",
+      "authors": [
+        "Feng Lin",
+        "Xiaotian Yu",
+        "Yifan Yang",
+        "Aijun Li"
+      ],
+      "abstract": "Strong individual agents do not guarantee effective collaboration. Communication must align what one agent conveys with how another interprets and uses it. This dependency makes the communication edge a natural unit of optimization. We introduce Paired Automated Communication Optimization (PACO), which jointly optimizes the instructions at both ends of each edge and their shared communication convention in systems built on black-box language models. PACO keeps model weights, agent roles, and workflow topology fixed. A state-aware discounted bandit selects edges for refinement, while execution feedback guides paired revisions evaluated through staged end-to-end execution. The optimized instructions integrate into existing agent prompts without additional model calls at deployment. On a four-agent workflow evaluated across diverse multi-agent benchmarks, PACO consistently outperforms leading prompt-optimization and communication baselines. Configurations learned on HotpotQA retain their advantage in cross-dataset transfer without target-specific optimization. These results demonstrate that optimizing how agents communicate can substantially improve collaboration within an otherwise fixed system.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T09:53:49+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18069v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.17893v1",
+      "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
+      "authors": [
+        "Keru Chen",
+        "Sen Lin",
+        "Yingbin Liang",
+        "Nathaniel D. Bastian",
+        "Shaofeng Zou"
+      ],
+      "abstract": "Effective collaboration among large language model (LLM) agents in multi-agent systems requires sharing relevant evidence, requesting missing information, and incorporating teammates' contributions into decisions. Training these behaviors is challenging because final task outcomes provide limited feedback on the value of individual messages. We introduce CoSIR (Collaboration via Surprisal-based Information Rewards), a post-training approach that uses a simple, verifiable environment to teach collaboration behaviors that generalize to more complex, unseen tasks. We propose a Bayesian evaluator that scores shared information by its reduction in team surprisal, defined as the sum of the negative log probabilities assigned to the correct option given each agent's available evidence. Requests are scored by the potential reduction in the same quantity if the requested information were truthfully provided. Separate rewards encourage agents to use the received information in their private choices and calculations. We post-train Qwen3-4B, Qwen3-8B, and Gemma-3-4B-it through self-play and evaluate transfer to seven unseen natural-language collaboration tasks. CoSIR achieves the highest aggregate score, while its performance in general tasks remains competitive. Behavioral analyses show increased disclosure of private evidence and fewer judged failures to use teammates' input.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-13T07:46:48+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.17893v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.17723v1",
+      "title": "Upstream Influence, Downstream Re-Anchoring in LLM Agent Chains",
+      "authors": [
+        "Chun-Yu Hsu",
+        "Lun-Wei Ku",
+        "Chung-Chi Chen"
+      ],
+      "abstract": "People act on evaluative judgments produced by LLM agents, and in multi-agent systems those judgments pass through several agents before reaching a person. We show that a workflow's information architecture---source access, handoff format, and which model reads the untrusted content---governs how much of a coordinated manipulation reaches the end. On 32 Taiwan~2025 recall cases, ten authentic Threads comments shown to one agent move its stance by $+0.171$ toward the injected position, and a mirrored set moves it the other way. Passing that judgment down a chain removes more than half of the shift by the third agent; keeping the comments in front of every agent sustains more of it. The reduction is not attrition in transit: each receiver discounts the inherited stance in proportion to how far it sits from its own reading of the evidence, returning to what that evidence implies for the case rather than to neutrality---consistent with partial re-anchoring. Handoff format is a second lever: a stance relayed without its reasoning is largely discounted. Susceptibility at the exposed seat varies fourfold across models, while the chain's arrangement does not matter at all. None of this is visible in the transcripts---the injected claims are almost never restated, so reasoning-trace audits miss the attack.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T04:57:25+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.17723v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.18780v1",
+      "title": "BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems",
+      "authors": [
+        "Xiaoguang Guo",
+        "Yaohao Long",
+        "Chuxu Zhang"
+      ],
+      "abstract": "Large language model multi-agent systems extend individual agents' capabilities through collaboration across specialized roles, tools, and workflows. Yet collaboration makes failures harder to diagnose: one agent may misinterpret a correct result while others carry the mistake forward. Failure attribution therefore seeks to identify the responsible agent and decisive error step. Recent methods trace dependencies, but knowing where information came from is not the same as knowing where it went wrong. We introduce BLADE (Blame Localization via Audited Dependency Evidence), a training-free framework that moves beyond tracing information to auditing its use. Using Jev for structured probabilistic judgments, BLADE uses dependency probabilities to select relevant source-decision handoffs for auditing. At these handoffs, it examines whether receiving decisions use their sources faithfully and within task requirements, distinguishing error introduction, propagation, and repair. These findings inform a global diagnosis that considers all execution steps. Without reference answers, BLADE achieves the best or tied-best step accuracy among eight strategies under a shared Jev decision interface on 1,228 failed runs across five Who&When and Who&When Pro subsets, outperforming All-at-once by 2.2-11.1 percentage points. Making responsibility evidence explicit offers a path toward more interpretable and reliable agentic systems.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T17:34:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18780v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.18606v1",
+      "title": "Beyond Answer Voting: Fine-Grained Correction of LLM Reasoning through Graph Alignment across Sampled Traces",
+      "authors": [
+        "Haotian Liu",
+        "Yingjian Chen",
+        "Xiaohang Xu",
+        "Lang Huang",
+        "Yusuke Iwasawa",
+        "Yutaka Matsuo",
+        "Irene Li"
+      ],
+      "abstract": "Large language models increasingly tackle tasks that require multi-step reasoning, where errors in intermediate claims can affect the final answer. Self-consistency (SC) improves reasoning by voting over sampled final answers, but its vote leaves intermediate disagreements unresolved. To address this problem, we introduce DDRG (Disagreement-Driven Verification Guided by Reasoning Graphs), a framework for selective correction from a frozen bank of reasoning traces. Our insight is that graph alignment can expose claim-level disagreements and provide correction evidence without expanding the sampled trace bank. DDRG builds source-grounded claim graphs and sends localized conflicts to an answer-blind verifier. A verifier-supported refutation that reaches the majority answer's supporting path triggers one focused repair; otherwise, DDRG returns the exact SC vote. Experimental results across five benchmarks show that native zero-shot DDRG improves macro-average accuracy over direct answering by 8.65 and 15.83 percentage points for Qwen2.5-7B and Llama3.1-8B. It also exceeds CoT, the evaluated GoT and GoV question-answering adaptations, and SC on this macro metric. DDRG links local verification to selective correction without enlarging the initial candidate bank.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T15:58:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18606v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.18415v1",
+      "title": "Do Factuality Methods Make LLMs More Factual? Reproducibility and Fair Comparison",
+      "authors": [
+        "Pratuat Amatya",
+        "Vinay Setty",
+        "V Venktesh",
+        "Avishek Anand"
+      ],
+      "abstract": "Large Language Models (LLMs) are aligned to human preferences, after pre-training and supervised fine-tuning steps. However, standard RL alignment steps such as RLHF do not focus on factuality of LLMs, hence they may generate non-factual information, which could result in unintended consequences. In response, a number of factuality alignment approaches have been proposed in the literature which claim to improve factuality of LLMs on their own benchmarks. However, these methods have not been reproduced independently and are also not comparable since each uses a different base model, training data, evaluation set, judge, and metric. In this paper, we present the first independent reproduction of five factuality alignment methods, which span on-policy RL (PPO, GRPO, and Dr.~GRPO) and offline preference optimization (DPO and KTO), and compare them on a common benchmark with common evaluation metrics. We found that none of these methods reproduces in full, and on the common benchmark none of the methods significantly outperforms the base model. On closer inspection, the rewards optimize for format, length, or brevity rather than factuality and relevance, whereas the choice between on-policy and offline training matters little. Furthermore, the evaluation metrics and benchmarks are also part of the problem since they do not measure relevance of text to the prompt. Since there is no ground truth associated with the prompts, the reliance on LLM judges and retrieval for verification also makes the evaluation fragile. We release our code, data, and checkpoints.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T13:54:51+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18415v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.18304v1",
+      "title": "Efficient Safety Guardrails through Latent Dual-Hypothesis Reasoning with On-Demand Trace Reconstruction",
+      "authors": [
+        "Md Asiful Islam",
+        "Fahmida Alam",
+        "Mihai Surdeanu"
+      ],
+      "abstract": "Guardrail approaches that rely on reasoning-based large language models (LLM) improve safety decisions, but come with substantial inference overhead due to the explicit reasoning. We introduce LR-Guard (Latent Reasoning Guardrail), an efficient and explainable guardrail that jointly learns structured latent reasoning and on-demand reasoning reconstruction. Our method distills a frozen teacher's analysis of safe and unsafe prompt interpretations and their comparison into compact latent representations. Joint training optimizes these representations for both safety prediction and reconstruction of the teacher's explicit reasoning traces, enabling human-readable explanations without requiring intermediate text generation for every decision. Experiments show that LR-Guard outperforms its explicit-reasoning teacher in most in-domain and out-of-domain settings on safety classification and explanation extraction, while achieving a 19.4x inference speedup at batch size one. Further, reconstructed reasoning traces from the latent information exhibit high semantic similarity to the teacher's explicit reasoning.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T12:49:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18304v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.17869v1",
+      "title": "ECMR: Evidence-Aware Deliberation Control for Multi-Agent LLM Reasoning",
+      "authors": [
+        "Yuan Liu",
+        "Haoyue Peng",
+        "Fanliang Hu",
+        "Lei Huang",
+        "Wenli Cai"
+      ],
+      "abstract": "Multi-agent Large Language Model (LLM) systems typically commit to a deliberation protocol before inference. A fixed protocol cannot allocate computation differently to resolved and unresolved instances, and it may mistake repeated support for independent confirmation. We study this failure as semantic false consensus: a confident group answer supported by narrow, duplicated, or correlated rationales. We introduce ECMR, an evidence-aware controller over frozen role-conditioned LLMs. At each step, ECMR summarizes answer concentration, support diversity and independence, contradictions, role behavior, verification history, and remaining budget, then selects whether to propose, challenge, verify, arbitrate, diversify, correct a role, or stop. We formulate this decision as finite-horizon budgeted control and derive sufficient conditions under which state conditioning, risk-triggered verification, and role correction improve cost-adjusted utility. Across a declared held-out evaluation of 9,000 records from MedQA, CaseHOLD, and FinQA, ECMR-Full increases pooled accuracy from 62.1% to 84.9%, reduces false-consensus rate from 40.7% to 17.0%, and raises evidence-support rate from 58.0% to 88.7%. State shuffling loses 11.7 accuracy points with only 0.7 fewer rounds, while harder traces shift from early stopping toward arbitration. ECMR-Full uses the largest token budget, yielding the strongest absolute reliability rather than uniformly superior token efficiency.",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-10-13T07:30:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.17869v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.17757v1",
+      "title": "Instructions Are Evidence, Not Objectives: Measuring Outcome Alignment of Agents",
+      "authors": [
+        "Kaiming Liu",
+        "Yuxuan Liu",
+        "Jinrui Ju",
+        "Minyuan Ruan",
+        "Xuanyu Lei",
+        "Peng Li",
+        "Yang Liu"
+      ],
+      "abstract": "Large language model agents can follow complex human instructions to solve real-world tasks. In practice, however, initial instructions are often incomplete. In our analysis of 100 user-agent trajectories from SWE-chat, 56\\% of initial instructions omit requirements that later emerge as necessary, and 52\\% of the useful follow-up requirements could have been inferred from the project. A user states requirements from their own understanding of the task, and these \\textbf{stated requirements} often differ from the \\textbf{true requirements} that completing the task imposes. An agent should therefore treat the instruction as evidence rather than as the objective, inferring the true requirements from the instruction and the environment and satisfying them even when the user is not yet aware of all of them. We call this ability \\textbf{outcome alignment}. In this work, we construct \\textbf{TiGanEval}, a benchmark of software engineering and research tasks. In every task the user genuinely lacks part of the requirements, each requirement stays discoverable from the code and runtime behaviour of the environment, and requirements the agent infers are separated from those the user adds after observing delivered work. These properties together make outcome alignment measurable. Evaluating eight frontier models including GPT-5.6-Sol, we find outcome alignment broadly missing: the models lose 53 to 67 points of success rate when moving from the full specification to the partial instruction, and consequence feedback across four submissions does not close the gap. Furthermore, a plan-mode harness cannot compensate for the missing ability of the model itself, which places outcome alignment among the abilities the next generation of models should be developed for.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "submitted": "2026-10-13T05:39:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.17757v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.18792v1",
+      "title": "SEAR: Self-Evolving Agentic Robotics",
+      "authors": [
+        "Xinyi Wang",
+        "Bangzheng Li",
+        "Hanyu Wang",
+        "Lin Zhang",
+        "Andrea Yaoyun Cui",
+        "Zhenggang Tang",
+        "Shyamal Buch",
+        "Dejia Xu"
+      ],
+      "abstract": "Frontier language-model agents can now improve robots on their own: they write control code, test it, and keep what works as skills and memories for the next task. We introduce SEAR (Self-Evolving Agentic Robotics), a framework and benchmark built around two questions. Is the agent really learning, or just trying more often? And does what it learns still help on new tasks, in a new simulator, and on a real robot? The framework runs an agent in three modes: it writes code that becomes the policy (code-as-policy), acts live in the control loop (agent-as-policy), or works as a researcher that fine-tunes a vision-language-action model (auto-research). The benchmark adds controls that separate retained experience from repeated attempts, familiar tasks, privileged simulator state, larger budgets, and luck. Across seven frontier language models, 330 simulated and five physical tasks, and over four years of agent runtime, we highlight three findings. First, the learning curve of a robotic agent depends both on the overall time budget and the task difficulty relative to model capability. Harder tasks make longer sessions worthwhile; on easier tasks, re-rolling short attempts does just as well. Second, control code and shared routines transfer across tasks and simulators, while task-specific solutions do not. On a real robot, we observe a performance gap between agent-designed practice and novel human-designed scenes. Third, different models evolve more effectively in different ways. Some do best acting live, others writing code first. And a text-only model keeps pace with a comparable multimodal one: perception helps with error assessment, but agentic reasoning and tool use can matter more. We release the benchmark and codebase to support future research.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T17:40:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18792v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.18572v1",
+      "title": "LLM Agents for Automated Post-Training via Structured Recipe Optimization",
+      "authors": [
+        "Ruohong Liu",
+        "Bohan Tang",
+        "Lekang Jiang",
+        "Jack Umenberger",
+        "Yiwen Guo"
+      ],
+      "abstract": "Automated post-training transforms pre-trained large language models (LLMs) into models capable of handling diverse domains by automatically constructing and optimizing a recipe of coupled decisions over data sources, data processing, cross-domain composition, and training configuration under a limited experimental budget. Existing automation either searches predefined recipe spaces that enable systematic optimization but remain fixed rather than adapting their available choices to the target tasks, or uses open-ended agents that discover task-specific choices but leave them implicit in trial-level edits, limiting their systematic reuse and recombination across trials. To fill this gap, we introduce optimization over a task-adapted recipe space, a novel paradigm that can adapt the recipe space itself to the target tasks while representing its choices explicitly for systematic reuse, recombination, and joint optimization. We instantiate this paradigm with Structured Recipe Optimization (SRO), comprising an LLM-based Recipe-Space Designer that constructs the task-adapted recipe space and a Multi-Domain Recipe Optimizer that uses structured trial evidence to guide LLM candidate construction and multi-objective Bayesian trial selection. Extensive experiments show that SRO achieves the highest average score in all evaluated target-model and agent-LLM combinations. In joint post-training across three capability domains and six benchmarks, SRO reaches 41.1 versus 15.4 for the strongest baseline on Qwen3-1.7B with GPT-5.4, and 53.8 versus 40.8 on Qwen3-4B with DeepSeek-V4-Flash. Our code is available at https://github.com/RuohLiuq/SRO.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-13T15:39:34+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18572v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.18449v1",
+      "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+      "authors": [
+        "Yibo Wen",
+        "Han Liu"
+      ],
+      "abstract": "AI agents for autonomous scientific discovery must decide which experiments to run under a limited budget. Most benchmarks for science agents provide fixed datasets, while others that support active experimentation largely rely on simulation. We introduce Autonomous Science Bench, an initial release comprising six budgeted design-build-test-learn campaigns grounded in published experiments across biology, chemistry, and materials science. Agents select batches of designs, receive measurements from a lab service, and use the results to guide subsequent experiments before delivering a predictive model. Success requires passing two calibrated gates: a discovery gate, which evaluates the designs the agent measured, and a learning gate, which evaluates its model's ranking of held-out designs. In a pilot evaluation of eight agent-model configurations and 144 trials, the best configuration succeeds in 67% of trials, while the hardest campaign is solved in only three of 24 attempts. The two gates reveal different weaknesses: some agents build accurate rankings but find too few promising designs, while others find promising designs but fail to predict which unseen designs will perform well. These differences are obscured by overall success rates alone. We release version 0.1 of the campaigns, lab runtime, and public leaderboard at https://yibow.me/autonomous-science-bench.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T14:18:56+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18449v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.18424v1",
+      "title": "Receiver Decides Agent-to-Agent Negotiations",
+      "authors": [
+        "Fardeen Sadab",
+        "Alif Hasnain",
+        "Afsana Shehrin",
+        "Md. Azam Hossain",
+        "Abu Raihan Mostofa Kamal"
+      ],
+      "abstract": "When one language-model agent asks another for money, which of the two decides how much changes hands? We ran a round-robin tournament of 1,049 negotiations among fifteen agents. In each game a requester tries to raise money from a holder that has been told to keep a $100 endowment. Knowing which agent holds the money explains 47% of the variance in the amount transferred; knowing which agent asks explains 2%. Dropping the most extreme agents narrows the split to 22% against 4%. Changing the requester's appeal from one named person to a group changed what requesters wrote, but the amounts transferred under the two framings are statistically equivalent. The holders that lose least are the ones that turn down the opening request, and their turn-1 refusal rate ranks them by total losses (Spearman correlation = -0.73). Training moves this behaviour in both directions. Fine-tuning Qwen3-8B on a persuasion corpus with almost no refusals raised what it gave away as a holder from 12% to 84% of the endowment. Distilling two never-losing holders into a 4B student cut its losses from 95% to 1%. Evaluations of agents that hold resources should test them in the holder role, including after persuasion fine-tuning.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-10-13T14:02:32+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18424v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.18108v1",
+      "title": "A CaLLM Judge is a Better Judge: Mitigating Bias in LLM-as-a-judge",
+      "authors": [
+        "Cesare Barbera",
+        "Luca Stradiotti",
+        "Lorenzo Cascioli",
+        "Lorenzo Perini",
+        "Niek Tax",
+        "Daniel Haimovich",
+        "Jesse Davis",
+        "Andrea Passerini",
+        "Andrea Pugnana"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used as judges to predict which of two candidate answers a human evaluator would prefer, providing a scalable alternative when human evaluation is too costly. Unfortunately, LLM judgments can exhibit systematic biases. Prior work has documented position, verbosity or model family of the candidate answers influencing the judge decision rather than their quality, while additional biases may remain undocumented. $\\textit{Multicalibration}$ provides a natural framework to address this problem: each bias corresponds to miscalibration on an identifiable group, $\\textit{e.g.}$, family bias manifests as overconfidence in answers generated by models belonging to the same family of the judge. The challenge is to fix miscalibration simultaneously across many, potentially unknown groups. To this end, we introduce $\\mathrm{CaLLM}$, a post hoc framework that multicalibrates an LLM judge, thereby bounding all such biases simultaneously. We prove that $\\mathrm{CaLLM}$ bounds the bias of every group whose error structure is captured by an available representation, and that augmenting it with explicit bias groups further reduces the residual bias. We then derive theoretical conditions under which $\\mathrm{CaLLM}$ improves the judge's accuracy, rather than trading it for calibration. Finally, we evaluate $\\mathrm{CaLLM}$ across pairwise preference benchmarks, showing that it reduces the multicalibration error on both specified and unspecified bias groups, while improving predictive performance of the judge.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T10:23:02+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18108v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.18014v1",
+      "title": "LatentRemedy: Efficient Remedy For Non-Prefix KV Cache Reuse in Multi-Agent Systems",
+      "authors": [
+        "Zhiwei Chen",
+        "Zhongtao Rao",
+        "Waikit Xiu",
+        "Yuxiang Zhang",
+        "Shuting Cui",
+        "Jian Chen",
+        "Tianxiang Zhao"
+      ],
+      "abstract": "Non-prefix KV cache reuse is a promising approach for improving inference efficiency in multi-agent systems as agents share the same context blocks. However, when agents have conflicting tasks, directly reusing non-prefix KV caches across agents can severely degrade model performance, causing up to a 90% drop. Existing remedies, including selective recomputation and offset-based calibration, recover a limited fraction of this loss. We argue that the problem lies not only in contaminated KV representations but also in the agent's difficulty interpreting reused context under its own instructions. To this end, we introduce LatentRemedy, which uses a few task-conditioned latent tokens to help the target agent leverage reused context without recomputing the shared block. Specifically, we use an MLP to map the last hidden state of the target prefix into a small number of latent tokens, which are placed after the reused KV block to interact with the shared context. To guide subsequent predictions toward the target task, we train the MLP through full-prefill distillation. Experiments show that LatentRemedy consistently outperforms existing reuse baselines on conflicting tasks while maintaining TTFT close to direct reuse as cache size grows. Code and data are available at https://github.com/chenzhwsysu57/kvreuse.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T09:12:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18014v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.17816v1",
+      "title": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+      "authors": [
+        "Pengcheng Huang",
+        "Zhenghao Liu",
+        "Shixin Ren",
+        "Shi Yu",
+        "Sijia Yao",
+        "Yukun Yan",
+        "Chaojun Xiao",
+        "Maosong Sun"
+      ],
+      "abstract": "Edge-cloud collaboration combines the lower inference overhead and greater data locality of edge-side execution with the stronger capabilities of cloud-hosted models. However, as LLM agents increasingly operate in long-horizon scenarios, cloud participation becomes interleaved throughout execution rather than a one-shot decision for each query. Such interleaved participation introduces trajectory-level effects that remain insufficiently understood. To address this gap, we introduce EC2-Bench, a benchmark for evaluating edge-cloud collaboration in long-horizon agent execution. It provides executable digital-workspace agent tasks and a unified evaluation framework covering task performance, resource usage, and privacy exposure. Using this benchmark, we empirically study diverse forms of edge-cloud collaboration. Our study reveals three findings. First, collaboration achieves a favorable balance among task performance, resource usage, and privacy exposure compared with edge-only and cloud-only execution. Second, as edge models become stronger, collaborative execution approaches cloud-only performance, and performance differences across strategies shrink, while privacy exposure remains strongly strategy-dependent. Third, stronger edge capability shifts preferred collaboration from externally controlled cloud participation and direct cloud execution toward more edge-controlled collaboration. Further analyses identify cloud-invocation decision-making and instruction following as important edge-side abilities for effective collaboration. These findings provide a systematic understanding of edge-cloud collaboration in long-horizon agent execution and insights for designing future edge agents that effectively collaborate with cloud models. Code and resources are available at https://github.com/OpenBMB/EC2-Bench.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T06:40:22+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.17816v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.18851v1",
+      "title": "MFG: Multi-turn Feedback Guided Molecular Optimization",
+      "authors": [
+        "Trieu Nguyen",
+        "Frazier N. Baker",
+        "Ruoxi Gao",
+        "Daniel Adu-Ampratwum",
+        "Xia Ning"
+      ],
+      "abstract": "Multi-objective molecular optimization is a critical process in drug discovery that aims to modify a given molecule to simultaneously improve multiple properties while maintaining a similar overall structure. This process often requires iterative modifications guided by computational or experimental feedback. Recent large language model (LLM)-based methods have begun to explore this iterative approach; however, these methods are not explicitly trained to leverage such feedback, while existing approaches primarily focus on single-turn molecular optimization. To address this gap, we introduce Multi-turn Feedback Guided (MFG) molecular optimization, a reinforcement learning framework that trains an LLM to progressively optimize molecules using feedback from previous turns. MFG introduces a feedback vector capturing both property improvements and source molecule similarity, alongside a feedback-aligned reward function that promotes progressive improvement across turns. We apply MFG over $\\text{GeLLM}^{3}\\text{O}$, a state-of-the-art LLM model for multi-objective molecular optimization, evaluate $\\text{GeLLM}^{3}\\text{O-MFG}$ on ten multi-objective molecular optimization tasks. The results demonstrate that $\\text{GeLLM}^{3}\\text{O-MFG}$ achieves the highest average similarity-constrained success rate ($81.50%$), outperforming the base model $\\text{GeLLM}^{3}\\text{O}$ ($70.81%$).",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "submitted": "2026-10-13T17:58:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18851v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2610.18604v1",
+      "title": "LLM2R: From Large Language Models to 3D Reassemblers",
+      "authors": [
+        "Zhouhan Zhong",
+        "Qiuhong Shen",
+        "Xingyi Yang",
+        "Jinyi Xu",
+        "Xinchao Wang"
+      ],
+      "abstract": "3D part assembly aims to reconstruct a complete shape from a set of unassembled parts by predicting a rigid SE(3) transformation for each part. Because the placement of a part is rarely determined by its own geometry, the task demands reasoning over the entire part set, and existing methods, which rely on pairwise relations or iterative generation and verification, scale poorly to objects with many parts. We present LLM2R, which casts part assembly as sequence modeling with a pretrained decoder-only large language model (LLM): a Point-BERT encoder and a Q-Former compress each part into a block of geometric tokens, the blocks of all parts are concatenated, and a causal LLM adapted with Low-Rank Adaptation (LoRA) processes the sequence in one forward pass. Causal attention, however, lets the hidden states of a part observe only the parts that precede it. LLM2R therefore appends a block of learnable summary tokens after the last part: these tokens follow every part, so their states aggregate the whole assembly at a constant token cost, and a part-aware pose head fuses each part's states with them before predicting its rotation and translation. One architecture thus handles semantic and geometric assembly and predicts all poses in a single non-autoregressive pass. LLM2R achieves the highest part accuracy and success rate on all three PartNet categories, the best rotation error, translation error, and part accuracy on PartNeXt, and the lowest translation error and fastest inference on Breaking Bad, where only a fracture-specialized method is more accurate. Its advantage grows with the number of parts: at 100 parts it exceeds GARF by 33.5 points in part accuracy on Breaking Bad and Assembler by 29.1 points on PartNet, and it transfers zero-shot to unseen categories with more than 16 points higher part accuracy than the strongest of three baselines.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "submitted": "2026-10-13T15:57:41+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18604v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2610.18567v1",
+      "title": "Configuring RAG Systems: What Breaks, Where Originates, and How to Fix",
+      "authors": [
+        "Liangyu Chen",
+        "Youpeng Ma",
+        "Yulong Ye",
+        "Zezhen Xiang",
+        "Tao Chen"
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG) has emerged as a dominant paradigm for improving Large Language Model (LLM) by intertwining it with other components, such as a vector/graph database. Therefore, the resulting RAG systems are often highly configurable, under which a non-trivial amount of failures are related to the configurations. However, there remains a lack of systematic understanding regarding the configuration issues for RAG systems. To bridge this gap, in this paper, we conduct the first large-scale empirical study of 654 real-world configuration issues collected from 10 diverse RAG systems. Drawing on this, we provide a complete categorization of the symptoms, root causes, relevant stages, and fix patterns of configuration issues for RAG systems, as well as several new observations. Our findings not only reveal the characteristics of configuration issues, but also strongly link them to the unique pipeline stages of RAG, e.g., we found that most symptoms can be observed at the early or late stage, while the stage of the root cause might not be at the same stage as where the symptom is identified. We also provide nine actionable insights to the practitioners on testing, localizing, and fixing the configuration issues for RAG systems.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-13T15:37:27+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.18567v1",
+      "journal_boost": 0,
+      "score": 11
+    }
+  ]
+}
