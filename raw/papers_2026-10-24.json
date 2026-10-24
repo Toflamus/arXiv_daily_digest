@@ -1,631 +1,354 @@
 {
   "date": "2026-10-24",
-  "fetched_at": "2026-10-24T00:10:07.003604+00:00",
+  "fetched_at": "2026-10-24T23:53:13.081717+00:00",
   "stats": {
-    "arxiv_count": 401,
+    "arxiv_count": 0,
     "arxiv_error": null,
     "journal_counts": {
       "Nature": 75,
       "Science": 41,
       "Science Advances": 85,
       "Nature Machine Intelligence": 8,
-      "Nature Computational Science": 0,
+      "Nature Computational Science": 8,
       "Nature Methods": 8,
-      "Nature Materials": 0,
+      "Nature Materials": 8,
       "Nature Chemistry": 8,
-      "Nature Chemical Engineering": 8,
+      "Nature Chemical Engineering": 0,
       "Nature Biomedical Engineering": 8
     },
-    "total_after_dedup": 642,
+    "total_after_dedup": 249,
     "top_n": 30
   },
   "top30": [
-    {
-      "id": "2610.31355v1",
-      "title": "Muffin - A Shared Memory Buffer for Asynchronous AI Agents",
-      "authors": [
-        "Ping-Lin Kuo",
-        "Suman Navaratnarajah",
-        "Christian Frey",
-        "Gresa Shala",
-        "Josif Grabocka"
-      ],
-      "abstract": "The rise of Agentic AI systems has changed the landscape of artificial intelligence by enabling strong reasoning capabilities through specialized multi-agent interaction with structured self-reflection. However, in target-driven reasoning tasks, single- and multi-agent systems are often on par in terms of performance gains. A major challenge is that failures often arise from an ineffective exchange of critical information during inter-agent interaction and coordination. Different from existing multi-agent debate paradigms that rely on synchronous turn-taking and sharing information across different agents, we propose an inter-agent protocol based on shared Memory bUFFer INference - referred to as MUFFIN - in an asynchronous agentic framework. In the first step, an orchestrator routes queries based on their reasoning demands and delegates demanding ones to a multi-agent setting, where a shared memory buffer provides asynchronous exchange of intermediate findings while an agent's private reasoning remains local. Our experiments show that our framework Muffin outperforms established competitors, achieving the best accuracy in 17 out of 20 of our benchmark settings, and provides a better quality-cost trade-off than multi-agent debate: Muffin improves accuracy by 19.2 accuracy points while using 77.4% fewer tokens, without requiring full-trace sharing.",
-      "categories": [
-        "cs.AI",
-        "cs.MA"
-      ],
-      "submitted": "2026-10-22T14:36:46+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31355v1",
-      "journal_boost": 0,
-      "score": 22
-    },
-    {
-      "id": "2610.31404v1",
-      "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
-      "authors": [
-        "Justin Tan",
-        "Miao Li",
-        "Ding Zhao"
-      ],
-      "abstract": "Computer-use agents increasingly handle private information and act on users' behalf across desktop and web applications, including email. Phishing therefore poses privacy and security risks that depend not only on whether agents recognize malicious messages, but also on how they respond. Existing phishing datasets were developed primarily for conventional detection, leaving agent susceptibility to persuasive malicious requests insufficiently characterized. To expose vulnerabilities that pre-existing datasets may miss, we introduce AgentPhishing, a benchmark for evaluating whether persuasive phishing attacks can evade detection and induce LLM email agents to comply with malicious requests. We develop PhishOpt, which optimizes reusable email-generation skills against individual agents under fixed benchmark constraints and a realism constraint. We analyze the generated emails using Cialdini's persuasion principles to identify strategies associated with agent failures and use these findings to construct a universal generation skill. Our evaluation shows that agents can handle pre-existing phishing emails safely yet remain susceptible to attacks adapted to agent behavior, while in an AgentPhishing evaluation of nine agents, four exhibit phishing-detection rates below $10\\%$ and malicious-request compliance rates above $45\\%$. These results highlight the limits of inferring agent safety from conventional phishing evaluations and the need to assess how agents respond to persuasive malicious requests.",
-      "categories": [
-        "cs.CR",
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T15:07:49+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31404v1",
-      "journal_boost": 0,
-      "score": 20
-    },
-    {
-      "id": "2610.30557v1",
-      "title": "Governed Self-Evolution for Autonomous Investing: A Multi-Agent LLM System with an Invariant Core",
-      "authors": [
-        "Yebo Feng",
-        "Jingyang Dai",
-        "Liangrui Pan",
-        "Nelson Lau",
-        "Jiahua Xu",
-        "Yang Liu"
-      ],
-      "abstract": "LLM agents that act on live Web data must combine heterogeneous evidence, remember what they have done and improve from outcomes without weakening their own safeguards. We study this problem in autonomous investing, where every action is irreversible and based on untrusted Web content. We present Steward, a multi-agent LLM system that draws the boundary of self-evolution in its type system. First, nine role-specialised agents decide jointly: four analysts read news feeds, SEC filings, macroeconomic series and market data and emit typed reports, from which a Portfolio Manager sets target positions that a protected Risk Manager audits. Second, a seven-layer shared memory, assembled by code from the system's own record, gives each decision its position context, the market narrative, calibration and the agent's past decisions. Third, the system improves itself by review: code grades every trade and forecast nightly and writes the grades into memory, and each quarter a reflector proposes prompt learnings that a deterministic gate applies reversibly and replay of recorded inputs verifies. All three operate around an invariant core of order arithmetic, risk rules and discipline-agent prompts that no self-edit can reach. In a five-month live deployment (102 trading days, 1,632 LLM calls), the system contained a 24.6% sector drawdown to a 0.3% loss; in replay of its recorded inputs, a single model given the same raw data traded more and lost 1.35 points against the market over five days where the joint design showed no significant loss, and no injected instruction was followed; and a 2015-2026 backtest shows the core alone lowering the maximum drawdown under all 50 random entry policies. The reflector traced the dominant failure to its root cause, and the gate applied a learning that the agent adopted on trigger evenings and on no control evening. Code: https://github.com/yebof/quant-agent",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.MA",
-        "q-fin.PM"
-      ],
-      "submitted": "2026-10-22T00:22:47+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30557v1",
-      "journal_boost": 0,
-      "score": 17
-    },
-    {
-      "id": "2610.31000v1",
-      "title": "SecLog-Bench: A Scalable Benchmark for Cybersecurity Log Reasoning with Scaffolded Evidence",
-      "authors": [
-        "Yifan Wang",
-        "Dongliang Xu",
-        "Xiaoyong Li",
-        "Jing Li",
-        "Peter S. Pan",
-        "Yue Yao"
-      ],
-      "abstract": "Large language models (LLMs) have shown strong potential for cybersecurity, leading to growing interest in LLM-based automated cybersecurity log analysis. However, current datasets (1) are limited in scale; (2) rely mainly on single-source evidence; and (3) have only binary or multi-class attack labels, without dense annotations of the reasoning process. To address these limitations, SecLog-Bench has three key features. First, we build an extensible simulation platform that covers 29 attack scenarios, supports repeated execution and the integration of new scenarios, and enables scalable generation of cybersecurity logs with attack-stage labels. Second, we use multi-source logs, including audit logs, application logs, and network traffic, to jointly analyze cyber attacks. Third, we annotate each sample with the essential context for cybersecurity log reasoning and a structured step-by-step evidence chain. We evaluate eight mainstream LLMs on this benchmark for post-detection attack-progress reasoning. Results show that, when provided with scaffolded evidence, current LLMs exhibit modest capability in attack-progress reasoning, with the best model achieving only 44.44% accuracy and 45.07% Macro-F1. Their reasoning remains unreliable; i.e., the highest Stage Reasoning F1 (SRF1) score is only 54.87%. Moreover, even correct predictions may be accompanied by flawed reasoning, and reasoning quality is often misaligned with prediction accuracy.",
-      "categories": [
-        "cs.CR",
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T09:41:16+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31000v1",
-      "journal_boost": 0,
-      "score": 16
-    },
-    {
-      "id": "2610.30769v1",
-      "title": "LLM Multi-Agent Systems Are Vulnerable to Herding and Runaway Cascades",
-      "authors": [
-        "Farnoosh Hashemi",
-        "Shiyu Ji",
-        "Joice Chen",
-        "Michael W. Macy"
-      ],
-      "abstract": "Large language models (LLMs) increasingly operate in multi-agent systems where they collaborate by responding to others' choices, creating endogenous feedback loops with vulnerability to social influence, herding behavior and runaway cascades. Following the design of the classic Music Lab experiment, we tested this vulnerability in large populations of LLM agents that recommended unfamiliar songs, with or without exposure to cumulative recommendation counts. Exposure led to runaway cascades that generated extreme and unpredictable collective recommendations increasingly divergent from a song's intrinsic appeal. Compared to humans, LLM populations were generally far more susceptible to herding behavior, and unlike humans, LLM cascades were less able to self-correct. This vulnerability has implications for multi-agent collaboration in recommender systems, automated evaluation, complex problem-solving, and unauthorized conspiracies.",
-      "categories": [
-        "cs.AI",
-        "cs.MA"
-      ],
-      "submitted": "2026-10-22T05:42:55+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30769v1",
-      "journal_boost": 0,
-      "score": 16
-    },
-    {
-      "id": "2610.31119v1",
-      "title": "Constraint Reasoning and Large Language Models Join Forces: Providing Contrastive Explanations for Real-World Optimisation-Based Applications",
-      "authors": [
-        "Roger X. Lera-Leri",
-        "Filippo Bistaffa",
-        "Athina Georgara",
-        "Juan A. Rodríguez-Aguilar"
-      ],
-      "abstract": "We focus on optimisation-based Decision Support Systems in real-world applications. In this context, we aim to provide contrastive explanations that answer users' questions about recommendations based on the solution of an optimisation problem, specifically a Mixed-Integer Program (MIP). Addressing this endeavour is crucial to ensure human oversight of the decisions implemented, as required by international guidelines on trustworthy and responsible automated decision-making systems. We propose a novel methodology that combines constraint reasoning techniques and Large Language Models (LLMs) to generate contrastive explanations for optimisation problems encoded as MIPs. Although LLMs have shown impressive capabilities in Natural Language processing, they can produce incorrect answers due to reasoning limitations. To overcome these limitations, we leverage constraint reasoning techniques to distil the information necessary to produce an explanation, which is then passed as input to an LLM as the so-called graph of reasons. Such a graph captures the semantics and the relationships among constraints of the optimisation problem. Results on real-world scheduling domains show that incorporating constraint reasoning improves explanations generated by the LLM. In particular, using the graph of reasons enables the LLM to produce natural-language explanations that include more relevant reasons while reducing errors compared to explanations generated without this structure.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T11:33:26+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31119v1",
-      "journal_boost": 0,
-      "score": 15
-    },
-    {
-      "id": "2610.30946v1",
-      "title": "Tracing Hallucinations in LLM Reasoning for UML Class Diagram Generation: An Empirical Taxonomy and Mitigation Study",
-      "authors": [
-        "Mojdeh Rahmanian",
-        "Foutse Khomh",
-        "Ashkan Sami",
-        "Yanchao Yu"
-      ],
-      "abstract": "Large Language Models (LLMs) can generate UML class diagrams from natural language requirements, but hallucinations may compromise the correctness and completeness of the resulting diagrams. Existing evaluations mostly assess the final diagram, without examining the intermediate traces of reasoning-capable LLMs, which can reveal where these hallucinations arise. We develop an empirical taxonomy of eleven hallucination sub-types organised into three dimensions: Prompt Faithfulness (deviations between requirements and reasoning), Code Faithfulness (discrepancies between reasoning and generated PlantUML code), and Reasoning Quality (problems within the reasoning). The taxonomy was derived from 60 manually annotated DeepSeek-R1 traces, applied to 120 further DeepSeek-R1 traces through a dual-LLM annotation pipeline, and examined on 20 DeepSeek-V4-Pro traces. Code Faithfulness was the most frequent dimension for DeepSeek-R1 in both datasets, whereas Prompt Faithfulness dominated for DeepSeek-V4-Pro, suggesting model-dependent failure patterns. In the manually annotated traces, reasoning-trace length showed no significant monotonic association with hallucination frequency, whereas requirement complexity was negatively associated with it, particularly for Prompt Faithfulness errors. In a mitigation experiment on 13 Golden UML ModelSet cases with three Qwen3-based models, adding Prompt Faithfulness and Reasoning Quality constraints to the generation prompt raised the pooled mean F1 score by 4.0 percentage points, whereas a post-hoc Code Faithfulness review provided no consistent further benefit. Relationship modelling remained the lowest-scoring element throughout. These results suggest that localising hallucinations within the generation process can inform targeted, prompt-based mitigation. Whether these findings generalise beyond the DeepSeek and Qwen3 model families remains to be tested.",
-      "categories": [
-        "cs.SE",
-        "cs.CL"
-      ],
-      "submitted": "2026-10-22T08:59:27+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30946v1",
-      "journal_boost": 0,
-      "score": 15
-    },
-    {
-      "id": "2610.30755v1",
-      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
-      "authors": [
-        "Zhengye Bao",
-        "Shengtao Zhang",
-        "Haokai Zhang",
-        "Shiqi Lou",
-        "Muning Wen",
-        "Minnan Luo"
-      ],
-      "abstract": "LLM memory is widely used in long-term conversation understanding. Agentic memory systems often use mutation, structural organization, learned retrieval strategies, or other complex operations. Is this complexity always necessary? We study Raw-RAG, a naive RAG baseline using dense retrieval and reranking over raw history to supply evidence to a reader LLM. Across LoCoMo, LongMemEval, MEME, and MemoryAgentBench, Raw-RAG ranks first among the compared memory systems in six of seven benchmark-model settings, outperforming the strongest compared agentic memory system by 0.13-5.53 points. We investigate why raw-history retrieval remains competitive. Evidence analysis shows that its higher coverage of necessary evidence can offset lower utilization. Useful evidence includes both answer values and the relations and dependency paths needed to derive them. Even complete access to transformed memory stores leaves an accuracy gap relative to raw evidence, highlighting the importance of preserving raw information. These findings challenge the necessity of complex agentic memory for the evaluated conversation tasks and establish naive RAG as an essential baseline.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T05:23:16+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30755v1",
-      "journal_boost": 0,
-      "score": 15
-    },
-    {
-      "id": "2610.30791v1",
-      "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
-      "authors": [
-        "Maharani A. P. Irawan",
-        "Kuntai Du",
-        "Jiayi Yao",
-        "Dongjoo Seo",
-        "Yuyang Huang",
-        "Haryadi S. Gunawi",
-        "Junchen Jiang"
-      ],
-      "abstract": "KV caching reduces the serving cost of large language models (LLMs), but the growing KV cache footprint is increasingly exceeds GPU and host-memory capacity. Therefore, people use SSD to expand the KV cache storage capacity with high I/O bandwidth. However, in production LLM workload, such as multi-round conversation and LLM agents, the total amount of KV cache writes significantly exceeds SSD capacity, shortening SSD lifetime from years to months. To improve SSD lifetime, a natural solution is to reduce the KV cache writes by gating the KV cache writes via historical access patterns. However, that significantly lowers the KV cache hit rate (and increase the LLM serving cost) since KV caches from different attention types might have identical historical access pattern but different future access patterns. Our insight is that, to reduce KV cache writes without hurting KV cache hit rate, one need to not only consider the access pattern, but also application-level information such as the attention type of KV cache. Leveraging this observation, we propose Gandalf , the first SSD KV cache offloading system with SSD life time awareness. Gandalf prioritize the admission of full-attention KV cache into SSD over the cache generated by other types of attention, which significantly increases SSD lifetime without sacrificing cache hit rate. Our evaluation shows that Gandalf extends the SSD lifetime by 7.3X on average, while having negligible impact on cache hit rate across multiple workload traces and wide range of hardware capacity. Gandalf design can be extended to other flash-based storage, such as High Bandwidth Flash (HBF).",
-      "categories": [
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T06:10:08+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30791v1",
-      "journal_boost": 0,
-      "score": 14
-    },
-    {
-      "id": "2610.31467v1",
-      "title": "From Structured Records to Patient Narratives: Preserving Clinical Alignment in LLM-Generated Health Summaries",
-      "authors": [
-        "Bayram Ayadi",
-        "Florian Geissler",
-        "Johanna Schmidhuber"
-      ],
-      "abstract": "As wearable and digital health systems increasingly generate longitudinal physiological records, communicating these observations in patient-accessible language remains a significant challenge. Large Language Models (LLMs) offer a promising mechanism for translating structured clinical information into readable narratives, but this process may introduce semantic drift, where clinically precise meaning is distorted during simplification. We investigate evidence-grounded health summarization for menstrual health monitoring using a constrained generation framework that combines structured evidence conditioning with Retrieval-Augmented Generation (RAG) using a prompt-based constrained generation framework. We evaluate semantic alignment using Natural Language Inference (NLI), atomic factuality metrics, and readability measures. Across three LLMs and 4,500 generated summaries, explicit grounding constraints consistently improve clinical alignment, particularly by improving uncertainty preservation and, once faithfulness is evaluated against retrieved evidence, generally preserving or improving faithfulness, while effects on omission remain model-dependent. We also find that improved clinical alignment comes at the cost of increased reading difficulty and medical terminology. These findings highlight the need to jointly evaluate faithfulness, uncertainty preservation, and readability when developing patient-facing medical LLM systems.",
-      "categories": [
-        "cs.CL"
-      ],
-      "submitted": "2026-10-22T15:58:57+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31467v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2610.31366v1",
-      "title": "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents",
-      "authors": [
-        "Ehsan Saleh",
-        "Roozbeh Nahavandi",
-        "Sama Salarian",
-        "Raef Bassily",
-        "Andrew Perrault"
-      ],
-      "abstract": "Many LLM agents maintain external persistent memory and derive additional state from past interactions, such as summaries. Deleting an original memory record therefore need not remove information carried by its descendants. We introduce AfterDeleteBench, a controlled behavioral audit for this failure mode in fixed-weight LLM agents. For each synthetic secret, we compare an exposed-then-deleted agent with an otherwise matched agent that was never exposed to the secret, allowing post-deletion recovery to be attributed to the original exposure. In our primary setting, a single query recovers the deleted secret from Qwen2.5-7B-Instruct in roughly two thirds of cases, while matched never-exposed controls have zero recovery. Crucially, recovery does not require a surviving verbatim copy: when the complete secret string is absent and only separately stored components remain under a public composition rule, exact reconstruction succeeds in 62-99% of cases across Qwen, Mistral, and Phi-3. We also show that the response interface is part of the measurement system: target-bearing replies can be scored as failures when the requested format and parser are misaligned. Finally, we separate reconstruction from write-back and fresh-session recall. Provenance-aware closure eliminates observed recovery in the tested positive-baseline settings, whereas an exact-literal write filter blocks reinsertion but cannot erase information already present. Together, these results show that source deletion should be evaluated behaviorally at the level of the agent and its memory system, not only as a storage operation.",
-      "categories": [
-        "cs.CR",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T14:41:36+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31366v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2610.31326v1",
-      "title": "AgenticEvolve: Evolutionary Program Search with Persistent Language Model Agents that Design and Run Experiments",
-      "authors": [
-        "Ze-Yu Peng",
-        "Qing-Yu Lan",
-        "Zhan-He Wang",
-        "Jun Zhang",
-        "Yun-Song Piao"
-      ],
-      "abstract": "Evolutionary program search with large language models keeps the structure of an evolutionary algorithm and uses the model as its variation operator. Typically, the model generates each candidate program in a single request from parent programs and their scores. We present AgenticEvolve, an evolutionary program search framework in which each island is run by a persistent large language model agent. Between evaluations, the agent designs and runs experiments on the candidate program. To measure the contribution of experimentation, we compare AgenticEvolve with No-analysis, an otherwise identical configuration with experiments disabled. On two heuristic design tasks with three large language models, AgenticEvolve produces better programs than No-analysis and OpenEvolve on both hidden and unseen instances. It reaches the baselines' final quality with far fewer evaluations and comparable cost. On twelve equation discovery problems, it recovers the ground-truth structure of more equations than No-analysis and existing language-model and genetic programming baselines.",
-      "categories": [
-        "cs.NE",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T14:18:21+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31326v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2610.31105v1",
-      "title": "Who Is the Influencer? Consensus Dynamics in Multi-Agent Systems",
-      "authors": [
-        "Gouki Minegishi",
-        "Jingyuan Feng",
-        "Hiroki Furuta",
-        "Takeshi Kojima",
-        "Yusuke Iwasawa",
-        "Yutaka Matsuo"
-      ],
-      "abstract": "Multi-agent LLM systems are increasingly used in practice, but their behavior is complex and hard to understand. We design a simple task to ask which model has the most influence on the final consensus when several models are mixed in one system. Experimentally, across seven model families, we find that the opinions of the other models are absorbed into the opinion of the stronger model, the one with more parameters. This happens even though the task requires no pretraining knowledge and has no correct answer. To understand this phenomenon, we interpret the agents as weighted particles moving on a simplex. Larger models carry a larger weight and therefore occupy a deeper well in the energy landscape. A large weight means strong in-context learning: a model with a large weight amplifies the majority of its context. Larger models are generally better at in-context learning, and this is what makes the larger model the influencer. We hope that this work helps to interpret multi-agent systems, whose behavior is becoming too complex for humans to understand.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T11:15:49+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31105v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2610.30760v1",
-      "title": "AgentDP: Towards Automated Model Deployment for Heterogeneous Embedded AI Applications",
-      "authors": [
-        "Leming Shen",
-        "Qiang Yang",
-        "Xinyu Huang",
-        "Zijing Ma",
-        "Yuanqing Zheng"
-      ],
-      "abstract": "This paper presents AgentDP, which aims to deploy pre-trained AI models on heterogeneous embedded devices by fully automating model optimization and adaptation (O&A) with Large Language Model (LLM) agents. AgentDP not only significantly reduces human effort via automation but also enhances model inference efficacy by integrating LLMs with device-specific domain knowledge. To deliver a robust automation framework, AgentDP develops novel solutions to address three key technical challenges: 1) To help users elicit clear requirements, we propose a user requirement standardization module; 2) To mitigate the execution environment mismatch between AI models and heterogeneous embedded devices, we design an operator-aware model partition paradigm that enables different parts of the model to be efficiently executed on distinct inference engines. 3) To avoid re-searching optimization hyperparameters for new tasks, we propose a configuration reuse module that heuristically retrieves previous hyperparameter configurations for efficient reuse. Extensive experiments demonstrate that by fully automating the entire O&A process, AgentDP reduces entire model adaptation time by up to 80% compared with manual O&A while achieving higher task accuracy (more than 13% on average) than the baselines. Additionally, a comprehensive user study also exhibits the robust generalizability of AgentDP in adapting to different user requirements for heterogeneous embedded devices.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T05:29:35+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30760v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2610.30592v1",
-      "title": "Visual Grounding First, Multimodal In-context Learning Follows",
-      "authors": [
-        "Minhyuk Seo",
-        "Minjae Lee",
-        "Chaeeun Lee",
-        "Wei Lin",
-        "Muhammad Jehanzeb Mirza",
-        "Tinne Tuytelaars",
-        "Jonghyun Choi"
-      ],
-      "abstract": "LLMs have shown strong in-context learning (ICL) capability, but extending it to Multimodal LLMs (MLLMs) remains challenging. Prior multimodal ICL methods often rely on ICL-specific datasets for additional training or task vector extraction, which can improve performance on the same ICL benchmark used for adaptation. However, they do not generalize well to other benchmarks and often induce forgetting in previously well-solved tasks. For this reason, we identify 'visual grounding' as the key bottleneck in multimodal ICL; MLLMs often fail to attend to task-relevant visual evidence in demonstrations, instead over-relying on textual cues and producing hallucinated outputs. To address this, we propose ProCoRe to enhance visual grounding through contrastive reinforcement learning on multimodal contrastive data for improving multimodal ICL. ProCoRe generates captions for contrastive image pairs, decomposes them into propositions, and optimizes contrastive rewards that encourage alignment with corresponding images while discouraging mismatched ones. Despite never seeing ICL-formatted training examples, ProCoRe improves average multimodal ICL classification accuracy by 5.6% and captioning ROUGE-L by 13.8% over the off-the-shelf Qwen-VL-3-8B model, outperforming ICL-data-dependent state of the arts across benchmarks. Finally, we introduce PICL, a personalized multimodal ICL captioning benchmark that tests whether MLLMs genuinely understand visual demonstrations rather than relying on pre-trained semantic priors.",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T01:48:28+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30592v1",
-      "journal_boost": 0,
-      "score": 12
-    },
-    {
-      "id": "2610.31280v1",
-      "title": "Beyond Accuracy: Disentangling Decomposition from Typed-State Quality Assurance in Multi-Agent LLM Pipelines",
-      "authors": [
-        "Maria Gabriela Alves Zuppardo",
-        "Vinicius Cardoso Garcia"
-      ],
-      "abstract": "Multi-agent LLM pipelines are often credited with gains in software engineering tasks, but it is rarely clear whether a gain stems from the typed contract between agents or from the specialized prompts that decomposition enables. We study this attribution problem in Requirements Engineering, comparing three architectures for classifying requirements as functional or non-functional and then prioritizing them with MoSCoW: a single-call baseline; a two-call variant that reuses the pipeline's specialized prompts but passes an unvalidated intermediate; and a pipeline with a Pydantic-validated typed state. The 18 conditions cover PROMISE NFR+ (625 requirements), three locally hosted small language models, and two languages. The F1 gain over the baseline is associated with the two-call, specialized-prompt variant (up to +0.075), whereas the typed state adds a small difference (-0.003 to +0.013) that is significant in one of six comparisons. Beyond accuracy, the typed pipeline contains out-of-range model outputs at the agent boundary, while the unvalidated variant fails later and drops the requirement, and it shows a small, reproducible increase in inter-model MoSCoW consistency whose cause our design cannot isolate. The study is associative: the contrasts bundle prompts, call count, and staged context, and the results come from three 7--8B models on one dataset. The implementation and replication package are archived on Zenodo (https://doi.org/10.5281/zenodo.23380444).",
-      "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.ET",
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T13:46:20+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31280v1",
-      "journal_boost": 0,
-      "score": 11
-    },
-    {
-      "id": "2610.31165v1",
-      "title": "Network topology shapes consensus and vulnerability in LLM populations",
-      "authors": [
-        "Roberto Passaro",
-        "Ariel Flint",
-        "Romualdo Pastor-Satorras",
-        "Andrea Baronchelli",
-        "Luca Maria Aiello"
-      ],
-      "abstract": "As large language models (LLMs) are deployed in interacting populations, their collective behaviour depends not only on the models but also on who interacts with whom. Studies of convention formation in LLM populations have mainly tested well-mixed interactions. We place policies extracted from four LLMs on fully connected, random regular, and heterogeneous networks, with $10^3$ to $10^5$ agents playing the naming game. Topology affects how quickly consensus emerges, sometimes whether it emerges at all, and, in rare cases, which convention wins. Sparsest networks slow consensus up to twelvefold. Yet, by preserving correlations between persistent neighbours, they restore consensus in some cases that fail to converge under well-mixed interactions. Networks also govern vulnerability to adversarial attack. We measure the critical mass of committed agents needed to overturn an established convention. Tipping thresholds follow the same ordering across models and conditions: hubs $\\leq$ random $\\leq$ low-degree nodes. On the most heterogeneous topology, median critical masses are 3%, 16%, and 35%, respectively; targeting hubs requires one-sixth as many committed agents as random placement. For most models, networked populations are easier to tip than well-mixed ones, so well-mixed estimates can overstate robustness. Assessing the safety of multi-agent AI requires mapping who interacts with whom.",
-      "categories": [
-        "physics.soc-ph",
-        "cs.AI",
-        "cs.CY"
-      ],
-      "submitted": "2026-10-22T12:22:40+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31165v1",
-      "journal_boost": 0,
-      "score": 11
-    },
-    {
-      "id": "2610.31080v1",
-      "title": "nnInteractive Agent: General-Purpose AI Agents as 3D Image Annotators",
-      "authors": [
-        "Fabian Isensee",
-        "Constantin Ulrich Harsy",
-        "Maximilian Rokuss",
-        "Benjamin Hamm",
-        "Philipp Vollmuth",
-        "Klaus H. Maier-Hein"
-      ],
-      "abstract": "Interactive 3D segmentation models such as nnInteractive turn a few spatial prompts (points, scribbles, boxes) into accurate volumetric masks, but a human still does the annotation work: finding each structure, placing prompts, checking the result and correcting it. General-purpose AI agents can now interpret images, call tools and write code. We show that such agents can take over this work without additional training: the user makes a request in plain language, and the agent works out what has to be segmented, locates the targets, prompts nnInteractive, inspects the 3D result, corrects it and responds to feedback. Asked for 'the muscles used for chewing', an agent identifies and segments the masseters and pterygoids; asked to count liver lesions, it writes its own code to find candidates and splits a merged lesion on request. Our open-source nninteractive-agent provides nnInteractive as tools over the Model Context Protocol (MCP), together with a skill that encodes how experienced users prompt it. On a benchmark spanning CT, MRI, PET and micro-CT of humans, a mouse and an ant (14 images; 51 targets from organs and tumours to muscles, foot bones, vessel trees and an insect brain), Claude Code and Codex reach a mean Dice of 0.81 and 0.84 from the request alone; when told where each target is, both reach 0.85 and prompt nearly as effectively as an oracle that places prompts using the reference segmentation. A text-prompted 3D model (VoxTell) is more accurate on most standard radiological targets but less robust: it returns an empty mask for one of them and fails on the leg muscles, the foot bones, the mouse and the ant, where the agents remain accurate. Code: https://github.com/MIC-DKFZ/nninteractive-agent",
-      "categories": [
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T10:55:15+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31080v1",
-      "journal_boost": 0,
-      "score": 11
-    },
-    {
-      "id": "2610.31003v1",
-      "title": "Agri-SCHOLAR: Simulation-Grounded In-Season Rolling Advisories for Agricultural Crops Using LLM-Bounded Optimization",
-      "authors": [
-        "Geetha Charan",
-        "Vedant Balasubramaniam",
-        "Manojkumar Patil",
-        "V. Priyanka",
-        "Kodur Sai Vinay Sathvik",
-        "Rohit P Suresh",
-        "Mohammad Sufyan Azam",
-        "Y. Narahari"
-      ],
-      "abstract": "Existing agricultural advisories to farmers suffer from several limitations: (a) remain largely expert-driven, (b) do not adequately account for in-season weather, and (c) do not scale to individual farms. In this paper, our objective is to close these gaps by developing Agri-SCHOLAR (Simulation-Grounded Crop Harvest Optimization with LLM-Guided In-Season Advisory Rollouts). Agri-SCHOLAR is a rolling, in-season advisory framework that issues, at intervals of every few days or every week, a personalized advisory using the following information: soil and crop properties, observed weather to date, short-range forecast of weather, and a season extrapolation of weather based on historical analogs. The novelty and depth of Agri-SCHOLAR lies in each advisory being produced by a closed-loop system which couples multiple LLM agents with a powerful crop simulator (such as APSIM in our case). The simulator crucially serves as an evaluation oracle. In Agri-SCHOLAR, the LLM agents propose agronomically sound and feasible bounds on actionable parameters and an optimizer searches within those bounds against a multi-objective reward spanning yield, resource utilization, and economic feasibility. We conduct a detailed 11-year analysis of the maize crop in two selected locations of South Asia and show that Agri-SCHOLAR consistently outperforms the region's standard packages of practice and satisfactorily addresses the limitations of existing agricultural advisories.",
-      "categories": [
-        "cs.AI",
-        "cs.MA"
-      ],
-      "submitted": "2026-10-22T09:43:19+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31003v1",
-      "journal_boost": 0,
-      "score": 11
-    },
     {
       "id": "https://www.nature.com/articles/s42256-026-01333-6",
       "title": "Towards understanding and monitorability of reasoning LLMs",
       "authors": [],
       "abstract": "Nature Machine Intelligence, Published online: 19 October 2026; doi:10.1038/s42256-026-01333-6Frontier LLMs are trained to solve problems in a step-by-step way, generating reasoning text in human-understandable language. However, these reasoning tokens are not accurate explanations of LLMs’ internal computations, raising challenges for monitorability.",
-      "submitted": "2026-10-17T00:10:06.020827+00:00",
+      "submitted": "2026-10-17T23:53:12.658737+00:00",
       "source": "Nature Machine Intelligence",
       "link": "https://www.nature.com/articles/s42256-026-01333-6",
       "journal_boost": 3,
       "score": 11
     },
     {
-      "id": "2610.31650v1",
-      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-      "authors": [
-        "Qijin Zhang",
-        "Hanzhen Wang",
-        "Yuehan Zhao",
-        "Haoyu Dai",
-        "Yao Shu",
-        "Zhongxiang Dai",
-        "Shuang Qiu"
-      ],
-      "abstract": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds.",
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T17:57:04+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31650v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.31636v1",
-      "title": "Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2",
-      "authors": [
-        "Marek Šuppa",
-        "Ivan Vykopal",
-        "Jaroslav Kopčan"
-      ],
-      "abstract": "Multilingual pipelines such as FineWeb2 apply one recipe across a thousand languages, leaving the failure modes of individual languages unanticipated. We use an LLM once, as a corpus debugger rather than a classifier: a tool-using agent explores the corpus through a read-only, budgeted API and compiles each finding into an executable test, which a native speaker then validates. On the 26.5M-document Slovak portion of FineWeb2, three runs costing \\$2.21-\\$2.84 each found seven findings over four phenomena. The largest is a machine-generated content farm of 1,408,437 documents (5.32%) that passed the pipeline's filters, 86.6% of it passing even stricter thresholds. Blinded labels support 6 of the 7 findings (defect rates .53-1.00 against .08 in a random control) and do not support one. The compiled suite scans the full corpus in 0.7 s of wall-clock time without a GPU, against \\$12k-\\$90k per LLM classification pass. The best static sampling baseline validates more selectors than any agent run, at under half the cost. The agent contributes exact prevalence, a precision estimate checked against sampled documents, an account of why the pipeline missed each slice, and a reusable test. We release the framework, Slovak test suite, validation data and agent trajectories.",
-      "categories": [
-        "cs.CL"
-      ],
-      "submitted": "2026-10-22T17:52:22+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31636v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.31376v1",
-      "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
-      "authors": [
-        "Chao Gu",
-        "Quanyan Zhu"
-      ],
-      "abstract": "This paper studies the problem of safe tool execution for large language model (LLM) agents under prompt injection. Using Petri nets, we formalize the execution harness between the LLM and its tools as a supervisory control problem, in which marks represent capabilities, approvals and budgets. Since a transition fires only if the marks it needs are present, an injected request whose preconditions are unmet or already spent is refused regardless of its wording. Treating tool outcomes as uncontrollable, we enforce safety by the conventional maximally permissive supervisor, and this safety transfers to the running system under four assumptions. Moreover, to capture an agent that may propose again after a refusal, we introduce the notion of a replanning closed loop, in which each retry costs an inference call. We show that, in this loop, the conventional supervisor can be arbitrarily more intrusive than a stricter safe one. Furthermore, for a given proposer model, the maximally permissive least-intrusive supervisor is characterized as a value-threshold refinement of the conventional one. Under precise conditions, this refinement orders two concurrent actions by at most one monitor place. On an autonomous release agent, we find by synthesis that safe deployment requires a step that the supervisor can refuse after a rollout starts.",
-      "categories": [
-        "cs.AI",
-        "eess.SY"
-      ],
-      "submitted": "2026-10-22T14:48:16+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31376v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.31351v1",
-      "title": "Automating Feature Flag Cleanup at Scale with Multi-Agent LLM Systems: An Industrial Experience at DoorDash",
-      "authors": [
-        "Atharv Chandratre",
-        "Jai Datar"
-      ],
-      "abstract": "Feature flags are runtime configuration mechanisms used for gradual feature rollouts, experimentation, and kill switches. Once a feature is fully rolled out, the flag and its gated code become technical debt and can introduce operational risk through inadvertently enabling dormant code paths. At DoorDash, over 56,000 feature flags span 623 repositories, with 1,659 currently stale as of May 2026, with internal estimates of one to two hours per manual cleanup. Existing rule-based cleanup tools proved insufficient in DoorDash's codebases. Our contribution is an end-to-end automated LLM-based feature flag cleanup system that integrates querying live feature flag rollout data using MCP, Jira ticket processing, and end-to-end pull request creation. Our system successfully produced engineer-approved flag removal PRs for 45 (90%) of the 50 stale flags it was evaluated on, proving the system's operational viability at scale with each cleanup averaging only $4.79 and 13.8 minutes. We evaluated the system's quality and reliability boundary based on success rates, cost per cleanup and time metrics. Furthermore, we discuss our lessons learned when architecting this system, to provide practical guidance for developing similar multi-agent systems.",
-      "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.MA"
-      ],
-      "submitted": "2026-10-22T14:32:23+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31351v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.31277v1",
-      "title": "CoWriter: Guiding Methodological and Synergetic Human-LLM Co-Authoring",
-      "authors": [
-        "Shmuel Amar",
-        "Benjamin Lieber",
-        "Ori Shapira",
-        "Debanjana Kar",
-        "Sebastian Maximilian Dennerlein",
-        "Yufang Hou",
-        "Ido Dagan"
-      ],
-      "abstract": "While LLMs have transformed text generation, standard chat-and-canvas interfaces often reduce human authoring to quite passive supervision, causing review fatigue, over-reliance on AI, and the sidelining of the human role in long-form, source-grounded writing. Prior systems typically address isolated writing phases, leaving comprehensive end-to-end human-LLM collaboration largely unexplored. In this paper, we introduce CoWriter, a proactive agentic scheme that adapts expert human (co-)authoring methodologies from cognitive science to flexibly steer the entire writing workflow while actively encouraging the user to engage. In an exploratory user study, compared to a standard LLM baseline, authors using CoWriter better expressed their perspectives and maintained a higher sense of document ownership, supported quantitatively by $2.2\\times$ more successful agent engagements. Furthermore, external reader judges rated the resulting texts higher in \"human touch\" qualities like storytelling and integrating unique personal experiences. Overall, our results demonstrate that proactively engaging users through established human practices is beneficial for effective LLM-supported co-authoring, providing useful methodologies, techniques and insights for future research on collaborative agents.",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.HC"
-      ],
-      "submitted": "2026-10-22T13:45:47+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.31277v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.30953v1",
-      "title": "Measuring the Reasoning-Action Coupling in Driving Vision-Language-Action Models through Counterfactuals",
-      "authors": [
-        "Gabriel Manalu",
-        "Saad Wazir",
-        "Thao Do",
-        "Seongah Kim",
-        "Hyeontaek Hwang",
-        "Tolcha Yalew Kidane",
-        "Daeyoung Kim"
-      ],
-      "abstract": "Driving vision-language-action (VLA) models bring an appealing form of explainability to a safety-critical domain, since a system that can state the reasons for its maneuvers offers the transparency that deployment and public trust in autonomous driving demand. These models read the world into language before they act on it, describing the scene and reasoning over it in text that ranges from chain-of-thought to multi-stage question answering on the way to a trajectory. That framing quietly assumes two separable properties, namely that the trajectory follows the generated reasoning and that the generated reasoning tracks the causes that actually produce the trajectory. To thoroughly investigate these properties, we apply causal, counterfactual interventions to four driving VLAs across different benchmarks. First, we perturb the models' own reasoning and show that altering its meaning produces small trajectory changes relative to blanking the same models' camera inputs, a pattern that persists across benchmarks and model architectures. We then construct scene-level counterfactuals through photorealistic removal of key objects named in the models' reasoning and analyze whether the generated reasoning and trajectories track these changes. Overall, our findings indicate that the reasoning these models present to account for their resulting driving behavior is weakly coupled to that behavior itself, pointing to limits on the explainability these systems are intended to provide.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T09:04:06+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30953v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.30933v1",
-      "title": "ReflectPO: Reflection-Guided Policy Optimization for Long-Horizon LLM Agents",
-      "authors": [
-        "Rumei Li",
-        "Xunliang Cai"
-      ],
-      "abstract": "With external tools, large language models (LLMs) can tackle complex tasks through sustained environmental interaction. LLM-based agents are therefore increasingly used to tackle complex long-horizon tasks in real-world environments. However, these tasks involve sequential, interdependent decisions and changes in environmental states. Early execution errors affect subsequent interaction histories and environmental states, and their effects accumulate along the decision chain. To address this challenge, we propose Reflection-Guided Policy Optimization (ReflectPO), a reinforcement learning framework for autonomous error recovery in long-horizon tasks. ReflectPO comprises two core components. The first is Reflection-Guided Sampling. We use branch differences and repeated visits in interaction trajectories to construct hints for error recovery. The second is Tree-Structured Credit Assignment. We organize sampled trajectories into trees and assign action-level credit using parent--child reward differences and recovery gains. Experiments over two long-horizon tool-use benchmarks show that ReflectPO outperforms multiple existing baselines in most domains. It also achieves the best overall performance on average. Further analyses show that ReflectPO effectively improves agents' ability to recognize their own deviations, recover from erroneous states, and continue making progress toward task completion.",
-      "categories": [
-        "cs.CL"
-      ],
-      "submitted": "2026-10-22T08:54:24+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30933v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.30798v1",
-      "title": "Amplifying Latency and Cost of LLM Inference via Rowhammer Attack",
-      "authors": [
-        "Mrityunjay Shukla",
-        "Shubham Roy",
-        "Biswabandan Panda"
-      ],
-      "abstract": "Large language models (LLMs) achieve high inference efficiency using optimized GPU kernels generated by just-in-time (JIT) compilation frameworks such as Triton. Triton compiles GPU kernels through an MLIR/LLVM-based pipeline. We investigate whether a Rowhammer-induced bit-flip in the CPU's DRAM can degrade GPU-based LLM inference performance while preserving output correctness. We present LLVMhammer, the first Rowhammer attack that causes LLM inference slowdown by inducing a bit-flip in Triton's compilation pipeline. A bit-flip in a performance-critical optimization pass causes Triton to generate a functionally identical but suboptimal GPU kernel. Since Triton caches the generated kernel on disk, a single successful bit-flip causes persistent slowdown across subsequent inference executions. Triton's target-independent stages are shared across GPU vendors, which makes our attack GPU vendor-agnostic. To identify exploitable bit-flip locations without manual inspection, we build Karnage, a tool that isolates useful bit-flip locations in Triton's target-independent compilation pipeline. We evaluate LLVMHammer across a diverse set of LLMs, including Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, Mistral-7B-Instruct-v0.3, and Deepseek-llm-7B-chat, across NVIDIA RTX 4090 and AMD RX 7900 XTX GPUs. LLVMhammer increases inference latency of an LLM inference server running on a single GPU by 4-16\\%, which, in turn, can translate into additional annual operating costs at the scale of multi-GPU deployments. We further show that LLVMhammer can also corrupt LLM outputs across different GPU vendors, reducing BERTScore to as low as 25\\%, illustrating the broader security implications of bit-flips in Triton's compilation pipeline.",
-      "categories": [
-        "cs.CR",
-        "cs.LG"
-      ],
-      "submitted": "2026-10-22T06:24:35+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30798v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
-      "id": "2610.30573v1",
-      "title": "Diagnosing Personalization Failures in Mobile GUI Agents",
-      "authors": [
-        "Zhixin Lin",
-        "Dongliang Xu",
-        "Jungang Li",
-        "Shidong Pan",
-        "Jun Feng",
-        "Yanbin Sun",
-        "Jing Li",
-        "Liang Liu",
-        "Yue Yao"
-      ],
-      "abstract": "Unlike conventional GUI agents, personalized GUI agents require user preferences to guide sequential execution over changing GUI states. This raises two challenges: determining HOW each preference should alter execution strategy and WHEN it should take effect along the interaction trajectory. Existing benchmarks primarily evaluate overall task success, offering limited insight into these questions. We introduce PrefDiag-Bench with two components: (1) a categorization of preferences into five types, characterizing HOW they affect execution; and (2) a stage-wise diagnostic framework with 1,664 probes, tracing WHEN preferences should take effect and where failures occur. We evaluate eleven GUI agent systems, including end-to-end agents and agentic workflows, under two forms of user context: explicit user profiles and behavioral memory logs. Although existing agents achieve relatively high completion rates on non-personalized tasks, performance is substantially lower on preference-personalized tasks. Even the best-performing model, Seed-2.0-Pro, achieves only 47.17% on Process preferences under explicit user profiles. Agents struggle particularly with Ranking and Process preferences. Further analysis reveals two key capability bottlenecks: selecting relevant evidence from user history and recognizing when preferences should take effect during execution. Controlled interventions that explicitly provide relevant evidence improve end-to-end task success by up to 7.06%. PrefDiag-Bench offers a more systematic evaluation of GUI agents' personalization capabilities beyond overall task success. Code and data are available at https://github.com/Zhixin-L/PrefDiag-Bench.",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-10-22T01:04:24+00:00",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2610.30573v1",
-      "journal_boost": 0,
-      "score": 10
-    },
-    {
       "id": "https://www.nature.com/articles/s41586-026-11161-8",
       "title": "The anatomy of a personal health agent",
       "authors": [],
       "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/s41586-026-11161-8A multi-agent framework that coordinates data science, medical reasoning and health coaching over longitudinal wearable and clinical data to provide holistic personal health support is described.",
-      "submitted": "2026-10-17T00:10:04.267459+00:00",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
       "source": "Nature",
       "link": "https://www.nature.com/articles/s41586-026-11161-8",
       "journal_boost": 5,
       "score": 10
+    },
+    {
+      "id": "10.1126/science.aeg6779",
+      "title": "The Virtual Biotech: A multi-agent AI framework for therapeutic discovery and development",
+      "authors": [],
+      "abstract": "Science, Volume 394, Issue 6822, October 2026.",
+      "submitted": "2026-10-17T23:53:11.978783+00:00",
+      "source": "Science",
+      "link": "https://www.science.org/doi/abs/10.1126/science.aeg6779?af=R",
+      "journal_boost": 5,
+      "score": 9
+    },
+    {
+      "id": "https://www.nature.com/articles/s43588-026-01044-3",
+      "title": "LLMs predict material properties based on atom types and not atom positions",
+      "authors": [],
+      "abstract": "Nature Computational Science, Published online: 13 October 2026; doi:10.1038/s43588-026-01044-3Accurately predicting properties of materials is one of the main challenges in computational materials science. Systematic experiments now show that large language models (LLMs) struggle to use positional information for the prediction of those properties. This limitation does not reverse as model or dataset sizes grow.",
+      "submitted": "2026-10-17T23:53:12.717529+00:00",
+      "source": "Nature Computational Science",
+      "link": "https://www.nature.com/articles/s43588-026-01044-3",
+      "journal_boost": 3,
+      "score": 7
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03320-8",
+      "title": "AI doctors’ orders come with a sky-high bill",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03320-8Large language models suggest more tests, referrals and medications than human physicians do, driving up the cost of care.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03320-8",
+      "journal_boost": 5,
+      "score": 6
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03360-0",
+      "title": "This is what the mysterious Denisovans looked like",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03360-0Archaeologists identified skull fragments from China as belonging to this group of ancient human relatives.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03360-0",
+      "journal_boost": 5,
+      "score": 6
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-11165-4",
+      "title": "Persistent neuronal stress signalling underlies Angelman syndrome phenotypes",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/s41586-026-11165-4Genetic and proteomic analyses in human neurons and mouse models of Angelman syndrome (AS) show that loss of the ubiquitin ligase UBE3A leads to an overabundance of asparagine synthetase, and that this is linked with many AS phenotypes.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-11165-4",
+      "journal_boost": 5,
+      "score": 6
+    },
+    {
+      "id": "https://www.nature.com/articles/s42256-026-01318-5",
+      "title": "Agentic inequality",
+      "authors": [],
+      "abstract": "Nature Machine Intelligence, Published online: 20 October 2026; doi:10.1038/s42256-026-01318-5Sharp et al. investigate the implications of unequal access to AI agents and of differences in their quality and number, developing a conceptual framework to identify potential sources of inequality and suggesting a research agenda to help address the resulting societal challenge.",
+      "submitted": "2026-10-17T23:53:12.658737+00:00",
+      "source": "Nature Machine Intelligence",
+      "link": "https://www.nature.com/articles/s42256-026-01318-5",
+      "journal_boost": 3,
+      "score": 6
+    },
+    {
+      "id": "https://www.nature.com/articles/s43588-026-01045-2",
+      "title": "Less can be more for predicting properties with large language models",
+      "authors": [],
+      "abstract": "Nature Computational Science, Published online: 12 October 2026; doi:10.1038/s43588-026-01045-2Researchers show that large language models cannot learn from spatial coordinates regardless of model or data scale. Specialized geometric neural networks consistently outperform language models for material property prediction.",
+      "submitted": "2026-10-17T23:53:12.717529+00:00",
+      "source": "Nature Computational Science",
+      "link": "https://www.nature.com/articles/s43588-026-01045-2",
+      "journal_boost": 3,
+      "score": 6
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-11303-y",
+      "title": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/s41586-026-11303-yAuthor Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-11303-y",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03395-3",
+      "title": "Elusive snow leopards and evasive particles: Books in brief",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03395-3Andrew Robinson reviews five of the best science picks.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03395-3",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03318-2",
+      "title": "Sleep declines in rural communities after electricity arrives",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03318-2Scientists tracked the changing sleep patterns of Indigenous people in Argentina who gained access to mains electricity — and smart phones.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03318-2",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03418-z",
+      "title": "Briefing Chat: How physicists successfully trapped the electron's antimatter equivalent",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03418-zNature staff discuss how precisely measuring a positron could shed light on one of physics’ greatest mysteries — plus, the latest on an ambitious mission to a Martian moon.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03418-z",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03416-1",
+      "title": "First person infected with rare Shamonda virus: what we know",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03416-1Infectious-disease researchers say the risk of the livestock pathogen moving between people is low.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03416-1",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03383-7",
+      "title": "Elizabeth Holmes film enthralls — but her legacy haunts science",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03383-7You Can See Everything brings blood-testing start-ups back into the public eye. They persevere in Theranos’s shadow.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03383-7",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03108-w",
+      "title": "Rebody",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03108-wFighting fit.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03108-w",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03417-0",
+      "title": "Moderna mRNA vaccine almost halves the risk of skin cancer returning",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03417-0Long-awaited results from phase III trial show huge benefits for treatment-resistant melanoma.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03417-0",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-02582-6",
+      "title": "I’m expected to work excessive hours in the lab. Should I speak up about my disability?",
+      "authors": [],
+      "abstract": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-02582-6What can a researcher in an overworked laboratory do to take care of themselves and their lab-mates, and how should they navigate medical disclosure?",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-02582-6",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03414-3",
+      "title": "Can a 'lullaby' save coral reefs from extinction?",
+      "authors": [],
+      "abstract": "Nature, Published online: 22 October 2026; doi:10.1038/d41586-026-03414-3From underwater speakers to growing super-corals, scientists battle to save reefs around the world.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03414-3",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03371-x",
+      "title": "A first for CRISPR: powerful prime editing alters DNA directly in the human body",
+      "authors": [],
+      "abstract": "Nature, Published online: 22 October 2026; doi:10.1038/d41586-026-03371-xApplication of the high-precision technique is part of a clinical trial to treat a genetic disease that can cause liver and nerve damage.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03371-x",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03357-9",
+      "title": "Teen depression and anxiety predicted by childhood brain development",
+      "authors": [],
+      "abstract": "Nature, Published online: 22 October 2026; doi:10.1038/d41586-026-03357-9Analysis of nearly 30,000 brain scans yields detailed timeline of how the brain matures — and hints at the consequences of disrupting it.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03357-9",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03389-1",
+      "title": "Can maths survive AI? Fields medallist Terence Tao calls for a ‘Maths 2.0’ world",
+      "authors": [],
+      "abstract": "Nature, Published online: 22 October 2026; doi:10.1038/d41586-026-03389-1As machines race ahead in solving problems, mathematicians must establish a new era that prizes human understanding over simply publishing more solutions.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03389-1",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03438-9",
+      "title": "Daily briefing: The tell-tale features of a Denisovan",
+      "authors": [],
+      "abstract": "Nature, Published online: 22 October 2026; doi:10.1038/d41586-026-03438-9See what gave Denisovans their distinct look. Plus, a vaccine trial for Ebola could kick off this week in the Democratic Republic of the Congo and what makes a great climate graphic.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03438-9",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-11312-x",
+      "title": "Current-Driven Molecular Machine with Rotation-Enhanced Conductance",
+      "authors": [],
+      "abstract": "Nature, Published online: 22 October 2026; doi:10.1038/s41586-026-11312-xCurrent-Driven Molecular Machine with Rotation-Enhanced Conductance",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-11312-x",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-11317-6",
+      "title": "<i>De novo</i> design of enantioselective artificial metalloenzyme photocatalysts",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/s41586-026-11317-6De novo design of enantioselective artificial metalloenzyme photocatalysts",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-11317-6",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03376-6",
+      "title": "Scientists put a salt marsh in a giant wave-machine: here's what they learned",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03376-6Experiment shows how these ecosystems could protect coastlines from huge storms — plus, new evidence hints at what Denisovans might have looked like.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03376-6",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/s41586-026-11252-6",
+      "title": "Author Correction: Catalyst-free, microdroplet-mediated waste plastic conversion to diacids",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/s41586-026-11252-6Author Correction: Catalyst-free, microdroplet-mediated waste plastic conversion to diacids",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/s41586-026-11252-6",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03319-1",
+      "title": "Surprise! White dwarf stars come in a rainbow of colours",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03319-1Analysis of some nearby stars shows that, despite their name, these bodies can be pink, yellow and more.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03319-1",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03161-5",
+      "title": "To heal sick cities, scientists and residents must work together",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03161-5Tolullah Oni has developed a platform to transfer the intellectual capital of African diaspora scholars back to the continent.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03161-5",
+      "journal_boost": 5,
+      "score": 5
+    },
+    {
+      "id": "https://www.nature.com/articles/d41586-026-03077-0",
+      "title": "An AI tool improves weather forecasts up to a month ahead",
+      "authors": [],
+      "abstract": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03077-0An innovative artificial-intelligence application enhances weather forecasting in the difficult subseasonal range, providing accurate forecasts of precipitation, temperature and pressure 3–5 weeks in advance. The tool refines both physics- and AI-based weather models and improves the early prediction of extremes of heat, cold, rainfall and flooding.",
+      "submitted": "2026-10-17T23:53:11.775421+00:00",
+      "source": "Nature",
+      "link": "https://www.nature.com/articles/d41586-026-03077-0",
+      "journal_boost": 5,
+      "score": 5
     }
   ]
 }
