@@ -1,0 +1,686 @@
+{
+  "date": "2026-10-31",
+  "fetched_at": "2026-10-31T01:17:07.877709+00:00",
+  "stats": {
+    "arxiv_count": 436,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 43,
+      "Science Advances": 83,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 0,
+      "Nature Chemical Engineering": 0,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 677,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2610.40350v1",
+      "title": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
+      "authors": [
+        "Zheng Zhu",
+        "Xiaozhuan Liang",
+        "Xi Chen",
+        "Bei Yu",
+        "Jiaya Jia"
+      ],
+      "abstract": "Agents powered by large language models (LLMs) have demonstrated remarkable progress in solving complex reasoning tasks. However, LLM agents often falter on long-horizon tasks due to cognitive overload, as their working memory becomes cluttered with expanding and irrelevant information, which dilutes their attention and hinders effective planning and reasoning. To mitigate this challenge, we introduce Cognitive Resource Self-Allocation (CORAL), a novel reasoning paradigm that empowers agents to proactively optimize their context. Implemented as an agent-callable working memory management toolset, CORAL allows an agent to checkpoint its task progress and verified facts, and adaptively initiate a new problem-solving episode by resetting cluttered context while preserving only the checkpointed information, enabling it to resume reasoning from a clean state. We further enhance the agent's checkpointing capabilities using a Multi-episode Agentic Reinforced Policy Optimization algorithm. On the GAIA benchmark, CORAL with an 8B model achieves 42.8% average accuracy, with particularly strong gains on the most challenging long-horizon tasks (Level 2 and Level 3). Crucially, these gains come at a substantially lower inference cost: CORAL consumes 6-7$\\times$ fewer input tokens than a ReAct agent. It also generalizes to multi-hop Knowledge QA benchmarks and to the considerably harder BrowseComp, where it improves a strong proprietary agent by 8.0 points.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T16:07:10+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40350v1",
+      "journal_boost": 0,
+      "score": 21
+    },
+    {
+      "id": "2610.40565v1",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "abstract": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-29T17:42:32+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40565v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2610.39927v1",
+      "title": "Learning Calibrated Confidence for Multi-Agent Collaboration",
+      "authors": [
+        "Chenxiao Fan",
+        "Chongming Gao",
+        "Gangyi Zhang",
+        "Yaxin Gong",
+        "Leyang Shen",
+        "Jiakai Wang",
+        "Dong Wang",
+        "Yang Liu",
+        "Haoyan Liu",
+        "Xinting Hu",
+        "Fuli Feng",
+        "Xiangnan He"
+      ],
+      "abstract": "Complex information seeking on the Web often requires collecting evidence from multiple documents and reasoning across them, as in multi-hop question answering. Multi-agent systems address such tasks by dividing work among specialized agents, where upstream agents produce intermediate answers and supporting evidence that downstream agents build upon. However, upstream answers vary in correctness, and most systems provide no quantitative signal about it, leaving the downstream agent to judge whether to trust or verify what it receives based solely on the textual evidence.\n  In this paper, we propose MASCAL. Each agent learns to produce a correctness probability for its answer by jointly optimizing task performance and confidence calibration in reinforcement learning; the upstream agent passes this probability at handoff, giving the downstream agent a quantitative basis for its decisions, and the final answer also carries a calibrated probability, quantifying the reliability of the system output. To guide the downstream agent in using this signal during training, we introduce confidence-aware weighting, which increases the learning weight at positions responsive to the upstream probability, so that the agent learns more from decisions where it actively uses the signal. Across three collaboration architectures spanning Web retrieval and reasoning tasks, MASCAL improves task accuracy and calibration quality for both agents, and generalizes to deeper collaboration chains and different model scales. Intervention analysis confirms that upstream confidence affects downstream decision behavior, and the learned final confidence supports selective answering and targeted rechecking.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-10-29T12:30:00+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39927v1",
+      "journal_boost": 0,
+      "score": 18
+    },
+    {
+      "id": "2610.40227v1",
+      "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+      "authors": [
+        "Xuanfa Jin",
+        "Xinyu Cui",
+        "Zhijian Ma",
+        "Xue Yan",
+        "Jian Zhao",
+        "Haifeng Zhang",
+        "Jun Wang"
+      ],
+      "abstract": "Epistemic game theory explains an agent's strategic behavior via the beliefs it holds about others and how these beliefs are updated as the interactions unfold. Modern LLM-based agents, however, often lack an explicit mechanism for learning and updating such beliefs to guide decisions under incomplete information. To bridge this gap, we propose EpiAgent, a framework that equips LLM-based agents with an explicit, learnable epistemic layer, which maintains beliefs over others' private information and combines these beliefs with the agent's available information into an epistemic state for action selection. Concretely, the agent's policy is decomposed into two coupled stages: Epistemic Update, which updates these beliefs from interaction histories, and Action Planning, which selects actions conditioned on the updated epistemic state. By formulating their dependency as a bi-level optimization problem, we introduce Epistemic Self-Play, an algorithm that alternately optimizes the two stages through self-play, utilizing an intrinsic prediction reward to evaluate how well inferred beliefs predict subsequent observations. Empirical results across both mixed and competitive scenarios show that EpiAgent consistently outperforms prompting-based and RL-based baselines. Further analyses reveal the benefits of dedicated epistemic training, improvements in belief inference accuracy, and the contribution of learned beliefs to action planning. These results demonstrate the value of an explicit, learnable epistemic layer for effective multi-agent interactions.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "submitted": "2026-10-29T15:05:08+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40227v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2610.39193v1",
+      "title": "Goal-Aware Dynamic Multi-Agent Collaboration for Long-Horizon Tasks",
+      "authors": [
+        "Xu Shen",
+        "Lingyong Yan",
+        "Shuaiqiang Wang",
+        "Jianmin Wu",
+        "Zhikai Chen",
+        "Jiliang Tang",
+        "Jie Ren"
+      ],
+      "abstract": "LLM-based agents are increasingly used to complete complex, long-horizon tasks without human intervention. To make progress toward the task goal, agents need to perform different duties, such as planning and verification, when needed. To understand how single agents manage these duties during long-horizon execution, we conduct a preliminary study. Our analysis shows that verification has the strongest association with task success, but often occurs late, leaving limited opportunities for correction. We also find that the proportion of duty-relevant information decreases as records from different duties accumulate in a shared context. These findings lead us to examine whether multi-agent systems (MAS) can address these problems by assigning duties to agents with separate contexts. Our analysis shows that this separation alone is insufficient. Agents can lose track of the overall goal and repeat prior investigations. They may also lack necessary background while receiving irrelevant information from others. To maintain goal awareness and coordinate collaboration as task needs change, we propose Goal-Aware Dynamic Multi-Agent Collaboration (GAD). It uses a growing execution graph to organize subtasks and their dependencies. To keep agents focused on their goals, each context retains the original instruction and the assigned task's goal and acceptance conditions. To adapt collaboration and information sharing during execution, agents can divide tasks into subtasks and specify dependencies based on execution evidence. These dependencies guide when agents work and which results they receive. Verification and recovery check subtask results and full task completion against their goals, providing feedback for repair when checks fail.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T02:15:35+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39193v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2610.40071v1",
+      "title": "Agentic process evidence",
+      "authors": [
+        "Yuval Kainan",
+        "Carmit Hershman"
+      ],
+      "abstract": "The way software gets built is changing dramatically. AI agents now create pull requests, select dependencies, refactor codebases, interpret test failures, and execute infrastructure changes across the entire Software Development Life Cycle (SDLC). AI agents are autonomous team members, but unlike human engineers, they are ephemeral - their reasoning, decisions, and tool calls vanish the moment the session ends. Modern Security incidents involving intent mismatch or injection are becoming increasingly common - forcing us to address AI Agents as an insider threat. No widely adopted standard yet enables agentic provenance and governance and its obvious that you can't hold an ephemeral process accountable. The git log was designed for human commits. It shows what changed. It does not show what an AI agent did, which model it used, which tools it called, or whether anyone was accountable for the outcome. Every governance framework, every audit trail, every compliance control in the SDLC was built around one assumption: a human made the decision. That assumption no longer holds. This shift introduces 3 main procedural problems (not addressing scale) - Supply-chain vector - The agentic coder is software, so it is a supply-chain security risk. Policy guardrails - How to ensure the agentic coder is compliant with the policies of the organization. Task-alignment - How to align the agentic coder on its tasks and goals. We introduce Agentic Process Evidence (APE), a signed, tamper-evident, machine-readable attestation of agentic processes, linking the sessions to their outcome (process-aware logging). APE enables Policy-as-Code control over the agentic processes, allowing for human in the loop only when it's needed. We support the in-toto style attestation framework, and the protocol is aligned with the relevant regulations",
+      "categories": [
+        "cs.AI",
+        "cs.SE",
+        "eess.SY"
+      ],
+      "submitted": "2026-10-29T13:50:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40071v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2610.39275v1",
+      "title": "LLM-Assisted Optimization for Simulation-Based Redesign",
+      "authors": [
+        "Chan-Eui Song",
+        "Jeremy J. Michalek",
+        "Christopher McComb"
+      ],
+      "abstract": "Engineering design frequently involves redesigning a prior solution to adapt to changes in context, such as material prices or system requirements. Redesign often leverages simulators too complex and/or computationally intensive for traditional numerical solvers, which lack engineering knowledge and context, to ensure global solution quality. Large language models (LLMs) can interpret semantic information, including engineering knowledge about the system and changes in context, to help guide search, and recent studies have shown that incorporating this knowledge into optimization can improve search performance. However, how best to combine LLMs with numerical solvers in redesign remains unclear. We develop and test an integrated LLM-optimization approach for redesign and compare three methods for leveraging LLMs (warm start, variable fixing and ReAct) and four black-box solvers (Bayesian optimization, genetic algorithms, mesh adaptive direct search and random search) on an electric vehicle battery pack cost minimization case study across four types of redesign scenarios. We find that the integrated approach can match feasible design discovery of the numerical-solver baselines with 80% fewer simulator evaluations while tripling the fraction of runs that find near-optimal solutions. We find that the best LLM-solver integration approach and the way the prior solution is leveraged depend on the structure of the design requirement change, and that the benefit of increasing LLM model size grows with the extent to which the LLM controls the search. These results show clear potential for LLMs in redesign tasks for guiding or replacing numerical solvers.",
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "math.OC"
+      ],
+      "submitted": "2026-10-29T03:28:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39275v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2610.39532v1",
+      "title": "Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy",
+      "authors": [
+        "Hengyu Wu",
+        "Blaise Delattre",
+        "Yang Cao"
+      ],
+      "abstract": "Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks that extend beyond individual interactions: a release appropriate in isolation may become inappropriate when combined with information previously disclosed to a recipient or propagated to downstream agents along the planned workflow. Existing Contextual Integrity (CI) mechanisms for agentic systems typically rely on local judgments that assess each disclosure in isolation, with or without regard to the recipient's history, but do not account for how information propagates downstream. However, compliance at the current boundary does not guarantee appropriateness across the workflow. We introduce Task-Graph Contextual Integrity (TG-CI), to our knowledge the first task-graph-native formalization of Contextual Integrity for multi-agent systems. TG-CI represents a workflow as a Multi-Agent Task Graph (MATG) and extends CI from atomic transfers to stateful, graph-level information flows by jointly considering an item's intended propagation scope and recipients' evolving disclosure states. We operationalize TG-CI through propagation-scoped authorization under two complementary policies: Full-Scope, which requires admissibility across the complete downstream scope, and Auto-Region, which confines each item to its maximal admissible region using lightweight frontier gates. We further introduce MAPLE-Bench, a benchmark of 144 cases across four scenarios that jointly vary MATG topology, disclosure history, compromised-agent placement, and item-level privacy policies. In our primary experimental configuration, TG-CI reduces the mean unauthorized disclosure count by 85.8-94.1% relative to the Local-History CI baseline, while retaining 93.6-96.1% of the baseline's task accuracy, with the two enforcement policies providing complementary privacy--cost--utility trade-offs.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T07:31:50+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39532v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2610.39234v1",
+      "title": "AgentHeal: Evaluating Goal-Preserving Resource Recovery of Web Agents under Access Barriers",
+      "authors": [
+        "Zhiyi Liu",
+        "Haohua Du",
+        "Haoqi Sun",
+        "Haisheng Tan"
+      ],
+      "abstract": "Large language model (LLM) agents have demonstrated strong capabilities in automating complex information-seeking and transactional tasks across the open web. However, their real-world reliability remains limited by access barriers, such as dead links, authentication walls, rate limits, and anti-scraping defenses. These barriers block the primary execution path, causing agents to abort prematurely, loop indefinitely, or quietly compromise the user's original constraints. Existing evaluations either implicitly assume that target resources are freely accessible or focus on transient perturbations that simple retries can resolve, failing to capture scenarios where agents must actively reroute around impassable bottlenecks. To bridge this gap, this paper introduces AgentHeal, a comprehensive benchmark evaluating goal-preserving resource recovery, defined as the ability of web agents to detect non-transient access barriers, pivot to legitimate alternative sources, and fulfill the user's exact original objective. Spanning nine barrier families across a counterfactual sandbox and real-website replay, our experiments on leading LLM backbones show that average task success drops sharply from 89.4% to 43.7% under access barriers. Further analysis reveals that agents frequently fall for deceptive look-alikes, fail to escalate to users when necessary, violate access policies, or waste computation on futile retries, providing actionable diagnostics for developing resilient web agents.",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T02:51:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39234v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2610.40492v1",
+      "title": "Agentic University: Collaborative Agents for Personalized Learning",
+      "authors": [
+        "Jingru Fan",
+        "Tianle Zhou",
+        "Yunjie Zhou",
+        "Zihao He",
+        "Yixuan Zhou",
+        "Kezhao Wu",
+        "Xinyu Zheng",
+        "Xiyuan Wang",
+        "Yuheng Wang",
+        "Zhi Li",
+        "Songhua Liu",
+        "Weinan E",
+        "Chen Qian"
+      ],
+      "abstract": "Large language models support personalized tutoring, content generation, and adaptive learning paths. However, capability development requires these resources and interactions to form a coherent learning process that evolves with the learner. A central challenge is to align goals, activities, and assessment while using learning evidence to decide what should follow. We introduce Human-Participatory Multi-Agent Organization and instantiate it in Agentic University (AU). In AU, learners participate as organization members and work with specialized agents to maintain a revisable Capability Program. The program connects personal goals, learning activities across modalities, and layered assessment, while learner feedback and performance guide subsequent support. Our evaluation shows advantages in program organization, assessment design, and revision quality. Users achieved larger mean assessment gains (12.19 versus 5.61 points on a 50-point scale) and reported stronger cognitive support. This work contributes an organizational approach to adaptive learning that makes learner participation a continuing basis for multi-agent coordination. The Agentic University project is available at \\href{https://github.com/AgenticOrgLab/AgenticUniversity.git}.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T17:18:07+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40492v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.40246v1",
+      "title": "EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation",
+      "authors": [
+        "Ankush Kadu",
+        "Athira Gopal",
+        "Niharika Singh",
+        "Arpit Jain",
+        "Aswanth Krishnan"
+      ],
+      "abstract": "Computer-use agents built on large language models (LLMs) work in software that can change while they act: an appointment moves, a policy is revised, a record is updated. Testing agents under such changes is harder than it looks. When an agent fails, the cause may be the agent, but it may also be a change that did not fire as intended, an update the agent never received, or a grader that scored the episode wrongly. We introduce EnvOS, a framework for building and certifying environments that change mid-task. Before any agent runs, EnvOS checks that each change fires correctly, that the task remains solvable, and that the grader separates correct from incorrect behavior; after each run, separate code re-checks the verdict from archived evidence. We apply it to stale information, where a value the agent has already seen changes before the agent acts on it. In clinic booking, Claude Opus 5 succeeds on 0/16 tasks when nothing extra is shown, 2/16 when reminded to re-check the source, and 15/16 when the updated value is shown; the gain over the reminder holds after correcting for all tests (p = 0.00293). In insurance-claim approval, Opus 5 re-checks on its own and succeeds on 10/10, whereas Claude Sonnet 5 rises from 1/10 to 9/10 when the current policy is shown again, a gain significant in its pre-registered test but not after correcting for all tests. Whether an agent caught a change thus varied with the model and the interface. We also stress-test the grading itself: on corrupted episodes designed blind from the rules, the EnvOS pipeline accepted none of 26 as clean, and on an externally generated set it caught 25 of 39, against 4 for simple log checks. Because every EnvOS environment is generated from a seed and graded by an audited automatic verifier, the same environments are natural candidates for training agents with reinforcement learning from verifiable rewards.",
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "submitted": "2026-10-29T15:17:29+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40246v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.39395v1",
+      "title": "OPERA: OPamp Design by an Expert-Taught Reasoning Agent, from Specifications to Layout",
+      "authors": [
+        "Vishal Saxena",
+        "Soumyajit Mandal"
+      ],
+      "abstract": "Analog flows from specifications to a signed-off layout rarely run without manual iteration. Recent large language model (LLM) agents size circuits with optimizer loops over the device dimensions and stop at the schematic. We present OPERA (OPamp design by an Expert-taught Reasoning Agent), in which a general-purpose LLM agent designs CMOS opamps from specifications to post-layout sign-off with open-source tools. First, the designer teaches the agent the gm/ID method: map the specifications to transconductances and minimum currents, choose gm/ID per device role from characterized lookup tables, and size from equations, leaving a few knobs to search and an explainable design. Second, the agent learns the gLayout framework and taught layout practice, and writes a reusable layout generator that closes the layout and extraction loop at designer-approved gates. In SKY130, the agent designed a shared constant-gm bias and six opamps (5T, folded-cascode and telescopic OTAs; Miller, folded-cascode and telescopic two-stage) for fun >= 50 MHz, PM >= 60 degrees, SR 25 V/μs into 1 pF and a minimum dc gain of 30 to 60 dB. All six layouts are DRC-clean and LVS-matched, and their extracted netlists meet every target at all 15 PVT corners ( fun >= 53.7 MHz, PM >= 62.1 degrees, SR >= 27.9 V/μs). The benchmark netlists are released at https://github.com/AMPICLab/AMPICBench.",
+      "categories": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T05:29:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39395v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.39377v1",
+      "title": "AgentDecept: Benchmarking Deceptive Behavior in Tool-Using LLM Agents under Pressure",
+      "authors": [
+        "Yehan Zhang",
+        "Qianqi Yan",
+        "Hang Yin",
+        "Ching-Chen Kuo",
+        "Shan Jiang",
+        "Ming Ouyang",
+        "Yijie Liu",
+        "Xin Eric Wang"
+      ],
+      "abstract": "LLM agents increasingly carry out multi-turn tasks across everyday applications, yet users often see only the agent's report rather than the observations, API calls, and state changes behind it. Existing deception benchmarks have studied long-horizon interactions and tool-use settings, but whether agents faithfully report their actions across realistic, stateful application workflows remains underexplored. To address this gap, we introduce AgentDecept, an executable benchmark for evaluating behavioral deception under pressure. AgentDecept contains 477 pressure variants derived from 257 source tasks across six pressure sources, each paired with a pressure-free counterpart. Interventions enter through event messages, task context, application state, tool responses, and service quotas, spanning explicit events and implicit task or environment changes. Our evidence-grounded protocol evaluates full trajectories by relating user-facing claims to time-ordered observations and executed outcomes, distinguishing falsification, concealment, and equivocation from honest failure and disclosed limitations. The resulting behavioral labels also provide a setting for testing existing activation-based probes. AgentDecept enables controlled analysis of when multi-turn agents' reports diverge from execution in realistic application interactions.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T05:08:22+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39377v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2610.40588v1",
+      "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
+      "authors": [
+        "Leonidas Raghav"
+      ],
+      "abstract": "When AI agents share channels and credentials, one agent can press another to break its operator's rule, a first step towards collusion. Output filters check only what an agent has already written. Can an overseer tell beforehand that an agent is about to give in? We show that a linear probe on the agent's activations can, in a controlled multi-agent setting. Across six scenarios, a peer presses a target for up to 20 rounds to reveal a secret, such as a deploy token; the target often refuses, then gives in. Read at each model call before its output is written, the probe picks out the one that leaks. On held-out Qwen3-32B episodes, at a threshold set to flag 5% of benign calls, it catches 82% of leaking calls. At a similar flag rate, a zero-shot decision-model monitor catches 26%. On gpt-oss-20b, a probe on its reasoning reaches AUROC 0.91. A bag-of-words classifier trained on the same calls comes close, so most of the gain comes from training on labels, not activations. The probe also flags permitted disclosures: it reads the coming disclosure more than the violation. The warning is short-range, and halting on any alarm would stop most benign episodes, which a second text check does not fix. A warning raised before generation could let an overseer stop an agent that is about to give in, ahead of others acting on its messages or recruitment spreading through a swarm.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T17:47:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40588v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.40511v1",
+      "title": "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening",
+      "authors": [
+        "Zach Paris",
+        "Emily Finn"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used as computational models of human language processing, yet it remains unclear which components of their representations drive alignment with neural activity. Here, we use ridge reduced-rank regression to identify the brain-predictive subspace of LLM representations: the representational directions that support linear prediction of neural responses. Across three naturalistic language-listening datasets spanning intracranial electrophysiology and fMRI, and six model conditions spanning autoregressive, bidirectional masked, and randomly initialized language models, we find that full linear encoding performance can be recovered using only 1-3% of the original embedding dimensionality. These low-dimensional subspaces generalize across held-out participants and, to a lesser extent, across datasets, suggesting that neural predictivity is concentrated in a compact and partially shared representational space. We next compare these brain-predictive directions with the principal axes of variation in the embeddings. Principal component analysis requires substantially more dimensions to recover neural prediction, demonstrating that the directions most useful for predicting neural activity are distinct from those capturing the most overall variance within LLM representations themselves. Finally, characterizing the learned subspaces allows us to surface interpretable features that are overrepresented in neural activity above and beyond the LLM representations. Together, these results show that LLM-brain alignment is supported by a small, structured subset of model representations and provides a framework for better understanding exactly why these representations align. Code can be found at: https://github.com/thefinnlab/low-rank-alignment",
+      "categories": [
+        "cs.CL",
+        "q-bio.NC"
+      ],
+      "submitted": "2026-10-29T17:23:44+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40511v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.40379v1",
+      "title": "Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records",
+      "authors": [
+        "Daniel Palacios",
+        "Guantong Qi",
+        "Anna Kadi",
+        "Natali Borrego",
+        "Sukru Aras",
+        "Michael L. Ferm",
+        "Elizabeth Kubota-Mishra",
+        "Maria J. Redondo",
+        "Zhandong Liu",
+        "Mustafa Tosur",
+        "Hu Chen"
+      ],
+      "abstract": "Large language model (LLM) agents are proposed for clinical prediction but are untested in pediatrics, where cohorts are small and outcomes are uncommon. Using records from 2,489 youth with type 2 diabetes (T2D) and 4,018 with type 1 diabetes (T1D), spanning structured data, note-derived social determinants and, in T1D, continuous glucose monitoring data, we predicted seven T2D outcomes, four also in T1D, at 24 months from 18 months of follow-up. CEDAR (Clinical Evidence-Driven Agent for Risk-prediction), an evidence-citing, self-auditing LLM pipeline, outperformed trained machine learning in both cohorts (pooled area under the receiver operating characteristic curve 0.815 versus 0.656 to 0.700 in T2D and 0.756 versus 0.603 to 0.631 in T1D), most on the sparsely screened outcomes. Only 4 of 70,246 values it cited did not match the chart. Reading only the evidence and reasoning cited by CEDAR, two pediatric endocrinologists reached the same prediction as CEDAR in about nine of ten cases, agreeing with each other on 90.5%.",
+      "categories": [
+        "q-bio.QM",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T16:23:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40379v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.39813v1",
+      "title": "EvoTeam: Multi-Agent Collaboration via Evolving Teams",
+      "authors": [
+        "Qinuo Cao",
+        "Xin He",
+        "Dianxuan Fu",
+        "Lizhi Zhang",
+        "Zhaoqing Xing",
+        "Jiapu Wang",
+        "Xin Wang",
+        "Na Zou",
+        "Yi Chang",
+        "Qinggang Zhang"
+      ],
+      "abstract": "LLM-based multi-agent systems (MAS) rely on collaboration among specialized agents to solve complex tasks. Existing methods improve MAS by refining the prompts, skills, and execution strategies of individual agents based on task feedback. However, improving individual agents does not necessarily lead to better team collaboration. Recent studies have therefore extended evolution to the collaboration level, using collective execution experience to adjust team organization, and inter-agent interactions. Nevertheless, evolving collaboration across heterogeneous tasks remains challenging, as existing approaches often constrain team reorganization within a shared structure and reuse interaction rules across incompatible team contexts. In this paper, we propose EvoTeam, a collaboration-centric evolution framework that jointly evolves team organization, interaction rules, and individual agent skills through execution experience. It maintains a library of reusable teams, selecting or creating agent teams and guiding collaboration through team-specific interaction rules. Collaboration experience accumulates within compatible team contexts, while individual skills remain reusable across teams. Experiments across four benchmarks demonstrate its effectiveness. Our code is available at https://github.com/DEEP-JLU/EvoTeam.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T10:55:30+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39813v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.39543v1",
+      "title": "From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models",
+      "authors": [
+        "Yixue Zhang",
+        "Wenke Xia",
+        "Kun Wu",
+        "Wenbo Yu",
+        "Pei Ren",
+        "Junnan Nie",
+        "Di Hu",
+        "Zhengping Che",
+        "Chang Liu"
+      ],
+      "abstract": "Reasoning informs decision-making by connecting intended actions with their expected consequences. Recent vision-language-action (VLA) models incorporate embodied chains of thought (ECoTs) to guide action generation. However, such guidance remains implicit, as actions are conditioned on ECoTs rather than explicitly optimized to align with them.\n  We introduce CoRAct, a consequence-grounded reasoning-to-action alignment framework that explicitly aligns reasoning and action through reward-guided optimization in action noise space. CoRAct formulates two physically grounded ECoT components as verifiable signals: movement specifies intended motion, while waypoints encode expected spatial consequences. A unified Mixture-of-Transformers jointly models ECoT reasoning, action generation, and action-conditioned future prediction. For candidate actions generated from sampled noise, CoRAct computes alignment rewards based on movement consistency and agreement between predicted outcomes and specified waypoints. These rewards guide group-relative optimization of the initial noise distribution, steering action generation toward consistency with intended actions and expected consequences.\n  Experiments across RoboCasa, VLABench, and real-world manipulation tasks demonstrate improvements in task success, generalization, and reasoning-execution alignment over strong ECoT-based VLA baselines. CoRAct also grounds externally provided ECoTs in executable behavior, enabling zero-shot adaptation to novel scenarios by leveraging knowledge from powerful vision-language models.\n  Project page and dataset: https://onlyxingxingzyx.github.io/CoRAct/",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-10-29T07:44:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39543v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2610.40186v1",
+      "title": "Locating and Closing Information Gaps in Multi-Agent Systems",
+      "authors": [
+        "Yaxin Gong",
+        "Chongming Gao",
+        "Gangyi Zhang",
+        "Chenxiao Fan",
+        "Leyang Shen",
+        "Jiakai Wang",
+        "Dong Wang",
+        "Yang Liu",
+        "Haoyan Liu",
+        "Xinting Hu"
+      ],
+      "abstract": "Multi-step Web tasks often require several LLM agents to gather and combine evidence. The communication graph of a fixed workflow restricts which agents can read each other's outputs: evidence retrieved by one agent may never reach the agent that needs it, leaving an information gap and an incomplete or incorrect answer. Adding a connection can deliver the missing evidence, but can also lead the receiver to adopt an incorrect upstream conclusion that displaces a correct answer; the final output alone does not separate the two. We propose Selective Probing and Link Insertion for Closing information gaps in multi-agent Execution (SPLICE), which locates information gaps per query and decides what to adopt after adding an edge. After the original workflow runs, SPLICE uses the query and node outputs to locate a possible gap, adds one directed edge from a source to a receiver to deliver the relevant evidence, and re-executes the receiver and affected downstream nodes, producing a candidate answer. The adoption decision reads both the final answers of the two runs and the process changes the edit caused inside the workflow: how far the receiver moved, where its new content came from, and whether the change reached the final answer. A selector trained on these process features chooses between adopting the candidate answer and retaining the original. On five benchmarks, SPLICE raises the task score on Web tool use by 8.0% and the mean score on four reasoning and planning benchmarks by 5.7% relative to the static skeleton, at 1.25 to 1.44$\\times$ the skeleton's cost, and transfers zero-shot to four unseen backbones.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T14:45:43+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40186v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.39852v1",
+      "title": "DWISE: Denoising Workload-Informed Scheduling Engine",
+      "authors": [
+        "Lie Li",
+        "Wen Li",
+        "Junxiao Shen",
+        "Jindong Gu",
+        "Guosheng Hu"
+      ],
+      "abstract": "Unlike autoregressive large language models (AR-LLMs), diffusion LLMs (dLLMs) generate text by iteratively denoising many tokens in parallel, offering a promising path to efficient inference. Existing serving frameworks, however, schedule dLLM requests with policies designed for AR models, namely first-come-first-served (FCFS) admission and prefill priority. We find that both policies are ill-suited to dLLMs, wasting much of their speed. FCFS ignores that a dLLM request's decoding cost is highly heterogeneous and unknown at arrival, causing severe head-of-line blocking. Prefill priority, widely used in AR-LLM serving to keep time-to-first-token low, sharply cuts dLLM efficiency, as rounds that run only prompts leave most of the batch idle. We present DWISE, a Denoising Workload-Informed Scheduling Engine for efficient dLLM serving. DWISE schedules requests by their remaining work, measured in a block-level unit shared by prefill and denoising, so both phases share a round. To predict the unknown denoising workload, DWISE combines a lightweight prompt-based predictor at admission with a single refinement from the first denoising round's hidden states, which capture model-specific information absent from the prompt and require no additional model execution. Implemented in SGLang and evaluated on five models from three dLLM families under bursty workloads, DWISE reduces mean end-to-end latency over SGLang by 5.4$\\times$ on average and up to 14.9$\\times$ while preserving task accuracy. The code will be released publicly.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-10-29T11:31:25+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39852v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.39682v1",
+      "title": "Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels",
+      "authors": [
+        "Qin-Wen Luo",
+        "Sheng Ren",
+        "Xiang Chen",
+        "Rui Liu",
+        "Jun Fang",
+        "Naiqiang Tan",
+        "Jun Wang",
+        "Hua Chai",
+        "Sheng-Jun Huang"
+      ],
+      "abstract": "Deep search agents extend language models by interleaving reasoning with external retrieval. However, effective search-agent training requires addressing two challenges beyond final-answer optimization. First, the capability frontier of agents is largely determined by training questions, whereas fixed or labeled task collections cannot adapt as agents improve. Second, outcome-only reinforcement learning treats all successful trajectories equally, even when some correct answers rely on redundant searches, creating an inherent tension between answer accuracy and tool efficiency. To address these issues, we introduce \\textsc{ZEST-Search}, a zero-label and tool-efficient framework for search-agent training via heterogeneous co-evolution. Starting from unlabeled reference questions, \\textsc{ZEST-Search} constructs validated search tasks online through an answer-first and evidence-path-guided generation process. A heterogeneous proposer adaptively constructs training tasks around the solver's evolving capability boundary, while the solver learns search-augmented reasoning through reinforcement learning. To jointly optimize task difficulty and search efficiency, \\textsc{ZEST-Search} employs an intermediate-difficulty reward for the proposer and a task-local tool-aware reward for the solver, encouraging informative tasks and correct answers with fewer redundant searches. Experiments on seven general-domain and multi-hop question answering benchmarks demonstrate that \\textsc{ZEST-Search} consistently improves search-agent performance while achieving higher tool efficiency without labeled search-training data or expert search trajectories. Further analyses show that heterogeneous generation, adaptive difficulty control, and tool-aware optimization enable more effective search-agent training.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "submitted": "2026-10-29T09:28:19+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39682v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.39417v1",
+      "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+      "authors": [
+        "Zhonghao Jiang",
+        "Xuyang Zheng",
+        "Yanfu Yan",
+        "Zhongxin Liu",
+        "Lingfeng Bao",
+        "Shuiguang Deng"
+      ],
+      "abstract": "Large language models (LLMs) have shown strong performance on software engineering (SE) tasks, driving the need for high-quality datasets for reliable training and evaluation. SWE-bench-style datasets (SWE datasets) are widely used to evaluate LLM-based coding agents on real-world software issues, where task clarity and test coverage directly affect whether instances are solvable and verifiable. However, quality issues persist in existing SWE datasets, and manual annotation is costly and labor-intensive, motivating LLM-based annotation. Existing approaches typically rely on static, overly general rubrics, limiting their ability to handle diverse and nuanced scenarios and often yielding high false positive rates. In contrast, human annotators draw on accumulated experience to make context-aware judgments. Inspired by this, we propose ExLabel, an LLM-based, self-evolving, experience-guided assistant for task clarity and test coverage assessment in SWE datasets. ExLabel maintains an evolving experience bank that distills cross-instance knowledge into stable yet adaptive judgment criteria and reuses relevant experience to guide the assessment of new instances. For systematic evaluation, we construct SWE-TQ, a new benchmark spanning eight programming languages, by cleaning human annotations from SWE-bench and Multi-SWE-bench. Experiments with three backbone LLMs show that ExLabel achieves the best F1 across all settings, with relative improvements of 44.2%/49.9% and 24.0%/18.4% over the best baseline for task clarity and test coverage assessment on the Python/Multilingual subsets, respectively. Moreover, a coding model fine-tuned on SWE-rebench data filtered by ExLabel resolves 66.2% of issues on SWE-bench Verified, outperforming the model trained on data filtered by the best baseline by 14.5%.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T05:59:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39417v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.39264v1",
+      "title": "Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps",
+      "authors": [
+        "Peitong Duan",
+        "Khashayar Gatmiry",
+        "Jeffrey Nichols",
+        "Samy Bengio",
+        "Emmanuel Abbe"
+      ],
+      "abstract": "While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion. To effectively leverage this dual reward structure, we optimize the agent using Proximal Policy Optimization (PPO) with step-level advantage estimation. Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories. To support this online training paradigm at scale, we introduce an efficient infrastructure that orchestrates hundreds of concurrent virtual iOS devices. Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence. Notably, our 8B RL agents achieve nearly a sevenfold improvement over the SFT baseline in out-of-distribution generalization to Android environments, while outperforming Gemini-3.5-Flash and tying with Gemini-3.1-Pro on real iOS applications.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T03:17:33+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39264v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.39182v1",
+      "title": "Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models",
+      "authors": [
+        "Aishik Nagar",
+        "Cheston Tan"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly described as acquiring \"reasoning\" skills after reinforcement learning with verifiable rewards. However, whether these gains reflect genuine reasoning or more superficial adaptations remains underexplored. In this work, we probe LLMs trained in a finite and exhaustively analyzable logical domain, namely Tic-Tac-Toe, and trace how internal representations evolve across reinforcement learning (RL) with Group Relative Policy Optimization (GRPO). Quantitatively, RL yields high accuracy and robustness across prompt variations, suggesting the emergence of game reasoning. Mechanistic interpretability, however, paints a different picture: features extracted with sparse autoencoders (SAEs) reveal that models primarily adapt to rely more heavily on information already explicit in the prompt, such as whose turn it is, game progression and board occupancy. In comparison, high-level concepts like board symmetries and strategic forks remain weakly represented, raising concerns that reasoning benchmarks overestimate model abilities. This suggests that RL-driven \"reasoning\" may conflate task-specific adaptations to input information with reasoning ability. We provide, for the first time: (i) a systematic interpretability pipeline tracing representation dynamics across RL training in small-scale LLMs; (ii) an extension of SAE-based feature discovery to hypothesis-driven testing in a finite logical domain; and (iii) an interpretability-based demonstration that RL post-training neither adds nor removes concept information but reorganizes which features dominate the representation, with causal interventions locating the decision downstream of it, in the late-layer state.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T02:09:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39182v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2610.40370v1",
+      "title": "The Athlete as a Scientist of One: Agentic Bayesian Experimental Design for Individualized Physiology from Consumer Wearables",
+      "authors": [
+        "Behnam Moradi"
+      ],
+      "abstract": "Large language model (LLM) agents for personal health read wearable data and recommend, but do not learn about the individual in a way that can be audited or falsified. We present EpiCoach, an agentic system that treats one athlete, a cross-country mountain biker, as the subject of accountable N-of-1 science. Claims about the athlete live in an evidence-gated hypothesis registry: each must issue a probabilistic prediction about a future session before it occurs, and its belief moves only through computed evidence from a logged statistical fit. Predictions come from a mechanistic digital twin inferred from heart rate, GPS and barometric altitude: a lagged heart-rate response model, a fitness-fatigue model with learned time constants, and a latent technical-descending skill state, measured on discovered trail segments. The agent prescribes the next training week as a constrained experiment maximizing information gain subject to load and safety constraints, around two instrument rides. We evaluate the system two ways over eighteen months of data. A rolling-origin replay benchmark shows the twin beats standard forecasters on heart rate but not segment time, and the agentic loop matches a static model. A live prospective phase runs the weekly cycle: in its first three weeks the ledger sealed 20 predictions, scored 14, the descent forecast calibrated after one correction, the climb forecast pessimistic as the athlete improved, and the safety officer vetoed the agent twice. Every correction is preserved in the registry, a template for auditable, falsifiable personalization in digital health. We release the registry, benchmark and protocol.",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "submitted": "2026-10-29T16:20:24+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40370v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2610.40031v1",
+      "title": "AI Cosmos: An Agentic Infra for Situated Learning",
+      "authors": [
+        " AI Cosmos Team",
+        "Jinfeng Zhou",
+        "Yuxuan Chen",
+        "Fangming Chang",
+        "Mingyu Su",
+        "Yifan Zhu",
+        "Yuan Wang",
+        "Bo Zhang",
+        "Bosi Wen",
+        "Chenhao Yuan",
+        "Chenwen Liao",
+        "Dazhi Jiang",
+        "Deyao Hong",
+        "Erle Zhu",
+        "Genrui Zhang",
+        "Guchan Li",
+        "Hongwen Gan",
+        "Huichao Bi",
+        "Jiahao Yan",
+        "Jincheng Fan",
+        "Kehan Zheng",
+        "Qinren Luo",
+        "Qiran Liu",
+        "Ruoqi Cao",
+        "Shizhi Zhang",
+        "Sihan Chen",
+        "Siyan Deng",
+        "Xuehan Zhou",
+        "Xujun Li",
+        "Yang Dang",
+        "Yanzhuo Zhu",
+        "Yu Zhang",
+        "Zheyu Chen",
+        "Hongning Wang",
+        "Manli Li"
+      ],
+      "abstract": "Large language models (LLMs) can improve task performance during learning, yet these gains do not necessarily reflect learners' ability to thereafter apply the knowledge and skills independently. We present AI Cosmos, an agentic infrastructure for situated learning that organizes learning around two complementary principles: scenario-based participation and cumulative assets of practice. AI Cosmos organizes learners and role-specialized agents within learning scenarios that integrate task-relevant knowledge and, when needed, executable workbenches. An asset-memory loop preserves the processes and outcomes of practice as reusable assets with explicit provenance and dependencies. We evaluate scenario-based interaction through two preregistered randomized controlled studies examining the acquisition of legal reasoning and programming competence, holding the same underlying LLM across conditions. AI Cosmos achieves greater learning gains than a conventional LLM in legal reasoning and higher mastery of unseen programming problems than an LLM-as-Teacher baseline.",
+      "categories": [
+        "cs.CL"
+      ],
+      "submitted": "2026-10-29T13:36:31+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.40031v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2610.39934v1",
+      "title": "H$^2$R: Hierarchical Hint-Based Reward for Mathematical Reasoning via Reinforcement Learning",
+      "authors": [
+        "He Tu",
+        "Siye Li",
+        "Hongyi Wen"
+      ],
+      "abstract": "Reinforcement Learning with Verifiable Rewards has shown great promise in enhancing mathematical reasoning in large language models. However, existing approaches provide limited intermediate supervision for complex, multi-step reasoning tasks. To bridge this gap, we propose \\textbf{Hierarchical Hint-based Reward}, a framework that leverages the intrinsic sub-question structure of mathematical problems as structured intermediate conditioning signals during RLVR training. Unlike chain-of-thought prompting, these hierarchical hints serve as logically grounded intermediate milestones that effectively reduce the reasoning horizon toward the final answer. To validate this framework, we introduce \\textbf{HiMath}, a benchmark of hierarchically structured mathematical problems. Across diverse LLMs, hierarchical hints consistently improve reasoning performance even without task-specific training. When integrated into RL training via H$^2$R, they boost Qwen2.5-Math-7B accuracy on HiMath from 30.4\\% to 39.1\\% using hierarchical hints, and up to 45.6\\% with Oracle Hierarchical Hints. This pronounced improvement demonstrates that incorporating reliable intermediate checkpoints into reward design is essential for sustaining complex mathematical reasoning.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-10-29T12:36:21+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39934v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2610.39558v1",
+      "title": "TabCUQ: Context-Uncertainty Quantification for Tabular Foundation Models",
+      "authors": [
+        "Yuebei Shi",
+        "Molei Liu",
+        "Zijian Guo"
+      ],
+      "abstract": "Tabular foundation models use in-context learning to estimate conditional expected outcomes and average treatment effects for specific groups of individuals. Using these estimates to guide scientific decisions requires reliable uncertainty quantification. The challenge is to account simultaneously for two sources of uncertainty: limited-context bias and context variation arising from the small labeled sample supplied at inference. Predictive spread does not directly quantify both sources of uncertainty, and we observe that the ordinary bootstrap may substantially overestimate context variation, whereas subsampling may underestimate it. We introduce TabCUQ, a perturbation-based framework that injects noise into observed outcomes and applies the foundation model to the perturbed contexts. TabCUQ estimates context variation using wild-bootstrap dispersion and accounts for limited-context bias using the maximum deviation between perturbed and original estimates. For a kernel-regression analogue whose estimation error admits an exact decomposition into these two components, we show that our framework provides asymptotically valid pointwise coverage. In simulations, TabCUQ substantially improves coverage, with average interval widths typically about twice those of an oracle bias-aware benchmark. Across seven real-world tasks, it also improves coverage of reference functions learned from much larger samples.",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "submitted": "2026-10-29T07:58:20+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39558v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2610.39557v1",
+      "title": "LatentWeave: Test-Time Latent Optimization for Multimodal Reasoning",
+      "authors": [
+        "Fanci Meng",
+        "Kun Wang",
+        "Guibin Zhang",
+        "Xinlei Yu",
+        "Jiaming Zhang",
+        "Ming Li",
+        "Yang Wang"
+      ],
+      "abstract": "Recent advances in test-time optimization have shown that the multimodal reasoning performance of large multimodal language models (MLLMs) can be improved during inference without modifying backbone model parameters. However, existing approaches primarily operate at the prompt or output level, leaving the latent reasoning process largely uncontrolled and insufficient to prevent error accumulation during autoregressive generation. To address this limitation, we propose LatentWeave, a test-time framework that treats multimodal reasoning as a controllable latent trajectory. LatentWeave performs structured Latent Weaving, progressively refining intermediate hidden states segment-wise to correct emerging deviations, and further introduces Reasoning Anchors via lightweight WEAVE tokens to stabilize reasoning structure and guide answer-oriented generation. These mechanisms are designed to enable fine-grained, step-aware intervention in the latent reasoning process while keeping the main MLLM backbone parameters fixed. Extensive experiments across diverse multimodal reasoning benchmarks report improvements over the evaluated baselines; the contribution of latent optimization, anchor training, and additional test-time computation is analyzed separately in the ablation and efficiency studies. Our code is available at https://github.com/jins7/LatentWeave.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-10-29T07:58:05+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2610.39557v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "https://www.nature.com/articles/s42256-026-01333-6",
+      "title": "Towards understanding and monitorability of reasoning LLMs",
+      "authors": [],
+      "abstract": "Nature Machine Intelligence, Published online: 19 October 2026; doi:10.1038/s42256-026-01333-6Frontier LLMs are trained to solve problems in a step-by-step way, generating reasoning text in human-understandable language. However, these reasoning tokens are not accurate explanations of LLMs’ internal computations, raising challenges for monitorability.",
+      "submitted": "2026-10-24T01:17:07.314654+00:00",
+      "source": "Nature Machine Intelligence",
+      "link": "https://www.nature.com/articles/s42256-026-01333-6",
+      "journal_boost": 3,
+      "score": 11
+    }
+  ]
+}
