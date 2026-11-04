@@ -1,0 +1,665 @@
+{
+  "date": "2026-11-04",
+  "fetched_at": "2026-11-04T01:46:12.870448+00:00",
+  "stats": {
+    "arxiv_count": 448,
+    "arxiv_error": null,
+    "journal_counts": {
+      "Nature": 75,
+      "Science": 43,
+      "Science Advances": 83,
+      "Nature Machine Intelligence": 8,
+      "Nature Computational Science": 8,
+      "Nature Methods": 8,
+      "Nature Materials": 8,
+      "Nature Chemistry": 8,
+      "Nature Chemical Engineering": 8,
+      "Nature Biomedical Engineering": 8
+    },
+    "total_after_dedup": 705,
+    "top_n": 30
+  },
+  "top30": [
+    {
+      "id": "2611.03066v1",
+      "title": "Towards a Trustworthy and Governable Internet of Agentics: An Architectural Perspective on Protocols, Systems, and Services",
+      "authors": [
+        "Haoyi Xiong",
+        "Yi Liu",
+        "Jiang Bian",
+        "Peng Diao",
+        "Bin Zhu",
+        "Tingting Hu",
+        "Yi Wang",
+        "Sumi Helal"
+      ],
+      "abstract": "Large language model applications are increasingly being organized as tool-using and multi-agent workflows rather than as isolated chat interfaces. This perspective paper examines the architectural problem that follows from that shift: agents may reason, invoke tools, and delegate work, but dependable deployment still requires interoperability across frameworks, runtimes, data boundaries, and organizational control domains. We study this problem through the lens of the \\emph{Internet of Agentics} (IoA), an emerging service-computing view in which heterogeneous agents are treated as governable service participants rather than only as stand-alone model endpoints. The paper organizes the landscape as a three-layer progression: from today's fragmented agent ecosystem, to interoperable agents, and ultimately to trustworthy and governable autonomy. First, it examines the protocol stack centered on the Agentic AI Foundation, including MCP for agent--tool interaction; A2A for agent--agent coordination; AGENTS.md and Skills-style procedural manifests; and discovery, transport, and trust mechanisms such as AGNTCY and SLIM. Second, it reviews the systems abstractions that make agents deployable as service components, including logical agent architectures, orchestration patterns, gateways, registries, runtime control loops, and hardware-aware inference infrastructure. Third, it situates these developments within services computing, arguing that agentic systems reinterpret classical concerns from SOA and microservices---discovery, composition, governance, pricing, and trust---at the level of cognitive capabilities rather than deterministic functions.",
+      "categories": [
+        "cs.AI",
+        "cs.DC"
+      ],
+      "submitted": "2026-11-02T12:54:14+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03066v1",
+      "journal_boost": 0,
+      "score": 19
+    },
+    {
+      "id": "2611.03600v1",
+      "title": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+      "authors": [
+        "Raphael Casey",
+        "Michael Simeone",
+        "Alberto Tosato",
+        "Florian Ernst",
+        "Kemal El Moujahid",
+        "James Tamplin",
+        "Tommaso Tosato"
+      ],
+      "abstract": "AI agents are increasingly deployed in settings where they interact and coordinate with other agents, yet honesty is mostly measured in single-turn, single-agent benchmarks that pressure the model to deceive. We study deception that emerges in multi-agent interaction without any instruction to deceive. We introduce Kradle, a platform for evaluating AI models, and Four Bridges, an information asymmetry game in which four agents distribute across four rooms: one is the death room, the others hold food worth more if not shared. One agent, the informed agent, knows which room is the death room and can withhold or disclose that information. We evaluate eight frontier models as the informed agent. Deceptive behavior appears in every model and in 73% of all runs (6% to 100% per model), and does not decrease with capability tier within a model family. When the informed agent does disclose, the warning is often challenged, and agents that challenge it enter the death room twice as often as those that do not. Telling all agents that one of them knows the death room collapses deception in six of eight models; telling the informed agent that the room is permanently fatal moves only one. On an open-weight model, an honesty steering vector reduces deception to 0% and adversarial honesty training to 6%. The platform and game provide a testbed for measuring deceptive behavior and comparing interventions.",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-11-02T18:40:47+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03600v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2611.03584v1",
+      "title": "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation",
+      "authors": [
+        "Utkarsh A. Mishra",
+        "Alperen Degirmenci",
+        "Yongxin Chen",
+        "Danfei Xu",
+        "Tucker Hermans",
+        "Caelan Garrett"
+      ],
+      "abstract": "Open-world robotic mobile manipulation requires acting in physical environments with only partial information. While recent Large Vision-Language Model (LVLM) agents show strong open-world reasoning capabilities, existing architectures that rely on direct tool calling struggle with geometric uncertainty and thus are limited to fully-observable tabletop environments. In contrast, Task and Motion Planning (TAMP) systems can solve long-horizon tasks under partial observability but incur high computational costs and require closed worlds. We propose \\textbf{TAMPAgent}, an agentic planning framework that unifies the reasoning of LVLMs with the structured constraint satisfaction of TAMP systems. We endow an LVLM agent with a belief-space planning model operating over an extensible API of perception, planning, and control tools. The agent formulates a partial task plan composed of parameterized observation and execution actions, which is subsequently completed using classical search algorithms. After extracting the plan's geometric constraints, the agent leverages its tool API to bind valid parameter values, satisfying feasibility requirements and producing an executable motion plan. Upon execution, the agent continuously updates its belief history and repeats this closed-loop process by interleaving observation and manipulation actions. Evaluated across complex household mobile manipulation tasks on Rainbow Y1 and Unitree G1 platforms, TAMPAgent significantly outperforms direct tool-calling agentic baselines, demonstrating that integrating TAMP constraint satisfaction into agentic planning loops is essential for unstructured, partially observable environments.",
+      "categories": [
+        "cs.RO"
+      ],
+      "submitted": "2026-11-02T18:32:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03584v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2611.02581v1",
+      "title": "SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding",
+      "authors": [
+        "Haris Ghafoor",
+        "Minjee Seo",
+        "Seonaeng cho",
+        "Keungmo Yang",
+        "Jaejun Lee",
+        "Kyungho Yoon"
+      ],
+      "abstract": "Automated liver ultrasound report generation improves the diagnosis of liver diseases by producing clinically structured descriptions of anatomical and disease-related findings. However, current generative vision-language models (VLMs) often rely on a single reasoning pathway that maps ultrasound appearance directly to textual descriptions. In addition to the inherent vision-language modality gap, this design is limited for liver ultrasound because disease interpretation is constrained by subtle visual evidence, heterogeneous disease patterns, and limited paired supervision. To address these limitations, we propose SMILE, a Structured Multi-agent clInicaL rEasoning framework that uses multiple complementary specialist agents to interpret ultrasound images and consolidates their outputs through a judge-guided consensus mechanism. Our approach employs three specialized agents: an image interpretation agent for morphological descriptions, a clinical-stage reasoning agent, and a visual question answering (VQA) agent for targeted queries. These agent responses are then aggregated and scrutinized by a judge VLM using a consensus filtering prompt to produce a unified, clinically coherent output. Across a public liver ultrasound dataset and an internal clinical dataset, SMILE consistently outperforms state-of-the-art VLMs, achieving up to 19.0\\% improvement in ROUGE-1 and 18.8\\% improvement in clinical F1-score, while reaching VQA F1-scores of 0.82 and 0.65 on public and internal datasets, respectively. These results demonstrate the potential of SMILE for data-scarce and limited-supervision clinical settings. Our models, datasets, and code are available \\href{https://github.com/CMME-Lab/SMILE}{here}.",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T06:05:38+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02581v1",
+      "journal_boost": 0,
+      "score": 17
+    },
+    {
+      "id": "2611.02457v1",
+      "title": "Multi-Teacher Reasoning Distillation for LLM Recommendation with Self-Exploration",
+      "authors": [
+        "Liangbo Ning",
+        "Siyuan Liang",
+        "Yi Zhou",
+        "Yifeng Zhang",
+        "Qing Li",
+        "Wenqi Fan",
+        "Dacheng Tao"
+      ],
+      "abstract": "Reasoning-augmented recommender systems (RecSys) enhance user preference modeling by generating reasoning trajectories over historical interactions before making recommendations. Knowledge distillation provides a practical paradigm for transferring such reasoning capabilities from powerful large language models to lightweight RecSys. However, existing methods typically rely on a single fixed teacher, remain constrained by the teacher knowledge ceiling, and indiscriminately distill teacher-generated trajectories without assessing their actual utility for downstream recommendation. To address these limitations, we propose MUSE (Multi-Teacher Utility-guided Selection with Self-Exploration), an adaptive reasoning distillation framework that jointly improves reasoning generation and reasoning utilization. MUSE first constructs a diverse reasoning pool using multiple teacher LLMs and progressively augments it via student self-exploration, enabling the student to leverage the strengths of different teachers and gradually explore reasoning strategies beyond teacher imitation. We then develop Rank-Gain Utility Assessment (RGUA), which evaluates each candidate according to the normalized full-catalog rank improvement of the ground-truth item and identifies the most and least recommendation-beneficial trajectories. Based on these utility-aware trajectory pairs, we introduce dual-level contrastive learning objectives that guide the student generator to prefer beneficial reasoning while training the recommendation encoder to more effectively exploit recommendation-relevant preference evidence. Extensive experiments on three real-world datasets demonstrate the effectiveness and robustness of the proposed framework.",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T03:20:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02457v1",
+      "journal_boost": 0,
+      "score": 16
+    },
+    {
+      "id": "2611.03233v1",
+      "title": "Axion 1.0: Open Agent Foundation Models, Simplified",
+      "authors": [
+        "Yuqi Jia",
+        "Yunjie Tian",
+        "Jiayu Zheng",
+        "Yijun Liang",
+        "Jingchen Sun",
+        "Mengyu Zhao",
+        "Di Fu"
+      ],
+      "abstract": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model's own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation. Finally, reinforcement learning further strengthens long-horizon reasoning and interaction with external tools and environments. Despite this compact training recipe, Axion 1.0 achieves strong performance across a broad suite of agentic benchmarks and is competitive with leading commercial models on several of them. Equally importantly, Axion 1.0 is open beyond model weights: we release the complete recipe, including data construction, generation, filtering, verification, prompts, and training code, enabling the entire development process to be reproduced and extended. Axion 1.0 demonstrates that strong agent foundation models can be both open and simple, offering a practical and reproducible path toward advancing open agentic intelligence.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T14:48:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03233v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2611.02503v1",
+      "title": "Towards Multi-Value Alignment via Value Localization in LLMs",
+      "authors": [
+        "Xueqi Ma",
+        "Yanbei Jiang",
+        "Xingjun Ma",
+        "James Bailey",
+        "Sarah M. Erfani"
+      ],
+      "abstract": "Aligning large language models (LLMs) with multiple, potentially conflicting human values remains challenging, as existing multi-objective alignment methods often require costly fine-tuning and provide limited insight into the internal mechanisms underlying value-related behaviors. In this work, we investigate multi-value alignment from a mechanistic interpretability perspective by identifying value-sensitive attention heads (value heads) in LLMs. Using a probing-based value localization framework, we discover sparse sets of attention heads associated with diverse dimensions, spanning both human values (e.g., harmlessness, honesty) and stylistic preferences (e.g., coherence, complexity). Analyses across multiple LLM families reveal functional specialization and structured interactions among value heads, including conflicts between certain values. Targeted head ablations further induce substantial, value-specific behavioral changes, providing causal evidence of their functional importance. Building on these findings, we propose an inference-time activation steering strategy that enables controllable alignment with individual values or combinations of values without updating the underlying model parameters, supported by theoretical analysis. Experiments across multiple value alignment benchmarks demonstrate effective single- and multi-value control while largely preserving non-target model performance. Our findings connect mechanistic interpretability with flexible multi-value alignment, offering a foundation for more interpretable and pluralistic LLM behavior. The code is available at https://github.com/sihuo-design/ValueHeads.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T04:24:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02503v1",
+      "journal_boost": 0,
+      "score": 15
+    },
+    {
+      "id": "2611.03575v1",
+      "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+      "authors": [
+        "Wei-Lin Chen",
+        "Zhepei Wei",
+        "Xinyu Zhu",
+        "Yu-Min Tseng",
+        "Tzu-Han Lin",
+        "Yu Meng"
+      ],
+      "abstract": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user's goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or corrupting data, in response to benign inputs without explicit jailbreaking. This failure mode is particularly important because apparent task success may reassure users that an agent behaved correctly, causing harmful side effects to go unnoticed. We call this harmful success: the agent successfully completes the intended benign task while simultaneously causing unintended harm. Despite its importance, harmful success is difficult to measure because conventional task-success metrics overlook harmful behaviors, while existing safety evaluations are often designed solely to assess harmful outcomes. We introduce VeriHarm, an automatic framework for constructing programmatically verifiable benchmarks that directly measure harmful success. VeriHarm minimally perturbs coding tasks to elicit unintended harmful behavior while maintaining the benignity of the task and preserving the original task objective. It then synthesizes executable harm tests that, together with the original task-correctness tests, evaluate both task accuracy and harmful outcomes. Frontier agents, including GPT-5.6-Sol and Claude-Opus-5, achieve an average task accuracy of 95% on our curated VeriHarm-Bench, yet still struggle to complete tasks safely: their safe success rate, the fraction of tasks completed successfully without triggering the designated harm, averages only 37%. These results suggest that successful task completion can frequently coexist with unintended harm, and that task-success metrics alone may substantially understate the potential safety risks of coding agents.",
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "submitted": "2026-11-02T18:27:55+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03575v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2611.03517v1",
+      "title": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization",
+      "authors": [
+        "Gabriele Oliaro",
+        "Jaeseong Lee",
+        "Zhaoyuan Su",
+        "Sreeram Vennam",
+        "Zhihao Jia",
+        "Samyam Rajbhandari"
+      ],
+      "abstract": "LLM agents for GPU kernel optimization sit at two ends of a structure-freedom tradeoff. Scripted agents fix what the model does at each step, via a learned policy, an optimization menu, or fixed roles, and are sample-efficient where the recipe applies and stall where it does not. Open-ended agents let a self-directed model mutate a population of kernels and pay for the freedom in trials: thousands of evaluations, repeated edits, and wrong candidates. Both respond to hard targets by equipping the agent with more: parsed profiler output, disassembly analysis, retrieval over documentation and libraries, and stores of lessons. We argue that both lack direction, a hypothesis about where the remaining gap is, and that a short question asked at the right moment supplies it without narrowing what the agent may do next. We present KernelSeek, a question-driven agent that makes an existing CUDA kernel faster with no operator-specific knowledge and no faster implementation to imitate: a general-purpose coding agent, a minimal harness that enforces a verifiable goal, and questions at decision points, first from a human, then from a bank the agent applies to itself. On the same task, evaluator, hardware, and week, a tool-rich autonomous agent built in the prevailing style plateaued at 0.50x FlashAttention-3 after 133 model-driven steps; KernelSeek reached 1.13x. It then produced dependency-free FlashAttention forward kernels for Hopper and Blackwell, single CUDA files with no CUTLASS, CuTe, cuBLAS, or cuDNN, correct on all 182 scenarios per architecture and 1.16x FlashAttention-3 and 1.46x FlashAttention-4 (geometric mean). Across 162 human messages and 11.5K agent tool calls, every large gain followed a question that moved the agent to a different layer of the system or rejected a claimed limit, never one that supplied information. We release the kernels, harness, question bank, and all traces.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T17:51:58+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03517v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2611.03223v1",
+      "title": "Do Agents Still Follow the Rules? Benchmarking Rule Compliance under Agent Context Compaction",
+      "authors": [
+        "Yiwei Zha",
+        "Qingyu Meng",
+        "Herbert Bos",
+        "Min Chen"
+      ],
+      "abstract": "LLM agents compact long histories to fit their context windows, but the compacted context must still carry the operating rules that govern later actions. Prior work shows that violations rise after compaction, but measures compliance outside a complete agent harness and does not identify where each violation comes from. We introduce ARCBench(Agent Rule Compliance Benchmark), a configurable benchmark built on the open-source pi agent harness. Its tool-calling agent loop lets us measure rule compliance from actions taken during execution, bringing the evaluation closer to deployed agent workflows. Using ARCBench, we examine where violations after compaction come from, and how different compaction configurations and adversarial settings change their sources. We find that compaction rarely deletes the rule: most violations after compaction occur while the rule is still in the compacted history, with the agent treating a later request as permission, ignoring the rule, and proceeding anyway. Where violations come from depends on the configuration: how the rule is delivered decides whether the agent would break it even without compaction, while the compaction strategy and budget decide whether the rule survives. The strongest compactor-targeted attack more than doubles violations by corrupting the rule in the summary and changing how the agents behave, whereas the strongest defense restores the rule in most summary but still violates. Finally, retaining a rule does not guarantee compliance: compacted runs that retain the rule violate more than twice as often as runs with the full history.",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "submitted": "2026-11-02T14:45:36+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03223v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2611.03157v1",
+      "title": "Toward Knowledge-Centric AI: Discovering, Internalizing, and Using Explicit Knowledge Across Agents and Generations",
+      "authors": [
+        "Yisen Gao",
+        "Haoyu Huang",
+        "Zhongwei Xie",
+        "Yufei Li",
+        "Hong Ting Tsang",
+        "Boyi Zhang",
+        "Qiao Xiao",
+        "Tianshi Zheng",
+        "Jiaxin Bai",
+        "Yangqiu Song"
+      ],
+      "abstract": "Knowledge is how understanding accumulates across people and generations: durable records that outlive their producers and that others can check, combine, teach, and correct. AI agents are now built and run by many independent users and organizations, and each agent is upgraded, replaced, or retired within months. Yet what an agent learns stays trapped in model parameters, a transient context window, or a system-specific memory store that is appended to and retrieved from rather than processed. We argue that the next generation of AI should be knowledge-centric, built around an explicit, continuously evolving knowledge layer independent of any single agent. In this loop, agents discover knowledge from their environments and trajectories; the layer internalizes it by turning fragmented, heterogeneous records and experience into composable, revisable understanding; and agents across systems and generations use the result and return new outcomes for revision. While discovery and use have advanced rapidly with large language model agents, internalization remains the bottleneck. We argue that internalization should become a persistent object of training and maintenance-centered on condition-preserving conceptualization of events and deductive, inductive, and abductive reasoning across noisy, heterogeneous representations (text, tables, graphs, rules, and programs). To power this layer, we call for knowledge foundation models that provide shared neural capacity for knowledge computation, and outline a research agenda showing how an explicit knowledge layer delivers reuse, cost efficiency, auditability, and continuity across agent generations.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T14:03:12+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03157v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2611.02637v1",
+      "title": "Variable names provide priors: semantic grounding enables data-efficient numerical prediction by large language models",
+      "authors": [
+        "Xin-Rui Ma",
+        "Shi-Zhi Chen",
+        "Hai-Yan Jiang",
+        "De-Cheng Feng",
+        "Michael Beer"
+      ],
+      "abstract": "Large language models (LLMs) have achieved strong performance across diverse tasks, from question answering to code generation. Recent studies have found that LLMs can perform numerical prediction on tabular datasets via in-context learning. However, it remains unclear under what conditions and how LLMs use variable names and in-context examples for numerical prediction. Here we show that semantic grounding, the match between variable names and the values they describe, allows five LLMs without task-specific training to match or outperform seven supervised machine learning (ML) models across 20 datasets from nine scientific domains, particularly when examples are scarce. Reasoning traces indicate that variable names allow LLMs to draw on domain-specific knowledge acquired during pretraining. Using controlled tasks based on physical formulas, we further show that LLMs integrate domain-specific knowledge with in-context examples in a way consistent with Bayesian updating. Specifically, when the relationship between the inputs and the target cannot be inferred from the examples alone, LLMs rely on domain-specific knowledge as the prior. Conversely, as contradicting examples accumulate, LLM predictions shift progressively towards these examples, which act as the likelihood. Our work reveals how LLMs use domain-specific knowledge in numerical prediction and positions them as data-efficient predictors for data-scarce scientific domains.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T07:00:18+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02637v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2611.02539v1",
+      "title": "Scientific Liquidity Agents: An Agent-Based Model of Knowledge Arbitrage in Scientific Communities",
+      "authors": [
+        "Koutian Wu",
+        "You Liu",
+        "Yue Liu",
+        "Zhiping Li",
+        "Ergan Shang"
+      ],
+      "abstract": "Scientific knowledge gains new uses when ideas, methods, and results move between research contexts. Understanding this process requires a model of both specialized knowledge production and the intermediary activities that connect it. We introduce Scientific Liquidity Agents (SLA), an agent-based model of knowledge arbitrage in scientific communities. SLA represents domain specialists and epistemic arbitrageurs within a shared environment of research problems, researcher interactions, and scientific artifacts. Individual decisions connect to collective state through a belief-desire-intention architecture, a prerequisite-based problem graph, a dynamic interaction network, and a persistent publication registry. The framework makes researcher roles and knowledge-transfer frictions explicit, providing a process-oriented account of scientific production and exchange. Two exploratory simulations with 10 and 18 agents produce 68 and 274 registered papers. In the smaller run, arbitrageurs take part in 16 of the 26 contact pairs that join this community into one connected component, while topical similarity alone splits it into seven. The same run yields three similarity edges, 26 contact pairs, and two coauthorship pairs, so measured community structure depends on what counts as a link. Paper production is abundant, but no recorded replication succeeds, which places the bottleneck in verification rather than production. Solved-problem sets correspond to the prerequisite reachability of the disciplines represented in each community. SLA makes knowledge liquidity, the movement and reuse of artifacts across domains, a quantity that agentic science can simulate and measure.",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "submitted": "2026-11-02T05:09:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02539v1",
+      "journal_boost": 0,
+      "score": 14
+    },
+    {
+      "id": "2611.03627v1",
+      "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+      "authors": [
+        "Ziqi Pang",
+        "Yu-Xiong Wang"
+      ],
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) can enable generalizable improvement for large language model (LLM) reasoning. This paper studies how to incentivize such generalization via reasoning strategies. We study this question with a controllable equation-solving framework: finding multiple inputs x for equations f(x)=y, where f is a non-bijective string function. This setting makes reasoning strategies observable while supporting a clear definition of easy-to-hard out-of-distribution (OOD) shifts, e.g., more solutions, longer y, etc. We uncover a subtle RLVR failure: it teaches the model to solve in-distribution tasks with high accuracy and structured step-by-step derivation, yet under OOD shifts, the same model abandons derivation and collapses to ineffective brute-force enumeration, causing sharp accuracy drops. This observation reveals the deeper challenges of RLVR generalization as it is neither incapable base model nor reward hacking, since the model succeeds in-distribution with the correct reasoning strategy. The key to mitigating this failure is an indirect intervention that surprisingly helps: co-training with bijective inversion tasks. Although these bijective tasks are actually not uniformly harder and even further from the non-bijective OOD evaluation, they make derivation more certain and substantially restore the correct strategy and accuracy under OOD shifts. This effect further motivates our theoretical analysis: outcome-only RLVR can shape reasoning processes through implicitly crediting the effective reasoning strategies more, even without process supervision. To conclude, our analysis framework and findings systematically reveal the crucial role and incentivization of reasoning strategies in RLVR generalization under OOD shifts. Code is available at https://github.com/ziqipang/rl_meta_thinking.",
+      "categories": [
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T18:53:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03627v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2611.03330v1",
+      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+      "authors": [
+        "Hiari Pizzini Cavagna",
+        "Andrea Proia",
+        "Daniele Cesarini",
+        "Zeynep Kiziltan",
+        "Andrea Bartolini"
+      ],
+      "abstract": "Generative AI is billed per token, yet tokens are not equally expensive. Each token enters the KV-cache and raises the cost of those that follow, so energy grows non-linearly along a sequence whose tokens look identical. No analytical model states what a token costs, and the most accurate SOTA model is a fit, not a law: it absorbs architecture into fitted coefficients, requiring per-LLM fitting. We derive closed-form expressions of the computational and memory-access complexity of LLM inference in terms of architectural hyperparameters, covering MHA and GQA, and compare a family of analytical models of increasing granularity. From these, we obtain the SIMPLE Inference Model to Predict LLMs Energy (SIMPLE), a four-parameter law that separates prefill from decode, and decode into KV-cache cost and next-token computation. Over traces of 13 dense LLMs from six families on NVIDIA H100 GPUs, it attains R2 = 0.969 and 11.97% MAPE, 3.1-3.5x below the SOTA, without per-LLM calibration. The SIMPLE law explains as well as predicts: prefill energy grows quadratically with the hidden dimension, so larger LLMs suffer most from long inputs; and more aggressive GQA KV grouping reduces the per-token energy by up to 3x relative to standard MHA. Increasing the reasoning token budget pushes output length beyond the analytically derived energy minimum, driving super-linear energy growth; although accuracy grows with the budget, energy grows faster, so Intelligence per Joule peaks at an intermediate budget and falls by up to 3.14x across a 4.0x reasoning-budget range. Agentic serving raises energy per request by 13.0x relative to non-agentic ones, driven by the growth of both the prefill and the KV-cache terms with input length; while prefix caching removes most of the prefill cost (-93%), the KV-cache term is unaffected, so even a cached agentic request costs 4.8x more.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "submitted": "2026-11-02T15:51:46+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03330v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2611.03301v1",
+      "title": "An Axiomatic Framework for Reinforcement Learning in Open Multi-Agent Systems",
+      "authors": [
+        "Jianhong Wang",
+        "Yang Li",
+        "Samuel Kaski",
+        "Jonathan Lawry"
+      ],
+      "abstract": "Open multi-agent systems, where only a subset of agents are controllable, are central to real-world domains such as smart grids, yet lack a principled foundation for reinforcement learning algorithm design. We study this setting through n-agent ad hoc teamwork (NAHT), a recent framework for learning in open multi-agent environments. We propose an axiomatic framework that derives value function learning from the Shapley axioms (Efficiency, Symmetry and Linearity), treating them as structural constraints rather than heuristic design choices. This formulation builds on a novel NAHT decomposition, which characterises the fundamental difference between open and fully controllable multi-agent systems, and establishes a cooperative game-theoretic foundation for learning. We further show that enforcing these axioms on learning individual value functions recovers the Shapley value for Dec-POMDPs, providing a principled bridge between reinforcement learning and classical cooperative game theory. Building on this framework, we introduce Shapley Machines and Banzhaf Machines, two generic algorithmic templates that can be instantiated with standard reinforcement learning methods. When applied to strong base algorithms such as IPPO and POAM, our methods consistently improve learning efficiency and generalisation to unseen agent types and conventions across NAHT benchmark tasks. The code of experiments is published on https://github.com/hsvgbkhgbv/axiomatic-rl-naht.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "submitted": "2026-11-02T15:36:22+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03301v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2611.03116v1",
+      "title": "From Local Skills to Long-Horizon Web Tasks: Progressive Skill Exploration for LLM Web Agents",
+      "authors": [
+        "Xueyang Feng",
+        "Xiaohe Bo",
+        "Xu Chen",
+        "Quanyu Dai",
+        "Feng Wen"
+      ],
+      "abstract": "Large language models (LLMs) are driving autonomous agents toward real-world environments, with the Web emerging as one of the most representative interaction scenarios. However, training Web agents with naive exploration remains challenging: successful trajectories are rare, and the sparse terminal rewards make it difficult for agents to obtain useful feedback from failed trajectories. Inspired by skill acquisition theory, we propose Skill-Composed Progressive Exploration (SCOPE), a short-to-long learning framework for long-horizon Web agents that decomposes complex task exploration into a gradual expansion process from local skills to complete task-solving capability. Specifically, SCOPE iteratively explores around local skills: Skill Discovery extracts reusable local skills and failure experiences from historical rollouts; Skill Orchestration composes discovered skills into high-level skill chains; and Skill Expansion leverages failure experiences aligned with the current skill chain to guide the agent toward exploring new subskills. Through this process, SCOPE progressively constructs task-completing skill chains across rollouts and internalizes them into the policy parameters through agentic on-policy distillation. Extensive experiments on WebArena, WebVoyager, and WebShop show that SCOPE consistently improves exploration dynamics and achieves 3.9% to 18.6% relative gains over the strongest baselines in each setting.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T13:32:59+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03116v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2611.02843v1",
+      "title": "Math Foundation Formalization Agent: A General-Purpose Approach to Formalizing Mathematical Foundations",
+      "authors": [
+        "Jiaxin Xie",
+        "Guowei Dou",
+        "Xiang Ji",
+        "Wensheng Yu"
+      ],
+      "abstract": "Mathematical formalization plays an important role in establishing rigorous and machine-verifiable foundations for mathematical reasoning. With the development of large language models (LLMs) and interactive theorem provers, intelligent agents offer a promising approach to automating the formalization of mathematical theories. This paper presents the Math Foundation Formalization Agent (MFF-Agent), a general-purpose intelligent agent designed to support formalization tasks across multiple mathematical domains. The agent integrates the reasoning capabilities of large language models with the formal verification capabilities of the Rocq proof assistant. It incorporates task classification, tool-assisted execution, verification feedback, and state-based task management to support the generation, refinement, and verification of formal proofs. Unlike an approach focused on a single mathematical theory, the agent is examined through case studies involving Morse--Kelley axiomatic set theory (MK), real numbers, propositional logic, and equivalences of the axiom of choice. These cases investigate its applicability across mathematical foundations and distinguish source-level completion, interactive verification, and reproducible compilation. The results demonstrate the feasibility of a unified operational framework for heterogeneous foundation-level tasks and clarify the gap between such a framework and a fully integrated mathematical foundation.",
+      "categories": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T09:45:31+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02843v1",
+      "journal_boost": 0,
+      "score": 13
+    },
+    {
+      "id": "2611.03534v1",
+      "title": "An Agentic Framework for Automated Power System Studies and Grid Connection Assessment",
+      "authors": [
+        "MaoXun Huang",
+        "Kshitij Kapoor",
+        "Eli Louise"
+      ],
+      "abstract": "Connecting new generation and demand to the grid depends on two scarce skills: checking applications against a large, changing body of regulation, and running the network studies that decide where and how a project connects. We present Grid Agents, an AI system that brings both together, and the methodology we use to evaluate it. The Grid Ontology is its knowledge system. It represents the regulation, standards and engineering knowledge that grid work depends on, makes it searchable, and evolves as the agents learn from use. Every answer drawn from it rests on evidence the agents cite. Grid Studio is an agent system specialised for power-system engineering. It works in its own engineering environment with domain tools and a study framework, draws on the Grid Ontology, and relies on established solvers for every number it reports. In both, engineers make the decisions. We bring eight published power-system benchmark families, previously scattered across separate papers, into one suite of 519 tasks, and we verify not only each answer but the work behind it, by replaying the agent's tool calls. The Grid Ontology cites the right regulatory evidence more often than a general coding agent or retrieval pipelines, leads on LegalBench-RAG and ranks first on the public leaderboards of the Enterprise RAG Challenge and ViDoRe V3. Grid Studio scores highest on the 519 power-system tasks and is the fastest of all the systems we compare, both by a statistically significant margin. With an optimiser in the loop, its reinforcement packages cost 33-67% less on average than those the agent designs alone.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T18:00:52+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03534v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2611.03523v1",
+      "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+      "authors": [
+        "Yuxuan Jiang",
+        "Chenglin Liu",
+        "John Rose",
+        "Mason Miller",
+        "Ruthesh Thavamani",
+        "Juntao Wu",
+        "Yinwei Huang",
+        "Jiahao Xu",
+        "Peng Huang"
+      ],
+      "abstract": "LLM agents show strong potential in software engineering tasks such as competitive programming and code synthesis. Existing benchmarks, however, largely focus on small-scale settings such as self-contained Python modules, leaving distributed systems, an essential class of production software, under-examined. We introduce DistDebug-Bench, a benchmark for evaluating agents' ability to diagnose complex-system failures at the code level. It curates 120 high-quality real-world bugs from 11 widely used distributed systems, spanning 5 programming languages and 10 failure patterns. Through an extensive evaluation of state-of-the-art LLMs and agents, we identify substantial gaps between current agents and real-world debugging tasks. A recurring gap is tunnel vision due to a lack of explicit reasoning structure and nondeterminism from inconsistent tool-use scope. The benchmark and evaluator are available at https://github.com/OrderLab/distdebug-bench, with agent traces and a leaderboard at https://distdebug.com.",
+      "categories": [
+        "cs.SE",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T17:56:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03523v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2611.03298v1",
+      "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
+      "authors": [
+        "Hao Fu",
+        "Degang Sun",
+        "Wan Wei",
+        "Jinxia Wei",
+        "Chun Long",
+        "Peng Gao"
+      ],
+      "abstract": "Text-to-SQL translates natural language questions into SQL queries, enabling database access without writing SQL. Fine-tuning open-weight large language models (LLMs) is cost-effective, but existing methods treat SQL as ordinary text and optimize token-level likelihood without explicitly modeling its syntactic, semantic, and logical requirements. Thus, a single incorrect alias or comparison operator can invalidate a query while contributing little to training loss. We propose SQLoom, a constraint-aware fine-tuning framework with supervision at three levels: syntactic validity under SQL grammar and database schema, semantic alignment between query decisions and the question, and logical consistency across dependent clause decisions. SQLoom extends supervised fine-tuning with a unified set-contrastive objective favoring sets of correct outputs over minimally different incorrect ones at each level. LLM agents propose this supervision, which a SQL parser and execution on counterexample databases verify. We also release Spider-Refined, a training dataset correcting 378 flawed Spider annotations and enriching database schemas. Experiments on Spider, BIRD, and three perturbed Spider variants show that SQLoom improves execution accuracy for Qwen3-1.7B from 62.9% zero-shot to 88.7% on Spider development, reaching 89.2% on Spider test and 73.4% on BIRD development. It outperforms fine-tuning, reinforcement learning, and agent-based baselines with up to 70 billion parameters. On question perturbations, SQLoom loses at most 0.6 accuracy points versus up to 12.1 for agent-based methods. It generates SQL in a single pass at 0.42s per query, 23$\\times$ faster than a GPT-4-based agent method. These results demonstrate the effectiveness of set-contrastive supervision over token-level training.",
+      "categories": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T15:33:40+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03298v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2611.02698v1",
+      "title": "GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation",
+      "authors": [
+        "Huanzhi Mao",
+        "Yichuan Wang",
+        "Michael Koo",
+        "Wenyuan Huang",
+        "Huy Doan",
+        "Jinghan Xia",
+        "Ziyao Wang",
+        "Joseph E. Gonzalez"
+      ],
+      "abstract": "Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and exploration to find what they cannot yet see. We study how agents combine the two through interactive visual geolocation. GeoGuesser Bench contains 282 tasks in an offline Street View environment where agents rotate, zoom, and move between real panoramas. Its three task types shift the balance from knowledge to exploration: agents (1) report the coordinates of their starting location, (2) name the enclosing street, city, state, or country, or (3) find, read, and count nearby objects. The coordinate tasks in (1) also include 42 real GeoGuessr World Championship rounds, whose expert guesses provide a human reference. We evaluate 23 VLMs: the best accuracy is 62.5% on place naming and 35.0% on object finding, and the best agent averages 4352.4 GeoGuessr points on the championship rounds, against 4770.3 for the better expert in each round. Beyond these headline numbers, world knowledge and exploration are only weakly correlated across models: agents that localize well do not necessarily explore well. To understand where agents fail, we categorize their errors into vision, navigation, and tool-use failures. Further ablations show that the strongest agents, such as Claude Opus 4.8, still perform well with limited views, while weaker agents degrade; customizing the environment thus adjusts task difficulty. The environment's verifiable rewards and restorable state also support training, and our Planner-Worker-Compressor harness cuts planner tokens by 57-61% by compacting the interaction history. We hope GeoGuesser Bench and its environment serve as a high-quality foundation for simulating real-world exploration at scale.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T07:50:57+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02698v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2611.02391v1",
+      "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse",
+      "authors": [
+        "Yimin Tang",
+        "Han Zhang",
+        "Shao-Hung Chan",
+        "Erdem Bıyık",
+        "Sven Koenig",
+        "Jingkai Chen"
+      ],
+      "abstract": "No algorithm is best on all problems, but a real warehouse is a narrow problem: its layout and processes rarely change. Operators still run one general multi-robot planner at many sites, because experts cannot tune it for each one. In this work, which we call Late Autumn, we explore whether LLM coding agents running autonomous research can specialize a general planner for one site, trading generality for throughput, much as post-training adapts a pretrained LLM to one task. We study six campaigns on a lifelong planner that combines task assignment with multi-agent path finding, on a floor modeled on an existing automated warehouse. We find that (1) the agents raise throughput by 22--60%, and the gains hold on unseen seeds; (2) they rediscover known MAPF mechanisms, such as corridor-exit priorities, local guidance, and rollouts, and independent campaigns find the same bottleneck; (3) the gains largely carry over to another layout, a larger fleet, and other service times, shrink with a smaller fleet, and mostly vanish under an outbound-heavy demand mix; and (4) each final patch (0.7k--2.4k lines) is a chain of scored commits with a median step of 27 lines, so experts can review it, and review finds problems that the score misses; some patches multiply planner compute by over 100x. LLM agents can therefore turn each site's bias into extra throughput at little engineering cost, with reviewable patches; we expect experts to shift toward designing insightful metrics and fast simulators that mirror the real problem.",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T02:04:21+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02391v1",
+      "journal_boost": 0,
+      "score": 12
+    },
+    {
+      "id": "2611.03543v1",
+      "title": "Can LLM Agents Improve Imperfect Earth System Model Parameterizations?",
+      "authors": [
+        "Kara D. Lamb"
+      ],
+      "abstract": "Earth system models (ESMs) rely on parameterizations to represent unresolved processes such as convection, cloud microphysics, and turbulence. However, translating advances in physical understanding into stable, validated parameterizations and integrating them into ESMs often takes years. Agentic AI could accelerate this process and enable more systematic exploration of design choices. Using warm-rain collision-coalescence as a test case, we evaluate agents' ability to synthesize scientific literature, reimplement published bulk parameterizations, and propose new functional forms as differentiable JAX code. We compare conventional parameterizations, data-driven emulators, and agent-generated closures against high-fidelity superdroplet simulations, repeating unattended experiments across ten language models. With expert guidance or iterative feedback, agents produced executable, differentiable, mass-conserving code, although unattended performance depended strongly on the scheme and language model. Iterative feedback lowered median rollout error for eight of ten models. Retuned physical schemes matched or outperformed many learned parameterizations at substantially lower computational cost, but two of 100 unattended agent-generated closures achieved slightly lower rain-mass error than the most accurate retuned scheme on held-out simulations.",
+      "categories": [
+        "physics.ao-ph",
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T18:05:04+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03543v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2611.03219v1",
+      "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
+      "authors": [
+        "Shangziqi Zhao",
+        "Yitong Zhang",
+        "Jia Li"
+      ],
+      "abstract": "Recently, harness self-evolution has emerged as an important paradigm for improving agent performance. Prior studies show that evolving the agent harness can effectively enhance agent capabilities without modifying the foundation model's parameters. We find that existing approaches largely study agent evolution on a single task. In practice, coding agents may need to handle multiple task types over time. Whether an agent harness can continuously evolve across multiple tasks without suffering from catastrophic forgetting remains an important open question.\n  In this paper, we investigate this open question through a comprehensive empirical study of continual harness self-evolution. We organize three software engineering task datasets into six different evolution directions and apply two representative harness evolution methods to perform continual evolution along these directions. Our experimental results show that evolution on a subsequent dataset can substantially undermine the performance on previously seen datasets. For example, with DeepSeek-V4-Flash-0731, Meta-Harness improves its performance on SWE-Bench to 94.0% after evolution. However, after further evolution on FeatureBench, its performance on SWE-Bench drops to 32.0% by the fifth round, corresponding to a 66% relative decrease. Finally, based on our experimental findings, we identify several insights, providing directions for the continual self-evolution of agent harnesses. Code is available at https://github.com/THU-Agent/continual-harness-evolution.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T14:43:37+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03219v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2611.03113v1",
+      "title": "Preprocessing Choices in Fine-Tuning Data Matter: Utility and Demographic Sensitivity in LLM-Based Recommendation",
+      "authors": [
+        "Furkan Yasir Goksu",
+        "Yaren Yilmaz",
+        "Sule Gunduz Oguducu"
+      ],
+      "abstract": "Large language models (LLMs) have introduced a generative approach to recommendation, producing item lists from textual representations of user histories and item information. However, this generative setting raises challenges concerning output validity, prompt consistency, and sensitivity to demographic descriptors. In this work, we investigate how preprocessing choices in fine-tuning data affect recommendation utility and fairness-related behavior in a generative LLM-based recommender system. We first establish a controlled recommendation pipeline that combines supervised fine-tuning, catalog-constrained decoding, and prompt augmentation. We then study three preprocessing choices: item-title representation, demographic balancing, and auxiliary item-knowledge enrichment. Experiments on MovieLens-1M show that the catalog-constrained pipeline eliminates out-of-catalog items and ensures complete ten-item outputs, while prompt augmentation improves prompt consistency and utility. Original MovieLens titles increase HR@10 from 10.67% to 12.47% and Coverage@10 from 41.36% to 47.88%. Fairness-related effects are attribute-dependent: age balancing and knowledge enrichment reduce selected group-level utility gaps while largely preserving utility, whereas gender balancing reduces utility without improving the evaluated gender-related indicators. Overall, preprocessing choices in fine-tuning data should be evaluated jointly in terms of utility, output behavior, and demographic sensitivity.",
+      "categories": [
+        "cs.IR",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "submitted": "2026-11-02T13:32:28+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.03113v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2611.02784v1",
+      "title": "HLSClaw: Bringing Vibe Coding to High-Level Synthesis through Skill-Based Agentic Harness",
+      "authors": [
+        "Jinming Ge",
+        "Shang Liu",
+        "Jiawei Liang",
+        "Shangkun Li",
+        "Afzal Ahmad",
+        "Jiang Xu",
+        "Linfeng Du",
+        "Wei Zhang"
+      ],
+      "abstract": "LLM agents are rapidly shifting software development toward intent-driven \\emph{vibe coding}, yet their effectiveness drops sharply in high-level synthesis (HLS), where code optimization must jointly consider design structure, directive search, and downstream hardware constraints. Existing HLS optimization approaches, including both heuristic-based methods and recent LLM-assisted pipelines, typically operate at fixed abstraction levels or in weakly coupled stages, limiting their ability to leverage the strong interplay between source code restructuring and directive search outcomes.\n  Our key insight is that HLS optimization can be reframed from a fixed, hardwired transformation pipeline into a skill-based agentic control problem: an LLM agent equipped with modular, executable optimization skills and a feedback-driven orchestrator can autonomously navigate the coupled space of code restructuring and directive search. This motivates the design of HLSClaw, the first HLS-specific, skill-based agentic harness for holistic HLS optimization. On real-world HLS benchmarks, HLSClaw achieves a 39.12x geometric-mean latency speedup, outperforming the compiler baseline ScaleHLS by 1.98x, and surpassing the commercial coding agents Claude Code and Codex by 1.86x and 1.70x, respectively, while maintaining strong timing robustness.",
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "submitted": "2026-11-02T09:01:06+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02784v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2611.02711v1",
+      "title": "Human-Supervised Artificial Intelligence Researchers in Electric Power Systems: Knowledge, Physics, Simulation, and Governance for Large Language Models",
+      "authors": [
+        "Xiangrui Meng",
+        "Jingcheng Liu",
+        "Ke Wang",
+        "Miaopeng Yu",
+        "Zhengping Lin"
+      ],
+      "abstract": "Conclusions in power-system research require a clear evidential basis. Researchers need to understand the data sources, modelling assumptions, and solution procedures to assess the conditions under which a conclusion holds. Large language models (LLMs) can help researchers extract information from documents and translate research requests into code and tool calls, but their outputs still require physical validation. Focusing on human-supervised artificial intelligence (AI) researchers, this review examines power-system LLM applications and related scientific workflows, together with physics-grounded power AI studies, to discuss the conditions for using LLMs in scientific research. In the proposed knowledge-physics-simulation-governance framework, LLMs translate information and coordinate tasks, simulators and validation tools test models, and experts retain authority over critical assumptions, safety boundaries, and final conclusions. Research processes should preserve materials for review so that claims can be traced to their sources, computations can be reproduced, and failed attempts and approvals can be examined. On this basis, a staged development roadmap and requirements for research reporting are proposed. Evaluation should focus on research artifacts and their validation to assess whether LLMs can improve the efficiency of power-system research within clearly defined permissions.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T08:03:54+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02711v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2611.02561v1",
+      "title": "EEFA: A Framework for the Ethical Evaluation of AI Agents",
+      "authors": [
+        "Swathi Pallikala",
+        "Yashas Hariprasad"
+      ],
+      "abstract": "The rapid deployment of autonomous AI agents across consequential domains including healthcare, legal services, nancial management, and enterprise workows has created an urgent governance challenge. While the eld of AI evaluation has produced sophisticated benchmarks for measuring agent capability, these frameworks measure exclusively what agents can do rather than how they do it. The ethical dimensions most critical to responsible agent deployment, in- cluding respect for human autonomy, harm avoidance, transparency and non-deception, privacy compliance, and accountability, are systematically absent from current evaluation practice. This paper addresses that gap through three contributions. First, a structured literature review of twelve leading AI agent benchmarks characterizes the ethical dimensions those bench- marks do and do not measure. Second, the Ethical Evaluation Framework for AI Agents (EEFA) is introduced as a comprehensive, operationalizable instrument for ethical agent evaluation, grounded in established AI ethics principles and designed for use by developers, auditors, and regulators. Third, a reproducible validation protocol is specied for applying the EEFA to deployed agent systems, with illustrative test scenarios across all ve framework dimensions. The EEFA is organized across ve primary dimensions: Autonomy Preservation, Harm Avoid- ance, Transparency and Non-Deception, Privacy Compliance, and Accountability and Traceabil- ity. The framework maps directly onto the requirements of the EU AI Act and the NIST AI Risk Management Framework, positioning it as a practical compliance assessment instrument for high-risk AI applications. Empirical application of the framework across diverse benchmarks and agent systems is identied as a priority direction for future work.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T05:38:45+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02561v1",
+      "journal_boost": 0,
+      "score": 11
+    },
+    {
+      "id": "2611.02516v1",
+      "title": "Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety",
+      "authors": [
+        "Xiao Yang",
+        "Aishan Liu",
+        "Siyuan Liang",
+        "Zonghao Ying",
+        "Le Wang",
+        "Jiakai Wang",
+        "Xianglong Liu",
+        "Dacheng Tao"
+      ],
+      "abstract": "Large language model (LLM) agents increasingly operate in open-world environments where safety risks cannot be fully predefined. However, most existing guardrail mechanisms remain static, relying on fixed rules, prompts, or classifiers that generalize poorly to emerging risks. Here we present EVOLVE, a tool-level self-evolving defense framework that formulates agent security as a process of cumulative security evolution. Inspired by how human societies transform experiences into transferable protective knowledge, EVOLVE externalizes security knowledge into executable guardrail tools that are continuously inherited, independently audited, and iteratively refined through lifelong interaction. Across multiple benchmarks, backbone models, and embodied environments, EVOLVE consistently outperforms existing defenses across diverse risk scenarios with +22\\% average F1 score. We further validate the framework in real-world robotic and autonomous agent systems. Our results suggest that scalable agent safety may require continuously evolving defense systems rather than static guardrails.",
+      "categories": [
+        "cs.AI"
+      ],
+      "submitted": "2026-11-02T04:36:16+00:00",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2611.02516v1",
+      "journal_boost": 0,
+      "score": 11
+    }
+  ]
+}
